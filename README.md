@@ -69,3 +69,30 @@ Open `tracker.db` in any SQLite viewer, or have Claude query it.
 - Roblox doesn't document the explore and search endpoints. Parsing is defensive, and `probe` shows their live shape.
 - The tracker makes read-only requests to public endpoints and throttles to about 2 per second. Roblox's Terms restrict automated data gathering, especially for AI training. Keep this data out of any model training, and expect that Roblox could rate-limit the runner.
 - Tests: `python -m unittest discover -s tests -v`. This simulates 16 days against a fake Roblox, including a missed day.
+
+## Session Analyzer (deep dives)
+
+When `reports/watchlist.md` puts a game in the **Deep-dive queue**, record 3 minutes of it and turn the recording into coded findings.
+
+**Recording (OBS):** 1080p, 30 fps, about 6,000 kbps (roughly 135 MB per 3 minutes). Capture game audio. Start recording *before* the game loads so the first-time experience is captured, and play as a new player would.
+
+**Analysing:** drop the recording in a folder connected to Claude and say "deep dive this, game ID <universe id>". Claude runs:
+
+```
+python -m analyzer prepare recording.mp4 --game <universe_id> --name "<game name>"   # builds the dive pack
+# Claude reads the pack following analyzer/ANALYST.md and writes findings.json
+python -m analyzer validate findings.json
+python -m analyzer ingest findings.json      # saves data/deep_dives/<id>/<date>.json, rebuilds the pattern library
+```
+
+The pack contains one frame per second (the most eventful moment of each second), 12-second contact sheets with each second's signals printed under the frame, full-resolution keyframes at the key moments, a signal strip, and a brief. The signals are:
+- motion and VFX bursts, plus flashes (brightness jumps)
+- center popups and HUD edge changes
+- sound onsets tagged bright, mid or low (bright usually means a chime or coin sound, low a thud or impact)
+- on-screen words such as Buy, Robux, Rebirth or Luck, read by OCR
+
+**Pattern library:** `config/patterns.json` is the shared vocabulary of loop, UI, VFX, SFX, monetization, retention, onboarding and social patterns. `reports/patterns.md` lists every pattern seen and marks it a **trend** once it shows up in 3 or more rising games. It also lists median onboarding timings (seconds to first reward, upgrade and shop prompt), overall and per niche.
+
+Recordings and dive packs stay local and are ignored by git. Only `findings.json` is committed.
+
+Running it yourself needs `ffmpeg`, Python 3.10+, `numpy` and `Pillow`. `matplotlib` adds the signal strip and `tesseract` adds OCR; both are optional. On a Mac: `brew install ffmpeg tesseract && pip3 install numpy pillow matplotlib`.

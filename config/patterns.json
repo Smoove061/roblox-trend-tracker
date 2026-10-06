@@ -1,0 +1,72 @@
+{
+  "_note": "Shared pattern vocabulary for deep dives. Use these IDs in findings.patterns; new IDs (type:slug) are allowed and show up as 'new' until added here.",
+  "loop": {
+    "loop:collect-sell-upgrade": "Collect items or currency, sell, buy upgrades that collect faster",
+    "loop:steal-from-bases": "Players raid each other's bases for items (Steal a Brainrot style)",
+    "loop:egg-hatch-gacha": "Spend currency on eggs/crates for random-rarity pets or units",
+    "loop:luck-roll": "Roll for random rarity (auras, items) with luck boosts",
+    "loop:hit-for-drops": "Hit, swing or shoot targets that drop randomized rewards",
+    "loop:base-income-idle": "Owned items generate income over time at your base",
+    "loop:run-and-escape": "Run a course or escape a hazard to reach rewards (Escape Tsunami style)",
+    "loop:grow-and-harvest": "Plant, wait, harvest, sell (Grow a Garden style)",
+    "loop:fight-and-level": "Fight enemies or players to gain XP, stats and gear",
+    "loop:task-shift": "Complete job or shift tasks against a threat (horror/job games)"
+  },
+  "ui": {
+    "ui:currency-top-center": "Main currency counter pinned top-center",
+    "ui:left-rail-buttons": "Vertical rail of big icon buttons on the left (shop, pets, rebirth)",
+    "ui:shop-button-glow": "Shop or offer button pulses or glows to pull attention",
+    "ui:daily-reward-on-join": "Daily reward or streak popup shown on join",
+    "ui:limited-offer-popup": "Timed limited offer popup",
+    "ui:rarity-colour-coding": "Consistent colour per rarity across UI",
+    "ui:floating-number-popups": "Numbers pop out of the world on reward (+150, x2)",
+    "ui:progress-bar-to-next": "Visible bar toward the next unlock or rebirth",
+    "ui:index-collection-book": "Collection or index showing what is left to find",
+    "ui:server-luck-banner": "Server-wide luck or event banner"
+  },
+  "vfx": {
+    "vfx:rarity-beam": "Light beam or aura colour matching rarity on drop or reveal",
+    "vfx:screen-shake-impact": "Camera shake on big hits or rare drops",
+    "vfx:particle-burst-reward": "Particle burst when a reward is granted",
+    "vfx:trail-to-counter": "Collected items fly or trail into the currency counter",
+    "vfx:anticipation-charge": "Visible charge-up before the reveal or impact",
+    "vfx:mutation-glow": "Glow or material change marking a mutated or special item"
+  },
+  "sfx": {
+    "sfx:coin-chime": "Bright chime on currency gain",
+    "sfx:rising-pitch-combo": "Pitch rises with repeated gains or combos",
+    "sfx:rarity-sting": "Distinct sting for rare drops, bigger for higher rarity",
+    "sfx:ui-click-tick": "Short click on every button",
+    "sfx:purchase-cash-register": "Cash or confirm sound on purchase",
+    "sfx:alert-announce": "Server-wide announcement sound (someone got a rare)"
+  },
+  "monetization": {
+    "monetization:luck-pass": "Pass that multiplies luck",
+    "monetization:auto-pass": "Pass that automates the core action",
+    "monetization:extra-storage": "Pay for more slots or storage",
+    "monetization:skip-wait": "Pay to skip timers",
+    "monetization:starter-pack-offer": "Discounted starter pack shown early",
+    "monetization:revive-or-respawn": "Pay to revive or keep progress on death"
+  },
+  "retention": {
+    "retention:offline-earnings": "Earn while away",
+    "retention:daily-streak": "Daily login streak",
+    "retention:timed-events": "Admin-abuse or timed server events",
+    "retention:rebirth-multiplier": "Reset progress for a permanent multiplier",
+    "retention:collection-completion": "Collect-them-all index",
+    "retention:codes": "Promo codes from social channels"
+  },
+  "onboarding": {
+    "onboarding:arrow-guided": "Arrows or beams guide the first actions without a tutorial screen",
+    "onboarding:first-reward-under-10s": "First reward within 10 seconds of spawning",
+    "onboarding:forced-tutorial": "Blocking step-by-step tutorial",
+    "onboarding:no-guidance": "Player dropped in with no guidance"
+  },
+  "social": {
+    "social:server-announcements": "Rare finds announced to the whole server",
+    "social:trading": "Player-to-player trading",
+    "social:pvp-stealing": "Taking items from other players",
+    "social:leaderboards": "Visible leaderboards in world or UI",
+    "social:group-reward": "Reward for joining the group or liking"
+  }
+}

@@ -145,6 +145,18 @@ NICHE_COLS = ["niche", "games", "total_avg_ccu", "prev_total_avg_ccu", "growth",
               "top3_share", "window_days", "flags"]
 
 
+def _dived_recently(end_day: str, days: int = 30) -> set[str]:
+    """Universe IDs with a deep dive (data/deep_dives/<uid>/<date>.json) in the last `days` days."""
+    out, end = set(), date.fromisoformat(end_day)
+    for p in (st.DATA / "deep_dives").glob("*/*.json"):
+        try:
+            if (end - date.fromisoformat(p.stem)).days <= days:
+                out.add(p.parent.name)
+        except ValueError:
+            continue
+    return out
+
+
 def _pct(v):
     return "–" if v in (None, "") else f"{float(v) * 100:+.0f}%"
 
@@ -185,14 +197,17 @@ def write_reports(result: dict, cfg: dict) -> list[str]:
     game_cols = [("Game", _link), ("Avg CCU 7d", lambda r: f"{r['avg_ccu_7d']:,.0f}" if r["avg_ccu_7d"] else "–"),
                  ("Growth 7d", lambda r: _pct(r["growth_7d"])), ("Age (days)", lambda r: r["age_days"] if r["age_days"] is not None else "–"),
                  ("Niches", lambda r: r["niches"].replace("|", ", ") or "–"), ("Flags", lambda r: r["flags"].replace("|", ", "))]
+    movers = sorted((r for r in result["games"] if r["growth_7d"] is not None and (r["avg_ccu_7d"] or 0) >= floor),
+                    key=lambda r: -r["growth_7d"])[:15]
+    dived = _dived_recently(result["end_day"])
+    queue = [r for r in list({r["universe_id"]: r for r in flagged + movers[:5]}.values()) if r["universe_id"] not in dived]
+    section("Deep-dive queue (record 3 minutes of each)", queue[:10], game_cols)
     section("Young breakouts", [r for r in flagged if "young_breakout" in r["flags"]], game_cols)
     section("Rising niches", [r for r in result["niches"] if r["flags"]],
             [("Niche", lambda r: r["niche"]), ("Games", lambda r: r["games"]), ("Total avg CCU", lambda r: f"{r['total_avg_ccu']:,}"),
              ("Growth", lambda r: _pct(r["growth"])), ("Platform", lambda r: _pct(r["platform_growth"])), ("Top game share", lambda r: f"{r['top_share']:.0%}")])
     section("Coverage spikes", [r for r in flagged if "coverage_spike" in r["flags"]], game_cols)
     section("Added by hand", [r for r in flagged if "manual" in r["flags"]], game_cols)
-    movers = sorted((r for r in result["games"] if r["growth_7d"] is not None and (r["avg_ccu_7d"] or 0) >= floor),
-                    key=lambda r: -r["growth_7d"])[:15]
     section("Top movers (7-day growth)", movers, game_cols)
     section("Biggest games (avg CCU, 7 days)", result["games"][:15], game_cols)
     if result["niches"]:
