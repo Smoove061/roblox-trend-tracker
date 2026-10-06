@@ -140,7 +140,7 @@ def _shape(obj, depth=0):
         return "…"
     if isinstance(obj, dict):
         parts = []
-        for k, v in list(obj.items())[:14]:
+        for k, v in list(obj.items())[:60]:
             parts.append(f"{k}:{_shape(v, depth + 1)}" if isinstance(v, (dict, list)) else k)
         return "{" + ", ".join(parts) + "}"
     if isinstance(obj, list):
