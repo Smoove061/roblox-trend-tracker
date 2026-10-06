@@ -1,0 +1,57 @@
+name: collect
+
+# Runs in GitHub's cloud every hour, so data keeps flowing with your PC off.
+# Each run commits new data to this repo. Missed days are caught up on the next run.
+on:
+  schedule:
+    - cron: "17 * * * *"   # hourly at :17. For a PRIVATE repo, use "17 */2 * * *" to stay inside the free 2,000 min/month
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "run, probe or report"
+        default: run
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tracker
+        timeout-minutes: 24   # the tracker stops itself at 18 min; this guarantees the save step below still runs
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TASK: ${{ github.event.inputs.task || 'run' }}
+        run: |
+          case "$TASK" in run|probe|report) ;; *) echo "unknown task: $TASK"; exit 2 ;; esac
+          python -m tracker "$TASK"
+
+      - name: Save data
+        if: always()
+        run: |
+          git config user.name "trend-tracker-bot"
+          git config user.email "trend-tracker-bot@users.noreply.github.com"
+          git add data reports
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase --autostash && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "push failed after 5 tries" && exit 1
