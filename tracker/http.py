@@ -16,7 +16,7 @@ import urllib.request
 
 
 def _redact(url: str) -> str:
-    return re.sub(r"(key|token|apikey)=[^&]+", r"\1=REDACTED", url, flags=re.I)
+    return re.sub(r"([?&])(key|apikey|access_token)=[^&]+", r"\1\2=REDACTED", url, flags=re.I)
 
 
 class HttpError(Exception):

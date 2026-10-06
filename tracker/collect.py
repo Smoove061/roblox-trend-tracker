@@ -111,7 +111,9 @@ def discover(http, games: dict, cfg: dict, now) -> dict:
         note("explore", sort_id, items)
 
     streak = 0
-    for kw in cfg.get("omni_search_keywords", []):
+    for i, kw in enumerate(cfg.get("omni_search_keywords", [])):
+        if i:
+            http.sleep(cfg.get("search_pause_sec", 3))  # search is rate-limited harder than other endpoints
         try:
             note("search", kw, roblox.omni_search(http, session, kw, cfg.get("omni_search_pages", 2)))
             streak = 0
@@ -172,9 +174,10 @@ def snapshot(http, games: dict, cfg: dict, now) -> dict:
     return {"polled": len(rows), "active": sum(1 for g in games.values() if str(g.get("active")) == "1")}
 
 
-def third_party(http, games: dict, cfg: dict, now, max_resolve: int = 150) -> dict:
+def third_party(http, games: dict, cfg: dict, now, max_resolve: int | None = None) -> dict:
     if not cfg.get("rolimons_enabled", True):
         return {"skipped": True}
+    max_resolve = max_resolve or cfg.get("rolimons_resolve_per_run", 150)
     floor = cfg["ccu_floor"]
     listing = rolimons.fetch_gamelist(http)
     cache_path = st.DATA / "place_universe.csv"

@@ -120,18 +120,29 @@ def _batches(ids, n=BATCH):
 
 def _bulk(http, url, universe_ids):
     """Fetch in batches of 50. A failed batch is skipped; only a total failure raises."""
-    out, last_err, streak = {}, None, 0
-    for chunk in _batches(universe_ids):
-        try:
-            resp = http.get_json(url, {"universeIds": ",".join(chunk)})
-        except Exception as e:  # noqa: BLE001
-            last_err, streak = e, streak + 1
-            if streak >= 3 or type(e).__name__ == "BudgetExceeded":
-                break  # an outage or throttling: stop instead of burning the run's time
-            continue
-        streak = 0
+    out, last_err, streak, failed = {}, None, 0, []
+
+    def fetch(chunk):
+        resp = http.get_json(url, {"universeIds": ",".join(chunk)})
         for item in (resp or {}).get("data", []):
             out[str(item.get("id"))] = item
+
+    for chunk in _batches(universe_ids):
+        try:
+            fetch(chunk)
+            streak = 0
+        except Exception as e:  # noqa: BLE001
+            last_err, streak = e, streak + 1
+            failed.append(chunk)
+            if streak >= 3 or type(e).__name__ == "BudgetExceeded":
+                break  # an outage or throttling: stop instead of burning the run's time
+    if failed and out and type(last_err).__name__ != "BudgetExceeded":
+        http.sleep(5)  # one calm second pass for batches that were rate-limited
+        for chunk in failed:
+            try:
+                fetch(chunk)
+            except Exception:  # noqa: BLE001
+                pass
     if not out and last_err is not None:
         raise last_err
     return out
