@@ -7,65 +7,118 @@
 <style>
 :root {
   color-scheme: light;
-  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --page: #f9f9f7; --surface: #fcfcfb; --raised: #ffffff; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
   --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10); --s1: #2a78d6; --s1-wash: rgba(42,120,214,0.10);
-  --up: #006300; --down: #d03b3b; --chip: #f0efec;
+  --up: #006300; --down: #d03b3b; --chip: #f0efec; --accent-ink: #ffffff; --shade: rgba(11,11,11,0.32);
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
     color-scheme: dark;
-    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
+    --page: #0d0d0d; --surface: #1a1a19; --raised: #222221; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
     --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10); --s1: #3987e5; --s1-wash: rgba(57,135,229,0.16);
-    --up: #0ca30c; --down: #e66767; --chip: #2c2c2a;
+    --up: #0ca30c; --down: #e66767; --chip: #2c2c2a; --accent-ink: #ffffff; --shade: rgba(0,0,0,0.55);
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
+  --page: #0d0d0d; --surface: #1a1a19; --raised: #222221; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10); --s1: #3987e5; --s1-wash: rgba(57,135,229,0.16);
-  --up: #0ca30c; --down: #e66767; --chip: #2c2c2a;
+  --up: #0ca30c; --down: #e66767; --chip: #2c2c2a; --accent-ink: #ffffff; --shade: rgba(0,0,0,0.55);
 }
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 body { margin: 0; background: var(--page); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
-.wrap { max-width: 1240px; margin: 0 auto; padding: 28px 20px 60px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 20px 60px; }
+header { padding-top: 26px; }
 header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
 header p { margin: 0; color: var(--ink2); }
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--page); border-bottom: 1px solid var(--grid); margin: 16px -20px 0; padding: 0 20px; display: flex; gap: 2px; overflow-x: auto; }
+nav a { color: var(--ink2); text-decoration: none; padding: 12px 12px; font-size: 13.5px; white-space: nowrap; border-bottom: 2px solid transparent; }
+nav a:hover { color: var(--ink); } nav a.on { color: var(--ink); border-bottom-color: var(--s1); font-weight: 600; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 20px 0 0; }
 .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 16px 18px; min-width: 0; }
 .kpi .label { color: var(--ink2); font-size: 13px; }
-.kpi .value { font-size: 28px; font-weight: 650; margin-top: 4px; letter-spacing: -0.02em; }
+.kpi .value { font-size: 28px; font-weight: 650; margin-top: 4px; letter-spacing: -0.02em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .kpi .sub { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
-h2 { font-size: 16px; margin: 0 0 2px; }
+h2 { font-size: 16px; margin: 0 0 2px; } h3 { font-size: 14px; margin: 0 0 2px; }
+.section-title { font-size: 19px; margin: 34px 0 4px; letter-spacing: -0.01em; }
+.section-sub { color: var(--ink2); margin: 0 0 12px; }
 .note { color: var(--muted); font-size: 12.5px; margin: 0 0 12px; }
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
-section { margin-top: 12px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.stack > * + * { margin-top: 12px; }
 svg text { fill: var(--muted); font-size: 11px; }
 .bars .row { display: grid; grid-template-columns: 150px 1fr 70px; align-items: center; gap: 10px; height: 26px; cursor: default; }
 .bars .row:hover .bar { filter: brightness(1.12); }
 .bars .name { color: var(--ink2); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bars .track { height: 12px; position: relative; }
 .bars .bar { height: 12px; background: var(--s1); border-radius: 0 4px 4px 0; min-width: 2px; }
 .bars .val { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); font-size: 13px; }
-.controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
-input[type=search], select { background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 10px; font: inherit; }
-input[type=search] { min-width: 240px; flex: 1; max-width: 360px; }
+.trend { display: grid; grid-template-columns: 22px minmax(0, 1fr) 52px; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--grid); cursor: default; }
+.trend:last-child { border-bottom: 0; }
+.trend .rank { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+.trend .lbl { font-weight: 600; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.trend .meta { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.trend .mbar { height: 6px; border-radius: 0 3px 3px 0; background: var(--s1); margin-top: 5px; min-width: 2px; }
+.trend .mom { text-align: right; font-variant-numeric: tabular-nums; font-weight: 650; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: end; margin: 0 0 12px; }
+.field { display: flex; flex-direction: column; gap: 3px; }
+.field > span { font-size: 11.5px; color: var(--muted); }
+input[type=search], input[type=number], select { background: var(--raised); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 10px; font: inherit; }
+input[type=number] { width: 96px; }
+input[type=search] { min-width: 220px; }
+button { font: inherit; cursor: pointer; border-radius: 8px; padding: 7px 14px; background: var(--raised); color: var(--ink); border: 1px solid var(--ring); }
+button:hover { border-color: var(--axis); }
+button.primary { background: var(--s1); color: var(--accent-ink); border-color: transparent; font-weight: 600; }
+button.primary:hover { filter: brightness(1.08); }
+button.chipbtn { padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--ink2); border: 1px solid transparent; font-size: 12.5px; }
+button.chipbtn:hover { color: var(--ink); border-color: var(--axis); }
 .tablewrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { padding: 7px 8px; text-align: left; border-bottom: 1px solid var(--grid); white-space: nowrap; }
-th { color: var(--ink2); font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--surface); }
+th { color: var(--ink2); font-weight: 600; font-size: 12px; user-select: none; position: sticky; top: 0; background: var(--surface); }
+th.sortable { cursor: pointer; } th.sortable:hover { color: var(--ink); }
 th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
-th[data-dir="asc"]::after { content: " ↑"; } th[data-dir="desc"]::after { content: " ↓"; }
+th .arr { display: inline-block; width: 12px; color: var(--s1); }
+tbody tr.clickable { cursor: pointer; } tbody tr.clickable:hover td { background: var(--s1-wash); }
 td.game { max-width: 280px; overflow: hidden; text-overflow: ellipsis; }
 td.game a { color: var(--ink); text-decoration: none; font-weight: 550; }
 td.game a:hover { text-decoration: underline; }
 td.game .by { color: var(--muted); font-size: 11.5px; display: block; overflow: hidden; text-overflow: ellipsis; }
-.chip { display: inline-block; background: var(--chip); color: var(--ink2); border-radius: 999px; padding: 1px 7px; font-size: 11.5px; margin-right: 3px; }
+.chip { display: inline-block; background: var(--chip); color: var(--ink2); border-radius: 999px; padding: 1px 7px; font-size: 11.5px; margin: 0 3px 2px 0; }
 .up { color: var(--up); } .down { color: var(--down); }
-.more { margin-top: 10px; background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 14px; font: inherit; cursor: pointer; }
+.more { margin-top: 10px; }
 .empty { color: var(--muted); padding: 10px 0; }
-#tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); opacity: 0; transition: opacity .08s; z-index: 10; max-width: 280px; }
+.ideas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 4px; }
+.idea { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+.idea .top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.idea h3 { font-size: 17px; letter-spacing: -0.01em; }
+.idea .num { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.scope { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--axis); color: var(--ink2); white-space: nowrap; }
+.idea p { margin: 8px 0; }
+.idea dl { display: grid; grid-template-columns: 96px 1fr; gap: 4px 10px; margin: 10px 0 0; font-size: 13px; }
+.idea dt { color: var(--muted); } .idea dd { margin: 0; }
+.idea ol { margin: 0; padding-left: 18px; }
+.idea .why { color: var(--ink2); font-size: 12.5px; border-top: 1px solid var(--grid); margin-top: 12px; padding-top: 10px; }
+.idea .why a { color: var(--ink2); }
+.gaps { display: flex; flex-wrap: wrap; gap: 6px; }
+#tip { position: fixed; pointer-events: none; background: var(--raised); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.14); opacity: 0; transition: opacity .08s; z-index: 30; max-width: 300px; }
 #tip b { font-weight: 650; } #tip .m { color: var(--ink2); }
-footer { margin-top: 28px; color: var(--muted); font-size: 12.5px; }
+#shade { position: fixed; inset: 0; background: var(--shade); opacity: 0; pointer-events: none; transition: opacity .15s; z-index: 20; }
+#shade.on { opacity: 1; pointer-events: auto; }
+#drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100vw); background: var(--surface); border-left: 1px solid var(--ring); z-index: 21; transform: translateX(105%); transition: transform .18s ease; overflow-y: auto; padding: 20px 22px 40px; }
+#drawer.on { transform: none; }
+#drawer h2 { font-size: 19px; margin-right: 40px; }
+#drawer .close { position: absolute; top: 14px; right: 14px; padding: 4px 10px; }
+#drawer .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
+#drawer .stats div { background: var(--raised); border: 1px solid var(--ring); border-radius: 10px; padding: 8px 10px; }
+#drawer .stats b { display: block; font-size: 17px; } #drawer .stats span { color: var(--muted); font-size: 11.5px; }
+#drawer h3 { margin-top: 18px; font-size: 13px; color: var(--ink2); text-transform: uppercase; letter-spacing: .04em; }
+#drawer .kv { display: grid; grid-template-columns: 150px 1fr; gap: 5px 10px; font-size: 13px; margin-top: 6px; }
+#drawer .kv span:nth-child(odd) { color: var(--muted); }
+#drawer a.open { display: inline-block; margin-top: 6px; color: var(--s1); }
+footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+@media (max-width: 960px) { .grid3 { grid-template-columns: 1fr; } .ideas { grid-template-columns: 1fr; } }
 @media (max-width: 860px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid2 { grid-template-columns: 1fr; } .bars .row { grid-template-columns: 110px 1fr 60px; } }
 </style>
 </head>
@@ -75,95 +128,173 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12.5px; }
     <h1>Roblox Trend Tracker</h1>
     <p id="subtitle">Updated __UPDATED__</p>
   </header>
+  <nav id="nav">
+    <a href="#overview">Overview</a><a href="#trends">Uprising trends</a><a href="#ideas">Idea generator</a>
+    <a href="#boards">Leaderboards</a><a href="#young">Young games</a><a href="#all">All games</a><a href="#coverage">YouTube</a>
+  </nav>
 
-  <div class="kpis" id="kpis"></div>
-
-  <section class="card">
-    <h2>Combined CCU, last 72 hours</h2>
-    <p class="note" id="line-note"></p>
-    <div id="line"></div>
-  </section>
-
-  <div class="grid2">
-    <section class="card"><h2>CCU by genre</h2><p class="note">Roblox's own genre field · current CCU</p><div class="bars" id="genres"></div></section>
-    <section class="card"><h2>CCU by niche</h2><p class="note">Keyword-tagged niches · top 14 · a game can be in several</p><div class="bars" id="niches"></div></section>
+  <div id="overview">
+    <div class="kpis" id="kpis"></div>
+    <section class="card" style="margin-top:12px">
+      <h2>Combined CCU, last 72 hours</h2>
+      <p class="note" id="line-note"></p>
+      <div id="line"></div>
+    </section>
+    <div class="grid2" style="margin-top:12px">
+      <section class="card"><h2>CCU by genre</h2><p class="note">Roblox's own genre field · current CCU · hover for details</p><div class="bars" id="genres"></div></section>
+      <section class="card"><h2>CCU by core mechanic</h2><p class="note">What players actually do · a game can use several</p><div class="bars" id="mechbars"></div></section>
+    </div>
   </div>
 
-  <section class="card">
-    <h2>Young games (60 days old or less)</h2>
-    <p class="note">Sorted by current CCU — these are the early breakouts</p>
-    <div class="tablewrap"><table id="young"></table></div>
+  <h2 class="section-title" id="trends">Uprising trends</h2>
+  <p class="section-sub">Momentum compares a category's share of <b>young-game</b> CCU (games <span class="yd">60</span> days old or less) with its share of all CCU. Above 1.0× means new games in it are winning more than its size suggests.</p>
+  <div class="grid3">
+    <section class="card"><h2>Core mechanics</h2><p class="note">What new hits have players do</p><div id="tr-mech"></div></section>
+    <section class="card"><h2>Themes</h2><p class="note">What new hits are about</p><div id="tr-theme"></div></section>
+    <section class="card"><h2>Title formulas</h2><p class="note">How new hits name themselves</p><div id="tr-form"></div></section>
+  </div>
+  <section class="card" style="margin-top:12px">
+    <h2>Untapped combinations</h2>
+    <p class="note">A rising mechanic paired with a strong theme that no tracked game uses yet. Tap one to generate ideas around it.</p>
+    <div class="gaps" id="gaps"></div>
   </section>
 
-  <section class="card" id="watch-card">
+  <h2 class="section-title" id="ideas">Idea generator</h2>
+  <p class="section-sub">Builds fresh concepts from what's rising right now: a rising core mechanic, a theme nobody has paired with it, the twist new hits combine it with, and the monetization the leaders use. Every title is checked against all tracked games so ideas follow the trend without copying a game.</p>
+  <section class="card">
+    <div class="controls">
+      <label class="field"><span>Build size</span><select id="ig-scope"><option value="all">Any size</option><option value="small">Small (1–2 weeks)</option><option value="medium">Medium (3–6 weeks)</option><option value="large">Large (6+ weeks)</option></select></label>
+      <label class="field"><span>Core mechanic</span><select id="ig-mech"><option value="">Any rising mechanic</option></select></label>
+      <label class="field"><span>Theme</span><select id="ig-theme"><option value="">Any fresh theme</option></select></label>
+      <button class="primary" id="ig-go">Generate 10 ideas</button>
+      <button id="ig-copy">Copy ideas</button>
+      <a id="ig-lab" href="#" target="_blank" rel="noopener" style="display:none; align-self:center; color:var(--s1)">Write full pitches in Claude Idea Lab ↗</a>
+    </div>
+    <p class="note" id="ig-note"></p>
+  </section>
+  <div class="ideas" id="ig-out"></div>
+
+  <h2 class="section-title" id="boards">Leaderboards</h2>
+  <p class="section-sub">Filter and rank every tracked game. Save boards you use often, share them as a link, or export to CSV.</p>
+  <section class="card">
+    <div class="controls">
+      <label class="field"><span>Preset</span><select id="lb-preset"></select></label>
+      <label class="field"><span>Search</span><input type="search" id="lb-q" placeholder="Game, creator, mechanic…"></label>
+      <label class="field"><span>Genre</span><select id="lb-genre"><option value="">All</option></select></label>
+      <label class="field"><span>Subgenre</span><select id="lb-sub"><option value="">All</option></select></label>
+      <label class="field"><span>Maturity</span><select id="lb-mat"><option value="">All</option></select></label>
+      <label class="field"><span>Mechanic</span><select id="lb-mech"><option value="">All</option></select></label>
+      <label class="field"><span>Theme</span><select id="lb-theme"><option value="">All</option></select></label>
+    </div>
+    <div class="controls">
+      <label class="field"><span>Age from (days)</span><input type="number" id="lb-amin" min="0" placeholder="0"></label>
+      <label class="field"><span>Age to (days)</span><input type="number" id="lb-amax" min="0" placeholder="any"></label>
+      <label class="field"><span>Min CCU</span><input type="number" id="lb-cmin" min="0" placeholder="300"></label>
+      <label class="field"><span>Min likes %</span><input type="number" id="lb-lmin" min="0" max="100" placeholder="0"></label>
+      <label class="field"><span>Rank by</span><select id="lb-metric"></select></label>
+      <label class="field"><span>Order</span><select id="lb-dir"><option value="desc">Highest first</option><option value="asc">Lowest first</option></select></label>
+      <label class="field"><span>Show</span><select id="lb-n"><option>10</option><option selected>25</option><option>50</option><option>100</option></select></label>
+      <button id="lb-save">Save board</button>
+      <button id="lb-share">Copy link</button>
+      <button id="lb-csv">Export CSV</button>
+    </div>
+    <p class="note" id="lb-note"></p>
+    <div class="tablewrap"><table id="lb-table"></table></div>
+  </section>
+
+  <h2 class="section-title" id="young">Young games</h2>
+  <p class="section-sub">Games <span class="yd">60</span> days old or less, the early breakouts. Tap any column to sort; tap again to reverse. Tap a row for details.</p>
+  <section class="card"><div class="tablewrap"><table id="young-table"></table></div><button class="more" id="young-more">Show more</button></section>
+
+  <section class="card" style="margin-top:12px">
     <h2>Watchlist &amp; deep-dive queue</h2>
     <p class="note">Flags turn on as history builds (growth needs about 14 days)</p>
-    <div class="tablewrap"><table id="watch"></table></div>
+    <div class="tablewrap"><table id="watch-table"></table></div>
   </section>
 
+  <h2 class="section-title" id="all">All tracked games</h2>
   <section class="card">
-    <h2>All tracked games</h2>
     <div class="controls">
-      <input type="search" id="q" placeholder="Search game, creator or niche">
-      <select id="genre-filter"><option value="">All genres</option></select>
-      <select id="age-filter"><option value="">Any age</option><option value="30">≤ 30 days old</option><option value="60">≤ 60 days old</option><option value="180">≤ 180 days old</option></select>
+      <label class="field"><span>Search</span><input type="search" id="q" placeholder="Game, creator, mechanic or theme"></label>
+      <label class="field"><span>Genre</span><select id="genre-filter"><option value="">All genres</option></select></label>
+      <label class="field"><span>Age</span><select id="age-filter"><option value="">Any age</option><option value="30">≤ 30 days old</option><option value="60">≤ 60 days old</option><option value="180">≤ 180 days old</option></select></label>
     </div>
-    <div class="tablewrap"><table id="all"></table></div>
-    <button class="more" id="more">Show more</button>
+    <div class="tablewrap"><table id="all-table"></table></div>
+    <button class="more" id="all-more">Show more</button>
   </section>
 
+  <h2 class="section-title" id="coverage">YouTube coverage</h2>
   <section class="card">
-    <h2>YouTube coverage, last 7 days</h2>
-    <p class="note">Videos and views found for each game — coverage often rises before CCU does</p>
-    <div class="tablewrap"><table id="yt"></table></div>
+    <p class="note">Videos and views in the last 7 days; coverage often rises before CCU does</p>
+    <div class="tablewrap"><table id="yt-table"></table></div>
   </section>
 
   <footer id="foot"></footer>
 </div>
-<div id="tip"></div>
+<div id="tip" role="tooltip"></div>
+<div id="shade"></div>
+<aside id="drawer" aria-hidden="true"></aside>
 <script id="data" type="application/json">__DATA__</script>
 <script>
 (function () {
+  "use strict";
   const D = JSON.parse(document.getElementById("data").textContent);
-  const fmt = n => n == null ? "–" : n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "K" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : String(n);
-  const full = n => n == null ? "–" : n.toLocaleString("en-US");
+  const TAX = D.taxonomy || { mechanics: {}, themes: {}, formulas: {} };
+  const TR = D.trends || { rising: {}, mechanics: [], themes: [], formulas: [], gaps: [], pairs: [], benchmarks: {} };
+  const G = D.games;
+  const byId = Object.fromEntries(G.map(g => [g.id, g]));
+
+  // ---------- helpers
+  const fmt = n => n == null ? "–" : n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "K" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : String(Math.round(n));
+  const full = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
   const pct = v => v == null ? "–" : (v * 100).toFixed(0) + "%";
-  const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (k === "text") e.textContent = v; else if (k === "cls") e.className = v; else e.setAttribute(k, v); } for (const c of [].concat(kids)) if (c != null) e.append(c); return e; };
+  const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
+  const mLabel = k => (TAX.mechanics[k] || {}).label || k.replace(/_/g, " ");
+  const tLabel = k => (TAX.themes[k] || {}).label || k.replace(/_/g, " ");
+  const fLabel = k => TAX.formulas[k] || k.replace(/_/g, " ");
+  const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (v == null) continue; if (k === "text") e.textContent = v; else if (k === "cls") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } for (const c of [].concat(kids)) if (c != null && c !== false) e.append(c); return e; };
   const svgEl = (tag, attrs = {}) => { const e = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
-  const link = g => /^\d+$/.test(String(g.place)) ? "https://www.roblox.com/games/" + g.place : null;
+  const link = g => g && /^\d+$/.test(String(g.place)) ? "https://www.roblox.com/games/" + g.place : null;
+  const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
   const tip = document.getElementById("tip");
   function showTip(evt, lines) { tip.replaceChildren(...lines.map((l, i) => el("div", { cls: i ? "m" : "" }, i ? l : el("b", { text: l })))); tip.style.opacity = 1; moveTip(evt); }
   function moveTip(evt) { const w = tip.offsetWidth, h = tip.offsetHeight; let x = evt.clientX + 14, y = evt.clientY + 14; if (x + w > innerWidth - 8) x = evt.clientX - w - 14; if (y + h > innerHeight - 8) y = evt.clientY - h - 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
   function hideTip() { tip.style.opacity = 0; }
+  function copyText(text, btn) { const done = () => { const o = btn.textContent; btn.textContent = "Copied"; setTimeout(() => btn.textContent = o, 1400); }; if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, () => prompt("Copy:", text)); else prompt("Copy:", text); }
+  document.querySelectorAll(".yd").forEach(e => e.textContent = TR.young_days || 60);
 
-  // header + KPIs
-  const G = D.games, total = G.reduce((s, g) => s + g.ccu, 0);
-  const young = G.filter(g => g.age != null && g.age <= 60), youngCcu = young.reduce((s, g) => s + g.ccu, 0);
-  const upd = new Date(D.updated);
-  document.getElementById("subtitle").textContent = `Updated ${upd.toLocaleString()} · ${D.days_of_data} day(s) of history · every game at ${D.floor}+ CCU`;
-  const kpi = (label, value, sub) => el("div", { cls: "card kpi" }, [el("div", { cls: "label", text: label }), el("div", { cls: "value", text: value }), el("div", { cls: "sub", text: sub })]);
+  // ---------- header + KPIs
+  const total = G.reduce((s, g) => s + g.ccu, 0);
+  const youngDays = TR.young_days || 60;
+  const young = G.filter(g => g.age != null && g.age <= youngDays), youngCcu = young.reduce((s, g) => s + g.ccu, 0);
+  document.getElementById("subtitle").textContent = `Updated ${new Date(D.updated).toLocaleString()} · ${D.days_of_data} day(s) of history · every game at ${D.floor}+ CCU`;
+  const kpi = (label, value, sub) => el("div", { cls: "card kpi" }, [el("div", { cls: "label", text: label }), el("div", { cls: "value", text: value, title: value }), el("div", { cls: "sub", text: sub })]);
+  const topMech = (TR.rising.mechanic || [])[0];
   document.getElementById("kpis").append(
-    kpi("Games tracked", full(G.length), `at ${D.floor}+ CCU`),
-    kpi("Combined CCU", fmt(total), "players in tracked games right now"),
-    kpi("Young games", full(young.length), `≤ 60 days old · ${pct(total ? youngCcu / total : 0)} of CCU`),
-    kpi("Biggest genre", D.genres[0] ? D.genres[0].name : "–", D.genres[0] ? `${fmt(D.genres[0].ccu)} CCU · ${D.genres[0].games} games` : ""));
+    kpi("Games tracked", full(G.length), `at ${D.floor}+ CCU · ${fmt(total)} players now`),
+    kpi("Young games", full(young.length), `≤ ${youngDays} days old · ${pct(total ? youngCcu / total : 0)} of CCU`),
+    kpi("Biggest genre", D.genres[0] ? D.genres[0].name : "–", D.genres[0] ? `${fmt(D.genres[0].ccu)} CCU · ${D.genres[0].games} games` : ""),
+    kpi("Fastest-rising mechanic", topMech ? topMech.label : "–", topMech ? `${topMech.momentum_adj}× momentum · ${topMech.young_games} young games` : "needs data"));
 
-  // line chart with crosshair
+  // ---------- nav highlight
+  const navLinks = [...document.querySelectorAll("#nav a")];
+  const targets = navLinks.map(a => document.querySelector(a.getAttribute("href")));
+  addEventListener("scroll", () => { let cur = 0; targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top < 120) cur = i; }); navLinks.forEach((a, i) => a.classList.toggle("on", i === cur)); }, { passive: true });
+
+  // ---------- line chart
   (function () {
     const host = document.getElementById("line"), pts = D.line;
-    document.getElementById("line-note").textContent = pts.length > 1
-      ? `${full(D.cohort_size)} games tracked in every hour shown, so changes are real and not new games being added`
-      : "Needs a few hourly runs of history";
+    document.getElementById("line-note").textContent = pts.length > 1 ? `${full(D.cohort_size)} games tracked in every hour shown, so changes are real and not new games being added` : "Needs a few hourly runs of history";
     if (pts.length < 2) return;
     const W = 1160, H = 230, L = 52, R = 16, T = 10, B = 26;
-    const max = Math.max(...pts.map(p => p.v)) * 1.08, min = 0;
-    const x = i => L + (W - L - R) * i / (pts.length - 1), y = v => T + (H - T - B) * (1 - (v - min) / (max - min));
+    const max = Math.max(...pts.map(p => p.v)) * 1.08 || 1;
+    const x = i => L + (W - L - R) * i / (pts.length - 1), y = v => T + (H - T - B) * (1 - v / max);
     const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", role: "img", "aria-label": "Combined CCU over the last 72 hours" });
     for (let k = 0; k <= 4; k++) { const v = max * k / 4, yy = y(v); svg.append(svgEl("line", { x1: L, x2: W - R, y1: yy, y2: yy, stroke: k ? "var(--grid)" : "var(--axis)", "stroke-width": 1 })); const t = svgEl("text", { x: L - 8, y: yy + 4, "text-anchor": "end" }); t.textContent = fmt(Math.round(v)); svg.append(t); }
     const step = Math.max(1, Math.round(pts.length / 6));
-    pts.forEach((p, i) => { if (i % step === 0 || i === pts.length - 1) { if (i === pts.length - 1 && i % step !== 0 && i - Math.floor(i / step) * step < step / 2) return; const t = svgEl("text", { x: x(i), y: H - 6, "text-anchor": i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle" }); const d = new Date(p.h); t.textContent = d.toLocaleDateString(undefined, { weekday: "short" }) + " " + d.toLocaleTimeString(undefined, { hour: "numeric" }); svg.append(t); } });
+    pts.forEach((p, i) => { if (i % step === 0 || i === pts.length - 1) { if (i === pts.length - 1 && i % step !== 0 && (i % step) < step / 2) return; const t = svgEl("text", { x: x(i), y: H - 6, "text-anchor": i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle" }); const d = new Date(p.h); t.textContent = d.toLocaleDateString(undefined, { weekday: "short" }) + " " + d.toLocaleTimeString(undefined, { hour: "numeric" }); svg.append(t); } });
     const path = pts.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join("");
-    svg.append(svgEl("path", { d: path + `L${x(pts.length - 1)},${y(0)}L${x(0)},${y(0)}Z`, fill: "var(--s1-wash)", stroke: "none" }));
+    svg.append(svgEl("path", { d: path + `L${x(pts.length - 1)},${y(0)}L${x(0)},${y(0)}Z`, fill: "var(--s1-wash)" }));
     svg.append(svgEl("path", { d: path, fill: "none", stroke: "var(--s1)", "stroke-width": 2, "stroke-linejoin": "round" }));
     if (pts.length <= 24) pts.forEach((p, i) => svg.append(svgEl("circle", { cx: x(i), cy: y(p.v), r: 3.5, fill: "var(--s1)", stroke: "var(--surface)", "stroke-width": 2 })));
     const cross = svgEl("line", { y1: T, y2: H - B, stroke: "var(--axis)", "stroke-width": 1, opacity: 0 }), dot = svgEl("circle", { r: 4.5, fill: "var(--s1)", stroke: "var(--surface)", "stroke-width": 2, opacity: 0 });
@@ -171,102 +302,335 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12.5px; }
     const hit = svgEl("rect", { x: L, y: T, width: W - L - R, height: H - T - B, fill: "transparent" });
     hit.addEventListener("mousemove", e => { const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width; const i = Math.max(0, Math.min(pts.length - 1, Math.round((px - L) / (W - L - R) * (pts.length - 1)))); cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("opacity", 1); dot.setAttribute("cx", x(i)); dot.setAttribute("cy", y(pts[i].v)); dot.setAttribute("opacity", 1); showTip(e, [full(pts[i].v) + " players", new Date(pts[i].h).toLocaleString()]); });
     hit.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); dot.setAttribute("opacity", 0); hideTip(); });
-    svg.append(hit);
-    host.append(svg);
+    svg.append(hit); host.append(svg);
   })();
 
-  // horizontal bars
-  function bars(id, items, n, extra) {
+  // ---------- horizontal bars
+  function bars(id, items, n, tipLines) {
     const host = document.getElementById(id), list = items.slice(0, n), max = Math.max(1, ...list.map(i => i.ccu));
     if (!list.length) { host.append(el("div", { cls: "empty", text: "No data yet" })); return; }
     for (const it of list) {
-      const row = el("div", { cls: "row" }, [el("div", { cls: "name", text: it.name.replace(/_/g, " ") }), el("div", { cls: "track" }, el("div", { cls: "bar", style: `width:${(100 * it.ccu / max).toFixed(1)}%` })), el("div", { cls: "val", text: fmt(it.ccu) })]);
-      row.addEventListener("mousemove", e => showTip(e, [it.name.replace(/_/g, " "), `${full(it.ccu)} CCU · ${it.games} games`, ...extra(it)]));
-      row.addEventListener("mouseleave", hideTip);
+      const row = el("div", { cls: "row" }, [el("div", { cls: "name", text: it.name }), el("div", {}, el("div", { cls: "bar", style: `width:${(100 * it.ccu / max).toFixed(1)}%` })), el("div", { cls: "val", text: fmt(it.ccu) })]);
+      row.addEventListener("mousemove", e => showTip(e, [it.name, ...tipLines(it)])); row.addEventListener("mouseleave", hideTip);
       host.append(row);
     }
   }
-  bars("genres", D.genres, 12, g => [`Biggest: ${g.top}`]);
-  bars("niches", D.niches, 14, n => [`Biggest: ${n.top} (${pct(n.top_share)} of niche)`]);
+  bars("genres", D.genres, 12, g => [`${full(g.ccu)} CCU · ${g.games} games`, `Biggest: ${g.top}`]);
+  bars("mechbars", (TR.mechanics || []).map(m => ({ name: m.label, ccu: m.ccu, m })), 12, it => [`${full(it.m.ccu)} CCU · ${it.m.games} games`, `${it.m.young_games} young games · ${it.m.momentum_adj}× momentum`]);
 
-  // sparkline
-  function spark(vals) {
-    const pts = vals.map((v, i) => [i, v]).filter(p => p[1] != null);
-    const svg = svgEl("svg", { width: 96, height: 24, viewBox: "0 0 96 24", "aria-hidden": "true" });
-    if (pts.length < 2) return svg;
-    const mx = Math.max(...pts.map(p => p[1])), mn = Math.min(...pts.map(p => p[1])), span = mx - mn || 1;
-    const d = pts.map((p, k) => `${k ? "L" : "M"}${(p[0] / (vals.length - 1) * 94 + 1).toFixed(1)},${(22 - (p[1] - mn) / span * 20).toFixed(1)}`).join("");
-    svg.append(svgEl("path", { d, fill: "none", stroke: "var(--s1)", "stroke-width": 1.5, "stroke-linejoin": "round" }));
-    return svg;
+  // ---------- trends
+  function trendList(id, items, kind) {
+    const host = document.getElementById(id), list = (items || []).slice(0, 8);
+    if (!list.length) { host.append(el("div", { cls: "empty", text: "Not enough young games yet" })); return; }
+    const max = Math.max(...list.map(i => i.momentum_adj || 0), 1);
+    list.forEach((i, k) => {
+      const ex = (i.young_examples || [])[0];
+      const row = el("div", { cls: "trend" }, [
+        el("div", { cls: "rank", text: String(k + 1) }),
+        el("div", {}, [el("div", { cls: "lbl", text: i.label }), el("div", { cls: "meta", text: `${i.young_games} young games · ${fmt(i.young_ccu)} CCU${ex ? " · " + ex.name : ""}` }), el("div", { cls: "mbar", style: `width:${(100 * (i.momentum_adj || 0) / max).toFixed(0)}%` })]),
+        el("div", { cls: "mom", text: (i.momentum_adj || 0).toFixed(1) + "×" })]);
+      row.addEventListener("mousemove", e => showTip(e, [i.label, `Momentum ${i.momentum_adj}× (young share ${pct(i.young_share)} vs overall ${pct(i.share)})`, `${i.games} games total · ${fmt(i.ccu)} CCU`, ...(i.young_examples || []).map(x => `${x.name}: ${fmt(x.ccu)} CCU, ${x.age} days old`)]));
+      row.addEventListener("mouseleave", hideTip);
+      host.append(row);
+    });
   }
-  const delta = v => v == null ? el("span", { cls: "", text: "–" }) : el("span", { cls: v >= 0 ? "up" : "down", text: (v >= 0 ? "▲ " : "▼ ") + Math.abs(v * 100).toFixed(0) + "%" });
-  const gameCell = g => { const a = link(g) ? el("a", { href: link(g), target: "_blank", rel: "noopener", text: g.name }) : el("span", { text: g.name }); return el("td", { cls: "game", title: g.name }, [a, el("span", { cls: "by", text: g.creator })]); };
-  const chips = g => el("td", {}, g.niches.slice(0, 3).map(n => el("span", { cls: "chip", text: n.replace(/_/g, " ") })));
+  trendList("tr-mech", TR.rising.mechanic, "mechanic");
+  trendList("tr-theme", TR.rising.theme, "theme");
+  trendList("tr-form", TR.rising.formula, "formula");
+  const gapsHost = document.getElementById("gaps");
+  (TR.gaps || []).slice(0, 18).forEach(g => gapsHost.append(el("button", { cls: "chipbtn", text: `${g.mechanic_label} × ${g.theme_label}`, title: `Score ${g.score}`, onclick: () => { igMech.value = g.mechanic; igTheme.value = g.theme; generateIdeas(); location.hash = "ideas"; } })));
+  if (!(TR.gaps || []).length) gapsHost.append(el("div", { cls: "empty", text: "Needs trend data" }));
 
-  const COLS = [
-    { k: "rank", label: "#", num: true, sort: false },
-    { k: "name", label: "Game" }, { k: "genre", label: "Genre" }, { k: "niches", label: "Niches", sort: false },
-    { k: "ccu", label: "CCU", num: true }, { k: "ch24", label: "24h", num: true }, { k: "spark", label: "72h", sort: false },
-    { k: "peak", label: "Peak seen", num: true }, { k: "age", label: "Age (days)", num: true }, { k: "like", label: "Likes", num: true },
-  ];
-  function renderTable(tableId, rows, opts = {}) {
-    const t = document.getElementById(tableId), cols = opts.cols || COLS;
-    const head = el("tr", {}, cols.map(c => { const th = el("th", { cls: c.num ? "num" : "", text: c.label }); if (opts.sort && c.sort !== false) { if (opts.sort.k === c.k) th.dataset.dir = opts.sort.dir; th.addEventListener("click", () => opts.onSort(c.k)); } return th; }));
-    const body = rows.map((g, i) => el("tr", {}, cols.map(c => {
-      switch (c.k) {
-        case "rank": return el("td", { cls: "num", text: String(i + 1) });
-        case "name": return gameCell(g);
-        case "genre": return el("td", { text: g.genre + (g.sub ? " · " + g.sub : "") });
-        case "niches": return chips(g);
-        case "ccu": return el("td", { cls: "num", text: full(g.ccu) });
-        case "ch24": return el("td", { cls: "num" }, delta(g.ch24));
-        case "spark": return el("td", {}, spark(g.spark));
-        case "peak": return el("td", { cls: "num", text: full(g.peak) });
-        case "age": return el("td", { cls: "num", text: g.age == null ? "–" : String(g.age) });
-        case "like": return el("td", { cls: "num", text: pct(g.like) });
-        default: return el("td", { text: String(g[c.k] ?? "–") });
-      }
-    })));
-    t.replaceChildren(el("thead", {}, head), el("tbody", {}, body));
-    if (!rows.length) t.append(el("tbody", {}, el("tr", {}, el("td", { cls: "empty", colspan: cols.length, text: opts.empty || "Nothing here yet" }))));
+  // ---------- sortable tables (tap a header to sort; tap again to reverse)
+  const sparkSvg = vals => { const pts = (vals || []).map((v, i) => [i, v]).filter(p => p[1] != null); const svg = svgEl("svg", { width: 96, height: 24, viewBox: "0 0 96 24", "aria-hidden": "true" }); svg.append(svgEl("line", { x1: 1, x2: 95, y1: 23, y2: 23, stroke: "var(--grid)", "stroke-width": 1 })); if (pts.length < 2) return svg; const mx = Math.max(...pts.map(p => p[1])), mn = Math.min(...pts.map(p => p[1])), span = mx - mn || 1; svg.append(svgEl("path", { d: pts.map((p, k) => `${k ? "L" : "M"}${(p[0] / (vals.length - 1) * 94 + 1).toFixed(1)},${(21 - (p[1] - mn) / span * 19).toFixed(1)}`).join(""), fill: "none", stroke: "var(--s1)", "stroke-width": 1.5, "stroke-linejoin": "round" })); return svg; };
+  const delta = v => v == null ? el("span", { text: "–" }) : el("span", { cls: v >= 0 ? "up" : "down", text: (v >= 0 ? "▲ " : "▼ ") + Math.abs(v * 100).toFixed(0) + "%" });
+  const gameCell = g => { const href = link(g); const a = href ? el("a", { href, target: "_blank", rel: "noopener", text: g.name, onclick: e => e.stopPropagation() }) : el("span", { text: g.name }); return el("td", { cls: "game", title: g.name }, [a, el("span", { cls: "by", text: g.creator || "" })]); };
+  const chips = (list, labeler, n = 3) => el("td", {}, (list || []).slice(0, n).map(k => el("span", { cls: "chip", text: labeler(k) })));
+  const MAT_ORDER = { minimal: 1, mild: 2, moderate: 3, restricted: 4 };
+  const COL = {
+    rank: { label: "#", num: true, sort: false, cell: (g, i) => el("td", { cls: "num", text: String(i + 1) }) },
+    name: { label: "Game", get: g => g.name.toLowerCase(), cell: g => gameCell(g) },
+    genre: { label: "Genre", get: g => (g.genre + " " + (g.sub || "")).toLowerCase(), cell: g => el("td", { text: g.genre + (g.sub ? " · " + g.sub : "") }) },
+    mech: { label: "Core mechanics", get: g => (g.mech || []).map(mLabel).join(" ").toLowerCase(), cell: g => chips(g.mech, mLabel, 2) },
+    theme: { label: "Themes", get: g => (g.theme || []).map(tLabel).join(" ").toLowerCase(), cell: g => chips(g.theme, tLabel, 2) },
+    ccu: { label: "CCU", num: true, get: g => g.ccu, cell: g => el("td", { cls: "num", text: full(g.ccu) }) },
+    ch24: { label: "24h", num: true, get: g => g.ch24, cell: g => el("td", { cls: "num" }, delta(g.ch24)) },
+    spark: { label: "72h", sort: false, cell: g => el("td", {}, sparkSvg(g.spark)) },
+    peak: { label: "Peak seen", num: true, get: g => g.peak, cell: g => el("td", { cls: "num", text: full(g.peak) }) },
+    age: { label: "Age (days)", num: true, get: g => g.age, cell: g => el("td", { cls: "num", text: g.age == null ? "–" : String(g.age) }) },
+    like: { label: "Likes", num: true, get: g => g.like, cell: g => el("td", { cls: "num", text: pct(g.like) }) },
+    mat: { label: "Maturity", get: g => MAT_ORDER[g.mat] || (g.mat ? 9 : null), cell: g => el("td", { text: g.mat ? cap(g.mat) + (g.min_age ? ` (${g.min_age}+)` : "") : "–" }) },
+    fav: { label: "Favorites", num: true, get: g => g.fav, cell: g => el("td", { cls: "num", text: fmt(g.fav) }) },
+    visits: { label: "Visits", num: true, get: g => g.visits, cell: g => el("td", { cls: "num", text: fmt(g.visits) }) },
+    passes: { label: "Passes", num: true, get: g => g.passes, cell: g => el("td", { cls: "num", text: g.passes == null ? "–" : String(g.passes) }) },
+    price: { label: "Median pass", num: true, get: g => g.price, cell: g => el("td", { cls: "num", text: g.price == null ? "–" : g.price + " R$" }) },
+    ytv: { label: "YouTube views (7d)", num: true, get: g => g.ytv, cell: g => el("td", { cls: "num", text: fmt(g.ytv) }) },
+    bday: { label: "Badge awards/day", num: true, get: g => g.bday, cell: g => el("td", { cls: "num", text: fmt(g.bday) }) },
+    flags: { label: "Flags", get: g => g.flags || "", cell: g => el("td", { text: (g.flags || "").replace(/\|/g, ", ") || "–" }) },
+  };
+  function sortRows(rows, key, dir) {
+    const c = COL[key]; if (!c || !c.get) return rows;
+    const s = dir === "asc" ? 1 : -1;
+    return rows.slice().sort((a, b) => { const x = c.get(a), y = c.get(b); if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (typeof x === "string" ? x.localeCompare(y) : x - y) * s; });
+  }
+  // a sortable table: state = {key, dir}; numbers start high-to-low, text A-Z
+  function SortTable(tableId, cols, opts = {}) {
+    const t = document.getElementById(tableId);
+    const st = { key: opts.key || null, dir: opts.dir || "desc", shown: opts.page || Infinity, rows: [] };
+    function render() {
+      const rows = st.key ? sortRows(st.rows, st.key, st.dir) : st.rows;
+      const head = el("tr", {}, cols.map(k => { const c = COL[k]; const sortable = c.sort !== false && !!c.get; const on = st.key === k; const th = el("th", { cls: (c.num ? "num " : "") + (sortable ? "sortable" : ""), "aria-sort": on ? (st.dir === "asc" ? "ascending" : "descending") : null, scope: "col" }, [c.label, sortable ? el("span", { cls: "arr", text: on ? (st.dir === "asc" ? "↑" : "↓") : "" }) : null]); if (sortable) th.addEventListener("click", () => { if (st.key === k) st.dir = st.dir === "asc" ? "desc" : "asc"; else { st.key = k; st.dir = c.num || k === "mat" ? "desc" : "asc"; } render(); if (opts.onSort) opts.onSort(st); }); return th; }));
+      const shown = rows.slice(0, st.shown);
+      const body = shown.map((g, i) => { const tr = el("tr", { cls: "clickable", tabindex: "0" }, cols.map(k => COL[k].cell(g, i))); tr.addEventListener("click", () => openDrawer(g)); tr.addEventListener("keydown", e => { if (e.key === "Enter") openDrawer(g); }); return tr; });
+      t.replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : el("tr", {}, el("td", { cls: "empty", colspan: cols.length, text: opts.empty || "Nothing here yet" }))));
+      if (opts.more) { opts.more.style.display = rows.length > st.shown ? "" : "none"; opts.more.textContent = `Show more (${full(rows.length - st.shown)} left)`; }
+      return rows;
+    }
+    if (opts.more) opts.more.addEventListener("click", () => { st.shown += 50; render(); });
+    return { st, set(rows, keepPage) { st.rows = rows; if (!keepPage && opts.page) st.shown = opts.page; return render(); }, render, sorted: () => st.key ? sortRows(st.rows, st.key, st.dir) : st.rows };
   }
 
-  renderTable("young", young.slice(0, 25), { empty: "No young games above the floor yet" });
+  // ---------- young games
+  const youngTable = SortTable("young-table", ["rank", "name", "genre", "mech", "ccu", "ch24", "spark", "peak", "age", "like", "mat"], { key: "ccu", dir: "desc", page: 25, more: document.getElementById("young-more"), empty: "No young games above the floor yet" });
+  youngTable.set(young);
 
-  // watchlist
-  const byId = Object.fromEntries(G.map(g => [g.id, g]));
-  const watchRows = D.watch.map(w => Object.assign({}, byId[w.universe_id] || { id: w.universe_id, name: w.name, niches: [], spark: [], genre: "–" }, { flags: w.flags }));
-  renderTable("watch", watchRows, { cols: [{ k: "name", label: "Game" }, { k: "flags", label: "Flags" }, { k: "ccu", label: "CCU", num: true }, { k: "spark", label: "72h" }, { k: "age", label: "Age (days)", num: true }], empty: "No flags yet — signals switch on once there is enough history" });
+  // ---------- watchlist
+  const watchRows = (D.watch || []).map(w => Object.assign({}, byId[w.universe_id] || { id: w.universe_id, name: w.name, mech: [], theme: [], spark: [], genre: "–", ccu: 0 }, { flags: w.flags }));
+  SortTable("watch-table", ["name", "flags", "genre", "ccu", "spark", "age"], { key: "ccu", empty: "No flags yet — signals switch on once there is enough history" }).set(watchRows);
 
-  // all games: search, filters, sort, paging
+  // ---------- all games
   const gf = document.getElementById("genre-filter");
   for (const g of D.genres) gf.append(el("option", { value: g.name, text: `${g.name} (${g.games})` }));
-  const state = { q: "", genre: "", age: "", sort: { k: "ccu", dir: "desc" }, shown: 50 };
-  function apply() {
-    const q = state.q.toLowerCase();
-    let rows = G.filter(g => (!state.genre || g.genre === state.genre) && (!state.age || (g.age != null && g.age <= +state.age)) &&
-      (!q || g.name.toLowerCase().includes(q) || (g.creator || "").toLowerCase().includes(q) || g.niches.some(n => n.includes(q))));
-    const { k, dir } = state.sort, s = dir === "asc" ? 1 : -1;
-    rows.sort((a, b) => { const x = a[k], y = b[k]; if (x == null) return 1; if (y == null) return -1; return (typeof x === "string" ? x.localeCompare(y) : x - y) * s; });
-    renderTable("all", rows.slice(0, state.shown), { sort: state.sort, onSort: key => { state.sort = { k: key, dir: state.sort.k === key && state.sort.dir === "desc" ? "asc" : "desc" }; apply(); }, empty: "No games match" });
-    const more = document.getElementById("more");
-    more.style.display = rows.length > state.shown ? "" : "none";
-    more.textContent = `Show more (${full(rows.length - state.shown)} left)`;
-  }
-  document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; state.shown = 50; apply(); });
-  gf.addEventListener("change", e => { state.genre = e.target.value; state.shown = 50; apply(); });
-  document.getElementById("age-filter").addEventListener("change", e => { state.age = e.target.value; state.shown = 50; apply(); });
-  document.getElementById("more").addEventListener("click", () => { state.shown += 100; apply(); });
-  apply();
+  const allTable = SortTable("all-table", ["rank", "name", "genre", "mech", "ccu", "ch24", "spark", "peak", "age", "like", "mat"], { key: "ccu", dir: "desc", page: 50, more: document.getElementById("all-more"), empty: "No games match" });
+  const allState = { q: "", genre: "", age: "" };
+  const matches = (g, q) => !q || g.name.toLowerCase().includes(q) || (g.creator || "").toLowerCase().includes(q) || (g.niches || []).some(n => n.includes(q)) || (g.mech || []).some(m => mLabel(m).toLowerCase().includes(q)) || (g.theme || []).some(t => tLabel(t).toLowerCase().includes(q));
+  function applyAll() { const q = allState.q.toLowerCase().trim(); allTable.set(G.filter(g => (!allState.genre || g.genre === allState.genre) && (!allState.age || (g.age != null && g.age <= +allState.age)) && matches(g, q))); }
+  document.getElementById("q").addEventListener("input", e => { allState.q = e.target.value; applyAll(); });
+  gf.addEventListener("change", e => { allState.genre = e.target.value; applyAll(); });
+  document.getElementById("age-filter").addEventListener("change", e => { allState.age = e.target.value; applyAll(); });
+  applyAll();
 
-  // youtube
-  const yt = document.getElementById("yt");
-  if (!D.youtube.length) yt.append(el("tbody", {}, el("tr", {}, el("td", { cls: "empty", text: "No coverage data yet — it fills in daily" }))));
-  else {
-    yt.append(el("thead", {}, el("tr", {}, ["Game", "Videos (7d)", "Views (7d)", "Top video", "CCU"].map((h, i) => el("th", { cls: i && i !== 3 ? "num" : "", text: h })))));
-    yt.append(el("tbody", {}, D.youtube.map(y => { const g = byId[y.id] || { id: y.id, name: y.name, place: "", creator: "" }; const vid = /^[\w-]{6,20}$/.test(y.top) ? el("a", { href: "https://www.youtube.com/watch?v=" + y.top, target: "_blank", rel: "noopener", text: "watch" }) : el("span", { text: "–" }); return el("tr", {}, [gameCell(g), el("td", { cls: "num", text: full(y.videos) }), el("td", { cls: "num", text: full(y.views) }), el("td", {}, vid), el("td", { cls: "num", text: full(g.ccu) })]); })));
+  // ---------- YouTube
+  SortTable("yt-table", ["name", "ytv", "ccu", "genre", "age"], { key: "ytv", empty: "No coverage data yet — it fills in daily" }).set((D.youtube || []).map(y => Object.assign({}, byId[y.id] || { id: y.id, name: y.name, ccu: null, genre: "–", mech: [] }, { ytv: y.views, ytn: y.videos })));
+
+  // ---------- game detail drawer
+  const drawer = document.getElementById("drawer"), shade = document.getElementById("shade");
+  let lastFocus = null;
+  function openDrawer(g) {
+    lastFocus = document.activeElement;
+    const kv = pairs => el("div", { cls: "kv" }, pairs.flatMap(([k, v]) => [el("span", { text: k }), el("span", {}, v)]));
+    const chipRow = (list, labeler) => (list && list.length) ? el("span", {}, list.map(k => el("span", { cls: "chip", text: labeler(k) }))) : "–";
+    const bench = (g.mech || []).map(m => TR.benchmarks[m]).filter(Boolean)[0];
+    drawer.replaceChildren(
+      el("button", { cls: "close", text: "Close", onclick: closeDrawer, "aria-label": "Close details" }),
+      el("h2", { text: g.name }),
+      el("div", { cls: "note", text: [g.creator, g.genre + (g.sub ? " · " + g.sub : ""), g.mat ? cap(g.mat) + " maturity" : null].filter(Boolean).join(" · ") }),
+      link(g) ? el("a", { cls: "open", href: link(g), target: "_blank", rel: "noopener", text: "Open on Roblox ↗" }) : null,
+      el("div", { cls: "stats" }, [["CCU", full(g.ccu)], ["Peak seen", full(g.peak)], ["Age", g.age == null ? "–" : g.age + " days"], ["Likes", pct(g.like)], ["24h", g.ch24 == null ? "–" : (g.ch24 >= 0 ? "+" : "") + Math.round(g.ch24 * 100) + "%"], ["Visits", fmt(g.visits)]].map(([k, v]) => el("div", {}, [el("b", { text: v }), el("span", { text: k })]))),
+      el("h3", { text: "Design" }),
+      kv([["Core mechanics", chipRow(g.mech, mLabel)], ["Themes", chipRow(g.theme, tLabel)], ["Title formula", chipRow(g.form, fLabel)], ["Niches", chipRow(g.niches, n => n.replace(/_/g, " "))]]),
+      el("h3", { text: "Monetization" }),
+      kv([["Game passes", g.passes == null ? "not fetched yet" : String(g.passes)], ["Median pass price", g.price == null ? "–" : g.price + " R$"], ["Pass types", chipRow(g.ptypes, x => x)],
+          ["Leaders in its mechanic", bench ? `${bench.passes_median ?? "–"} passes, ~${bench.pass_price_median ?? "–"} R$ median` : "–"]]),
+      el("h3", { text: "Progression & reach" }),
+      kv([["Badges", g.badges == null ? "not fetched yet" : String(g.badges)], ["2nd badge / 1st badge", g.funnel == null ? "–" : pct(g.funnel) + " of players"], ["Badge awards, past day", fmt(g.bday)], ["YouTube, last 7 days", g.ytv == null ? "not checked" : `${fmt(g.ytv)} views across ${g.ytn} videos`], ["Favorites", fmt(g.fav)]]),
+      el("p", { cls: "note", style: "margin-top:16px", text: "Badge awards per day roughly tracks new players (most games award a badge on first join). The 2nd/1st badge ratio is a rough retention signal." }));
+    drawer.classList.add("on"); shade.classList.add("on"); drawer.setAttribute("aria-hidden", "false");
+    drawer.querySelector(".close").focus();
   }
-  document.getElementById("foot").textContent = "Data: Roblox public game APIs, Rolimons, YouTube Data API. Rebuilt after every collection run.";
+  function closeDrawer() { drawer.classList.remove("on"); shade.classList.remove("on"); drawer.setAttribute("aria-hidden", "true"); if (lastFocus) lastFocus.focus(); }
+  shade.addEventListener("click", closeDrawer);
+  addEventListener("keydown", e => { if (e.key === "Escape" && drawer.classList.contains("on")) closeDrawer(); });
+
+  // ---------- leaderboards
+  const LB = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 };
+  const METRICS = [["ccu", "CCU"], ["like", "Likes %"], ["age", "Age"], ["peak", "Peak seen"], ["ch24", "24h change"], ["fav", "Favorites"], ["visits", "Visits"], ["ytv", "YouTube views"], ["bday", "Badge awards/day"], ["passes", "Game passes"], ["price", "Median pass price"]];
+  const PRESETS = [
+    { name: "Top 25 by CCU", s: {} },
+    { name: "Newest hits (≤ 30 days)", s: { amax: 30, metric: "ccu" } },
+    { name: "Best liked (≥ 5K CCU)", s: { cmin: 5000, metric: "like" } },
+    { name: "Minimal maturity top 25", s: { mat: "minimal" } },
+    { name: "Rising simulators (≤ 60 days)", s: { genre: "Simulation", amax: 60 } },
+    { name: "Most YouTube coverage", s: { metric: "ytv" } },
+    { name: "Oldest still-big games", s: { cmin: 10000, metric: "age" } },
+  ];
+  const $ = id => document.getElementById(id);
+  const fillSelect = (sel, items) => items.forEach(([v, t]) => sel.append(el("option", { value: v, text: t })));
+  fillSelect($("lb-genre"), D.genres.map(g => [g.name, `${g.name} (${g.games})`]));
+  fillSelect($("lb-mat"), [...new Set(G.map(g => g.mat).filter(Boolean))].sort((a, b) => (MAT_ORDER[a] || 9) - (MAT_ORDER[b] || 9)).map(m => [m, cap(m)]));
+  fillSelect($("lb-mech"), (TR.mechanics || []).map(m => [m.key, `${m.label} (${m.games})`]));
+  fillSelect($("lb-theme"), (TR.themes || []).map(t => [t.key, `${t.label} (${t.games})`]));
+  fillSelect($("lb-metric"), METRICS);
+  if (!$("lb-mat").options[1]) $("lb-mat").append(el("option", { value: "", text: "(filling in from the next runs)", disabled: "" }));
+  function refreshSubs() { const s = $("lb-sub"), cur = LB.sub; s.replaceChildren(el("option", { value: "", text: "All" })); const subs = {}; G.filter(g => !LB.genre || g.genre === LB.genre).forEach(g => { if (g.sub) subs[g.sub] = (subs[g.sub] || 0) + 1; }); Object.entries(subs).sort((a, b) => b[1] - a[1]).forEach(([k, n]) => s.append(el("option", { value: k, text: `${k} (${n})` }))); s.value = subs[cur] ? cur : ""; LB.sub = s.value; }
+  const saved = () => store.get("rtt.boards", []);
+  function refreshPresets() { const p = $("lb-preset"); p.replaceChildren(el("option", { value: "", text: "Custom" })); PRESETS.forEach((x, i) => p.append(el("option", { value: "b" + i, text: x.name }))); saved().forEach((x, i) => p.append(el("option", { value: "s" + i, text: "★ " + x.name }))); }
+  const lbTable = SortTable("lb-table", ["rank", "name", "genre", "mat", "mech", "ccu", "ch24", "like", "age", "ytv"], { empty: "No games match these filters", onSort: s => { LB.metric = COL[s.key] && METRICS.some(m => m[0] === s.key) ? s.key : LB.metric; } });
+  function lbFromInputs() { LB.q = $("lb-q").value; LB.genre = $("lb-genre").value; LB.sub = $("lb-sub").value; LB.mat = $("lb-mat").value; LB.mech = $("lb-mech").value; LB.theme = $("lb-theme").value; LB.amin = $("lb-amin").value; LB.amax = $("lb-amax").value; LB.cmin = $("lb-cmin").value; LB.lmin = $("lb-lmin").value; LB.metric = $("lb-metric").value; LB.dir = $("lb-dir").value; LB.n = +$("lb-n").value; }
+  function lbToInputs() { $("lb-q").value = LB.q || ""; $("lb-genre").value = LB.genre || ""; refreshSubs(); $("lb-sub").value = LB.sub || ""; $("lb-mat").value = LB.mat || ""; $("lb-mech").value = LB.mech || ""; $("lb-theme").value = LB.theme || ""; $("lb-amin").value = LB.amin ?? ""; $("lb-amax").value = LB.amax ?? ""; $("lb-cmin").value = LB.cmin ?? ""; $("lb-lmin").value = LB.lmin ?? ""; $("lb-metric").value = LB.metric || "ccu"; $("lb-dir").value = LB.dir || "desc"; $("lb-n").value = String(LB.n || 25); }
+  let lbResult = [];
+  function lbRun() {
+    const q = (LB.q || "").toLowerCase().trim(), amin = LB.amin === "" ? null : +LB.amin, amax = LB.amax === "" ? null : +LB.amax, cmin = LB.cmin === "" ? null : +LB.cmin, lmin = LB.lmin === "" ? null : +LB.lmin / 100;
+    let rows = G.filter(g => (!LB.genre || g.genre === LB.genre) && (!LB.sub || g.sub === LB.sub) && (!LB.mat || g.mat === LB.mat) && (!LB.mech || (g.mech || []).includes(LB.mech)) && (!LB.theme || (g.theme || []).includes(LB.theme)) &&
+      (amin == null || (g.age != null && g.age >= amin)) && (amax == null || (g.age != null && g.age <= amax)) && (cmin == null || g.ccu >= cmin) && (lmin == null || (g.like != null && g.like >= lmin)) && matches(g, q));
+    const total = rows.length;
+    rows = sortRows(rows, LB.metric, LB.dir).slice(0, LB.n);
+    lbResult = rows;
+    lbTable.st.key = null; lbTable.set(rows);
+    const metricName = (METRICS.find(m => m[0] === LB.metric) || [0, "CCU"])[1];
+    $("lb-note").textContent = `${full(total)} games match · ranked by ${metricName}, ${LB.dir === "desc" ? "highest" : "lowest"} first · tap any column to re-sort the board`;
+  }
+  ["lb-q", "lb-amin", "lb-amax", "lb-cmin", "lb-lmin"].forEach(id => $(id).addEventListener("input", () => { lbFromInputs(); $("lb-preset").value = ""; lbRun(); }));
+  ["lb-genre", "lb-sub", "lb-mat", "lb-mech", "lb-theme", "lb-metric", "lb-dir", "lb-n"].forEach(id => $(id).addEventListener("change", () => { if (id === "lb-genre") { LB.genre = $("lb-genre").value; refreshSubs(); } lbFromInputs(); $("lb-preset").value = ""; lbRun(); }));
+  $("lb-preset").addEventListener("change", e => { const v = e.target.value; if (!v) return; const base = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 }; const src = v[0] === "b" ? PRESETS[+v.slice(1)].s : saved()[+v.slice(1)].s; Object.assign(LB, base, src); lbToInputs(); lbRun(); });
+  $("lb-save").addEventListener("click", () => { const name = prompt("Name this board", "My board"); if (!name) return; const list = saved(); list.push({ name: name.slice(0, 60), s: Object.assign({}, LB) }); store.set("rtt.boards", list); refreshPresets(); $("lb-preset").value = "s" + (list.length - 1); });
+  $("lb-share").addEventListener("click", e => { const url = location.href.split("#")[0] + "#board=" + encodeURIComponent(JSON.stringify(LB)); copyText(url, e.currentTarget); });
+  $("lb-csv").addEventListener("click", () => {
+    const cols = ["rank", "name", "creator", "universe_id", "genre", "subgenre", "maturity", "ccu", "peak", "age_days", "likes", "mechanics", "themes", "youtube_views_7d", "url"];
+    const esc = v => { const s = v == null ? "" : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+    const lines = [cols.join(",")].concat(lbResult.map((g, i) => [i + 1, g.name, g.creator, g.id, g.genre, g.sub, g.mat, g.ccu, g.peak, g.age, g.like, (g.mech || []).map(mLabel).join("; "), (g.theme || []).map(tLabel).join("; "), g.ytv, link(g)].map(esc).join(",")));
+    const a = el("a", { href: URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" })), download: "roblox-leaderboard.csv" }); document.body.append(a); a.click(); a.remove();
+  });
+  refreshPresets(); refreshSubs();
+  try { const m = location.hash.match(/board=([^&]+)/); if (m) { Object.assign(LB, JSON.parse(decodeURIComponent(m[1]))); setTimeout(() => document.getElementById("boards").scrollIntoView(), 50); } } catch (e) {}
+  lbToInputs(); lbRun();
+
+  // ---------- idea generator
+  const igMech = $("ig-mech"), igTheme = $("ig-theme"), igScope = $("ig-scope");
+  const risingMech = TR.rising.mechanic || [], mechInfo = Object.fromEntries((TR.mechanics || []).map(m => [m.key, m])), themeInfo = Object.fromEntries((TR.themes || []).map(t => [t.key, t]));
+  fillSelect(igMech, (TR.mechanics || []).filter(m => TAX.mechanics[m.key]).map(m => [m.key, `${m.label}${(m.momentum_adj || 0) > 1.05 ? " · " + m.momentum_adj + "×" : ""}`]));
+  fillSelect(igTheme, Object.keys(TAX.themes).map(k => [k, tLabel(k) + (themeInfo[k] && (themeInfo[k].momentum_adj || 0) > 1.05 ? " · " + themeInfo[k].momentum_adj + "×" : "")]));
+  if (D.idea_lab_url) { const a = $("ig-lab"); a.href = D.idea_lab_url; a.style.display = ""; }
+  // which mechanic x theme pairs already exist among tracked games (freshness check)
+  const comboN = {}; G.forEach(g => (g.mech || []).forEach(m => (g.theme || []).forEach(t => { const k = m + "|" + t; comboN[k] = (comboN[k] || 0) + 1; })));
+  const STOP = new Set(["the", "a", "an", "of", "for", "to", "and", "in", "on", "your", "my", "get", "x2", "x3", "update", "upd", "new", "roblox"]);
+  const toks = s => new Set(s.toLowerCase().replace(/[^a-z0-9+ ]+/g, " ").split(/\s+/).filter(w => w && !STOP.has(w)));
+  const nameToks = G.map(g => ({ g, t: toks(g.name) }));
+  function closest(title) { const t = toks(title); let best = null, bs = 0; for (const n of nameToks) { if (!n.t.size) continue; let inter = 0; t.forEach(w => { if (n.t.has(w)) inter++; }); const j = inter / (t.size + n.t.size - inter); if (j > bs) { bs = j; best = n.g; } } return { game: best, sim: bs }; }
+  function mulberry(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function pick(rand, items, weight) { const w = items.map(weight).map(x => Math.max(0, x || 0)); const sum = w.reduce((a, b) => a + b, 0); if (!sum) return items[Math.floor(rand() * items.length)]; let r = rand() * sum; for (let i = 0; i < items.length; i++) { r -= w[i]; if (r <= 0) return items[i]; } return items[items.length - 1]; }
+  const SCOPE_RANK = { small: 0, medium: 1, large: 2 }, SCOPE_NAME = ["small", "medium", "large"], SCOPE_TEXT = { small: "Small · 1–2 weeks", medium: "Medium · 3–6 weeks", large: "Large · 6+ weeks" };
+  const PASS_TEXT = { multiplier: "2x money/progress pass", speed: "speed pass", vip: "VIP pass", auto: "auto-farm pass", storage: "extra storage/slots", luck: "luck pass", skip: "skip-timer pass", cosmetic: "cosmetic trails/auras" };
+  const FEAT_TEXT = { rebirth: "rebirths with a permanent multiplier", offline_earnings: "offline earnings", daily_rewards: "daily rewards", codes: "codes from socials", limited_events: "timed events", mutations: "rare mutations", pets: "pets that boost you", trading: "trading", stealing: "stealing from other players", base_building: "a base to show off", leaderboards: "server leaderboards", luck_boost: "luck boosts", pvp: "PvP", private_servers: "private servers", auto_farm: "auto-farm" };
+  // hand-written copy per mechanic: title patterns (with the title formula they follow), pitch, loop steps, twist line
+  // {N} = theme noun, {Ns} = plural, {S} = a stat
+  const MC = {
+    steal_raid: { t: [["Steal a {N}", "steal_a"], ["Steal {Ns} From Your Friends", null], ["{N} Heist", null]], p: "Build a base full of {Ns} that earn you money, then sneak into other bases to steal their best ones.", s: ["Collect {Ns} that earn money while they sit in your base", "Sneak into other players' bases and steal their rarest {Ns}"], w: "raid other players' bases to steal their best {Ns}" },
+    hatch_gacha: { t: [["Hatch {Ns}", null], ["Open {N} Eggs", null], ["{N} Hatchers", null]], p: "Earn coins, hatch eggs and chase ultra-rare {Ns} that boost everything you do.", s: ["Earn coins and hatch {N} eggs for random rarities", "Equip your best {Ns} for stacking boosts"], w: "spend coins on {N} eggs for rare pets that boost you" },
+    rng_roll: { t: [["{N} RNG", null], ["Roll a {N}", null], ["Roll for {Ns}", "verb_for_noun"]], p: "Roll for {Ns} across a ladder of rarities, from common to 1-in-a-million secrets.", s: ["Roll for a random {N}, from common to secret rarity", "Show off your rarest rolls and stack luck boosts"], w: "roll for rare {N} variants with luck boosts" },
+    plus_one_stat: { t: [["+1 {S} Every Step: {Ns}", "plus_one"], ["+1 {S} {N} Race", "plus_one"], ["+1 {S} for {Ns}", "plus_one"]], p: "Every step gives +1 {s}. Use it to reach farther {N} zones packed with bigger rewards.", s: ["Gain +1 {s} every step, jump or second", "Use your {s} to reach farther {N} zones with bigger rewards"], w: "gain +1 {s} every step to reach farther zones" },
+    clicker: { t: [["{N} Clicker", null], ["Click for {Ns}", "verb_for_noun"]], p: "Tap to earn, upgrade your clicks and unlock wilder {Ns} with every milestone.", s: ["Tap to earn currency and {Ns}", "Buy upgrades that multiply every click"], w: "tap for bonus currency between runs" },
+    break_mine: { t: [["Break {Ns} for Loot", null], ["Dig for {Ns}", "verb_for_noun"], ["Smash a {N}", null]], p: "Break and dig through {Ns} for loot drops, then upgrade your tools to crack bigger ones.", s: ["Break {Ns} for random loot drops", "Upgrade your tool to break bigger, richer {Ns}"], w: "break open {Ns} for surprise drops" },
+    hit_swing: { t: [["Swing for {Ns}", "verb_for_noun"], ["Launch a {N}", null], ["Hit {Ns} for Distance", null]], p: "Swing, hit and launch {Ns} as far as you can; distance pays out and unlocks rarer {Ns}.", s: ["Swing or launch {Ns} as far as you can", "Distance pays out; spend it on power and rarer {Ns}"], w: "launch {Ns} for distance bonuses" },
+    grow_farm: { t: [["Grow a {N} Garden", null], ["Grow {Ns} to Get Rich", "get_rich"]], p: "Plant, grow and harvest {Ns}, sell the rare mutations and expand your plot.", s: ["Plant and grow {Ns} on your plot", "Harvest, sell rare mutations, expand your land"], w: "grow {Ns} on a plot that earns while you're away" },
+    tycoon_build: { t: [["{N} Tycoon", "tycoon"], ["Build a {N} Empire", "build_a"]], p: "Build a {N} empire that earns money while you play, and keep expanding it.", s: ["Build machines and rooms that earn money automatically", "Expand your {N} empire with every upgrade"], w: "build a base of {Ns} that earns over time" },
+    merge: { t: [["Merge {Ns}", null], ["{N} Merge", null]], p: "Merge matching {Ns} into stronger ones and race to discover the final form.", s: ["Collect and merge matching {Ns}", "Discover stronger {N} forms with each merge"], w: "merge duplicate {Ns} into stronger forms" },
+    collect_index: { t: [["Collect Every {N}", null], ["{N} Index", null]], p: "Hunt down every {N} in the index; each new find adds a permanent bonus.", s: ["Find and collect new {Ns} across the map", "Every index entry adds a permanent boost"], w: "fill the {N} index for permanent bonuses" },
+    fishing: { t: [["Fish for {Ns}", "verb_for_noun"], ["{N} Fishing", null]], p: "Cast, reel and catch {Ns} of every rarity, then sell them to upgrade your rod.", s: ["Cast and reel in {Ns} of every rarity", "Sell catches to upgrade rods and reach new waters"], w: "fish up rare {Ns} between runs" },
+    obby_climb: { t: [["Climb the {N} Tower", null], ["{N} Obby", null]], p: "Climb a tower of {N} obstacles; every checkpoint pays out and unlocks shortcuts.", s: ["Climb past {N}-themed obstacles", "Checkpoints pay out; buy jump and speed boosts"], w: "climb obstacle towers for bonus rewards" },
+    escape_run: { t: [["Escape the {N}", "escape_x"], ["Run From {Ns}", null]], p: "Run from a chasing {N} hazard, grab loot on the way and make it back alive.", s: ["Run out, grab loot and escape the {N} before it hits", "Spend loot on speed so you can go farther next time"], w: "escape a deadly {N} wave with your loot" },
+    survive_nights: { t: [["Survive the {N}", "survive_x"], ["Nights with {Ns}", null]], p: "Survive the night against {Ns} with your friends; every night survived unlocks more.", s: ["Gather supplies by day", "Survive waves of {Ns} by night"], w: "survive a nightly {N} event" },
+    fight_battle: { t: [["{N} Battlegrounds", null], ["Fight {Ns}", null]], p: "Fight {Ns} and other players with flashy {N} powers and climb the ranks.", s: ["Fight enemies and players with {N} abilities", "Unlock new moves and climb the ranks"], w: "battle {N} bosses for rare drops" },
+    shooter: { t: [["{N} Shooters", null], ["Blast the {Ns}", null]], p: "Fast rounds of {N}-themed shooting with unlockable weapons.", s: ["Play quick shooting rounds", "Unlock {N}-themed weapons and skins"], w: "blast {Ns} in short arena rounds" },
+    race_drive: { t: [["{N} Racing", null], ["Race {Ns}", null]], p: "Race {Ns} on wild tracks, earn cash and upgrade your ride.", s: ["Race on {N}-themed tracks", "Earn cash to upgrade speed and handling"], w: "race {Ns} for bonus cash" },
+    tower_defense: { t: [["{N} Tower Defense", null], ["Defend From {Ns}", null]], p: "Place units to stop waves of {Ns}, and summon stronger units as you win.", s: ["Place units to stop waves of {Ns}", "Summon and upgrade stronger units"], w: "defend your base from {N} waves" },
+    roleplay_life: { t: [["{N} Life", null], ["{N} Town", null]], p: "Live out a {N}-themed life with friends: jobs, homes and secrets to find.", s: ["Pick a role and a home", "Earn money from jobs and customize everything"], w: "roleplay in a shared {N} town" },
+    trade: { t: [["Trade {Ns}", null], ["{N} Market", null]], p: "Collect and trade {Ns} with other players to build the most valuable collection.", s: ["Collect {Ns} of different rarities", "Trade with players to build the best collection"], w: "trade {Ns} with other players" },
+    cook_serve: { t: [["{N} Restaurant", null], ["Cook {Ns}", null]], p: "Run a {N}-themed restaurant: cook, serve and upgrade your kitchen.", s: ["Cook and serve {N} orders", "Upgrade your kitchen and hire helpers"], w: "serve {N} orders for tips" },
+    pet_care: { t: [["Raise a {N}", null], ["Adopt a {N}", null]], p: "Adopt and raise {Ns}, care for them and grow them into rare forms.", s: ["Adopt and care for {Ns}", "Grow them into rare forms"], w: "raise {Ns} that grow into rare forms" },
+    dress_style: { t: [["{N} Dress Up", null], ["Style the {N}", null]], p: "Style {N}-themed outfits and win the room's vote.", s: ["Style an outfit to a theme", "Win votes to unlock more items"], w: "style {N} outfits for votes" },
+    quiz_guess: { t: [["Guess the {N}", null], ["{N} Quiz", null]], p: "Guess the {N} faster than everyone else to win rounds and rewards.", s: ["Guess the {N} from a quick clue", "Win rounds to climb the leaderboard"], w: "answer {N} questions for bonuses" },
+    sell_shop: { t: [["Sell {Ns} to Get Rich", "get_rich"], ["{N} Shop", null]], p: "Stock and sell {Ns} in your own shop, then expand into an empire.", s: ["Stock and sell {Ns} to customers", "Expand your shop with each upgrade"], w: "sell {Ns} in your own shop" },
+    forge_craft: { t: [["Forge {N} Weapons", null], ["{N} Forge", null]], p: "Collect loot from {Ns} and forge it into stronger gear for tougher bosses.", s: ["Collect loot from {Ns}", "Forge stronger gear to take on bigger bosses"], w: "forge loot into gear" },
+    dice_cards: { t: [["Roll the {N} Dice", null], ["{N} Cards", null]], p: "Roll dice or play cards to summon {Ns}, then upgrade your deck.", s: ["Roll dice to summon {Ns}", "Upgrade your dice and collection"], w: "roll dice for bonus {Ns}" },
+    paint_create: { t: [["Paint {Ns} to Get Rich", "get_rich"], ["Draw a {N}", null]], p: "Paint or build {Ns} and sell your creations to visitors for cash.", s: ["Paint or build {Ns}", "Sell your art to visitors and upgrade your studio"], w: "paint {Ns} to sell" },
+    party_minigames: { t: [["{N} Party", null], ["{N} Minigames", null]], p: "Quick {N}-themed minigame rounds with friends; winners earn rare rewards.", s: ["Play quick minigame rounds", "Win to earn rare rewards"], w: "play {N} minigames between rounds" },
+    job_shift: { t: [["{N} Job Simulator", "simulator"], ["Work at the {N}", null]], p: "Work shifts at a {N}-themed job, earn pay and get promoted.", s: ["Work shifts and complete tasks", "Get promoted and unlock new jobs"], w: "work shifts for bonus pay" },
+  };
+  const STATS = ["Speed", "Size", "Strength", "Jump", "Luck", "Power"];
+  const fill = (str, ctx) => str.replace(/\{N\}/g, ctx.N).replace(/\{Ns\}/g, ctx.Ns).replace(/\{S\}/g, ctx.S).replace(/\{s\}/g, ctx.S.toLowerCase())
+    .replace(/\b([Aa]) ([AEIOUaeiou])/g, "$1n $2");
+  // how well a theme suits a mechanic: 1 = natural fit, 0.25 = workable, 0 = nonsense (no "Dig for Songs")
+  function fit(m, t) { const f = (TAX.mechanics[m] || {}).fits || { primary: [], ok: [] }, k = (TAX.themes[t] || {}).kinds || []; if (!f.primary.length) return 0.5; if (k.some(x => f.primary.includes(x))) return 1; if (k.some(x => f.ok.includes(x))) return 0.25; return 0; }
+  function themeCtx(t, rand) { const T = TAX.themes[t] || {}; const N = T.noun || tLabel(t); return { N, Ns: T.noun_plural || N, S: STATS[Math.floor(rand() * STATS.length)] }; }
+  function makeIdea(rand, opts, used) {
+    for (let attempt = 0; attempt < 60; attempt++) {
+      // 1. core mechanic: rising ones weighted by momentum and young CCU; established ones occasionally for variety
+      const pool = opts.mech ? [mechInfo[opts.mech] || { key: opts.mech, momentum_adj: 1, young_ccu: 0 }] : (risingMech.length ? risingMech.concat((TR.mechanics || []).slice(0, 8)) : (TR.mechanics || []).slice(0, 12));
+      const mi = pick(rand, pool, x => (risingMech.includes(x) ? 1 : 0.25) * Math.pow(x.momentum_adj || 1, 2) * Math.log10((x.young_ccu || 0) + 10));
+      const m = mi.key; if (!TAX.mechanics[m]) continue;
+      // 2. twist: a mechanic young hits pair with this one, else another rising one
+      const pairs = (TR.pairs || []).filter(p => p.a === m || p.b === m).map(p => ({ k: p.a === m ? p.b : p.a, w: p.young_ccu }));
+      let m2 = pairs.length && rand() < 0.75 ? pick(rand, pairs, p => p.w).k : pick(rand, risingMech.filter(x => x.key !== m), x => x.momentum_adj || 1)?.key;
+      if (opts.theme && m2 && fit(m2, opts.theme) === 0) m2 = null;
+      if (!m2 || m2 === m || !TAX.mechanics[m2]) m2 = null;
+      // 3. build size: the bigger of the two mechanics
+      const sc = SCOPE_NAME[Math.max(SCOPE_RANK[TAX.mechanics[m].scope] ?? 1, m2 ? (SCOPE_RANK[TAX.mechanics[m2].scope] ?? 1) : 0)];
+      if (opts.scope !== "all" && sc !== opts.scope) { if (opts.scope === "small" && m2 && attempt % 2) { m2 = null; } else continue; }
+      const scope = SCOPE_NAME[Math.max(SCOPE_RANK[TAX.mechanics[m].scope] ?? 1, m2 ? (SCOPE_RANK[TAX.mechanics[m2].scope] ?? 1) : 0)];
+      if (opts.scope !== "all" && scope !== opts.scope) continue;
+      // 4. theme: fresh for this mechanic (few or no tracked games pair them), favoring rising themes and known gaps
+      const gapThemes = new Set((TR.gaps || []).filter(g => g.mechanic === m).map(g => g.theme));
+      const themeKeys = opts.theme ? [opts.theme] : Object.keys(TAX.themes);
+      if (!opts.theme && !themeKeys.some(k => fit(m, k) > 0)) continue;
+      const t = pick(rand, themeKeys, k => { const ti = themeInfo[k] || { momentum_adj: 1, share: 0, games: 0 }; const n = comboN[m + "|" + k] || 0; const fresh = n === 0 ? 1 : n === 1 ? 0.35 : 0.04; const fm = opts.theme ? 1 : fit(m, k), f2 = m2 ? Math.max(fit(m2, k), 0.15) : 1; return fm * f2 * fresh * Math.pow(ti.momentum_adj || 1, 1.5) * (0.4 + Math.min(ti.share * 12, 1)) * (gapThemes.has(k) ? 3 : 1) * (used.themes.has(k) ? 0.15 : 1) * (opts.theme ? 1 : (ti.games >= 2 ? 1 : 0.5)); });
+      // 5. title from this mechanic's patterns, favoring the title formulas new hits use; then the novelty check
+      const fw = Object.fromEntries((TR.formulas || []).map(f => [f.key, f.momentum_adj || 1]));
+      const ctx = themeCtx(t, rand);
+      const pats = (MC[m] || { t: [["{N} " + ((TAX.mechanics[m] || {}).title_verb || "Simulator"), null]] }).t;
+      const [pat, formula] = pick(rand, pats, p => p[1] ? (fw[p[1]] || 1) : 1);
+      const title = fill(pat, ctx).replace(/\s+/g, " ").trim();
+      if (used.titles.has(title.toLowerCase())) continue;
+      const near = closest(title);
+      if (near.sim >= 0.67 || (near.game && near.game.name.toLowerCase().replace(/[^a-z0-9+ ]/g, "").includes(title.toLowerCase().replace(/[^a-z0-9+ ]/g, "")))) continue;
+      if (used.pairs.has(m + "|" + t) && attempt < 40) continue;
+      used.titles.add(title.toLowerCase()); used.pairs.add(m + "|" + t); used.themes.add(t);
+      return { title, m, m2, t, scope, formula, near, mi, ti: themeInfo[t], ctx };
+    }
+    return null;
+  }
+  function describe(idea) {
+    const M = TAX.mechanics[idea.m], C = MC[idea.m] || { p: "You " + M.verb + ".", s: [cap(M.verb)] }, C2 = idea.m2 ? MC[idea.m2] : null;
+    const ctx = Object.assign({}, idea.ctx, { N: idea.ctx.N.toLowerCase(), Ns: idea.ctx.Ns.toLowerCase() });
+    const b = TR.benchmarks[idea.m] || {}, b2 = idea.m2 ? (TR.benchmarks[idea.m2] || {}) : {};
+    const twist = C2 ? fill(C2.w, ctx) : null;
+    const pitch = fill(C.p, ctx) + (twist ? ` Twist: ${twist}.` : "");
+    const loop = C.s.map(x => cap(fill(x, ctx))).concat(twist ? [cap(twist)] : [], ["Rebirth for a permanent multiplier and go again, faster"]);
+    const passes = (b.common_pass_types || []).concat(b2.common_pass_types || []).filter((x, i, a) => a.indexOf(x) === i).slice(0, 4).map(x => PASS_TEXT[x] || x);
+    const feats = (b.common_features || []).concat(b2.common_features || []).filter((x, i, a) => a.indexOf(x) === i && FEAT_TEXT[x]).slice(0, 4).map(x => FEAT_TEXT[x]);
+    const money = passes.length ? cap(passes.join(", ")) + (b.pass_price_median ? ` · leaders' median pass ≈ ${b.pass_price_median} R$` : "") : "2x progress, VIP and luck passes (the defaults for this kind of game)";
+    const retention = feats.length ? cap(feats.join(", ")) : "Rebirths, an index to complete, daily rewards";
+    const mi = idea.mi || {}, ti = idea.ti || {}, n = comboN[idea.m + "|" + idea.t] || 0;
+    const refs = [].concat((mi.young_examples || []).slice(0, 2), (ti.young_examples || []).slice(0, 1)).filter((x, i, a) => x && a.findIndex(y => y.id === x.id) === i);
+    const why = `${M.label} is at ${mi.momentum_adj ?? "–"}× momentum (${mi.young_games ?? 0} young games, ${fmt(mi.young_ccu)} CCU)` + (ti.momentum_adj ? `; ${tLabel(idea.t)} is at ${ti.momentum_adj}×` : "") + `. ${n === 0 ? "No tracked game pairs these yet." : n === 1 ? "Only 1 tracked game pairs these." : `${n} tracked games pair these.`}`;
+    return { pitch, loop, money, retention, why, refs };
+  }
+  let lastIdeas = [];
+  function generateIdeas(seed) {
+    seed = seed || (Date.now() % 2147483647);
+    const rand = mulberry(seed), used = { titles: new Set(), pairs: new Set(), themes: new Set() };
+    const opts = { scope: igScope.value, mech: igMech.value, theme: igTheme.value };
+    const out = $("ig-out"); out.replaceChildren(); lastIdeas = [];
+    if (!(TR.mechanics || []).length) { out.append(el("div", { cls: "card empty", text: "The idea generator needs trend data from the daily run." })); return; }
+    for (let i = 0; i < 10; i++) {
+      const idea = makeIdea(rand, opts, used); if (!idea) break;
+      const d = describe(idea); lastIdeas.push(Object.assign({}, idea, d));
+      const refEls = d.refs.flatMap((r, k) => { const g = byId[r.id] || r; const href = link(g); return [k ? ", " : "", href ? el("a", { href, target: "_blank", rel: "noopener", text: `${r.name} (${fmt(r.ccu)} CCU, ${r.age}d)` }) : el("span", { text: r.name })]; });
+      out.append(el("article", { cls: "idea" }, [
+        el("div", { cls: "top" }, [el("div", {}, [el("div", { cls: "num", text: `Idea ${i + 1}` }), el("h3", { text: idea.title })]), el("span", { cls: "scope", text: SCOPE_TEXT[idea.scope] })]),
+        el("div", {}, [el("span", { cls: "chip", text: mLabel(idea.m) }), idea.m2 ? el("span", { cls: "chip", text: "+ " + mLabel(idea.m2) }) : null, el("span", { cls: "chip", text: tLabel(idea.t) }), idea.formula ? el("span", { cls: "chip", text: "Title: " + fLabel(idea.formula) }) : null]),
+        el("p", { text: d.pitch }),
+        el("dl", {}, [el("dt", { text: "Core loop" }), el("dd", {}, el("ol", {}, d.loop.map(s => el("li", { text: s })))), el("dt", { text: "Monetize" }), el("dd", { text: d.money }), el("dt", { text: "Retention" }), el("dd", { text: d.retention })]),
+        el("div", { cls: "why" }, [el("b", { text: "Why now: " }), d.why, d.refs.length ? el("div", {}, ["Proof: ", ...refEls]) : null, idea.near.game ? el("div", { text: `Closest tracked title: ${idea.near.game.name} (${Math.round(idea.near.sim * 100)}% word overlap)` }) : null])
+      ]));
+    }
+    $("ig-note").textContent = `${lastIdeas.length} ideas · seed ${seed} · built from ${risingMech.length} rising mechanics and ${(TR.rising.theme || []).length} rising themes · press again for a new set`;
+  }
+  $("ig-go").addEventListener("click", () => generateIdeas());
+  $("ig-copy").addEventListener("click", e => copyText(lastIdeas.map((x, i) => `${i + 1}. ${x.title} [${SCOPE_TEXT[x.scope]}]\n   ${x.pitch}\n   Loop: ${x.loop.join(" → ")}\n   Monetize: ${x.money}\n   Retention: ${x.retention}\n   Why now: ${x.why}`).join("\n\n"), e.currentTarget));
+  generateIdeas(20261007);
+
+  document.getElementById("foot").textContent = "Data: Roblox public game APIs, Rolimons, YouTube Data API. Rebuilt after every collection run. Mechanics and themes are keyword-tagged and improve with deep dives.";
 })();
 </script>
 </body>

@@ -53,7 +53,9 @@ def game_obj(uid):
 
 def listing(uid):
     g = game_obj(uid)
-    return {"universeId": uid, "rootPlaceId": g["rootPlaceId"], "name": g["name"], "playerCount": g["playing"]}
+    return {"universeId": uid, "rootPlaceId": g["rootPlaceId"], "name": g["name"], "playerCount": g["playing"],
+            "contentMaturity": "minimal" if uid != 6 else None, "minimumAge": 5 if uid != 6 else None,
+            "ageRecommendationDisplayName": "Minimal" if uid != 6 else None}
 
 
 class FakeNet:
@@ -61,7 +63,7 @@ class FakeNet:
         self.calls = []
         self.fail = set()
 
-    def __call__(self, url, headers, timeout):
+    def __call__(self, url, headers, timeout, data=None):
         self.calls.append(url)
         p = urllib.parse.urlparse(url)
         q = dict(urllib.parse.parse_qsl(p.query))
@@ -72,6 +74,10 @@ class FakeNet:
         body = None
         if host == "games.roblox.com" and path == "/v1/games":
             body = {"data": [game_obj(int(u)) for u in q["universeIds"].split(",") if int(u) in WORLD]}
+        elif path.endswith("/get-age-recommendation"):
+            uid = int(json.loads(data)["universeId"])
+            body = {"ageRecommendationDetails": {"summary": {"ageRecommendation": {
+                "displayName": "Mild", "minimumAge": 9 if uid == 6 else 5, "contentMaturity": "mild" if uid == 6 else "minimal"}}}}
         elif host == "games.roblox.com" and path == "/v1/games/votes":
             body = {"data": [{"id": int(u), "upVotes": 900 * int(u), "downVotes": 100} for u in q["universeIds"].split(",")]}
         elif path.endswith("/get-sorts"):
@@ -159,6 +165,9 @@ class Simulation(unittest.TestCase):
         self.assertEqual(games["8"]["active"], "0", "game below floor for 72h+ goes inactive")
         self.assertEqual(games["7"]["name"], "Fisch Tycoon", "Rolimons-only game was discovered")
         self.assertEqual(games["1"]["genre_l1"], "Simulation")
+        self.assertEqual(games["1"]["maturity"], "minimal", "maturity from explore listings")
+        self.assertEqual(games["6"]["maturity"], "mild", "maturity from the guidelines lookup when listings lack it")
+        self.assertEqual(games["6"]["min_age"], "9")
 
     def test_inactive_game_rechecked_daily_not_hourly(self):
         rows = read_csv(self.data / "snapshots/2026/09/2026-09-15.csv")

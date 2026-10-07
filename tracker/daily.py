@@ -96,17 +96,28 @@ def pending_rollup_days(today: date, last_done: str | None, max_back: int = 60) 
 # ---------------------------------------------------------------- tagging
 
 def _compile(rules: dict):
-    return {tag: re.compile(r"\b(" + "|".join(re.escape(k) for k in kws) + r")\b", re.I)
-            for tag, kws in rules.items() if kws}
+    """Whole-word, case-insensitive matchers. Lookarounds instead of \\b so keywords like "+1" work."""
+    out = {}
+    for tag, kws in rules.items():
+        if isinstance(kws, dict):
+            kws = kws.get("keywords", [])
+        if kws:
+            out[tag] = re.compile(r"(?<!\w)(" + "|".join(re.escape(k) for k in kws) + r")(?!\w)", re.I)
+    return out
 
 
 def classify(games: dict) -> int:
     cfg = st.load_json(st.CONFIG / "niches.json", {})
     manual = st.load_json(st.CONFIG / "tags_manual.json", {})
     niches, feats, pass_feats = (_compile(cfg.get(k, {})) for k in ("niches", "features", "pass_features"))
-    passes = {}
+    tax = st.load_json(st.CONFIG / "taxonomy.json", {})
+    mechs, themes = _compile(tax.get("mechanics", {})), _compile(tax.get("themes", {}))
+    formulas = {k: re.compile(v["regex"], re.I) for k, v in tax.get("title_formulas", {}).items()}
+    passes, badges = {}, {}
     for p in st.read_rows(st.DATA / "passes.csv"):
         passes.setdefault(p["universe_id"], []).append(p.get("name", ""))
+    for b in st.read_rows(st.DATA / "badges.csv"):
+        badges.setdefault(b["universe_id"], []).append(b.get("name", ""))
     rows = []
     for uid, g in games.items():
         name, desc = g.get("name", ""), g.get("description", "")
@@ -135,6 +146,21 @@ def classify(games: dict) -> int:
             for tag, rx in pass_feats.items():
                 if rx.search(pass_text):
                     add(tag, "feature", "keyword:passes", 0.7)
+        # core mechanics and themes: name is strong evidence, passes/badges good, description needs repeats
+        extra_text = pass_text + " | " + " | ".join(badges.get(uid, []))
+        for rules, ttype in ((mechs, "mechanic"), (themes, "theme")):
+            for tag, rx in rules.items():
+                if rx.search(name):
+                    add(tag, ttype, "keyword:name", 0.9)
+                elif ttype == "mechanic" and len(rx.findall(extra_text)) >= 2:
+                    add(tag, ttype, "keyword:passes_badges", 0.7)
+                else:
+                    hits = len(rx.findall(desc))
+                    if hits:
+                        add(tag, ttype, "keyword:description", 0.6 if hits >= 2 else 0.4)
+        for tag, rx in formulas.items():
+            if rx.search(name):
+                add(tag, "formula", "regex:name", 1.0)
         m = manual.get(uid, {})
         for tag in m.get("remove", []):
             for k in [k for k in tags if k[0] == tag]:
@@ -143,6 +169,10 @@ def classify(games: dict) -> int:
             add(tag, "niche", "manual", 1.0)
         for tag in m.get("add_feature", []):
             add(tag, "feature", "manual", 1.0)
+        for tag in m.get("add_mechanic", []):
+            add(tag, "mechanic", "manual", 1.0)
+        for tag in m.get("add_theme", []):
+            add(tag, "theme", "manual", 1.0)
         for (tag, ttype), (source, conf) in tags.items():
             rows.append({"universe_id": uid, "tag": tag, "tag_type": ttype, "source": source, "confidence": conf})
     rows.sort(key=lambda r: (int(r["universe_id"]), r["tag_type"], r["tag"]))

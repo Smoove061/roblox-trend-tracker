@@ -73,7 +73,9 @@ def run(http: Http | None = None) -> int:
     if state.get("last_daily") != today.isoformat():
         tagged = step("classify", lambda: {"tags": daily.classify(games)})
         step("passes_badges", lambda: daily.passes_and_badges(http, games, state, cfg.get("passes_badges_per_day", 300), now))
+        step("maturity", lambda: collect.fill_maturity(http, games, cfg.get("maturity_lookups_per_day", 300)))
         priority = step("metrics", lambda: _metrics(games, cfg, today - timedelta(days=1)))
+        step("trends", lambda: _trends())
         step("youtube", lambda: daily.youtube_coverage(http, games, cfg, now, (priority or {}).get("priority", [])))
         step("archive", lambda: {"archived": st.archive_old_days(today=today)})
         if tagged is not None and priority is not None:  # otherwise retry the daily work next hour
@@ -90,6 +92,11 @@ def _metrics(games, cfg, end_day):
     priority = metrics.write_reports(res, cfg)
     return {"games": len(res["games"]), "niches": len(res["niches"]), "flagged": len(priority),
             "days_of_data": res["days_of_data"], "priority": priority}
+
+
+def _trends():
+    from . import trends
+    return trends.run()
 
 
 def _count(res):
@@ -115,6 +122,7 @@ def probe(http: Http | None = None) -> int:
         ("place -> universe", lambda: http.get_json(roblox.PLACE_UNIVERSE.format(place_id=pid))),
         ("game passes", lambda: http.get_json(roblox.PASSES.format(uid=uid), {"passView": "Full", "pageSize": 10})),
         ("badges", lambda: http.get_json(roblox.BADGES.format(uid=uid), {"limit": 10})),
+        ("age guidelines (POST)", lambda: http.post_json(roblox.GUIDELINES, {"universeId": uid})),
         ("rolimons gamelist", lambda: http.get_json(rolimons.GAMELIST)),
     ]
     lines = [f"# Endpoint probe — {st.iso(st.now_utc())}", "", "| Endpoint | Result | Shape |", "|---|---|---|"]
@@ -232,6 +240,10 @@ def main(argv=None) -> int:
         return report()
     if cmd == "youtube":
         return youtube_now()
+    if cmd == "trends":
+        daily.classify(st.load_games())
+        print(_trends())
+        return 0
     if cmd == "dashboard":
         from .dashboard import build
         print(f"wrote {build(argv[1] if len(argv) > 1 else 'site/index.html')}")

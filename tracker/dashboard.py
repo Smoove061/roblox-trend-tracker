@@ -28,10 +28,18 @@ def build_data() -> dict:
     now = st.now_utc()
     games = st.load_games()
     active = {u: g for u, g in games.items() if str(g.get("active")) == "1"}
-    niches = {}
+    niches, tagmap = {}, {}
     for t in st.read_rows(st.DATA / "tags.csv"):
-        if t["tag_type"] == "niche" and _f(t.get("confidence"), 0) >= 0.6:
-            niches.setdefault(t["universe_id"], []).append(t["tag"])
+        if _f(t.get("confidence"), 0) >= 0.6:
+            if t["tag_type"] == "niche":
+                niches.setdefault(t["universe_id"], []).append(t["tag"])
+            elif t["tag_type"] in ("mechanic", "theme", "formula"):
+                tagmap.setdefault(t["universe_id"], {}).setdefault(t["tag_type"], []).append(t["tag"])
+    ins = {r["universe_id"]: r for r in st.read_rows(st.DATA / "insights.csv")}
+    yt_by = {}
+    for i in range(7, -1, -1):
+        for y in st.read_rows(st.day_path("youtube", (now.date() - timedelta(days=i)).isoformat())):
+            yt_by[y["universe_id"]] = y
 
     # hourly CCU for the last SPARK_HOURS hours, binned by hour (last reading in each hour wins)
     start = now - timedelta(hours=SPARK_HOURS)
@@ -63,6 +71,11 @@ def build_data() -> dict:
                 ch24 = round((last_v - ref[0]) / ref[0], 4)
         created = st.parse_iso(g.get("created", ""))
         up, down, fav, visits = votes.get(uid, (None, None, None, None))
+        tm, gi, yy = tagmap.get(uid, {}), ins.get(uid, {}), yt_by.get(uid)
+
+        def num(v):
+            n = _f(v)
+            return None if n is None else (int(n) if float(n).is_integer() else n)
         rows.append({
             "id": uid, "place": g.get("root_place_id", ""), "name": g.get("name", ""), "creator": g.get("creator_name", ""),
             "genre": g.get("genre_l1") or "Unknown", "sub": g.get("genre_l2", ""), "niches": sorted(niches.get(uid, [])),
@@ -71,6 +84,12 @@ def build_data() -> dict:
             "like": round(up / (up + down), 3) if up is not None and down is not None and up + down > 0 else None,
             "fav": int(fav) if fav else None, "visits": int(visits) if visits else None,
             "spark": s,
+            "mat": g.get("maturity") or None, "min_age": num(g.get("min_age")),
+            "mech": sorted(tm.get("mechanic", [])), "theme": sorted(tm.get("theme", [])), "form": sorted(tm.get("formula", [])),
+            "passes": num(gi.get("pass_count")), "price": num(gi.get("pass_price_median")),
+            "ptypes": [x for x in (gi.get("pass_types") or "").split("|") if x],
+            "badges": num(gi.get("badge_count")), "funnel": num(gi.get("badge_funnel_2nd")), "bday": num(gi.get("badge_daily_awarded")),
+            "ytv": num(yy["views"]) if yy else None, "ytn": num(yy["videos"]) if yy else None,
         })
     rows.sort(key=lambda r: -r["ccu"])
 
@@ -105,13 +124,34 @@ def build_data() -> dict:
             break
     yt_rows.sort(key=lambda y: -y["views"])
     rollup_days = len({p.stem for p in (st.DATA / "rollups").rglob("*.csv")})
+    tr = st.load_json(st.REPORTS / "trends.json", {})
+    tax = st.load_json(st.CONFIG / "taxonomy.json", {})
+    slim = lambda items: [{k: i.get(k) for k in ("key", "label", "games", "young_games", "ccu", "young_ccu", "share",
+                                                 "young_share", "momentum_adj", "growth", "young_examples")} for i in items]
+    trends = {
+        "rising": {d: slim(v) for d, v in tr.get("rising", {}).items()},
+        "mechanics": slim(tr.get("dimensions", {}).get("mechanic", [])), "themes": slim(tr.get("dimensions", {}).get("theme", [])),
+        "formulas": slim(tr.get("dimensions", {}).get("formula", [])),
+        "gaps": tr.get("gaps", [])[:40], "pairs": tr.get("pairs", [])[:60], "benchmarks": tr.get("benchmarks", {}),
+        "combos": [{"m": c["mechanic"], "t": c["theme"], "n": c["games"]} for c in tr.get("combos", [])] if tr else [],
+        "young_days": tr.get("young_days", 60),
+    }
+    taxonomy = {
+        "mechanics": {k: {"label": v["label"], "verb": v.get("verb", ""), "title_verb": v.get("title_verb", ""), "scope": v.get("scope", "medium"),
+                          "fits": v.get("fits", {"primary": [], "ok": []})}
+                      for k, v in tax.get("mechanics", {}).items()},
+        "themes": {k: {"label": v["label"], "noun": v.get("noun", ""), "noun_plural": v.get("noun_plural", ""),
+                       "kinds": v.get("kinds", [])} for k, v in tax.get("themes", {}).items()},
+        "formulas": {k: v["label"] for k, v in tax.get("title_formulas", {}).items()},
+    }
     return {
         "updated": st.iso(now), "days_of_data": rollup_days, "floor": st.settings().get("ccu_floor", 300),
         "games": rows, "line": line, "cohort_size": len(cohort),
         "genres": sorted(genres.values(), key=lambda g: -g["ccu"]),
         "niches": sorted(niche_agg.values(), key=lambda n: -n["ccu"]),
         "watch": wl.get("games", []), "watch_niches": wl.get("niches", []),
-        "youtube": yt_rows[:40],
+        "youtube": yt_rows[:40], "trends": trends, "taxonomy": taxonomy,
+        "idea_lab_url": st.settings().get("idea_lab_url", ""),
     }
 
 

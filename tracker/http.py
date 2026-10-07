@@ -32,8 +32,8 @@ class BudgetExceeded(Exception):
     """Request budget or wall-clock deadline reached; callers stop and save what they have."""
 
 
-def _urllib_transport(url: str, headers: dict, timeout: float):
-    req = urllib.request.Request(url, headers=headers)
+def _urllib_transport(url: str, headers: dict, timeout: float, data: bytes | None = None):
+    req = urllib.request.Request(url, headers=headers, data=data, method="POST" if data is not None else "GET")
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, dict(resp.headers), resp.read()
@@ -65,7 +65,12 @@ class Http:
             self.sleep(self.interval - gap)
         self._last = time.monotonic()
 
-    def get_json(self, url: str, params: dict | None = None, headers: dict | None = None):
+    def post_json(self, url: str, body: dict, headers: dict | None = None):
+        hdrs = {"Content-Type": "application/json"}
+        hdrs.update(headers or {})
+        return self.get_json(url, headers=hdrs, _data=json.dumps(body).encode())
+
+    def get_json(self, url: str, params: dict | None = None, headers: dict | None = None, _data: bytes | None = None):
         if params:
             clean = {k: v for k, v in params.items() if v is not None}
             url = f"{url}{'&' if '?' in url else '?'}{urllib.parse.urlencode(clean)}"
@@ -81,7 +86,8 @@ class Http:
             self._wait_turn()
             self.count += 1
             try:
-                status, resp_headers, body = self.transport(url, hdrs, self.timeout)
+                status, resp_headers, body = (self.transport(url, hdrs, self.timeout, _data) if _data is not None
+                                              else self.transport(url, hdrs, self.timeout))
             except (urllib.error.URLError, TimeoutError, ConnectionError, OSError, http.client.HTTPException) as e:
                 status, resp_headers, body = 0, {}, str(e).encode()
             if 200 <= status < 300:

@@ -20,7 +20,7 @@ REPORTS = ROOT / "reports"
 META_FIELDS = [
     "universe_id", "root_place_id", "name", "creator_name", "creator_type", "creator_id",
     "genre", "genre_l1", "genre_l2", "created", "updated", "max_players", "price",
-    "first_seen", "description",
+    "maturity", "min_age", "maturity_label", "first_seen", "description",
 ]
 STATUS_FIELDS = [
     "universe_id", "active", "last_ccu", "peak_ccu", "last_seen", "last_checked",

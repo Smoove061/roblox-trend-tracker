@@ -24,6 +24,7 @@ UID_KEYS = ("universeId", "universeID", "universe_id")
 CCU_KEYS = ("playerCount", "playing", "players", "playerCountNumber")
 NAME_KEYS = ("name", "title")
 PLACE_KEYS = ("rootPlaceId", "placeId", "root_place_id")
+GUIDELINES = "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
 
 
 def new_session_id() -> str:
@@ -47,6 +48,9 @@ def walk_universes(obj):
                 "player_count": _first(obj, CCU_KEYS),
                 "name": _first(obj, NAME_KEYS),
                 "root_place_id": _first(obj, PLACE_KEYS),
+                "maturity": _first(obj, ("contentMaturity",)),
+                "min_age": _first(obj, ("minimumAge",)),
+                "maturity_label": _first(obj, ("ageRecommendationDisplayName",)),
             }
         for v in obj.values():
             if isinstance(v, (dict, list)):
@@ -185,3 +189,14 @@ def game_badges(http, uid, max_pages=5):
         if not cursor:
             break
     return badges
+
+
+def age_guidelines(http, uid):
+    """Content maturity for one universe: {maturity, min_age, maturity_label} (any may be None)."""
+    resp = http.post_json(GUIDELINES, {"universeId": str(uid)}) or {}
+    summ = ((resp.get("ageRecommendationDetails") or {}).get("summary") or {}).get("ageRecommendation") or {}
+    return {
+        "maturity": summ.get("contentMaturity") or summ.get("maturity"),
+        "min_age": summ.get("minimumAge"),
+        "maturity_label": summ.get("displayName") or summ.get("displayNameWithAgeRange"),
+    }

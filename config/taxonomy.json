@@ -1,0 +1,1284 @@
+{
+  "_note": "Core mechanics (what the player does), themes (what it's about) and title formulas (how breakouts name themselves). Mechanics and themes are matched as whole words in the name, description, game pass names and badge names; formulas are regexes on the name only. Edit freely; recomputed daily.",
+  "mechanics": {
+    "steal_raid": {
+      "label": "Steal / raid",
+      "verb": "steal from other players",
+      "keywords": [
+        "steal",
+        "stealing",
+        "rob",
+        "robbing",
+        "raid",
+        "heist",
+        "thief",
+        "thieves"
+      ],
+      "title_verb": "Steal",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "cre",
+          "col"
+        ],
+        "ok": []
+      }
+    },
+    "hatch_gacha": {
+      "label": "Hatch / gacha",
+      "verb": "open eggs or crates for random rewards",
+      "keywords": [
+        "hatch",
+        "hatching",
+        "egg",
+        "eggs",
+        "crate",
+        "crates",
+        "unbox",
+        "gacha",
+        "summon"
+      ],
+      "title_verb": "Hatch",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "cre",
+          "col"
+        ],
+        "ok": []
+      }
+    },
+    "rng_roll": {
+      "label": "RNG roll",
+      "verb": "roll for rarities",
+      "keywords": [
+        "rng",
+        "roll",
+        "rolls",
+        "aura",
+        "auras"
+      ],
+      "title_verb": "Roll",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "cre",
+          "col"
+        ],
+        "ok": [
+          "abs"
+        ]
+      }
+    },
+    "plus_one_stat": {
+      "label": "+1 stat per action",
+      "verb": "gain +1 to a stat every step, jump or second",
+      "keywords": [
+        "+1",
+        "every step",
+        "every second",
+        "every click",
+        "every jump",
+        "per step",
+        "per second"
+      ],
+      "title_verb": "+1",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "set",
+          "cre"
+        ],
+        "ok": [
+          "col"
+        ]
+      }
+    },
+    "clicker": {
+      "label": "Clicker / tap",
+      "verb": "click or tap to earn",
+      "keywords": [
+        "click",
+        "clicker",
+        "clicking",
+        "tap",
+        "tapping"
+      ],
+      "title_verb": "Click",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "col",
+          "cre"
+        ],
+        "ok": [
+          "abs",
+          "set"
+        ]
+      }
+    },
+    "break_mine": {
+      "label": "Break / mine / dig",
+      "verb": "break, mine or dig objects for loot",
+      "keywords": [
+        "break",
+        "breaking",
+        "smash",
+        "mine",
+        "mining",
+        "dig",
+        "digging",
+        "drill",
+        "destroy",
+        "shatter"
+      ],
+      "title_verb": "Break",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "col"
+        ],
+        "ok": []
+      }
+    },
+    "hit_swing": {
+      "label": "Hit / swing / launch",
+      "verb": "hit, swing or launch things for distance or drops",
+      "keywords": [
+        "hit",
+        "swing",
+        "punch",
+        "kick",
+        "golf",
+        "bat",
+        "launch",
+        "throw",
+        "skipping",
+        "fling"
+      ],
+      "title_verb": "Swing",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "ball",
+          "col"
+        ],
+        "ok": [
+          "cre"
+        ]
+      }
+    },
+    "grow_farm": {
+      "label": "Grow / farm",
+      "verb": "plant, grow and harvest",
+      "keywords": [
+        "grow",
+        "growing",
+        "plant",
+        "plants",
+        "garden",
+        "farm",
+        "farming",
+        "harvest",
+        "seeds",
+        "crops"
+      ],
+      "title_verb": "Grow",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "food",
+          "col"
+        ],
+        "ok": [
+          "cre"
+        ]
+      }
+    },
+    "tycoon_build": {
+      "label": "Tycoon / base building",
+      "verb": "build a base that earns over time",
+      "keywords": [
+        "tycoon",
+        "build",
+        "building",
+        "base",
+        "factory",
+        "dropper",
+        "droppers",
+        "empire"
+      ],
+      "title_verb": "Build",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "set",
+          "col"
+        ],
+        "ok": [
+          "abs",
+          "food"
+        ]
+      }
+    },
+    "merge": {
+      "label": "Merge / fuse",
+      "verb": "merge items into better ones",
+      "keywords": [
+        "merge",
+        "merging",
+        "fuse",
+        "fusion",
+        "combine"
+      ],
+      "title_verb": "Merge",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "col",
+          "cre"
+        ],
+        "ok": []
+      }
+    },
+    "collect_index": {
+      "label": "Collect / index",
+      "verb": "collect everything in an index",
+      "keywords": [
+        "collect",
+        "collecting",
+        "collection",
+        "index",
+        "catch",
+        "catching"
+      ],
+      "title_verb": "Collect",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "cre",
+          "col"
+        ],
+        "ok": []
+      }
+    },
+    "fishing": {
+      "label": "Fishing",
+      "verb": "cast and reel in catches",
+      "keywords": [
+        "fish",
+        "fishing",
+        "rod",
+        "reel",
+        "fisch"
+      ],
+      "title_verb": "Fish",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "cre"
+        ],
+        "ok": [
+          "col"
+        ]
+      }
+    },
+    "obby_climb": {
+      "label": "Obby / climb / jump",
+      "verb": "climb or parkour to the top",
+      "keywords": [
+        "obby",
+        "parkour",
+        "climb",
+        "climbing",
+        "jump",
+        "jumping",
+        "tower"
+      ],
+      "title_verb": "Climb",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "set"
+        ],
+        "ok": []
+      }
+    },
+    "escape_run": {
+      "label": "Escape / run",
+      "verb": "run from a hazard to safety",
+      "keywords": [
+        "escape",
+        "running",
+        "flee",
+        "tsunami",
+        "flood",
+        "lava"
+      ],
+      "title_verb": "Escape",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "hazard"
+        ],
+        "ok": [
+          "cre",
+          "set"
+        ]
+      }
+    },
+    "survive_nights": {
+      "label": "Survive",
+      "verb": "survive nights, monsters or disasters",
+      "keywords": [
+        "survive",
+        "survival",
+        "nights",
+        "night",
+        "monster",
+        "monsters",
+        "hide"
+      ],
+      "title_verb": "Survive",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "hazard",
+          "cre"
+        ],
+        "ok": [
+          "set"
+        ]
+      }
+    },
+    "fight_battle": {
+      "label": "Fight / battle",
+      "verb": "fight enemies, bosses or players",
+      "keywords": [
+        "fight",
+        "fighting",
+        "battle",
+        "battles",
+        "battlegrounds",
+        "combat",
+        "boss",
+        "bosses",
+        "pvp",
+        "duel",
+        "duels",
+        "slayer",
+        "slayers"
+      ],
+      "title_verb": "Fight",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "cre"
+        ],
+        "ok": [
+          "set"
+        ]
+      }
+    },
+    "shooter": {
+      "label": "Shooter",
+      "verb": "shoot opponents",
+      "keywords": [
+        "gun",
+        "guns",
+        "shoot",
+        "shooter",
+        "shooting",
+        "fps",
+        "sniper"
+      ],
+      "title_verb": "Shoot",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "cre",
+          "set"
+        ],
+        "ok": [
+          "veh"
+        ]
+      }
+    },
+    "race_drive": {
+      "label": "Race / drive",
+      "verb": "race or drive vehicles",
+      "keywords": [
+        "race",
+        "racing",
+        "drive",
+        "driving",
+        "car",
+        "cars",
+        "kart",
+        "drift"
+      ],
+      "title_verb": "Race",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "veh"
+        ],
+        "ok": [
+          "cre",
+          "set"
+        ]
+      }
+    },
+    "tower_defense": {
+      "label": "Tower defense",
+      "verb": "place units to stop waves",
+      "keywords": [
+        "tower defense",
+        "td",
+        "waves",
+        "defend"
+      ],
+      "title_verb": "Defend",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "cre"
+        ],
+        "ok": [
+          "set"
+        ]
+      }
+    },
+    "roleplay_life": {
+      "label": "Roleplay / life sim",
+      "verb": "roleplay a life in a shared world",
+      "keywords": [
+        "rp",
+        "roleplay",
+        "role play",
+        "life",
+        "city",
+        "town",
+        "house",
+        "family"
+      ],
+      "title_verb": "Live",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "set"
+        ],
+        "ok": [
+          "abs"
+        ]
+      }
+    },
+    "trade": {
+      "label": "Trading",
+      "verb": "trade items with players",
+      "keywords": [
+        "trade",
+        "trading",
+        "trades",
+        "market"
+      ],
+      "title_verb": "Trade",
+      "scope": "large",
+      "fits": {
+        "primary": [
+          "col",
+          "cre"
+        ],
+        "ok": []
+      }
+    },
+    "cook_serve": {
+      "label": "Cook / serve",
+      "verb": "cook and serve customers",
+      "keywords": [
+        "cook",
+        "cooking",
+        "restaurant",
+        "chef",
+        "serve",
+        "cafe",
+        "bakery",
+        "pizza place"
+      ],
+      "title_verb": "Cook",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "food"
+        ],
+        "ok": []
+      }
+    },
+    "pet_care": {
+      "label": "Raise / pet care",
+      "verb": "adopt and raise pets",
+      "keywords": [
+        "adopt",
+        "raise",
+        "raising",
+        "pet care",
+        "care for"
+      ],
+      "title_verb": "Raise",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "cre"
+        ],
+        "ok": []
+      }
+    },
+    "dress_style": {
+      "label": "Dress / style",
+      "verb": "style outfits and get judged",
+      "keywords": [
+        "dress",
+        "fashion",
+        "outfit",
+        "outfits",
+        "runway",
+        "style"
+      ],
+      "title_verb": "Style",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "style"
+        ],
+        "ok": [
+          "abs",
+          "cre"
+        ]
+      }
+    },
+    "quiz_guess": {
+      "label": "Quiz / guess",
+      "verb": "answer or guess to win",
+      "keywords": [
+        "quiz",
+        "trivia",
+        "guess",
+        "guessing"
+      ],
+      "title_verb": "Guess",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "abs"
+        ],
+        "ok": [
+          "cre",
+          "set"
+        ]
+      }
+    },
+    "sell_shop": {
+      "label": "Sell / run a shop",
+      "verb": "sell goods for profit",
+      "keywords": [
+        "sell",
+        "selling",
+        "shop",
+        "store",
+        "retail"
+      ],
+      "title_verb": "Sell",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "col",
+          "food"
+        ],
+        "ok": [
+          "abs",
+          "style"
+        ]
+      }
+    },
+    "forge_craft": {
+      "label": "Forge / craft",
+      "verb": "craft or forge gear from loot",
+      "keywords": [
+        "forge",
+        "forging",
+        "craft",
+        "crafting",
+        "smith",
+        "loot"
+      ],
+      "title_verb": "Forge",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "col",
+          "cre"
+        ],
+        "ok": []
+      }
+    },
+    "dice_cards": {
+      "label": "Dice / cards",
+      "verb": "roll dice or play cards",
+      "keywords": [
+        "dice",
+        "card",
+        "cards",
+        "deck"
+      ],
+      "title_verb": "Roll",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "cre"
+        ],
+        "ok": [
+          "col"
+        ]
+      }
+    },
+    "paint_create": {
+      "label": "Paint / create",
+      "verb": "draw, paint or build creations",
+      "keywords": [
+        "paint",
+        "painting",
+        "draw",
+        "drawing",
+        "art",
+        "sandbox"
+      ],
+      "title_verb": "Paint",
+      "scope": "small",
+      "fits": {
+        "primary": [
+          "abs"
+        ],
+        "ok": [
+          "set",
+          "col"
+        ]
+      }
+    },
+    "party_minigames": {
+      "label": "Party / minigames",
+      "verb": "play rounds of minigames",
+      "keywords": [
+        "minigame",
+        "minigames",
+        "party",
+        "rounds"
+      ],
+      "title_verb": "Play",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "set",
+          "abs"
+        ],
+        "ok": [
+          "cre"
+        ]
+      }
+    },
+    "job_shift": {
+      "label": "Job / shift",
+      "verb": "work a job or shift",
+      "keywords": [
+        "job",
+        "jobs",
+        "shift",
+        "work",
+        "employee",
+        "firefighting",
+        "delivery"
+      ],
+      "title_verb": "Work",
+      "scope": "medium",
+      "fits": {
+        "primary": [
+          "set",
+          "food"
+        ],
+        "ok": []
+      }
+    }
+  },
+  "themes": {
+    "brainrot": {
+      "label": "Brainrot",
+      "keywords": [
+        "brainrot",
+        "brainrots",
+        "skibidi",
+        "tung",
+        "sahur",
+        "tralalero",
+        "italian brainrot"
+      ],
+      "noun_plural": "Brainrots",
+      "noun": "Brainrot",
+      "kinds": [
+        "col",
+        "cre"
+      ]
+    },
+    "eggs": {
+      "label": "Eggs",
+      "keywords": [
+        "egg",
+        "eggs"
+      ],
+      "noun_plural": "Eggs",
+      "noun": "Egg",
+      "kinds": [
+        "col"
+      ]
+    },
+    "animals": {
+      "label": "Animals",
+      "keywords": [
+        "animal",
+        "animals",
+        "zoo",
+        "cat",
+        "cats",
+        "dog",
+        "dogs",
+        "bunny",
+        "horse",
+        "horses",
+        "pet",
+        "pets"
+      ],
+      "noun_plural": "Animals",
+      "noun": "Animal",
+      "kinds": [
+        "col",
+        "cre"
+      ]
+    },
+    "anime": {
+      "label": "Anime",
+      "keywords": [
+        "anime",
+        "jujutsu",
+        "piece",
+        "slayer",
+        "ninja",
+        "shinobi"
+      ],
+      "noun_plural": "Anime Heroes",
+      "noun": "Anime Hero",
+      "kinds": [
+        "cre"
+      ]
+    },
+    "zombies": {
+      "label": "Zombies",
+      "keywords": [
+        "zombie",
+        "zombies",
+        "undead"
+      ],
+      "noun_plural": "Zombies",
+      "noun": "Zombie",
+      "kinds": [
+        "cre"
+      ]
+    },
+    "horror": {
+      "label": "Horror",
+      "keywords": [
+        "horror",
+        "scary",
+        "creepy",
+        "monster",
+        "monsters",
+        "backrooms",
+        "ghost"
+      ],
+      "noun_plural": "Monsters",
+      "noun": "Monster",
+      "kinds": [
+        "cre",
+        "set",
+        "hazard"
+      ]
+    },
+    "ocean": {
+      "label": "Ocean / pirates",
+      "keywords": [
+        "ocean",
+        "sea",
+        "pirate",
+        "pirates",
+        "shark",
+        "sharks",
+        "island",
+        "boat"
+      ],
+      "noun_plural": "Sharks",
+      "noun": "Shark",
+      "kinds": [
+        "cre",
+        "set",
+        "hazard"
+      ]
+    },
+    "space": {
+      "label": "Space",
+      "keywords": [
+        "space",
+        "planet",
+        "planets",
+        "galaxy",
+        "alien",
+        "aliens",
+        "rocket",
+        "moon"
+      ],
+      "noun_plural": "Planets",
+      "noun": "Planet",
+      "kinds": [
+        "set",
+        "col"
+      ]
+    },
+    "dinosaurs": {
+      "label": "Dinosaurs",
+      "keywords": [
+        "dino",
+        "dinosaur",
+        "dinosaurs",
+        "jurassic"
+      ],
+      "noun_plural": "Dinosaurs",
+      "noun": "Dino",
+      "kinds": [
+        "col",
+        "cre"
+      ]
+    },
+    "robots": {
+      "label": "Robots / mechs",
+      "keywords": [
+        "robot",
+        "robots",
+        "mech",
+        "mechs",
+        "bot",
+        "bots",
+        "cyber"
+      ],
+      "noun_plural": "Robots",
+      "noun": "Robot",
+      "kinds": [
+        "col",
+        "cre"
+      ]
+    },
+    "food": {
+      "label": "Food / candy",
+      "keywords": [
+        "food",
+        "candy",
+        "pizza",
+        "burger",
+        "cake",
+        "sweets",
+        "cookie",
+        "fruit",
+        "fruits"
+      ],
+      "noun_plural": "Candies",
+      "noun": "Candy",
+      "kinds": [
+        "col",
+        "food"
+      ]
+    },
+    "money": {
+      "label": "Money / rich",
+      "keywords": [
+        "money",
+        "rich",
+        "cash",
+        "millionaire",
+        "billionaire",
+        "gold",
+        "diamond",
+        "diamonds"
+      ],
+      "noun_plural": "Money Bags",
+      "noun": "Money Bag",
+      "kinds": [
+        "abs",
+        "col"
+      ]
+    },
+    "vehicles": {
+      "label": "Vehicles",
+      "keywords": [
+        "car",
+        "cars",
+        "truck",
+        "plane",
+        "planes",
+        "train",
+        "bike"
+      ],
+      "noun_plural": "Cars",
+      "noun": "Car",
+      "kinds": [
+        "col",
+        "veh"
+      ]
+    },
+    "sports": {
+      "label": "Sports",
+      "keywords": [
+        "soccer",
+        "football",
+        "basketball",
+        "golf",
+        "volleyball",
+        "baseball",
+        "ball"
+      ],
+      "noun_plural": "Balls",
+      "noun": "Ball",
+      "kinds": [
+        "abs",
+        "ball"
+      ]
+    },
+    "fantasy": {
+      "label": "Fantasy / medieval",
+      "keywords": [
+        "dragon",
+        "dragons",
+        "knight",
+        "magic",
+        "wizard",
+        "castle",
+        "kingdom",
+        "sword",
+        "swords"
+      ],
+      "noun_plural": "Dragons",
+      "noun": "Dragon",
+      "kinds": [
+        "cre",
+        "set"
+      ]
+    },
+    "superheroes": {
+      "label": "Superheroes / powers",
+      "keywords": [
+        "hero",
+        "heroes",
+        "superhero",
+        "powers",
+        "super power"
+      ],
+      "noun_plural": "Powers",
+      "noun": "Hero",
+      "kinds": [
+        "cre"
+      ]
+    },
+    "seasonal": {
+      "label": "Seasonal / holiday",
+      "keywords": [
+        "halloween",
+        "spooky",
+        "christmas",
+        "winter",
+        "summer",
+        "easter"
+      ],
+      "noun_plural": "Pumpkins",
+      "noun": "Pumpkin",
+      "kinds": [
+        "set",
+        "col"
+      ]
+    },
+    "military": {
+      "label": "Military / war",
+      "keywords": [
+        "war",
+        "army",
+        "military",
+        "soldier",
+        "tank",
+        "tanks"
+      ],
+      "noun_plural": "Tanks",
+      "noun": "Tank",
+      "kinds": [
+        "set",
+        "veh"
+      ]
+    },
+    "disaster": {
+      "label": "Disaster / weather",
+      "keywords": [
+        "tsunami",
+        "tornado",
+        "disaster",
+        "flood",
+        "storm",
+        "volcano",
+        "meteor"
+      ],
+      "noun_plural": "Tornados",
+      "noun": "Tornado",
+      "kinds": [
+        "set",
+        "hazard"
+      ]
+    },
+    "school": {
+      "label": "School",
+      "keywords": [
+        "school",
+        "class",
+        "teacher",
+        "student"
+      ],
+      "noun_plural": "Teachers",
+      "noun": "Teacher",
+      "kinds": [
+        "set"
+      ]
+    },
+    "prison": {
+      "label": "Prison / police",
+      "keywords": [
+        "prison",
+        "jail",
+        "police",
+        "cop",
+        "cops"
+      ],
+      "noun_plural": "Cops",
+      "noun": "Cop",
+      "kinds": [
+        "set"
+      ]
+    },
+    "ancient": {
+      "label": "Ancient / pyramids",
+      "keywords": [
+        "pyramid",
+        "pyramids",
+        "egypt",
+        "ancient",
+        "temple",
+        "mummy"
+      ],
+      "noun_plural": "Pyramids",
+      "noun": "Pyramid",
+      "kinds": [
+        "set"
+      ]
+    },
+    "nature": {
+      "label": "Jungle / nature",
+      "keywords": [
+        "jungle",
+        "forest",
+        "nature",
+        "tree",
+        "trees"
+      ],
+      "noun_plural": "Trees",
+      "noun": "Tree",
+      "kinds": [
+        "set"
+      ]
+    },
+    "ice_fire": {
+      "label": "Ice / fire / elements",
+      "keywords": [
+        "ice",
+        "snow",
+        "fire",
+        "lava",
+        "element",
+        "elements"
+      ],
+      "noun_plural": "Crystals",
+      "noun": "Crystal",
+      "kinds": [
+        "set",
+        "col"
+      ]
+    },
+    "stone_rocks": {
+      "label": "Stones / rocks / ores",
+      "keywords": [
+        "stone",
+        "stones",
+        "rock",
+        "rocks",
+        "ore",
+        "ores",
+        "gem",
+        "gems",
+        "crystal"
+      ],
+      "noun_plural": "Gems",
+      "noun": "Gem",
+      "kinds": [
+        "col"
+      ]
+    },
+    "memes": {
+      "label": "Memes / noob",
+      "keywords": [
+        "meme",
+        "memes",
+        "noob",
+        "noobs",
+        "funny"
+      ],
+      "noun_plural": "Noobs",
+      "noun": "Noob",
+      "kinds": [
+        "cre",
+        "abs"
+      ]
+    },
+    "fashion": {
+      "label": "Fashion / beauty",
+      "keywords": [
+        "fashion",
+        "makeup",
+        "beauty",
+        "nails",
+        "hair"
+      ],
+      "noun_plural": "Outfits",
+      "noun": "Outfit",
+      "kinds": [
+        "abs",
+        "style"
+      ]
+    },
+    "music": {
+      "label": "Music / dance",
+      "keywords": [
+        "music",
+        "dance",
+        "dancing",
+        "rhythm",
+        "song"
+      ],
+      "noun_plural": "Songs",
+      "noun": "Song",
+      "kinds": [
+        "abs"
+      ]
+    },
+    "toys": {
+      "label": "Toys / plush",
+      "keywords": [
+        "toy",
+        "toys",
+        "plush",
+        "doll",
+        "dolls",
+        "lego"
+      ],
+      "noun_plural": "Toys",
+      "noun": "Plush",
+      "kinds": [
+        "col"
+      ]
+    },
+    "giant": {
+      "label": "Giant / huge",
+      "keywords": [
+        "giant",
+        "huge",
+        "biggest",
+        "mega",
+        "titan"
+      ],
+      "noun_plural": "Giants",
+      "noun": "Giant",
+      "kinds": [
+        "cre"
+      ]
+    }
+  },
+  "title_formulas": {
+    "steal_a": {
+      "label": "\"Steal a ___\"",
+      "regex": "^\\W*steal (a|an|the|your)\\b"
+    },
+    "plus_one": {
+      "label": "\"+1 ___\"",
+      "regex": "\\+1\\b"
+    },
+    "verb_for_noun": {
+      "label": "\"___ for ___\" (Swing for Eggs)",
+      "regex": "^\\W*[A-Za-z]+ (for|to get) [A-Za-z]+"
+    },
+    "grow_a": {
+      "label": "\"Grow a ___\"",
+      "regex": "^\\W*grow (a|an|your)\\b"
+    },
+    "build_a": {
+      "label": "\"Build a ___\"",
+      "regex": "^\\W*build (a|an|the|your)\\b"
+    },
+    "escape_x": {
+      "label": "\"Escape ___\"",
+      "regex": "^\\W*escape\\b"
+    },
+    "be_a": {
+      "label": "\"Be a ___\"",
+      "regex": "^\\W*be (a|an)\\b"
+    },
+    "get_rich": {
+      "label": "\"___ to Get Rich\"",
+      "regex": "get rich"
+    },
+    "simulator": {
+      "label": "\"___ Simulator\"",
+      "regex": "simulator\\b"
+    },
+    "tycoon": {
+      "label": "\"___ Tycoon\"",
+      "regex": "tycoon\\b"
+    },
+    "survive_x": {
+      "label": "\"Survive ___\" / \"99 Nights\"",
+      "regex": "^\\W*survive\\b|\\b\\d+ nights\\b"
+    },
+    "x_vs_y": {
+      "label": "\"___ vs ___\"",
+      "regex": "\\bvs\\.?\\b"
+    },
+    "update_tag": {
+      "label": "[UPDATE] tag prefix",
+      "regex": "^\\s*[\\[\\(][^\\]\\)]*(upd|update|new|event|release|boss|x\\d)[^\\]\\)]*[\\]\\)]"
+    },
+    "emoji": {
+      "label": "Emoji in title",
+      "regex": "[\\u2600-\\u27BF\\U0001F300-\\U0001FAFF]"
+    },
+    "one_word": {
+      "label": "One-word title",
+      "regex": "^\\W*[A-Za-z0-9']+\\W*$"
+    }
+  }
+}

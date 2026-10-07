@@ -84,7 +84,7 @@ def add_candidates(http, games: dict, candidate_ids, cfg, now) -> list[str]:
 def discover(http, games: dict, cfg: dict, now) -> dict:
     session = roblox.new_session_id()
     ts = st.iso(now)
-    rows, seen = [], {}
+    rows, seen, mat = [], {}, {}
     errors = []
 
     def note(source, list_id, items):
@@ -94,6 +94,8 @@ def discover(http, games: dict, cfg: dict, now) -> dict:
                          "rank": rank, "player_count": it.get("player_count") or ""})
             pc = _to_int(it.get("player_count"))
             seen[uid] = max(seen.get(uid, -1), pc if pc is not None else -1)
+            if it.get("maturity") or it.get("min_age") is not None:
+                mat[uid] = it
 
     try:
         sorts = roblox.explore_sorts(http, session, cfg.get("device", "computer"), cfg.get("country", "all"),
@@ -128,7 +130,35 @@ def discover(http, games: dict, cfg: dict, now) -> dict:
     # unknown counts (-1) are checked too; known counts below 80% of the floor are skipped
     candidates = [u for u, pc in seen.items() if pc < 0 or pc >= floor * 0.8]
     added = add_candidates(http, games, candidates, cfg, now)
-    return {"listed": len(rows), "unique": len(seen), "added": len(added), "errors": errors}
+    for uid, it in mat.items():
+        if uid in games:
+            apply_maturity(games[uid], it)
+    return {"listed": len(rows), "unique": len(seen), "added": len(added), "maturity": len(mat), "errors": errors}
+
+
+def apply_maturity(g: dict, info: dict):
+    for k in ("maturity", "min_age", "maturity_label"):
+        if info.get(k) not in (None, ""):
+            g[k] = str(info[k])
+
+
+def fill_maturity(http, games: dict, limit: int = 300) -> dict:
+    """Look up content maturity for active games that don't have it yet (largest first)."""
+    todo = sorted((u for u, g in games.items() if str(g.get("active")) == "1" and not g.get("maturity")),
+                  key=lambda u: -_to_int(games[u].get("last_ccu"), 0))[:limit]
+    got, errors = 0, 0
+    for uid in todo:
+        try:
+            info = roblox.age_guidelines(http, uid)
+        except Exception as e:  # noqa: BLE001
+            errors += 1
+            if errors >= 5 or type(e).__name__ == "BudgetExceeded":
+                break
+            continue
+        if info.get("maturity") or info.get("min_age") is not None:
+            apply_maturity(games[uid], info)
+            got += 1
+    return {"looked_up": len(todo), "found": got, "errors": errors}
 
 
 def snapshot(http, games: dict, cfg: dict, now) -> dict:
