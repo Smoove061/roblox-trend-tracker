@@ -244,6 +244,12 @@ def main(argv=None) -> int:
         daily.classify(st.load_games())
         print(_trends())
         return 0
+    if cmd == "idea-lab":
+        from .idea_lab import build as build_lab
+        ideas = argv[argv.index("--ideas") + 1] if "--ideas" in argv else None
+        out = next((a for a in argv[1:] if not a.startswith("--") and a != ideas), "site/idea-lab.html")
+        print(f"wrote {build_lab(out, ideas)}")
+        return 0
     if cmd == "dashboard":
         from .dashboard import build
         print(f"wrote {build(argv[1] if len(argv) > 1 else 'site/index.html')}")

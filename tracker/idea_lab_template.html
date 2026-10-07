@@ -1,0 +1,316 @@
+<title>Backyard Idea Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a studio pitch board. Trend strip on top, the brief in a sticky left column, idea cards on the right. */
+:root {
+  --paper: #f3f4f8; --card: #ffffff; --ink: #151826; --ink2: #4d5266; --muted: #7c8296; --line: #dfe2ea;
+  --accent: #ffb800; --accent-soft: rgba(255, 184, 0, 0.18); --accent-ink: #3d2c00; --go: #151826; --go-ink: #ffffff;
+  --warn: #b4321f; --ok: #1f7a3a;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111319; --card: #1a1d26; --ink: #eef0f6; --ink2: #a6abbd; --muted: #80869a; --line: #2b2f3c;
+    --accent: #ffc533; --accent-soft: rgba(255, 197, 51, 0.14); --accent-ink: #ffd76b; --go: #ffc533; --go-ink: #1a1400;
+    --warn: #ff8a73; --ok: #5fcf83; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111319; --card: #1a1d26; --ink: #eef0f6; --ink2: #a6abbd; --muted: #80869a; --line: #2b2f3c;
+  --accent: #ffc533; --accent-soft: rgba(255, 197, 51, 0.14); --accent-ink: #ffd76b; --go: #ffc533; --go-ink: #1a1400;
+  --warn: #ff8a73; --ok: #5fcf83; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 15px/1.5 var(--body); margin: 0; }
+.wrap { max-width: 1280px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; }
+a { color: inherit; }
+header.top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
+h1 { font: 800 clamp(30px, 4.6vw, 46px)/1 var(--display); letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
+h1 .dot { color: var(--accent); }
+.lede { color: var(--ink2); margin: 8px 0 0; max-width: 62ch; }
+.asof { font: 500 12px var(--mono); color: var(--muted); text-align: right; }
+.asof a { color: var(--ink2); }
+.strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 24px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0; }
+.panel h2 { font: 600 11.5px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.rise { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; padding: 6px 0; border-top: 1px solid var(--line); }
+.rise:first-of-type { border-top: 0; }
+.rise b { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rise .x { font: 500 13px var(--mono); background: var(--accent-soft); color: var(--accent-ink); border-radius: 6px; padding: 1px 6px; align-self: center; }
+.rise small { grid-column: 1 / -1; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gaps { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.gaps > span { font: 600 11.5px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.chip { font-size: 12.5px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink2); cursor: pointer; }
+.chip:hover, .chip:focus-visible { border-color: var(--accent); color: var(--ink); outline: none; }
+.main { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; margin-top: 24px; align-items: start; }
+.brief { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: flex; flex-direction: column; gap: 14px; }
+.panel.brief h2 { font: 800 22px/1.1 var(--display); letter-spacing: -0.02em; margin: 0; text-transform: none; color: var(--ink); }
+.brief .hint { color: var(--muted); font-size: 13px; margin: 0; }
+label.f { display: flex; flex-direction: column; gap: 5px; font-size: 13px; color: var(--ink2); font-weight: 500; }
+select, textarea { font: inherit; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; width: 100%; }
+textarea { min-height: 84px; resize: vertical; }
+select:focus-visible, textarea:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.seg { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.seg button { border: 0; border-left: 1px solid var(--line); background: var(--paper); color: var(--ink2); padding: 7px 0; font: 500 13px var(--body); cursor: pointer; }
+.seg button:first-child { border-left: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+button.go { font: 600 15px var(--body); background: var(--go); color: var(--go-ink); border: 0; border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+button.go:disabled { opacity: .55; cursor: progress; }
+button.ghost { font: 500 13px var(--body); background: transparent; color: var(--ink2); border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+button.ghost:hover { color: var(--ink); border-color: var(--ink2); }
+.status { font-size: 13px; color: var(--ink2); min-height: 20px; }
+.status.err { color: var(--warn); }
+.board-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+.tabs { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px; }
+.tabs button { border: 0; background: transparent; color: var(--ink2); font: 500 13.5px var(--body); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.idea { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.idea .row1 { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.idea .n { font: 500 11.5px var(--mono); color: var(--muted); }
+.idea h3 { font: 800 23px/1.08 var(--display); letter-spacing: -0.02em; margin: 2px 0 0; text-wrap: balance; overflow-wrap: anywhere; }
+.scope { font: 500 11.5px var(--mono); white-space: nowrap; border-radius: 999px; padding: 3px 9px; border: 1px solid var(--line); color: var(--ink2); }
+.scope[data-s="small"] { background: var(--accent-soft); color: var(--accent-ink); border-color: transparent; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { font-size: 12px; padding: 1px 8px; border-radius: 6px; background: var(--paper); color: var(--ink2); }
+.hook { font-size: 15.5px; margin: 0; }
+.idea dl { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 6px 12px; margin: 0; font-size: 13.5px; }
+.idea dt { color: var(--muted); }
+.idea dd { margin: 0; min-width: 0; }
+.idea ol { margin: 0; padding-left: 18px; }
+.why { font-size: 13px; color: var(--ink2); border-top: 1px dashed var(--line); padding-top: 10px; }
+.why b { color: var(--ink); }
+.warnline { font-size: 12.5px; color: var(--warn); }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.doc { border-top: 1px solid var(--line); padding-top: 12px; font-size: 14px; }
+.doc h4 { font: 800 16px var(--display); margin: 14px 0 4px; }
+.doc p { margin: 6px 0; } .doc ul { margin: 4px 0; padding-left: 18px; }
+.empty { grid-column: 1 / -1; background: var(--card); border: 1px dashed var(--line); border-radius: 16px; padding: 28px; color: var(--ink2); text-align: center; }
+.skeleton { background: var(--card); border: 1px solid var(--line); border-radius: 16px; height: 260px; position: relative; overflow: hidden; }
+.skeleton::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, var(--accent-soft), transparent); animation: sweep 1.4s infinite; }
+@keyframes sweep { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .skeleton::after { animation: none; } }
+footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
+@media (max-width: 1000px) { .main { grid-template-columns: 1fr; } .brief { position: static; } .strip { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .board { grid-template-columns: 1fr; } .asof { text-align: left; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Backyard Idea Lab<span class="dot">.</span></h1>
+      <p class="lede">Fresh Roblox game concepts built on what's rising right now. Ideas follow the trend without copying the games that started it.</p>
+    </div>
+    <div class="asof" id="asof"></div>
+  </header>
+
+  <section class="strip" aria-label="What's rising">
+    <div class="panel"><h2>Rising mechanics</h2><div id="r-mech"></div></div>
+    <div class="panel"><h2>Rising themes</h2><div id="r-theme"></div></div>
+    <div class="panel"><h2>Title formulas</h2><div id="r-form"></div></div>
+  </section>
+  <div class="gaps" id="gaps"><span>Untapped</span></div>
+
+  <div class="main">
+    <aside class="brief panel" aria-label="Brief">
+      <h2>The brief</h2>
+      <p class="hint" id="brief-hint">Set the direction, then ask Claude for 10 ideas.</p>
+      <div class="f" role="group" aria-labelledby="scope-l"><span id="scope-l" style="font-size:13px;color:var(--ink2);font-weight:500">Build size</span>
+        <div class="seg" id="scope">
+          <button type="button" data-v="any" aria-pressed="true">Any</button><button type="button" data-v="small" aria-pressed="false">Small</button><button type="button" data-v="medium" aria-pressed="false">Medium</button><button type="button" data-v="large" aria-pressed="false">Large</button>
+        </div>
+      </div>
+      <label class="f" for="mech">Core mechanic<select id="mech"><option value="">Any rising mechanic</option></select></label>
+      <label class="f" for="theme">Theme<select id="theme"><option value="">Any fresh theme</option></select></label>
+      <label class="f" for="dir">Your direction<textarea id="dir" placeholder="e.g. solo dev, ships in 2 weeks, brainrot audience, needs a Halloween hook"></textarea></label>
+      <button class="go" id="go" type="button">Generate 10 ideas</button>
+      <button class="ghost" id="stop" type="button" hidden>Stop</button>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+    </aside>
+
+    <section aria-label="Ideas">
+      <div class="board-head">
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tab-today" aria-selected="true" type="button">Today's set</button>
+          <button role="tab" id="tab-new" aria-selected="false" type="button">Generated</button>
+          <button role="tab" id="tab-star" aria-selected="false" type="button">Starred</button>
+        </div>
+        <button class="ghost" id="copyall" type="button">Copy these ideas</button>
+      </div>
+      <div class="board" id="board"></div>
+    </section>
+  </div>
+  <footer id="foot"></footer>
+</div>
+
+<script id="pack" type="application/json">__PACK__</script>
+<script id="today" type="application/json">__IDEAS__</script>
+<script>
+(function () {
+  "use strict";
+  const P = JSON.parse(document.getElementById("pack").textContent);
+  const TODAY = JSON.parse(document.getElementById("today").textContent) || { ideas: [] };
+  const $ = id => document.getElementById(id);
+  const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (v == null) continue; if (k === "text") e.textContent = v; else if (k === "cls") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } for (const c of [].concat(kids)) if (c != null && c !== false) e.append(c); return e; };
+  const fmt = n => n == null ? "–" : n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "K" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : String(n);
+  const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+  const SCOPE_TXT = { small: "Small · 1–2 wks", medium: "Medium · 3–6 wks", large: "Large · 6+ wks" };
+
+  // ---- header + trend strip
+  $("asof").append(el("div", { text: `Data as of ${new Date(P.as_of).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}` }), el("div", { text: `${P.games_tracked.toLocaleString()} games tracked · ${P.young_games} are ≤ ${P.young_days} days old` }));
+  function riseList(id, items, n) {
+    const host = $(id);
+    (items || []).slice(0, n).forEach(i => { const ex = (i.examples || [])[0]; host.append(el("div", { cls: "rise" }, [el("b", { text: i.label }), el("span", { cls: "x", text: (i.momentum || 0).toFixed(1) + "×" }), el("small", { text: `${i.young_games} young games · ${fmt(i.young_ccu)} CCU${ex ? " · " + ex.name : ""}` })])); });
+    if (!host.children.length) host.append(el("small", { text: "Not enough data yet" }));
+  }
+  riseList("r-mech", P.rising.mechanic, 5); riseList("r-theme", P.rising.theme, 5); riseList("r-form", P.rising.formula, 5);
+  (P.gaps || []).slice(0, 10).forEach(g => $("gaps").append(el("button", { cls: "chip", type: "button", text: `${g.mechanic} × ${g.theme}`, onclick: () => { setSel("mech", g.mechanic); setSel("theme", g.theme); $("dir").focus(); } })));
+
+  // ---- brief controls
+  let scope = "any";
+  $("scope").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; scope = b.dataset.v; [...$("scope").children].forEach(x => x.setAttribute("aria-pressed", String(x === b))); });
+  const mechOpts = (P.top_mechanics || []).map(m => m.label).concat(Object.values(P.mechanic_labels || {})).filter((x, i, a) => a.indexOf(x) === i);
+  mechOpts.forEach(l => $("mech").append(el("option", { value: l, text: l })));
+  Object.values(P.theme_labels || {}).forEach(l => $("theme").append(el("option", { value: l, text: l })));
+  function setSel(id, label) { const s = $(id); const o = [...s.options].find(o => o.value === label); if (o) s.value = label; }
+
+  // ---- novelty check against every tracked game title
+  const STOP = new Set(["the", "a", "an", "of", "for", "to", "and", "in", "on", "your", "my", "get", "update", "upd", "new", "roblox", "simulator", "tycoon"]);
+  const toks = s => new Set(String(s).toLowerCase().replace(/[^a-z0-9+ ]+/g, " ").split(/\s+/).filter(w => w && !STOP.has(w)));
+  const nameToks = (P.names || []).map(n => ({ n, t: toks(n) }));
+  function closest(title) { const t = toks(title); if (!t.size) return null; let best = null, bs = 0; for (const x of nameToks) { if (!x.t.size) continue; let i = 0; t.forEach(w => { if (x.t.has(w)) i++; }); const j = i / (t.size + x.t.size - i); if (j > bs) { bs = j; best = x.n; } } return best ? { name: best, sim: bs } : null; }
+  const placeLink = name => { const p = (P.places || {})[name]; return p && /^\d+$/.test(String(p)) ? "https://www.roblox.com/games/" + p : null; };
+
+  // ---- cards
+  let view = "today", generated = store.get("idealab.generated", []), starred = store.get("idealab.starred", []);
+  const keyOf = i => (i.title || "").toLowerCase();
+  function card(idea, n) {
+    const near = closest(idea.title);
+    const isStar = starred.some(s => keyOf(s) === keyOf(idea));
+    const docBox = el("div", { cls: "doc", hidden: "" });
+    const list = arr => (arr && arr.length) ? arr.join(", ") : "–";
+    const insp = (idea.inspired_by || []).flatMap((nm, k) => { const href = placeLink(nm); return [k ? ", " : "", href ? el("a", { href, target: "_blank", rel: "noopener", text: nm }) : el("span", { text: nm })]; });
+    const starBtn = el("button", { cls: "ghost", type: "button", text: isStar ? "★ Starred" : "☆ Star", "aria-pressed": String(isStar) });
+    starBtn.addEventListener("click", () => { const i = starred.findIndex(s => keyOf(s) === keyOf(idea)); if (i >= 0) starred.splice(i, 1); else starred.push(idea); store.set("idealab.starred", starred); starBtn.textContent = i >= 0 ? "☆ Star" : "★ Starred"; starBtn.setAttribute("aria-pressed", String(i < 0)); if (view === "star") render(); });
+    const copyBtn = el("button", { cls: "ghost", type: "button", text: "Copy", onclick: e => copy(ideaText(idea, n), e.currentTarget) });
+    const docBtn = el("button", { cls: "ghost", type: "button", text: "Full design doc", onclick: () => designDoc(idea, docBox, docBtn) });
+    if (!sample) docBtn.hidden = true;
+    return el("article", { cls: "idea" }, [
+      el("div", { cls: "row1" }, [el("div", {}, [el("div", { cls: "n", text: `#${n}` + (idea.genre ? ` · ${idea.genre}` : "") }), el("h3", { text: idea.title || "Untitled" })]), idea.scope ? el("span", { cls: "scope", "data-s": idea.scope, text: SCOPE_TXT[idea.scope] || idea.scope }) : null]),
+      el("div", { cls: "tags" }, [...(idea.mechanics || []).map(m => el("span", { cls: "tag", text: m })), idea.theme ? el("span", { cls: "tag", text: idea.theme }) : null]),
+      el("p", { cls: "hook", text: idea.hook || "" }),
+      el("dl", {}, [
+        el("dt", { text: "Core loop" }), el("dd", {}, el("ol", {}, (idea.core_loop || []).map(s => el("li", { text: s })))),
+        idea.twist ? el("dt", { text: "Twist" }) : null, idea.twist ? el("dd", { text: idea.twist }) : null,
+        el("dt", { text: "Monetize" }), el("dd", { text: list(idea.monetization) }),
+        el("dt", { text: "Retention" }), el("dd", { text: list(idea.retention) }),
+        idea.differentiator ? el("dt", { text: "Why it's fresh" }) : null, idea.differentiator ? el("dd", { text: idea.differentiator }) : null,
+      ]),
+      el("div", { cls: "why" }, [el("b", { text: "Why now: " }), idea.why_now || "", insp.length ? el("div", {}, ["Rides the wave of ", ...insp]) : null]),
+      near && near.sim >= 0.5 ? el("div", { cls: "warnline", text: `Title is close to a tracked game: ${near.name}. Consider renaming.` }) : null,
+      el("div", { cls: "actions" }, [starBtn, copyBtn, docBtn]),
+      docBox,
+    ]);
+  }
+  function render() {
+    const b = $("board"); b.replaceChildren();
+    const list = view === "today" ? (TODAY.ideas || []) : view === "new" ? generated : starred;
+    ["today", "new", "star"].forEach(v => $("tab-" + v).setAttribute("aria-selected", String(v === view)));
+    if (!list.length) {
+      b.append(el("div", { cls: "empty", text: view === "today" ? "Today's set is written every morning by the daily refresh. Generate a set now with the brief." : view === "new" ? (sample ? "Use the brief to generate your first set." : "Open this page in Claude to generate new sets.") : "Star ideas to keep them here (saved in this browser)." }));
+      return;
+    }
+    list.forEach((idea, i) => b.append(card(idea, i + 1)));
+  }
+  $("tab-today").addEventListener("click", () => { view = "today"; render(); });
+  $("tab-new").addEventListener("click", () => { view = "new"; render(); });
+  $("tab-star").addEventListener("click", () => { view = "star"; render(); });
+  const ideaText = (x, n) => `${n}. ${x.title} [${SCOPE_TXT[x.scope] || x.scope || ""}]\n${x.hook || ""}\nLoop: ${(x.core_loop || []).join(" → ")}\nTwist: ${x.twist || "–"}\nMonetize: ${(x.monetization || []).join(", ")}\nRetention: ${(x.retention || []).join(", ")}\nWhy now: ${x.why_now || ""}`;
+  function copy(text, btn) { const ok = () => { const o = btn.textContent; btn.textContent = "Copied"; setTimeout(() => btn.textContent = o, 1400); }; try { navigator.clipboard.writeText(text).then(ok, () => fallback(text)); } catch (e) { fallback(text); } }
+  function fallback(text) { const t = el("textarea", { style: "position:fixed;left:-9999px" }); t.value = text; document.body.append(t); t.select(); try { document.execCommand("copy"); } catch (e) {} t.remove(); }
+  $("copyall").addEventListener("click", e => { const list = view === "today" ? (TODAY.ideas || []) : view === "new" ? generated : starred; copy(list.map((x, i) => ideaText(x, i + 1)).join("\n\n"), e.currentTarget); });
+
+  // ---- Claude
+  let sample = null, ctl = null;
+  const DATA = { as_of: P.as_of, games_tracked: P.games_tracked, young_days: P.young_days, young_ccu_share: P.young_ccu_share, rising: P.rising, gaps: P.gaps, pairs: P.pairs, benchmarks: P.benchmarks, young_games_top: P.young_games_top, top_games: P.top_games };
+  const QUALITY = "Studio quality bar: AAA polish that makes players ask 'how is this Roblox?'. VFX staged anticipation → buildup → impact → follow-through → fade. Maps dense with purposeful areas, interiors and alternate routes. Weighted animations with no foot sliding. Optimized and game-ready.";
+  function ideasPrompt() {
+    const avoid = generated.map(g => g.title).slice(-30);
+    return `You are the lead game designer at a small Roblox studio (The Backyard Studios). Using ONLY the live market data below, pitch 10 fresh Roblox game ideas.
+
+Rules:
+- Each idea rides at least one RISING mechanic, theme or title formula from the data (momentum > 1.0), and says which in why_now with real numbers from the data.
+- Each idea must be fresh: not a reskin of any game in young_games_top or top_games. Combine trends in new ways (the "gaps" and "pairs" lists help). Its title must not reuse a tracked game's title.
+- Titles follow the naming conventions breakouts use (see rising title formulas), short and clickable.
+- Monetization and retention follow what leaders in that mechanic use (benchmarks).
+- scope is "small" (1-2 weeks for a small team), "medium" (3-6 weeks) or "large" (6+ weeks); be realistic.
+- Brief: build size = ${scope === "any" ? "mixed, label each" : scope + " only"}; core mechanic = ${$("mech").value || "any rising one"}; theme = ${$("theme").value || "any fresh one"}; studio direction = ${$("dir").value.trim() || "none given"}.
+${avoid.length ? "- Do not repeat these titles from earlier sets: " + avoid.join("; ") : ""}
+
+Reply with only JSON: {"ideas":[{"title":"","scope":"small|medium|large","genre":"","mechanics":["mechanic labels"],"theme":"","hook":"one sentence a player would get excited about","core_loop":["4 short steps"],"twist":"","monetization":["3 items"],"retention":["3 items"],"why_now":"cite momentum and example games from the data","inspired_by":["names of tracked games whose trend it rides"],"differentiator":"how it differs from those games"}]}
+
+DATA:
+${JSON.stringify(DATA)}`;
+  }
+  const setStatus = (t, err) => { const s = $("status"); s.textContent = t; s.classList.toggle("err", !!err); };
+  const errText = c => ({ not_granted: "Claude access wasn't allowed for this page.", rate_limited: "Too many requests right now. Try again in a minute.", invalid_json: "Claude's answer couldn't be read. Try again.", session_expired: "Sign in to Claude again, then retry.", refused: "Claude declined this brief. Change the direction and retry." }[c] || "Something went wrong. Try again.");
+  async function generate() {
+    if (!sample) return;
+    ctl = new AbortController();
+    $("go").disabled = true; $("stop").hidden = false; setStatus("Claude is studying the trends… this usually takes 30–90 seconds.");
+    view = "new"; render(); const b = $("board"); b.replaceChildren(...Array.from({ length: 4 }, () => el("div", { cls: "skeleton", "aria-hidden": "true" })));
+    try {
+      const res = await sample.json(ideasPrompt(), { signal: ctl.signal, cache: false, onText: () => setStatus("Writing ideas…") });
+      const ideas = (res && Array.isArray(res.ideas) ? res.ideas : Array.isArray(res) ? res : []).filter(x => x && x.title).slice(0, 10);
+      if (!ideas.length) throw { code: "invalid_json" };
+      generated = ideas.concat(generated).slice(0, 40); store.set("idealab.generated", generated);
+      setStatus(`${ideas.length} new ideas. Star the keepers.`); render();
+    } catch (e) {
+      if (e && e.code === "cancelled") setStatus("Stopped."); else setStatus(errText(e && e.code), true);
+      if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) { sample = null; disableClaude(); }
+      render();
+    } finally { $("go").disabled = false; $("stop").hidden = true; }
+  }
+  function renderDoc(box, text) {
+    box.replaceChildren();
+    let ul = null;
+    text.split(/\n/).forEach(line => {
+      const l = line.trim();
+      if (!l) { ul = null; return; }
+      if (/^#{1,4}\s/.test(l)) { ul = null; box.append(el("h4", { text: l.replace(/^#+\s*/, "") })); }
+      else if (/^[-*•]\s/.test(l)) { if (!ul) { ul = el("ul"); box.append(ul); } ul.append(el("li", { text: l.replace(/^[-*•]\s*/, "").replace(/\*\*/g, "") })); }
+      else { ul = null; box.append(el("p", { text: l.replace(/\*\*/g, "") })); }
+    });
+  }
+  async function designDoc(idea, box, btn) {
+    if (!sample) return;
+    if (!box.hidden && box.dataset.done) { box.hidden = true; btn.textContent = "Full design doc"; return; }
+    const c = new AbortController();
+    box.hidden = false; btn.textContent = "Stop"; btn.onclick = null;
+    const stop = () => c.abort(); btn.addEventListener("click", stop, { once: true });
+    box.replaceChildren(el("p", { text: "Thinking… a full doc takes about a minute." }));
+    try {
+      await sample(`You are the lead designer at a small Roblox studio. Write a build-ready design doc for this idea, grounded in the market data. ${QUALITY}
+
+Sections (use "## " headings and "- " bullets, no tables): Pitch · Core loop & moment-to-moment · Progression & numbers (currencies, upgrade curve, rebirth, first 10 minutes) · Map & areas · UI layout (HUD, shop, index; mobile-first) · VFX & SFX for the 3 key moments (each staged anticipation → buildup → impact → follow-through → fade) · Monetization (game passes with suggested Robux prices, dev products) · Retention & events · Launch plan (thumbnail, title, first update) · Risks.
+
+IDEA: ${JSON.stringify(idea)}
+DATA: ${JSON.stringify({ rising: P.rising, benchmarks: P.benchmarks, young_games_top: P.young_games_top.slice(0, 15) })}`, { signal: c.signal, onText: ({ text }) => renderDoc(box, text) });
+      box.dataset.done = "1";
+    } catch (e) { if (e && e.text) renderDoc(box, e.text); box.append(el("p", { cls: "warnline", text: e && e.code === "cancelled" ? "Stopped." : errText(e && e.code) })); }
+    finally { btn.textContent = "Hide design doc"; btn.removeEventListener("click", stop); btn.onclick = () => { box.hidden = !box.hidden; btn.textContent = box.hidden ? "Show design doc" : "Hide design doc"; }; }
+  }
+  function disableClaude() { $("go").hidden = true; $("brief-hint").textContent = "Open this page in Claude to generate new ideas and design docs. Today's set refreshes every morning."; render(); }
+  $("go").addEventListener("click", generate);
+  $("stop").addEventListener("click", () => ctl && ctl.abort());
+
+  const foot = $("foot");
+  foot.append(document.createTextNode(`Today's set${TODAY.date ? " (" + TODAY.date + ")" : ""} is written each morning from the latest data. Generated and starred ideas are saved in this browser only.`));
+  render();
+  (window.claude && window.claude.use ? window.claude.use("sample") : Promise.resolve(null)).then(s => { sample = s; if (!s) disableClaude(); else render(); }, () => disableClaude());
+})();
+</script>
