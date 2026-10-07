@@ -322,3 +322,32 @@ class Resilience(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DashboardBuild(unittest.TestCase):
+    def test_builds_from_simulated_data(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            shutil.copytree(REPO / "config", tmp / "config")
+            os.environ["TRACKER_ROOT"] = str(tmp)
+            os.environ["TRACKER_NOW"] = START.isoformat()
+            for m in [m for m in sys.modules if m.startswith("tracker")]:
+                del sys.modules[m]
+            cli = importlib.import_module("tracker.cli")
+            Http = importlib.import_module("tracker.http").Http
+            net = FakeNet()
+            for h in range(0, 6):
+                os.environ["TRACKER_NOW"] = (START + timedelta(hours=h)).isoformat()
+                cli.run(Http("t", interval=0, budget=5000, transport=net, sleep=lambda s: None))
+            dash = importlib.import_module("tracker.dashboard")
+            out = dash.build(str(tmp / "site" / "index.html"))
+            page = out.read_text()
+            self.assertNotIn("__DATA__", page)
+            data = json.loads(page.split('<script id="data" type="application/json">')[1].split("</script>")[0].replace("<\\/", "</"))
+            self.assertEqual({g["id"] for g in data["games"]}, {"1", "2", "3", "4", "6", "7", "8"})
+            self.assertGreaterEqual(len(data["line"]), 5)
+            self.assertEqual(data["genres"][0]["name"], "Simulation")
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+            os.environ.pop("TRACKER_ROOT", None)
+            os.environ.pop("TRACKER_NOW", None)

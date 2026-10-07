@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roblox Trend Tracker</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10); --s1: #2a78d6; --s1-wash: rgba(42,120,214,0.10);
+  --up: #006300; --down: #d03b3b; --chip: #f0efec;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10); --s1: #3987e5; --s1-wash: rgba(57,135,229,0.16);
+    --up: #0ca30c; --down: #e66767; --chip: #2c2c2a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10); --s1: #3987e5; --s1-wash: rgba(57,135,229,0.16);
+  --up: #0ca30c; --down: #e66767; --chip: #2c2c2a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 28px 20px 60px; }
+header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--ink2); }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+.kpi .label { color: var(--ink2); font-size: 13px; }
+.kpi .value { font-size: 28px; font-weight: 650; margin-top: 4px; letter-spacing: -0.02em; }
+.kpi .sub { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+h2 { font-size: 16px; margin: 0 0 2px; }
+.note { color: var(--muted); font-size: 12.5px; margin: 0 0 12px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+section { margin-top: 12px; }
+svg text { fill: var(--muted); font-size: 11px; }
+.bars .row { display: grid; grid-template-columns: 150px 1fr 70px; align-items: center; gap: 10px; height: 26px; cursor: default; }
+.bars .row:hover .bar { filter: brightness(1.12); }
+.bars .name { color: var(--ink2); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bars .track { height: 12px; position: relative; }
+.bars .bar { height: 12px; background: var(--s1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bars .val { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); font-size: 13px; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
+input[type=search], select { background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 10px; font: inherit; }
+input[type=search] { min-width: 240px; flex: 1; max-width: 360px; }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 7px 8px; text-align: left; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th { color: var(--ink2); font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--surface); }
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+th[data-dir="asc"]::after { content: " ↑"; } th[data-dir="desc"]::after { content: " ↓"; }
+td.game { max-width: 280px; overflow: hidden; text-overflow: ellipsis; }
+td.game a { color: var(--ink); text-decoration: none; font-weight: 550; }
+td.game a:hover { text-decoration: underline; }
+td.game .by { color: var(--muted); font-size: 11.5px; display: block; overflow: hidden; text-overflow: ellipsis; }
+.chip { display: inline-block; background: var(--chip); color: var(--ink2); border-radius: 999px; padding: 1px 7px; font-size: 11.5px; margin-right: 3px; }
+.up { color: var(--up); } .down { color: var(--down); }
+.more { margin-top: 10px; background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 14px; font: inherit; cursor: pointer; }
+.empty { color: var(--muted); padding: 10px 0; }
+#tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--ring); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); opacity: 0; transition: opacity .08s; z-index: 10; max-width: 280px; }
+#tip b { font-weight: 650; } #tip .m { color: var(--ink2); }
+footer { margin-top: 28px; color: var(--muted); font-size: 12.5px; }
+@media (max-width: 860px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid2 { grid-template-columns: 1fr; } .bars .row { grid-template-columns: 110px 1fr 60px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Roblox Trend Tracker</h1>
+    <p id="subtitle">Updated __UPDATED__</p>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card">
+    <h2>Combined CCU, last 72 hours</h2>
+    <p class="note" id="line-note"></p>
+    <div id="line"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card"><h2>CCU by genre</h2><p class="note">Roblox's own genre field · current CCU</p><div class="bars" id="genres"></div></section>
+    <section class="card"><h2>CCU by niche</h2><p class="note">Keyword-tagged niches · top 14 · a game can be in several</p><div class="bars" id="niches"></div></section>
+  </div>
+
+  <section class="card">
+    <h2>Young games (60 days old or less)</h2>
+    <p class="note">Sorted by current CCU — these are the early breakouts</p>
+    <div class="tablewrap"><table id="young"></table></div>
+  </section>
+
+  <section class="card" id="watch-card">
+    <h2>Watchlist &amp; deep-dive queue</h2>
+    <p class="note">Flags turn on as history builds (growth needs about 14 days)</p>
+    <div class="tablewrap"><table id="watch"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>All tracked games</h2>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search game, creator or niche">
+      <select id="genre-filter"><option value="">All genres</option></select>
+      <select id="age-filter"><option value="">Any age</option><option value="30">≤ 30 days old</option><option value="60">≤ 60 days old</option><option value="180">≤ 180 days old</option></select>
+    </div>
+    <div class="tablewrap"><table id="all"></table></div>
+    <button class="more" id="more">Show more</button>
+  </section>
+
+  <section class="card">
+    <h2>YouTube coverage, last 7 days</h2>
+    <p class="note">Videos and views found for each game — coverage often rises before CCU does</p>
+    <div class="tablewrap"><table id="yt"></table></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+<div id="tip"></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const fmt = n => n == null ? "–" : n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "K" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : String(n);
+  const full = n => n == null ? "–" : n.toLocaleString("en-US");
+  const pct = v => v == null ? "–" : (v * 100).toFixed(0) + "%";
+  const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (k === "text") e.textContent = v; else if (k === "cls") e.className = v; else e.setAttribute(k, v); } for (const c of [].concat(kids)) if (c != null) e.append(c); return e; };
+  const svgEl = (tag, attrs = {}) => { const e = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
+  const link = g => /^\d+$/.test(String(g.place)) ? "https://www.roblox.com/games/" + g.place : null;
+  const tip = document.getElementById("tip");
+  function showTip(evt, lines) { tip.replaceChildren(...lines.map((l, i) => el("div", { cls: i ? "m" : "" }, i ? l : el("b", { text: l })))); tip.style.opacity = 1; moveTip(evt); }
+  function moveTip(evt) { const w = tip.offsetWidth, h = tip.offsetHeight; let x = evt.clientX + 14, y = evt.clientY + 14; if (x + w > innerWidth - 8) x = evt.clientX - w - 14; if (y + h > innerHeight - 8) y = evt.clientY - h - 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
+  function hideTip() { tip.style.opacity = 0; }
+
+  // header + KPIs
+  const G = D.games, total = G.reduce((s, g) => s + g.ccu, 0);
+  const young = G.filter(g => g.age != null && g.age <= 60), youngCcu = young.reduce((s, g) => s + g.ccu, 0);
+  const upd = new Date(D.updated);
+  document.getElementById("subtitle").textContent = `Updated ${upd.toLocaleString()} · ${D.days_of_data} day(s) of history · every game at ${D.floor}+ CCU`;
+  const kpi = (label, value, sub) => el("div", { cls: "card kpi" }, [el("div", { cls: "label", text: label }), el("div", { cls: "value", text: value }), el("div", { cls: "sub", text: sub })]);
+  document.getElementById("kpis").append(
+    kpi("Games tracked", full(G.length), `at ${D.floor}+ CCU`),
+    kpi("Combined CCU", fmt(total), "players in tracked games right now"),
+    kpi("Young games", full(young.length), `≤ 60 days old · ${pct(total ? youngCcu / total : 0)} of CCU`),
+    kpi("Biggest genre", D.genres[0] ? D.genres[0].name : "–", D.genres[0] ? `${fmt(D.genres[0].ccu)} CCU · ${D.genres[0].games} games` : ""));
+
+  // line chart with crosshair
+  (function () {
+    const host = document.getElementById("line"), pts = D.line;
+    document.getElementById("line-note").textContent = pts.length > 1
+      ? `${full(D.cohort_size)} games tracked in every hour shown, so changes are real and not new games being added`
+      : "Needs a few hourly runs of history";
+    if (pts.length < 2) return;
+    const W = 1160, H = 230, L = 52, R = 16, T = 10, B = 26;
+    const max = Math.max(...pts.map(p => p.v)) * 1.08, min = 0;
+    const x = i => L + (W - L - R) * i / (pts.length - 1), y = v => T + (H - T - B) * (1 - (v - min) / (max - min));
+    const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", role: "img", "aria-label": "Combined CCU over the last 72 hours" });
+    for (let k = 0; k <= 4; k++) { const v = max * k / 4, yy = y(v); svg.append(svgEl("line", { x1: L, x2: W - R, y1: yy, y2: yy, stroke: k ? "var(--grid)" : "var(--axis)", "stroke-width": 1 })); const t = svgEl("text", { x: L - 8, y: yy + 4, "text-anchor": "end" }); t.textContent = fmt(Math.round(v)); svg.append(t); }
+    const step = Math.max(1, Math.round(pts.length / 6));
+    pts.forEach((p, i) => { if (i % step === 0 || i === pts.length - 1) { if (i === pts.length - 1 && i % step !== 0 && i - Math.floor(i / step) * step < step / 2) return; const t = svgEl("text", { x: x(i), y: H - 6, "text-anchor": i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle" }); const d = new Date(p.h); t.textContent = d.toLocaleDateString(undefined, { weekday: "short" }) + " " + d.toLocaleTimeString(undefined, { hour: "numeric" }); svg.append(t); } });
+    const path = pts.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join("");
+    svg.append(svgEl("path", { d: path + `L${x(pts.length - 1)},${y(0)}L${x(0)},${y(0)}Z`, fill: "var(--s1-wash)", stroke: "none" }));
+    svg.append(svgEl("path", { d: path, fill: "none", stroke: "var(--s1)", "stroke-width": 2, "stroke-linejoin": "round" }));
+    if (pts.length <= 24) pts.forEach((p, i) => svg.append(svgEl("circle", { cx: x(i), cy: y(p.v), r: 3.5, fill: "var(--s1)", stroke: "var(--surface)", "stroke-width": 2 })));
+    const cross = svgEl("line", { y1: T, y2: H - B, stroke: "var(--axis)", "stroke-width": 1, opacity: 0 }), dot = svgEl("circle", { r: 4.5, fill: "var(--s1)", stroke: "var(--surface)", "stroke-width": 2, opacity: 0 });
+    svg.append(cross, dot);
+    const hit = svgEl("rect", { x: L, y: T, width: W - L - R, height: H - T - B, fill: "transparent" });
+    hit.addEventListener("mousemove", e => { const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width; const i = Math.max(0, Math.min(pts.length - 1, Math.round((px - L) / (W - L - R) * (pts.length - 1)))); cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("opacity", 1); dot.setAttribute("cx", x(i)); dot.setAttribute("cy", y(pts[i].v)); dot.setAttribute("opacity", 1); showTip(e, [full(pts[i].v) + " players", new Date(pts[i].h).toLocaleString()]); });
+    hit.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); dot.setAttribute("opacity", 0); hideTip(); });
+    svg.append(hit);
+    host.append(svg);
+  })();
+
+  // horizontal bars
+  function bars(id, items, n, extra) {
+    const host = document.getElementById(id), list = items.slice(0, n), max = Math.max(1, ...list.map(i => i.ccu));
+    if (!list.length) { host.append(el("div", { cls: "empty", text: "No data yet" })); return; }
+    for (const it of list) {
+      const row = el("div", { cls: "row" }, [el("div", { cls: "name", text: it.name.replace(/_/g, " ") }), el("div", { cls: "track" }, el("div", { cls: "bar", style: `width:${(100 * it.ccu / max).toFixed(1)}%` })), el("div", { cls: "val", text: fmt(it.ccu) })]);
+      row.addEventListener("mousemove", e => showTip(e, [it.name.replace(/_/g, " "), `${full(it.ccu)} CCU · ${it.games} games`, ...extra(it)]));
+      row.addEventListener("mouseleave", hideTip);
+      host.append(row);
+    }
+  }
+  bars("genres", D.genres, 12, g => [`Biggest: ${g.top}`]);
+  bars("niches", D.niches, 14, n => [`Biggest: ${n.top} (${pct(n.top_share)} of niche)`]);
+
+  // sparkline
+  function spark(vals) {
+    const pts = vals.map((v, i) => [i, v]).filter(p => p[1] != null);
+    const svg = svgEl("svg", { width: 96, height: 24, viewBox: "0 0 96 24", "aria-hidden": "true" });
+    if (pts.length < 2) return svg;
+    const mx = Math.max(...pts.map(p => p[1])), mn = Math.min(...pts.map(p => p[1])), span = mx - mn || 1;
+    const d = pts.map((p, k) => `${k ? "L" : "M"}${(p[0] / (vals.length - 1) * 94 + 1).toFixed(1)},${(22 - (p[1] - mn) / span * 20).toFixed(1)}`).join("");
+    svg.append(svgEl("path", { d, fill: "none", stroke: "var(--s1)", "stroke-width": 1.5, "stroke-linejoin": "round" }));
+    return svg;
+  }
+  const delta = v => v == null ? el("span", { cls: "", text: "–" }) : el("span", { cls: v >= 0 ? "up" : "down", text: (v >= 0 ? "▲ " : "▼ ") + Math.abs(v * 100).toFixed(0) + "%" });
+  const gameCell = g => { const a = link(g) ? el("a", { href: link(g), target: "_blank", rel: "noopener", text: g.name }) : el("span", { text: g.name }); return el("td", { cls: "game", title: g.name }, [a, el("span", { cls: "by", text: g.creator })]); };
+  const chips = g => el("td", {}, g.niches.slice(0, 3).map(n => el("span", { cls: "chip", text: n.replace(/_/g, " ") })));
+
+  const COLS = [
+    { k: "rank", label: "#", num: true, sort: false },
+    { k: "name", label: "Game" }, { k: "genre", label: "Genre" }, { k: "niches", label: "Niches", sort: false },
+    { k: "ccu", label: "CCU", num: true }, { k: "ch24", label: "24h", num: true }, { k: "spark", label: "72h", sort: false },
+    { k: "peak", label: "Peak seen", num: true }, { k: "age", label: "Age (days)", num: true }, { k: "like", label: "Likes", num: true },
+  ];
+  function renderTable(tableId, rows, opts = {}) {
+    const t = document.getElementById(tableId), cols = opts.cols || COLS;
+    const head = el("tr", {}, cols.map(c => { const th = el("th", { cls: c.num ? "num" : "", text: c.label }); if (opts.sort && c.sort !== false) { if (opts.sort.k === c.k) th.dataset.dir = opts.sort.dir; th.addEventListener("click", () => opts.onSort(c.k)); } return th; }));
+    const body = rows.map((g, i) => el("tr", {}, cols.map(c => {
+      switch (c.k) {
+        case "rank": return el("td", { cls: "num", text: String(i + 1) });
+        case "name": return gameCell(g);
+        case "genre": return el("td", { text: g.genre + (g.sub ? " · " + g.sub : "") });
+        case "niches": return chips(g);
+        case "ccu": return el("td", { cls: "num", text: full(g.ccu) });
+        case "ch24": return el("td", { cls: "num" }, delta(g.ch24));
+        case "spark": return el("td", {}, spark(g.spark));
+        case "peak": return el("td", { cls: "num", text: full(g.peak) });
+        case "age": return el("td", { cls: "num", text: g.age == null ? "–" : String(g.age) });
+        case "like": return el("td", { cls: "num", text: pct(g.like) });
+        default: return el("td", { text: String(g[c.k] ?? "–") });
+      }
+    })));
+    t.replaceChildren(el("thead", {}, head), el("tbody", {}, body));
+    if (!rows.length) t.append(el("tbody", {}, el("tr", {}, el("td", { cls: "empty", colspan: cols.length, text: opts.empty || "Nothing here yet" }))));
+  }
+
+  renderTable("young", young.slice(0, 25), { empty: "No young games above the floor yet" });
+
+  // watchlist
+  const byId = Object.fromEntries(G.map(g => [g.id, g]));
+  const watchRows = D.watch.map(w => Object.assign({}, byId[w.universe_id] || { id: w.universe_id, name: w.name, niches: [], spark: [], genre: "–" }, { flags: w.flags }));
+  renderTable("watch", watchRows, { cols: [{ k: "name", label: "Game" }, { k: "flags", label: "Flags" }, { k: "ccu", label: "CCU", num: true }, { k: "spark", label: "72h" }, { k: "age", label: "Age (days)", num: true }], empty: "No flags yet — signals switch on once there is enough history" });
+
+  // all games: search, filters, sort, paging
+  const gf = document.getElementById("genre-filter");
+  for (const g of D.genres) gf.append(el("option", { value: g.name, text: `${g.name} (${g.games})` }));
+  const state = { q: "", genre: "", age: "", sort: { k: "ccu", dir: "desc" }, shown: 50 };
+  function apply() {
+    const q = state.q.toLowerCase();
+    let rows = G.filter(g => (!state.genre || g.genre === state.genre) && (!state.age || (g.age != null && g.age <= +state.age)) &&
+      (!q || g.name.toLowerCase().includes(q) || (g.creator || "").toLowerCase().includes(q) || g.niches.some(n => n.includes(q))));
+    const { k, dir } = state.sort, s = dir === "asc" ? 1 : -1;
+    rows.sort((a, b) => { const x = a[k], y = b[k]; if (x == null) return 1; if (y == null) return -1; return (typeof x === "string" ? x.localeCompare(y) : x - y) * s; });
+    renderTable("all", rows.slice(0, state.shown), { sort: state.sort, onSort: key => { state.sort = { k: key, dir: state.sort.k === key && state.sort.dir === "desc" ? "asc" : "desc" }; apply(); }, empty: "No games match" });
+    const more = document.getElementById("more");
+    more.style.display = rows.length > state.shown ? "" : "none";
+    more.textContent = `Show more (${full(rows.length - state.shown)} left)`;
+  }
+  document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; state.shown = 50; apply(); });
+  gf.addEventListener("change", e => { state.genre = e.target.value; state.shown = 50; apply(); });
+  document.getElementById("age-filter").addEventListener("change", e => { state.age = e.target.value; state.shown = 50; apply(); });
+  document.getElementById("more").addEventListener("click", () => { state.shown += 100; apply(); });
+  apply();
+
+  // youtube
+  const yt = document.getElementById("yt");
+  if (!D.youtube.length) yt.append(el("tbody", {}, el("tr", {}, el("td", { cls: "empty", text: "No coverage data yet — it fills in daily" }))));
+  else {
+    yt.append(el("thead", {}, el("tr", {}, ["Game", "Videos (7d)", "Views (7d)", "Top video", "CCU"].map((h, i) => el("th", { cls: i && i !== 3 ? "num" : "", text: h })))));
+    yt.append(el("tbody", {}, D.youtube.map(y => { const g = byId[y.id] || { id: y.id, name: y.name, place: "", creator: "" }; const vid = /^[\w-]{6,20}$/.test(y.top) ? el("a", { href: "https://www.youtube.com/watch?v=" + y.top, target: "_blank", rel: "noopener", text: "watch" }) : el("span", { text: "–" }); return el("tr", {}, [gameCell(g), el("td", { cls: "num", text: full(y.videos) }), el("td", { cls: "num", text: full(y.views) }), el("td", {}, vid), el("td", { cls: "num", text: full(g.ccu) })]); })));
+  }
+  document.getElementById("foot").textContent = "Data: Roblox public game APIs, Rolimons, YouTube Data API. Rebuilt after every collection run.";
+})();
+</script>
+</body>
+</html>

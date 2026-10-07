@@ -55,3 +55,34 @@ jobs:
             sleep $((i * 5))
           done
           echo "push failed after 5 tries" && exit 1
+
+  # Rebuild the dashboard from the freshly saved data and publish it with GitHub Pages.
+  # Not committed to the repo, so it never bloats history. If Pages isn't enabled yet, this job fails on its own
+  # and data collection is unaffected.
+  dashboard:
+    needs: collect
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build dashboard
+        run: python -m tracker dashboard site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -232,6 +232,10 @@ def main(argv=None) -> int:
         return report()
     if cmd == "youtube":
         return youtube_now()
+    if cmd == "dashboard":
+        from .dashboard import build
+        print(f"wrote {build(argv[1] if len(argv) > 1 else 'site/index.html')}")
+        return 0
     if cmd == "build-db":
         return build_db(argv[1] if len(argv) > 1 else "tracker.db")
     print(__doc__)
