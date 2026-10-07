@@ -10,8 +10,17 @@ SEARCH = "https://www.googleapis.com/youtube/v3/search"
 VIDEOS = "https://www.googleapis.com/youtube/v3/videos"
 
 
+def clean_name(name: str) -> str:
+    """'[🎉 UPD 7] Anime Dice 🎲' -> 'Anime Dice': drop bracketed tags, emoji and symbols that wreck search."""
+    import re
+    s = re.sub(r"[\[\(\{][^\]\)\}]*[\]\)\}]", " ", name)
+    s = re.sub(r"[^\w\s'&+!-]", " ", s, flags=re.UNICODE)
+    s = re.sub(r"\b(UPD(ATE)?|NEW|EVENT|ALPHA|BETA|RELEASE)\b\s*\d*", " ", s, flags=re.I)
+    return " ".join(s.split()) or name
+
+
 def coverage(http, api_key, game_name, published_after_iso):
-    query = f"roblox {game_name}"
+    query = f"roblox {clean_name(game_name)}"
     resp = http.get_json(SEARCH, {
         "part": "id", "q": query, "type": "video", "order": "viewCount", "maxResults": 50,
         "publishedAfter": published_after_iso, "key": api_key,
