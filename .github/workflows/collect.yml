@@ -4,11 +4,11 @@ name: collect
 # Each run commits new data to this repo. Missed days are caught up on the next run.
 on:
   schedule:
-    - cron: "17 * * * *"   # hourly at :17. For a PRIVATE repo, use "17 */2 * * *" to stay inside the free 2,000 min/month
+    - cron: "17,47 * * * *"   # twice an hour: GitHub often skips scheduled slots, and the tracker handles any cadence
   workflow_dispatch:
     inputs:
       task:
-        description: "run, probe or report"
+        description: "run, probe, report or youtube"
         default: run
         required: true
 
@@ -38,7 +38,7 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           TASK: ${{ github.event.inputs.task || 'run' }}
         run: |
-          case "$TASK" in run|probe|report) ;; *) echo "unknown task: $TASK"; exit 2 ;; esac
+          case "$TASK" in run|probe|report|youtube) ;; *) echo "unknown task: $TASK"; exit 2 ;; esac
           python -m tracker "$TASK"
 
       - name: Save data

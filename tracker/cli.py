@@ -148,6 +148,19 @@ def _shape(obj, depth=0):
     return type(obj).__name__
 
 
+def youtube_now() -> int:
+    """Run the YouTube coverage step on demand (it normally runs once a day inside `run`)."""
+    cfg = st.settings()
+    http = make_http(cfg)
+    games = st.load_games()
+    wl = st.load_json(st.REPORTS / "watchlist.json", {})
+    priority = [g["universe_id"] for g in wl.get("games", [])]
+    res = daily.youtube_coverage(http, games, cfg, st.now_utc(), priority)
+    st.log_run("youtube", "skipped" not in res, count=res.get("games", 0), requests=http.count, detail=json.dumps(res))
+    print(res)
+    return 0 if res.get("games") else 1
+
+
 def report() -> int:
     cfg = st.settings()
     games = st.load_games()
@@ -217,6 +230,8 @@ def main(argv=None) -> int:
         return probe()
     if cmd == "report":
         return report()
+    if cmd == "youtube":
+        return youtube_now()
     if cmd == "build-db":
         return build_db(argv[1] if len(argv) > 1 else "tracker.db")
     print(__doc__)

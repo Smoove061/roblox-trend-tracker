@@ -112,8 +112,7 @@ def discover(http, games: dict, cfg: dict, now) -> dict:
 
     streak = 0
     for i, kw in enumerate(cfg.get("omni_search_keywords", [])):
-        if i:
-            http.sleep(cfg.get("search_pause_sec", 3))  # search is rate-limited harder than other endpoints
+        http.sleep(cfg.get("search_pause_sec", 3) * (4 if i == 0 else 1))  # search is rate-limited harder; cool down after explore
         try:
             note("search", kw, roblox.omni_search(http, session, kw, cfg.get("omni_search_pages", 2)))
             streak = 0
