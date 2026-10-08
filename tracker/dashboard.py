@@ -496,13 +496,48 @@ def build_data(out_dir: Path | None = None) -> dict:
     }
 
 
-def build(out: str = "site/index.html") -> Path:
+def build(out: str = "site/index.html", inline: bool = False) -> Path:
+    """inline=True: one self-contained file with the thumbnails embedded and no copied raw files, for publishing
+    inside Claude (where pages can't load other files). The Data hub then links to the web dashboard for raw files."""
     p = Path(out)
-    data = build_data(p.parent)
+    data = build_data(None if inline else p.parent)
+    if inline:
+        data["inline"] = True
+        data["web_url"] = st.settings().get("dashboard_url", "")
+        data["images"] = imgs = _inline_images(data.get("thumbs") or {}, st.settings().get("dashboard_inline_image_budget_mb", 10))
+        for n in ((data.get("thumbs") or {}).get("niches") or {}).values():  # only show gallery extras that made it in
+            for g in n.get("games", []):
+                g["media"] = [m for k, m in enumerate(g.get("media") or []) if k == 0 or m in imgs]
     page = st.fill_template(TEMPLATE, {"DATA": st.embed_json(data), "UPDATED": html.escape(data["updated"]), "HUBDAYS": str(HUB_DAYS)})
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(page, encoding="utf-8")
     return p
+
+
+def _inline_images(th: dict, budget_mb: float) -> dict:
+    """Icons first, then lead thumbnails, then gallery extras (every niche's leaders first), until the budget is used."""
+    from .idea_lab import EXTRA_EMBED, ICON_EMBED, MEDIA_EMBED, _data_uri
+    from .thumbs import IMG
+    icons, leads, extras = [], [], []
+    for n in (th.get("niches") or {}).values():
+        for rank, g in enumerate(n.get("games", [])):
+            if g.get("icon"):
+                icons.append(g["icon"])
+            media = g.get("media") or []
+            if media:
+                leads.append(media[0])
+            extras.extend((rank, m) for m in media[1:3])
+    order = [(f, ICON_EMBED) for f in dict.fromkeys(icons)] + [(f, MEDIA_EMBED) for f in dict.fromkeys(leads)] + \
+        [(f, EXTRA_EMBED) for f in dict.fromkeys(f for _, f in sorted(extras, key=lambda x: x[0]))]
+    out, used, cap = {}, 0, budget_mb * 1_000_000
+    for f, size in order:
+        if f in out:
+            continue
+        uri = _data_uri(IMG / f, size)
+        if uri and used + len(uri) <= cap:
+            out[f] = uri
+            used += len(uri)
+    return out
 
 
 TEMPLATE = (Path(__file__).with_name("dashboard_template.html")).read_text(encoding="utf-8") \

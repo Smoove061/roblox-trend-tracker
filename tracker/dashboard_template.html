@@ -890,8 +890,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   // ---------- data hub
   const HUB = D.hub || { datasets: [], health: { steps: [] } };
   const safePath = pth => pth && /^[\w.\/-]+$/.test(pth) ? pth : null;
-  const LOCAL = location.protocol === "file:";
-  const NO_FETCH = "Raw files can't be loaded while this page is opened as a local file. Open the published dashboard to browse raw files (the Download link still works).";
+  const LOCAL = location.protocol === "file:" || !!D.inline;
+  const NO_FETCH = D.inline ? `Raw files open on the web dashboard${D.web_url ? " (" + D.web_url + ")" : ""}. Everything else on this page works here.` : "Raw files can't be loaded while this page is opened as a local file. Open the published dashboard to browse raw files (the Download link still works).";
   (function () {
     const H = HUB.health || { steps: [] }, host = $("hub-health"), note = $("hub-health-note");
     if (!H.steps.length) { note.textContent = "No runs logged yet. Each pipeline step records itself in data/runs.csv."; return; }
@@ -980,7 +980,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     const body = el("div"), status = el("p", { cls: "note", style: "margin:8px 0" }), q = el("input", { type: "search", placeholder: "Search this " + (d.kind === "csv" || d.kind === "days" ? "table" : "file") });
     const dayFiles = (d.files || []).filter(f => f.path), older = (d.files || []).filter(f => !f.path);
     let path = safePath(dayPath || (d.kind === "days" ? (dayFiles[0] || {}).path : d.path));
-    const dl = el("a", { cls: "btn small", text: "Download", href: path || "#", download: path ? path.split("/").pop() : null });
+    const webBase = D.inline && /^https:\/\//.test(D.web_url || "") ? D.web_url.replace(/\/?$/, "/") : "";
+    const dl = el("a", { cls: "btn small", text: webBase ? "Open file" : "Download", href: path ? webBase + path : "#", download: path && !webBase ? path.split("/").pop() : null, target: webBase ? "_blank" : null, rel: webBase ? "noopener" : null });
     const daySel = d.kind === "days" && dayFiles.length ? el("select", { "aria-label": "Day" }, dayFiles.map(f => el("option", { value: f.path, text: `${f.date} (${full(f.rows)} rows)` }))) : null;
     const setHead = () => { dl.href = path || "#"; if (path) dl.setAttribute("download", path.split("/").pop()); };
     view.replaceChildren(
@@ -1050,7 +1051,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     if (!TH || !Object.keys(TH.niches || {}).length) { $("th-empty").hidden = false; return; }
     $("th-body").hidden = false;
     const hexOk = c => /^#[0-9a-fA-F]{6}$/.test(c) ? c : null;
-    const pic = (file, name) => { const ph = () => el("div", { cls: "ph", text: (name || "?").trim().slice(0, 1).toUpperCase() }); if (!file) return ph(); const img = el("img", { src: "thumbs/" + encodeURIComponent(file), alt: name || "", loading: "lazy", decoding: "async" }); img.addEventListener("error", () => img.replaceWith(ph())); return img; };
+    const pic = (file, name) => { const ph = () => el("div", { cls: "ph", text: (name || "?").trim().slice(0, 1).toUpperCase() }); if (!file) return ph(); const img = el("img", { src: (D.images && D.images[file]) || "thumbs/" + encodeURIComponent(file), alt: name || "", loading: "lazy", decoding: "async" }); img.addEventListener("error", () => img.replaceWith(ph())); return img; };
     const TYPE_NAME = { genre: "Genres", subgenre: "Subgenres", niche: "Niches", mechanic: "Core mechanics", theme: "Themes" };
     const list = Object.entries(TH.niches).map(([k, n]) => Object.assign({ id: k, ccu: n.games.reduce((a, g) => a + (g.ccu || 0), 0) }, n));
     list.sort((a, b) => b.ccu - a.ccu);

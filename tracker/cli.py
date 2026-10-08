@@ -265,7 +265,8 @@ def main(argv=None) -> int:
         return 0
     if cmd == "dashboard":
         from .dashboard import build
-        print(f"wrote {build(argv[1] if len(argv) > 1 else 'site/index.html')}")
+        rest = [a for a in argv[1:] if not a.startswith("--")]
+        print(f"wrote {build(rest[0] if rest else 'site/index.html', inline='--inline' in argv)}")
         return 0
     if cmd == "thumbs":
         cfg = st.settings()
