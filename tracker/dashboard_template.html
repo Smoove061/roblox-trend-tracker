@@ -637,6 +637,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     const cols = ["rank", "name", "creator", "universe_id", "genre", "subgenre", "maturity", "ccu", "peak", "age_days", "likes", "mechanics", "themes", "art_style", "map_style", "youtube_views_7d", "url"];
     const esc = v => { let s = v == null ? "" : String(v); if (/^[=+\-@\t\r]/.test(s) && isNaN(+s)) s = "'" + s; return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
     const lines = [cols.join(",")].concat(lbResult.map((g, i) => [i + 1, g.name, g.creator, g.id, g.genre, g.sub, g.mat, g.ccu, g.peak, g.age, g.like, (g.mech || []).map(mLabel).join("; "), (g.theme || []).map(tLabel).join("; "), g.art ? artLabel(g.art) : "", g.mapst ? mapLabel(g.mapst) : "", g.ytv, link(g)].map(esc).join(",")));
+    if (D.inline) { if (DL) DL.save({ filename: "roblox-leaderboard.csv", data: "\ufeff" + lines.join("\n") }).catch(() => {}); return; }  // inside Claude: saves go through the viewer
     const a = el("a", { href: URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv;charset=utf-8" })), download: "roblox-leaderboard.csv" }); document.body.append(a); a.click(); a.remove();
   });
   refreshPresets(); refreshSubs();
@@ -891,6 +892,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   const HUB = D.hub || { datasets: [], health: { steps: [] } };
   const safePath = pth => pth && /^[\w.\/-]+$/.test(pth) ? pth : null;
   const LOCAL = location.protocol === "file:" || !!D.inline;
+  let DL = null;
+  if (D.inline && window.claude && window.claude.use) window.claude.use("downloads").then(x => { DL = x; }, () => {});
   const NO_FETCH = D.inline ? `Raw files open on the web dashboard${D.web_url ? " (" + D.web_url + ")" : ""}. Everything else on this page works here.` : "Raw files can't be loaded while this page is opened as a local file. Open the published dashboard to browse raw files (the Download link still works).";
   (function () {
     const H = HUB.health || { steps: [] }, host = $("hub-health"), note = $("hub-health-note");
@@ -918,7 +921,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     { key: "updated", label: "Last updated", get: d => d.updated || null, cell: d => el("td", { title: d.updated ? whenFull(d.updated) + (d.basis ? " · " + d.basis : "") : null }, d.updated ? [when(d.updated), el("span", { cls: "sub", text: d.basis || "" })] : "–") },
     { key: "act", label: "", sort: false, cell: d => { const href = safePath(d.path); return el("td", {}, el("div", { cls: "hubacts" }, d.available ? [
       el("button", { cls: "small", text: "View", onclick: e => { e.stopPropagation(); openDataset(d); } }),
-      href ? el("a", { cls: "btn small", href, download: href.split("/").pop(), text: d.kind === "days" ? "Download latest day" : "Download", onclick: e => e.stopPropagation() }) : el("span", { cls: "sub", text: "not published" })] : [el("span", { cls: "sub", text: "not yet" })])); } },
+      href ? (D.inline ? (/^https:\/\//.test(D.web_url || "") ? el("a", { cls: "btn small", href: D.web_url.replace(/\/?$/, "/") + href, target: "_blank", rel: "noopener", text: "Open on web", onclick: e => e.stopPropagation() }) : null)
+        : el("a", { cls: "btn small", href, download: href.split("/").pop(), text: d.kind === "days" ? "Download latest day" : "Download", onclick: e => e.stopPropagation() })) : el("span", { cls: "sub", text: "not published" })] : [el("span", { cls: "sub", text: "not yet" })])); } },
   ];
   const hubTable = SortTable("hub-table", hubDefs, { key: "group", dir: "asc", click: d => d.available && openDataset(d), empty: "No dataset matches" });
   const hubFilter = () => { const q = $("hub-q").value.trim().toLowerCase(); hubTable.set(HUB.datasets.filter(d => !q || (d.name + " " + d.src + " " + d.desc + " " + d.group).toLowerCase().includes(q))); };
