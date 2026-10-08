@@ -1,25 +1,210 @@
 {
   "_note": "Visual style taxonomy. art_style = how the game looks; map_style = how its world is laid out. Labels come from Claude looking at each game's icon + gallery screenshots (vision), or are inferred from mechanics/keywords (lower confidence). Edit freely; keys are what gets stored in data/styles.csv.",
   "art_styles": {
-    "realistic": {"label": "Realistic", "desc": "PBR materials, realistic lighting and proportions, detailed textures, often Future lighting; looks like a modern PC game", "keywords": ["realistic", "realism", "photorealistic", "hyper realistic"]},
-    "stylized": {"label": "Stylized / cartoon", "desc": "Smooth, rounded, hand-painted or Fortnite-like cartoon look; clean gradients, exaggerated shapes", "keywords": ["cartoon", "stylized", "stylised"]},
-    "simulator_bright": {"label": "Bright simulator", "desc": "Flat, highly saturated colours, simple shapes, neon accents, big floating numbers and UI; the typical simulator look", "keywords": []},
-    "low_poly": {"label": "Low poly", "desc": "Faceted, flat-shaded low-polygon models, minimal textures", "keywords": ["low poly", "lowpoly", "low-poly"]},
-    "classic_studs": {"label": "Classic / studded", "desc": "Old-school Roblox: stud textures, plastic blocky parts, classic faces, default R6 look, nostalgic", "keywords": ["classic", "studs", "studded", "retro", "old roblox", "2008", "2010", "nostalgia", "r6"]},
-    "voxel_blocky": {"label": "Voxel / blocky", "desc": "Cube-built worlds and characters, Minecraft-like", "keywords": ["voxel", "blocky", "minecraft"]},
-    "anime": {"label": "Anime / cel-shaded", "desc": "Anime character designs, cel shading, speed lines, big VFX", "keywords": ["anime", "cel shaded", "manga"]},
-    "dark_gritty": {"label": "Dark / gritty", "desc": "Low-key lighting, desaturated or horror-dark palette, fog, grime", "keywords": ["gritty", "dark"]},
-    "meme_chaotic": {"label": "Meme / chaotic", "desc": "Collage of meme images, AI-brainrot characters, mismatched assets, intentionally chaotic", "keywords": []}
+    "realistic": {
+      "label": "Realistic",
+      "desc": "PBR materials, realistic lighting and proportions, detailed textures, often Future lighting; looks like a modern PC game",
+      "keywords": [
+        "realistic",
+        "realism",
+        "photorealistic",
+        "hyper realistic"
+      ]
+    },
+    "stylized": {
+      "label": "Stylized / cartoon",
+      "desc": "Smooth, rounded, hand-painted or Fortnite-like cartoon look; clean gradients, exaggerated shapes",
+      "keywords": [
+        "cartoon",
+        "stylized",
+        "stylised"
+      ]
+    },
+    "simulator_bright": {
+      "label": "Bright simulator",
+      "desc": "Flat, highly saturated colours, simple shapes, neon accents, big floating numbers and UI; the typical simulator look",
+      "keywords": []
+    },
+    "low_poly": {
+      "label": "Low poly",
+      "desc": "Faceted, flat-shaded low-polygon models, minimal textures",
+      "keywords": [
+        "low poly",
+        "lowpoly",
+        "low-poly"
+      ]
+    },
+    "classic_studs": {
+      "label": "Classic / studded",
+      "desc": "Old-school Roblox: stud textures, plastic blocky parts, classic faces, default R6 look, nostalgic",
+      "keywords": [
+        "studs",
+        "studded",
+        "retro",
+        "old roblox",
+        "classic roblox",
+        "nostalgia"
+      ]
+    },
+    "voxel_blocky": {
+      "label": "Voxel / blocky",
+      "desc": "Cube-built worlds and characters, Minecraft-like",
+      "keywords": [
+        "voxel",
+        "blocky",
+        "minecraft"
+      ]
+    },
+    "anime": {
+      "label": "Anime / cel-shaded",
+      "desc": "Anime character designs, cel shading, speed lines, big VFX",
+      "keywords": [
+        "anime",
+        "cel shaded",
+        "manga"
+      ]
+    },
+    "dark_gritty": {
+      "label": "Dark / gritty",
+      "desc": "Low-key lighting, desaturated or horror-dark palette, fog, grime",
+      "keywords": [
+        "gritty"
+      ]
+    },
+    "meme_chaotic": {
+      "label": "Meme / chaotic",
+      "desc": "Collage of meme images, AI-brainrot characters, mismatched assets, intentionally chaotic",
+      "keywords": []
+    }
   },
   "map_styles": {
-    "plot_base": {"label": "Personal plots / bases", "desc": "Each player gets a plot or base inside one shared map (tycoons, steal-a games, gardens)", "from_mechanics": ["tycoon_build", "steal_raid", "grow_farm", "sell_shop"], "keywords": ["your base", "your plot", "tycoon"]},
-    "zone_progression": {"label": "Hub + zones / worlds", "desc": "A spawn hub with gated zones or worlds unlocked by progress (most simulators)", "from_mechanics": ["plus_one_stat", "clicker", "hatch_gacha", "break_mine", "hit_swing", "collect_index"], "keywords": ["new world", "zones", "worlds", "areas"]},
-    "linear_course": {"label": "Linear course / stages", "desc": "Stages or a track you move through in order: obbies, towers, escape runs, races", "from_mechanics": ["obby_climb", "escape_run", "race_drive"], "keywords": ["obby", "stages", "tower", "course", "levels"]},
-    "arena": {"label": "Arena / battleground", "desc": "One combat map or a few rotating arenas built for fighting", "from_mechanics": ["fight_battle", "shooter"], "keywords": ["arena", "battleground", "battlegrounds", "pvp"]},
-    "lobby_rounds": {"label": "Lobby + round maps", "desc": "A lobby, then short rounds on rotating maps (party games, survival rounds, murder mysteries)", "from_mechanics": ["party_minigames", "quiz_guess", "survive_nights"], "keywords": ["rounds", "lobby", "minigames"]},
-    "open_world": {"label": "Open world", "desc": "One large explorable world with points of interest, free roaming", "from_mechanics": ["fishing"], "keywords": ["open world", "explore", "huge map"]},
-    "town_roleplay": {"label": "Town / city roleplay", "desc": "A town or city with houses, shops and jobs, built for roleplay", "from_mechanics": ["roleplay_life", "job_shift"], "keywords": ["town", "city", "roleplay", "rp"]},
-    "interior": {"label": "Interiors / corridors", "desc": "Indoor spaces: buildings, facilities, corridors, rooms (horror, stories, restaurants)", "from_mechanics": ["cook_serve"], "keywords": ["facility", "hotel", "school", "house", "chapter"]},
-    "tower_defense_lanes": {"label": "Lanes / paths", "desc": "Fixed enemy paths with build spots (tower defense)", "from_mechanics": ["tower_defense"], "keywords": ["tower defense", "td"]}
+    "plot_base": {
+      "label": "Personal plots / bases",
+      "desc": "Each player gets a plot or base inside one shared map (tycoons, steal-a games, gardens)",
+      "from_mechanics": [
+        "tycoon_build",
+        "steal_raid",
+        "grow_farm",
+        "sell_shop"
+      ],
+      "keywords": [
+        "your base",
+        "your plot",
+        "tycoon"
+      ]
+    },
+    "zone_progression": {
+      "label": "Hub + zones / worlds",
+      "desc": "A spawn hub with gated zones or worlds unlocked by progress (most simulators)",
+      "from_mechanics": [
+        "plus_one_stat",
+        "clicker",
+        "hatch_gacha",
+        "break_mine",
+        "hit_swing",
+        "collect_index"
+      ],
+      "keywords": [
+        "new world",
+        "zones",
+        "worlds",
+        "areas"
+      ]
+    },
+    "linear_course": {
+      "label": "Linear course / stages",
+      "desc": "Stages or a track you move through in order: obbies, towers, escape runs, races",
+      "from_mechanics": [
+        "obby_climb",
+        "escape_run",
+        "race_drive"
+      ],
+      "keywords": [
+        "obby",
+        "stages",
+        "tower",
+        "course",
+        "levels"
+      ]
+    },
+    "arena": {
+      "label": "Arena / battleground",
+      "desc": "One combat map or a few rotating arenas built for fighting",
+      "from_mechanics": [
+        "fight_battle",
+        "shooter"
+      ],
+      "keywords": [
+        "arena",
+        "battleground",
+        "battlegrounds",
+        "pvp"
+      ]
+    },
+    "lobby_rounds": {
+      "label": "Lobby + round maps",
+      "desc": "A lobby, then short rounds on rotating maps (party games, survival rounds, murder mysteries)",
+      "from_mechanics": [
+        "party_minigames",
+        "quiz_guess",
+        "survive_nights"
+      ],
+      "keywords": [
+        "rounds",
+        "lobby",
+        "minigames"
+      ]
+    },
+    "open_world": {
+      "label": "Open world",
+      "desc": "One large explorable world with points of interest, free roaming",
+      "from_mechanics": [
+        "fishing"
+      ],
+      "keywords": [
+        "open world",
+        "explore",
+        "huge map"
+      ]
+    },
+    "town_roleplay": {
+      "label": "Town / city roleplay",
+      "desc": "A town or city with houses, shops and jobs, built for roleplay",
+      "from_mechanics": [
+        "roleplay_life",
+        "job_shift"
+      ],
+      "keywords": [
+        "town",
+        "city",
+        "roleplay",
+        "rp"
+      ]
+    },
+    "interior": {
+      "label": "Interiors / corridors",
+      "desc": "Indoor spaces: buildings, facilities, corridors, rooms (horror, stories, restaurants)",
+      "from_mechanics": [
+        "cook_serve"
+      ],
+      "keywords": [
+        "facility",
+        "hotel",
+        "school",
+        "house",
+        "chapter"
+      ]
+    },
+    "tower_defense_lanes": {
+      "label": "Lanes / paths",
+      "desc": "Fixed enemy paths with build spots (tower defense)",
+      "from_mechanics": [
+        "tower_defense"
+      ],
+      "keywords": [
+        "tower defense",
+        "td"
+      ]
+    }
   }
 }

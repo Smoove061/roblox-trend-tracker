@@ -16,7 +16,7 @@ from pathlib import Path
 
 from . import storage as st
 
-ICON_EMBED, MEDIA_EMBED, EXTRA_EMBED = (96, 96), (320, 180), (256, 144)
+ICON_EMBED, MEDIA_EMBED, EXTRA_EMBED = (96, 96), (256, 144), (192, 108)
 
 
 def _f(v, d=None):
@@ -105,7 +105,7 @@ def _thumb_pack(budget_mb: float):
                 icons.append(g["icon"])
             if m0:
                 media.append(m0)
-            extra.extend(ms[1:])
+            extra.extend((len(gs), f) for f in ms[1:])  # (rank in niche, file): every niche's leaders get galleries first
         out[k] = {"type": n["type"], "label": n["label"], "games": gs,
                   "icon_dir": n.get("icon_direction", []), "media_dir": n.get("media_direction", []),
                   "palette": (n.get("icon") or {}).get("palette", []), "media_palette": (n.get("media") or {}).get("palette", []),
@@ -113,7 +113,7 @@ def _thumb_pack(budget_mb: float):
                   "vision": n.get("vision"), "hash": n.get("members_hash", "")}
     images, used, cap = {}, 0, budget_mb * 1_000_000
     order = [(f, ICON_EMBED) for f in dict.fromkeys(icons)] + [(f, MEDIA_EMBED) for f in dict.fromkeys(media)] + \
-        [(f, EXTRA_EMBED) for f in dict.fromkeys(extra)]
+        [(f, EXTRA_EMBED) for f in dict.fromkeys(f for _, f in sorted(extra, key=lambda x: x[0]))]
     for f, size in order:
         uri = _data_uri(IMG / f, size)
         if not uri:
@@ -125,7 +125,7 @@ def _thumb_pack(budget_mb: float):
     return out, images
 
 
-def _data_uri(path: Path, size) -> str | None:
+def _data_uri(path: Path, size) -> str | None:  # noqa: D401 - small JPEG data URI
     if not path.exists():
         return None
     raw = path.read_bytes()
@@ -134,7 +134,7 @@ def _data_uri(path: Path, size) -> str | None:
         im = Image.open(io.BytesIO(raw)).convert("RGB")
         im = im.resize(size, Image.LANCZOS)
         buf = io.BytesIO()
-        im.save(buf, "JPEG", quality=70, optimize=True)
+        im.save(buf, "JPEG", quality=66 if size[0] > 200 or size == ICON_EMBED else 60, optimize=True)
         raw = buf.getvalue()
     except ImportError:
         pass  # no Pillow: embed the stored file as-is (bigger, still fine)

@@ -41,8 +41,9 @@ def load(ctx: dict) -> dict:
         g = games.get(uid, {})
         text = f"{g.get('name', '')} {g.get('description', '')}".lower()
         rec = {"art_style": "", "map_style": "", "source": "", "art_source": "", "map_source": "", "confidence": "", "notes": ""}
-        for k, v in arts.items():
-            if _kw(text, v.get("keywords", [])):
+        name = g.get("name", "").lower()
+        for k, v in arts.items():  # art style words only count in the title: descriptions say "realistic physics", "dark mode"...
+            if _kw(name, v.get("keywords", [])):
                 rec.update(art_style=k, art_source="keywords")
                 break
         for k, v in maps.items():  # mechanics first (stronger signal than a passing word), keywords as a fallback
