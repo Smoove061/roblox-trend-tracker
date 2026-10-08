@@ -269,6 +269,8 @@ def main(argv=None) -> int:
         return 0
     if cmd == "thumbs":
         cfg = st.settings()
+        cfg["thumbs_downloads_per_run"] = cfg.get("thumbs_downloads_manual", 1400)  # on-demand run: nothing else competes for time
+        cfg["request_interval_sec"] = min(cfg.get("request_interval_sec", 0.5), 0.3)
         state = st.load_state()
         res = _thumbs(make_http(cfg), cfg, st.now_utc(), state)
         st.save_state(state)
