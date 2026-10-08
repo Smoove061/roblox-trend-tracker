@@ -71,6 +71,20 @@ class Http:
         return self.get_json(url, headers=hdrs, _data=json.dumps(body).encode())
 
     def get_json(self, url: str, params: dict | None = None, headers: dict | None = None, _data: bytes | None = None):
+        body = self._fetch(url, params, headers, _data)
+        try:
+            return json.loads(body.decode("utf-8") or "null")
+        except ValueError as e:
+            raise HttpError(url, 200, f"invalid JSON: {e}") from e
+
+    def get_bytes(self, url: str, max_bytes: int = 5_000_000) -> bytes:
+        """Download a file (an image). Same pacing, retries and budget as JSON calls."""
+        body = self._fetch(url, None, {"Accept": "*/*"}, None)
+        if len(body) > max_bytes:
+            raise HttpError(url, 200, f"file larger than {max_bytes} bytes")
+        return body
+
+    def _fetch(self, url: str, params: dict | None, headers: dict | None, _data: bytes | None) -> bytes:
         if params:
             clean = {k: v for k, v in params.items() if v is not None}
             url = f"{url}{'&' if '?' in url else '?'}{urllib.parse.urlencode(clean)}"
@@ -91,10 +105,7 @@ class Http:
             except (urllib.error.URLError, TimeoutError, ConnectionError, OSError, http.client.HTTPException) as e:
                 status, resp_headers, body = 0, {}, str(e).encode()
             if 200 <= status < 300:
-                try:
-                    return json.loads(body.decode("utf-8") or "null")
-                except ValueError as e:
-                    raise HttpError(url, status, f"invalid JSON: {e}") from e
+                return body if isinstance(body, bytes) else str(body).encode()
             retryable = status in (0, 429, 500, 502, 503, 504)
             if not retryable or attempt == self.max_retries:
                 raise HttpError(url, status, body.decode("utf-8", "replace") if isinstance(body, bytes) else str(body))

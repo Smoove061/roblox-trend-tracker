@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "run, probe, report or youtube"
+        description: "run, probe, report, youtube or thumbs"
         default: run
         required: true
 
@@ -32,13 +32,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Pillow (thumbnail tracker)
+        run: pip install --quiet pillow || echo "Pillow install failed; the thumbnail step will skip itself"
+
       - name: Run tracker
         timeout-minutes: 24   # the tracker stops itself at 18 min; this guarantees the save step below still runs
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           TASK: ${{ github.event.inputs.task || 'run' }}
         run: |
-          case "$TASK" in run|probe|report|youtube) ;; *) echo "unknown task: $TASK"; exit 2 ;; esac
+          case "$TASK" in run|probe|report|youtube|thumbs) ;; *) echo "unknown task: $TASK"; exit 2 ;; esac
           python -m tracker "$TASK"
 
       - name: Save data

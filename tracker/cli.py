@@ -4,6 +4,9 @@
   python -m tracker probe      # check every endpoint once and write reports/probe.md
   python -m tracker report     # rebuild metrics and the watchlist from existing rollups
   python -m tracker build-db   # load all CSVs into tracker.db (SQLite) for your own queries
+  python -m tracker thumbs     # fetch/refresh niche icons + thumbnails now and rebuild reports/thumbs.json
+  python -m tracker vision-sheets [dir]   # contact sheets for Claude: niche thumbnails + game art/map styles
+  python -m tracker vision-ingest <file>  # store Claude's answers: {"niches": {...}, "styles": [...]}
 """
 from __future__ import annotations
 
@@ -81,6 +84,9 @@ def run(http: Http | None = None) -> int:
         if tagged is not None and priority is not None:  # otherwise retry the daily work next hour
             state["last_daily"] = today.isoformat()
 
+    if cfg.get("thumbs_enabled", True):  # runs every hour: URLs refresh daily, downloads continue until caught up
+        step("thumbs", lambda: _thumbs(http, cfg, now, state))
+
     state["last_run"] = st.iso(now)
     st.save_state(state)
     print(f"done: {http.count} requests, {len(games)} games known")
@@ -92,6 +98,11 @@ def _metrics(games, cfg, end_day):
     priority = metrics.write_reports(res, cfg)
     return {"games": len(res["games"]), "niches": len(res["niches"]), "flagged": len(priority),
             "days_of_data": res["days_of_data"], "priority": priority}
+
+
+def _thumbs(http, cfg, now, state):
+    from . import thumbs
+    return thumbs.collect(http, cfg, now, state)
 
 
 def _trends():
@@ -124,6 +135,8 @@ def probe(http: Http | None = None) -> int:
         ("badges", lambda: http.get_json(roblox.BADGES.format(uid=uid), {"limit": 10})),
         ("age guidelines (POST)", lambda: http.post_json(roblox.GUIDELINES, {"universeId": uid})),
         ("rolimons gamelist", lambda: http.get_json(rolimons.GAMELIST)),
+        ("game icons", lambda: http.get_json(roblox.THUMB_ICONS, {"universeIds": uid, "size": "150x150", "format": "Png", "isCircular": "false"})),
+        ("game thumbnails", lambda: http.get_json(roblox.THUMB_MEDIA, {"universeIds": uid, "countPerUniverse": 3, "defaults": "true", "size": "384x216", "format": "Png", "isCircular": "false"})),
     ]
     lines = [f"# Endpoint probe — {st.iso(st.now_utc())}", "", "| Endpoint | Result | Shape |", "|---|---|---|"]
     ok_all = True
@@ -187,7 +200,7 @@ def build_db(path: str = "tracker.db") -> int:
     games_rows = sorted(st.load_games().values(), key=lambda r: int(r["universe_id"]))
     tables = {
         "games": [games_rows], "tags": [st.DATA / "tags.csv"], "passes": [st.DATA / "passes.csv"],
-        "badges": [st.DATA / "badges.csv"],
+        "badges": [st.DATA / "badges.csv"], "styles": [st.DATA / "styles.csv"], "thumbs": [st.DATA / "thumbs" / "index.csv"],
         "snapshots": days("snapshots"), "rollups": days("rollups"), "discovery": days("discovery"),
         "rolimons": days("third_party/rolimons"), "youtube": days("youtube"),
     }
@@ -253,6 +266,27 @@ def main(argv=None) -> int:
     if cmd == "dashboard":
         from .dashboard import build
         print(f"wrote {build(argv[1] if len(argv) > 1 else 'site/index.html')}")
+        return 0
+    if cmd == "thumbs":
+        cfg = st.settings()
+        state = st.load_state()
+        res = _thumbs(make_http(cfg), cfg, st.now_utc(), state)
+        st.save_state(state)
+        print(res)
+        return 0
+    if cmd == "vision-sheets":
+        from . import thumbs
+        print(f"wrote {thumbs.vision_sheets(argv[1] if len(argv) > 1 else 'vision')}")
+        return 0
+    if cmd == "vision-ingest":
+        from . import styles, thumbs
+        res = json.loads(open(argv[1], encoding="utf-8").read())
+        n_s = styles.ingest(res.get("styles", []))
+        n_n = thumbs.ingest_niches(res.get("niches", {}))
+        if n_s:
+            _trends()
+            thumbs.report()
+        print({"styles": n_s, "niches": n_n})
         return 0
     if cmd == "build-db":
         return build_db(argv[1] if len(argv) > 1 else "tracker.db")

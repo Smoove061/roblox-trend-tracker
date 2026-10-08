@@ -116,9 +116,65 @@ td.game .by { color: var(--muted); font-size: 11.5px; display: block; overflow: 
 #drawer .kv { display: grid; grid-template-columns: 150px 1fr; gap: 5px 10px; font-size: 13px; margin-top: 6px; }
 #drawer .kv span:nth-child(odd) { color: var(--muted); }
 #drawer a.open { display: inline-block; margin-top: 6px; color: var(--s1); }
+a.btn { display: inline-block; font: inherit; border-radius: 8px; padding: 7px 14px; background: var(--raised); color: var(--ink); border: 1px solid var(--ring); text-decoration: none; white-space: nowrap; }
+a.btn:hover { border-color: var(--axis); }
+button.small, a.btn.small { padding: 3px 10px; font-size: 12.5px; }
+button:disabled { opacity: .5; cursor: default; }
+.sub { display: block; color: var(--muted); font-size: 11.5px; font-weight: 400; }
+.src { display: block; color: var(--muted); font-size: 11.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 400; }
+td.wrap { white-space: normal; min-width: 230px; max-width: 420px; }
+#hub-table td, #hub-health td { vertical-align: top; }
+.hubhead { display: flex; justify-content: space-between; gap: 10px; align-items: start; flex-wrap: wrap; }
+.hubhead > div { min-width: 0; }
+.hubacts { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.viewbox { max-height: 70vh; overflow: auto; border: 1px solid var(--grid); border-radius: 8px; }
+.viewbox td { max-width: 340px; overflow: hidden; text-overflow: ellipsis; }
+.viewbox th { z-index: 1; }
+pre.json { margin: 0; padding: 10px 12px; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre; color: var(--ink); }
+.mdview { padding: 4px 14px 12px; }
+.mdview h3, .mdview h4 { margin: 14px 0 4px; } .mdview p { margin: 6px 0; } .mdview ul, .mdview ol { margin: 6px 0; padding-left: 20px; }
+.mdview table { margin: 8px 0; } .mdview code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; background: var(--chip); border-radius: 4px; padding: 0 4px; }
+details.older { margin-top: 10px; color: var(--ink2); } details.older summary { cursor: pointer; }
+details.older ul { columns: 2 220px; margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; }
+.tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; padding: 22px 6px 8px; text-align: center; font: inherit; color: inherit; background: var(--raised); border: 1px solid var(--ring); border-radius: 10px; }
+.tile:hover { border-color: var(--axis); }
+.tile img, .tile .ph { width: 72px; height: 72px; border-radius: 14px; object-fit: cover; background: var(--chip); display: flex; align-items: center; justify-content: center; }
+.ph { color: var(--muted); font-weight: 650; font-size: 22px; }
+.tile .rk { position: absolute; top: 6px; left: 9px; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tile .nw { position: absolute; top: 5px; right: 6px; }
+.tile .nm { font-size: 12px; font-weight: 600; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tile .cc { font-size: 11.5px; color: var(--muted); }
+.badge-new { font-size: 9.5px; font-weight: 700; letter-spacing: .04em; color: var(--accent-ink); background: var(--s1); border-radius: 999px; padding: 1px 6px; }
+.strip { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; }
+.strip figure { margin: 0; flex: 0 0 auto; width: 192px; }
+.strip img, .strip .ph { width: 192px; height: 108px; border-radius: 8px; object-fit: cover; background: var(--chip); display: flex; align-items: center; justify-content: center; }
+.strip figcaption { font-size: 11.5px; color: var(--ink2); margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.swatches { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 2px; }
+.sw { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--ring); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink2); margin: 4px 0 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.mrow { display: grid; grid-template-columns: 104px minmax(0, 1fr) 118px; gap: 8px; align-items: center; margin: 8px 0; font-size: 12.5px; }
+.mrow .bs > div { height: 7px; border-radius: 0 4px 4px 0; margin: 2px 0; min-width: 2px; }
+.mrow .mv { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink2); }
+.mrow .mv span { display: block; color: var(--muted); font-size: 11px; }
+.seg { display: inline-flex; gap: 6px; margin: 0 0 6px; }
+button.seg-on { background: var(--s1); color: var(--accent-ink); border-color: transparent; }
+ul.dir { margin: 6px 0 0; padding-left: 18px; } ul.dir li { margin: 3px 0; }
+ul.dir.do li::marker { color: var(--up); } ul.dir.avoid li::marker { color: var(--down); }
+.kv2 { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 10px; font-size: 13px; margin-top: 8px; } .kv2 > span:nth-child(odd) { color: var(--muted); }
+.crow { display: grid; grid-template-columns: 140px minmax(0, 1fr) 34px; gap: 10px; align-items: center; height: 24px; font-size: 13px; }
+.crow .n { color: var(--ink2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .crow .b { height: 10px; background: var(--s1); border-radius: 0 4px 4px 0; min-width: 2px; } .crow .v { text-align: right; font-variant-numeric: tabular-nums; }
+.altrow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.alts { display: flex; flex-direction: column; gap: 7px; margin-top: 8px; }
+.altitem { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; min-width: 0; max-width: 100%; }
+button.altchip { padding: 4px 12px; border-radius: 999px; background: var(--chip); color: var(--ink); border: 1px solid transparent; font-weight: 600; font-size: 13px; text-align: left; max-width: 100%; overflow-wrap: anywhere; }
+button.altchip:hover { border-color: var(--axis); } button.altchip.on { background: var(--s1); color: var(--accent-ink); }
+.altpat { color: var(--muted); font-size: 11px; padding-left: 12px; overflow-wrap: anywhere; }
 footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media (max-width: 960px) { .grid3 { grid-template-columns: 1fr; } .ideas { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .mrow { grid-template-columns: 84px minmax(0, 1fr) 96px; } .crow { grid-template-columns: 104px minmax(0, 1fr) 30px; } .tiles { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); } input[type=search] { min-width: 0; width: 100%; } .field { min-width: 0; } }
 @media (max-width: 860px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid2 { grid-template-columns: 1fr; } .bars .row { grid-template-columns: 110px 1fr 60px; } }
 </style>
 </head>
@@ -129,8 +185,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     <p id="subtitle">Updated __UPDATED__</p>
   </header>
   <nav id="nav">
-    <a href="#overview">Overview</a><a href="#trends">Uprising trends</a><a href="#ideas">Idea generator</a>
-    <a href="#boards">Leaderboards</a><a href="#young">Young games</a><a href="#all">All games</a><a href="#coverage">YouTube</a>
+    <a href="#overview">Overview</a><a href="#trends">Uprising trends</a><a href="#ideas">Idea generator</a><a href="#thumbs">Thumbnails</a>
+    <a href="#boards">Leaderboards</a><a href="#young">Young games</a><a href="#all">All games</a><a href="#coverage">YouTube</a><a href="#hub">Data hub</a>
   </nav>
 
   <div id="overview">
@@ -158,6 +214,14 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     <p class="note">A rising mechanic paired with a strong theme that no tracked game uses yet. Tap one to generate ideas around it.</p>
     <div class="gaps" id="gaps"></div>
   </section>
+  <section class="card" style="margin-top:12px">
+    <h2>Styles</h2>
+    <p class="note" id="tr-style-note"></p>
+    <div class="grid2">
+      <div><h3>Rising art styles</h3><p class="note">How new hits look</p><div id="tr-art"></div></div>
+      <div><h3>Rising map styles</h3><p class="note">How new hits lay out their world</p><div id="tr-map"></div></div>
+    </div>
+  </section>
 
   <h2 class="section-title" id="ideas">Idea generator</h2>
   <p class="section-sub">Builds fresh concepts from what's rising right now: a rising core mechanic, a theme nobody has paired with it, the twist new hits combine it with, and the monetization the leaders use. Every title is checked against all tracked games so ideas follow the trend without copying a game.</p>
@@ -174,6 +238,19 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   </section>
   <div class="ideas" id="ig-out"></div>
 
+  <h2 class="section-title" id="thumbs">Thumbnails &amp; styles</h2>
+  <p class="section-sub">What the icons and thumbnails of the biggest games (and the newest risers) in each niche look like, measured against all tracked games, with plain direction for yours. Tap an icon for the game's details.</p>
+  <section class="card" id="th-empty" hidden><h2>Collecting thumbnails</h2><p class="note" style="margin:6px 0 0">The first images appear after the next hourly runs. This section fills in as soon as the tracker has downloaded icons and thumbnails for the top games in each niche.</p></section>
+  <div id="th-body" hidden>
+    <section class="card">
+      <div class="controls" style="margin-bottom:0">
+        <label class="field"><span>Find a niche</span><input type="search" id="th-q" placeholder="Type to filter niches"></label>
+        <label class="field"><span>Niche</span><select id="th-pick"></select></label>
+      </div>
+    </section>
+    <div id="th-view" class="stack" style="margin-top:12px"></div>
+  </div>
+
   <h2 class="section-title" id="boards">Leaderboards</h2>
   <p class="section-sub">Filter and rank every tracked game. Save boards you use often, share them as a link, or export to CSV.</p>
   <section class="card">
@@ -185,6 +262,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       <label class="field"><span>Maturity</span><select id="lb-mat"><option value="">All</option></select></label>
       <label class="field"><span>Mechanic</span><select id="lb-mech"><option value="">All</option></select></label>
       <label class="field"><span>Theme</span><select id="lb-theme"><option value="">All</option></select></label>
+      <label class="field"><span>Art style</span><select id="lb-art"><option value="">All</option></select></label>
+      <label class="field"><span>Map style</span><select id="lb-map"><option value="">All</option></select></label>
     </div>
     <div class="controls">
       <label class="field"><span>Age from (days)</span><input type="number" id="lb-amin" min="0" placeholder="0"></label>
@@ -215,8 +294,10 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   <h2 class="section-title" id="all">All tracked games</h2>
   <section class="card">
     <div class="controls">
-      <label class="field"><span>Search</span><input type="search" id="q" placeholder="Game, creator, mechanic or theme"></label>
+      <label class="field"><span>Search</span><input type="search" id="q" placeholder="Game, creator, mechanic, theme or style"></label>
       <label class="field"><span>Genre</span><select id="genre-filter"><option value="">All genres</option></select></label>
+      <label class="field"><span>Art style</span><select id="art-filter"><option value="">All art styles</option></select></label>
+      <label class="field"><span>Map style</span><select id="map-filter"><option value="">All map styles</option></select></label>
       <label class="field"><span>Age</span><select id="age-filter"><option value="">Any age</option><option value="30">≤ 30 days old</option><option value="60">≤ 60 days old</option><option value="180">≤ 180 days old</option></select></label>
     </div>
     <div class="tablewrap"><table id="all-table"></table></div>
@@ -228,6 +309,22 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     <p class="note">Videos and views in the last 7 days; coverage often rises before CCU does</p>
     <div class="tablewrap"><table id="yt-table"></table></div>
   </section>
+
+  <h2 class="section-title" id="hub">Data hub</h2>
+  <p class="section-sub">Every dataset the tracker produces, in one place. <b>View</b> opens it as a sortable, searchable table (reports as readable text); <b>Download</b> gets the raw file. Big day-by-day folders publish their latest __HUBDAYS__ days here and list the older ones by date.</p>
+  <section class="card" style="margin-bottom:12px">
+    <h2>Pipeline health</h2>
+    <p class="note" id="hub-health-note"></p>
+    <div class="tablewrap" id="hub-health"></div>
+  </section>
+  <section class="card">
+    <div class="controls">
+      <label class="field"><span>Search datasets</span><input type="search" id="hub-q" placeholder="Name, file or what it holds"></label>
+    </div>
+    <div class="tablewrap"><table id="hub-table"></table></div>
+    <p class="note" id="hub-note" style="margin:10px 0 0"></p>
+  </section>
+  <section class="card" id="hub-view" style="margin-top:12px" hidden aria-live="polite"></section>
 
   <footer id="foot"></footer>
 </div>
@@ -252,7 +349,15 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   const mLabel = k => (TAX.mechanics[k] || {}).label || k.replace(/_/g, " ");
   const tLabel = k => (TAX.themes[k] || {}).label || k.replace(/_/g, " ");
   const fLabel = k => TAX.formulas[k] || k.replace(/_/g, " ");
+  const STY = D.styles || { art: {}, map: {} };
+  const artLabel = k => (STY.art[k] || {}).label || String(k).replace(/_/g, " ");
+  const mapLabel = k => (STY.map[k] || {}).label || String(k).replace(/_/g, " ");
+  const SRC_TEXT = { vision: "seen by Claude in the art", manual: "set by hand", keywords: "guessed from the name or description", inferred: "inferred from the core mechanics" };
+  const bytesTxt = n => n == null ? "–" : n < 1024 ? n + " B" : n < 1048576 ? (n / 1024).toFixed(n < 10240 ? 1 : 0) + " KB" : (n / 1048576).toFixed(n < 10485760 ? 1 : 0) + " MB";
+  const when = iso => { if (!iso) return "–"; if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso; const t = Date.parse(iso); if (isNaN(t)) return String(iso); const m = (Date.now() - t) / 60000; return m < 1 ? "just now" : m < 90 ? Math.round(m) + " min ago" : m < 2880 ? Math.round(m / 60) + " h ago" : Math.round(m / 1440) + " days ago"; };
+  const whenFull = iso => { const t = Date.parse(iso); return isNaN(t) ? String(iso || "") : new Date(t).toLocaleString(); };
   const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(props)) { if (v == null) continue; if (k === "text") e.textContent = v; else if (k === "cls") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } for (const c of [].concat(kids)) if (c != null && c !== false) e.append(c); return e; };
+  const $ = id => document.getElementById(id);
   const svgEl = (tag, attrs = {}) => { const e = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
   const link = g => g && /^\d+$/.test(String(g.place)) ? "https://www.roblox.com/games/" + g.place : null;
   const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
@@ -319,9 +424,9 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   bars("mechbars", (TR.mechanics || []).map(m => ({ name: m.label, ccu: m.ccu, m })), 12, it => [`${full(it.m.ccu)} CCU · ${it.m.games} games`, `${it.m.young_games} young games · ${it.m.momentum_adj}× momentum`]);
 
   // ---------- trends
-  function trendList(id, items, kind) {
+  function trendList(id, items, kind, emptyText) {
     const host = document.getElementById(id), list = (items || []).slice(0, 8);
-    if (!list.length) { host.append(el("div", { cls: "empty", text: "Not enough young games yet" })); return; }
+    if (!list.length) { host.append(el("div", { cls: "empty", text: emptyText || "Not enough young games yet" })); return; }
     const max = Math.max(...list.map(i => i.momentum_adj || 0), 1);
     list.forEach((i, k) => {
       const ex = (i.young_examples || [])[0];
@@ -337,6 +442,14 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   trendList("tr-mech", TR.rising.mechanic, "mechanic");
   trendList("tr-theme", TR.rising.theme, "theme");
   trendList("tr-form", TR.rising.formula, "formula");
+  (function () {
+    const cov = TR.style_coverage || {}, n = TR.n_games || G.length || 0;
+    const a = cov.art_style != null ? cov.art_style : G.filter(g => g.art).length, m = cov.map_style != null ? cov.map_style : G.filter(g => g.mapst).length;
+    const p = v => n ? Math.round(100 * v / n) + "%" : "–";
+    document.getElementById("tr-style-note").textContent = `Coverage: art style is known for ${full(a)} of ${full(n)} games (${p(a)}), map style for ${full(m)} (${p(m)}). Art style comes from Claude looking at icons and screenshots, with name and description keywords as a fallback; map style is inferred from core mechanics until it has been seen. Read rising styles as indicative while coverage is low.`;
+    trendList("tr-art", TR.rising.art_style, "art_style", a ? "No art style has more young-game share than its size yet" : "No art styles labelled yet. They appear after the first vision pass.");
+    trendList("tr-map", TR.rising.map_style, "map_style", m ? "No map style has more young-game share than its size yet" : "No map styles labelled yet.");
+  })();
   const gapsHost = document.getElementById("gaps");
   (TR.gaps || []).slice(0, 18).forEach(g => gapsHost.append(el("button", { cls: "chipbtn", text: `${g.mechanic_label} × ${g.theme_label}`, title: `Score ${g.score}`, onclick: () => { igMech.value = g.mechanic; igTheme.value = g.theme; generateIdeas(); location.hash = "ideas"; } })));
   if (!(TR.gaps || []).length) gapsHost.append(el("div", { cls: "empty", text: "Needs trend data" }));
@@ -353,6 +466,8 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     genre: { label: "Genre", get: g => (g.genre + " " + (g.sub || "")).toLowerCase(), cell: g => el("td", { text: g.genre + (g.sub ? " · " + g.sub : "") }) },
     mech: { label: "Core mechanics", get: g => (g.mech || []).map(mLabel).join(" ").toLowerCase(), cell: g => chips(g.mech, mLabel, 2) },
     theme: { label: "Themes", get: g => (g.theme || []).map(tLabel).join(" ").toLowerCase(), cell: g => chips(g.theme, tLabel, 2) },
+    art: { label: "Art style", get: g => g.art ? artLabel(g.art).toLowerCase() : null, cell: g => el("td", { title: g.art && g.asrc ? SRC_TEXT[g.asrc] || g.asrc : null }, g.art ? el("span", { cls: "chip", text: artLabel(g.art) }) : "–") },
+    mapst: { label: "Map style", get: g => g.mapst ? mapLabel(g.mapst).toLowerCase() : null, cell: g => el("td", { title: g.mapst && g.msrc ? SRC_TEXT[g.msrc] || g.msrc : null }, g.mapst ? el("span", { cls: "chip", text: mapLabel(g.mapst) }) : "–") },
     ccu: { label: "CCU", num: true, get: g => g.ccu, cell: g => el("td", { cls: "num", text: full(g.ccu) }) },
     ch24: { label: "24h", num: true, get: g => g.ch24, cell: g => el("td", { cls: "num" }, delta(g.ch24)) },
     spark: { label: "72h", sort: false, cell: g => el("td", {}, sparkSvg(g.spark)) },
@@ -368,26 +483,29 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     bday: { label: "Badge awards/day", num: true, get: g => g.bday, cell: g => el("td", { cls: "num", text: fmt(g.bday) }) },
     flags: { label: "Flags", get: g => g.flags || "", cell: g => el("td", { text: (g.flags || "").replace(/\|/g, ", ") || "–" }) },
   };
-  function sortRows(rows, key, dir) {
-    const c = COL[key]; if (!c || !c.get) return rows;
+  function sortRows(rows, key, dir, def) {
+    const c = def || COL[key]; if (!c || !c.get) return rows;
     const s = dir === "asc" ? 1 : -1;
     return rows.slice().sort((a, b) => { const x = c.get(a), y = c.get(b); if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (typeof x === "string" ? x.localeCompare(y) : x - y) * s; });
   }
   // a sortable table: state = {key, dir}; numbers start high-to-low, text A-Z
   function SortTable(tableId, cols, opts = {}) {
-    const t = document.getElementById(tableId);
+    const t = typeof tableId === "string" ? document.getElementById(tableId) : tableId;
+    const defs = cols.map(k => typeof k === "string" ? Object.assign({ key: k }, COL[k]) : k), byKey = Object.fromEntries(defs.map(d => [d.key, d]));
+    const onClick = "click" in opts ? opts.click : openDrawer;
     const st = { key: opts.key || null, dir: opts.dir || "desc", shown: opts.page || Infinity, rows: [] };
+    const sorted = () => st.key ? sortRows(st.rows, st.key, st.dir, byKey[st.key]) : st.rows;
     function render() {
-      const rows = st.key ? sortRows(st.rows, st.key, st.dir) : st.rows;
-      const head = el("tr", {}, cols.map(k => { const c = COL[k]; const sortable = c.sort !== false && !!c.get; const on = st.key === k; const th = el("th", { cls: (c.num ? "num " : "") + (sortable ? "sortable" : ""), "aria-sort": on ? (st.dir === "asc" ? "ascending" : "descending") : null, scope: "col" }, [c.label, sortable ? el("span", { cls: "arr", text: on ? (st.dir === "asc" ? "↑" : "↓") : "" }) : null]); if (sortable) th.addEventListener("click", () => { if (st.key === k) st.dir = st.dir === "asc" ? "desc" : "asc"; else { st.key = k; st.dir = c.num || k === "mat" ? "desc" : "asc"; } render(); if (opts.onSort) opts.onSort(st); }); return th; }));
+      const rows = sorted();
+      const head = el("tr", {}, defs.map(c => { const k = c.key; const sortable = c.sort !== false && !!c.get; const on = st.key === k; const th = el("th", { cls: (c.num ? "num " : "") + (sortable ? "sortable" : ""), "aria-sort": on ? (st.dir === "asc" ? "ascending" : "descending") : null, scope: "col" }, [c.label, sortable ? el("span", { cls: "arr", text: on ? (st.dir === "asc" ? "↑" : "↓") : "" }) : null]); if (sortable) th.addEventListener("click", () => { if (st.key === k) st.dir = st.dir === "asc" ? "desc" : "asc"; else { st.key = k; st.dir = c.num || k === "mat" ? "desc" : "asc"; } render(); if (opts.onSort) opts.onSort(st); }); return th; }));
       const shown = rows.slice(0, st.shown);
-      const body = shown.map((g, i) => { const tr = el("tr", { cls: "clickable", tabindex: "0" }, cols.map(k => COL[k].cell(g, i))); tr.addEventListener("click", () => openDrawer(g)); tr.addEventListener("keydown", e => { if (e.key === "Enter") openDrawer(g); }); return tr; });
-      t.replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : el("tr", {}, el("td", { cls: "empty", colspan: cols.length, text: opts.empty || "Nothing here yet" }))));
+      const body = shown.map((g, i) => { const tr = el("tr", onClick ? { cls: "clickable", tabindex: "0" } : {}, defs.map(c => c.cell(g, i))); if (onClick) { tr.addEventListener("click", () => onClick(g)); tr.addEventListener("keydown", e => { if (e.key === "Enter") onClick(g); }); } return tr; });
+      t.replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : el("tr", {}, el("td", { cls: "empty", colspan: defs.length, text: opts.empty || "Nothing here yet" }))));
       if (opts.more) { opts.more.style.display = rows.length > st.shown ? "" : "none"; opts.more.textContent = `Show more (${full(rows.length - st.shown)} left)`; }
       return rows;
     }
-    if (opts.more) opts.more.addEventListener("click", () => { st.shown += 50; render(); });
-    return { st, set(rows, keepPage) { st.rows = rows; if (!keepPage && opts.page) st.shown = opts.page; return render(); }, render, sorted: () => st.key ? sortRows(st.rows, st.key, st.dir) : st.rows };
+    if (opts.more) opts.more.addEventListener("click", () => { st.shown += opts.step || 50; render(); });
+    return { st, set(rows, keepPage) { st.rows = rows; if (!keepPage && opts.page) st.shown = opts.page; return render(); }, render, sorted };
   }
 
   // ---------- young games
@@ -401,13 +519,17 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   // ---------- all games
   const gf = document.getElementById("genre-filter");
   for (const g of D.genres) gf.append(el("option", { value: g.name, text: `${g.name} (${g.games})` }));
-  const allTable = SortTable("all-table", ["rank", "name", "genre", "mech", "ccu", "ch24", "spark", "peak", "age", "like", "mat"], { key: "ccu", dir: "desc", page: 50, more: document.getElementById("all-more"), empty: "No games match" });
-  const allState = { q: "", genre: "", age: "" };
-  const matches = (g, q) => !q || g.name.toLowerCase().includes(q) || (g.creator || "").toLowerCase().includes(q) || (g.niches || []).some(n => n.includes(q)) || (g.mech || []).some(m => mLabel(m).toLowerCase().includes(q)) || (g.theme || []).some(t => tLabel(t).toLowerCase().includes(q));
-  function applyAll() { const q = allState.q.toLowerCase().trim(); allTable.set(G.filter(g => (!allState.genre || g.genre === allState.genre) && (!allState.age || (g.age != null && g.age <= +allState.age)) && matches(g, q))); }
+  const allTable = SortTable("all-table", ["rank", "name", "genre", "mech", "art", "mapst", "ccu", "ch24", "spark", "peak", "age", "like", "mat"], { key: "ccu", dir: "desc", page: 50, more: document.getElementById("all-more"), empty: "No games match" });
+  const allState = { q: "", genre: "", age: "", art: "", map: "" };
+  const styleOpts = (sel, kind, field) => { const n = {}; G.forEach(g => { if (g[field]) n[g[field]] = (n[g[field]] || 0) + 1; }); const lab = kind === "art" ? artLabel : mapLabel; Object.keys(STY[kind]).concat(Object.keys(n).filter(k => !STY[kind][k])).filter(k => n[k]).forEach(k => sel.append(el("option", { value: k, text: `${lab(k)} (${n[k]})` }))); };
+  styleOpts($("art-filter"), "art", "art"); styleOpts($("map-filter"), "map", "mapst");
+  const matches = (g, q) => !q || g.name.toLowerCase().includes(q) || (g.art && artLabel(g.art).toLowerCase().includes(q)) || (g.mapst && mapLabel(g.mapst).toLowerCase().includes(q)) || (g.creator || "").toLowerCase().includes(q) || (g.niches || []).some(n => n.includes(q)) || (g.mech || []).some(m => mLabel(m).toLowerCase().includes(q)) || (g.theme || []).some(t => tLabel(t).toLowerCase().includes(q));
+  function applyAll() { const q = allState.q.toLowerCase().trim(); allTable.set(G.filter(g => (!allState.genre || g.genre === allState.genre) && (!allState.art || g.art === allState.art) && (!allState.map || g.mapst === allState.map) && (!allState.age || (g.age != null && g.age <= +allState.age)) && matches(g, q))); }
   document.getElementById("q").addEventListener("input", e => { allState.q = e.target.value; applyAll(); });
   gf.addEventListener("change", e => { allState.genre = e.target.value; applyAll(); });
   document.getElementById("age-filter").addEventListener("change", e => { allState.age = e.target.value; applyAll(); });
+  $("art-filter").addEventListener("change", e => { allState.art = e.target.value; applyAll(); });
+  $("map-filter").addEventListener("change", e => { allState.map = e.target.value; applyAll(); });
   applyAll();
 
   // ---------- YouTube
@@ -420,6 +542,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     lastFocus = document.activeElement;
     const kv = pairs => el("div", { cls: "kv" }, pairs.flatMap(([k, v]) => [el("span", { text: k }), el("span", {}, v)]));
     const chipRow = (list, labeler) => (list && list.length) ? el("span", {}, list.map(k => el("span", { cls: "chip", text: labeler(k) }))) : "–";
+    const styleRow = (k, lab, src, defs) => k ? el("span", { title: (defs[k] || {}).desc || null }, [el("span", { cls: "chip", text: lab(k) }), el("span", { cls: "note", text: src ? SRC_TEXT[src] || src : "" })]) : "not labelled yet";
     const bench = (g.mech || []).map(m => TR.benchmarks[m]).filter(Boolean)[0];
     drawer.replaceChildren(
       el("button", { cls: "close", text: "Close", onclick: closeDrawer, "aria-label": "Close details" }),
@@ -428,7 +551,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       link(g) ? el("a", { cls: "open", href: link(g), target: "_blank", rel: "noopener", text: "Open on Roblox ↗" }) : null,
       el("div", { cls: "stats" }, [["CCU", full(g.ccu)], ["Peak seen", full(g.peak)], ["Age", g.age == null ? "–" : g.age + " days"], ["Likes", pct(g.like)], ["24h", g.ch24 == null ? "–" : (g.ch24 >= 0 ? "+" : "") + Math.round(g.ch24 * 100) + "%"], ["Visits", fmt(g.visits)]].map(([k, v]) => el("div", {}, [el("b", { text: v }), el("span", { text: k })]))),
       el("h3", { text: "Design" }),
-      kv([["Core mechanics", chipRow(g.mech, mLabel)], ["Themes", chipRow(g.theme, tLabel)], ["Title formula", chipRow(g.form, fLabel)], ["Niches", chipRow(g.niches, n => n.replace(/_/g, " "))]]),
+      kv([["Core mechanics", chipRow(g.mech, mLabel)], ["Themes", chipRow(g.theme, tLabel)], ["Art style", styleRow(g.art, artLabel, g.asrc, STY.art)], ["Map style", styleRow(g.mapst, mapLabel, g.msrc, STY.map)], ["Title formula", chipRow(g.form, fLabel)], ["Niches", chipRow(g.niches, n => n.replace(/_/g, " "))]]),
       el("h3", { text: "Monetization" }),
       kv([["Game passes", g.passes == null ? "not fetched yet" : String(g.passes)], ["Median pass price", g.price == null ? "–" : g.price + " R$"], ["Pass types", chipRow(g.ptypes, x => x)],
           ["Leaders in its mechanic", bench ? `${bench.passes_median ?? "–"} passes, ~${bench.pass_price_median ?? "–"} R$ median` : "–"]]),
@@ -443,7 +566,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   addEventListener("keydown", e => { if (e.key === "Escape" && drawer.classList.contains("on")) closeDrawer(); });
 
   // ---------- leaderboards
-  const LB = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 };
+  const LB = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", art: "", map: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 };
   const METRICS = [["ccu", "CCU"], ["like", "Likes %"], ["age", "Age"], ["peak", "Peak seen"], ["ch24", "24h change"], ["fav", "Favorites"], ["visits", "Visits"], ["ytv", "YouTube views"], ["bday", "Badge awards/day"], ["passes", "Game passes"], ["price", "Median pass price"]];
   const PRESETS = [
     { name: "Top 25 by CCU", s: {} },
@@ -454,24 +577,24 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     { name: "Most YouTube coverage", s: { metric: "ytv" } },
     { name: "Oldest still-big games", s: { cmin: 10000, metric: "age" } },
   ];
-  const $ = id => document.getElementById(id);
   const fillSelect = (sel, items) => items.forEach(([v, t]) => sel.append(el("option", { value: v, text: t })));
   fillSelect($("lb-genre"), D.genres.map(g => [g.name, `${g.name} (${g.games})`]));
   fillSelect($("lb-mat"), [...new Set(G.map(g => g.mat).filter(Boolean))].sort((a, b) => (MAT_ORDER[a] || 9) - (MAT_ORDER[b] || 9)).map(m => [m, cap(m)]));
   fillSelect($("lb-mech"), (TR.mechanics || []).map(m => [m.key, `${m.label} (${m.games})`]));
   fillSelect($("lb-theme"), (TR.themes || []).map(t => [t.key, `${t.label} (${t.games})`]));
   fillSelect($("lb-metric"), METRICS);
+  (function () { const n = { art: {}, map: {} }; G.forEach(g => { if (g.art) n.art[g.art] = (n.art[g.art] || 0) + 1; if (g.mapst) n.map[g.mapst] = (n.map[g.mapst] || 0) + 1; }); fillSelect($("lb-art"), Object.keys(n.art).sort((a, b) => n.art[b] - n.art[a]).map(k => [k, `${artLabel(k)} (${n.art[k]})`])); fillSelect($("lb-map"), Object.keys(n.map).sort((a, b) => n.map[b] - n.map[a]).map(k => [k, `${mapLabel(k)} (${n.map[k]})`])); })();
   if (!$("lb-mat").options[1]) $("lb-mat").append(el("option", { value: "", text: "(filling in from the next runs)", disabled: "" }));
   function refreshSubs() { const s = $("lb-sub"), cur = LB.sub; s.replaceChildren(el("option", { value: "", text: "All" })); const subs = {}; G.filter(g => !LB.genre || g.genre === LB.genre).forEach(g => { if (g.sub) subs[g.sub] = (subs[g.sub] || 0) + 1; }); Object.entries(subs).sort((a, b) => b[1] - a[1]).forEach(([k, n]) => s.append(el("option", { value: k, text: `${k} (${n})` }))); s.value = subs[cur] ? cur : ""; LB.sub = s.value; }
   const saved = () => store.get("rtt.boards", []);
   function refreshPresets() { const p = $("lb-preset"); p.replaceChildren(el("option", { value: "", text: "Custom" })); PRESETS.forEach((x, i) => p.append(el("option", { value: "b" + i, text: x.name }))); saved().forEach((x, i) => p.append(el("option", { value: "s" + i, text: "★ " + x.name }))); }
-  const lbTable = SortTable("lb-table", ["rank", "name", "genre", "mat", "mech", "ccu", "ch24", "like", "age", "ytv"], { empty: "No games match these filters", onSort: s => { if (METRICS.some(m => m[0] === s.key)) { LB.metric = s.key; LB.dir = s.dir; $("lb-metric").value = s.key; $("lb-dir").value = s.dir; $("lb-preset").value = ""; lbRun(); } } });
-  function lbFromInputs() { LB.q = $("lb-q").value; LB.genre = $("lb-genre").value; LB.sub = $("lb-sub").value; LB.mat = $("lb-mat").value; LB.mech = $("lb-mech").value; LB.theme = $("lb-theme").value; LB.amin = $("lb-amin").value; LB.amax = $("lb-amax").value; LB.cmin = $("lb-cmin").value; LB.lmin = $("lb-lmin").value; LB.metric = $("lb-metric").value; LB.dir = $("lb-dir").value; LB.n = +$("lb-n").value; }
-  function lbToInputs() { $("lb-q").value = LB.q || ""; $("lb-genre").value = LB.genre || ""; refreshSubs(); $("lb-sub").value = LB.sub || ""; $("lb-mat").value = LB.mat || ""; $("lb-mech").value = LB.mech || ""; $("lb-theme").value = LB.theme || ""; $("lb-amin").value = LB.amin ?? ""; $("lb-amax").value = LB.amax ?? ""; $("lb-cmin").value = LB.cmin ?? ""; $("lb-lmin").value = LB.lmin ?? ""; $("lb-metric").value = LB.metric || "ccu"; $("lb-dir").value = LB.dir || "desc"; $("lb-n").value = String(LB.n || 25); }
+  const lbTable = SortTable("lb-table", ["rank", "name", "genre", "mat", "mech", "art", "mapst", "ccu", "ch24", "like", "age", "ytv"], { empty: "No games match these filters", onSort: s => { if (METRICS.some(m => m[0] === s.key)) { LB.metric = s.key; LB.dir = s.dir; $("lb-metric").value = s.key; $("lb-dir").value = s.dir; $("lb-preset").value = ""; lbRun(); } } });
+  function lbFromInputs() { LB.q = $("lb-q").value; LB.genre = $("lb-genre").value; LB.sub = $("lb-sub").value; LB.mat = $("lb-mat").value; LB.mech = $("lb-mech").value; LB.theme = $("lb-theme").value; LB.art = $("lb-art").value; LB.map = $("lb-map").value; LB.amin = $("lb-amin").value; LB.amax = $("lb-amax").value; LB.cmin = $("lb-cmin").value; LB.lmin = $("lb-lmin").value; LB.metric = $("lb-metric").value; LB.dir = $("lb-dir").value; LB.n = +$("lb-n").value; }
+  function lbToInputs() { $("lb-q").value = LB.q || ""; $("lb-genre").value = LB.genre || ""; refreshSubs(); $("lb-sub").value = LB.sub || ""; $("lb-mat").value = LB.mat || ""; $("lb-mech").value = LB.mech || ""; $("lb-theme").value = LB.theme || ""; $("lb-art").value = LB.art || ""; $("lb-map").value = LB.map || ""; $("lb-amin").value = LB.amin ?? ""; $("lb-amax").value = LB.amax ?? ""; $("lb-cmin").value = LB.cmin ?? ""; $("lb-lmin").value = LB.lmin ?? ""; $("lb-metric").value = LB.metric || "ccu"; $("lb-dir").value = LB.dir || "desc"; $("lb-n").value = String(LB.n || 25); }
   let lbResult = [];
   function lbRun() {
     const q = (LB.q || "").toLowerCase().trim(), amin = LB.amin === "" ? null : +LB.amin, amax = LB.amax === "" ? null : +LB.amax, cmin = LB.cmin === "" ? null : +LB.cmin, lmin = LB.lmin === "" ? null : +LB.lmin / 100;
-    let rows = G.filter(g => (!LB.genre || g.genre === LB.genre) && (!LB.sub || g.sub === LB.sub) && (!LB.mat || g.mat === LB.mat) && (!LB.mech || (g.mech || []).includes(LB.mech)) && (!LB.theme || (g.theme || []).includes(LB.theme)) &&
+    let rows = G.filter(g => (!LB.genre || g.genre === LB.genre) && (!LB.sub || g.sub === LB.sub) && (!LB.mat || g.mat === LB.mat) && (!LB.mech || (g.mech || []).includes(LB.mech)) && (!LB.theme || (g.theme || []).includes(LB.theme)) && (!LB.art || g.art === LB.art) && (!LB.map || g.mapst === LB.map) &&
       (amin == null || (g.age != null && g.age >= amin)) && (amax == null || (g.age != null && g.age <= amax)) && (cmin == null || g.ccu >= cmin) && (lmin == null || (g.like != null && g.like >= lmin)) && matches(g, q));
     const total = rows.length;
     rows = sortRows(rows, LB.metric, LB.dir).slice(0, LB.n);
@@ -481,14 +604,14 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     $("lb-note").textContent = `${full(total)} games match · ranked by ${metricName}, ${LB.dir === "desc" ? "highest" : "lowest"} first · tap any column to re-sort the board`;
   }
   ["lb-q", "lb-amin", "lb-amax", "lb-cmin", "lb-lmin"].forEach(id => $(id).addEventListener("input", () => { lbFromInputs(); $("lb-preset").value = ""; lbRun(); }));
-  ["lb-genre", "lb-sub", "lb-mat", "lb-mech", "lb-theme", "lb-metric", "lb-dir", "lb-n"].forEach(id => $(id).addEventListener("change", () => { if (id === "lb-genre") { LB.genre = $("lb-genre").value; refreshSubs(); } lbFromInputs(); $("lb-preset").value = ""; lbRun(); }));
-  $("lb-preset").addEventListener("change", e => { const v = e.target.value; if (!v) return; const base = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 }; const src = v[0] === "b" ? PRESETS[+v.slice(1)].s : saved()[+v.slice(1)].s; Object.assign(LB, base, src); lbToInputs(); lbRun(); });
+  ["lb-genre", "lb-sub", "lb-mat", "lb-mech", "lb-theme", "lb-art", "lb-map", "lb-metric", "lb-dir", "lb-n"].forEach(id => $(id).addEventListener("change", () => { if (id === "lb-genre") { LB.genre = $("lb-genre").value; refreshSubs(); } lbFromInputs(); $("lb-preset").value = ""; lbRun(); }));
+  $("lb-preset").addEventListener("change", e => { const v = e.target.value; if (!v) return; const base = { q: "", genre: "", sub: "", mat: "", mech: "", theme: "", art: "", map: "", amin: "", amax: "", cmin: "", lmin: "", metric: "ccu", dir: "desc", n: 25 }; const src = v[0] === "b" ? PRESETS[+v.slice(1)].s : saved()[+v.slice(1)].s; Object.assign(LB, base, src); lbToInputs(); lbRun(); });
   $("lb-save").addEventListener("click", () => { const name = prompt("Name this board", "My board"); if (!name) return; const list = saved(); list.push({ name: name.slice(0, 60), s: Object.assign({}, LB) }); store.set("rtt.boards", list); refreshPresets(); $("lb-preset").value = "s" + (list.length - 1); });
   $("lb-share").addEventListener("click", e => { const url = location.href.split("#")[0] + "#board=" + encodeURIComponent(JSON.stringify(LB)); copyText(url, e.currentTarget); });
   $("lb-csv").addEventListener("click", () => {
-    const cols = ["rank", "name", "creator", "universe_id", "genre", "subgenre", "maturity", "ccu", "peak", "age_days", "likes", "mechanics", "themes", "youtube_views_7d", "url"];
+    const cols = ["rank", "name", "creator", "universe_id", "genre", "subgenre", "maturity", "ccu", "peak", "age_days", "likes", "mechanics", "themes", "art_style", "map_style", "youtube_views_7d", "url"];
     const esc = v => { let s = v == null ? "" : String(v); if (/^[=+\-@\t\r]/.test(s) && isNaN(+s)) s = "'" + s; return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-    const lines = [cols.join(",")].concat(lbResult.map((g, i) => [i + 1, g.name, g.creator, g.id, g.genre, g.sub, g.mat, g.ccu, g.peak, g.age, g.like, (g.mech || []).map(mLabel).join("; "), (g.theme || []).map(tLabel).join("; "), g.ytv, link(g)].map(esc).join(",")));
+    const lines = [cols.join(",")].concat(lbResult.map((g, i) => [i + 1, g.name, g.creator, g.id, g.genre, g.sub, g.mat, g.ccu, g.peak, g.age, g.like, (g.mech || []).map(mLabel).join("; "), (g.theme || []).map(tLabel).join("; "), g.art ? artLabel(g.art) : "", g.mapst ? mapLabel(g.mapst) : "", g.ytv, link(g)].map(esc).join(",")));
     const a = el("a", { href: URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv;charset=utf-8" })), download: "roblox-leaderboard.csv" }); document.body.append(a); a.click(); a.remove();
   });
   refreshPresets(); refreshSubs();
@@ -507,6 +630,14 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   const toks = s => new Set(s.toLowerCase().replace(/[^a-z0-9+ ]+/g, " ").split(/\s+/).filter(w => w && !STOP.has(w)));
   const nameToks = G.map(g => ({ g, t: toks(g.name) }));
   function closest(title) { const t = toks(title); let best = null, bs = 0; for (const n of nameToks) { if (!n.t.size) continue; let inter = 0; t.forEach(w => { if (n.t.has(w)) inter++; }); const j = inter / (t.size + n.t.size - inter); if (j > bs) { bs = j; best = n.g; } } return { game: best, sim: bs }; }
+  const normName = s => s.toLowerCase().replace(/[^a-z0-9+ ]/g, "").replace(/\s+/g, " ").trim();
+  const normNames = G.map(g => normName(g.name));
+  // the generator's novelty rule: a title may not be a near-copy (>= 67% word overlap) of, or sit inside, a tracked game's name
+  function tooClose(title, near) {
+    near = near || closest(title); const t = normName(title);
+    if (near.sim >= 0.67 || (near.game && normName(near.game.name).includes(t))) return true;
+    return t.length >= 3 && normNames.some(n => n === t || n.includes(t));   // alt titles: check every name, not just the closest one
+  }
   function mulberry(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function pick(rand, items, weight) { const w = items.map(weight).map(x => Math.max(0, x || 0)); const sum = w.reduce((a, b) => a + b, 0); if (!sum) return items[Math.floor(rand() * items.length)]; let r = rand() * sum; for (let i = 0; i < items.length; i++) { r -= w[i]; if (r <= 0) return items[i]; } return items[items.length - 1]; }
   const SCOPE_RANK = { small: 0, medium: 1, large: 2 }, SCOPE_NAME = ["small", "medium", "large"], SCOPE_TEXT = { small: "Small · 1–2 weeks", medium: "Medium · 3–6 weeks", large: "Large · 6+ weeks" };
@@ -548,7 +679,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     job_shift: { t: [["{N} Job Simulator", "simulator"], ["Work at the {N}", null]], p: "Work shifts at a {N}-themed job, earn pay and get promoted.", s: ["Work shifts and complete tasks", "Get promoted and unlock new jobs"], w: "work shifts for bonus pay" },
   };
   const STATS = ["Speed", "Size", "Strength", "Jump", "Luck", "Power"];
-  const fill = (str, ctx) => str.replace(/\{N\}/g, ctx.N).replace(/\{Ns\}/g, ctx.Ns).replace(/\{S\}/g, ctx.S).replace(/\{s\}/g, ctx.S.toLowerCase()).replace(/\{V\}/g, ctx.V || "")
+  const fill = (str, ctx) => str.replace(/\{N\}/g, ctx.N).replace(/\{Ns\}/g, ctx.Ns).replace(/\{S\}/g, ctx.S).replace(/\{s\}/g, ctx.S.toLowerCase()).replace(/\{V\}/g, ctx.V || "").replace(/\{N2\}/g, ctx.N2 || "").replace(/\{W\}/g, ctx.W || "").replace(/\{E\}/g, ctx.E || "")
     .replace(/\b([Aa]) (?!(?:[Uu]ni|[Oo]ne|[Ee]u|[Uu]se))([AEIOUaeiou])/g, "$1n $2");
   // how well a theme suits a mechanic: 1 = natural fit, 0.25 = workable, 0 = nonsense (no "Dig for Songs")
   function fit(m, t) { const f = (TAX.mechanics[m] || {}).fits || { primary: [], ok: [] }, k = (TAX.themes[t] || {}).kinds || []; if (!f.primary.length) return 0.5; if (k.some(x => f.primary.includes(x))) return 1; if (k.some(x => f.ok.includes(x))) return 0.25; return 0; }
@@ -587,12 +718,78 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       const title = fill(pat, ctx).replace(/\s+/g, " ").trim();
       if (used.titles.has(title.toLowerCase())) continue;
       const near = closest(title);
-      if (near.sim >= 0.67 || (near.game && near.game.name.toLowerCase().replace(/[^a-z0-9+ ]/g, "").includes(title.toLowerCase().replace(/[^a-z0-9+ ]/g, "")))) continue;
+      if (near.sim >= 0.67 || (near.game && normName(near.game.name).includes(normName(title)))) continue;
       if (used.pairs.has(m + "|" + t) && relax === 0) continue;
       used.titles.add(title.toLowerCase()); used.pairs.add(m + "|" + t); used.themes.add(t);
       return { title, m, m2, t, scope, scopeOff, formula, near, mi, ti: themeInfo[t], ctx };
     }
     return null;
+  }
+  // ---------- alternate titles: popular naming patterns for the idea's niche (deterministic, no AI)
+  // one or two wordings per taxonomy title formula ({N} noun, {Ns} plural, {V} the mechanic's verb, {S} a stat, {N2} a second theme, {W} one word, {E} emoji)
+  const FORMULA_TPL = {
+    steal_a: ["Steal a {N}", "Steal {Ns} From Friends"], plus_one: ["+1 {S} {Ns}", "+1 {S} {N} Race"], verb_for_noun: ["{V} for {Ns}"],
+    grow_a: ["Grow a {N}", "Grow Your {N} Zoo"], build_a: ["Build a {N}", "Build Your {N} Base"], escape_x: ["Escape the {N}", "Escape {Ns}"], be_a: ["Be a {N}"],
+    get_rich: ["{V} {Ns} to Get Rich", "Get Rich With {Ns}"], simulator: ["{N} Simulator", "{N} {V} Simulator"], tycoon: ["{N} Tycoon", "{N} Empire Tycoon"],
+    survive_x: ["Survive the {N}", "99 Nights With {Ns}"], x_vs_y: ["{N} vs {N2}", "{Ns} vs {N2}"], emoji: ["{E} {N} Rush", "{Ns} {E}"], one_word: ["{W}"],
+  };
+  const THEME_EMOJI = { brainrot: "🧠", eggs: "🥚", animals: "🐾", anime: "🌸", zombies: "🧟", horror: "👻", ocean: "🦈", space: "🚀", dinosaurs: "🦖", robots: "🤖", food: "🍬", money: "💰", vehicles: "🚗", sports: "⚽", fantasy: "🐉", superheroes: "🦸", seasonal: "🎃", military: "🪖", disaster: "🌪️", school: "🏫", prison: "🚓", ancient: "🏺", nature: "🌳", ice_fire: "🔥", stone_rocks: "💎", memes: "🤪", fashion: "👗", music: "🎵", toys: "🧸", giant: "🦍" };
+  // formulas used by the biggest tracked games that share the idea's mechanic (or theme): weight per formula + a real example of each
+  function namingStats(idea) {
+    if (idea._ns) return idea._ns;
+    const ms = [idea.m].concat(idea.m2 ? [idea.m2] : []), w = {}, ex = {}; let tot = 0, n = 0;
+    for (const g of G) {   // G is sorted by CCU, biggest first
+      const byM = (g.mech || []).some(x => ms.includes(x)), byT = (g.theme || []).includes(idea.t);
+      if (!byM && !byT) continue;
+      if (++n > 60) break;
+      const gw = (byM ? 1 : 0.5) + (byM && byT ? 0.5 : 0); tot += gw;
+      for (const f of g.form || []) { w[f] = (w[f] || 0) + gw; const tier = (byM ? 2 : 0) + (byT ? 1 : 0); if (!ex[f] || tier > ex[f].tier) ex[f] = { g, tier }; }
+    }
+    return idea._ns = { w, ex, tot: tot || 1, n };
+  }
+  const anyExample = f => G.find(g => (g.form || []).includes(f));
+  const blank = tpl => '"' + tpl.replace(/\{(N|Ns|N2|W|S|V|E)\}/g, "___").replace(/\s+/g, " ").trim() + '"';
+  // a real tracked game whose name uses the same fixed words as a template that has no taxonomy formula
+  function exampleFor(tpl, idea) {
+    const fixed = [...toks(tpl.replace(/\{[A-Za-z0-9]+\}/g, " "))].filter(x => x.length > 2); if (!fixed.length) return null;
+    const hit = list => list.find(g => { const t = toks(g.name); return fixed.every(x => t.has(x)); });
+    return hit(G.filter(g => (g.mech || []).includes(idea.m))) || hit(G) || null;
+  }
+  function altCandidates(idea) {
+    const ns = namingStats(idea), M = TAX.mechanics[idea.m] || {}, M2 = idea.m2 ? (TAX.mechanics[idea.m2] || {}) : {};
+    const others = Object.keys(TAX.themes).filter(k => k !== idea.t && fit(idea.m, k) > 0).sort((a, b) => ((themeInfo[b] || {}).share || 0) - ((themeInfo[a] || {}).share || 0)).slice(0, 3);
+    const base = Object.assign({}, idea.ctx, { E: THEME_EMOJI[idea.t] || "⭐", W: (idea.ctx.Ns.trim().split(/\s+/).pop() || idea.ctx.Ns) });
+    const verbs = [...new Set([M.title_verb, M2.title_verb, "Collect"].filter(Boolean).map(v => v.replace("+1", "Grow")))].slice(0, 3);
+    const out = new Map();
+    const add = (tpl, formula, weight) => {
+      const variants = [];
+      for (const V of /\{V\}/.test(tpl) ? verbs : [null]) for (const S of /\{S\}/.test(tpl) ? STATS : [null]) for (const o of /\{N2\}/.test(tpl) ? others : [null]) {
+        const ctx = Object.assign({}, base, V ? { V } : {}, S ? { S } : {}, o ? { N2: (TAX.themes[o] || {}).noun_plural || tLabel(o) } : {});
+        variants.push(fill(tpl, ctx).replace(/\s+/g, " ").trim());
+      }
+      for (const title of variants) {
+        const k = title.toLowerCase(); if (!title || out.has(k) && out.get(k).w >= weight) continue;
+        const exg = formula ? ((ns.ex[formula] || {}).g || anyExample(formula)) : exampleFor(tpl, idea);
+        out.set(k, { title, formula, w: weight, pat: formula ? fLabel(formula).replace(/\s*\([^)]*\)\s*$/, "") : blank(tpl), ex: exg });
+      }
+    };
+    const fshare = f => (ns.w[f] || 0) / ns.tot;
+    for (const [tpl, f] of (MC[idea.m] || { t: [] }).t) add(tpl, f, 1 + (f ? 4 * fshare(f) : 0));
+    for (const [tpl, f] of idea.m2 && MC[idea.m2] ? MC[idea.m2].t : []) add(tpl, f, 0.7 + (f ? 4 * fshare(f) : 0));
+    for (const [f, tpls] of Object.entries(FORMULA_TPL)) if (TAX.formulas[f]) for (const tpl of tpls) add(tpl, f, 0.12 + 7 * fshare(f));
+    for (const [tpl] of GENERIC_TITLES) if (!/\{V\}/.test(tpl)) add(tpl, null, 0.25);
+    return [...out.values()];
+  }
+  function nextAltTitles(idea, shown, rand, n = 3) {
+    let pool = altCandidates(idea).filter(c => !shown.has(c.title.toLowerCase()) && !tooClose(c.title));
+    const chosen = [], seenPat = new Set();
+    while (chosen.length < n && pool.length) {
+      const c = pick(rand, pool, x => x.w * (seenPat.has(x.pat) ? 0.1 : 1));
+      chosen.push(c); seenPat.add(c.pat);
+      const ct = toks(c.title);
+      pool = pool.filter(x => { if (x === c) return false; const xt = toks(x.title); let i = 0; ct.forEach(w => { if (xt.has(w)) i++; }); return !(ct.size && xt.size && i / (ct.size + xt.size - i) >= 0.67); });
+    }
+    return chosen;
   }
   function describe(idea) {
     const M = TAX.mechanics[idea.m], C = MC[idea.m] || { p: "You " + M.verb + ".", s: [cap(M.verb)] }, C2 = idea.m2 ? MC[idea.m2] : null;
@@ -610,6 +807,25 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     const why = `${M.label} is at ${mi.momentum_adj ?? "–"}× momentum (${mi.young_games ?? 0} young games, ${fmt(mi.young_ccu)} CCU)` + (ti.momentum_adj ? `; ${tLabel(idea.t)} is at ${ti.momentum_adj}×` : "") + `. ${n === 0 ? "No tracked game pairs these yet." : n === 1 ? "Only 1 tracked game pairs these." : `${n} tracked games pair these.`}`;
     return { pitch, loop, money, retention, why, refs };
   }
+  // "Alt titles" on an idea card: 3 new chips per press (never one shown before on this card), click to apply, Undo to go back
+  function altTitleUI(idea, rec, seed, idx, titleEl, showFormula, showNear) {
+    const shown = new Set([idea.title.toLowerCase()]), history = []; let presses = 0, cur = { title: idea.title, formula: idea.formula };
+    const list = el("div", { cls: "alts", "aria-live": "polite" }), undo = el("button", { cls: "small", text: "Undo", hidden: "", title: "Go back to the previous title" });
+    const go = el("button", { cls: "small", text: "Alt titles", title: "Show 3 more title ideas built from popular naming patterns in this niche" });
+    const setTitle = (title, formula) => { cur = { title, formula }; rec.title = title; rec.formula = formula; titleEl.textContent = title; showFormula(formula); showNear(closest(title)); };
+    const sync = () => { undo.hidden = !history.length; list.querySelectorAll(".altchip").forEach(b => b.classList.toggle("on", b.dataset.t === cur.title)); };
+    go.addEventListener("click", () => {
+      const rand = mulberry((seed * 31 + idx * 977 + (++presses) * 7919) >>> 0);
+      const got = nextAltTitles(idea, shown, rand, 3);
+      got.forEach(c => shown.add(c.title.toLowerCase()));
+      list.replaceChildren(...(got.length ? got.map(c => el("div", { cls: "altitem" }, [
+        el("button", { cls: "altchip", text: c.title, "data-t": c.title, "aria-pressed": "false", title: "Use this title", onclick: () => { if (c.title === cur.title) return; history.push(cur); setTitle(c.title, c.formula); sync(); } }),
+        el("span", { cls: "altpat", text: `pattern: ${c.pat}` + (c.ex ? ` (e.g. ${c.ex.name})` : " (new wording: no tracked game uses it)") })])) : [el("div", { cls: "note", text: "No more fresh titles for this idea. Undo, or generate new ideas." })]));
+      sync();
+    });
+    undo.addEventListener("click", () => { const prev = history.pop(); if (prev) setTitle(prev.title, prev.formula); sync(); });
+    return el("div", {}, [el("div", { cls: "altrow" }, [go, undo]), list]);
+  }
   let lastIdeas = [];
   function generateIdeas(seed) {
     seed = seed || (Date.now() % 2147483647);
@@ -621,12 +837,18 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       const idea = makeIdea(rand, opts, used, 0) || makeIdea(rand, opts, used, 1) || makeIdea(rand, opts, used, 2); if (!idea) break;
       const d = describe(idea); lastIdeas.push(Object.assign({}, idea, d));
       const refEls = d.refs.flatMap((r, k) => { const g = byId[r.id] || r; const href = link(g); return [k ? ", " : "", href ? el("a", { href, target: "_blank", rel: "noopener", text: `${r.name} (${fmt(r.ccu)} CCU, ${r.age}d)` }) : el("span", { text: r.name })]; });
+      const rec = lastIdeas[lastIdeas.length - 1];
+      const titleEl = el("h3", { text: idea.title }), formulaHost = el("span", {}), nearEl = el("div", {});
+      const showFormula = f => formulaHost.replaceChildren(...(f ? [el("span", { cls: "chip", text: "Title: " + fLabel(f) })] : []));
+      const showNear = (near) => nearEl.textContent = near.game ? `Closest tracked title: ${near.game.name} (${Math.round(near.sim * 100)}% word overlap)` : "";
+      showFormula(idea.formula); showNear(idea.near);
       out.append(el("article", { cls: "idea" }, [
-        el("div", { cls: "top" }, [el("div", {}, [el("div", { cls: "num", text: `Idea ${i + 1}` }), el("h3", { text: idea.title })]), el("span", { cls: "scope", text: SCOPE_TEXT[idea.scope], title: idea.scopeOff ? "Outside the size you picked: this mechanic is usually built at this size" : null })]),
-        el("div", {}, [el("span", { cls: "chip", text: mLabel(idea.m) }), idea.m2 ? el("span", { cls: "chip", text: "+ " + mLabel(idea.m2) }) : null, el("span", { cls: "chip", text: tLabel(idea.t) }), idea.formula ? el("span", { cls: "chip", text: "Title: " + fLabel(idea.formula) }) : null]),
+        el("div", { cls: "top" }, [el("div", {}, [el("div", { cls: "num", text: `Idea ${i + 1}` }), titleEl]), el("span", { cls: "scope", text: SCOPE_TEXT[idea.scope], title: idea.scopeOff ? "Outside the size you picked: this mechanic is usually built at this size" : null })]),
+        el("div", {}, [el("span", { cls: "chip", text: mLabel(idea.m) }), idea.m2 ? el("span", { cls: "chip", text: "+ " + mLabel(idea.m2) }) : null, el("span", { cls: "chip", text: tLabel(idea.t) }), formulaHost]),
+        altTitleUI(idea, rec, seed, i, titleEl, showFormula, showNear),
         el("p", { text: d.pitch }),
         el("dl", {}, [el("dt", { text: "Core loop" }), el("dd", {}, el("ol", {}, d.loop.map(s => el("li", { text: s })))), el("dt", { text: "Monetize" }), el("dd", { text: d.money }), el("dt", { text: "Retention" }), el("dd", { text: d.retention })]),
-        el("div", { cls: "why" }, [el("b", { text: "Why now: " }), d.why, d.refs.length ? el("div", {}, ["Proof: ", ...refEls]) : null, idea.near.game ? el("div", { text: `Closest tracked title: ${idea.near.game.name} (${Math.round(idea.near.sim * 100)}% word overlap)` }) : null])
+        el("div", { cls: "why" }, [el("b", { text: "Why now: " }), d.why, d.refs.length ? el("div", {}, ["Proof: ", ...refEls]) : null, nearEl])
       ]));
     }
     const off = lastIdeas.filter(x => x.scopeOff).length;
@@ -639,6 +861,254 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   $("ig-go").addEventListener("click", () => generateIdeas());
   $("ig-copy").addEventListener("click", e => copyText(lastIdeas.map((x, i) => `${i + 1}. ${x.title} [${SCOPE_TEXT[x.scope]}]\n   ${x.pitch}\n   Loop: ${x.loop.join(" → ")}\n   Monetize: ${x.money}\n   Retention: ${x.retention}\n   Why now: ${x.why}`).join("\n\n"), e.currentTarget));
   generateIdeas(20261007);
+
+  // ---------- data hub
+  const HUB = D.hub || { datasets: [], health: { steps: [] } };
+  const safePath = pth => pth && /^[\w.\/-]+$/.test(pth) ? pth : null;
+  const LOCAL = location.protocol === "file:";
+  const NO_FETCH = "Raw files can't be loaded while this page is opened as a local file. Open the published dashboard to browse raw files (the Download link still works).";
+  (function () {
+    const H = HUB.health || { steps: [] }, host = $("hub-health"), note = $("hub-health-note");
+    if (!H.steps.length) { note.textContent = "No runs logged yet. Each pipeline step records itself in data/runs.csv."; return; }
+    const failing = H.steps.filter(s => !s.ok), f24 = H.steps.reduce((a, s) => a + s.fails24, 0);
+    note.textContent = `${H.steps.length} steps logged · ${failing.length ? failing.length + " failing on their last run" : "all OK on their last run"} · ${f24} failure${f24 === 1 ? "" : "s"} in the last 24 hours`;
+    const rows = H.steps.map(s => el("tr", {}, [
+      el("td", {}, [el("b", { text: s.task }), s.detail ? el("span", { cls: "sub", text: s.detail.slice(0, 120) }) : null]),
+      el("td", { title: whenFull(s.last), text: when(s.last) }),
+      el("td", {}, el("span", { cls: s.ok ? "up" : "down", text: s.ok ? "● OK" : "▲ Failed" })),
+      el("td", { cls: "num" }, el("span", { cls: s.fails24 ? "down" : "", text: String(s.fails24) })),
+      el("td", { cls: "num", text: String(s.runs24) }),
+      el("td", { cls: "num", text: s.count ? full(s.count) : "–" }),
+      el("td", { title: s.last_ok ? whenFull(s.last_ok) : "", text: s.last_ok ? when(s.last_ok) : "never" })]));
+    const th = (t, num) => el("th", { cls: num ? "num" : "", scope: "col", text: t });
+    host.append(el("table", {}, [el("thead", {}, el("tr", {}, [th("Step"), th("Last run"), th("Last result"), th("Failures, 24h", 1), th("Runs, 24h", 1), th("Rows last run", 1), th("Last success")])), el("tbody", {}, rows)]));
+  })();
+
+  const hubDefs = [
+    { key: "name", label: "Dataset", get: d => d.name.toLowerCase(), cell: d => el("td", {}, [el("b", { text: d.name }), el("span", { cls: "src", text: d.src })]) },
+    { key: "group", label: "Group", get: d => d.group.toLowerCase(), cell: d => el("td", {}, el("span", { cls: "chip", text: d.group })) },
+    { key: "desc", label: "What it holds", sort: false, cell: d => el("td", { cls: "wrap" }, [d.desc, d.note ? el("span", { cls: "sub", text: d.note }) : null]) },
+    { key: "rows", label: "Rows", num: true, get: d => d.rows, cell: d => el("td", { cls: "num" }, d.rows == null ? "–" : [full(d.rows), el("span", { cls: "sub", text: d.unit })]) },
+    { key: "bytes", label: "Size", num: true, get: d => d.available ? d.bytes : null, cell: d => el("td", { cls: "num", text: d.available ? bytesTxt(d.bytes) : "–" }) },
+    { key: "updated", label: "Last updated", get: d => d.updated || null, cell: d => el("td", { title: d.updated ? whenFull(d.updated) + (d.basis ? " · " + d.basis : "") : null }, d.updated ? [when(d.updated), el("span", { cls: "sub", text: d.basis || "" })] : "–") },
+    { key: "act", label: "", sort: false, cell: d => { const href = safePath(d.path); return el("td", {}, el("div", { cls: "hubacts" }, d.available ? [
+      el("button", { cls: "small", text: "View", onclick: e => { e.stopPropagation(); openDataset(d); } }),
+      href ? el("a", { cls: "btn small", href, download: href.split("/").pop(), text: d.kind === "days" ? "Download latest day" : "Download", onclick: e => e.stopPropagation() }) : el("span", { cls: "sub", text: "not published" })] : [el("span", { cls: "sub", text: "not yet" })])); } },
+  ];
+  const hubTable = SortTable("hub-table", hubDefs, { key: "group", dir: "asc", click: d => d.available && openDataset(d), empty: "No dataset matches" });
+  const hubFilter = () => { const q = $("hub-q").value.trim().toLowerCase(); hubTable.set(HUB.datasets.filter(d => !q || (d.name + " " + d.src + " " + d.desc + " " + d.group).toLowerCase().includes(q))); };
+  $("hub-q").addEventListener("input", hubFilter);
+  hubFilter();
+  $("hub-note").textContent = `${HUB.datasets.length} datasets · ${HUB.datasets.filter(d => d.available).length} with data so far · files are copied next to this page when it is built` + (HUB.copied ? "" : " (this build did not publish raw files, so View and Download are off)") + `; ${HUB.runs_cap ? "the run log keeps its latest " + full(HUB.runs_cap) + " rows here" : ""}.`;
+
+  function csvParse(text) {
+    const rows = []; let row = [], f = "", q = false, i = text.charCodeAt(0) === 0xFEFF ? 1 : 0;
+    for (; i < text.length; i++) {
+      const c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true; else if (c === ",") { row.push(f); f = ""; } else if (c === "\n") { row.push(f); rows.push(row); row = []; f = ""; } else if (c !== "\r") f += c;
+    }
+    if (f !== "" || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  }
+  function mdInline(text, parent) {
+    const re = /(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g; let last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) parent.append(text.slice(last, m.index));
+      const t = m[0];
+      if (t[0] === "*") parent.append(el("b", { text: t.slice(2, -2) })); else if (t[0] === "`") parent.append(el("code", { text: t.slice(1, -1) }));
+      else { const mm = t.match(/^\[([^\]]+)\]\((.+)\)$/); parent.append(el("a", { href: mm[2], target: "_blank", rel: "noopener", text: mm[1] })); }
+      last = m.index + t.length;
+    }
+    if (last < text.length) parent.append(text.slice(last));
+    return parent;
+  }
+  function mdRender(text) {   // small, safe markdown: headings, pipe tables, lists, paragraphs, bold, code
+    const lines = text.split(/\r?\n/), out = []; let i = 0;
+    const cells = l => l.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(x => x.trim());
+    while (i < lines.length) {
+      const l = lines[i];
+      if (!l.trim()) { i++; continue; }
+      let m;
+      if ((m = l.match(/^(#{1,6})\s+(.*)$/))) { out.push(mdInline(m[2], el(m[1].length <= 2 ? "h3" : "h4"))); i++; continue; }
+      if (l.trim().startsWith("|") && i + 1 < lines.length && /^\s*\|?\s*:?-{2,}/.test(lines[i + 1])) {
+        const head = cells(l); i += 2; const body = [];
+        while (i < lines.length && lines[i].trim().startsWith("|")) { body.push(cells(lines[i])); i++; }
+        out.push(el("div", { cls: "tablewrap" }, el("table", {}, [el("thead", {}, el("tr", {}, head.map(h => mdInline(h, el("th"))))), el("tbody", {}, body.map(r => el("tr", {}, r.map(c => mdInline(c, el("td"))))))])));
+        continue;
+      }
+      if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+        const ordered = /^\s*\d+\./.test(l), items = [];
+        while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i])) { items.push(lines[i].replace(/^\s*([-*]|\d+\.)\s+/, "")); i++; }
+        out.push(el(ordered ? "ol" : "ul", {}, items.map(t => mdInline(t, el("li"))))); continue;
+      }
+      const para = []; while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|\s*\||\s*([-*]|\d+\.)\s+)/.test(lines[i])) { para.push(lines[i].trim()); i++; }
+      out.push(mdInline(para.join(" "), el("p")));
+    }
+    return out;
+  }
+
+  let hubToken = 0;
+  function openDataset(d, dayPath) {
+    const token = ++hubToken, view = $("hub-view");
+    view.hidden = false;
+    const body = el("div"), status = el("p", { cls: "note", style: "margin:8px 0" }), q = el("input", { type: "search", placeholder: "Search this " + (d.kind === "csv" || d.kind === "days" ? "table" : "file") });
+    const dayFiles = (d.files || []).filter(f => f.path), older = (d.files || []).filter(f => !f.path);
+    let path = safePath(dayPath || (d.kind === "days" ? (dayFiles[0] || {}).path : d.path));
+    const dl = el("a", { cls: "btn small", text: "Download", href: path || "#", download: path ? path.split("/").pop() : null });
+    const daySel = d.kind === "days" && dayFiles.length ? el("select", { "aria-label": "Day" }, dayFiles.map(f => el("option", { value: f.path, text: `${f.date} (${full(f.rows)} rows)` }))) : null;
+    const setHead = () => { dl.href = path || "#"; if (path) dl.setAttribute("download", path.split("/").pop()); };
+    view.replaceChildren(
+      el("div", { cls: "hubhead" }, [el("div", {}, [el("h2", { text: d.name }), el("p", { cls: "note", style: "margin:2px 0 0" }, [el("span", { cls: "src", style: "display:inline", text: d.src }), " · " + d.desc])]),
+        el("div", { cls: "hubacts" }, [daySel ? el("label", { cls: "field" }, [el("span", { text: "Day" }), daySel]) : null, path ? dl : null, el("button", { cls: "small", text: "Close", onclick: () => { hubToken++; view.hidden = true; } })])]),
+      el("div", { cls: "controls", style: "margin-top:10px; margin-bottom:0" }, el("label", { cls: "field" }, [el("span", { text: "Search" }), q])), status, body,
+      older.length ? el("details", { cls: "older" }, [el("summary", { text: `Older days kept in the repository only (${older.length}${d.total_days > (d.files || []).length ? " of " + d.total_days + " shown" : ""})` }),
+        el("ul", {}, older.map(f => el("li", {}, [HUB.repo_blob && f.repo ? el("a", { href: HUB.repo_blob + f.repo, target: "_blank", rel: "noopener", text: f.name }) : f.name, ` · ${bytesTxt(f.bytes)}`])))]) : null);
+    view.scrollIntoView({ behavior: "smooth", block: "start" });
+    const msg = t => { status.textContent = ""; body.replaceChildren(el("p", { cls: "empty", text: t })); };
+    if (!path) { msg(d.kind === "days" ? "No day of this dataset is published on this page yet." : "This file isn't published with this build."); return; }
+    async function load(pth) {
+      path = pth; setHead(); q.value = ""; body.replaceChildren(el("p", { cls: "empty", text: "Loading…" })); status.textContent = "";
+      let text;
+      if (LOCAL) { msg(NO_FETCH); return; }
+      try { const r = await fetch(pth, { cache: "no-cache" }); if (!r.ok) throw new Error("HTTP " + r.status); text = await r.text(); }
+      catch (e) { if (token === hubToken) msg(`Couldn't load ${pth} (${e.message || e}). Open the published dashboard to browse raw files.`); return; }
+      if (token !== hubToken) return;
+      const kind = d.kind === "days" ? "csv" : d.kind;
+      try { if (kind === "csv") mountCsv(text); else if (kind === "json") mountJson(text); else mountMd(text); }
+      catch (e) { msg("This file could not be displayed: " + (e.message || e)); }
+    }
+    function mountCsv(text) {
+      const all = csvParse(text), header = all[0] || [], data = all.slice(1).filter(r => r.length > 1 || (r[0] || "") !== "");
+      if (!header.length) { msg("This file is empty."); return; }
+      const sample = data.slice(0, 400);
+      const defs = header.map((h, j) => {
+        const vals = sample.map(r => r[j]).filter(v => v !== undefined && v !== ""), isNum = vals.length > 0 && vals.filter(v => /^-?\d+(\.\d+)?([eE][-+]?\d+)?$/.test(v)).length >= vals.length * 0.9;
+        return { key: "c" + j, label: h || "col " + (j + 1), num: isNum, get: r => { const v = r[j]; if (v === undefined || v === "") return null; return isNum ? (isNaN(+v) ? null : +v) : v.toLowerCase(); }, cell: r => { const v = r[j] == null ? "" : r[j]; return el("td", { cls: isNum ? "num" : "", title: v.length > 36 ? v : null, text: v }); } };
+      });
+      const hay = data.map(r => r.join("\u0001").toLowerCase());
+      const table = el("table"), more = el("button", { cls: "more", text: "Show more" });
+      body.replaceChildren(el("div", { cls: "tablewrap viewbox" }, table), more);
+      const T = SortTable(table, defs, { click: null, page: 100, step: 200, more, empty: "No rows match" });
+      const run = () => { const s = q.value.trim().toLowerCase(), rows = s ? data.filter((r, i) => hay[i].includes(s)) : data; T.set(rows); status.textContent = `${full(rows.length)}${s ? " of " + full(data.length) : ""} rows · ${header.length} columns · tap a column header to sort, tap again to reverse`; };
+      let tm; q.oninput = () => { clearTimeout(tm); tm = setTimeout(run, 120); };
+      run();
+    }
+    function mountJson(text) {
+      const lines = JSON.stringify(JSON.parse(text), null, 2).split("\n"), pre = el("pre", { cls: "json" });
+      body.replaceChildren(el("div", { cls: "viewbox" }, pre));
+      const run = () => { const s = q.value.trim().toLowerCase(), got = s ? lines.filter(l => l.toLowerCase().includes(s)) : lines; pre.textContent = got.length ? got.join("\n") : "No lines match"; status.textContent = `${full(got.length)}${s ? " of " + full(lines.length) : ""} lines · pretty-printed JSON`; };
+      let tm; q.oninput = () => { clearTimeout(tm); tm = setTimeout(run, 120); };
+      run();
+    }
+    function mountMd(text) {
+      const host = el("div", { cls: "mdview" }, mdRender(text));
+      body.replaceChildren(el("div", { cls: "viewbox" }, host));
+      const run = () => {
+        const s = q.value.trim().toLowerCase(); let shown = 0;
+        [...host.children].forEach(c => {
+          if (c.querySelector && c.querySelector("table")) { const trs = [...c.querySelectorAll("tbody tr")]; let n = 0; trs.forEach(tr => { const ok = !s || tr.textContent.toLowerCase().includes(s); tr.hidden = !ok; n += ok; }); c.hidden = !!s && !n; shown += c.hidden ? 0 : 1; }
+          else { c.hidden = !!s && !c.textContent.toLowerCase().includes(s); shown += c.hidden ? 0 : 1; }
+        });
+        status.textContent = s ? `${shown} matching section(s)` : `${text.split("\n").length} lines · report shown as readable text`;
+      };
+      let tm; q.oninput = () => { clearTimeout(tm); tm = setTimeout(run, 120); };
+      run();
+    }
+    if (daySel) daySel.addEventListener("change", () => load(safePath(daySel.value)));
+    load(path);
+  }
+
+  // ---------- thumbnails & styles
+  const TH = D.thumbs;
+  (function () {
+    if (!TH || !Object.keys(TH.niches || {}).length) { $("th-empty").hidden = false; return; }
+    $("th-body").hidden = false;
+    const hexOk = c => /^#[0-9a-fA-F]{6}$/.test(c) ? c : null;
+    const pic = (file, name) => { const ph = () => el("div", { cls: "ph", text: (name || "?").trim().slice(0, 1).toUpperCase() }); if (!file) return ph(); const img = el("img", { src: "thumbs/" + encodeURIComponent(file), alt: name || "", loading: "lazy", decoding: "async" }); img.addEventListener("error", () => img.replaceWith(ph())); return img; };
+    const TYPE_NAME = { mechanic: "Core mechanics", theme: "Themes", genre: "Genres" };
+    const list = Object.entries(TH.niches).map(([k, n]) => Object.assign({ id: k, ccu: n.games.reduce((a, g) => a + (g.ccu || 0), 0) }, n));
+    list.sort((a, b) => b.ccu - a.ccu);
+    const sel = $("th-pick"), q = $("th-q");
+    let current = null;
+    function fillPick() {
+      const s = q.value.trim().toLowerCase(), keep = current;
+      sel.replaceChildren();
+      let first = null;
+      for (const type of ["mechanic", "theme", "genre"].concat([...new Set(list.map(n => n.type))].filter(t => !TYPE_NAME[t]))) {
+        const items = list.filter(n => n.type === type && (!s || n.label.toLowerCase().includes(s)));
+        if (!items.length) continue;
+        const grp = el("optgroup", { label: TYPE_NAME[type] || cap(type) });
+        items.forEach(n => { grp.append(el("option", { value: n.id, text: `${n.label} (${n.games.length} games)` })); first = first || n.id; });
+        sel.append(grp);
+      }
+      if (!first) { sel.append(el("option", { value: "", text: "No niche matches", disabled: "" })); return; }
+      const want = keep && sel.querySelector(`option[value="${CSS.escape(keep)}"]`) ? keep : first;
+      sel.value = want; if (want !== current) show(want);
+    }
+    const countBars = (obj, labeler, defs) => {
+      const items = Object.entries(obj || {}).sort((a, b) => b[1] - a[1]), mx = Math.max(1, ...items.map(i => i[1]));
+      return items.length ? el("div", {}, items.map(([k, v]) => el("div", { cls: "crow", title: (defs[k] || {}).desc || null }, [el("div", { cls: "n", text: labeler(k) }), el("div", {}, el("div", { cls: "b", style: `width:${(100 * v / mx).toFixed(0)}%` })), el("div", { cls: "v", text: String(v) })]))) : null;
+    };
+    const bullets = (arr, cls) => (Array.isArray(arr) && arr.length) ? el("ul", { cls: "dir " + (cls || "") }, arr.map(x => el("li", { text: String(x) }))) : null;
+    const METRIC_DEF = [["brightness", "Brightness", "Average lightness, 0 dark to 1 bright"], ["saturation", "Saturation", "How vivid the colours are"], ["colorfulness", "Colourfulness", "Spread of distinct colours"], ["contrast", "Contrast", "Light/dark difference"], ["busyness", "Busyness", "Edges and detail: how packed the image is"], ["center_focus", "Centre focus", "Above 1: detail sits in the middle of the frame"], ["warm", "Warm colours", "Share of reds, oranges and yellows"], ["dark", "Dark area", "Share of near-black pixels"], ["white", "White area", "Share of near-white pixels"]];
+    let which = "icon";
+    function metricCard(n) {
+      const host = el("div"), draw = () => {
+        const s = n[which], b = TH.baseline && TH.baseline[which], y = n[which + "_young"];
+        const seg = el("div", { cls: "seg" }, [["icon", "Icons"], ["media", "Thumbnails"]].map(([k, t]) => el("button", { cls: "small" + (which === k ? " seg-on" : ""), text: t, onclick: () => { which = k; draw(); } })));
+        if (!s || !b) { host.replaceChildren(seg, el("div", { cls: "empty", text: "Not enough measured images yet." })); return; }
+        const youngOk = y && y.n >= 2;
+        const rows = METRIC_DEF.filter(([k]) => s.med[k] != null && b.med[k] != null && Math.max(s.med[k], b.med[k], youngOk && y.med[k] != null ? y.med[k] : 0) >= 0.01).map(([k, label, hint]) => {
+          const v = s.med[k], bv = b.med[k], yv = youngOk && y.med[k] != null ? y.med[k] : null, mx = Math.max(v, bv, yv || 0, 1e-9), dd = bv ? v / bv - 1 : null;
+          const bar = (val, col) => el("div", { style: `width:${Math.max(1, 100 * val / mx).toFixed(1)}%;background:${col}` });
+          return el("div", { cls: "mrow", title: hint }, [el("div", { text: label }), el("div", { cls: "bs" }, [bar(v, "var(--s1)"), bar(bv, "var(--muted)"), yv != null ? bar(yv, "var(--up)") : null]),
+            el("div", { cls: "mv" }, [`${v.toFixed(2)} vs ${bv.toFixed(2)}`, el("span", { text: dd == null || Math.abs(dd) < 0.01 ? "same as average" : (dd > 0 ? "+" : "") + Math.round(dd * 100) + "% vs average" })])]);
+        });
+        host.replaceChildren(seg, el("div", { cls: "legend" }, [["var(--s1)", `Leaders here (${s.n})`], ["var(--muted)", `All tracked games (${b.n})`]].concat(youngOk ? [["var(--up)", `Rising newcomers (${y.n})`]] : []).map(([c, t]) => el("span", {}, [el("i", { style: "background:" + c }), t]))), ...rows);
+      };
+      draw(); return el("section", { cls: "card" }, [el("h2", { text: "How it compares" }), el("p", { cls: "note", text: "Median of each measure for this niche's top games against all tracked games. Hover a row for what it means." }), host]);
+    }
+    function swatchCard(n) {
+      const block = (title, s) => !s ? null : el("div", { style: "margin-top:8px" }, [el("h3", { text: title }),
+        el("div", { cls: "swatches" }, (s.palette || []).map(hexOk).filter(Boolean).map(c => el("div", { cls: "sw", style: "background:" + c, title: c }))),
+        el("div", { cls: "note", style: "margin:4px 0 0", text: (s.hues || []).length ? "Dominant colours: " + s.hues.map(h => `${h[0]} ${Math.round(h[1] * 100)}%`).join(", ") + (Object.keys(s.lead_hue || {}).length ? " · leads most often: " + Object.entries(s.lead_hue).sort((a, b) => b[1] - a[1]).slice(0, 2).map(e => `${e[0]} (${e[1]})`).join(", ") : "") : "" })]);
+      const a = block("Icon palette", n.icon), b = block("Thumbnail palette", n.media);
+      return el("section", { cls: "card" }, [el("h2", { text: "Palette" }), el("p", { cls: "note", text: "Colours that dominate the leaders' art, weighted by how much area they cover." }), a, b].concat(!a && !b ? [el("div", { cls: "empty", text: "No colours measured yet." })] : []));
+    }
+    function directionCard(n) {
+      const v = n.vision, num = [["Icons", n.icon_direction], ["Thumbnails", n.media_direction]];
+      const pats = (arr, title) => Array.isArray(arr) && arr.length ? el("div", { style: "margin-top:8px" }, [el("div", { cls: "note", style: "margin:0 0 4px", text: title }), ...arr.slice(0, 8).map(p => el("span", { cls: "chip", text: p && p.pattern ? `${p.pattern}${p.count ? " ×" + p.count : ""}` : String(p) }))]) : null;
+      const kvs = v ? [["Art style", v.art_style], ["Text on art", v.text_usage], ["Newcomer shift", v.newcomer_shift]].filter(([, x]) => x) : [];
+      const sections = [el("h2", { text: "Direction" })];
+      if (v) sections.push(el("div", { style: "margin-top:8px" }, [el("h3", { text: "What Claude sees in these images" + (v.date ? " · " + v.date : "") }),
+        v.summary ? el("p", { style: "margin:6px 0", text: String(v.summary) }) : null, v.direction ? el("p", { style: "margin:6px 0" }, [el("b", { text: "Direction: " }), String(v.direction)]) : null,
+        (Array.isArray(v.do) && v.do.length) ? [el("div", { cls: "note", style: "margin:8px 0 0", text: "Do" }), bullets(v.do, "do")] : null,
+        (Array.isArray(v.avoid) && v.avoid.length) ? [el("div", { cls: "note", style: "margin:8px 0 0", text: "Avoid" }), bullets(v.avoid, "avoid")] : null,
+        pats(v.icon_patterns, "Recurring icon patterns"), pats(v.thumbnail_patterns, "Recurring thumbnail patterns"),
+        kvs.length ? el("div", { cls: "kv2" }, kvs.flatMap(([k, x]) => [el("span", { text: k }), el("span", { text: String(x) })])) : null].flat()));
+      else sections.push(el("p", { cls: "note", style: "margin:6px 0 0", text: "No visual read from Claude for this niche yet. It is added after the next vision pass; the measured direction below always applies." }));
+      sections.push(el("div", { style: "margin-top:14px" }, [el("h3", { text: "From the numbers" }), ...num.map(([t, arr]) => el("div", { style: "margin-top:6px" }, [el("div", { cls: "note", style: "margin:0", text: t }), bullets(arr) || el("div", { cls: "empty", text: "Not enough images measured yet." })]))]));
+      return el("section", { cls: "card" }, sections);
+    }
+    function show(id) {
+      current = id; const n = TH.niches[id]; if (!n) return;
+      const nYoung = n.games.filter(g => g.young).length;
+      const tiles = n.games.map((g, i) => { const real = byId[g.id], t = el("button", { cls: "tile", title: [g.name, g.art ? artLabel(g.art) : null, g.map ? mapLabel(g.map) : null].filter(Boolean).join(" · "), onclick: () => real && openDrawer(real) }, [el("span", { cls: "rk", text: String(i + 1) }), g.young ? el("span", { cls: "nw badge-new", text: "NEW" }) : null, pic(g.icon, g.name), el("div", { cls: "nm", text: g.name || "(unnamed)" }), el("div", { cls: "cc", text: full(g.ccu) + " CCU" })]); return t; });
+      const lead = n.games.filter(g => g.media && g.media[0]);
+      const strip = lead.length ? el("div", { cls: "strip" }, lead.map(g => el("figure", {}, [pic(g.media[0], g.name), el("figcaption", { text: g.name, title: g.name })]))) : el("p", { cls: "empty", text: "No gallery thumbnails downloaded for these games yet." });
+      $("th-view").replaceChildren(
+        el("section", { cls: "card" }, [el("h2", { text: n.label }), el("p", { cls: "note", text: `${TYPE_NAME[n.type] ? TYPE_NAME[n.type].replace(/s$/, "").toLowerCase() : n.type} · ${n.games.length} games (${n.games.length - nYoung} leaders by CCU${nYoung ? " + " + nYoung + " new risers" : ""}) · measured ${TH.as_of ? new Date(TH.as_of).toLocaleDateString() : ""}`.replace(/ · measured $/, "") }),
+          el("h3", { text: "Icons" }), el("div", { cls: "tiles", style: "margin:8px 0 14px" }, tiles), el("h3", { text: "Lead thumbnails" }), el("div", { style: "margin-top:8px" }, strip)]),
+        el("div", { cls: "grid2" }, [directionCard(n), el("div", { cls: "stack" }, [swatchCard(n), metricCard(n)])]),
+        el("section", { cls: "card" }, [el("h2", { text: "Styles in this niche" }), el("p", { cls: "note", text: "Art style = how it looks. Map style = how the world is laid out. Counted over the games shown above; tap or hover a row for what it means." }),
+          el("div", { cls: "grid2" }, [el("div", {}, [el("h3", { text: "Art style" }), countBars(n.art_styles, artLabel, STY.art) || el("p", { cls: "empty", text: "No art styles labelled for these games yet. They appear after the vision pass." })]),
+            el("div", {}, [el("h3", { text: "Map style" }), countBars(n.map_styles, mapLabel, STY.map) || el("p", { cls: "empty", text: "No map styles known for these games yet." })])])]));
+    }
+    q.addEventListener("input", fillPick);
+    sel.addEventListener("change", () => show(sel.value));
+    fillPick();
+  })();
 
   document.getElementById("foot").textContent = "Data: Roblox public game APIs, Rolimons, YouTube Data API. Rebuilt after every collection run. Mechanics and themes are keyword-tagged and improve with deep dives.";
 })();

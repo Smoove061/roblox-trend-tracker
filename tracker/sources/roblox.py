@@ -200,3 +200,32 @@ def age_guidelines(http, uid):
         "min_age": summ.get("minimumAge"),
         "maturity_label": summ.get("displayName") or summ.get("displayNameWithAgeRange"),
     }
+
+
+THUMB_ICONS = "https://thumbnails.roblox.com/v1/games/icons"
+THUMB_MEDIA = "https://thumbnails.roblox.com/v1/games/multiget/thumbnails"
+
+
+def game_icons(http, universe_ids, size="150x150"):
+    """{universe_id: image_url} for each game's icon (the square tile shown in discovery)."""
+    out = {}
+    for batch in _batches([str(u) for u in universe_ids]):
+        resp = http.get_json(THUMB_ICONS, {"universeIds": ",".join(batch), "returnPolicy": "PlaceHolder",
+                                           "size": size, "format": "Png", "isCircular": "false"}) or {}
+        for it in resp.get("data", []):
+            if it.get("state") == "Completed" and it.get("imageUrl"):
+                out[str(it.get("targetId"))] = it["imageUrl"]
+    return out
+
+
+def game_media(http, universe_ids, count=3, size="384x216"):
+    """{universe_id: [image_url, ...]} for each game's first `count` gallery thumbnails (the wide images)."""
+    out = {}
+    for batch in _batches([str(u) for u in universe_ids]):
+        resp = http.get_json(THUMB_MEDIA, {"universeIds": ",".join(batch), "countPerUniverse": count, "defaults": "true",
+                                           "size": size, "format": "Png", "isCircular": "false"}) or {}
+        for it in resp.get("data", []):
+            urls = [t["imageUrl"] for t in it.get("thumbnails") or [] if t.get("state") == "Completed" and t.get("imageUrl")]
+            if urls:
+                out[str(it.get("universeId"))] = urls[:count]
+    return out

@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import importlib
 import json
+import random
 import os
 import shutil
 import sys
@@ -58,6 +59,21 @@ def listing(uid):
             "ageRecommendationDisplayName": "Minimal" if uid != 6 else None}
 
 
+def fake_png(seed):
+    """A small deterministic PNG (needs Pillow; without it the thumbnail step skips before downloading)."""
+    import io
+    from PIL import Image, ImageDraw
+    r = random.Random(seed)
+    im = Image.new("RGB", (150, 150) if seed.startswith("i") else (384, 216), tuple(r.randrange(256) for _ in range(3)))
+    d = ImageDraw.Draw(im)
+    for _ in range(5):
+        x, y = r.randrange(120), r.randrange(120)
+        d.rectangle([x, y, x + 30, y + 30], fill=tuple(r.randrange(256) for _ in range(3)))
+    b = io.BytesIO()
+    im.save(b, "PNG")
+    return b.getvalue()
+
+
 class FakeNet:
     def __init__(self):
         self.calls = []
@@ -103,6 +119,14 @@ class FakeNet:
         elif host == "badges.roblox.com":
             body = {"data": [{"id": 1, "name": "Welcome", "created": "2026-01-01T00:00:00Z",
                               "statistics": {"awardedCount": 100, "pastDayAwardedCount": 5, "winRatePercentage": 0.5}}], "nextPageCursor": None}
+        elif path.endswith("/games/icons"):
+            body = {"data": [{"targetId": int(u), "state": "Completed", "imageUrl": f"https://tr.rbxcdn.com/i{u}/150/150/Image/Png"}
+                             for u in q["universeIds"].split(",")]}
+        elif path.endswith("/multiget/thumbnails"):
+            body = {"data": [{"universeId": int(u), "thumbnails": [{"state": "Completed", "imageUrl": f"https://tr.rbxcdn.com/m{u}_{k}/384/216/Image/Png"}
+                                                                   for k in range(2)]} for u in q["universeIds"].split(",")]}
+        elif host == "tr.rbxcdn.com":
+            return 200, {}, fake_png(path.split("/")[1])
         elif host == "www.googleapis.com" and path.endswith("/search"):
             body = {"items": [{"id": {"videoId": "v1"}}, {"id": {"videoId": "v2"}}]}
         elif host == "www.googleapis.com" and path.endswith("/videos"):
@@ -219,6 +243,39 @@ class Simulation(unittest.TestCase):
         self.assertIn("brainrot", niches)
         self.assertEqual(niches["brainrot"]["window_days"], "7")
 
+    def test_thumbnails_and_styles(self):
+        idx = read_csv(self.data / "thumbs/index.csv")
+        self.assertTrue(idx)
+        icons = [r for r in idx if r["kind"] == "icon"]
+        self.assertTrue(all(r["file"] and (self.data / "thumbs/img" / r["file"]).exists() for r in icons))
+        self.assertTrue(all(r["brightness"] != "" for r in icons), "icons are measured")
+        icon_calls = [u for u in self.net.calls if "/games/icons" in u]
+        self.assertLessEqual(len(icon_calls), 16, "image URLs refresh once a day, not every run")
+        cdn = [u for u in self.net.calls if "tr.rbxcdn.com" in u]
+        self.assertEqual(len(cdn), len(set(cdn)), "an unchanged image is never downloaded twice")
+        rep = json.loads((self.tmp / "reports/thumbs.json").read_text())
+        self.assertTrue(rep["niches"])
+        n = next(iter(rep["niches"].values()))
+        self.assertTrue(n["icon_direction"] and n["games"][0]["icon"])
+        trends = json.loads((self.tmp / "reports/trends.json").read_text())
+        self.assertIn("map_style", trends["dimensions"])
+        thumbs = importlib.import_module("tracker.thumbs")
+        styles = importlib.import_module("tracker.styles")
+        jobs = json.loads(thumbs.vision_sheets(str(self.tmp / "vision")).read_text())
+        self.assertTrue(jobs["niches"] and jobs["styles"])
+        self.assertTrue(Path(jobs["styles"][0]["sheet"]).exists())
+        g = jobs["styles"][0]["games"][0]
+        self.assertEqual(styles.ingest([{"id": g["id"], "art_style": "classic_studs", "map_style": "bogus",
+                                          "confidence": 0.9, "images_key": g["images_key"]}]), 1)
+        self.assertEqual(styles.load({g["id"]: {"mechanic": []}})[g["id"]]["art_style"], "classic_studs")
+        k = jobs["niches"][0]["niche"]
+        self.assertEqual(thumbs.ingest_niches({k: {"direction": "Big shocked face.", "do": ["x"], "members_hash": jobs["niches"][0]["members_hash"]}}), 1)
+        rep = json.loads((self.tmp / "reports/thumbs.json").read_text())
+        self.assertEqual(rep["niches"][k]["vision"]["direction"], "Big shocked face.")
+        again = json.loads(thumbs.vision_sheets(str(self.tmp / "vision2")).read_text())
+        self.assertNotIn(k, [j["niche"] for j in again["niches"]], "fresh vision isn't redone")
+        self.assertNotIn(g["id"], [x["id"] for j in again["styles"] for x in j["games"]], "labelled games aren't redone")
+
     def test_build_db(self):
         cwd = os.getcwd()
         os.chdir(self.tmp)
@@ -331,6 +388,71 @@ class Resilience(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DashboardHub(unittest.TestCase):
+    """Data hub manifest + copied files, pipeline health, and the trimmed thumbnails payload."""
+
+    def test_hub_manifest_copies_and_thumbs(self):
+        import gzip
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            shutil.copytree(REPO / "config", tmp / "config")
+            os.environ["TRACKER_ROOT"] = str(tmp)
+            os.environ["TRACKER_NOW"] = "2026-10-08T12:00:00+00:00"
+            for m in [m for m in sys.modules if m.startswith("tracker")]:
+                del sys.modules[m]
+            st = importlib.import_module("tracker.storage")
+            dash = importlib.import_module("tracker.dashboard")
+            st.write_rows(st.DATA / "runs.csv", st.RUN_FIELDS, [
+                {"ts": f"2026-10-08T{h:02d}:00:00Z", "task": "snapshot", "ok": int(h != 5), "count": h, "requests": 1, "detail": "boom" if h == 5 else ""}
+                for h in range(0, 10)] * 250)  # 2500 rows: more than the published cap
+            for day in ("2026-10-01", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08"):
+                p = st.day_path("snapshots", day)
+                p.parent.mkdir(parents=True, exist_ok=True)
+                body = f"ts,universe_id,playing\n{day}T01:00:00Z,1,5\n{day}T02:00:00Z,2,6\n"
+                if day < "2026-10-05":
+                    p.with_name(p.name + ".gz").write_bytes(gzip.compress(body.encode()))
+                else:
+                    p.write_text(body)
+            (st.REPORTS).mkdir(parents=True, exist_ok=True)
+            (st.REPORTS / "trends.md").write_text("# Trends\n\n| a | b |\n|---|---|\n| 1 | 2 |\n")
+            (st.DATA / "thumbs" / "img").mkdir(parents=True)
+            (st.DATA / "thumbs" / "img" / "1_i.jpg").write_bytes(b"\xff\xd8fake")
+            (st.DATA / "thumbs" / "img" / "unused.jpg").write_bytes(b"x")
+            st.save_json(st.REPORTS / "thumbs.json", {"as_of": "2026-10-08T00:00:00Z", "baseline": {"icon": {"n": 1, "med": {}}}, "styles": {}, "niches": {
+                "mechanic:x": {"type": "mechanic", "key": "x", "label": "X", "games": [{"id": "1", "name": "<b>G</b>", "ccu": 5, "age": 3, "young": True,
+                                                                                         "icon": "1_i.jpg", "media": ["../evil.jpg"], "art_style": "", "map_style": "", "style_source": ""}]}}})
+            out = tmp / "site" / "index.html"
+            dash.build(str(out))
+            page = out.read_text()
+            data = json.loads(page.split('<script id="data" type="application/json">')[1].split("</script>")[0])
+            ds = {d["id"]: d for d in data["hub"]["datasets"]}
+            for k in ("games", "snapshots", "runs", "trends_md", "tags", "styles", "thumbs_report", "daily_ideas", "probe", "place_universe"):
+                self.assertIn(k, ds)
+            self.assertFalse(ds["games"]["available"])
+            self.assertEqual(ds["runs"]["rows"], 2500)
+            self.assertEqual(len((tmp / "site" / "data" / "runs.csv").read_text().splitlines()), dash.RUNS_CAP + 1)
+            snaps = ds["snapshots"]
+            self.assertEqual(snaps["total_days"], 5)
+            self.assertEqual([f["path"] is not None for f in snaps["files"]], [True, True, True, False, False])
+            self.assertTrue((tmp / "site" / "data" / "snapshots" / "2026" / "10" / "2026-10-08.csv").exists())
+            self.assertFalse((tmp / "site" / "data" / "snapshots" / "2026" / "10" / "2026-10-01.csv").exists())
+            self.assertEqual(ds["snapshots"]["updated"], "2026-10-08T02:00:00Z")
+            self.assertTrue((tmp / "site" / "reports" / "trends.md").exists())
+            step = data["hub"]["health"]["steps"][0]
+            self.assertEqual((step["task"], step["fails24"], step["ok"]), ("snapshot", 250, True))
+            th = data["thumbs"]
+            self.assertEqual(sorted(p.name for p in (tmp / "site" / "thumbs").iterdir()), ["1_i.jpg"])  # only referenced, safe names
+            self.assertEqual(th["niches"]["mechanic:x"]["games"][0]["media"], [])
+            self.assertNotIn("<b>G</b>", page)  # untrusted names stay escaped inside the embedded JSON
+            # building into the repo's own folder must never copy or clear anything
+            dash.build(str(tmp / "index.html"))
+            self.assertTrue((tmp / "data" / "runs.csv").exists())
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+            os.environ.pop("TRACKER_ROOT", None)
+            os.environ.pop("TRACKER_NOW", None)
 
 
 class DashboardBuild(unittest.TestCase):

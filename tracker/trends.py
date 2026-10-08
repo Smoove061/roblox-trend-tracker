@@ -24,7 +24,7 @@ from datetime import date
 from . import storage as st
 
 YOUNG_DAYS = 60
-DIMENSIONS = ("mechanic", "theme", "formula", "genre", "subgenre", "maturity")
+DIMENSIONS = ("mechanic", "theme", "formula", "genre", "subgenre", "maturity", "art_style", "map_style")
 
 
 def _f(v, d=None):
@@ -55,6 +55,10 @@ def load_context(today: date | None = None) -> dict:
             "mechanic": sorted(t.get("mechanic", [])), "theme": sorted(t.get("theme", [])),
             "formula": sorted(t.get("formula", [])), "feature": sorted(t.get("feature", [])),
         }
+    from . import styles
+    for uid, s in styles.load(out).items():
+        out[uid]["art_style"] = [s["art_style"]] if s["art_style"] else []
+        out[uid]["map_style"] = [s["map_style"]] if s["map_style"] else []
     return out
 
 
@@ -100,6 +104,10 @@ def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
     lab = {"mechanic": {k: v["label"] for k, v in labels.get("mechanics", {}).items()},
            "theme": {k: v["label"] for k, v in labels.get("themes", {}).items()},
            "formula": {k: v["label"] for k, v in labels.get("title_formulas", {}).items()}}
+    from . import styles
+    sl = styles.labels()
+    lab["art_style"] = {k: v["label"] for k, v in sl["art_styles"].items()}
+    lab["map_style"] = {k: v["label"] for k, v in sl["map_styles"].items()}
     verbs = {k: v.get("verb", "") for k, v in labels.get("mechanics", {}).items()}
     ins_by = {r["universe_id"]: r for r in (ins or [])}
 
@@ -204,7 +212,8 @@ def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
         "as_of": st.iso(st.now_utc()), "young_days": YOUNG_DAYS, "pairs": pair_rows, "games": len(ctx), "total_ccu": total,
         "young_games": sum(1 for c in ctx.values() if c["young"]), "young_ccu": young_total if young_total > 1 else 0,
         "dimensions": dims,
-        "rising": {d: rising(d)[:12] for d in ("mechanic", "theme", "formula", "subgenre")},
+        "rising": {d: rising(d)[:12] for d in ("mechanic", "theme", "formula", "subgenre", "art_style", "map_style")},
+        "style_coverage": {d: sum(1 for c in ctx.values() if c[d]) for d in ("art_style", "map_style")},
         "combos": combo_rows[:60], "gaps": gaps[:40], "benchmarks": bench,
     }
 
@@ -217,7 +226,7 @@ def write(trends: dict):
          "", "Momentum = a category's share of young-game CCU divided by its share of all CCU. Above 1 means new games in it are "
          "outperforming its size: it's rising.", ""]
     for dim, title in (("mechanic", "Rising core mechanics"), ("theme", "Rising themes"), ("formula", "Rising title formulas"),
-                       ("subgenre", "Rising subgenres")):
+                       ("subgenre", "Rising subgenres"), ("art_style", "Rising art styles"), ("map_style", "Rising map styles")):
         L += [f"## {title}", "", "| | Momentum | Young games | Young CCU | All games | Biggest young game |", "|---|---|---|---|---|---|"]
         for i in trends["rising"][dim]:
             ex = i["young_examples"][0] if i["young_examples"] else None

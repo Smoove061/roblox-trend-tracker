@@ -9,10 +9,14 @@ can't fetch data, so a daily scheduled task rebuilds and republishes it.
 """
 from __future__ import annotations
 
+import base64
+import io
 import json
 from pathlib import Path
 
 from . import storage as st
+
+ICON_EMBED, MEDIA_EMBED = (96, 96), (256, 144)
 
 
 def _f(v, d=None):
@@ -38,7 +42,19 @@ def build_pack() -> dict:
                      "age": (now - created.date()).days if created else None, "genre": g.get("genre_l1", ""), "sub": g.get("genre_l2", ""),
                      "mech": sorted(tags.get(uid, {}).get("mechanic", [])), "theme": sorted(tags.get(uid, {}).get("theme", []))})
     rows.sort(key=lambda r: -r["ccu"])
+    from . import styles, thumbs
+    sty = styles.load({r["id"]: {"mechanic": r["mech"]} for r in rows})
+    for r in rows:
+        s = sty.get(r["id"], {})
+        r["art"], r["map"] = s.get("art_style", ""), s.get("map_style", "")
     young = [r for r in rows if r["age"] is not None and r["age"] <= tr.get("young_days", 60)][:40]
+    titles = {}
+    for r in rows:  # rows are biggest-first, so each list keeps the niche's most popular names
+        for k in r["mech"] + r["theme"]:
+            lst = titles.setdefault(k, [])
+            if len(lst) < 15:
+                lst.append([r["name"], r["ccu"], r["age"]])
+    th, images = _thumb_pack(st.settings().get("idea_lab_image_budget_mb", 6))
 
     def slim(items, n=10):
         return [{"key": i["key"], "label": i["label"], "momentum": i.get("momentum_adj"), "young_games": i["young_games"],
@@ -60,9 +76,65 @@ def build_pack() -> dict:
         "top_games": [{"name": r["name"], "ccu": r["ccu"], "age": r["age"], "genre": r["genre"]} for r in rows[:25]],
         "mechanic_labels": {k: v["label"] for k, v in tax.get("mechanics", {}).items()},
         "theme_labels": {k: v["label"] for k, v in tax.get("themes", {}).items()},
+        "titles": titles,
+        "thumbs": th,
+        "images": images,
+        "style_labels": styles.labels(),
+        "style_coverage": tr.get("style_coverage", {}),
+        "vision_prompt": thumbs.NICHE_PROMPT.format(label="__LABEL__"),
         "names": [r["name"] for r in rows],
         "places": {r["name"]: r["place"] for r in rows if r["place"]},
     }
+
+
+def _thumb_pack(budget_mb: float):
+    """Slim per-niche thumbnail report plus the images it shows, shrunk and inlined (artifact pages can't load URLs).
+    Icons go in first, then lead thumbnails, until the size budget is used."""
+    from .thumbs import IMG
+    rep = st.load_json(st.REPORTS / "thumbs.json", {})
+    out = {}
+    icons, media = [], []
+    for k, n in rep.get("niches", {}).items():
+        gs = []
+        for g in n.get("games", []):
+            m0 = (g.get("media") or [""])[0]
+            gs.append({"id": g["id"], "name": g["name"], "ccu": g["ccu"], "age": g.get("age"), "young": g.get("young"),
+                       "i": g.get("icon", ""), "m": m0, "art": g.get("art_style", ""), "map": g.get("map_style", "")})
+            if g.get("icon"):
+                icons.append(g["icon"])
+            if m0:
+                media.append(m0)
+        out[k] = {"type": n["type"], "label": n["label"], "games": gs,
+                  "icon_dir": n.get("icon_direction", []), "media_dir": n.get("media_direction", []),
+                  "palette": (n.get("icon") or {}).get("palette", []), "media_palette": (n.get("media") or {}).get("palette", []),
+                  "art_styles": n.get("art_styles", {}), "map_styles": n.get("map_styles", {}),
+                  "vision": n.get("vision"), "hash": n.get("members_hash", "")}
+    images, used, cap = {}, 0, budget_mb * 1_000_000
+    for f, size in [(f, ICON_EMBED) for f in dict.fromkeys(icons)] + [(f, MEDIA_EMBED) for f in dict.fromkeys(media)]:
+        uri = _data_uri(IMG / f, size)
+        if not uri:
+            continue
+        if used + len(uri) > cap:
+            break
+        images[f] = uri
+        used += len(uri)
+    return out, images
+
+
+def _data_uri(path: Path, size) -> str | None:
+    if not path.exists():
+        return None
+    raw = path.read_bytes()
+    try:
+        from PIL import Image
+        im = Image.open(io.BytesIO(raw)).convert("RGB")
+        im = im.resize(size, Image.LANCZOS)
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=70, optimize=True)
+        raw = buf.getvalue()
+    except ImportError:
+        pass  # no Pillow: embed the stored file as-is (bigger, still fine)
+    return "data:image/jpeg;base64," + base64.b64encode(raw).decode()
 
 
 def build(out: str = "site/idea-lab.html", ideas_path: str | None = None) -> Path:

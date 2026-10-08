@@ -13,6 +13,8 @@ Tracks every Roblox game at or above **300 concurrent players**. Each game is so
 | Roblox game passes + badges | Pass names and prices, badge award counts (a window into progression and monetization) | Daily, 300 games per day on rotation |
 | Rolimons game list | Third-party player counts, used for discovery and as a cross-check | Hourly |
 | YouTube Data API (optional) | Videos and views per game in the last 7 days ("coverage velocity") | Daily |
+| Roblox thumbnails API | Icon + first 3 gallery images of the top 8 games and up to 4 young risers in every mechanic, theme and genre; measured for brightness, saturation, contrast, clutter, colours | URLs daily, images re-downloaded only when they change |
+| Claude vision (daily refresh) | Art style (realistic, stylized, bright simulator, low poly, classic studded, voxel, anime, dark, meme) and map style (plots/bases, hub + zones, linear course, arena, lobby + rounds, open world, town, interiors, lanes) per game, and the shared icon/thumbnail patterns per niche | Daily, newest/changed first |
 
 The other big trackers (RoMonitor, Rotrends, RoWatcher) have no public API, so they aren't scraped.
 
@@ -32,7 +34,15 @@ data/runs.csv                   log of every step, success or failure
 reports/watchlist.md            the daily trend report (young breakouts, rising niches, coverage spikes, movers)
 reports/game_metrics.csv        per-game signals
 reports/niche_metrics.csv       per-niche size, growth, saturation
+data/insights.csv               per-game monetization, progression and design tags
+data/thumbs/img/, index.csv     niche icons + thumbnails and their measurements
+data/styles.csv                 art style and map style per game (from Claude looking at screenshots)
+reports/trends.json, trends.md  uprising mechanics, themes, title formulas, art and map styles; untapped combos
+reports/thumbs.json             per-niche thumbnail direction (measured + what Claude saw)
+reports/daily_ideas.json        today's 10 ideas for the Idea Lab
 ```
+
+Everything above is also browsable in one place: the **Data hub** section of the dashboard lists every dataset with a description, size and last update, and opens each one as a sortable, searchable table.
 
 **If a run is missed:** GitHub occasionally skips scheduled runs. The next run catches up every day's rollup, reports and daily tasks automatically. The one thing that can't be recovered is CCU for the missed hours, because Roblox only reports live numbers. Visits and favorites are running totals, so their daily gains stay correct.
 
