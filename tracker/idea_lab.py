@@ -73,8 +73,7 @@ def build(out: str = "site/idea-lab.html", ideas_path: str | None = None) -> Pat
     elif (st.REPORTS / "daily_ideas.json").exists():
         ideas = st.load_json(st.REPORTS / "daily_ideas.json", ideas)
     tpl = Path(__file__).with_name("idea_lab_template.html").read_text(encoding="utf-8")
-    enc = lambda o: json.dumps(o, separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/")
-    page = tpl.replace("__PACK__", enc(pack)).replace("__IDEAS__", enc(ideas))
+    page = st.fill_template(tpl, {"PACK": st.embed_json(pack), "IDEAS": st.embed_json(ideas)})
     p = Path(out)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(page, encoding="utf-8")

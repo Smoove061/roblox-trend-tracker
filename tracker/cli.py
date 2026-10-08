@@ -73,7 +73,7 @@ def run(http: Http | None = None) -> int:
     if state.get("last_daily") != today.isoformat():
         tagged = step("classify", lambda: {"tags": daily.classify(games)})
         step("passes_badges", lambda: daily.passes_and_badges(http, games, state, cfg.get("passes_badges_per_day", 300), now))
-        step("maturity", lambda: collect.fill_maturity(http, games, cfg.get("maturity_lookups_per_day", 300)))
+        step("maturity", lambda: collect.fill_maturity(http, games, cfg.get("maturity_lookups_per_day", 300), state, st.iso(now)))
         priority = step("metrics", lambda: _metrics(games, cfg, today - timedelta(days=1)))
         step("trends", lambda: _trends())
         step("youtube", lambda: daily.youtube_coverage(http, games, cfg, now, (priority or {}).get("priority", [])))

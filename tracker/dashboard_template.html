@@ -465,7 +465,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   function refreshSubs() { const s = $("lb-sub"), cur = LB.sub; s.replaceChildren(el("option", { value: "", text: "All" })); const subs = {}; G.filter(g => !LB.genre || g.genre === LB.genre).forEach(g => { if (g.sub) subs[g.sub] = (subs[g.sub] || 0) + 1; }); Object.entries(subs).sort((a, b) => b[1] - a[1]).forEach(([k, n]) => s.append(el("option", { value: k, text: `${k} (${n})` }))); s.value = subs[cur] ? cur : ""; LB.sub = s.value; }
   const saved = () => store.get("rtt.boards", []);
   function refreshPresets() { const p = $("lb-preset"); p.replaceChildren(el("option", { value: "", text: "Custom" })); PRESETS.forEach((x, i) => p.append(el("option", { value: "b" + i, text: x.name }))); saved().forEach((x, i) => p.append(el("option", { value: "s" + i, text: "★ " + x.name }))); }
-  const lbTable = SortTable("lb-table", ["rank", "name", "genre", "mat", "mech", "ccu", "ch24", "like", "age", "ytv"], { empty: "No games match these filters", onSort: s => { LB.metric = COL[s.key] && METRICS.some(m => m[0] === s.key) ? s.key : LB.metric; } });
+  const lbTable = SortTable("lb-table", ["rank", "name", "genre", "mat", "mech", "ccu", "ch24", "like", "age", "ytv"], { empty: "No games match these filters", onSort: s => { if (METRICS.some(m => m[0] === s.key)) { LB.metric = s.key; LB.dir = s.dir; $("lb-metric").value = s.key; $("lb-dir").value = s.dir; $("lb-preset").value = ""; lbRun(); } } });
   function lbFromInputs() { LB.q = $("lb-q").value; LB.genre = $("lb-genre").value; LB.sub = $("lb-sub").value; LB.mat = $("lb-mat").value; LB.mech = $("lb-mech").value; LB.theme = $("lb-theme").value; LB.amin = $("lb-amin").value; LB.amax = $("lb-amax").value; LB.cmin = $("lb-cmin").value; LB.lmin = $("lb-lmin").value; LB.metric = $("lb-metric").value; LB.dir = $("lb-dir").value; LB.n = +$("lb-n").value; }
   function lbToInputs() { $("lb-q").value = LB.q || ""; $("lb-genre").value = LB.genre || ""; refreshSubs(); $("lb-sub").value = LB.sub || ""; $("lb-mat").value = LB.mat || ""; $("lb-mech").value = LB.mech || ""; $("lb-theme").value = LB.theme || ""; $("lb-amin").value = LB.amin ?? ""; $("lb-amax").value = LB.amax ?? ""; $("lb-cmin").value = LB.cmin ?? ""; $("lb-lmin").value = LB.lmin ?? ""; $("lb-metric").value = LB.metric || "ccu"; $("lb-dir").value = LB.dir || "desc"; $("lb-n").value = String(LB.n || 25); }
   let lbResult = [];
@@ -476,7 +476,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     const total = rows.length;
     rows = sortRows(rows, LB.metric, LB.dir).slice(0, LB.n);
     lbResult = rows;
-    lbTable.st.key = null; lbTable.set(rows);
+    lbTable.st.key = LB.metric; lbTable.st.dir = LB.dir; lbTable.set(rows);
     const metricName = (METRICS.find(m => m[0] === LB.metric) || [0, "CCU"])[1];
     $("lb-note").textContent = `${full(total)} games match · ranked by ${metricName}, ${LB.dir === "desc" ? "highest" : "lowest"} first · tap any column to re-sort the board`;
   }
@@ -487,12 +487,12 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   $("lb-share").addEventListener("click", e => { const url = location.href.split("#")[0] + "#board=" + encodeURIComponent(JSON.stringify(LB)); copyText(url, e.currentTarget); });
   $("lb-csv").addEventListener("click", () => {
     const cols = ["rank", "name", "creator", "universe_id", "genre", "subgenre", "maturity", "ccu", "peak", "age_days", "likes", "mechanics", "themes", "youtube_views_7d", "url"];
-    const esc = v => { const s = v == null ? "" : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+    const esc = v => { let s = v == null ? "" : String(v); if (/^[=+\-@\t\r]/.test(s) && isNaN(+s)) s = "'" + s; return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
     const lines = [cols.join(",")].concat(lbResult.map((g, i) => [i + 1, g.name, g.creator, g.id, g.genre, g.sub, g.mat, g.ccu, g.peak, g.age, g.like, (g.mech || []).map(mLabel).join("; "), (g.theme || []).map(tLabel).join("; "), g.ytv, link(g)].map(esc).join(",")));
-    const a = el("a", { href: URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" })), download: "roblox-leaderboard.csv" }); document.body.append(a); a.click(); a.remove();
+    const a = el("a", { href: URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv;charset=utf-8" })), download: "roblox-leaderboard.csv" }); document.body.append(a); a.click(); a.remove();
   });
   refreshPresets(); refreshSubs();
-  try { const m = location.hash.match(/board=([^&]+)/); if (m) { Object.assign(LB, JSON.parse(decodeURIComponent(m[1]))); setTimeout(() => document.getElementById("boards").scrollIntoView(), 50); } } catch (e) {}
+  try { const m = location.hash.match(/board=([^&]+)/); if (m) { const inc = JSON.parse(decodeURIComponent(m[1])) || {}; for (const k of Object.keys(LB)) if (k in inc && typeof inc[k] !== "object") LB[k] = inc[k]; if (![10, 25, 50, 100].includes(+LB.n)) LB.n = 25; if (!METRICS.some(x => x[0] === LB.metric)) LB.metric = "ccu"; if (LB.dir !== "asc") LB.dir = "desc"; setTimeout(() => document.getElementById("boards").scrollIntoView(), 50); } } catch (e) {}
   lbToInputs(); lbRun();
 
   // ---------- idea generator
@@ -548,12 +548,15 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     job_shift: { t: [["{N} Job Simulator", "simulator"], ["Work at the {N}", null]], p: "Work shifts at a {N}-themed job, earn pay and get promoted.", s: ["Work shifts and complete tasks", "Get promoted and unlock new jobs"], w: "work shifts for bonus pay" },
   };
   const STATS = ["Speed", "Size", "Strength", "Jump", "Luck", "Power"];
-  const fill = (str, ctx) => str.replace(/\{N\}/g, ctx.N).replace(/\{Ns\}/g, ctx.Ns).replace(/\{S\}/g, ctx.S).replace(/\{s\}/g, ctx.S.toLowerCase())
-    .replace(/\b([Aa]) ([AEIOUaeiou])/g, "$1n $2");
+  const fill = (str, ctx) => str.replace(/\{N\}/g, ctx.N).replace(/\{Ns\}/g, ctx.Ns).replace(/\{S\}/g, ctx.S).replace(/\{s\}/g, ctx.S.toLowerCase()).replace(/\{V\}/g, ctx.V || "")
+    .replace(/\b([Aa]) (?!(?:[Uu]ni|[Oo]ne|[Ee]u|[Uu]se))([AEIOUaeiou])/g, "$1n $2");
   // how well a theme suits a mechanic: 1 = natural fit, 0.25 = workable, 0 = nonsense (no "Dig for Songs")
   function fit(m, t) { const f = (TAX.mechanics[m] || {}).fits || { primary: [], ok: [] }, k = (TAX.themes[t] || {}).kinds || []; if (!f.primary.length) return 0.5; if (k.some(x => f.primary.includes(x))) return 1; if (k.some(x => f.ok.includes(x))) return 0.25; return 0; }
   function themeCtx(t, rand) { const T = TAX.themes[t] || {}; const N = T.noun || tLabel(t); return { N, Ns: T.noun_plural || N, S: STATS[Math.floor(rand() * STATS.length)] }; }
-  function makeIdea(rand, opts, used) {
+  // extra title shapes used only when strict generation runs dry (e.g. both mechanic and theme locked)
+  const GENERIC_TITLES = [["{N} Rush", null], ["{N} Legends", null], ["{N} Frenzy", null], ["Mega {N} {V}", null], ["{N} {V} Simulator", "simulator"], ["{N} Kingdom", null], ["Pocket {Ns}", null], ["{V} {Ns} Together", null]];
+  // relax 0 = strict; 1 = allow a repeated mechanic+theme pair with a new title; 2 = also allow a different build size
+  function makeIdea(rand, opts, used, relax = 0) {
     for (let attempt = 0; attempt < 60; attempt++) {
       // 1. core mechanic: rising ones weighted by momentum and young CCU; established ones occasionally for variety
       const pool = opts.mech ? [mechInfo[opts.mech] || { key: opts.mech, momentum_adj: 1, young_ccu: 0 }] : (risingMech.length ? risingMech.concat((TR.mechanics || []).slice(0, 8)) : (TR.mechanics || []).slice(0, 12));
@@ -566,9 +569,10 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       if (!m2 || m2 === m || !TAX.mechanics[m2]) m2 = null;
       // 3. build size: the bigger of the two mechanics
       const sc = SCOPE_NAME[Math.max(SCOPE_RANK[TAX.mechanics[m].scope] ?? 1, m2 ? (SCOPE_RANK[TAX.mechanics[m2].scope] ?? 1) : 0)];
-      if (opts.scope !== "all" && sc !== opts.scope) { if (opts.scope === "small" && m2 && attempt % 2) { m2 = null; } else continue; }
+      if (opts.scope !== "all" && sc !== opts.scope && m2 && SCOPE_RANK[opts.scope] < SCOPE_RANK[sc]) m2 = null;  // drop the twist to fit a smaller size
       const scope = SCOPE_NAME[Math.max(SCOPE_RANK[TAX.mechanics[m].scope] ?? 1, m2 ? (SCOPE_RANK[TAX.mechanics[m2].scope] ?? 1) : 0)];
-      if (opts.scope !== "all" && scope !== opts.scope) continue;
+      const scopeOff = opts.scope !== "all" && scope !== opts.scope;
+      if (scopeOff && relax < 2) continue;
       // 4. theme: fresh for this mechanic (few or no tracked games pair them), favoring rising themes and known gaps
       const gapThemes = new Set((TR.gaps || []).filter(g => g.mechanic === m).map(g => g.theme));
       const themeKeys = opts.theme ? [opts.theme] : Object.keys(TAX.themes);
@@ -577,15 +581,16 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       // 5. title from this mechanic's patterns, favoring the title formulas new hits use; then the novelty check
       const fw = Object.fromEntries((TR.formulas || []).map(f => [f.key, f.momentum_adj || 1]));
       const ctx = themeCtx(t, rand);
-      const pats = (MC[m] || { t: [["{N} " + ((TAX.mechanics[m] || {}).title_verb || "Simulator"), null]] }).t;
+      ctx.V = ((TAX.mechanics[m] || {}).title_verb || "Collect").replace("+1", "Grow");
+      const pats = (MC[m] || { t: [["{N} " + ((TAX.mechanics[m] || {}).title_verb || "Simulator"), null]] }).t.concat(relax >= 1 ? GENERIC_TITLES : []);
       const [pat, formula] = pick(rand, pats, p => p[1] ? (fw[p[1]] || 1) : 1);
       const title = fill(pat, ctx).replace(/\s+/g, " ").trim();
       if (used.titles.has(title.toLowerCase())) continue;
       const near = closest(title);
       if (near.sim >= 0.67 || (near.game && near.game.name.toLowerCase().replace(/[^a-z0-9+ ]/g, "").includes(title.toLowerCase().replace(/[^a-z0-9+ ]/g, "")))) continue;
-      if (used.pairs.has(m + "|" + t) && attempt < 40) continue;
+      if (used.pairs.has(m + "|" + t) && relax === 0) continue;
       used.titles.add(title.toLowerCase()); used.pairs.add(m + "|" + t); used.themes.add(t);
-      return { title, m, m2, t, scope, formula, near, mi, ti: themeInfo[t], ctx };
+      return { title, m, m2, t, scope, scopeOff, formula, near, mi, ti: themeInfo[t], ctx };
     }
     return null;
   }
@@ -613,18 +618,23 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     const out = $("ig-out"); out.replaceChildren(); lastIdeas = [];
     if (!(TR.mechanics || []).length) { out.append(el("div", { cls: "card empty", text: "The idea generator needs trend data from the daily run." })); return; }
     for (let i = 0; i < 10; i++) {
-      const idea = makeIdea(rand, opts, used); if (!idea) break;
+      const idea = makeIdea(rand, opts, used, 0) || makeIdea(rand, opts, used, 1) || makeIdea(rand, opts, used, 2); if (!idea) break;
       const d = describe(idea); lastIdeas.push(Object.assign({}, idea, d));
       const refEls = d.refs.flatMap((r, k) => { const g = byId[r.id] || r; const href = link(g); return [k ? ", " : "", href ? el("a", { href, target: "_blank", rel: "noopener", text: `${r.name} (${fmt(r.ccu)} CCU, ${r.age}d)` }) : el("span", { text: r.name })]; });
       out.append(el("article", { cls: "idea" }, [
-        el("div", { cls: "top" }, [el("div", {}, [el("div", { cls: "num", text: `Idea ${i + 1}` }), el("h3", { text: idea.title })]), el("span", { cls: "scope", text: SCOPE_TEXT[idea.scope] })]),
+        el("div", { cls: "top" }, [el("div", {}, [el("div", { cls: "num", text: `Idea ${i + 1}` }), el("h3", { text: idea.title })]), el("span", { cls: "scope", text: SCOPE_TEXT[idea.scope], title: idea.scopeOff ? "Outside the size you picked: this mechanic is usually built at this size" : null })]),
         el("div", {}, [el("span", { cls: "chip", text: mLabel(idea.m) }), idea.m2 ? el("span", { cls: "chip", text: "+ " + mLabel(idea.m2) }) : null, el("span", { cls: "chip", text: tLabel(idea.t) }), idea.formula ? el("span", { cls: "chip", text: "Title: " + fLabel(idea.formula) }) : null]),
         el("p", { text: d.pitch }),
         el("dl", {}, [el("dt", { text: "Core loop" }), el("dd", {}, el("ol", {}, d.loop.map(s => el("li", { text: s })))), el("dt", { text: "Monetize" }), el("dd", { text: d.money }), el("dt", { text: "Retention" }), el("dd", { text: d.retention })]),
         el("div", { cls: "why" }, [el("b", { text: "Why now: " }), d.why, d.refs.length ? el("div", {}, ["Proof: ", ...refEls]) : null, idea.near.game ? el("div", { text: `Closest tracked title: ${idea.near.game.name} (${Math.round(idea.near.sim * 100)}% word overlap)` }) : null])
       ]));
     }
-    $("ig-note").textContent = `${lastIdeas.length} ideas · seed ${seed} · built from ${risingMech.length} rising mechanics and ${(TR.rising.theme || []).length} rising themes · press again for a new set`;
+    const off = lastIdeas.filter(x => x.scopeOff).length;
+    const notes = [`${lastIdeas.length} ideas · seed ${seed} · built from ${risingMech.length} rising mechanics and ${(TR.rising.theme || []).length} rising themes · press again for a new set`];
+    if (off) notes.push(`${off} idea${off > 1 ? "s are" : " is"} outside the size you picked, because ${opts.mech ? mLabel(opts.mech) + " is usually a " + (TAX.mechanics[opts.mech] || {}).scope + " build" : "few rising mechanics fit that size"}.`);
+    if (lastIdeas.length < 10) notes.push(`Only ${lastIdeas.length} distinct ideas fit these locks. Loosen the mechanic, theme or size for more.`);
+    $("ig-note").textContent = notes.join(" ");
+    if (!lastIdeas.length) out.append(el("div", { cls: "card empty", text: "No ideas fit this combination. Try a different theme or set the build size to Any." }));
   }
   $("ig-go").addEventListener("click", () => generateIdeas());
   $("ig-copy").addEventListener("click", e => copyText(lastIdeas.map((x, i) => `${i + 1}. ${x.title} [${SCOPE_TEXT[x.scope]}]\n   ${x.pitch}\n   Loop: ${x.loop.join(" → ")}\n   Monetize: ${x.money}\n   Retention: ${x.retention}\n   Why now: ${x.why}`).join("\n\n"), e.currentTarget));

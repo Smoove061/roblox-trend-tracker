@@ -178,3 +178,15 @@ def log_run(task: str, ok: bool, count: int = 0, requests: int = 0, detail: str 
         "ts": iso(now_utc()), "task": task, "ok": int(ok), "count": count,
         "requests": requests, "detail": detail[:500],
     }])
+
+
+def embed_json(obj) -> str:
+    """JSON safe inside <script>: no '<' (blocks </script> and <!--<script tricks), no U+2028/2029."""
+    s = json.dumps(obj, separators=(",", ":"), ensure_ascii=False)
+    return s.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
+def fill_template(tpl: str, values: dict) -> str:
+    """Replace __KEY__ placeholders in one pass, so data containing a placeholder name can't be re-substituted."""
+    import re as _re
+    return _re.sub(r"__(" + "|".join(map(_re.escape, values)) + r")__", lambda m: values[m.group(1)], tpl)

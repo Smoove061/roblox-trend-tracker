@@ -157,8 +157,7 @@ def build_data() -> dict:
 
 def build(out: str = "site/index.html") -> Path:
     data = build_data()
-    payload = json.dumps(data, separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/")
-    page = TEMPLATE.replace("__DATA__", payload).replace("__UPDATED__", html.escape(data["updated"]))
+    page = st.fill_template(TEMPLATE, {"DATA": st.embed_json(data), "UPDATED": html.escape(data["updated"])})
     p = Path(out)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(page, encoding="utf-8")

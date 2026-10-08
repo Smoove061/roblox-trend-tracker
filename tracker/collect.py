@@ -139,25 +139,33 @@ def discover(http, games: dict, cfg: dict, now) -> dict:
 def apply_maturity(g: dict, info: dict):
     for k in ("maturity", "min_age", "maturity_label"):
         if info.get(k) not in (None, ""):
-            g[k] = str(info[k])
+            v = str(info[k]).strip()
+            g[k] = v.lower() if k == "maturity" else v  # one spelling, so filters and sorting match
 
 
-def fill_maturity(http, games: dict, limit: int = 300) -> dict:
-    """Look up content maturity for active games that don't have it yet (largest first)."""
+def fill_maturity(http, games: dict, limit: int = 300, state: dict | None = None, now_iso: str = "") -> dict:
+    """Look up content maturity for active games missing it: never-tried first, then least recently tried,
+    biggest first within each, so games that keep failing can't block the queue."""
+    tried = (state if state is not None else {}).setdefault("maturity_tried", {})
     todo = sorted((u for u, g in games.items() if str(g.get("active")) == "1" and not g.get("maturity")),
-                  key=lambda u: -_to_int(games[u].get("last_ccu"), 0))[:limit]
-    got, errors = 0, 0
+                  key=lambda u: (tried.get(u, ""), -_to_int(games[u].get("last_ccu"), 0)))[:limit]
+    got, errors, streak = 0, 0, 0
     for uid in todo:
+        tried[uid] = now_iso or "x"
         try:
             info = roblox.age_guidelines(http, uid)
+            streak = 0
         except Exception as e:  # noqa: BLE001
             errors += 1
-            if errors >= 5 or type(e).__name__ == "BudgetExceeded":
+            streak += 1
+            if streak >= 5 or type(e).__name__ == "BudgetExceeded":
                 break
             continue
         if info.get("maturity") or info.get("min_age") is not None:
             apply_maturity(games[uid], info)
             got += 1
+    for u in [u for u in tried if games.get(u, {}).get("maturity")]:
+        del tried[u]
     return {"looked_up": len(todo), "found": got, "errors": errors}
 
 
