@@ -318,7 +318,7 @@ def build_thumbs(out_dir: Path | None) -> dict | None:
     for key, n in niches.items():
         games = []
         for g in n.get("games", []):
-            icon, media = _img(g.get("icon")), [m for m in (_img(x) for x in g.get("media", [])[:3]) if m]
+            icon, media = _img(g.get("icon")), [m for m in (_img(x) for x in g.get("media", [])[:6]) if m]
             files.update([icon, *media])
             games.append({"id": str(g.get("id", "")), "name": g.get("name", ""), "ccu": g.get("ccu", 0), "age": g.get("age"), "young": bool(g.get("young")),
                           "icon": icon, "media": media, "art": g.get("art_style", ""), "map": g.get("map_style", ""), "src": g.get("style_source", "")})

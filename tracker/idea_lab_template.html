@@ -127,7 +127,7 @@ button.go.small { font-size: 13.5px; padding: 7px 12px; border-radius: 10px; }
 .ph { display: grid !important; place-items: center; color: var(--muted); font: 800 18px var(--display); }
 .ic b, .md b { display: block; color: var(--ink); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 4px; }
 .new { font: 500 10.5px var(--mono); background: var(--accent-soft); color: var(--accent-ink); border-radius: 5px; padding: 0 5px; }
-.mediagrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+.mediagrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
 .md { min-width: 0; font-size: 11.5px; color: var(--ink2); }
 .dirbox { background: var(--paper); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
 .dirbox p { margin: 0 0 8px; } .dirbox ul { margin: 4px 0 8px; padding-left: 18px; } .dirbox .src { font-size: 12px; color: var(--muted); }
@@ -139,6 +139,23 @@ button.go.small { font-size: 13.5px; padding: 7px 12px; border-radius: 10px; }
 .bars2 div { display: grid; grid-template-columns: minmax(0, 1fr) 46px; gap: 8px; align-items: center; }
 .bars2 .b { height: 8px; border-radius: 4px; background: var(--accent); }
 .bars2 .lbl { grid-column: 1 / -1; display: flex; justify-content: space-between; color: var(--ink2); }
+.md .mini { display: flex; gap: 4px; margin-top: 4px; }
+.md .mini img { width: 25%; aspect-ratio: 16 / 9; border-radius: 6px; cursor: zoom-in; }
+.ic img, .md > img, .md > .ph { cursor: zoom-in; }
+.chips2 { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 3px; }
+.chips2 span { font-size: 11px; padding: 0 6px; border-radius: 5px; background: var(--paper); color: var(--ink2); }
+dialog#lb { border: 0; border-radius: 16px; padding: 0; background: var(--card); color: var(--ink); width: min(960px, calc(100vw - 32px)); max-height: calc(100vh - 32px); }
+dialog#lb::backdrop { background: rgba(0, 0, 0, .72); }
+.lb-in { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.lb-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.lb-top b { font: 800 18px var(--display); overflow-wrap: anywhere; }
+.lb-main { position: relative; background: #000; border-radius: 12px; overflow: hidden; display: grid; place-items: center; min-height: 200px; }
+.lb-main img { max-width: 100%; max-height: 62vh; display: block; image-rendering: auto; }
+.lb-nav { position: absolute; top: 50%; transform: translateY(-50%); border: 0; background: rgba(0,0,0,.55); color: #fff; width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; }
+.lb-strip { display: flex; gap: 6px; overflow-x: auto; }
+.lb-strip button { border: 2px solid transparent; padding: 0; border-radius: 8px; background: none; cursor: pointer; flex: none; }
+.lb-strip button[aria-current="true"] { border-color: var(--accent); }
+.lb-strip img { height: 54px; display: block; border-radius: 6px; }
 footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
 @media (max-width: 1000px) { .main, .t-body { grid-template-columns: 1fr; } .brief { position: static; } .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .strip { grid-template-columns: 1fr; } }
@@ -201,10 +218,16 @@ footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
     </div>
     <div class="status" id="tstatus" role="status" aria-live="polite"></div>
     <div class="t-body" id="tbody">
-      <div><h3>Icons · biggest first</h3><div class="icongrid" id="ticons"></div><h3>Lead thumbnails</h3><div class="mediagrid" id="tmedia"></div></div>
+      <div><h3>Thumbnails · biggest first (tap to see the whole gallery)</h3><div class="mediagrid" id="tmedia"></div><h3>Icons</h3><div class="icongrid" id="ticons"></div></div>
       <div><h3>Direction</h3><div id="tdir"></div><h3>Palette of the leaders</h3><div class="sw" id="tpal"></div><h3>Art style · map style</h3><div class="bars2" id="tsty"></div></div>
     </div>
   </section>
+  <dialog id="lb" aria-label="Game images"><div class="lb-in">
+    <div class="lb-top"><b id="lb-name"></b><span><a id="lb-link" target="_blank" rel="noopener" hidden>Open on Roblox ↗</a> <button class="ghost" id="lb-close" type="button">Close</button></span></div>
+    <div class="lb-main"><img id="lb-img" alt=""><button class="lb-nav" id="lb-prev" type="button" aria-label="Previous image" style="left:8px">‹</button><button class="lb-nav" id="lb-next" type="button" aria-label="Next image" style="right:8px">›</button></div>
+    <div class="lb-strip" id="lb-strip"></div>
+    <small id="lb-note" style="color:var(--muted)"></small>
+  </div></dialog>
   <footer id="foot"></footer>
 </div>
 
@@ -566,9 +589,17 @@ DATA: ${JSON.stringify(niches)}`;
     if (tCtl) tCtl.abort();
     tKey = key; const n = TH[key]; if (!n) return;
     $("tstatus").textContent = ""; $("tstatus").classList.remove("err");
-    $("ticons").replaceChildren(...n.games.map((g, i) => el("div", { cls: "ic", title: g.name }, [img(g.i, g.name), el("b", { text: `${i + 1}. ${g.name}` }), el("span", {}, [fmt(g.ccu) + " CCU ", g.young ? el("span", { cls: "new", text: "NEW" }) : null])])));
-    const media = n.games.filter(g => g.m);
-    $("tmedia").replaceChildren(...(media.length ? media.slice(0, 9).map(g => el("div", { cls: "md", title: g.name }, [img(g.m, g.name), el("b", { text: g.name })])) : [el("small", { text: "No thumbnails yet." })]));
+    const zoom = (node, g, k) => { node.addEventListener("click", () => openLb(g, k)); return node; };
+    $("ticons").replaceChildren(...n.games.map((g, i) => el("div", { cls: "ic", title: g.name }, [zoom(img(g.i, g.name), g, 0), el("b", { text: `${i + 1}. ${g.name}` }), el("span", {}, [fmt(g.ccu) + " CCU ", g.young ? el("span", { cls: "new", text: "NEW" }) : null])])));
+    $("tmedia").replaceChildren(...n.games.map((g, i) => {
+      const ms = (g.ms || (g.m ? [g.m] : [])).filter(f => P.images[f]);
+      const lead = ms.length ? zoom(img(ms[0], g.name), g, 1) : zoom(el("div", { cls: "ph", text: "Thumbnail not downloaded yet" }), g, 0);
+      return el("div", { cls: "md", title: g.name }, [lead,
+        ms.length > 1 ? el("div", { cls: "mini" }, ms.slice(1).map((f, k) => zoom(img(f, ""), g, k + 2))) : null,
+        el("b", { text: `${i + 1}. ${g.name}` }),
+        el("span", {}, [fmt(g.ccu) + " CCU" + (g.age != null ? ` · ${g.age}d old ` : " "), g.young ? el("span", { cls: "new", text: "NEW" }) : null]),
+        (g.art || g.map) ? el("div", { cls: "chips2" }, [styleLabel("art", g.art) ? el("span", { text: styleLabel("art", g.art) }) : null, styleLabel("map", g.map) ? el("span", { text: styleLabel("map", g.map) }) : null]) : null]);
+    }));
     renderDirection(key);
     $("tpal").replaceChildren(...(n.palette || []).map(h => el("span", {}, [el("i", { style: `background:${/^#[0-9a-f]{6}$/i.test(h) ? h : "transparent"}` }), h])));
     if (!(n.palette || []).length) $("tpal").append(el("small", { text: "Not measured yet." }));
@@ -642,6 +673,31 @@ DATA: ${JSON.stringify(niches)}`;
     } finally { tCtl = null; btn.disabled = false; stop.hidden = true; }
   }
   let canImages = false;
+  const LB = { files: [], k: 0 };
+  function openLb(g, k) {
+    LB.files = [g.i, ...(g.ms || (g.m ? [g.m] : []))].filter(f => f && P.images[f]);
+    if (!LB.files.length) return;
+    LB.k = Math.min(k, LB.files.length - 1);
+    $("lb-name").textContent = `${g.name} · ${fmt(g.ccu)} CCU`;
+    const href = placeLink(g.name); const a = $("lb-link"); if (href) { a.href = href; a.hidden = false; } else a.hidden = true;
+    $("lb-note").textContent = "Icon first, then the game's gallery images. Shown at the size stored for this page.";
+    $("lb-strip").replaceChildren(...LB.files.map((f, i) => el("button", { type: "button", "aria-label": i ? `Gallery image ${i}` : "Icon", onclick: () => lbShow(i) }, el("img", { src: P.images[f], alt: "" }))));
+    lbShow(LB.k);
+    const d = $("lb"); if (!d.open) { if (d.showModal) d.showModal(); else d.setAttribute("open", ""); }
+  }
+  function lbShow(i) {
+    LB.k = (i + LB.files.length) % LB.files.length;
+    $("lb-img").src = P.images[LB.files[LB.k]];
+    $("lb-img").alt = LB.k ? `Gallery image ${LB.k}` : "Icon";
+    [...$("lb-strip").children].forEach((b, j) => b.setAttribute("aria-current", String(j === LB.k)));
+    $("lb-prev").hidden = $("lb-next").hidden = LB.files.length < 2;
+  }
+  const lbClose = () => { const d = $("lb"); if (d.close) d.close(); else d.removeAttribute("open"); };
+  $("lb-close").addEventListener("click", lbClose);
+  $("lb-prev").addEventListener("click", () => lbShow(LB.k - 1));
+  $("lb-next").addEventListener("click", () => lbShow(LB.k + 1));
+  $("lb").addEventListener("keydown", e => { if (e.key === "ArrowLeft") lbShow(LB.k - 1); else if (e.key === "ArrowRight") lbShow(LB.k + 1); });
+  $("lb").addEventListener("click", e => { if (e.target === $("lb")) lbClose(); });
   $("tvision").addEventListener("click", analyzeNiche);
   $("tvstop").addEventListener("click", () => tCtl && tCtl.abort());
   function disableClaude() { $("go").hidden = true; $("tvision").hidden = true; $("brief-hint").textContent = "Open this page in Claude to generate new ideas and design docs. Today's set refreshes every morning."; render(); }

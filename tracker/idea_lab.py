@@ -16,7 +16,7 @@ from pathlib import Path
 
 from . import storage as st
 
-ICON_EMBED, MEDIA_EMBED = (96, 96), (256, 144)
+ICON_EMBED, MEDIA_EMBED, EXTRA_EMBED = (96, 96), (320, 180), (256, 144)
 
 
 def _f(v, d=None):
@@ -93,29 +93,33 @@ def _thumb_pack(budget_mb: float):
     from .thumbs import IMG
     rep = st.load_json(st.REPORTS / "thumbs.json", {})
     out = {}
-    icons, media = [], []
+    icons, media, extra = [], [], []
     for k, n in rep.get("niches", {}).items():
         gs = []
         for g in n.get("games", []):
-            m0 = (g.get("media") or [""])[0]
+            ms = [m for m in (g.get("media") or []) if m]
+            m0 = ms[0] if ms else ""
             gs.append({"id": g["id"], "name": g["name"], "ccu": g["ccu"], "age": g.get("age"), "young": g.get("young"),
-                       "i": g.get("icon", ""), "m": m0, "art": g.get("art_style", ""), "map": g.get("map_style", "")})
+                       "i": g.get("icon", ""), "m": m0, "ms": ms, "art": g.get("art_style", ""), "map": g.get("map_style", "")})
             if g.get("icon"):
                 icons.append(g["icon"])
             if m0:
                 media.append(m0)
+            extra.extend(ms[1:])
         out[k] = {"type": n["type"], "label": n["label"], "games": gs,
                   "icon_dir": n.get("icon_direction", []), "media_dir": n.get("media_direction", []),
                   "palette": (n.get("icon") or {}).get("palette", []), "media_palette": (n.get("media") or {}).get("palette", []),
                   "art_styles": n.get("art_styles", {}), "map_styles": n.get("map_styles", {}),
                   "vision": n.get("vision"), "hash": n.get("members_hash", "")}
     images, used, cap = {}, 0, budget_mb * 1_000_000
-    for f, size in [(f, ICON_EMBED) for f in dict.fromkeys(icons)] + [(f, MEDIA_EMBED) for f in dict.fromkeys(media)]:
+    order = [(f, ICON_EMBED) for f in dict.fromkeys(icons)] + [(f, MEDIA_EMBED) for f in dict.fromkeys(media)] + \
+        [(f, EXTRA_EMBED) for f in dict.fromkeys(extra)]
+    for f, size in order:
         uri = _data_uri(IMG / f, size)
         if not uri:
             continue
         if used + len(uri) > cap:
-            break
+            continue  # over budget: skip this one, smaller ones later may still fit
         images[f] = uri
         used += len(uri)
     return out, images

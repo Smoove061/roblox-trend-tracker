@@ -171,6 +171,31 @@ ul.dir.do li::marker { color: var(--up); } ul.dir.avoid li::marker { color: var(
 button.altchip { padding: 4px 12px; border-radius: 999px; background: var(--chip); color: var(--ink); border: 1px solid transparent; font-weight: 600; font-size: 13px; text-align: left; max-width: 100%; overflow-wrap: anywhere; }
 button.altchip:hover { border-color: var(--axis); } button.altchip.on { background: var(--s1); color: var(--accent-ink); }
 .altpat { color: var(--muted); font-size: 11px; padding-left: 12px; overflow-wrap: anywhere; }
+.tcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.tcard { background: var(--raised); border: 1px solid var(--ring); border-radius: 12px; overflow: hidden; min-width: 0; }
+.tcard .hw { position: relative; }
+.tcard .hero { display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: 0; border-radius: 0; background: var(--chip); overflow: hidden; }
+.tcard .hero img, .tcard .hero .ph { width: 100%; height: 100%; object-fit: cover; display: flex; align-items: center; justify-content: center; }
+.tcard .hero.none { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: var(--muted); font-size: 12px; cursor: default; }
+.tcard .hero.none img, .tcard .hero.none .ph { width: 56px; height: 56px; border-radius: 12px; }
+.tcard .rk, .tile .rk { font-variant-numeric: tabular-nums; }
+.tcard .hw .rk { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,.62); color: #fff; font-size: 12px; font-weight: 650; border-radius: 999px; padding: 1px 8px; }
+.tcard .hw .nw { position: absolute; top: 8px; right: 8px; }
+.tcard .tb { padding: 8px 10px 10px; } .tcard .nm { font-weight: 650; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .tcard .cc { color: var(--muted); font-size: 12px; margin: 1px 0 4px; }
+.tcard .extra { display: flex; gap: 6px; margin-top: 6px; } .tcard .xt { padding: 0; border: 1px solid var(--ring); border-radius: 6px; overflow: hidden; width: 72px; height: 41px; flex: 0 0 auto; background: var(--chip); }
+.tcard .xt img, .tcard .xt .ph { width: 100%; height: 100%; object-fit: cover; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+html.lbx-open { overflow: hidden; }
+.lbx { position: fixed; inset: 0; z-index: 40; background: rgba(8,8,8,.96); color: #fff; display: flex; flex-direction: column; padding: 12px 16px 14px; gap: 8px; outline: none; }
+.lbx-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; } .lbx-title { min-width: 0; overflow-wrap: anywhere; } .lbx-title span { color: #c3c2b7; }
+.lbx .btn, .lbx button { background: #222221; color: #fff; border-color: rgba(255,255,255,.2); }
+.lbx-main { flex: 1; min-height: 0; display: flex; align-items: center; gap: 8px; }
+.lbx-stage { flex: 1; min-width: 0; height: 100%; display: flex; align-items: center; justify-content: center; }
+.lbx-stage img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; } .lbx-stage.icon img { width: min(360px, 80vw); height: auto; image-rendering: auto; }
+.lbx-stage .ph { width: 160px; height: 160px; background: #222221; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.lbx-nav { font-size: 28px; line-height: 1; padding: 10px 14px; border-radius: 999px; } .lbx-cap { text-align: center; font-size: 12.5px; color: #c3c2b7; }
+.lbx-thumbs { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; } .lbx-t { padding: 0; width: 76px; height: 46px; border-radius: 6px; overflow: hidden; opacity: .65; } .lbx-t.on { opacity: 1; border-color: #fff; }
+.lbx-t img, .lbx-t .ph { width: 100%; height: 100%; object-fit: cover; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+@media (max-width: 520px) { .tcards { grid-template-columns: 1fr; } .lbx-nav { padding: 8px 10px; } }
 footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media (max-width: 960px) { .grid3 { grid-template-columns: 1fr; } .ideas { grid-template-columns: 1fr; } }
@@ -239,7 +264,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
   <div class="ideas" id="ig-out"></div>
 
   <h2 class="section-title" id="thumbs">Thumbnails &amp; styles</h2>
-  <p class="section-sub">What the icons and thumbnails of the biggest games (and the newest risers) in each niche look like, measured against all tracked games, with plain direction for yours. Tap an icon for the game's details.</p>
+  <p class="section-sub">What the icons and thumbnails of the biggest games (and the newest risers) in each niche look like, measured against all tracked games, with plain direction for yours. Tap any image to enlarge it and see the game's whole gallery.</p>
   <section class="card" id="th-empty" hidden><h2>Collecting thumbnails</h2><p class="note" style="margin:6px 0 0">The first images appear after the next hourly runs. This section fills in as soon as the tracker has downloaded icons and thumbnails for the top games in each niche.</p></section>
   <div id="th-body" hidden>
     <section class="card">
@@ -1091,15 +1116,68 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       sections.push(el("div", { style: "margin-top:14px" }, [el("h3", { text: "From the numbers" }), ...num.map(([t, arr]) => el("div", { style: "margin-top:6px" }, [el("div", { cls: "note", style: "margin:0", text: t }), bullets(arr) || el("div", { cls: "empty", text: "Not enough images measured yet." })]))]));
       return el("section", { cls: "card" }, sections);
     }
+    // lightbox: icon + all gallery images of one game, large. Esc closes, arrows move, Tab stays inside, focus returns on close.
+    let lbx = null;
+    function openLightbox(g, files, start) {
+      closeLightbox(true);
+      const real = byId[g.id], href = real ? link(real) : null;
+      let i = start, lastFocus = document.activeElement;
+      const stage = el("div", { cls: "lbx-stage" }), cap = el("div", { cls: "lbx-cap" });
+      const prev = el("button", { cls: "lbx-nav", text: "‹", "aria-label": "Previous image" }), next = el("button", { cls: "lbx-nav", text: "›", "aria-label": "Next image" });
+      const close = el("button", { cls: "lbx-close", text: "Close", "aria-label": "Close images" });
+      const thumbs = el("div", { cls: "lbx-thumbs" }, files.map((f, k) => el("button", { cls: "lbx-t", "aria-label": k === 0 && f === g.icon ? "Icon" : "Image " + (k + (g.icon ? 0 : 1)), onclick: () => go(k) }, pic(f, g.name))));
+      const box = el("div", { cls: "lbx", role: "dialog", "aria-modal": "true", "aria-label": `${g.name} images`, tabindex: "-1" }, [
+        el("div", { cls: "lbx-top" }, [el("div", { cls: "lbx-title" }, [el("b", { text: g.name || "(unnamed)" }), el("span", { text: " · " + full(g.ccu) + " CCU" })]),
+          el("div", { cls: "hubacts" }, [href ? el("a", { cls: "btn small", href, target: "_blank", rel: "noopener", text: "Open on Roblox ↗" }) : null, real ? el("button", { cls: "small", text: "Game details", onclick: () => { closeLightbox(); openDrawer(real); } }) : null, close])]),
+        el("div", { cls: "lbx-main" }, [prev, stage, next]), cap, thumbs]);
+      function go(k) {
+        i = (k + files.length) % files.length;
+        const f = files[i], isIcon = f === g.icon;
+        stage.replaceChildren(pic(f, g.name)); stage.className = "lbx-stage" + (isIcon ? " icon" : "");
+        cap.textContent = `${isIcon ? "Icon" : "Gallery image " + (i + (g.icon ? 0 : 1))} · ${i + 1} of ${files.length}`;
+        [...thumbs.children].forEach((t, k2) => t.classList.toggle("on", k2 === i));
+        prev.hidden = next.hidden = files.length < 2;
+      }
+      const focusables = () => [...box.querySelectorAll("button:not([hidden]), a[href]")];
+      function onKey(e) {
+        if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeLightbox(); }
+        else if (e.key === "ArrowRight") { e.preventDefault(); go(i + 1); } else if (e.key === "ArrowLeft") { e.preventDefault(); go(i - 1); }
+        else if (e.key === "Tab") { const f = focusables(); if (!f.length) return; const first = f[0], last = f[f.length - 1]; if (e.shiftKey && (document.activeElement === first || document.activeElement === box)) { e.preventDefault(); last.focus(); } else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); } }
+      }
+      prev.onclick = () => go(i - 1); next.onclick = () => go(i + 1); close.onclick = () => closeLightbox();
+      box.addEventListener("click", e => { if (e.target === box) closeLightbox(); });
+      document.addEventListener("keydown", onKey, true);
+      document.documentElement.classList.add("lbx-open"); document.body.append(box);
+      lbx = { box, onKey, lastFocus };
+      go(start); close.focus();
+    }
+    function closeLightbox(quiet) {
+      if (!lbx) return; const { box, onKey, lastFocus } = lbx; lbx = null;
+      document.removeEventListener("keydown", onKey, true); box.remove(); document.documentElement.classList.remove("lbx-open");
+      if (!quiet && lastFocus && lastFocus.focus && document.contains(lastFocus)) lastFocus.focus();
+    }
     function show(id) {
       current = id; const n = TH.niches[id]; if (!n) return;
       const nYoung = n.games.filter(g => g.young).length;
-      const tiles = n.games.map((g, i) => { const real = byId[g.id], t = el("button", { cls: "tile", title: [g.name, g.art ? artLabel(g.art) : null, g.map ? mapLabel(g.map) : null].filter(Boolean).join(" · "), onclick: () => real && openDrawer(real) }, [el("span", { cls: "rk", text: String(i + 1) }), g.young ? el("span", { cls: "nw badge-new", text: "NEW" }) : null, pic(g.icon, g.name), el("div", { cls: "nm", text: g.name || "(unnamed)" }), el("div", { cls: "cc", text: full(g.ccu) + " CCU" })]); return t; });
-      const lead = n.games.filter(g => g.media && g.media[0]);
-      const strip = lead.length ? el("div", { cls: "strip" }, lead.map(g => el("figure", {}, [pic(g.media[0], g.name), el("figcaption", { text: g.name, title: g.name })]))) : el("p", { cls: "empty", text: "No gallery thumbnails downloaded for these games yet." });
-      $("th-view").replaceChildren(
-        el("section", { cls: "card" }, [el("h2", { text: n.label }), el("p", { cls: "note", text: `${TYPE_NAME[n.type] ? TYPE_NAME[n.type].replace(/s$/, "").toLowerCase() : n.type} · ${n.games.length} games (${n.games.length - nYoung} leaders by CCU${nYoung ? " + " + nYoung + " new risers" : ""}) · measured ${TH.as_of ? new Date(TH.as_of).toLocaleDateString() : ""}`.replace(/ · measured $/, "") }),
-          el("h3", { text: "Icons" }), el("div", { cls: "tiles", style: "margin:8px 0 14px" }, tiles), el("h3", { text: "Lead thumbnails" }), el("div", { style: "margin-top:8px" }, strip)]),
+      const imgsOf = g => [g.icon].concat(g.media || []).filter(Boolean);
+      const open = (g, f) => openLightbox(g, imgsOf(g), Math.max(0, imgsOf(g).indexOf(f)));
+      const styleChips = g => [g.art ? el("span", { cls: "chip", text: artLabel(g.art), title: SRC_TEXT[g.src] || null }) : null, g.map ? el("span", { cls: "chip", text: mapLabel(g.map) }) : null];
+      const tiles = n.games.map((g, i) => el("button", { cls: "tile", title: [g.name, g.art ? artLabel(g.art) : null, g.map ? mapLabel(g.map) : null].filter(Boolean).join(" · "), onclick: () => open(g, g.icon) }, [el("span", { cls: "rk", text: String(i + 1) }), g.young ? el("span", { cls: "nw badge-new", text: "NEW" }) : null, pic(g.icon, g.name), el("div", { cls: "nm", text: g.name || "(unnamed)" }), el("div", { cls: "cc", text: full(g.ccu) + " CCU" })]));
+      const cards = n.games.map((g, i) => {
+        const lead = (g.media || [])[0];
+        const hero = lead ? el("button", { cls: "hero", "aria-label": `${g.name}: open thumbnails`, onclick: () => open(g, lead) }, pic(lead, g.name))
+          : el("div", { cls: "hero none" }, [pic(g.icon, g.name), el("span", { text: "Thumbnail not downloaded yet" })]);
+        return el("article", { cls: "tcard" }, [el("div", { cls: "hw" }, [hero, el("span", { cls: "rk", text: "#" + (i + 1) }), g.young ? el("span", { cls: "nw badge-new", text: "NEW" }) : null]),
+          el("div", { cls: "tb" }, [el("div", { cls: "nm", text: g.name || "(unnamed)", title: g.name }), el("div", { cls: "cc", text: full(g.ccu) + " CCU" + (g.age != null ? " · " + g.age + "d old" : "") }), el("div", {}, styleChips(g)),
+            (g.media || []).length > 1 ? el("div", { cls: "extra" }, g.media.slice(1).map((f, k) => el("button", { cls: "xt", "aria-label": `${g.name}: gallery image ${k + 2}`, onclick: () => open(g, f) }, pic(f, g.name)))) : null])]);
+      });
+      const mode = store.get("rtt.thmode", "both");
+      const header = el("section", { cls: "card" }, [el("div", { cls: "hubhead" }, [el("div", {}, [el("h2", { text: n.label }), el("p", { cls: "note", style: "margin:2px 0 0", text: `${TYPE_NAME[n.type] ? TYPE_NAME[n.type].replace(/s$/, "").toLowerCase() : n.type} · ${n.games.length} games (${n.games.length - nYoung} leaders by CCU${nYoung ? " + " + nYoung + " new risers" : ""})${TH.as_of ? " · measured " + new Date(TH.as_of).toLocaleDateString() : ""}` })]),
+        el("div", { cls: "seg", role: "group", "aria-label": "Show" }, [["icons", "Icons"], ["thumbs", "Thumbnails"], ["both", "Both"]].map(([k, t]) => el("button", { cls: "small" + (mode === k ? " seg-on" : ""), text: t, "aria-pressed": String(mode === k), onclick: () => { store.set("rtt.thmode", k); show(id); } })))])]);
+      const media = [];
+      if (mode !== "thumbs") media.push(el("section", { cls: "card" }, [el("h3", { text: "Icons" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "The square tile players see in discovery. Tap one to enlarge." }), el("div", { cls: "tiles" }, tiles)]));
+      if (mode !== "icons") media.push(el("section", { cls: "card" }, [el("h3", { text: "Thumbnails" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "Lead gallery image of every game, with the rest of its gallery underneath. Tap any image to see them all large." + (n.games.some(g => (g.media || []).length) ? "" : " Gallery images are still downloading: they arrive over the next hourly runs.") }), el("div", { cls: "tcards" }, cards)]));
+      $("th-view").replaceChildren(header, ...media,
         el("div", { cls: "grid2" }, [directionCard(n), el("div", { cls: "stack" }, [swatchCard(n), metricCard(n)])]),
         el("section", { cls: "card" }, [el("h2", { text: "Styles in this niche" }), el("p", { cls: "note", text: "Art style = how it looks. Map style = how the world is laid out. Counted over the games shown above; tap or hover a row for what it means." }),
           el("div", { cls: "grid2" }, [el("div", {}, [el("h3", { text: "Art style" }), countBars(n.art_styles, artLabel, STY.art) || el("p", { cls: "empty", text: "No art styles labelled for these games yet. They appear after the vision pass." })]),
