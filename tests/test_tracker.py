@@ -59,6 +59,14 @@ def listing(uid):
             "ageRecommendationDisplayName": "Minimal" if uid != 6 else None}
 
 
+def _floor300(root):
+    """The fake world below is built around a 300-CCU floor."""
+    p = Path(root) / "config/settings.json"
+    s = json.loads(p.read_text())
+    s["ccu_floor"] = 300
+    p.write_text(json.dumps(s))
+
+
 def fake_png(seed):
     """A small deterministic PNG (needs Pillow; without it the thumbnail step skips before downloading)."""
     import io
@@ -148,6 +156,7 @@ class Simulation(unittest.TestCase):
     def setUpClass(cls):
         cls.tmp = Path(tempfile.mkdtemp())
         shutil.copytree(REPO / "config", cls.tmp / "config")
+        _floor300(cls.tmp)
         os.environ["TRACKER_ROOT"] = str(cls.tmp)
         os.environ["YOUTUBE_API_KEY"] = "test-key"
         s = json.loads((cls.tmp / "config/settings.json").read_text())
@@ -294,6 +303,7 @@ class Resilience(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
         shutil.copytree(REPO / "config", self.tmp / "config")
+        _floor300(self.tmp)
         os.environ["TRACKER_ROOT"] = str(self.tmp)
         os.environ.pop("YOUTUBE_API_KEY", None)
         os.environ["TRACKER_NOW"] = START.isoformat()
@@ -398,6 +408,7 @@ class DashboardHub(unittest.TestCase):
         tmp = Path(tempfile.mkdtemp())
         try:
             shutil.copytree(REPO / "config", tmp / "config")
+            _floor300(tmp)
             os.environ["TRACKER_ROOT"] = str(tmp)
             os.environ["TRACKER_NOW"] = "2026-10-08T12:00:00+00:00"
             for m in [m for m in sys.modules if m.startswith("tracker")]:
@@ -460,6 +471,7 @@ class DashboardBuild(unittest.TestCase):
         tmp = Path(tempfile.mkdtemp())
         try:
             shutil.copytree(REPO / "config", tmp / "config")
+            _floor300(tmp)
             os.environ["TRACKER_ROOT"] = str(tmp)
             os.environ["TRACKER_NOW"] = START.isoformat()
             for m in [m for m in sys.modules if m.startswith("tracker")]:

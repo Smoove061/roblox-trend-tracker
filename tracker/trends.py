@@ -54,6 +54,7 @@ def load_context(today: date | None = None) -> dict:
             "maturity": [g["maturity"]] if g.get("maturity") else [],
             "mechanic": sorted(t.get("mechanic", [])), "theme": sorted(t.get("theme", [])),
             "formula": sorted(t.get("formula", [])), "feature": sorted(t.get("feature", [])),
+            "niche": sorted(t.get("niche", [])),
         }
     from . import styles
     for uid, s in styles.load(out).items():

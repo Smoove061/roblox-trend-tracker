@@ -35,7 +35,7 @@ INDEX_FIELDS = ["universe_id", "kind", "idx", "url", "file", "file_url", "fetche
 HUES = [("red", 0, 15), ("orange", 15, 40), ("yellow", 40, 70), ("green", 70, 160), ("cyan", 160, 200),
         ("blue", 200, 255), ("purple", 255, 290), ("pink", 290, 345), ("red", 345, 361)]
 ICON_SIZE, MEDIA_SIZE = (150, 150), (384, 216)
-NICHE_DIMS = ("mechanic", "theme", "genre")
+NICHE_DIMS = ("genre", "subgenre", "niche", "mechanic", "theme")
 
 
 def pillow():
@@ -59,7 +59,8 @@ def select(ctx: dict, cfg: dict) -> dict:
     """{niche_key: {type, key, label, top: [uid], young: [uid]}} for every niche with at least 3 games."""
     tax = st.load_json(st.CONFIG / "taxonomy.json", {})
     labels = {"mechanic": {k: v["label"] for k, v in tax.get("mechanics", {}).items()},
-              "theme": {k: v["label"] for k, v in tax.get("themes", {}).items()}}
+              "theme": {k: v["label"] for k, v in tax.get("themes", {}).items()},
+              "niche": {k: k.replace("_", " ").capitalize() for k in st.load_json(st.CONFIG / "niches.json", {}).get("niches", {})}}
     n_top, n_young = cfg.get("thumbs_top_per_niche", 8), cfg.get("thumbs_young_per_niche", 4)
     groups = defaultdict(list)
     for c in ctx.values():

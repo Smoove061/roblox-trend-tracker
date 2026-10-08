@@ -432,6 +432,8 @@ def build_data(out_dir: Path | None = None) -> dict:
     hours_with_data = [i for i in range(SPARK_HOURS) if any(r["spark"][i] is not None for r in rows)]
     cohort = [r for r in rows if hours_with_data and all(r["spark"][i] is not None for i in hours_with_data)]
     line = [{"h": hours[i] + ":00Z", "v": sum(r["spark"][i] for r in cohort)} for i in hours_with_data]
+    for r in rows[1500:]:  # small games: a 4-hourly sparkline keeps the page light now that the floor is 50 CCU
+        r["spark"] = r["spark"][3::4]
 
     genres = {}
     for r in rows:

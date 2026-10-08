@@ -1051,7 +1051,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
     $("th-body").hidden = false;
     const hexOk = c => /^#[0-9a-fA-F]{6}$/.test(c) ? c : null;
     const pic = (file, name) => { const ph = () => el("div", { cls: "ph", text: (name || "?").trim().slice(0, 1).toUpperCase() }); if (!file) return ph(); const img = el("img", { src: "thumbs/" + encodeURIComponent(file), alt: name || "", loading: "lazy", decoding: "async" }); img.addEventListener("error", () => img.replaceWith(ph())); return img; };
-    const TYPE_NAME = { mechanic: "Core mechanics", theme: "Themes", genre: "Genres" };
+    const TYPE_NAME = { genre: "Genres", subgenre: "Subgenres", niche: "Niches", mechanic: "Core mechanics", theme: "Themes" };
     const list = Object.entries(TH.niches).map(([k, n]) => Object.assign({ id: k, ccu: n.games.reduce((a, g) => a + (g.ccu || 0), 0) }, n));
     list.sort((a, b) => b.ccu - a.ccu);
     const sel = $("th-pick"), q = $("th-q");
@@ -1060,7 +1060,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
       const s = q.value.trim().toLowerCase(), keep = current;
       sel.replaceChildren();
       let first = null;
-      for (const type of ["mechanic", "theme", "genre"].concat([...new Set(list.map(n => n.type))].filter(t => !TYPE_NAME[t]))) {
+      for (const type of ["genre", "subgenre", "niche", "mechanic", "theme"].concat([...new Set(list.map(n => n.type))].filter(t => !TYPE_NAME[t]))) {
         const items = list.filter(n => n.type === type && (!s || n.label.toLowerCase().includes(s)));
         if (!items.length) continue;
         const grp = el("optgroup", { label: TYPE_NAME[type] || cap(type) });
@@ -1176,7 +1176,11 @@ footer { margin-top: 32px; color: var(--muted); font-size: 12.5px; }
         el("div", { cls: "seg", role: "group", "aria-label": "Show" }, [["icons", "Icons"], ["thumbs", "Thumbnails"], ["both", "Both"]].map(([k, t]) => el("button", { cls: "small" + (mode === k ? " seg-on" : ""), text: t, "aria-pressed": String(mode === k), onclick: () => { store.set("rtt.thmode", k); show(id); } })))])]);
       const media = [];
       if (mode !== "thumbs") media.push(el("section", { cls: "card" }, [el("h3", { text: "Icons" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "The square tile players see in discovery. Tap one to enlarge." }), el("div", { cls: "tiles" }, tiles)]));
-      if (mode !== "icons") media.push(el("section", { cls: "card" }, [el("h3", { text: "Thumbnails" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "Lead gallery image of every game, with the rest of its gallery underneath. Tap any image to see them all large." + (n.games.some(g => (g.media || []).length) ? "" : " Gallery images are still downloading: they arrive over the next hourly runs.") }), el("div", { cls: "tcards" }, cards)]));
+      if (mode !== "icons") {
+        const lead = cards.filter((c, i) => !n.games[i].young), rise = cards.filter((c, i) => n.games[i].young);
+        media.push(el("section", { cls: "card" }, [el("h3", { text: "Working now: the biggest games in this niche" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "Lead gallery image of each, with the rest of its gallery underneath. Tap any image to see them all large." + (n.games.some(g => (g.media || []).length) ? "" : " Gallery images are still downloading: they arrive over the next hourly runs.") }), el("div", { cls: "tcards" }, lead)]));
+        if (rise.length) media.push(el("section", { cls: "card" }, [el("h3", { text: "Rising: new games (60 days or less) breaking out here" }), el("p", { cls: "note", style: "margin:2px 0 8px", text: "What's working for the newcomers right now. Compare with the leaders above to spot where the look is heading." }), el("div", { cls: "tcards" }, rise)]));
+      }
       $("th-view").replaceChildren(header, ...media,
         el("div", { cls: "grid2" }, [directionCard(n), el("div", { cls: "stack" }, [swatchCard(n), metricCard(n)])]),
         el("section", { cls: "card" }, [el("h2", { text: "Styles in this niche" }), el("p", { cls: "note", text: "Art style = how it looks. Map style = how the world is laid out. Counted over the games shown above; tap or hover a row for what it means." }),

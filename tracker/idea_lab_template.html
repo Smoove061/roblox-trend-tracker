@@ -212,13 +212,13 @@ footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
     <h2 class="big" id="tracker-h">Thumbnail &amp; style tracker</h2>
     <p class="hint">What the icons and thumbnails of the top games in a niche have in common, measured every day, and what yours should do to fit in and stand out.</p>
     <div class="t-controls">
-      <label class="f" for="tniche">Niche<select id="tniche"></select></label>
+      <label class="f" for="tniche">Genre or niche<select id="tniche"></select></label>
       <button class="go small" id="tvision" type="button" hidden>Analyze these images with Claude</button>
       <button class="ghost" id="tvstop" type="button" hidden>Stop</button>
     </div>
     <div class="status" id="tstatus" role="status" aria-live="polite"></div>
     <div class="t-body" id="tbody">
-      <div><h3>Thumbnails · biggest first (tap to see the whole gallery)</h3><div class="mediagrid" id="tmedia"></div><h3>Icons</h3><div class="icongrid" id="ticons"></div></div>
+      <div><h3>Working now · the biggest games here (tap to see the whole gallery)</h3><div id="tmedia"></div><h3>Icons</h3><div class="icongrid" id="ticons"></div></div>
       <div><h3>Direction</h3><div id="tdir"></div><h3>Palette of the leaders</h3><div class="sw" id="tpal"></div><h3>Art style · map style</h3><div class="bars2" id="tsty"></div></div>
     </div>
   </section>
@@ -576,7 +576,7 @@ DATA: ${JSON.stringify(niches)}`;
     const keys = Object.keys(TH);
     if (!keys.length) { $("tbody").replaceChildren(el("div", { cls: "empty", text: "Collecting thumbnails: the tracker downloads the icons and thumbnails of every niche's top games over the next hourly runs. They'll appear here after the next daily refresh." })); sel.disabled = true; return; }
     const total = k => TH[k].games.reduce((a, g) => a + (g.ccu || 0), 0);
-    [["mechanic", "Core mechanics"], ["theme", "Themes"], ["genre", "Genres"]].forEach(([t, lab]) => {
+    [["genre", "Genres"], ["subgenre", "Subgenres"], ["niche", "Niches"], ["mechanic", "Core mechanics"], ["theme", "Themes"]].forEach(([t, lab]) => {
       const ks = keys.filter(k => TH[k].type === t).sort((a, b) => (risingKeys.has(b) - risingKeys.has(a)) || total(b) - total(a));
       if (!ks.length) return;
       sel.append(el("optgroup", { label: lab }, ks.map(k => el("option", { value: k, text: (risingKeys.has(k) ? "▲ " : "") + TH[k].label }))));
@@ -591,7 +591,7 @@ DATA: ${JSON.stringify(niches)}`;
     $("tstatus").textContent = ""; $("tstatus").classList.remove("err");
     const zoom = (node, g, k) => { node.addEventListener("click", () => openLb(g, k)); return node; };
     $("ticons").replaceChildren(...n.games.map((g, i) => el("div", { cls: "ic", title: g.name }, [zoom(img(g.i, g.name), g, 0), el("b", { text: `${i + 1}. ${g.name}` }), el("span", {}, [fmt(g.ccu) + " CCU ", g.young ? el("span", { cls: "new", text: "NEW" }) : null])])));
-    $("tmedia").replaceChildren(...n.games.map((g, i) => {
+    const card = (g, i) => {
       const ms = (g.ms || (g.m ? [g.m] : [])).filter(f => P.images[f]);
       const lead = ms.length ? zoom(img(ms[0], g.name), g, 1) : zoom(el("div", { cls: "ph", text: "Thumbnail not downloaded yet" }), g, 0);
       return el("div", { cls: "md", title: g.name }, [lead,
@@ -599,7 +599,11 @@ DATA: ${JSON.stringify(niches)}`;
         el("b", { text: `${i + 1}. ${g.name}` }),
         el("span", {}, [fmt(g.ccu) + " CCU" + (g.age != null ? ` · ${g.age}d old ` : " "), g.young ? el("span", { cls: "new", text: "NEW" }) : null]),
         (g.art || g.map) ? el("div", { cls: "chips2" }, [styleLabel("art", g.art) ? el("span", { text: styleLabel("art", g.art) }) : null, styleLabel("map", g.map) ? el("span", { text: styleLabel("map", g.map) }) : null]) : null]);
-    }));
+    };
+    const ranked = n.games.map((g, i) => [g, i]);
+    const lead = ranked.filter(([g]) => !g.young), rise = ranked.filter(([g]) => g.young);
+    $("tmedia").replaceChildren(el("div", { cls: "mediagrid" }, lead.map(([g, i]) => card(g, i))),
+      ...(rise.length ? [el("h3", { text: "Rising · new games (≤60 days) breaking out here" }), el("div", { cls: "mediagrid" }, rise.map(([g, i]) => card(g, i)))] : []));
     renderDirection(key);
     $("tpal").replaceChildren(...(n.palette || []).map(h => el("span", {}, [el("i", { style: `background:${/^#[0-9a-f]{6}$/i.test(h) ? h : "transparent"}` }), h])));
     if (!(n.palette || []).length) $("tpal").append(el("small", { text: "Not measured yet." }));
