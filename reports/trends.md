@@ -64,14 +64,17 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Anime / cel-shaded | 1.2x | 12 | 94,053 | 71 | [🎉 UPD 7] Anime Dice (54,660) |
+| Classic / studded | 1.42x | 2 | 73,491 | 10 | Huss Valley (60,655) |
+| Voxel / blocky | 1.4x | 2 | 17,870 | 12 | +1 Wings For Eggs (13,979) |
+| Anime / cel-shaded | 1.11x | 12 | 94,053 | 76 | [🎉 UPD 7] Anime Dice (54,660) |
 
 ## Rising map styles
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Hub + zones / worlds | 2.05x | 60 | 330,666 | 606 | [🎉 UPD 7] Anime Dice (54,660) |
-| Personal plots / bases | 1.13x | 75 | 409,856 | 702 | Break and Steal an Egg (124,350) |
+| Hub + zones / worlds | 2.09x | 58 | 315,593 | 599 | [🎉 UPD 7] Anime Dice (54,660) |
+| Interiors / corridors | 1.22x | 7 | 57,932 | 64 | Sarab (27,465) |
+| Personal plots / bases | 1.16x | 75 | 409,856 | 697 | Break and Steal an Egg (124,350) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
