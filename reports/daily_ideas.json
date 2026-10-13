@@ -1,411 +1,412 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "ideas": [
     {
-      "title": "Hammer for Meteors",
-      "scope": "medium",
-      "genre": "Simulation · Incremental",
-      "mechanics": [
-        "Break / mine / dig",
-        "Collect / index",
-        "Hatch / gacha"
-      ],
-      "theme": "Disaster / weather",
-      "hook": "A meteor shower hits the map every few minutes. Race to the craters and smash the glowing rocks open before other players do; each one hides a space egg.",
-      "core_loop": [
-        "Wait for the storm siren and watch where meteors land",
-        "Run to a crater and hammer the meteor until it cracks",
-        "Hatch the space egg inside for a pet that boosts hammer power",
-        "Upgrade hammers to crack bigger, rarer meteors in new zones"
-      ],
-      "twist": "Meteor size scales with the storm level, and a server-wide Mega Meteor needs everyone hitting it at once to break.",
-      "monetization": [
-        "2x hammer power",
-        "VIP storm alerts and crater teleports",
-        "Auto-hammer pass",
-        "Luck pass for rare space eggs",
-        "Speed pass"
-      ],
-      "retention": [
-        "Space egg index with secret rarities",
-        "Hourly Mega Meteor server event",
-        "New planets as zones",
-        "Offline crater earnings from your pets"
-      ],
-      "why_now": "Break × Disaster/weather is an open gap (score 6.08). Break/mine is the fastest mechanic at 3.25× (Break and Steal an Egg 162K CCU at 37 days, Drill for Eggs 13.8K at 26 days) and disaster/weather is rising 1.21× ([🌋] Swim For Eggs! 9.7K). The \"___ for ___\" title formula leads at 3.73×.",
-      "inspired_by": [
-        "Break and Steal an Egg",
-        "(🩸) Drill for Eggs",
-        "[🌋] Swim For Eggs!"
-      ],
-      "differentiator": "Mining games have static rocks; here the loot falls from the sky on a timer, so players rush and compete for each drop.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Shuffle for Cars",
+      "title": "Chisel for Statues",
       "scope": "medium",
       "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Dice / cards",
-        "Tycoon / base building",
-        "Race / drive"
+        "Paint / create",
+        "Break / mine / dig",
+        "Tycoon / base building"
       ],
-      "theme": "Vehicles",
-      "hook": "Open card packs of car parts (engine, wheels, body, paint), snap your best hand into a car, and test it on your drag strip.",
+      "theme": "Stones / rocks / ores",
+      "hook": "Every plot starts with a huge raw boulder. Chip it into a statue, put it on display, and visitors pay coins to see it. Better stone and better chisels make statues worth more.",
       "core_loop": [
-        "Open a pack of part cards with cash",
-        "Slot five cards into a car blueprint",
-        "Run the car on your plot's drag strip for cash based on top speed",
-        "Buy better packs and garage upgrades"
+        "Pick a statue blueprint and chip away the glowing marked areas",
+        "Polish and paint the finished statue",
+        "Place it in your sculpture garden to earn coins per second",
+        "Buy rarer stone (marble, obsidian, crystal) and sharper chisels"
       ],
-      "twist": "Matching set cards (all parts from one brand) trigger a combo bonus that doubles a stat, so players chase full sets.",
+      "twist": "Each boulder has a hidden gem core; carve carefully and the gem becomes the statue's eyes and doubles its value.",
       "monetization": [
-        "2x cash multiplier",
-        "Speed pass for faster pack opening",
-        "Luck pass for rare part cards",
-        "Extra card storage",
-        "Auto-race pass"
+        "2x income multiplier",
+        "VIP garden slots",
+        "Speed chisel pass",
+        "Auto-polish pass"
       ],
       "retention": [
-        "Part card index",
-        "Weekly drag-strip leaderboard",
-        "Limited set cards on events",
-        "Garage expansions on your plot"
+        "Offline garden earnings",
+        "Statue index for every stone type",
+        "New quarries as stone tiers",
+        "Weekly best-garden showcase"
       ],
-      "why_now": "Dice/cards × Vehicles is an open gap (6.63). Dice/cards is the second-fastest mechanic at 2.42× (Anime Dice 59.2K CCU at 58 days, Pack A Rare Card 2.0K) and tycoon/base building is at 2.07×. Vehicles is rising 1.11× with Steal A Car at 7.5K.",
+      "why_now": "Paint/create × Stones is the biggest open gap (score 8.93). Stones/rocks is the hottest theme at 2.90× (+1 Stone Skipping 28.7K CCU, Lift Rock For Eggs 14.9K at 16 days) and Paint/create is rising 2.09× (Paint to Get Rich 17.3K). \"___ for ___\" titles lead at 3.87×.",
       "inspired_by": [
-        "[🍀UPD 8] Anime Dice",
-        "[BATTLES!⭐] Pack A Rare Card",
-        "Steal A Car"
+        "Paint to Get Rich 🎨[UPD]",
+        "Lift Rock For Eggs",
+        "⛏️ My Anime Mine"
       ],
-      "differentiator": "Card games are anime fights; this turns the pull into a car you build and race, so every card has a visible effect.",
+      "differentiator": "Mining games destroy rock for loot; here the rock is the product, and how well you carve it sets your income.",
       "art_style": "simulator_bright",
       "map_style": "plot_base"
     },
     {
-      "title": "Mine for Mechs",
-      "scope": "large",
+      "title": "Roll for Nests",
+      "scope": "medium",
       "genre": "Simulation · Incremental",
       "mechanics": [
-        "Break / mine / dig",
-        "Collect / index",
-        "Tycoon / base building"
+        "Dice / cards",
+        "RNG roll",
+        "Hatch / gacha"
       ],
-      "theme": "Robots / mechs",
-      "hook": "Mech parts are buried in ore veins. Dig them out, collect every arm, leg and core, and assemble a giant mech that digs ten times faster.",
+      "theme": "Eggs",
+      "hook": "A giant board game wraps the map. Roll dice to move along it; every tile you land on drops a nest of eggs, and rare tiles hide golden nests.",
       "core_loop": [
-        "Mine ore walls with a drill",
-        "Find buried mech parts with rarity tiers",
-        "Assemble parts into a mech on your base",
-        "Pilot the mech to break bigger ore veins in deeper zones"
+        "Roll the dice to move around the board",
+        "Collect the nest on the tile you land on",
+        "Hatch eggs into pets that add to your dice rolls",
+        "Unlock bigger boards with rarer nests"
       ],
-      "twist": "Your mech can be sent out alone to mine while you are offline, and its parts decide what it brings back.",
+      "twist": "Land on the same tile as another player and you roll off for their nest.",
       "monetization": [
-        "2x mining multiplier",
-        "VIP part slot",
-        "Speed pass",
-        "Auto-mine pass",
-        "Offline earnings boost"
+        "Luck pass for golden tiles",
+        "Extra-dice pass",
+        "2x egg multiplier",
+        "Auto-roll pass",
+        "Storage for unhatched eggs"
       ],
       "retention": [
-        "Mech part index",
-        "Deeper layer zones",
-        "Boss mech in each layer",
-        "Offline expeditions"
+        "Pet index with secret rarities",
+        "Daily free golden roll",
+        "Leaderboard for longest lucky streak",
+        "New boards every update"
       ],
-      "why_now": "Break × Robots/mechs is an open gap (5.64). Break/mine leads at 3.25× and stones/rocks is the fastest theme at 2.7× (+1 Stone Skipping 33.8K, Lift Rock For Eggs 17.4K at 15 days). Collect/index is at 2.21×.",
+      "why_now": "Dice/cards × Eggs is the second-biggest gap (8.85). Dice/cards is rising 2.53× ([🎉UPD 8] Anime Dice 51.7K CCU at 59 days) and eggs are the biggest young theme (Break and Steal an Egg 147.8K, Climb For Animals Eggs 16.2K). The Dice + RNG pair already shows 51.7K young CCU.",
       "inspired_by": [
-        "⛏️ My Anime Mine",
-        "Lift Rock For Eggs",
-        "(🩸) Drill for Eggs"
+        "[🎉UPD 8] Anime Dice",
+        "Break and Steal an Egg",
+        "Climb For Animals Eggs🥚"
       ],
-      "differentiator": "The thing you dig up is also the tool that digs, so every find makes the next dig faster.",
+      "differentiator": "Egg games hand you eggs from a shop or a rock; here a board-game roll decides where you land and what you hatch.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "+1 Drum Power",
+      "title": "Decorate for Eggs",
+      "scope": "small",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Paint / create",
+        "Hatch / gacha",
+        "Collect / index"
+      ],
+      "theme": "Eggs",
+      "hook": "Paint a blank egg however you like. Other players rate it, and the higher your score, the rarer the pet that hatches out.",
+      "core_loop": [
+        "Grab a blank egg and paint it with brushes and stickers",
+        "Submit it to the rating wall for 30 seconds",
+        "Hatch it; rarity depends on the score",
+        "Spend coins on new paints, patterns and egg sizes"
+      ],
+      "twist": "Theme of the round (spooky, gold, space) gives bonus rarity if your egg matches.",
+      "monetization": [
+        "Premium paint and sticker packs",
+        "VIP rating boost",
+        "2x coins",
+        "Speed hatch pass"
+      ],
+      "retention": [
+        "Pet index",
+        "Daily egg theme",
+        "Hall of fame for top-rated eggs",
+        "Seasonal paint sets"
+      ],
+      "why_now": "Paint/create × Eggs is an open gap (7.31). Paint/create is rising 2.09× ([🥞] Paint a Pancake 6.1K at 20 days, [🎨] Hide In Pixels 3.3K at 18 days) and Coloring & Drawing is up 1.54×. Eggs drive 305.7K young CCU (Break and Steal an Egg 147.8K).",
+      "inspired_by": [
+        "[🥞] Paint a Pancake",
+        "[🎨] Hide In Pixels",
+        "Break and Steal an Egg"
+      ],
+      "differentiator": "Hatching is pure luck in other egg games; here your own art and player votes decide the pet.",
+      "art_style": "simulator_bright",
+      "map_style": "lobby_rounds"
+    },
+    {
+      "title": "Roll for Riffs",
+      "scope": "medium",
+      "genre": "Simulation · Incremental",
+      "mechanics": [
+        "Dice / cards",
+        "RNG roll",
+        "+1 stat per action"
+      ],
+      "theme": "Music / dance",
+      "hook": "Roll for band members and instruments of different rarities, then play shows that pay out based on your lineup. A legendary drummer can carry a whole stage.",
+      "core_loop": [
+        "Roll for musicians and instruments",
+        "Build a five-slot band lineup",
+        "Play a quick rhythm show for fans and coins",
+        "Upgrade the stage to unlock bigger venues"
+      ],
+      "twist": "Matching instruments with the right genre gives combo bonuses, so a rare guitarist in a jazz band can be worth less than a common one.",
+      "monetization": [
+        "Luck pass",
+        "Extra lineup slot",
+        "2x fans",
+        "Auto-roll",
+        "Cosmetic stage effects"
+      ],
+      "retention": [
+        "Musician index",
+        "Weekly battle of the bands leaderboard",
+        "New venues per update",
+        "Daily lucky roll"
+      ],
+      "why_now": "Dice/cards × Music is an open gap (5.82). Dice/cards is up 2.53× ([🎉UPD 8] Anime Dice 51.7K) and Music/dance is rising 1.59× (Piano Rhythm Tiles 5.1K at 26 days, [UPD] Aura Dance Battles 4.5K at 44 days). RNG roll is up 1.46×.",
+      "inspired_by": [
+        "[🎉UPD 8] Anime Dice",
+        "Piano Rhythm Tiles",
+        "[UPD] Aura Dance Battles 🔥"
+      ],
+      "differentiator": "RNG games roll for auras or fighters; here every roll fills a band, and the lineup has to work together on stage.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Lasso for Zombies",
+      "scope": "large",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Collect / index",
+        "Survive",
+        "Tycoon / base building"
+      ],
+      "theme": "Zombies",
+      "hook": "At night, ride out and lasso zombies before they reach your farm. By day, the zombies you caught work your plot, and rare ones work faster.",
+      "core_loop": [
+        "Survive the night by lassoing zombies at your fence",
+        "Drag them into pens on your plot",
+        "Assign them to jobs that earn coins by day",
+        "Upgrade lassos, pens and fences for tougher nights"
+      ],
+      "twist": "Some zombies are mutated (glowing, giant, frozen) and are worth a lot, but they can break out and wreck your plot if your pens are weak.",
+      "monetization": [
+        "2x income",
+        "Strong lasso pass",
+        "VIP extra pen",
+        "Speed pass",
+        "Storage for zombies"
+      ],
+      "retention": [
+        "Zombie index with mutations",
+        "Blood-moon event nights",
+        "Offline earnings from working zombies",
+        "New biomes with new zombie types"
+      ],
+      "why_now": "Collect/index × Zombies is an open gap (5.28). Collect/index is rising 2.48× (Steal ASMR! 11.1K, Lift Rock For Eggs 14.9K) and zombies are up 1.30× (Build and Kill Zombies 11.2K at 55 days, ✈️ Zombie Air Force 3.7K at 19 days). Survive + Tycoon pairs hold 25.8K young CCU (Bunker vs Verity 16.5K).",
+      "inspired_by": [
+        "Build and Kill Zombies",
+        "✈️ Zombie Air Force",
+        "Steal ASMR!",
+        "Bunker vs Verity"
+      ],
+      "differentiator": "Zombie games make you kill the horde; here you catch it, index it and put it to work.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Sculpt Ice for Cash",
+      "scope": "small",
+      "genre": "Simulation · Incremental",
+      "mechanics": [
+        "Paint / create",
+        "Break / mine / dig",
+        "Job / shift"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "You get a block of ice and a timer. Carve the order before it melts under the heat lamps, and get paid by how close your sculpture is to the order.",
+      "core_loop": [
+        "Take an order (swan, car, dragon)",
+        "Carve the ice block before it melts",
+        "Get paid by accuracy and speed",
+        "Buy better tools and colder freezers"
+      ],
+      "twist": "Fire events crank the heat mid-order; finish faster or lose the piece.",
+      "monetization": [
+        "Freeze-time pass",
+        "2x cash",
+        "VIP orders",
+        "Pro tool pack"
+      ],
+      "retention": [
+        "Sculpture index",
+        "Daily rush orders",
+        "Tool upgrades",
+        "Leaderboard for perfect carves"
+      ],
+      "why_now": "Paint/create × Ice/fire is an open gap (5.93). Ice/fire is rising 1.85× (Firefighting Sim 11.6K at 21 days, Melt All The Ice! 2.7K at 30 days), Paint/create is up 2.09×, and money themes are rising 2.20× (Paint to Get Rich 17.3K).",
+      "inspired_by": [
+        "Melt All The Ice!🧊",
+        "Paint to Get Rich 🎨[UPD]",
+        "Firefighting Sim 🚒"
+      ],
+      "differentiator": "Ice games have you melt or smash ice; here you shape it against the clock to fill orders.",
+      "art_style": "simulator_bright",
+      "map_style": "interior"
+    },
+    {
+      "title": "Deal for Outfits",
+      "scope": "medium",
+      "genre": "Dress Up · Card",
+      "mechanics": [
+        "Dice / cards",
+        "Collect / index",
+        "Dress / style"
+      ],
+      "theme": "Fashion / beauty",
+      "hook": "Every outfit piece is a card. Open packs, build a hand of clothes, and walk the runway; judges score the full look and the rarity of the pieces.",
+      "core_loop": [
+        "Open clothing card packs",
+        "Build a five-card outfit hand for the round's theme",
+        "Walk the runway and get scored",
+        "Trade duplicates and unlock rarer packs"
+      ],
+      "twist": "Cards have set bonuses; a full matching set triggers a special runway effect and big points.",
+      "monetization": [
+        "Premium packs",
+        "Luck pass",
+        "VIP runway effects",
+        "Extra hand slot"
+      ],
+      "retention": [
+        "Outfit card index",
+        "Daily theme",
+        "Weekly fashion leaderboard",
+        "Seasonal card sets"
+      ],
+      "why_now": "Dice/cards × Fashion is an open gap (5.76). Fashion is rising 1.39× (Makeup Mania! 5.9K at 18 days, Facecard: Makeup Showdown 4.6K at 8 days) and Dress Up is up 1.26× (🎀 Make Dresses 2.4K). Dice/cards is rising 2.53×.",
+      "inspired_by": [
+        "Makeup Mania! BETA [HETEROCHROMIA]",
+        "Facecard: Makeup Showdown [💄HEAD BASES]",
+        "🎀 Make Dresses",
+        "[BATTLES!⭐] Pack A Rare Card"
+      ],
+      "differentiator": "Dress-up games give you every item; here you collect clothes as cards and play the hand you have.",
+      "art_style": "stylized",
+      "map_style": "lobby_rounds"
+    },
+    {
+      "title": "Paint for Cures",
+      "scope": "small",
+      "genre": "Simulation · Incremental",
+      "mechanics": [
+        "Paint / create",
+        "Job / shift",
+        "+1 stat per action"
+      ],
+      "theme": "Zombies",
+      "hook": "Zombies are just grey. Spray them back to full colour and they turn human again, paying you as thanks. Bigger hordes, bigger paint cannons.",
+      "core_loop": [
+        "Walk into a grey zombie zone",
+        "Spray zombies until they are fully coloured",
+        "Collect cash from cured townsfolk",
+        "Upgrade paint tanks and spray range to clear new zones"
+      ],
+      "twist": "Some zombies only cure with the right colour, so you swap paint mid-fight.",
+      "monetization": [
+        "2x cash",
+        "Bigger tank pass",
+        "Auto-spray",
+        "Speed pass"
+      ],
+      "retention": [
+        "Cured character index",
+        "New zones",
+        "Paint colour unlocks",
+        "Weekly horde event"
+      ],
+      "why_now": "Paint/create × Zombies is an open gap (4.45). Paint/create is rising 2.09× (Paint to Get Rich 17.3K, [🥞] Paint a Pancake 6.1K) and zombies are up 1.30× (Build and Kill Zombies 11.2K). Hub + zones maps are rising 1.66×.",
+      "inspired_by": [
+        "Paint to Get Rich 🎨[UPD]",
+        "[🥞] Paint a Pancake",
+        "Build and Kill Zombies"
+      ],
+      "differentiator": "Zombie games are about weapons; here your weapon is paint, and every hit visibly restores the world.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "+1 Catapult Power",
       "scope": "small",
       "genre": "Simulation · Incremental",
       "mechanics": [
         "+1 stat per action",
         "Hit / swing / launch",
-        "Collect / index"
+        "Break / mine / dig"
       ],
-      "theme": "Music / dance",
-      "hook": "Every drum hit gives +1 power. Hit hard enough and the sound wave shatters walls, cars and finally buildings.",
+      "theme": "Stones / rocks / ores",
+      "hook": "Load a rock, fire your catapult at a castle wall and gain +1 power every shot. Break through walls to reach new kingdoms with bigger castles.",
       "core_loop": [
-        "Hit the drum to gain +1 power",
-        "Blast a sound wave at the next object",
-        "Earn cash from what breaks",
-        "Buy bigger drums and new stages"
+        "Fire rocks at the castle wall",
+        "Gain +1 power per shot",
+        "Smash walls for gold and loot",
+        "Rebirth for heavier ammo and new kingdoms"
       ],
-      "twist": "Hitting on the beat gives +3 instead of +1, so rhythm skill speeds you up.",
+      "twist": "Each castle has a weak brick; hit it and the whole wall collapses for a bonus.",
       "monetization": [
         "2x power",
-        "Speed pass",
-        "Auto-drum",
-        "Luck pass for rare drum skins"
+        "Auto-fire",
+        "Luck pass for rare ammo",
+        "Speed reload"
       ],
       "retention": [
-        "Drum index",
-        "Rebirths",
-        "Codes",
-        "Global power leaderboard"
+        "Ammo index (boulders, crystals, lava rocks)",
+        "Rebirth tiers",
+        "Boss castles",
+        "Leaderboards"
       ],
-      "why_now": "Music/dance is rising 1.77× (Piano Rhythm Tiles 7.2K at 25 days, Aura Dance Battles 7.0K) and the \"+1 ___\" formula is at 1.66× (+1 Stone Skipping 33.8K, +1 Assassin Leveling 9.2K at 18 days). Hit/swing is at 1.55×.",
+      "why_now": "+1 titles are up 1.89× (+1 Stone Skipping 28.7K, +1 Assassin Leveling 8.6K at 19 days). Stones/rocks is the fastest theme at 2.90×, Break/mine leads mechanics at 3.47×, and the Hit/swing + +1 pair holds 28.7K young CCU.",
       "inspired_by": [
         "+1 Stone Skipping",
-        "Piano Rhythm Tiles",
-        "[UPD] Aura Dance Battles 🔥"
+        "[🎃] Swing For Eggs",
+        "Lift Rock For Eggs"
       ],
-      "differentiator": "A +1 game where timing matters: on-beat hits are worth triple, so it plays like a light rhythm game.",
-      "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Frost vs Lava",
-      "scope": "medium",
-      "genre": "Survival · Tycoon",
-      "mechanics": [
-        "Paint / create",
-        "Tycoon / base building",
-        "Survive"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "Lava creeps toward your base every round. Paint ice over it to freeze it into walls, then build on the cooled rock.",
-      "core_loop": [
-        "Lava flows out of a volcano each wave",
-        "Paint frost paths to freeze and block it",
-        "Mine the cooled rock for cash",
-        "Upgrade brushes and base defenses"
-      ],
-      "twist": "Frozen lava turns into building blocks, so the better you defend, the more you can build.",
-      "monetization": [
-        "VIP frost brush",
-        "2x cash",
-        "Speed pass",
-        "Bigger brush pass"
-      ],
-      "retention": [
-        "Volcano waves get stronger",
-        "Brush index",
-        "Base expansions",
-        "Daily eruption event"
-      ],
-      "why_now": "Paint × Ice/fire is an open gap (5.69). Ice/fire/elements is rising 1.85× (Firefighting Sim 🚒 14.6K at 20 days, Kaiju Alpha 8.9K) and paint/create is at 1.99× (Paint to Get Rich 24.5K). The \"___ vs ___\" formula is at 1.14× (Bunker vs Verity 18.3K).",
-      "inspired_by": [
-        "Paint to Get Rich 🎨[UPD]",
-        "Bunker vs Verity",
-        "Firefighting Sim 🚒"
-      ],
-      "differentiator": "Painting is the defense: what you draw becomes the wall that saves your base.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Trap for Zombies",
-      "scope": "medium",
-      "genre": "Simulation · Collection",
-      "mechanics": [
-        "Collect / index",
-        "Tycoon / base building",
-        "Hatch / gacha"
-      ],
-      "theme": "Zombies",
-      "hook": "Zombies roam the lab halls. Set traps, catch rare zombies and fill your containment wing; rare zombies earn more cash.",
-      "core_loop": [
-        "Explore lab corridors and set traps",
-        "Catch zombies of different rarities",
-        "Put them in pens on your lab floor for cash",
-        "Unlock deeper lab wings with rarer zombies"
-      ],
-      "twist": "Mutation events make two caught zombies merge into a new variant you can't find in the halls.",
-      "monetization": [
-        "2x cash",
-        "VIP trap kit",
-        "Luck pass for rare zombies",
-        "Speed pass",
-        "Extra pen storage"
-      ],
-      "retention": [
-        "Zombie index with mutations",
-        "Lab wing unlocks",
-        "Night breach events",
-        "Pet zombies that follow you"
-      ],
-      "why_now": "Collect × Zombies is an open gap (4.72). Collect/index is at 2.21× (Lift Rock For Eggs 17.4K at 15 days, Steal ASMR! 12.0K), zombies is rising 1.31× (Build and Kill Zombies 13.7K) and interior maps are the fastest map style at 1.87×.",
-      "inspired_by": [
-        "Build and Kill Zombies",
-        "Lift Rock For Eggs",
-        "Steal ASMR!"
-      ],
-      "differentiator": "Zombie games make you fight them; this one makes you catch and collect them like pets.",
-      "art_style": "classic_studs",
-      "map_style": "interior"
-    },
-    {
-      "title": "Brush for Fossils",
-      "scope": "medium",
-      "genre": "Simulation · Incremental",
-      "mechanics": [
-        "Break / mine / dig",
-        "Dice / cards",
-        "Collect / index"
-      ],
-      "theme": "Dinosaurs",
-      "hook": "Dig and brush fossils out of rock. Each fossil becomes a dino card, and you battle your deck against other players.",
-      "core_loop": [
-        "Dig through rock layers",
-        "Brush the fossil clean for a quality grade",
-        "The fossil turns into a dino card",
-        "Battle decks for cash and new dig sites"
-      ],
-      "twist": "Cleaner brushing gives better card stats, so careful digging beats spamming clicks.",
-      "monetization": [
-        "2x dig speed",
-        "Luck pass for rare fossils",
-        "Card storage",
-        "VIP brush",
-        "Auto-dig"
-      ],
-      "retention": [
-        "Fossil card index",
-        "Weekly deck leaderboard",
-        "Deeper dig sites",
-        "Limited fossil events"
-      ],
-      "why_now": "Dice/cards × Dinosaurs is an open gap (4.19). Break/mine is at 3.25× (Dig For Eggs 11.0K at 39 days), dice/cards at 2.42× (Anime Dice 59.2K) and stones/rocks at 2.7×.",
-      "inspired_by": [
-        "Dig For Eggs",
-        "[🍀UPD 8] Anime Dice",
-        "[BATTLES!⭐] Pack A Rare Card"
-      ],
-      "differentiator": "Card pulls come from digging instead of packs, and how carefully you dig decides card quality.",
+      "differentiator": "+1 games usually grow your body; here you grow a siege weapon and watch whole castles fall.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "+1 Heel Height",
-      "scope": "small",
-      "genre": "Obby · Incremental",
-      "mechanics": [
-        "+1 stat per action",
-        "Obby / climb / jump",
-        "Collect / index"
-      ],
-      "theme": "Fashion / beauty",
-      "hook": "Every step makes your heels +1 taller. Walk over walls, rivers and buildings that shorter players can't pass.",
-      "core_loop": [
-        "Walk to grow your heels",
-        "Step over obstacles on the course",
-        "Reach new stages for cash",
-        "Buy heel styles that grow faster"
-      ],
-      "twist": "If you trip on the course you lose half your height, so balance matters as you get tall.",
-      "monetization": [
-        "2x growth",
-        "Speed pass",
-        "Luck pass for rare heel styles",
-        "Extra storage for styles"
-      ],
-      "retention": [
-        "Heel style index",
-        "Rebirths",
-        "Codes",
-        "Height leaderboard"
-      ],
-      "why_now": "+1 × Fashion/beauty is an open gap (3.93). Fashion/beauty is rising 1.62× (Makeup Mania! 27.5K at 17 days) and the \"+1 ___\" formula is at 1.66× (+1 Wings For Eggs 10.4K, +1 Assassin Leveling 9.2K).",
-      "inspired_by": [
-        "Makeup Mania! BETA [HETEROCHROMIA]",
-        "+1 Wings For Eggs",
-        "+1 Assassin Leveling"
-      ],
-      "differentiator": "Fashion games are dress-up; here the outfit is the stat, and it's a silly meme visual.",
-      "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Sell Geodes",
-      "scope": "small",
+      "title": "Hero Card Tycoon",
+      "scope": "large",
       "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Sell / run a shop",
-        "Break / mine / dig",
-        "Collect / index"
-      ],
-      "theme": "Stones / rocks / ores",
-      "hook": "Crack geodes open behind your shop counter and sell the crystals. Rare crystals sell for a fortune, but customers can also buy uncracked ones as a gamble.",
-      "core_loop": [
-        "Dig geodes from the quarry",
-        "Choose to crack or sell sealed",
-        "Sell crystals to customers",
-        "Upgrade the shop and tools"
-      ],
-      "twist": "Sealed geodes sell to customers who sometimes come back angry or thrilled, changing your shop rating.",
-      "monetization": [
-        "2x cash",
-        "VIP shop counter",
-        "Storage pass",
-        "Speed pass"
-      ],
-      "retention": [
-        "Crystal index",
-        "Shop upgrades",
-        "Pets that help sell",
-        "Daily rare crystal"
-      ],
-      "why_now": "Stones/rocks is the fastest theme at 2.7× (+1 Stone Skipping 33.8K, Lift Rock For Eggs 17.4K) and sell/shop is rising 1.36× (Sell Fries! 29.8K at 21 days). Break/mine is at 3.25×.",
-      "inspired_by": [
-        "Sell Fries! [Anomaly] 🍟",
-        "Lift Rock For Eggs",
-        "Sell Lemons 🍋"
-      ],
-      "differentiator": "A shop game with a gamble: crack it yourself or sell it sealed.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Fire vs Ice Cards",
-      "scope": "large",
-      "genre": "Strategy · Cards",
-      "mechanics": [
         "Dice / cards",
-        "RNG roll",
-        "Fight / battle"
+        "Tycoon / base building",
+        "Steal / raid"
       ],
-      "theme": "Ice / fire / elements",
-      "hook": "Pick fire or ice, roll for elemental cards and battle the other side in 1v1 arena duels. The winning team each hour gets a server-wide boost.",
+      "theme": "Superheroes / powers",
+      "hook": "Open hero card packs and place your heroes on your city plot. Heroes earn money and guard your base while other players send their own heroes to raid it.",
       "core_loop": [
-        "Roll for elemental cards",
-        "Build a 6-card deck",
-        "Duel the other team in the arena",
-        "Earn shards to roll again"
+        "Open hero card packs",
+        "Place heroes on your plot to earn and defend",
+        "Raid other plots with your best heroes",
+        "Upgrade your city to hold more heroes"
       ],
-      "twist": "Team war: every duel win adds to your side's meter, and the winning side gets a 2x luck hour.",
+      "twist": "Heroes level up by being played together; a team of the same power type unlocks a combo shield.",
       "monetization": [
-        "VIP deck slot",
+        "Premium packs",
+        "2x income",
+        "VIP raid shield",
         "Luck pass",
-        "2x shards",
-        "Speed pass",
-        "Cosmetic card frames"
+        "Extra hero slots"
       ],
       "retention": [
-        "Card index",
-        "Hourly team war",
-        "Ranked ladder",
-        "Limited event cards"
+        "Hero card index",
+        "Offline earnings",
+        "Daily raids",
+        "Monthly hero seasons"
       ],
-      "why_now": "Dice/cards × Ice/fire is the second-best open gap (6.92). Dice/cards is at 2.42× (Anime Dice 59.2K at 58 days), ice/fire at 1.85×, and the Dice + RNG pair already holds 59.2K young CCU. Arena maps are rising 1.35×.",
+      "why_now": "Dice/cards × Superheroes is an open gap (4.54). Dice/cards is up 2.53× ([🎉UPD 8] Anime Dice 51.7K), Tycoon/base building is rising 2.13×, and Steal + Tycoon pairs hold 40.5K young CCU. \"___ Tycoon\" titles are up 1.17× ([🎃] Parcel Tycoon 5.7K at 16 days, Army Commander Tycoon 3.7K at 15 days).",
       "inspired_by": [
-        "[🍀UPD 8] Anime Dice",
-        "[ 🪄🎩] Anime Card Clash",
-        "[ Halloween 2 ] Kaiju Alpha"
+        "[🎉UPD 8] Anime Dice",
+        "[🎃] Parcel Tycoon",
+        "Army Commander Tycoon",
+        "Break and Steal an Egg"
       ],
-      "differentiator": "Card battlers are solo; here every duel feeds a team war with a server reward.",
-      "art_style": "anime",
-      "map_style": "arena"
+      "differentiator": "Hero games are fighting arenas; here heroes are collectible cards that run and defend your city.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
     }
   ]
 }
