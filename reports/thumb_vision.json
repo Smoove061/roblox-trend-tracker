@@ -1,149 +1,146 @@
 {
   "niches": {
     "mechanic:break_mine": {
-      "art_style": "simulator_bright with classic noob avatars in about 8/12; a few realistic or dark outliers",
+      "art_style": "simulator_bright dominates (about 7/12); a few dark or realistic outliers (Sol's RNG, Smash the City, Prehistoric Farm)",
       "avoid": [
-        "Dark, low-contrast scenes",
-        "Several small objects instead of one big target"
+        "Plain gameplay screenshots",
+        "Long titles on the image"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: noob avatar swinging a tool at a giant glowing prize that fills half the frame. Thumbnail: avatar left, cracked prize right with a rainbow rarity label and a large number.",
+      "date": "2026-10-14",
+      "direction": "Icon: bacon-hair avatar swinging a pickaxe at a huge glowing egg, big sparkles, bright sky. Thumbnail: same swing in a dug-out tunnel with a DIVINE 0.001% tag and an arrow to the prize.",
       "do": [
-        "Show the avatar mid-swing at one huge glowing target",
-        "Put a rarity tier or % chance in bold rainbow text",
-        "Use bright grass/sky or dirt-tunnel backdrop",
-        "Add sparkle/glow on the reward"
+        "Show the avatar mid-swing at a giant egg or ore",
+        "Make the prize glow gold/rainbow with sparkles",
+        "Add one rarity tag like DIVINE 0.001%",
+        "Use a dirt tunnel or bright grass backdrop"
       ],
       "icon_patterns": [
         {
           "count": "6/12",
-          "pattern": "Classic bacon-hair avatar mid-swing with pickaxe/hammer/drill"
+          "pattern": "Classic bacon-hair avatar swinging a pickaxe, drill or hammer"
         },
         {
           "count": "5/12",
-          "pattern": "Giant glowing egg as the prize subject"
+          "pattern": "Giant glowing egg or rare block as the main object"
         },
         {
-          "count": "5/12",
-          "pattern": "Saturated green-grass/blue-sky simulator backdrop"
-        },
-        {
-          "count": "3/12",
-          "pattern": "UPDATE / UPD label on the icon"
+          "count": "7/12",
+          "pattern": "Bright saturated simulator colours"
         }
       ],
-      "members_hash": "c2058666b2",
-      "newcomer_shift": "NEW games lean on one huge object close-up (a cube, a jaw, a city) with less text and more cinematic lighting",
+      "members_hash": "360e9df3f7",
+      "newcomer_shift": "NEW games lean on one mysterious object (egg in a jaw, Divine Egg) and moodier lighting; one uses a scared-face STUCK caption",
       "source": "vision",
-      "summary": "Bright classic-avatar simulator art: a Roblox noob swinging a tool at a huge glowing egg or block, with rarity/money numbers.",
-      "text_usage": "Short rarity labels (Divine Egg, Dragon Egg) and huge number callouts; titles rarely on thumbnails",
+      "summary": "Leaders pair a classic Roblox avatar mid-swing with a giant glowing egg or ore, on bright grass or orange dirt.",
+      "text_usage": "Short rarity labels (Divine Egg, 0.001%) or giant $/s counters; rarely the game name",
       "thumbnail_patterns": [
         {
           "count": "6/12",
-          "pattern": "Avatar on left, oversized loot (egg/ore/gold) on right"
+          "pattern": "Avatar hitting an oversized egg/ore with sparkles"
         },
         {
           "count": "5/12",
-          "pattern": "Big rarity or money numbers (0.001%, $/s, 9,000,000)"
+          "pattern": "Rarity text (Divine, 0.001%, 1 in X) or huge $/s numbers"
         },
         {
-          "count": "6/12",
-          "pattern": "Radiant glow/sparkle around the prize"
+          "count": "3/12",
+          "pattern": "Dug-out dirt tunnel or orange earth background"
         }
       ]
     },
     "mechanic:collect_index": {
-      "art_style": "simulator_bright with blocky/voxel creatures in about 9/12",
+      "art_style": "simulator_bright voxel/cartoon renders (about 9/12)",
       "avoid": [
-        "Grids of many small items"
+        "Showing many small items",
+        "Dark backgrounds"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: the avatar reacting to a giant glowing creature or ? silhouette. Thumbnail: tiny avatar, huge rare find, one rainbow label and a money number.",
+      "date": "2026-10-14",
+      "direction": "Icon: small avatar pointing at a huge glowing creature silhouette with a ?. Thumbnail: avatar carrying a SECRET egg with a YOU arrow, creature behind.",
       "do": [
-        "Show one giant rare creature next to a tiny avatar",
-        "Tease a hidden ? silhouette",
-        "Use rainbow text for one rarity word",
-        "Keep grass/sky saturated"
+        "One giant collectible next to a small avatar",
+        "Hide a rare one as a glowing silhouette with ?",
+        "Add a SECRET or rarity tag",
+        "Bright sky backdrop"
       ],
       "icon_patterns": [
         {
           "count": "7/12",
-          "pattern": "Classic noob avatar with a large creature or egg"
+          "pattern": "Avatar with one oversized creature/egg"
         },
         {
-          "count": "2/12",
-          "pattern": "Mystery silhouette / ? reveal"
+          "count": "8/12",
+          "pattern": "Bright simulator colours"
         },
         {
-          "count": "6/12",
-          "pattern": "Bright green grass and blue sky"
+          "count": "3/12",
+          "pattern": "Mystery silhouette or ? on the prize"
         }
       ],
-      "members_hash": "17d0d045a5",
-      "newcomer_shift": "NEW games use mystery silhouettes and before/after progression splits",
+      "members_hash": "0f6a81f409",
+      "newcomer_shift": "NEW games favour mystery silhouettes, rainbow money text and wave before/after splits",
       "source": "vision",
-      "summary": "Avatar beside a mystery or rare creature/item, with ? silhouettes and big money numbers driving collection.",
-      "text_usage": "Sparse; short labels like Egg SECRET, YOU, $1,000,000, Wave 1 vs Wave 100",
+      "summary": "Collection games show the avatar next to one giant creature or prize, usually glowing or hidden with a ?.",
+      "text_usage": "Short labels (Egg SECRET, YOU, $1,000,000, Wave 1 vs Wave 100)",
       "thumbnail_patterns": [
         {
           "count": "6/12",
-          "pattern": "Huge creature or item dwarfing the avatar"
+          "pattern": "Creature or egg as hero with glow/fire"
         },
         {
           "count": "3/12",
-          "pattern": "Money/rarity numbers or $ values"
+          "pattern": "YOU arrow or shocked face"
         },
         {
           "count": "3/12",
-          "pattern": "YOU arrow or Secret label"
+          "pattern": "Big money or wave counters"
         }
       ]
     },
     "mechanic:dice_cards": {
-      "art_style": "Split between anime splash art (about 4/8) and simulator_bright (about 4/8)",
+      "art_style": "anime illustration dominates (about 6/10), with a few simulator_bright Roblox renders",
       "avoid": [
-        "Text-heavy logos with no card visible",
-        "Several small cards crowding the frame"
+        "Busy multi-panel layouts",
+        "Muddy dark scenes"
       ],
-      "date": "2026-10-12",
-      "direction": "Icon: a white Roblox hand holding one glowing gold card with a '?' or rare character, rainbow odds number on top. Thumbnail: avatar reacting with shock beside a fanned row of glowing packs, one tagged with rarity.",
+      "date": "2026-10-14",
+      "direction": "Icon: a hand holding a rainbow-glowing card with a ? and 1 in 1,000,000 on top. Thumbnail: shocked avatar opening a pack, cards fanning out, speed lines.",
       "do": [
-        "Show a white blocky hand holding the hero card toward the camera",
-        "Make the card glow with a rarity frame (gold or rainbow)",
-        "Add a mystery '?' pack or card",
-        "Put one big odds or money number at the top"
+        "Put one glowing UR card or dice in a hand close to camera",
+        "Add rainbow odds text across the top",
+        "Use speed lines and rim light",
+        "Show a ? mystery pack for pull hype"
       ],
       "icon_patterns": [
         {
-          "count": "4/8",
-          "pattern": "Anime-style character art as the main subject"
+          "count": "6/10",
+          "pattern": "Anime character or anime card as the hero"
         },
         {
-          "count": "3/8",
-          "pattern": "Card held up by blocky white Roblox hands"
+          "count": "4/10",
+          "pattern": "Glowing gold/rainbow card or dice held by a hand"
         },
         {
-          "count": "3/8",
-          "pattern": "Giant rainbow number text (1 in 9,342,584, $/s)"
+          "count": "3/10",
+          "pattern": "Big odds or $/s numbers in rainbow text"
         }
       ],
-      "members_hash": "79ebae1195",
-      "newcomer_shift": "",
+      "members_hash": "2d45e50185",
+      "newcomer_shift": "NEW games show a shocked avatar beside a glowing ? card or a dense anime collage",
       "source": "vision",
-      "summary": "Card and dice games show one big hero card or die held by a white Roblox hand, with anime characters and huge odds or money text.",
-      "text_usage": "Huge odds or $/s counters in rainbow text at the top; card rarity tags like UR",
+      "summary": "Dice and card games sell the jackpot: an anime figure or shiny UR card with odds text like 1 in 9,342,584.",
+      "text_usage": "Odds (1 in X), rarity tags (UR) and $/s numbers; game logos on the anime ones",
       "thumbnail_patterns": [
         {
-          "count": "4/8",
-          "pattern": "First-person white hand holding a card, die or pack"
+          "count": "4/10",
+          "pattern": "Hand holding the card/dice toward camera"
         },
         {
-          "count": "4/8",
-          "pattern": "Anime character splash art"
+          "count": "5/10",
+          "pattern": "Anime illustrated art with speed lines"
         },
         {
-          "count": "3/8",
-          "pattern": "Mystery '?' card or pack"
+          "count": "3/10",
+          "pattern": "Mystery ? packs or cards"
         }
       ]
     },
@@ -243,50 +240,50 @@
       ]
     },
     "mechanic:hit_swing": {
-      "art_style": "Bright stylized cartoon or simulator_bright (about 10/12); one anime fighter",
+      "art_style": "stylized/simulator_bright cartoon (about 9/12); one anime fighter",
       "avoid": [
-        "Static poses",
-        "Cluttered UI overlays"
+        "Static standing poses",
+        "Text-heavy images"
       ],
-      "date": "2026-10-12",
-      "direction": "Icon: avatar mid-swing with the object launching toward the camera, motion lines behind. Thumbnail: wide shot of the launch arc with a +1 or distance counter and a crowd reacting.",
+      "date": "2026-10-14",
+      "direction": "Icon: avatar mid-swing, object rocketing off with a glowing trail and +1s. Thumbnail: wide stadium shot with a long curved arc to a far target.",
       "do": [
-        "Freeze the exact moment of impact",
-        "Use motion lines and a projectile trail",
-        "Keep the background bright and simple",
-        "Add +1 popups if the game is stat-based"
+        "Freeze the impact with motion streaks",
+        "Draw a curved arc to the target",
+        "Use a bright stadium or water backdrop",
+        "Keep text to one word or +1s"
       ],
       "icon_patterns": [
         {
-          "count": "9/12",
-          "pattern": "Avatar in a dynamic action pose (kick, swing, throw, dive)"
+          "count": "8/12",
+          "pattern": "Action pose mid-swing/kick with motion lines"
         },
         {
           "count": "5/12",
-          "pattern": "Ball or projectile in flight"
+          "pattern": "Ball or projectile flying toward camera"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Sports field or water setting"
+        }
+      ],
+      "members_hash": "e7fa69e755",
+      "newcomer_shift": "NEW games use animal fighters, a big red STOP button and cliff-dive scenery",
+      "source": "vision",
+      "summary": "Hit/launch games freeze the moment of impact: an avatar swinging or kicking with motion streaks and a flying object.",
+      "text_usage": "Mostly no text; +1 bubbles or a single word (STOP, NOW!)",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Impact moment with curved trajectory arcs"
         },
         {
           "count": "6/12",
-          "pattern": "Bright daylight / sports field backgrounds"
-        }
-      ],
-      "members_hash": "41f2559b31",
-      "newcomer_shift": "NEW games use sports and animal-fighter scenes (soccer kicks, cat boxers, cliff dives) with less UI text",
-      "source": "vision",
-      "summary": "Hit/swing games freeze the moment of impact: an avatar mid-kick, swing or throw with motion lines and +1 or level popups.",
-      "text_usage": "Light text: +1 popups, level labels, occasional game logo",
-      "thumbnail_patterns": [
-        {
-          "count": "8/12",
-          "pattern": "Moment of impact with motion trails"
+          "pattern": "Bright outdoor stadium/grass background"
         },
         {
-          "count": "3/12",
-          "pattern": "+1 or level number popups"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Sports setting (soccer, badminton, boxing ring)"
+          "count": "2/12",
+          "pattern": "+1 numbers popping off the action"
         }
       ]
     },
@@ -385,50 +382,50 @@
       ]
     },
     "mechanic:plus_one_stat": {
-      "art_style": "simulator_bright with classic avatars in 11/12; one anime outlier",
+      "art_style": "simulator_bright, almost all (11/12); only Anime Astral is anime",
       "avoid": [
-        "Text-free scenes",
-        "Dark backgrounds"
+        "Dark palettes",
+        "Anime art unless the game is anime"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: avatar doing the action with +1 tags bursting off. Thumbnail: split frame, sad avatar at 1 on the left and a glowing maxed reward with a huge number on the right.",
+      "date": "2026-10-14",
+      "direction": "Icon: grinning avatar doing the action, +1 bubbles all around, bright grass. Thumbnail: left side sweaty avatar at 1, right side buff avatar at 999M with a glowing Mythic reward.",
       "do": [
-        "Scatter +1 tags around the avatar",
-        "Use a split frame: 1 vs 999M",
-        "Name the reward tier in rainbow text",
-        "Show the action prop (tree, rock, egg) big"
+        "Cover the scene in white +1 bubbles",
+        "Split weak 1 vs strong 999M",
+        "Show the mythic reward glowing with a $ value",
+        "Use a red curved arrow"
       ],
       "icon_patterns": [
         {
           "count": "10/12",
-          "pattern": "Floating +1 / flexed-arm +1 tags around the avatar"
+          "pattern": "White +1 bubbles around the avatar"
         },
         {
-          "count": "10/12",
-          "pattern": "Classic bacon-hair avatar"
+          "count": "9/12",
+          "pattern": "Bacon-hair avatar with smug grin"
         },
         {
-          "count": "7/12",
-          "pattern": "Bright grass and sky backdrop"
+          "count": "8/12",
+          "pattern": "Bright green grass and blue sky"
         }
       ],
-      "members_hash": "4ec1850717",
-      "newcomer_shift": "NEW games all use the 1 -> 999M split with a tier name and a money figure",
+      "members_hash": "63d0be9877",
+      "newcomer_shift": "NEW games add an egg or legendary weapon as the reward and voxel creatures",
       "source": "vision",
-      "summary": "The +1 look: noob avatar surrounded by floating +1 tags, often a split from weak to maxed with huge numbers.",
-      "text_usage": "+1 tags everywhere, plus tier word (Mythic, Celestial) and giant currency values",
+      "summary": "+1 games are almost uniform: grinning bacon-hair avatar surrounded by white +1 bubbles, often a weak-vs-strong split.",
+      "text_usage": "+1 bubbles, flexed-arm stat numbers (1 \u2192 999M), Mythic/Celestial labels with $Qa values",
       "thumbnail_patterns": [
         {
           "count": "5/12",
-          "pattern": "Left/right split: weak start vs maxed end with arrow"
+          "pattern": "Before/after split: 1 vs 999M with flexed-arm icon"
         },
         {
-          "count": "5/12",
-          "pattern": "Huge numbers (999M, $967Qa, +1T)"
+          "count": "6/12",
+          "pattern": "Giant reward (planet, sword, egg) with $Qa value"
         },
         {
           "count": "4/12",
-          "pattern": "Glowing weapon or reward item"
+          "pattern": "Red curved arrow from weak to strong"
         }
       ]
     },
@@ -481,49 +478,98 @@
       ]
     },
     "mechanic:rng_roll": {
-      "art_style": "Mix of simulator_bright (about 6/12) and anime (about 4/12)",
+      "art_style": "mixed: simulator_bright about 7/12, anime/dark-glow about 4/12",
       "avoid": [
-        "Muted palettes"
+        "Flat lighting",
+        "Cluttered multi-character scenes"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: a glowing rare roll result with an aura and a '1 in X' number. Thumbnail: dice or roll prop on one side, the rare result exploding with light on the other.",
+      "date": "2026-10-14",
+      "direction": "Icon: avatar with a blazing aura and 1 in 9,999,999 rainbow text. Thumbnail: normal roll vs legendary roll split, arrow to the glowing one.",
       "do": [
-        "Show the odds number in rainbow text",
-        "Put a glowing rare result front and centre",
-        "Use aura/lightning effects",
-        "Include a dice or roll prop"
+        "Put rainbow 1 in X odds across the top",
+        "Wrap the rare result in an aura glow",
+        "Use a red arrow to the rare roll",
+        "Try a VS or before/after split"
       ],
       "icon_patterns": [
         {
           "count": "6/12",
-          "pattern": "Powerful character with glow/aura effects"
-        },
-        {
-          "count": "8/12",
-          "pattern": "Bright saturated colours or fiery backgrounds"
+          "pattern": "Glowing aura or energy around the character"
         },
         {
           "count": "4/12",
-          "pattern": "Odds or number text (1 in X, $, +1)"
+          "pattern": "Odds or huge number text"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Before/after or VS composition"
         }
       ],
-      "members_hash": "a485ded18f",
-      "newcomer_shift": "NEW games use VS duels and wave/progression splits instead of pure odds",
+      "members_hash": "83a547a903",
+      "newcomer_shift": "NEW games use VS face-offs and Wave 1 vs Wave 100 splits instead of pure odds text",
       "source": "vision",
-      "summary": "Odds and power: '1 in X' text, dice, glowing anime-style fighters and big reveal moments.",
-      "text_usage": "Odds text (1 in 9,342,584), huge money values, VS",
+      "summary": "RNG games sell the rare roll: glowing aura characters with 1-in-X odds, or a before/after power split.",
+      "text_usage": "1 in X odds, $ values, wave counters; logo only on established games",
       "thumbnail_patterns": [
         {
           "count": "5/12",
-          "pattern": "Rarity reveal with glow burst"
+          "pattern": "Big rainbow odds or money text across top"
         },
         {
-          "count": "2/12",
-          "pattern": "'1 in X' odds text"
+          "count": "6/12",
+          "pattern": "Bright glow, sparks or light rays"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Red arrow pointing at the rare result"
+        }
+      ]
+    },
+    "mechanic:sell_shop": {
+      "art_style": "mixed stylized and realistic (about 6 stylized, 4 realistic)",
+      "avoid": [
+        "Empty shop interiors",
+        "Small products"
+      ],
+      "date": "2026-10-14",
+      "direction": "Icon: one glossy handmade product with a SOLD! tag and pointer hand. Thumbnail: avatar behind a counter of goods, green SELL button, +$100m pop.",
+      "do": [
+        "Make the product huge and shiny",
+        "Add a green SELL button with a cursor",
+        "Use warm lighting",
+        "Show a +$ price pop"
+      ],
+      "icon_patterns": [
+        {
+          "count": "8/12",
+          "pattern": "Product as hero (fries, pottery, lemons, jewelry, cars)"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Warm orange/gold tones"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Avatar shopkeeper with the goods"
+        }
+      ],
+      "members_hash": "7f8118ce77",
+      "newcomer_shift": "NEW games feel craftier (pottery, jewelry, ice cream) with a SOLD!/SELL button and pointer hand",
+      "source": "vision",
+      "summary": "Shop games show the product big and appetising, often with the avatar serving or a SELL button.",
+      "text_usage": "Light: game name or SELL/EQUIP buttons and price numbers",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Shop interior or stall scene"
+        },
+        {
+          "count": "3/12",
+          "pattern": "UI button or price callout (SELL, EQUIP, +$100m)"
         },
         {
           "count": "4/12",
-          "pattern": "Split/progression or VS layout"
+          "pattern": "Realistic product renders"
         }
       ]
     },
@@ -575,54 +621,50 @@
       ]
     },
     "mechanic:tycoon_build": {
-      "art_style": "simulator_bright dominates (about 9/12); one realistic car game and one dark kaiju game",
+      "art_style": "simulator_bright cartoon renders dominate (about 8/12); Driving Empire and Kaiju Alpha are realistic/dark",
       "avoid": [
-        "Dark palettes",
-        "Small UI-heavy screenshots"
+        "Dark, low-contrast scenes",
+        "Tiny avatars"
       ],
-      "date": "2026-10-12",
-      "direction": "Icon: avatar beside a giant, glowing prize on a bright sky. Thumbnail: split frame, tiny starter build on the left and a huge upgraded base on the right with money numbers and a 'YOU!' arrow.",
+      "date": "2026-10-14",
+      "direction": "Icon: avatar beside the finished build with $ signs and a blue sky. Thumbnail: left $0 shack, right $1B empire, split diagonally with a red arrow.",
       "do": [
-        "Show the avatar with one oversized prize object",
-        "Use bright blue sky and sunlight",
-        "Add a red 'YOU!' arrow",
-        "Try a cheap-to-rich split frame"
+        "Show a cheap-to-rich before/after split",
+        "Add one short promise caption",
+        "Keep the avatar big with an excited face",
+        "Use clean blue sky"
       ],
       "icon_patterns": [
         {
           "count": "7/12",
-          "pattern": "Classic Roblox avatar front and center"
+          "pattern": "Classic avatar front and centre holding or near the prize"
         },
         {
-          "count": "8/12",
-          "pattern": "Bright blue sky backgrounds"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Vehicles as the subject"
+          "count": "6/12",
+          "pattern": "Bright blue sky and green grass"
         },
         {
           "count": "3/12",
-          "pattern": "Giant creature or kaiju behind the player"
+          "pattern": "Money signs or $ amounts"
         }
       ],
-      "members_hash": "a361f3cabd",
-      "newcomer_shift": "NEW games feature giant objects or creatures (butter block, lava kaiju, monster truck) and the 'YOU!' arrow",
+      "members_hash": "6147a224e5",
+      "newcomer_shift": "NEW games use before/after money splits, product shots (phones) and big caption promises",
       "source": "vision",
-      "summary": "Tycoon games show a hero avatar with a huge reward (egg, car, creature) on bright blue skies, often with a cheap-vs-rich split.",
-      "text_usage": "Little text: occasional money numbers, 'YOU!' labels and short tags",
+      "summary": "Tycoon leaders show the avatar with the big build or prize, often a before/after cheap-to-rich split.",
+      "text_usage": "Short imperative captions or money figures; logo only on the realistic ones",
       "thumbnail_patterns": [
         {
-          "count": "7/12",
-          "pattern": "Avatar plus one oversized object (egg, car, pyramid block, butter)"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Split before/after ($0 vs $1,542,848)"
+          "count": "6/12",
+          "pattern": "Avatar plus the giant structure/creature they build"
         },
         {
           "count": "3/12",
-          "pattern": "Red 'YOU' arrow or '!' marker"
+          "pattern": "Before/after split ($0 vs $1,542,848)"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Big caption (BUILD EVERY DEVICE, PAINT ANYTHING)"
         }
       ]
     }
