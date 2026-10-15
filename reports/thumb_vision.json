@@ -1,98 +1,102 @@
 {
   "niches": {
     "mechanic:break_mine": {
-      "art_style": "simulator_bright dominates (about 7/12); a few dark or realistic outliers (Sol's RNG, Smash the City, Prehistoric Farm)",
+      "art_style": "simulator_bright dominates (~8/12); a few dark/stylized outliers (Sol's RNG, Prehistoric Farm, Tower Incremental).",
       "avoid": [
-        "Plain gameplay screenshots",
-        "Long titles on the image"
+        "Plain gameplay screenshots with UI",
+        "Crowding with more than two text elements"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: bacon-hair avatar swinging a pickaxe at a huge glowing egg, big sparkles, bright sky. Thumbnail: same swing in a dug-out tunnel with a DIVINE 0.001% tag and an arrow to the prize.",
+      "date": "2026-10-15",
+      "direction": "Icon: close-up avatar mid-swing at a cracked glowing egg on bright dirt. Thumbnail: avatar left, giant rare egg right with a gradient rarity label and one big $/s number.",
       "do": [
-        "Show the avatar mid-swing at a giant egg or ore",
-        "Make the prize glow gold/rainbow with sparkles",
-        "Add one rarity tag like DIVINE 0.001%",
-        "Use a dirt tunnel or bright grass backdrop"
+        "Put a bacon-hair avatar swinging a tool at a glowing egg or ore",
+        "Add one rarity label in gradient text (e.g. 'Mythic')",
+        "Use saturated green/brown dirt backgrounds",
+        "Show the egg cracking with light bursting out"
       ],
       "icon_patterns": [
         {
-          "count": "6/12",
-          "pattern": "Classic bacon-hair avatar swinging a pickaxe, drill or hammer"
+          "count": "7/12",
+          "pattern": "Bacon-hair Roblox avatar mid-action with a tool (pickaxe, drill, shovel)"
         },
         {
-          "count": "5/12",
-          "pattern": "Giant glowing egg or rare block as the main object"
+          "count": "6/12",
+          "pattern": "Giant egg or mystery egg as the prize"
         },
         {
           "count": "7/12",
-          "pattern": "Bright saturated simulator colours"
-        }
-      ],
-      "members_hash": "360e9df3f7",
-      "newcomer_shift": "NEW games lean on one mysterious object (egg in a jaw, Divine Egg) and moodier lighting; one uses a scared-face STUCK caption",
-      "source": "vision",
-      "summary": "Leaders pair a classic Roblox avatar mid-swing with a giant glowing egg or ore, on bright grass or orange dirt.",
-      "text_usage": "Short rarity labels (Divine Egg, 0.001%) or giant $/s counters; rarely the game name",
-      "thumbnail_patterns": [
-        {
-          "count": "6/12",
-          "pattern": "Avatar hitting an oversized egg/ore with sparkles"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Rarity text (Divine, 0.001%, 1 in X) or huge $/s numbers"
+          "pattern": "Flat green grass or brown dirt background, saturated colours"
         },
         {
           "count": "3/12",
-          "pattern": "Dug-out dirt tunnel or orange earth background"
+          "pattern": "Hourglass/'6 HRS' timer motif"
+        }
+      ],
+      "members_hash": "42418ce7bd",
+      "newcomer_shift": "NEW games lean on cinematic or teaser art (nuked city, whale swallowing an egg, hourglass countdown) rather than avatar-plus-egg.",
+      "source": "vision",
+      "summary": "Bright simulator scenes of a bacon-hair avatar attacking a giant egg or ore with a pickaxe/drill, with rarity or money text.",
+      "text_usage": "Rarity labels in rainbow/gold gradient text, big $/s numbers, '+1' popups; titles rarely shown.",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Avatar on one side, glowing egg/ore on the other"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Rarity name or huge money/percent text (Divine 0.001%, $984M/s)"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Underground dirt tunnel/cave framing"
         }
       ]
     },
     "mechanic:collect_index": {
-      "art_style": "simulator_bright voxel/cartoon renders (about 9/12)",
+      "art_style": "simulator_bright dominant (~10/12); Dandy's World is stylized cartoon.",
       "avoid": [
-        "Showing many small items",
-        "Dark backgrounds"
+        "Grids of many tiny items",
+        "Muted colours"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: small avatar pointing at a huge glowing creature silhouette with a ?. Thumbnail: avatar carrying a SECRET egg with a YOU arrow, creature behind.",
+      "date": "2026-10-15",
+      "direction": "Icon: avatar holding a glowing rare egg while a giant creature looms. Thumbnail: first-person tool capturing a glowing creature with a rarity label.",
       "do": [
-        "One giant collectible next to a small avatar",
-        "Hide a rare one as a glowing silhouette with ?",
-        "Add a SECRET or rarity tag",
-        "Bright sky backdrop"
+        "Feature one glowing rare creature or egg large",
+        "Add an avatar with a shocked face",
+        "Use a 'SECRET'/'NEW BIOME' banner",
+        "Show the collecting tool in hand"
       ],
       "icon_patterns": [
         {
           "count": "7/12",
-          "pattern": "Avatar with one oversized creature/egg"
+          "pattern": "Bacon-hair avatar next to a giant egg or creature"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Glowing/fiery rare creature or egg"
         },
         {
           "count": "8/12",
-          "pattern": "Bright simulator colours"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Mystery silhouette or ? on the prize"
+          "pattern": "Bright saturated blue/green backgrounds"
         }
       ],
-      "members_hash": "0f6a81f409",
-      "newcomer_shift": "NEW games favour mystery silhouettes, rainbow money text and wave before/after splits",
+      "members_hash": "363b1c0ff8",
+      "newcomer_shift": "NEW games add first-person capture tools (harpoon, fishing rod) and Wave 1 vs Wave 100 splits.",
       "source": "vision",
-      "summary": "Collection games show the avatar next to one giant creature or prize, usually glowing or hidden with a ?.",
-      "text_usage": "Short labels (Egg SECRET, YOU, $1,000,000, Wave 1 vs Wave 100)",
+      "summary": "Eggs, rare creatures and money dominate; avatars react with surprise next to a big collectible.",
+      "text_usage": "Rarity words ('Egg SECRET'), 'NEW BIOME' banners, giant money numbers.",
       "thumbnail_patterns": [
         {
           "count": "6/12",
-          "pattern": "Creature or egg as hero with glow/fire"
+          "pattern": "Rare egg/creature reveal with sparkles"
         },
         {
           "count": "3/12",
-          "pattern": "YOU arrow or shocked face"
+          "pattern": "Money or wave count text"
         },
         {
           "count": "3/12",
-          "pattern": "Big money or wave counters"
+          "pattern": "'YOU' arrow or ! surprise marks"
         }
       ]
     },
@@ -193,97 +197,92 @@
       ]
     },
     "mechanic:grow_farm": {
-      "art_style": "Split: simulator_bright about 6/12, stylized creature renders about 4/12",
+      "art_style": "Split: simulator_bright (~6/12) and stylized/realistic creature art (~5/12).",
       "avoid": [
-        "Busy plots with no focal point"
+        "Dark horror palettes for farm games"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: a cute creature or giant crop close-up with big eyes. Thumbnail: the player's plot with one oversized grown item and a short verb headline.",
+      "date": "2026-10-15",
+      "direction": "Icon: oversized crop or creature with a cheerful avatar. Thumbnail: lush plot with a giant harvest and one 'Grow Offline' callout.",
       "do": [
-        "Show the grown thing huge in frame",
-        "Use a cute creature face if the game has creatures",
-        "Keep a single headline verb",
-        "Use warm sunny light"
+        "Show the crop or creature huge in frame",
+        "Add one feature callout like 'Grow Offline'",
+        "Use warm harvest colours for farm themes"
       ],
       "icon_patterns": [
         {
-          "count": "6/12",
-          "pattern": "Single big character or creature face, close-up"
-        },
-        {
-          "count": "6/12",
-          "pattern": "Bright simulator colours"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Game title text on icon"
-        }
-      ],
-      "members_hash": "f628f0b638",
-      "newcomer_shift": "NEW games favour cute creature close-ups and warm stylized farm renders",
-      "source": "vision",
-      "summary": "Mixed field: bright plot/builder scenes beside creature close-ups; leaders show the big grown thing.",
-      "text_usage": "Title or two-word action headlines; money/s numbers on a few",
-      "thumbnail_patterns": [
-        {
-          "count": "4/12",
-          "pattern": "Plot/base scene seen from above or front"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Big creature with open mouth or eyes"
+          "count": "5/12",
+          "pattern": "Big creature with open mouth or big eyes"
         },
         {
           "count": "3/12",
-          "pattern": "Action headline (BUILD, FIGHT, GROW)"
+          "pattern": "Feature text banner ('GROW OFFLINE', money/s)"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Bacon-hair avatar"
+        }
+      ],
+      "members_hash": "03e0b8dc57",
+      "newcomer_shift": "NEW games go cute-creature or cozy painted farm (Farmstead) rather than money-heavy.",
+      "source": "vision",
+      "summary": "Mixed niche: farm sims use bright crops and money, but many members are creature/underwater games with big mouths and eyes.",
+      "text_usage": "Feature callouts (Grow Offline, Build & Defend) and $/s.",
+      "thumbnail_patterns": [
+        {
+          "count": "4/12",
+          "pattern": "Underwater/creature scenes"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Build/defend or build/fight split"
         }
       ]
     },
     "mechanic:hit_swing": {
-      "art_style": "stylized/simulator_bright cartoon (about 9/12); one anime fighter",
+      "art_style": "Stylized/simulator_bright cartoon (~9/12); anime-style for fighter game.",
       "avoid": [
         "Static standing poses",
-        "Text-heavy images"
+        "Busy UI screenshots"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: avatar mid-swing, object rocketing off with a glowing trail and +1s. Thumbnail: wide stadium shot with a long curved arc to a far target.",
+      "date": "2026-10-15",
+      "direction": "Icon: avatar at moment of impact, object flying out of frame with a trail. Thumbnail: low-angle action shot across a sunny field or water, object mid-air with +1s.",
       "do": [
-        "Freeze the impact with motion streaks",
-        "Draw a curved arc to the target",
-        "Use a bright stadium or water backdrop",
-        "Keep text to one word or +1s"
+        "Freeze the moment of impact with the object flying",
+        "Add a bright arc trail",
+        "Use an exaggerated reaction face",
+        "Keep text to one short word or none"
       ],
       "icon_patterns": [
         {
           "count": "8/12",
-          "pattern": "Action pose mid-swing/kick with motion lines"
+          "pattern": "Avatar mid-swing/kick with a flying object"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Motion lines or curved trail showing trajectory"
         },
         {
           "count": "5/12",
-          "pattern": "Ball or projectile flying toward camera"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Sports field or water setting"
+          "pattern": "Shocked or determined facial expression"
         }
       ],
-      "members_hash": "e7fa69e755",
-      "newcomer_shift": "NEW games use animal fighters, a big red STOP button and cliff-dive scenery",
+      "members_hash": "6bc048149f",
+      "newcomer_shift": "NEW games use sports scenes (soccer, football) and animal brawlers with cleaner, almost text-free art.",
       "source": "vision",
-      "summary": "Hit/launch games freeze the moment of impact: an avatar swinging or kicking with motion streaks and a flying object.",
-      "text_usage": "Mostly no text; +1 bubbles or a single word (STOP, NOW!)",
+      "summary": "Dynamic action poses with an object flying (ball, stone, egg) and motion lines; sports fields and water are common.",
+      "text_usage": "Mostly minimal; '+1' popups or a single prompt word ('STOP', 'NOW!').",
       "thumbnail_patterns": [
         {
-          "count": "6/12",
-          "pattern": "Impact moment with curved trajectory arcs"
+          "count": "5/12",
+          "pattern": "Sports pitch/stadium setting"
         },
         {
-          "count": "6/12",
-          "pattern": "Bright outdoor stadium/grass background"
+          "count": "5/12",
+          "pattern": "Object mid-air with +1 or trajectory arc"
         },
         {
-          "count": "2/12",
-          "pattern": "+1 numbers popping off the action"
+          "count": "5/12",
+          "pattern": "Low dynamic camera angle"
         }
       ]
     },
@@ -335,93 +334,94 @@
       ]
     },
     "mechanic:paint_create": {
-      "art_style": "Mostly bright stylized/simulator look (7/11), with a few realistic scene renders",
+      "art_style": "Mostly simulator_bright cartoon (~7/12); a few realistic (desert car, house renovation, makeup face).",
       "avoid": [
-        "Cluttered scenes that hide the creation"
+        "Empty sandbox landscapes with no clear goal",
+        "Dark low-contrast palettes"
       ],
-      "date": "2026-10-13",
-      "direction": "Icon: a hand with the tool finishing a funny, bold drawing on a clean background. Thumbnail: palette or blank canvas on the left, finished art on the right, with an arrow and a short verb headline.",
+      "date": "2026-10-15",
+      "direction": "Icon: the finished creation filling the tile with the tool touching it. Thumbnail: split before/after with a red arrow and a big green 99% or $ reward.",
       "do": [
-        "Show the tool mid-stroke in first person",
-        "Make the finished art the biggest thing in frame",
-        "Use a verb headline of 2-3 words",
-        "Keep backgrounds clean and bright"
+        "Show a clear before \u2192 after with an arrow",
+        "Keep the creation large and centred",
+        "Add a single accuracy % or reward number",
+        "Use first-person hand with tool for 'satisfying' feel"
       ],
       "icon_patterns": [
         {
-          "count": "5/11",
-          "pattern": "Paint tool or hand actively drawing (brush, sauce bottle, pencil, hose)"
+          "count": "7/12",
+          "pattern": "Close-up of the thing being made (canvas, pancake, pixel art, drawing)"
         },
         {
-          "count": "3/11",
-          "pattern": "Smiley/face drawing as the subject"
+          "count": "5/12",
+          "pattern": "Tool or hand in frame (brush, bottle, pressure washer, finger)"
         },
         {
-          "count": "4/11",
-          "pattern": "White or light-blue clean background"
+          "count": "5/12",
+          "pattern": "Bright blue sky / green grass simulator backdrop"
         }
       ],
-      "members_hash": "21dd2840df",
-      "newcomer_shift": "NEW games use cleaner white backgrounds and a single verb headline (DRAW, UNLEASH, BUILD)",
+      "members_hash": "64cd3b9e18",
+      "newcomer_shift": "NEW games use realistic before/after transformations (house wash, makeup face, drawing with check/X).",
       "source": "vision",
-      "summary": "Clean, bright canvases where a hand or avatar is mid-creation, with the finished drawing as the hero.",
-      "text_usage": "Imperative verb phrases in chunky outlined letters; 'YOU' callouts",
+      "summary": "Before/after and canvas framing dominates: a creation tool, the finished art, and a reward or check mark.",
+      "text_usage": "Short verb headlines ('PAINT ANYTHING!'), percentages and check/X marks; game logos on half.",
       "thumbnail_patterns": [
         {
-          "count": "3/11",
-          "pattern": "Before/after or palette-to-result arrow layout"
+          "count": "4/12",
+          "pattern": "Before \u2192 after split or arrow transformation"
         },
         {
-          "count": "5/11",
-          "pattern": "Big bold title or action phrase (PAINT ANYTHING, DRAW TO REUNITE)"
+          "count": "3/12",
+          "pattern": "First-person hands holding the tool"
         },
         {
-          "count": "4/11",
-          "pattern": "First-person hand holding the tool"
+          "count": "4/12",
+          "pattern": "Score or reward text (99.9%, +$5,000, check/X marks)"
         }
       ]
     },
     "mechanic:plus_one_stat": {
-      "art_style": "simulator_bright, almost all (11/12); only Anime Astral is anime",
+      "art_style": "simulator_bright almost universal (~11/12).",
       "avoid": [
-        "Dark palettes",
-        "Anime art unless the game is anime"
+        "Dark scenes",
+        "Text-heavy logos"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: grinning avatar doing the action, +1 bubbles all around, bright grass. Thumbnail: left side sweaty avatar at 1, right side buff avatar at 999M with a glowing Mythic reward.",
+      "date": "2026-10-15",
+      "direction": "Icon: avatar mid-action ringed by +1 popups on bright grass. Thumbnail: left weak avatar with '1', right buff avatar with '999M' and a glowing mythic reward.",
       "do": [
-        "Cover the scene in white +1 bubbles",
-        "Split weak 1 vs strong 999M",
-        "Show the mythic reward glowing with a $ value",
-        "Use a red curved arrow"
+        "Scatter 4-6 '+1' popups around the avatar",
+        "Use a 1 \u2192 999M split with a red arrow",
+        "Show the end reward glowing",
+        "Keep the action verb visible"
       ],
       "icon_patterns": [
         {
+          "count": "11/12",
+          "pattern": "Multiple floating '+1' white text popups"
+        },
+        {
           "count": "10/12",
-          "pattern": "White +1 bubbles around the avatar"
+          "pattern": "Bacon-hair avatar in action pose"
         },
         {
-          "count": "9/12",
-          "pattern": "Bacon-hair avatar with smug grin"
-        },
-        {
-          "count": "8/12",
-          "pattern": "Bright green grass and blue sky"
+          "count": "7/12",
+          "pattern": "Flat green grass/blue sky backdrop"
         }
       ],
-      "members_hash": "63d0be9877",
-      "newcomer_shift": "NEW games add an egg or legendary weapon as the reward and voxel creatures",
+      "members_hash": "590bc0831c",
+      "newcomer_shift": "NEW games add egg rarity rewards (Dragon Egg Frost, King Egg Mythic) and web/tree-themed actions.",
       "source": "vision",
-      "summary": "+1 games are almost uniform: grinning bacon-hair avatar surrounded by white +1 bubbles, often a weak-vs-strong split.",
-      "text_usage": "+1 bubbles, flexed-arm stat numbers (1 \u2192 999M), Mythic/Celestial labels with $Qa values",
+      "summary": "'+1' popups everywhere: a bacon-hair avatar doing the action surrounded by +1s, often with a 1 \u2192 999M split.",
+      "text_usage": "+1 popups, strength-icon counters (1, 67K, 999T), money per second.",
       "thumbnail_patterns": [
         {
-          "count": "5/12",
-          "pattern": "Before/after split: 1 vs 999M with flexed-arm icon"
+          "count": "4/12",
+          "pattern": "Split 1 \u2192 999M / 999T progression"
         },
         {
           "count": "6/12",
-          "pattern": "Giant reward (planet, sword, egg) with $Qa value"
+          "pattern": "Glowing rare item or egg goal"
         },
         {
           "count": "4/12",
@@ -526,50 +526,49 @@
       ]
     },
     "mechanic:sell_shop": {
-      "art_style": "mixed stylized and realistic (about 6 stylized, 4 realistic)",
+      "art_style": "Mix of stylized (~5/12), realistic (~4/12) and simulator_bright (~3/12).",
       "avoid": [
-        "Empty shop interiors",
-        "Small products"
+        "Cluttered store overviews",
+        "Tiny products"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: one glossy handmade product with a SOLD! tag and pointer hand. Thumbnail: avatar behind a counter of goods, green SELL button, +$100m pop.",
+      "date": "2026-10-15",
+      "direction": "Icon: one appetising product filling the tile with the avatar's hand. Thumbnail: cosy shop counter with the product front and centre, warm light.",
       "do": [
-        "Make the product huge and shiny",
-        "Add a green SELL button with a cursor",
-        "Use warm lighting",
-        "Show a +$ price pop"
+        "Make the product the hero, large and appetising",
+        "Use warm cosy lighting",
+        "Include a hand or avatar presenting the item"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "Product as hero (fries, pottery, lemons, jewelry, cars)"
+          "count": "7/12",
+          "pattern": "Product/item as hero object"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Avatar holding or presenting goods"
         },
         {
           "count": "5/12",
-          "pattern": "Warm orange/gold tones"
-        },
-        {
-          "count": "6/12",
-          "pattern": "Avatar shopkeeper with the goods"
+          "pattern": "Game logo text on icon"
         }
       ],
-      "members_hash": "7f8118ce77",
-      "newcomer_shift": "NEW games feel craftier (pottery, jewelry, ice cream) with a SOLD!/SELL button and pointer hand",
+      "members_hash": "4ca3bf8b2d",
+      "newcomer_shift": "NEW games show crafted goods (pottery, rolled ice cream, dresses) in warm cosy interiors.",
       "source": "vision",
-      "summary": "Shop games show the product big and appetising, often with the avatar serving or a SELL button.",
-      "text_usage": "Light: game name or SELL/EQUIP buttons and price numbers",
+      "summary": "Product-hero framing: the item being sold (fries, lemons, pottery, snacks) big in frame with a cosy shop or bright setting.",
+      "text_usage": "Logos and short titles; few numbers.",
       "thumbnail_patterns": [
         {
           "count": "6/12",
-          "pattern": "Shop interior or stall scene"
-        },
-        {
-          "count": "3/12",
-          "pattern": "UI button or price callout (SELL, EQUIP, +$100m)"
+          "pattern": "Interior shop or workspace scene"
         },
         {
           "count": "4/12",
-          "pattern": "Realistic product renders"
+          "pattern": "Realistic product rendering"
+        },
+        {
+          "count": "2/12",
+          "pattern": "'YOU' arrow pointing to player"
         }
       ]
     },
@@ -621,50 +620,50 @@
       ]
     },
     "mechanic:tycoon_build": {
-      "art_style": "simulator_bright cartoon renders dominate (about 8/12); Driving Empire and Kaiju Alpha are realistic/dark",
+      "art_style": "simulator_bright majority (~8/12); realistic for Driving Empire/army, dark art for Kaiju.",
       "avoid": [
-        "Dark, low-contrast scenes",
-        "Tiny avatars"
+        "Dim interiors",
+        "Tiny unreadable bases"
       ],
-      "date": "2026-10-14",
-      "direction": "Icon: avatar beside the finished build with $ signs and a blue sky. Thumbnail: left $0 shack, right $1B empire, split diagonally with a red arrow.",
+      "date": "2026-10-15",
+      "direction": "Icon: avatar beside the most upgraded base piece glowing. Thumbnail: split screen, shabby start left with tiny $ number, maxed base right with huge $ number.",
       "do": [
-        "Show a cheap-to-rich before/after split",
-        "Add one short promise caption",
-        "Keep the avatar big with an excited face",
-        "Use clean blue sky"
+        "Use a $0.1 \u2192 $1.5M split",
+        "Show the base/creation big and shiny on the rich side",
+        "Use bright cyan sky",
+        "Add one feature callout banner (e.g. 'Earn Offline')"
       ],
       "icon_patterns": [
         {
-          "count": "7/12",
-          "pattern": "Classic avatar front and centre holding or near the prize"
+          "count": "4/12",
+          "pattern": "Avatar holding or reacting to a big egg/creature"
         },
         {
           "count": "6/12",
-          "pattern": "Bright blue sky and green grass"
+          "pattern": "Bright cyan sky background"
         },
         {
-          "count": "3/12",
-          "pattern": "Money signs or $ amounts"
+          "count": "4/12",
+          "pattern": "Text banner or logo strip"
         }
       ],
-      "members_hash": "6147a224e5",
-      "newcomer_shift": "NEW games use before/after money splits, product shots (phones) and big caption promises",
+      "members_hash": "e8904fae31",
+      "newcomer_shift": "NEW games show military/army scenes and cheap\u2192rich vehicle splits; one uses painted dark kaiju art.",
       "source": "vision",
-      "summary": "Tycoon leaders show the avatar with the big build or prize, often a before/after cheap-to-rich split.",
-      "text_usage": "Short imperative captions or money figures; logo only on the realistic ones",
+      "summary": "Progress fantasy: cheap vs rich splits, giant creatures or eggs, and big money numbers on bright backgrounds.",
+      "text_usage": "Money ranges and game logos; 'Drives offline' style feature callouts.",
       "thumbnail_patterns": [
         {
-          "count": "6/12",
-          "pattern": "Avatar plus the giant structure/creature they build"
+          "count": "3/12",
+          "pattern": "$ low vs $ high or before/after split"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Huge creature/monster dominating frame"
         },
         {
           "count": "3/12",
-          "pattern": "Before/after split ($0 vs $1,542,848)"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Big caption (BUILD EVERY DEVICE, PAINT ANYTHING)"
+          "pattern": "Money text ($1,542,848, +$5,000)"
         }
       ]
     }
