@@ -1,6 +1,6 @@
-# Uprising trends — 2026-10-16
+# Uprising trends — 2026-10-17
 
-4,995 games tracked · 396 are 60 days old or less and hold 17% of CCU.
+5,112 games tracked · 397 are 60 days old or less and hold 16% of CCU.
 
 Momentum = a category's share of young-game CCU divided by its share of all CCU. Above 1 means new games in it are outperforming its size: it's rising.
 
@@ -8,102 +8,101 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Break / mine / dig | 3.17x | 20 | 248,788 | 159 | Break and Steal an Egg (184,138) |
-| Collect / index | 2.32x | 29 | 269,047 | 247 | Break and Steal an Egg (184,138) |
-| Paint / create | 2.02x | 10 | 54,858 | 92 | Paint to Get Rich 🎨 (22,250) |
-| Tycoon / base building | 1.93x | 63 | 249,547 | 610 | Climb For Animals Eggs🥚 (42,208) |
-| +1 stat per action | 1.7x | 24 | 114,550 | 188 | +1 Stone Skipping (34,472) |
-| Hit / swing / launch | 1.69x | 13 | 75,506 | 120 | +1 Stone Skipping (34,472) |
-| Sell / run a shop | 1.51x | 7 | 54,875 | 116 | Sell Fries! [Anomaly] 🍟 (48,582) |
-| Tower defense | 1.48x | 4 | 42,399 | 101 | Bunker vs Verity (26,063) |
-| Grow / farm | 1.37x | 25 | 51,104 | 163 | (🩸) Drill for Eggs (9,839) |
-| Hatch / gacha | 1.12x | 70 | 487,123 | 296 | Break and Steal an Egg (184,138) |
-| Obby / climb / jump | 1.07x | 35 | 115,929 | 677 | Climb For Animals Eggs🥚 (42,208) |
-| Steal / raid | 1.06x | 59 | 334,519 | 157 | Break and Steal an Egg (184,138) |
+| Break / mine / dig | 3.3x | 22 | 305,094 | 167 | Break and Steal an Egg (222,205) |
+| Hit / swing / launch | 2.19x | 14 | 144,214 | 122 | +1 Stone Skipping (39,842) |
+| Tycoon / base building | 1.91x | 66 | 291,439 | 628 | Climb For Animals Eggs🥚 (58,780) |
+| Paint / create | 2.02x | 10 | 66,029 | 94 | Paint to Get Rich 🎨 (18,272) |
+| Collect / index | 1.86x | 30 | 339,172 | 257 | Break and Steal an Egg (222,205) |
+| +1 stat per action | 1.91x | 25 | 121,580 | 194 | +1 Stone Skipping (39,842) |
+| Grow / farm | 1.53x | 25 | 73,477 | 169 | Harpoon a Fish (11,990) |
+| Sell / run a shop | 1.49x | 7 | 68,637 | 122 | Sell Fries! [Anomaly] 🍟 (60,697) |
+| Tower defense | 1.39x | 4 | 52,073 | 104 | Bunker vs Verity (33,951) |
+| Obby / climb / jump | 1.26x | 36 | 161,631 | 699 | Climb For Animals Eggs🥚 (58,780) |
+| Hatch / gacha | 1.28x | 70 | 582,224 | 321 | Break and Steal an Egg (222,205) |
+| Steal / raid | 1.24x | 60 | 421,122 | 162 | Break and Steal an Egg (222,205) |
 
 ## Rising themes
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Stones / rocks / ores | 2.66x | 8 | 75,804 | 49 | +1 Stone Skipping (34,472) |
-| Money / rich | 1.99x | 39 | 168,295 | 380 | Climb For Animals Eggs🥚 (42,208) |
-| Ice / fire / elements | 1.65x | 12 | 34,641 | 99 | Firefighting Sim 🚒 (13,807) |
-| Fashion / beauty | 1.57x | 10 | 37,856 | 51 | Facecard: Makeup Showdown [💄HEAD BASES] (17,914) |
-| Robots / mechs | 1.5x | 3 | 11,881 | 13 | [4 PLAYER RALLY] WRONG WAY! (8,992) |
-| Music / dance | 1.35x | 5 | 14,306 | 64 | Piano Rhythm Tiles (5,322) |
-| Superheroes / powers | 1.32x | 6 | 17,455 | 60 | Superhero Arena (8,777) |
-| Eggs | 1.28x | 55 | 415,489 | 89 | Break and Steal an Egg (184,138) |
-| Disaster / weather | 1.25x | 3 | 14,056 | 65 | [🌋] Swim For Eggs! (12,527) |
-| Zombies | 1.2x | 4 | 18,286 | 69 | Build and Kill Zombies (10,415) |
-| Giant / huge | 1.18x | 5 | 17,029 | 87 | [🔥UPDATE 1] Prehistoric Farm (5,264) |
+| Stones / rocks / ores | 2.5x | 8 | 78,893 | 50 | +1 Stone Skipping (39,842) |
+| Money / rich | 2.06x | 40 | 193,906 | 390 | Climb For Animals Eggs🥚 (58,780) |
+| Dinosaurs | 1.67x | 3 | 23,875 | 26 | [☄️] Ride a Dino (14,975) |
+| Fashion / beauty | 1.47x | 10 | 48,350 | 51 | Facecard: Makeup Showdown [⭐UPD] (24,005) |
+| Music / dance | 1.48x | 5 | 24,028 | 66 | Piano Rhythm Tiles (9,771) |
+| Robots / mechs | 1.61x | 3 | 17,850 | 15 | [HALLOWEEN] WRONG WAY! (12,292) |
+| Giant / huge | 1.26x | 5 | 23,607 | 89 | [NEW WORLD 🎃] Prehistoric Farm (8,583) |
+| Vehicles | 1.32x | 24 | 99,203 | 258 | [NEW❗] Bike For Egg! (22,960) |
+| Eggs | 1.44x | 56 | 496,830 | 96 | Break and Steal an Egg (222,205) |
+| Superheroes / powers | 1.25x | 6 | 19,962 | 61 | Superhero Arena (11,232) |
+| Ice / fire / elements | 1.32x | 11 | 27,837 | 98 | Firefighting Sim 🚒 (16,159) |
+| Zombies | 1.16x | 4 | 24,402 | 71 | Build and Kill Zombies (13,008) |
 
 ## Rising title formulas
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| "___ for ___" (Swing for Eggs) | 3.49x | 13 | 126,079 | 52 | Climb For Animals Eggs🥚 (42,208) |
-| "+1 ___" | 1.83x | 23 | 114,229 | 158 | +1 Stone Skipping (34,472) |
-| "___ vs ___" | 1.29x | 2 | 27,226 | 48 | Bunker vs Verity (26,063) |
-| One-word title | 1.11x | 13 | 86,050 | 207 | Sarab (57,708) |
+| "___ for ___" (Swing for Eggs) | 3.58x | 14 | 143,104 | 52 | Climb For Animals Eggs🥚 (58,780) |
+| "+1 ___" | 2.08x | 24 | 121,374 | 163 | +1 Stone Skipping (39,842) |
+| "___ vs ___" | 1.14x | 2 | 35,058 | 47 | Bunker vs Verity (33,951) |
 
 ## Rising subgenres
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Racing | 1.6x | 7 | 14,254 | 30 | [4 PLAYER RALLY] WRONG WAY! (8,992) |
-| Incremental Simulator | 1.58x | 72 | 278,652 | 580 | صيد الضبّان (42,807) |
-| Coloring & Drawing | 1.54x | 3 | 13,910 | 31 | [🥞] Paint a Pancake (8,927) |
-| Dress Up | 1.47x | 9 | 31,458 | 44 | Facecard: Makeup Showdown [💄HEAD BASES] (17,914) |
-| Tycoon | 1.33x | 116 | 580,618 | 679 | Break and Steal an Egg (184,138) |
-| Turn-based RPG | 1.32x | 3 | 7,449 | 14 | Pixel Lineage [DUNGEONS+ HOLLOWEEN+RACE EVO] (6,357) |
-| Idle | 1.29x | 7 | 6,118 | 23 | Dont Be Late For School! 🚌 (1,733) |
-| Showcase & Hub | 1.26x | 2 | 5,524 | 16 | [UPD] Makeup Frenzy! 💄 (5,371) |
-| Music & Audio | 1.22x | 2 | 5,731 | 22 | Piano Rhythm Tiles (5,322) |
-| Escape | 1.16x | 13 | 49,868 | 167 | Bunker vs Verity (26,063) |
-| Physics Sim | 1.1x | 4 | 16,357 | 60 | Ragdoll Engine ⚙️ (7,919) |
-| Battlegrounds & Fighting | 1.06x | 12 | 91,047 | 334 | Huss Valley (53,885) |
+| Racing | 1.85x | 7 | 25,559 | 30 | [HALLOWEEN] WRONG WAY! (12,292) |
+| Coloring & Drawing | 1.74x | 3 | 23,979 | 32 | [🥞] Paint a Pancake (12,299) |
+| Dress Up | 1.51x | 9 | 41,312 | 44 | Facecard: Makeup Showdown [⭐UPD] (24,005) |
+| Tycoon | 1.49x | 119 | 699,472 | 710 | Break and Steal an Egg (222,205) |
+| Incremental Simulator | 1.53x | 71 | 254,674 | 591 | +1 Stone Skipping (39,842) |
+| Turn-based RPG | 1.44x | 3 | 12,933 | 15 | Pixel Lineage [DUNGEONS+ HOLLOWEEN+RACE EVO] (10,215) |
+| Escape | 1.35x | 13 | 89,637 | 171 | Bunker vs Verity (33,951) |
+| Showcase & Hub | 1.21x | 2 | 5,522 | 15 | [UPD] Makeup Frenzy! 💄 (5,371) |
+| Physics Sim | 1.37x | 4 | 30,329 | 61 | Ragdoll Engine ⚙️ (17,311) |
+| Music & Audio | 1.3x | 2 | 10,361 | 22 | Piano Rhythm Tiles (9,771) |
+| Idle | 1.18x | 7 | 4,676 | 23 | Deliver The Baby 🍼 (1,994) |
+| Escape Room | 1.1x | 4 | 6,655 | 20 | [UPD]🙈🙊🙉 BOMBANANA! (3,103) |
 
 ## Rising art styles
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Realistic | 1.7x | 12 | 123,601 | 56 | صيد الضبّان (42,807) |
-| Low poly | 1.56x | 4 | 33,196 | 5 | PORTALS (13,144) |
-| Bright simulator | 1.39x | 46 | 639,385 | 93 | Break and Steal an Egg (184,138) |
-| Meme / chaotic | 1.32x | 2 | 8,947 | 4 | 💀 Steal An EXE Egg! 💀 (6,606) |
-| Classic / studded | 1.27x | 5 | 92,291 | 21 | Huss Valley (53,885) |
-| Dark / gritty | 1.1x | 7 | 99,643 | 29 | Sarab (57,708) |
+| Low poly | 1.75x | 4 | 50,518 | 5 | Tribes 3v3 [soon??] (15,351) |
+| Bright simulator | 1.5x | 46 | 739,061 | 93 | Break and Steal an Egg (222,205) |
+| Realistic | 1.36x | 12 | 104,754 | 56 | Facecard: Makeup Showdown [⭐UPD] (24,005) |
+| Classic / studded | 1.26x | 5 | 127,420 | 21 | Huss Valley (76,591) |
+| Meme / chaotic | 1.27x | 2 | 9,269 | 4 | 💀 Steal An EXE Egg! 💀 (6,463) |
 
 ## Rising map styles
 
 | | Momentum | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|
-| Interiors / corridors | 1.94x | 14 | 172,241 | 101 | Sarab (57,708) |
-| Hub + zones / worlds | 1.83x | 81 | 293,871 | 782 | Chop A Forest (26,850) |
-| Linear course / stages | 1.47x | 38 | 206,046 | 829 | Huss Valley (53,885) |
-| Personal plots / bases | 1.11x | 115 | 467,519 | 919 | Break and Steal an Egg (184,138) |
+| Hub + zones / worlds | 1.94x | 80 | 364,375 | 808 | Chop A Forest (35,003) |
+| Linear course / stages | 1.73x | 39 | 280,410 | 848 | Huss Valley (76,591) |
+| Interiors / corridors | 1.53x | 14 | 167,257 | 102 | Sell Fries! [Anomaly] 🍟 (60,697) |
+| Personal plots / bases | 1.25x | 117 | 579,559 | 947 | Break and Steal an Egg (222,205) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
 | Mechanic | Theme | Score |
 |---|---|---|
-| Paint / create | Stones / rocks / ores | 8.04 |
-| Paint / create | Eggs | 7.19 |
-| Break / mine / dig | Robots / mechs | 6.59 |
-| Break / mine / dig | Zombies | 6.32 |
-| Break / mine / dig | Disaster / weather | 6.17 |
-| Paint / create | Ice / fire / elements | 5.23 |
-| Collect / index | Ancient / pyramids | 4.39 |
-| Hit / swing / launch | Fashion / beauty | 4.38 |
-| Paint / create | Robots / mechs | 4.2 |
-| Paint / create | Superheroes / powers | 4.15 |
+| Paint / create | Eggs | 7.84 |
+| Paint / create | Stones / rocks / ores | 7.39 |
+| Break / mine / dig | Robots / mechs | 7.27 |
+| Break / mine / dig | Zombies | 6.56 |
+| Hit / swing / launch | Fashion / beauty | 5.57 |
+| Hit / swing / launch | Dinosaurs | 5.1 |
+| Hit / swing / launch | Robots / mechs | 4.82 |
+| Hit / swing / launch | Music / dance | 4.81 |
+| Paint / create | Dinosaurs | 4.71 |
+| Paint / create | Robots / mechs | 4.45 |
+| Hit / swing / launch | Zombies | 4.36 |
+| Paint / create | Ice / fire / elements | 4.33 |
+| +1 stat per action | Robots / mechs | 4.21 |
+| +1 stat per action | Music / dance | 4.2 |
 | Paint / create | Zombies | 4.02 |
-| Tower defense | Fashion / beauty | 3.84 |
-| Paint / create | Ancient / pyramids | 3.82 |
-| +1 stat per action | Robots / mechs | 3.54 |
-| Hit / swing / launch | Robots / mechs | 3.52 |
-| +1 stat per action | Music / dance | 3.43 |
-| Hit / swing / launch | Music / dance | 3.41 |
-| Hit / swing / launch | Zombies | 3.37 |
-| +1 stat per action | Ancient / pyramids | 3.22 |
-| Hit / swing / launch | Ancient / pyramids | 3.2 |
+| Paint / create | Superheroes / powers | 4.0 |
+| Hit / swing / launch | Ancient / pyramids | 3.92 |
+| Paint / create | Ancient / pyramids | 3.62 |
+| Tower defense | Fashion / beauty | 3.54 |
+| +1 stat per action | Ancient / pyramids | 3.42 |
