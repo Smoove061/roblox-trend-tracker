@@ -1,385 +1,382 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "ideas": [
     {
-      "title": "Sift Sand for Scarabs",
+      "title": "Glaze Eggs for Pets",
       "scope": "medium",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Paint / create",
+        "Hatch / gacha"
+      ],
+      "theme": "Eggs",
+      "hook": "Every egg comes out of the kiln blank. Paint it however you like, and the colours and patterns you choose decide which pet hatches from it.",
+      "core_loop": [
+        "Pull a blank egg from your kiln",
+        "Paint and glaze it on the turntable",
+        "Fire it and hatch the pet your pattern unlocked",
+        "Sell spare pets to buy rarer paints and bigger kilns"
+      ],
+      "twist": "Secret pets only hatch from exact recipes (like gold stripes on a black egg), and players trade the recipes, not just the pets.",
+      "monetization": [
+        "2x hatch luck pass",
+        "Auto-paint pass",
+        "VIP rainbow glaze"
+      ],
+      "retention": [
+        "Recipe index with set bonuses",
+        "Offline kiln keeps firing eggs",
+        "Limited weekly glaze colours"
+      ],
+      "why_now": "Paint / create × Eggs is the biggest open gap (9.32). Paint / create is up 2.59x (Paint to Get Rich 17.0K CCU, Kukirin Life 30.0K) and Eggs games pull 414.8K young CCU. \"___ for ___\" titles lead formulas at 3.41x (Climb For Animals Eggs 57.3K).",
+      "inspired_by": [
+        "[UPD] Paint to Get Rich 🎨",
+        "[🥞] Paint a Pancake",
+        "Break and Steal an Egg",
+        "Climb For Animals Eggs🥚"
+      ],
+      "differentiator": "Egg games make you break, steal or climb for eggs; here you design the egg yourself, so every hatch feels earned.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Chisel Rocks to Get Rich",
+      "scope": "medium",
+      "genre": "Simulation · Incremental",
+      "mechanics": [
+        "Paint / create",
+        "Break / mine / dig"
+      ],
+      "theme": "Stones / rocks / ores",
+      "hook": "Haul a boulder to your workshop and chip away at it. The closer your statue matches the customer's order, the more they pay.",
+      "core_loop": [
+        "Mine a raw boulder from the quarry",
+        "Chisel it toward the order on the board",
+        "Get scored and paid for accuracy and size",
+        "Upgrade chisels and unlock rarer stone like marble and obsidian"
+      ],
+      "twist": "Gems are hidden inside some boulders; carve carefully around them and the statue sells for many times more.",
+      "monetization": [
+        "Golden chisel VIP",
+        "2x cash multiplier",
+        "Auto-quarry pass"
+      ],
+      "retention": [
+        "Gallery of every statue you sold",
+        "Offline quarry refills",
+        "Weekly celebrity order with leaderboard"
+      ],
+      "why_now": "Paint / create × Stones is the second-biggest gap (8.58). Stones / rocks is the top rising theme at 2.23x (+1 Stone Skipping 29.9K, Lift Rock For Eggs 10.8K), Break / mine / dig leads mechanics at 3.15x and \"___ to Get Rich\" titles are up 2.03x (Make Ramen To Get Rich 6.3K).",
+      "inspired_by": [
+        "[UPD] Paint to Get Rich 🎨",
+        "Make Ramen To Get Rich [RELEASE]",
+        "[🎃] +1 Stone Skipping",
+        "Lift Rock For Eggs"
+      ],
+      "differentiator": "Rock games are about lifting or skipping stones; this turns the rock into a canvas and pays for skill, not just clicks.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Scrap Robots for Cores",
+      "scope": "small",
       "genre": "Simulation · Incremental",
       "mechanics": [
         "Break / mine / dig",
         "Collect / index"
       ],
-      "theme": "Ancient / pyramids",
-      "hook": "Shovel desert sand into your sieve and shake it. Most of it is dust, but every few scoops a jewelled scarab drops out and joins your collection.",
+      "theme": "Robots / mechs",
+      "hook": "A junkyard full of broken robots. Smash them apart with your wrench and grab the glowing core inside. Rare cores power up your own scrap bot.",
       "core_loop": [
-        "Dig a scoop of sand from the dune",
-        "Shake the sieve to sort dust from finds",
-        "Add scarabs and relics to the museum index",
-        "Spend relic coins on bigger sieves and deeper dunes"
+        "Smash a robot in the junkyard",
+        "Grab the core and loose parts",
+        "Slot cores into your bot for stat boosts",
+        "Unlock deeper scrap piles with bigger robots"
       ],
-      "twist": "Rare scarabs are alive: they burrow back into the sand if you shake too hard, so careful sifting beats fast clicking.",
+      "twist": "Some robots wake up when you hit them and run off; chase them down for the rarest cores.",
       "monetization": [
-        "VIP golden sieve",
-        "Auto-dig pass",
-        "2x find multiplier"
+        "VIP power wrench",
+        "Auto-smash pass",
+        "2x core luck"
       ],
       "retention": [
-        "Museum index with set bonuses",
-        "Offline dune refill while away",
-        "Weekly sandstorm event with limited scarabs"
+        "Core index with set bonuses",
+        "Daily junk truck drop",
+        "Limited event robots"
       ],
-      "why_now": "Collect / index × Ancient / pyramids is an open gap (4.28). Break / mine / dig is the fastest rising mechanic at 3.54x (Break and Steal an Egg 507.9K CCU, My Anime Mine 13.5K) and Collect / index is up 2.23x. \"___ for ___\" titles lead at 2.92x (Search For The Needle 16.2K).",
+      "why_now": "Break / mine / dig × Robots is an open gap (6.31). Break / mine / dig is the fastest rising mechanic at 3.15x (Break and Steal an Egg 183.9K CCU, Smash the City 6.2K) and Robots / mechs is up 1.44x (WRONG WAY! 5.6K).",
       "inspired_by": [
         "Break and Steal an Egg",
-        "[🎁UPD 6] ⛏️ My Anime Mine",
-        "[⚗️🌻] Search For The Needle",
-        "[🎃] Build the Pyramid!"
+        "[☢️UPD] Smash the City",
+        "[🎃RALLY] WRONG WAY!"
       ],
-      "differentiator": "Desert games are about building pyramids; this one is about what is buried under them, with a sifting feel nobody uses yet.",
+      "differentiator": "Smash games break eggs, vaults or cities; breaking robots gives every hit a mechanical payoff and a build-your-bot goal.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "Repaint Zombies for Cash",
+      "title": "Dig Bones for Dinos",
+      "scope": "large",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Break / mine / dig",
+        "Paint / create",
+        "Collect / index"
+      ],
+      "theme": "Dinosaurs",
+      "hook": "Dig fossils out of the cliff, piece the skeleton together, then paint on the skin. Finish it and the dinosaur comes alive in your park.",
+      "core_loop": [
+        "Dig fossil bones in the cliff",
+        "Assemble the skeleton on the table",
+        "Paint skin and colours to bring it to life",
+        "Show dinos in your park for visitor cash"
+      ],
+      "twist": "Missing bones can be swapped with bones from other species, creating hybrid dinos that join a separate secret index.",
+      "monetization": [
+        "2x dig speed pass",
+        "VIP rare paint set",
+        "Extra park space"
+      ],
+      "retention": [
+        "Dino index with hybrids",
+        "Offline park income",
+        "Weekly meteor event with limited fossils"
+      ],
+      "why_now": "Paint / create × Dinosaurs is an open gap (6.16). Dinosaurs are rising 1.72x (Ride a Dino 15.1K, Prehistoric Farm 4.9K), Break / mine / dig is up 3.15x (Dig For Eggs 8.0K) and Paint / create is up 2.59x.",
+      "inspired_by": [
+        "[☄️] Ride a Dino",
+        "Prehistoric Farm [NEW WORLD 🎃]",
+        "🎃 Dig For Eggs",
+        "[UPD] Paint to Get Rich 🎨"
+      ],
+      "differentiator": "Dino games let you ride or farm dinos; here you dig them up and design how they look before they walk.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Crack Hail for Gems",
+      "scope": "small",
+      "genre": "Simulation · Incremental",
+      "mechanics": [
+        "Break / mine / dig",
+        "+1 stat per action"
+      ],
+      "theme": "Disaster / weather",
+      "hook": "Storms drop giant hailstones on the map. Run out with your hammer, crack them open and grab the gems frozen inside before they melt.",
+      "core_loop": [
+        "Wait for the storm warning",
+        "Rush to hailstones and smash them",
+        "Each hit gives +1 strength",
+        "Spend gems on hammers and storm-proof gear"
+      ],
+      "twist": "Bigger storms drop bigger hail but also knock you around, so stronger players brave the worst weather for the rarest gems.",
+      "monetization": [
+        "Auto-smash pass",
+        "2x strength multiplier",
+        "VIP storm radar"
+      ],
+      "retention": [
+        "Gem index",
+        "Hourly storms on a schedule",
+        "Leaderboard for biggest hailstone cracked"
+      ],
+      "why_now": "Break / mine / dig × Disaster / weather is an open gap (5.49). Break / mine / dig is up 3.15x (+1 Pickaxe Swing for Eggs 9.3K) and +1 stat per action is up 1.69x (+1 Stone Skipping 29.9K, +1 Assassin Leveling 10.2K).",
+      "inspired_by": [
+        "+1 Pickaxe Swing for Eggs",
+        "[🎃] +1 Stone Skipping",
+        "Break and Steal an Egg"
+      ],
+      "differentiator": "Weather games make you survive storms; this one makes the storm the loot drop players run toward.",
+      "art_style": "simulator_bright",
+      "map_style": "open_world"
+    },
+    {
+      "title": "Blow Glass to Get Rich",
       "scope": "medium",
       "genre": "Simulation · Tycoon",
       "mechanics": [
         "Paint / create",
-        "Tycoon / base building"
+        "Sell / run a shop"
       ],
-      "theme": "Zombies",
-      "hook": "Grey zombies shuffle onto your lawn. Paint them back to full colour and they wake up cured, then go to work in your shop.",
+      "theme": "Ice / fire / elements",
+      "hook": "Heat glass in the furnace, blow and shape it into vases and ornaments, then sell them in your shop. The hotter the fire, the fancier the glass.",
       "core_loop": [
-        "Pick a shuffling grey zombie",
-        "Paint colour onto it before it reaches your fence",
-        "Cured zombies become workers on your plot",
-        "Use their earnings on brighter paints and bigger plots"
+        "Melt glass in the furnace",
+        "Blow and shape it with simple drag controls",
+        "Add colour swirls and cool it",
+        "Sell pieces to shoppers and upgrade the furnace"
       ],
-      "twist": "The neater the paint job, the better the worker: a sloppy zombie works slowly and sometimes turns grey again.",
+      "twist": "Elemental fuels (frost fire, lava, lightning) change the glass, unlocking glowing and crackled finishes buyers pay extra for.",
       "monetization": [
-        "2x paint speed",
-        "VIP rainbow brush",
-        "Extra worker slots"
+        "VIP dragon furnace",
+        "2x sale price multiplier",
+        "Extra shelf storage"
       ],
       "retention": [
-        "Worker roster that grows every night",
-        "Daily rare zombie type",
-        "Halloween horde nights with bonus pay"
+        "Collection book of every glass style",
+        "Daily special customer orders",
+        "Seasonal colour drops"
       ],
-      "why_now": "Paint / create × Zombies is an open gap (3.51). Paint / create is up 1.91x (Paint to Get Rich 28.3K CCU, Paint a Pancake 9.3K) and Tycoon / base building is up 1.70x (Build and Kill Zombies 13.9K). \"___ for ___\" titles lead at 2.92x.",
+      "why_now": "Paint / create × Ice / fire / elements is an open gap (5.06). Paint / create is up 2.59x, Sell / run a shop is up 1.55x (Sell Fries! 28.6K, Make Rugs! 6.5K) and interior maps are rising 1.69x. \"___ to Get Rich\" titles are up 2.03x.",
       "inspired_by": [
-        "[UPD] Paint to Get Rich 🎨",
-        "[🥞] Paint a Pancake",
-        "Build and Kill Zombies"
+        "Make Rugs!",
+        "[UPD] Create Pottery!",
+        "🎃 Sell Fries! [Anomaly] 🍟",
+        "[UPD] Paint to Get Rich 🎨"
       ],
-      "differentiator": "Zombie games ask you to kill or survive them; here you cure them with a brush and they run your business.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
+      "differentiator": "Craft-and-sell games stay calm; adding elemental fire turns each piece into a risky, flashy bet.",
+      "art_style": "stylized",
+      "map_style": "interior"
     },
     {
-      "title": "Toss Heels for Diamonds",
-      "scope": "small",
-      "genre": "Simulation · Casual",
-      "mechanics": [
-        "Hit / swing / launch",
-        "Collect / index"
-      ],
-      "theme": "Fashion / beauty",
-      "hook": "Spin and launch a high heel as far as you can down the runway. Where it lands, a diamond pops out, and better throws reach rarer gems.",
-      "core_loop": [
-        "Wind up a spin and release",
-        "Watch the heel fly and bounce",
-        "Grab the diamond where it lands",
-        "Buy fancier heels that fly further"
-      ],
-      "twist": "Each heel style flies differently: stilettos go straight, platforms bounce, boots spin, so players collect shoes for different lanes.",
-      "monetization": [
-        "VIP sparkle heel",
-        "Auto-throw pass",
-        "2x distance multiplier"
-      ],
-      "retention": [
-        "Shoe closet index",
-        "Daily runway wind direction",
-        "Codes for limited heels"
-      ],
-      "why_now": "Hit / swing / launch × Fashion / beauty is the top open gap left (5.12). Hit / swing / launch is up 1.82x (+1 Stone Skipping 46.5K CCU, Cat Battles 31.9K) and Fashion / beauty is up 1.72x (Facecard: Makeup Showdown 41.4K).",
-      "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "Facecard: Makeup Showdown [⭐UPD]",
-        "Cat Battles 🐾"
-      ],
-      "differentiator": "Fashion games are about outfits and judging; this is a simple throw-for-distance game with fashion as the hook.",
-      "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Steal Outfits for Fame",
+      "title": "Build a Pharaoh Tomb",
       "scope": "medium",
       "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Steal / raid",
-        "Collect / index",
-        "Tycoon / base building"
+        "Tycoon / base building",
+        "Paint / create"
+      ],
+      "theme": "Ancient / pyramids",
+      "hook": "You are the royal builder. Dig out tomb chambers, paint the walls with hieroglyphs and fill them with treasure so the pharaoh pays you more.",
+      "core_loop": [
+        "Dig a new chamber",
+        "Paint wall art from a stencil kit",
+        "Place treasure and traps",
+        "Earn gold from pharaoh visits and expand"
+      ],
+      "twist": "Other players sneak in as tomb robbers at night, so your traps and wall curses have to keep them out.",
+      "monetization": [
+        "VIP gold paint set",
+        "2x gold multiplier",
+        "Extra trap slots"
+      ],
+      "retention": [
+        "Offline tribute income",
+        "Hieroglyph collection",
+        "Weekly sandstorm event"
+      ],
+      "why_now": "Paint / create × Ancient / pyramids is an open gap (5.02). Tycoon / base building is up 1.87x across 67 young games (Climb For Animals Eggs 57.3K, Build the Pyramid! 8.1K) and \"Build a ___\" titles are up 1.16x.",
+      "inspired_by": [
+        "[🎃] Build the Pyramid!",
+        "[UPD] Paint to Get Rich 🎨",
+        "Climb For Animals Eggs🥚"
+      ],
+      "differentiator": "Pyramid games stack blocks outside; this one is about the decorated rooms inside and defending them.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Style Critics for Stars",
+      "scope": "large",
+      "genre": "Strategy · Tower Defense",
+      "mechanics": [
+        "Tower defense",
+        "Dress / style"
       ],
       "theme": "Fashion / beauty",
-      "hook": "Run a boutique on your plot and fill its rails with outfits. Sneak into rival boutiques to grab their rarest looks before the mannequins catch you.",
+      "hook": "Grumpy fashion critics march down the runway. Place stylist towers that throw outfits and makeup at them; every critic who reaches the end smiling gives you stars.",
       "core_loop": [
-        "Collect outfits from the fashion drop",
-        "Display them on your boutique rails for fame per second",
-        "Sneak into other plots to swipe a rare outfit",
-        "Lock your best pieces behind guards and alarms"
+        "Place stylist towers beside the runway",
+        "Style each wave of critics before they reach the judges",
+        "Earn stars and unlock new stylists",
+        "Pull for rare designer stylists"
       ],
-      "twist": "Stolen outfits only earn full fame once you restyle them, so thieves still have to dress the mannequin themselves.",
+      "twist": "Critics have taste: some only like gothic, some only pastel, so tower placement must match the outfit to the critic.",
       "monetization": [
-        "VIP velvet rope",
-        "2x fame multiplier",
-        "Speed pass for faster getaways"
+        "2x wave speed pass",
+        "Designer stylist luck pass",
+        "VIP runway skin"
       ],
       "retention": [
-        "Outfit index with rarity tiers",
-        "Mutations on outfits (glitter, neon)",
-        "Weekly fashion week drop"
+        "Stylist index",
+        "Codes for free pulls",
+        "Weekly themed fashion week"
       ],
-      "why_now": "Steal / raid × Fashion / beauty is an open gap (3.97). The Collect / index + Steal / raid pair holds 594.8K young CCU (Break and Steal an Egg 507.9K, Steal ASMR! 14.6K), and Fashion / beauty is up 1.72x (Facecard: Makeup Showdown 41.4K, Makeup Salon 12.5K).",
+      "why_now": "Tower defense × Fashion / beauty is an open gap (4.12). Fashion / beauty is up 1.84x (Facecard: Makeup Showdown 24.7K, Makeup Salon 7.1K) and Tower defense is up 1.41x (Cameraman Tower Defense 20.7K).",
       "inspired_by": [
-        "Break and Steal an Egg",
-        "Steal ASMR!",
+        "[🕓SOON] Cameraman Tower Defense",
         "Facecard: Makeup Showdown [⭐UPD]",
-        "Makeup Salon💄"
+        "[UPD✨] Makeup Salon💄"
       ],
-      "differentiator": "Steal games swap the same creatures; here the loot is outfits you also have to style, which draws the dress-up crowd in.",
+      "differentiator": "Fashion games are judged runways and TD games are battles; this puts both on one lane and draws in a new audience for TD.",
       "art_style": "stylized",
-      "map_style": "plot_base"
+      "map_style": "tower_defense_lanes"
     },
     {
-      "title": "Tumble Rocks for Gems",
-      "scope": "small",
-      "genre": "Simulation · Casual",
-      "mechanics": [
-        "Sell / run a shop",
-        "Break / mine / dig"
-      ],
-      "theme": "Stones / rocks / ores",
-      "hook": "Drop dull rocks into your tumbler, crank it, and watch them come out shiny. Sell the polished gems at your stall.",
-      "core_loop": [
-        "Pick rocks from the quarry pile",
-        "Load the tumbler and crank it",
-        "Pull out polished gems, some with rare cores",
-        "Sell them at your stall to buy bigger tumblers"
-      ],
-      "twist": "Cracking a rock first reveals its core, but a bad crack ruins it, so players gamble between safe polish and risky crack.",
-      "monetization": [
-        "Storage pass for more gems",
-        "VIP crystal stall",
-        "2x sell price"
-      ],
-      "retention": [
-        "Gem index",
-        "Daily rare rock in the pile",
-        "Satisfying polish sound and shine as a reason to come back"
-      ],
-      "why_now": "Stones / rocks / ores is the top rising theme at 2.23x (+1 Stone Skipping 46.5K CCU, Lift Rock For Eggs 16.3K). Sell / run a shop is up 1.67x (Sell Fries! 87.9K, Fix My Phone! 2.4K) and Break / mine / dig is up 3.54x. New shop games use satisfying, product-first art.",
-      "inspired_by": [
-        "Lift Rock For Eggs",
-        "🎃 Sell Fries! [Anomaly] 🍟",
-        "Fix My Phone!",
-        "[🎃 HALLOWEEN] Rust Blaster"
-      ],
-      "differentiator": "Rock games are about lifting or smashing; this is a calm ASMR shop where the rock turns into something you sell.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "+1 Dino Stomp",
+      "title": "+1 Guitar Volume",
       "scope": "small",
       "genre": "Simulation · Incremental",
       "mechanics": [
         "+1 stat per action",
-        "Break / mine / dig"
+        "Hit / swing / launch"
       ],
-      "theme": "Dinosaurs",
-      "hook": "You hatch as a tiny dino. Every stomp adds +1 size, and bigger stomps crack through rock, trees and eventually whole hills.",
+      "theme": "Music / dance",
+      "hook": "Every strum gives +1 volume. Get loud enough and your sound waves blast through walls, windows and whole buildings.",
       "core_loop": [
-        "Stomp the ground to gain +1 size",
-        "Break through obstacles that block the next zone",
-        "Unlock bigger dino species with rebirths",
-        "Stomp boss boulders for rare fossils"
+        "Strum to gain +1 volume",
+        "Blast through the next wall",
+        "Reach new stages for bigger multipliers",
+        "Rebirth for louder amps"
       ],
-      "twist": "Your dino species changes how stomps work (raptors stomp fast, T-rex stomps wide), so rebirths feel like a new game.",
+      "twist": "Hit notes on the beat for bonus volume, so rhythm-skilled players climb faster than pure clickers.",
       "monetization": [
-        "2x stomp multiplier",
-        "Auto-stomp",
-        "Speed pass",
-        "VIP species"
+        "Auto-strum pass",
+        "2x volume multiplier",
+        "VIP golden guitar"
       ],
       "retention": [
-        "Rebirth species ladder",
-        "Leaderboard for biggest dino",
-        "Codes for stomp boosts"
+        "Rebirth ladder",
+        "Amp and pet index",
+        "Leaderboard for loudest player"
       ],
-      "why_now": "\"+1 ___\" titles are up 1.58x (+1 Stone Skipping 46.5K CCU, +1 Assassin Leveling 16.0K, +1 Karate Evolution 13.5K). Dinosaurs is up 1.63x (Ride a Dino 23.4K) and Break / mine / dig is up 3.54x.",
+      "why_now": "+1 stat per action × Music / dance is an open gap (3.65). \"+1 ___\" titles are up 1.83x and the mechanic 1.69x (+1 Stone Skipping 29.9K, +1 Assassin Leveling 10.2K), Hit / swing is up 1.94x and Music / dance is up 1.48x (Piano Rhythm Tiles 5.7K).",
       "inspired_by": [
         "[🎃] +1 Stone Skipping",
         "+1 Assassin Leveling",
-        "[☄️] Ride a Dino"
-      ],
-      "differentiator": "Most +1 games train a person; here you grow a dinosaur that physically breaks the map open.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Sketch Powers for Heroes",
-      "scope": "large",
-      "genre": "Action · Battlegrounds",
-      "mechanics": [
-        "Paint / create",
-        "Collect / index"
-      ],
-      "theme": "Superheroes / powers",
-      "hook": "Draw a symbol in the air and it becomes a superpower: a zigzag throws lightning, a circle makes a shield. Then take your powers into hero battles.",
-      "core_loop": [
-        "Sketch a shape with your finger or mouse",
-        "The game turns it into a power based on its shape and neatness",
-        "Fight in short hero rounds",
-        "Unlock new ink colours that add elements to your sketches"
-      ],
-      "twist": "Two players can draw the same shape but neater lines hit harder, so skill matters more than grinding.",
-      "monetization": [
-        "VIP ink pack",
-        "2x power XP",
-        "Speed pass for faster cooldowns"
-      ],
-      "retention": [
-        "Power index of discovered shapes",
-        "Daily secret shape",
-        "Ranked weekly season"
-      ],
-      "why_now": "Paint / create × Superheroes / powers is an open gap (3.71). Paint / create is up 1.91x (Paint to Get Rich 28.3K CCU, Hide In Pixels 5.4K) and Superheroes / powers is up 1.23x (Superhero Arena 14.5K). New draw games put one clear verb up front.",
-      "inspired_by": [
-        "[UPD] Paint to Get Rich 🎨",
-        "[🎨] Hide In Pixels",
-        "Superhero Arena"
-      ],
-      "differentiator": "Hero games give you a fixed moveset; here you invent moves by drawing them.",
-      "art_style": "stylized",
-      "map_style": "arena"
-    },
-    {
-      "title": "Thaw Glaciers for Pets",
-      "scope": "large",
-      "genre": "Simulation · Incremental",
-      "mechanics": [
-        "Break / mine / dig",
-        "Hatch / gacha",
-        "Collect / index"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "Huge glaciers hold frozen creatures. Chip and melt the ice with fire tools to free them, then hatch them as pets that melt faster for you.",
-      "core_loop": [
-        "Chip ice blocks with your pick",
-        "Use heat tools to melt down to the frozen egg",
-        "Thaw the egg and hatch a pet",
-        "Pets help melt bigger glaciers in colder zones"
-      ],
-      "twist": "Melting too fast with fire cracks the egg inside, so stronger tools need a steady hand.",
-      "monetization": [
-        "2x hatch luck",
-        "Auto-melt pass",
-        "Extra pet storage",
-        "VIP flame pick"
-      ],
-      "retention": [
-        "Pet index across ice zones",
-        "Limited blizzard event eggs",
-        "Rebirth into new frozen worlds"
-      ],
-      "why_now": "The Break / mine / dig + Hatch / gacha pair holds 545.3K young CCU (Break and Steal an Egg 507.9K, My Anime Mine 13.5K) and Break / mine / dig is up 3.54x. Ice / fire / elements is up 1.21x (Firefighting Sim 18.5K, Melt All The Ice! 4.1K). Hub + zones maps are rising at 1.64x.",
-      "inspired_by": [
-        "Break and Steal an Egg",
-        "[🎁UPD 6] ⛏️ My Anime Mine",
-        "[🎃]Melt All The Ice!🧊",
-        "Firefighting Sim 🚒"
-      ],
-      "differentiator": "Egg games hand you eggs; here every egg is a frozen puzzle you dig out, with fire vs ice as the core tool tension.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Bat Notes for Fans",
-      "scope": "medium",
-      "genre": "Music · Casual",
-      "mechanics": [
-        "Hit / swing / launch",
-        "Collect / index"
-      ],
-      "theme": "Music / dance",
-      "hook": "Music notes fly at you on the beat. Swing your bat in time to smash them into the crowd and win fans.",
-      "core_loop": [
-        "Pick a song",
-        "Swing on the beat as notes fly in",
-        "Perfect hits launch notes into the stands for fans",
-        "Spend fans on new bats and harder songs"
-      ],
-      "twist": "Each bat type changes the rhythm (a guitar bat hits chords, a drumstick bat hits double notes), so new bats unlock new ways to play songs.",
-      "monetization": [
-        "VIP gold bat",
-        "2x fans",
-        "Auto-swing practice pass"
-      ],
-      "retention": [
-        "Bat index",
-        "Daily featured song",
-        "Weekly leaderboard per song"
-      ],
-      "why_now": "Hit / swing / launch × Music / dance is an open gap (3.74). Hit / swing / launch is up 1.82x (+1 Stone Skipping 46.5K CCU, Ragdoll Engine 14.6K) and Music / dance is up 1.38x (Piano Rhythm Tiles 8.0K, Aura Dance Battles 7.5K).",
-      "inspired_by": [
         "Piano Rhythm Tiles",
-        "[UPD] Aura Dance Battles 🔥",
-        "[🎃] +1 Stone Skipping"
+        "[UPD] Aura Dance Battles 🔥"
       ],
-      "differentiator": "Rhythm games use taps on tiles; here every hit is a full-body swing with a launch payoff.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
+      "differentiator": "+1 games mostly train strength or speed; making the stat sound turns each click into a visible, audible shockwave.",
+      "art_style": "simulator_bright",
+      "map_style": "linear_course"
     },
     {
-      "title": "Build a Robot Pal",
-      "scope": "large",
+      "title": "Sew Capes to Get Rich",
+      "scope": "medium",
       "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Paint / create",
-        "Tycoon / base building",
-        "Collect / index"
+        "Sell / run a shop",
+        "Paint / create"
       ],
-      "theme": "Robots / mechs",
-      "hook": "Build your own robot from parts, paint it, and send it to work. A better-built robot earns more and follows you around.",
+      "theme": "Superheroes / powers",
+      "hook": "Run the tailor shop superheroes visit. Cut, sew and paint capes and suits to order, and the better the fit, the bigger the tip.",
       "core_loop": [
-        "Collect robot parts from the scrapyard",
-        "Snap them together and paint your robot",
-        "Send it to jobs on your plot for cash",
-        "Upgrade parts to unlock new jobs and abilities"
+        "Take a hero's order at the counter",
+        "Cut and sew the cape or suit",
+        "Paint on the logo and colours",
+        "Get paid and expand the shop"
       ],
-      "twist": "Robots you build can be copied by friends as blueprints, so good designs spread and their creator gets a cut.",
+      "twist": "Heroes test their gear right outside; a badly made cape rips mid-flight and they come back angry.",
       "monetization": [
-        "VIP chrome paint",
-        "2x earnings",
-        "Extra robot slots",
-        "Speed build pass"
+        "VIP fabric pack",
+        "2x tip multiplier",
+        "Extra sewing stations"
       ],
       "retention": [
-        "Part index",
-        "Daily rare part drop",
-        "Showcase pad where players vote on robots"
+        "Hero customer index",
+        "Offline sales from mannequins",
+        "Weekly villain-attack event needing quick repairs"
       ],
-      "why_now": "Paint / create × Robots / mechs is an open gap (3.73). Paint / create is up 1.91x (Paint to Get Rich 28.3K CCU) and Tycoon / base building is up 1.70x (Bunker vs Verity 39.2K). Robots / mechs is up 1.39x and \"Build a ___\" titles are up 1.18x (Build the Pyramid! 13.5K).",
+      "why_now": "Sell / run a shop × Superheroes / powers is an open gap (3.12). Sell / run a shop is up 1.55x (Sell Fries! 28.6K, Make Rugs! 6.5K), Paint / create 2.59x and Superheroes / powers 1.30x (Superhero Arena 9.8K). \"___ to Get Rich\" titles are up 2.03x.",
       "inspired_by": [
-        "[UPD] Paint to Get Rich 🎨",
-        "Bunker vs Verity",
-        "[🎃] Build the Pyramid!"
+        "Superhero Arena",
+        "Make Rugs!",
+        "🎃 Sell Fries! [Anomaly] 🍟",
+        "[UPD] Paint to Get Rich 🎨"
       ],
-      "differentiator": "Robot games are about fighting mechs; this is a cute build-and-paint companion that earns for you.",
-      "art_style": "voxel_blocky",
-      "map_style": "plot_base"
+      "differentiator": "Hero games are about fighting; this is the cozy shop behind the heroes, a new angle on a fighting theme.",
+      "art_style": "stylized",
+      "map_style": "interior"
     }
   ]
 }
