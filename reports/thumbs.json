@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T10:35:29Z",
+  "as_of": "2026-10-20T11:58:53Z",
   "baseline": {
     "icon": {
       "hues": [
@@ -501,10 +501,11 @@
     },
     "genre:Adventure": {
       "art_styles": {
+        "classic_studs": 1,
         "dark_gritty": 1,
         "low_poly": 1,
         "realistic": 1,
-        "simulator_bright": 2,
+        "simulator_bright": 1,
         "stylized": 3
       },
       "games": [
@@ -574,7 +575,7 @@
         },
         {
           "age": 563,
-          "art_style": "simulator_bright",
+          "art_style": "classic_studs",
           "ccu": 5284,
           "icon": "7488668004_i.jpg",
           "id": "7488668004",
@@ -1865,10 +1866,11 @@
     },
     "genre:Party & Casual": {
       "art_styles": {
-        "anime": 2,
+        "anime": 3,
         "classic_studs": 1,
         "dark_gritty": 1,
-        "simulator_bright": 4
+        "simulator_bright": 4,
+        "stylized": 1
       },
       "games": [
         {
@@ -1953,16 +1955,16 @@
         },
         {
           "age": 119,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 4812,
           "icon": "10381189313_i.jpg",
           "id": "10381189313",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "10381189313_m0.jpg"
           ],
           "name": "[\ud83c\udfa8] Catch the Artist!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -1983,7 +1985,7 @@
         },
         {
           "age": 51,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4069,
           "icon": "10764533320_i.jpg",
           "id": "10764533320",
@@ -1994,7 +1996,7 @@
             "10764533320_m2.jpg"
           ],
           "name": "[UPD] Aura Dance Battles \ud83d\udd25",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -2161,9 +2163,8 @@
       "label": "Party & Casual",
       "map_styles": {
         "arena": 3,
-        "lobby_rounds": 5,
-        "plot_base": 1,
-        "zone_progression": 1
+        "lobby_rounds": 6,
+        "plot_base": 1
       },
       "media": {
         "hues": [
@@ -3478,8 +3479,8 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 3,
-        "simulator_bright": 3,
-        "stylized": 2,
+        "simulator_bright": 2,
+        "stylized": 3,
         "voxel_blocky": 1
       },
       "games": [
@@ -3596,7 +3597,7 @@
         },
         {
           "age": 184,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 7609,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -5032,7 +5033,8 @@
       "art_styles": {
         "anime": 2,
         "realistic": 1,
-        "stylized": 6
+        "simulator_bright": 1,
+        "stylized": 5
       },
       "games": [
         {
@@ -5117,7 +5119,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
@@ -5545,12 +5547,12 @@
           "ccu": 5645,
           "icon": "3183403065_i.jpg",
           "id": "3183403065",
-          "map_style": "",
+          "map_style": "tower_defense_lanes",
           "media": [
             "3183403065_m0.jpg"
           ],
           "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -5717,7 +5719,7 @@
       "map_styles": {
         "open_world": 4,
         "plot_base": 1,
-        "tower_defense_lanes": 5
+        "tower_defense_lanes": 6
       },
       "media": {
         "hues": [
@@ -7495,49 +7497,49 @@
       "members_hash": "544b3b6b36",
       "type": "mechanic",
       "vision": {
-        "art_style": "simulator_bright about 9/12; Adopt Me/Dandy's stylized cartoon in the rest",
+        "art_style": "Bright simulator in 9/12; Adopt Me and Dandy's World are stylized cartoon.",
         "avoid": [
-          "Placeholder hourglass icons"
+          "Grid-of-items icons with no hero"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: avatar grabbing a glowing rare egg mid-action. Thumbnail: avatar left, giant secret creature right with '$X/s'.",
+        "date": "2026-10-20",
+        "direction": "Icon: noob grabbing a glowing secret egg with a giant creature looming, bright sky. Thumbnail: rarity tag plus $967M/s style number and a YOU arrow.",
         "do": [
-          "Show the rare creature bigger than the avatar",
-          "Add a SECRET or $/s label",
-          "Use water or lava splashes for energy",
-          "Add a red exclamation mark"
+          "Glowing rare collectible beside the player",
+          "SECRET / rarity tag in rainbow text",
+          "Giant creature scale contrast",
+          "A red YOU arrow"
         ],
         "icon_patterns": [
           {
+            "count": "8/12",
+            "pattern": "Noob avatar with a glowing egg/pet/rare item"
+          },
+          {
             "count": "7/12",
-            "pattern": "Classic avatar holding or chasing a collectible"
+            "pattern": "Bright cyan/green simulator scene"
           },
           {
-            "count": "6/12",
-            "pattern": "Rare egg or creature as hero"
-          },
-          {
-            "count": "2/12",
-            "pattern": "Hourglass NOW teaser icons"
+            "count": "4/12",
+            "pattern": "Huge $/s number or SECRET tag"
           }
         ],
-        "members_hash": "329f87f47a",
-        "newcomer_shift": "NEW games combine collecting with a movement verb (swim, bike, fish) and boss creatures",
+        "members_hash": "544b3b6b36",
+        "newcomer_shift": "NEW games add a rival or boss chasing the player (BOSS FIGHT, steal threat) and a YOU arrow.",
         "source": "vision",
-        "summary": "Avatar beside a big rare creature or egg, with rarity or $/s text and bright simulator colour.",
-        "text_usage": "SECRET, rarity and $/s labels; titles only on big brands",
+        "summary": "Collect games show the noob with a rare, glowing collectible and a huge price-per-second.",
+        "text_usage": "Rarity words and giant $/s numbers in rainbow/green outlined text.",
         "thumbnail_patterns": [
           {
-            "count": "4/12",
-            "pattern": "Huge $/s or SECRET label"
+            "count": "5/12",
+            "pattern": "Rarity tag text (SECRET, TREX EGG, Mythic) with money rate"
           },
           {
             "count": "4/12",
-            "pattern": "Water/lava with creature emerging"
+            "pattern": "Red arrow or YOU marker pointing at the player or prize"
           },
           {
-            "count": "4/12",
-            "pattern": "Red '!' or arrow at the prize"
+            "count": "5/12",
+            "pattern": "Giant creature next to the small player"
           }
         ]
       }
@@ -7916,7 +7918,7 @@
     "mechanic:dice_cards": {
       "art_styles": {
         "anime": 3,
-        "simulator_bright": 1,
+        "simulator_bright": 2,
         "stylized": 1
       },
       "games": [
@@ -7969,7 +7971,7 @@
         },
         {
           "age": 40,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 4769,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -7980,7 +7982,7 @@
             "10765938934_m2.jpg"
           ],
           "name": "[\ud83c\udf89UPDATE] Roll A Stickman!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -8762,8 +8764,8 @@
       "art_styles": {
         "classic_studs": 1,
         "dark_gritty": 2,
-        "simulator_bright": 4,
-        "stylized": 1
+        "meme_chaotic": 1,
+        "simulator_bright": 4
       },
       "games": [
         {
@@ -8830,7 +8832,7 @@
         },
         {
           "age": 2072,
-          "art_style": "stylized",
+          "art_style": "meme_chaotic",
           "ccu": 5187,
           "icon": "2380077519_i.jpg",
           "id": "2380077519",
@@ -9162,8 +9164,9 @@
       "art_styles": {
         "anime": 4,
         "realistic": 1,
-        "simulator_bright": 3,
-        "stylized": 4
+        "simulator_bright": 2,
+        "stylized": 4,
+        "voxel_blocky": 1
       },
       "games": [
         {
@@ -9326,7 +9329,7 @@
         },
         {
           "age": 60,
-          "art_style": "simulator_bright",
+          "art_style": "voxel_blocky",
           "ccu": 11942,
           "icon": "10747719434_i.jpg",
           "id": "10747719434",
@@ -9676,7 +9679,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -9867,9 +9870,9 @@
       "label": "Fishing",
       "map_styles": {
         "arena": 1,
-        "open_world": 6,
+        "open_world": 5,
         "plot_base": 1,
-        "zone_progression": 4
+        "zone_progression": 5
       },
       "media": {
         "hues": [
@@ -10426,7 +10429,7 @@
         "anime": 1,
         "dark_gritty": 1,
         "realistic": 2,
-        "simulator_bright": 5,
+        "simulator_bright": 6,
         "stylized": 1
       },
       "games": [
@@ -10500,7 +10503,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -10543,7 +10546,7 @@
         },
         {
           "age": 23,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5599,
           "icon": "10768292556_i.jpg",
           "id": "10768292556",
@@ -10554,7 +10557,7 @@
             "10768292556_m2.jpg"
           ],
           "name": "[\ud83c\udf31] Grow a Plant",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -10718,9 +10721,9 @@
       "map_styles": {
         "arena": 1,
         "interior": 1,
-        "open_world": 3,
+        "open_world": 2,
         "plot_base": 6,
-        "zone_progression": 1
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -10819,49 +10822,48 @@
       "members_hash": "a2a6486adc",
       "type": "mechanic",
       "vision": {
-        "art_style": "simulator_bright about 7/12; dark/realistic creature games in the rest",
+        "art_style": "Bright simulator 7/12, some realistic creature renders.",
         "avoid": [
-          "Moody dark palettes for a casual farm"
+          "Tiny crop rows"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: one giant glowing crop with the avatar small beside it. Thumbnail: seedling left, monster crop right with $/s labels.",
+        "date": "2026-10-20",
+        "direction": "Icon: a giant glowing crop or creature dwarfing the player. Thumbnail: seedling-to-giant split with $/s labels.",
         "do": [
-          "Show the crop or creature growing from small to huge",
-          "Add $30/s -> $399M/s labels",
-          "Use a red arrow for growth",
-          "Bright green field"
+          "Make the grown thing huge vs the player",
+          "Show $30/s -> $399M/s growth",
+          "Bright green ground"
         ],
         "icon_patterns": [
           {
             "count": "7/12",
-            "pattern": "Big creature or plant as hero"
+            "pattern": "One oversized grown/captured thing dominates"
           },
           {
-            "count": "3/12",
-            "pattern": "$/s or multiplier text"
+            "count": "4/12",
+            "pattern": "Halloween orange/purple palette"
           },
           {
-            "count": "3/12",
-            "pattern": "Halloween pumpkins"
+            "count": "2/12",
+            "pattern": "Money rate text on icon"
           }
         ],
-        "members_hash": "a00bf503bf",
-        "newcomer_shift": "NEW games pair growing with defending or theft (build & defend, steal plants) and with dinosaurs/airlines",
+        "members_hash": "a2a6486adc",
+        "newcomer_shift": "NEW games swap crops for eggs/creatures and add defend/steal threats.",
         "source": "vision",
-        "summary": "Saturated simulator art of a growing plant or creature with a $/s jump, plus a few cinematic creature shots.",
-        "text_usage": "$/s numbers and short captions like GROW OFFLINE, BUILD & DEFEND",
+        "summary": "Grow/farm leaders show one giant grown thing (pumpkin, plant, creature) next to a tiny player with a $/s number.",
+        "text_usage": "Short promise captions and $/s numbers.",
         "thumbnail_patterns": [
           {
             "count": "3/12",
-            "pattern": "Small-to-huge growth with $/s labels"
-          },
-          {
-            "count": "5/12",
-            "pattern": "Monster/creature filling the frame"
+            "pattern": "Small -> giant growth split with $/s numbers"
           },
           {
             "count": "3/12",
-            "pattern": "Pointing hand or arrow"
+            "pattern": "Underwater or creature capture scenes"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Big bold caption (GROW OFFLINE, BUILD & DEFEND)"
           }
         ]
       }
@@ -11426,7 +11428,7 @@
           "ccu": 5580,
           "icon": "10766687809_i.jpg",
           "id": "10766687809",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10766687809_m0.jpg",
             "10766687809_m1.jpg",
@@ -11569,10 +11571,10 @@
       "label": "Hit / swing / launch",
       "map_styles": {
         "arena": 4,
-        "linear_course": 2,
+        "linear_course": 3,
         "open_world": 2,
         "plot_base": 1,
-        "zone_progression": 3
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -12128,49 +12130,44 @@
       "members_hash": "a0f06c0f63",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mixed: realistic about 4/12, stylized cartoon about 4/12, dark_gritty about 3/12",
+        "art_style": "Mixed: realistic lighting 5/12, stylized cute 4/12, dark gritty 3/12.",
         "avoid": [
-          "Static vehicles with no action"
+          "Wide static building exteriors"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: worker with a shocked face mid-task. Thumbnail: first-person hands doing the job while chaos happens behind.",
+        "date": "2026-10-20",
+        "direction": "Icon: a cute mascot or worker mid-task with the job tool, title in bubbly type. Thumbnail: first-person tool view with the task and a two-word hook.",
         "do": [
-          "Show the job action first-person",
-          "Add a panicked or funny face",
-          "Short caption naming the job",
-          "Clear warm lighting"
+          "Show the job tool mid-use in first person or close-up",
+          "Pick one strong tone: cute pastel or anomaly-creepy",
+          "Add a short imperative hook"
         ],
         "icon_patterns": [
           {
-            "count": "6/12",
-            "pattern": "Character mid-task (cooking, firefighting, packing)"
-          },
-          {
             "count": "5/12",
-            "pattern": "Brand logo text on icon"
+            "pattern": "Character mid-job (flipping burgers, hosing fire, packing)"
           },
           {
-            "count": "4/12",
-            "pattern": "Dark or horror palette"
+            "count": "7/12",
+            "pattern": "Logo or title text on icon"
+          },
+          {
+            "count": "6/12",
+            "pattern": "Dark/night scenes"
           }
         ],
-        "members_hash": "ab3e253651",
-        "newcomer_shift": "NEW games go first-person (hose, hands) and lean on comedy or horror twists",
+        "members_hash": "a0f06c0f63",
+        "newcomer_shift": "NEW games use cute pastel mascots or meme-comic art instead of realistic shots.",
         "source": "vision",
-        "summary": "Character-led scenes of the job in progress, mixing bright cartoon and realistic or horror tones.",
-        "text_usage": "Logos and short captions (PACK WITH CARE!, DON'T GET FIRED AT WORK)",
+        "summary": "Job games show the workplace in action with a character mid-task; tone ranges from cute to creepy.",
+        "text_usage": "Titles as logos; new games add a short hook (PACK WITH CARE!, DON'T GET FIRED AT WORK).",
         "thumbnail_patterns": [
           {
-            "count": "3/12",
-            "pattern": "First-person or over-the-shoulder action of the job"
+            "count": "5/12",
+            "pattern": "Workplace scene with the job tool in the foreground"
           },
           {
             "count": "4/12",
-            "pattern": "Comic expressions on coworkers/customers"
-          },
-          {
-            "count": "3/12",
-            "pattern": "Fire or chaos elements"
+            "pattern": "Horror/anomaly twist (creepy coworkers, dark corridors)"
           }
         ]
       }
@@ -12187,7 +12184,7 @@
           "ccu": 4233,
           "icon": "10552240401_i.jpg",
           "id": "10552240401",
-          "map_style": "arena",
+          "map_style": "zone_progression",
           "media": [
             "10552240401_m0.jpg",
             "10552240401_m1.jpg",
@@ -12421,9 +12418,9 @@
       "key": "merge",
       "label": "Merge / fuse",
       "map_styles": {
-        "arena": 2,
+        "arena": 1,
         "plot_base": 4,
-        "zone_progression": 3
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -12976,7 +12973,7 @@
       "art_styles": {
         "realistic": 2,
         "simulator_bright": 3,
-        "stylized": 2
+        "stylized": 3
       },
       "games": [
         {
@@ -13045,16 +13042,16 @@
         },
         {
           "age": 119,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 4812,
           "icon": "10381189313_i.jpg",
           "id": "10381189313",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "10381189313_m0.jpg"
           ],
           "name": "[\ud83c\udfa8] Catch the Artist!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -13271,11 +13268,11 @@
       "map_styles": {
         "arena": 1,
         "linear_course": 1,
-        "lobby_rounds": 1,
+        "lobby_rounds": 2,
         "open_world": 2,
         "plot_base": 2,
         "town_roleplay": 2,
-        "zone_progression": 2
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -13377,50 +13374,50 @@
       "members_hash": "2a1ac7e69a",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mixed: simulator_bright about 5/12, realistic vehicle/house sims about 4/12, anime/kawaii minority",
+        "art_style": "Bright simulator cartoon in about 7/12; a few realistic (driving, renovate) outliers.",
         "avoid": [
-          "Wide realistic scenery with no visible creating",
-          "Cluttered UI"
+          "Dark, muddy scenes",
+          "Small creations lost in a wide shot"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: a hand holding a brush finishing a bright, funny painting on an easel. Thumbnail: blank canvas left, finished piece right with a red arrow and a short 'PAINT IT!' caption.",
+        "date": "2026-10-20",
+        "direction": "Icon: the finished artwork filling the tile with a cartoon hand still holding the brush, on a bright cyan background. Thumbnail: plain-to-finished split with a red arrow and a one-word caption like PAINT.",
         "do": [
-          "Make the finished creation the biggest thing on screen",
-          "Show a hand or brush mid-stroke",
-          "Use a before -> after arrow",
-          "Keep the caption to a 2-3 word verb phrase"
+          "Show the finished creation large in the center",
+          "Include a hand or tool mid-stroke",
+          "Use a before -> after split with a red arrow on the thumbnail",
+          "One short verb caption in heavy outline type"
         ],
         "icon_patterns": [
           {
-            "count": "6/12",
-            "pattern": "The object being made is the hero (canvas, pancake, pixel art, house)"
+            "count": "5/12",
+            "pattern": "The creation itself (canvas, pancake, pixel art, face) fills the frame"
           },
           {
-            "count": "4/12",
-            "pattern": "First-person hand or tool in frame"
+            "count": "6/12",
+            "pattern": "Hand or tool caught mid-stroke (brush, pen, bottle, pointer)"
           },
           {
             "count": "5/12",
-            "pattern": "Bright flat colour background (blue, purple, green)"
+            "pattern": "Bright saturated cyan/blue sky backgrounds"
           }
         ],
-        "members_hash": "b890250ce3",
-        "newcomer_shift": "NEW games lean on face/makeup transformations, pixel-art grids and kawaii characters with before/after arrows",
+        "members_hash": "2a1ac7e69a",
+        "newcomer_shift": "NEW games lean on transformation reveals (bald->glam, plain->pixel frog) and soft pastel or purple glows instead of green-grass scenes.",
         "source": "vision",
-        "summary": "Hands-on creation shots: a first-person hand or avatar mid-stroke on a canvas, with before/after framing.",
-        "text_usage": "Short verb captions and YOU labels; prices like +$5,000 used once or twice",
+        "summary": "Paint/create leaders show the finished creation up close with a hand or brush mid-action, often with a before/after arrow.",
+        "text_usage": "Short all-caps verb captions (PAINT, DRAW) on thumbnails; icons mostly textless.",
         "thumbnail_patterns": [
           {
             "count": "4/12",
-            "pattern": "Before/after split or arrow showing the transformation"
+            "pattern": "Before -> after transformation with a red arrow or split"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Big bold top caption (PAINT ANYTHING!, DRAW:, PAINT)"
           },
           {
             "count": "3/12",
-            "pattern": "Big imperative caption (PAINT ANYTHING!, DRAW A BLACK HOLE!)"
-          },
-          {
-            "count": "5/12",
-            "pattern": "Tool or hand actively applying paint/sauce"
+            "pattern": "Classic blocky avatars at desks or easels"
           }
         ]
       }
@@ -14415,50 +14412,50 @@
       "members_hash": "38ca8c8a43",
       "type": "mechanic",
       "vision": {
-        "art_style": "simulator_bright almost all (11/12); one anime outlier",
+        "art_style": "Bright simulator in 11/12; one anime outlier.",
         "avoid": [
-          "Dark palettes",
-          "Anime art unless the game is anime"
+          "Dark backgrounds",
+          "Text-light thumbnails"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: avatar doing the action with +1s bursting off. Thumbnail: weak version '+1' left, maxed version '+999T' right.",
+        "date": "2026-10-20",
+        "direction": "Icon: a noob mid-action surrounded by '+1' popups and a glowing prize item at the side on a bright green/cyan scene. Thumbnail: left weak '+1' state, right huge '999M' powered-up state with a red arrow.",
         "do": [
-          "Scatter 5-8 '+1' popups around the avatar",
-          "Split the frame weak vs strong",
-          "End on a huge suffix number",
-          "Use a bright, saturated sky"
+          "Scatter 5+ '+1' labels with flex-arm icons",
+          "Show a noob straining at the action",
+          "Put a glowing prize egg/item on the side",
+          "Use a 1 -> 999M split on the thumbnail"
         ],
         "icon_patterns": [
           {
-            "count": "9/12",
-            "pattern": "Floating '+1' text around the avatar"
+            "count": "10/12",
+            "pattern": "Many floating '+1' labels around the character"
           },
           {
             "count": "9/12",
-            "pattern": "Classic bacon-hair avatar"
+            "pattern": "Classic noob/bacon avatar with determined face"
           },
           {
-            "count": "7/12",
-            "pattern": "Bright green/blue simulator backgrounds"
+            "count": "6/12",
+            "pattern": "Bright green grass and cyan sky"
           }
         ],
-        "members_hash": "4c5cad5b37",
-        "newcomer_shift": "NEW games add a themed world (karate belts, webs, rock lifting) and three-panel progression strips",
+        "members_hash": "38ca8c8a43",
+        "newcomer_shift": "NEW games add a prize target (Dragon Egg, Ruby, forged blade) as the goal and a 'You' arrow.",
         "source": "vision",
-        "summary": "Classic avatar surrounded by many '+1' popups, often with a tiny-to-huge split.",
-        "text_usage": "Dense '+1' popups in white with black outline plus one giant suffix number (M, T, Qa)",
+        "summary": "+1 games are a wall of floating '+1' numbers around a classic noob avatar straining at the action.",
+        "text_usage": "+1 everywhere, plus a giant end-number (999M, $978Qa) on thumbnails.",
         "thumbnail_patterns": [
           {
-            "count": "5/12",
-            "pattern": "Split before/after: +1 left, +7M/999T right"
+            "count": "4/12",
+            "pattern": "Weak -> strong progression split (1 -> 999M, +1 -> +7M)"
           },
           {
             "count": "5/12",
-            "pattern": "Muscle/strength or weapon power growth shown"
+            "pattern": "Huge number text with currency or multipliers"
           },
           {
-            "count": "3/12",
-            "pattern": "Glowing rare egg or item as reward"
+            "count": "6/12",
+            "pattern": "Glowing loot (egg, sword, gem) next to the player"
           }
         ]
       }
@@ -14896,8 +14893,8 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 5,
-        "simulator_bright": 1,
-        "stylized": 5
+        "simulator_bright": 2,
+        "stylized": 4
       },
       "games": [
         {
@@ -15030,7 +15027,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
@@ -15349,10 +15346,10 @@
     },
     "mechanic:rng_roll": {
       "art_styles": {
-        "anime": 3,
+        "anime": 4,
         "dark_gritty": 1,
         "meme_chaotic": 1,
-        "simulator_bright": 3,
+        "simulator_bright": 4,
         "stylized": 1
       },
       "games": [
@@ -15482,7 +15479,7 @@
         },
         {
           "age": 40,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 4769,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -15493,12 +15490,12 @@
             "10765938934_m2.jpg"
           ],
           "name": "[\ud83c\udf89UPDATE] Roll A Stickman!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
           "age": 51,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4069,
           "icon": "10764533320_i.jpg",
           "id": "10764533320",
@@ -15509,7 +15506,7 @@
             "10764533320_m2.jpg"
           ],
           "name": "[UPD] Aura Dance Battles \ud83d\udd25",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -16592,50 +16589,50 @@
       "members_hash": "66fcf1aa21",
       "type": "mechanic",
       "vision": {
-        "art_style": "Stylized, soft-lit 'satisfying' renders about 7/12; simulator_bright and classic Roblox shopkeepers in the rest",
+        "art_style": "Mix of bright simulator (6/12) and clean stylized product renders (5/12).",
         "avoid": [
-          "Wide empty shop interiors",
-          "Teaser hourglass icons at launch"
+          "Busy shop interiors where the product is small",
+          "Generic avatar-only icons"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: one appealing product close-up being finished by a tool. Thumbnail: messy/broken item left, clean finished item right on a worktable with a short caption.",
+        "date": "2026-10-20",
+        "direction": "Icon: one oversized, glossy product with a tool caught mid-action and the title in outlined type. Thumbnail: a broken-to-fixed or raw-to-finished split of the product with a short satisfying-promise caption.",
         "do": [
-          "Fill the frame with the product mid-transformation",
-          "Use a hand or tool for the satisfying action",
-          "One short caption with an exclamation mark",
-          "Warm, soft lighting on a tabletop"
+          "Make the product the biggest thing on the icon",
+          "Show a tool touching the product for a satisfying moment",
+          "Use before/after for repair or restore loops",
+          "Keep backgrounds clean and bright"
         ],
         "icon_patterns": [
           {
-            "count": "7/12",
-            "pattern": "The product is the hero (fries, rug, phone, pottery, snacks)"
+            "count": "8/12",
+            "pattern": "The product is the hero (fries, rug, phone, coin, star weld, basket)"
           },
           {
-            "count": "3/12",
-            "pattern": "Hourglass 'NOW' teaser placeholder icons"
+            "count": "5/12",
+            "pattern": "Game name in bold outlined text on icon"
           },
           {
-            "count": "6/12",
-            "pattern": "Warm, bright stylized lighting"
+            "count": "5/12",
+            "pattern": "Halloween dressing (pumpkins, witch hat, dark sky)"
           }
         ],
-        "members_hash": "acea615790",
-        "newcomer_shift": "NEW games drop the avatar and shop entirely and show only the satisfying craft action (cleaning, shaping, fixing) up close",
+        "members_hash": "66fcf1aa21",
+        "newcomer_shift": "NEW games drop avatars entirely and show an ASMR-style object close-up (cracked phone, rusty coin, rainbow weld).",
         "source": "vision",
-        "summary": "Close, satisfying shots of the product being made or sold, often with a before/after or a stocked counter.",
-        "text_usage": "One short exclamatory caption; few numbers",
+        "summary": "Shop games sell the product: the item being made or sold dominates, often in a satisfying close-up.",
+        "text_usage": "Title as logo text on icon; thumbnails add a short promise (SATISFYING LASER CLEANING!, FIX MY PHONE!).",
         "thumbnail_patterns": [
           {
-            "count": "6/12",
-            "pattern": "Top-down or close-up of the product on a work surface"
-          },
-          {
             "count": "4/12",
-            "pattern": "Bold short caption (FIX MY PHONE!, SHAPE CLAY, DAY 201)"
+            "pattern": "Satisfying craft close-up (trimming rug, laser cleaning, weld) with a tool"
           },
           {
             "count": "3/12",
-            "pattern": "Before/after or arrow transformation"
+            "pattern": "Before/after repair with arrow"
+          },
+          {
+            "count": "5/12",
+            "pattern": "Clean bright gradient or table-top background"
           }
         ]
       }
@@ -17219,7 +17216,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -17349,9 +17346,8 @@
       "map_styles": {
         "arena": 1,
         "linear_course": 1,
-        "open_world": 1,
         "plot_base": 8,
-        "zone_progression": 1
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -17646,7 +17642,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -17807,8 +17803,9 @@
       "map_styles": {
         "interior": 2,
         "lobby_rounds": 3,
-        "open_world": 5,
-        "plot_base": 2
+        "open_world": 4,
+        "plot_base": 2,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -17916,7 +17913,7 @@
     },
     "mechanic:tower_defense": {
       "art_styles": {
-        "anime": 2,
+        "anime": 3,
         "dark_gritty": 1,
         "realistic": 1,
         "simulator_bright": 3
@@ -18034,18 +18031,18 @@
         },
         {
           "age": 826,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4184,
           "icon": "6272727021_i.jpg",
           "id": "6272727021",
-          "map_style": "tower_defense_lanes",
+          "map_style": "arena",
           "media": [
             "6272727021_m0.jpg",
             "6272727021_m1.jpg",
             "6272727021_m2.jpg"
           ],
           "name": "[\ud83c\udf89RELEASE\ud83c\udf89] Undertale Adventures X",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -18196,9 +18193,9 @@
       "key": "tower_defense",
       "label": "Tower defense",
       "map_styles": {
-        "arena": 1,
+        "arena": 2,
         "plot_base": 2,
-        "tower_defense_lanes": 7,
+        "tower_defense_lanes": 6,
         "zone_progression": 1
       },
       "media": {
@@ -18302,49 +18299,45 @@
       "members_hash": "b1e1e0df11",
       "type": "mechanic",
       "vision": {
-        "art_style": "Anime and dark dramatic renders in about 6/11; bright voxel/simulator in the rest.",
+        "art_style": "Dark dramatic or anime (7/11); bright simulator only in newer games.",
         "avoid": [
-          "Plain logo-only icons",
-          "Muddy dark images for a casual game"
+          "Many tiny units",
+          "Flat lighting with no glow"
         ],
-        "date": "2026-10-18",
-        "direction": "Icon: one glowing hero unit blasting enemies. Thumbnail: a three-panel wave progression showing the defense growing.",
+        "date": "2026-10-20",
+        "direction": "Icon: the strongest defender towering over a lane with glowing VFX on a dark or vivid backdrop. Thumbnail: a Wave 1 -> Wave 99 upgrade strip showing the defense growing.",
         "do": [
-          "Show the defense mid-fight with bright VFX",
-          "Use a Wave 1 \u2192 Wave 99 upgrade strip",
-          "Make one unit the hero, big and glowing"
+          "Feature one hero tower or boss large",
+          "Add laser/fire VFX",
+          "For a casual TD, show Wave 1 -> Wave 99 tower growth"
         ],
         "icon_patterns": [
           {
             "count": "7/11",
-            "pattern": "Dramatic character or unit with glowing effects"
+            "pattern": "One big menacing unit or boss filling the frame"
           },
           {
             "count": "6/11",
-            "pattern": "Dark/purple/red night palette"
+            "pattern": "Logo text on icon"
           },
           {
-            "count": "4/11",
-            "pattern": "Logo text on icon"
+            "count": "7/11",
+            "pattern": "Dark backgrounds with red/purple glow"
           }
         ],
-        "members_hash": "a1fb04c9cd",
-        "newcomer_shift": "NEW games are bright and simple: a map, a treehouse growing across waves, or a voxel creature in daylight.",
+        "members_hash": "b1e1e0df11",
+        "newcomer_shift": "NEW games go bright and simple: wave 1 -> wave 99 tower upgrade splits, maps, blocky pastel lanes.",
         "source": "vision",
-        "summary": "Leaders use dark, dramatic, VFX-heavy anime or monster art; NEW ones go bright and show wave progression.",
-        "text_usage": "Mostly logos; NEW games add short callouts (SUMMON TITANS!, Wave 1/15/99).",
+        "summary": "TD leaders use dramatic dark, high-contrast hero art of the strongest unit, usually with the logo.",
+        "text_usage": "Logo-style titles; little other text.",
         "thumbnail_patterns": [
           {
             "count": "6/11",
-            "pattern": "Units mid-attack with lasers/energy VFX"
+            "pattern": "Epic battle art with VFX (fire, lasers, energy)"
           },
           {
             "count": "3/11",
-            "pattern": "Halloween pumpkins and moon"
-          },
-          {
-            "count": "1/11",
-            "pattern": "Wave 1 \u2192 Wave 99 progression split"
+            "pattern": "Anime character art"
           }
         ]
       }
@@ -18701,9 +18694,9 @@
     "mechanic:tycoon_build": {
       "art_styles": {
         "realistic": 2,
-        "simulator_bright": 7,
+        "simulator_bright": 6,
         "stylized": 2,
-        "voxel_blocky": 1
+        "voxel_blocky": 2
       },
       "games": [
         {
@@ -18820,7 +18813,7 @@
         },
         {
           "age": 60,
-          "art_style": "simulator_bright",
+          "art_style": "voxel_blocky",
           "ccu": 11942,
           "icon": "10747719434_i.jpg",
           "id": "10747719434",
@@ -19102,49 +19095,50 @@
       "members_hash": "03e0d5f2b1",
       "type": "mechanic",
       "vision": {
-        "art_style": "simulator_bright about 8/12; realistic for driving/military about 3/12",
+        "art_style": "Bright simulator in 8/12; a few realistic (driving, military) leaders.",
         "avoid": [
-          "Plain logo-only icons for a new game"
+          "Wide empty base shots",
+          "Realistic grey palettes for a casual tycoon"
         ],
-        "date": "2026-10-19",
-        "direction": "Icon: avatar proudly standing on a half-built structure with one shiny upgrade. Thumbnail: noob base left, maxed base right with a $/s number.",
+        "date": "2026-10-20",
+        "direction": "Icon: a noob hugging an oversized, glowing build target on bright cyan. Thumbnail: noob base vs pro base split with a $/s number on each side.",
         "do": [
-          "Show the base in cross-section so progress is visible",
-          "Put a threat or big reward next to it",
-          "Use bright sky and grass",
-          "Keep text to one label"
+          "Center one big payoff object",
+          "Add a money-per-second number",
+          "Use noob vs pro split for progression",
+          "Keep the sky bright cyan"
         ],
         "icon_patterns": [
           {
-            "count": "7/12",
-            "pattern": "Classic avatar front and centre with an expressive face"
-          },
-          {
             "count": "6/12",
-            "pattern": "Bright blue sky simulator backgrounds"
+            "pattern": "Noob avatar holding or reaching for the payoff item"
           },
           {
             "count": "5/12",
-            "pattern": "A built structure (tower, bunker, pyramid, raft) shown"
-          }
-        ],
-        "members_hash": "67896a3d60",
-        "newcomer_shift": "NEW games use food or odd objects as the hero (butter, giant gorilla, mosquito) and noob-vs-pro splits",
-        "source": "vision",
-        "summary": "Mixed set: bright simulator tycoons with the avatar beside a built base, plus realistic vehicle/military titles.",
-        "text_usage": "Light: brand logos for the big titles, NOOB/PRO or rarity labels for simulators",
-        "thumbnail_patterns": [
-          {
-            "count": "4/12",
-            "pattern": "Cross-section or side view of the base being built"
-          },
-          {
-            "count": "2/12",
-            "pattern": "NOOB vs PRO or progress split"
+            "pattern": "Bright cyan sky background"
           },
           {
             "count": "3/12",
-            "pattern": "Giant monster or threat looming over the build"
+            "pattern": "Halloween orange/purple palette"
+          }
+        ],
+        "members_hash": "03e0d5f2b1",
+        "newcomer_shift": "NEW games feature a single absurd object (stick of butter, phone, rainbow egg) as the build target.",
+        "source": "vision",
+        "summary": "Tycoon builders show the player next to a big, glowing payoff (egg, gem, device, monster) with money numbers.",
+        "text_usage": "Money numbers and NOOB/PRO labels; short build promises (BUILD EVERY DEVICE).",
+        "thumbnail_patterns": [
+          {
+            "count": "3/12",
+            "pattern": "Noob vs pro / cheap vs rich split"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Money rate text ($1B, 10,000/s, +$5,000)"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Splash or explosion effects behind the hero item"
           }
         ]
       }
@@ -24385,8 +24379,10 @@
     },
     "niche:rng": {
       "art_styles": {
-        "anime": 3,
+        "anime": 4,
+        "dark_gritty": 1,
         "meme_chaotic": 1,
+        "simulator_bright": 1,
         "stylized": 1
       },
       "games": [
@@ -24438,7 +24434,7 @@
         },
         {
           "age": 40,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 4769,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -24449,22 +24445,22 @@
             "10765938934_m2.jpg"
           ],
           "name": "[\ud83c\udf89UPDATE] Roll A Stickman!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
           "age": 128,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 4540,
           "icon": "10330158837_i.jpg",
           "id": "10330158837",
-          "map_style": "zone_progression",
+          "map_style": "arena",
           "media": [
             "10330158837_m0.jpg",
             "10330158837_m1.jpg"
           ],
           "name": "[\ud83c\udf83] Alkedion PVP",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -24473,7 +24469,7 @@
           "ccu": 4233,
           "icon": "10552240401_i.jpg",
           "id": "10552240401",
-          "map_style": "arena",
+          "map_style": "zone_progression",
           "media": [
             "10552240401_m0.jpg",
             "10552240401_m1.jpg",
@@ -24485,7 +24481,7 @@
         },
         {
           "age": 51,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4069,
           "icon": "10764533320_i.jpg",
           "id": "10764533320",
@@ -24496,7 +24492,7 @@
             "10764533320_m2.jpg"
           ],
           "name": "[UPD] Aura Dance Battles \ud83d\udd25",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -25995,8 +25991,8 @@
     "niche:sports": {
       "art_styles": {
         "anime": 2,
-        "simulator_bright": 1,
-        "stylized": 6
+        "simulator_bright": 2,
+        "stylized": 5
       },
       "games": [
         {
@@ -26081,7 +26077,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
@@ -31543,8 +31539,8 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 2,
-        "simulator_bright": 3,
-        "stylized": 2,
+        "simulator_bright": 2,
+        "stylized": 3,
         "voxel_blocky": 1
       },
       "games": [
@@ -31661,7 +31657,7 @@
         },
         {
           "age": 184,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 7609,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -34925,8 +34921,9 @@
     },
     "subgenre:Minigame": {
       "art_styles": {
-        "anime": 2,
-        "dark_gritty": 1
+        "anime": 3,
+        "dark_gritty": 1,
+        "stylized": 1
       },
       "games": [
         {
@@ -34947,21 +34944,21 @@
         },
         {
           "age": 119,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 4812,
           "icon": "10381189313_i.jpg",
           "id": "10381189313",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "10381189313_m0.jpg"
           ],
           "name": "[\ud83c\udfa8] Catch the Artist!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
           "age": 51,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4069,
           "icon": "10764533320_i.jpg",
           "id": "10764533320",
@@ -34972,7 +34969,7 @@
             "10764533320_m2.jpg"
           ],
           "name": "[UPD] Aura Dance Battles \ud83d\udd25",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -35218,9 +35215,8 @@
       "label": "Minigame",
       "map_styles": {
         "arena": 1,
-        "lobby_rounds": 4,
-        "plot_base": 3,
-        "zone_progression": 1
+        "lobby_rounds": 5,
+        "plot_base": 3
       },
       "media": {
         "hues": [
@@ -35327,7 +35323,8 @@
     "subgenre:Morph Roleplay": {
       "art_styles": {
         "anime": 1,
-        "dark_gritty": 1
+        "dark_gritty": 1,
+        "meme_chaotic": 1
       },
       "games": [
         {
@@ -35348,7 +35345,7 @@
         },
         {
           "age": 247,
-          "art_style": "",
+          "art_style": "meme_chaotic",
           "ccu": 4506,
           "icon": "9735583968_i.jpg",
           "id": "9735583968",
@@ -35359,7 +35356,7 @@
             "9735583968_m2.jpg"
           ],
           "name": "[UPD] SCP MORPH",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -36557,8 +36554,8 @@
     },
     "subgenre:Open World Action": {
       "art_styles": {
-        "classic_studs": 2,
-        "realistic": 5,
+        "classic_studs": 3,
+        "realistic": 4,
         "stylized": 1
       },
       "games": [
@@ -36627,7 +36624,7 @@
         },
         {
           "age": 86,
-          "art_style": "realistic",
+          "art_style": "classic_studs",
           "ccu": 4261,
           "icon": "10575295323_i.jpg",
           "id": "10575295323",
@@ -37172,7 +37169,7 @@
       "art_styles": {
         "classic_studs": 2,
         "low_poly": 1,
-        "simulator_bright": 1
+        "simulator_bright": 2
       },
       "games": [
         {
@@ -37209,16 +37206,16 @@
         },
         {
           "age": 26,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 8435,
           "icon": "10767840473_i.jpg",
           "id": "10767840473",
-          "map_style": "",
+          "map_style": "linear_course",
           "media": [
             "10767840473_m0.jpg"
           ],
           "name": "Crazy Diver",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -37449,7 +37446,7 @@
       "key": "Physics Sim",
       "label": "Physics Sim",
       "map_styles": {
-        "linear_course": 2,
+        "linear_course": 3,
         "open_world": 3,
         "town_roleplay": 1,
         "zone_progression": 3
@@ -38762,7 +38759,7 @@
       "art_styles": {
         "classic_studs": 2,
         "simulator_bright": 2,
-        "voxel_blocky": 1
+        "voxel_blocky": 2
       },
       "games": [
         {
@@ -38813,16 +38810,16 @@
         },
         {
           "age": 159,
-          "art_style": "",
+          "art_style": "voxel_blocky",
           "ccu": 5404,
           "icon": "10167786253_i.jpg",
           "id": "10167786253",
-          "map_style": "",
+          "map_style": "open_world",
           "media": [
             "10167786253_m0.jpg"
           ],
           "name": "Infinite Blocks",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -39058,7 +39055,7 @@
         "arena": 1,
         "linear_course": 2,
         "lobby_rounds": 1,
-        "open_world": 1,
+        "open_world": 2,
         "plot_base": 6
       },
       "media": {
@@ -39892,7 +39889,8 @@
       "art_styles": {
         "anime": 2,
         "realistic": 1,
-        "stylized": 5
+        "simulator_bright": 1,
+        "stylized": 4
       },
       "games": [
         {
@@ -39977,7 +39975,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
@@ -40673,7 +40671,7 @@
     },
     "subgenre:Tower Defense": {
       "art_styles": {
-        "anime": 4,
+        "anime": 5,
         "dark_gritty": 1,
         "realistic": 1,
         "simulator_bright": 1
@@ -40763,28 +40761,28 @@
           "ccu": 5645,
           "icon": "3183403065_i.jpg",
           "id": "3183403065",
-          "map_style": "",
+          "map_style": "tower_defense_lanes",
           "media": [
             "3183403065_m0.jpg"
           ],
           "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
           "age": 826,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4184,
           "icon": "6272727021_i.jpg",
           "id": "6272727021",
-          "map_style": "tower_defense_lanes",
+          "map_style": "arena",
           "media": [
             "6272727021_m0.jpg",
             "6272727021_m1.jpg",
             "6272727021_m2.jpg"
           ],
           "name": "[\ud83c\udf89RELEASE\ud83c\udf89] Undertale Adventures X",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -40933,6 +40931,7 @@
       "key": "Tower Defense",
       "label": "Tower Defense",
       "map_styles": {
+        "arena": 1,
         "tower_defense_lanes": 7,
         "zone_progression": 1
       },
@@ -41760,7 +41759,8 @@
     "subgenre:Tycoon": {
       "art_styles": {
         "meme_chaotic": 1,
-        "simulator_bright": 11
+        "simulator_bright": 10,
+        "voxel_blocky": 1
       },
       "games": [
         {
@@ -41893,7 +41893,7 @@
         },
         {
           "age": 60,
-          "art_style": "simulator_bright",
+          "art_style": "voxel_blocky",
           "ccu": 11942,
           "icon": "10747719434_i.jpg",
           "id": "10747719434",
@@ -46766,7 +46766,7 @@
           "ccu": 5580,
           "icon": "10766687809_i.jpg",
           "id": "10766687809",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10766687809_m0.jpg",
             "10766687809_m1.jpg",
@@ -47013,9 +47013,10 @@
       "label": "Giant / huge",
       "map_styles": {
         "arena": 1,
+        "linear_course": 1,
         "open_world": 3,
         "plot_base": 5,
-        "zone_progression": 2
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -47211,7 +47212,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -47419,9 +47420,9 @@
       "label": "Horror",
       "map_styles": {
         "interior": 4,
-        "open_world": 4,
+        "open_world": 3,
         "plot_base": 3,
-        "zone_progression": 1
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -47526,7 +47527,8 @@
     "theme:ice_fire": {
       "art_styles": {
         "anime": 1,
-        "realistic": 2
+        "realistic": 1,
+        "stylized": 1
       },
       "games": [
         {
@@ -47563,7 +47565,7 @@
         },
         {
           "age": 2079,
-          "art_style": "realistic",
+          "art_style": "stylized",
           "ccu": 4349,
           "icon": "2360092394_i.jpg",
           "id": "2360092394",
@@ -49083,6 +49085,7 @@
     },
     "theme:music": {
       "art_styles": {
+        "anime": 1,
         "classic_studs": 1,
         "simulator_bright": 1
       },
@@ -49120,7 +49123,7 @@
         },
         {
           "age": 51,
-          "art_style": "",
+          "art_style": "anime",
           "ccu": 4069,
           "icon": "10764533320_i.jpg",
           "id": "10764533320",
@@ -49131,7 +49134,7 @@
             "10764533320_m2.jpg"
           ],
           "name": "[UPD] Aura Dance Battles \ud83d\udd25",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -49895,7 +49898,7 @@
           "ccu": 6907,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "open_world",
+          "map_style": "zone_progression",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -50132,9 +50135,9 @@
       "map_styles": {
         "arena": 1,
         "linear_course": 2,
-        "open_world": 6,
+        "open_world": 5,
         "plot_base": 1,
-        "zone_progression": 1
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -52017,8 +52020,8 @@
       "art_styles": {
         "anime": 2,
         "low_poly": 1,
-        "simulator_bright": 2,
-        "stylized": 6
+        "simulator_bright": 3,
+        "stylized": 5
       },
       "games": [
         {
@@ -52135,7 +52138,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
@@ -52422,8 +52425,7 @@
     "theme:stone_rocks": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 4,
-        "stylized": 1
+        "simulator_bright": 5
       },
       "games": [
         {
@@ -52491,7 +52493,7 @@
         },
         {
           "age": 536,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 4787,
           "icon": "7629331599_i.jpg",
           "id": "7629331599",
@@ -53579,8 +53581,8 @@
       "art_styles": {
         "classic_studs": 1,
         "realistic": 4,
-        "simulator_bright": 3,
-        "stylized": 3
+        "simulator_bright": 4,
+        "stylized": 2
       },
       "games": [
         {
@@ -53713,7 +53715,7 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7665,
           "icon": "10767012496_i.jpg",
           "id": "10767012496",
