@@ -57,50 +57,98 @@
         }
       ]
     },
-    "mechanic:collect_index": {
-      "art_style": "Bright simulator in 9/12; Adopt Me and Dandy's World are stylized cartoon.",
+    "mechanic:clicker": {
+      "art_style": "simulator_bright/stylized (~9/12), some voxel newcomers.",
       "avoid": [
-        "Grid-of-items icons with no hero"
+        "Grey empty maps"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: noob grabbing a glowing secret egg with a giant creature looming, bright sky. Thumbnail: rarity tag plus $967M/s style number and a YOU arrow.",
+      "date": "2026-10-21",
+      "direction": "Icon: expressive character mid-hit on a bright background. Thumbnail: the action wide with motion effects and a short label.",
       "do": [
-        "Glowing rare collectible beside the player",
-        "SECRET / rarity tag in rainbow text",
-        "Giant creature scale contrast",
-        "A red YOU arrow"
+        "Big expressive character close-up",
+        "Show the click target and effect",
+        "Saturated background",
+        "Add motion lines"
       ],
       "icon_patterns": [
         {
           "count": "8/12",
-          "pattern": "Noob avatar with a glowing egg/pet/rare item"
+          "pattern": "Character close-up with strong expression"
         },
         {
           "count": "7/12",
-          "pattern": "Bright cyan/green simulator scene"
+          "pattern": "Saturated bright background"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Weapon or ball in hand"
+        }
+      ],
+      "members_hash": "8115b41db7",
+      "newcomer_shift": "NEW games are voxel/blocky PvP and FPS shots; less money text.",
+      "source": "vision",
+      "summary": "Big character or object close-ups with action, bright simulator colours and combat poses.",
+      "text_usage": "Little text; short PVP labels on new games.",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Action pose with motion effects"
+        },
+        {
+          "count": "1/12",
+          "pattern": "Cursor/+1 click tags"
         },
         {
           "count": "4/12",
-          "pattern": "Huge $/s number or SECRET tag"
+          "pattern": "Arena or sports field"
+        }
+      ]
+    },
+    "mechanic:collect_index": {
+      "art_style": "simulator_bright dominates (~8/12) with some stylized character art (Adopt Me, Dandy's World).",
+      "avoid": [
+        "Dark scenes",
+        "Small creatures"
+      ],
+      "date": "2026-10-21",
+      "direction": "Icon: avatar hugging or cracking a glowing rare egg. Thumbnail: the giant creature it hatches into with a $/s label and a YOU arrow.",
+      "do": [
+        "Make the rare egg or creature glow",
+        "Put the avatar right next to it in action",
+        "Add a YOU arrow or $/s label",
+        "Use bright sky and grass"
+      ],
+      "icon_patterns": [
+        {
+          "count": "7/12",
+          "pattern": "Egg or creature as the main subject"
+        },
+        {
+          "count": "7/12",
+          "pattern": "Avatar in action pose (holding, carrying, riding)"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Bright blue/green outdoor backdrop"
         }
       ],
-      "members_hash": "544b3b6b36",
-      "newcomer_shift": "NEW games add a rival or boss chasing the player (BOSS FIGHT, steal threat) and a YOU arrow.",
+      "members_hash": "ea74291472",
+      "newcomer_shift": "NEW games use giant voxel animals, eggs being cracked, and YOU arrows; food-as-pet (butter) oddities.",
       "source": "vision",
-      "summary": "Collect games show the noob with a rare, glowing collectible and a huge price-per-second.",
-      "text_usage": "Rarity words and giant $/s numbers in rainbow/green outlined text.",
+      "summary": "Avatar grabbing or racing toward a glowing egg/creature, bright simulator scenes with big rewards.",
+      "text_usage": "Short labels: Egg SECRET, TREX EGG, $676767/s, YOU.",
       "thumbnail_patterns": [
         {
           "count": "5/12",
-          "pattern": "Rarity tag text (SECRET, TREX EGG, Mythic) with money rate"
+          "pattern": "Glowing lava/rainbow/rare egg effects"
         },
         {
           "count": "4/12",
-          "pattern": "Red arrow or YOU marker pointing at the player or prize"
+          "pattern": "$ per second numbers or EGG labels"
         },
         {
-          "count": "5/12",
-          "pattern": "Giant creature next to the small player"
+          "count": "3/12",
+          "pattern": "Red YOU arrow or exclamation marks"
         }
       ]
     },
@@ -295,44 +343,50 @@
       ]
     },
     "mechanic:job_shift": {
-      "art_style": "Mixed: realistic lighting 5/12, stylized cute 4/12, dark gritty 3/12.",
+      "art_style": "Mixed: stylized (~5/12), dark_gritty (~4/12), realistic vehicles (~3/12).",
       "avoid": [
-        "Wide static building exteriors"
+        "Pure black frames with no subject",
+        "Tiny text"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: a cute mascot or worker mid-task with the job tool, title in bubbly type. Thumbnail: first-person tool view with the task and a two-word hook.",
+      "date": "2026-10-21",
+      "direction": "Icon: first-person tool mid-job or a cute worker with a creepy twist. Thumbnail: the workplace with one big caption naming the job.",
       "do": [
-        "Show the job tool mid-use in first person or close-up",
-        "Pick one strong tone: cute pastel or anomaly-creepy",
-        "Add a short imperative hook"
+        "Show the job tool in first person",
+        "Pair a cute mascot with a creepy hint",
+        "Use one bold caption",
+        "Keep the workplace readable"
       ],
       "icon_patterns": [
         {
-          "count": "5/12",
-          "pattern": "Character mid-job (flipping burgers, hosing fire, packing)"
-        },
-        {
-          "count": "7/12",
-          "pattern": "Logo or title text on icon"
-        },
-        {
           "count": "6/12",
-          "pattern": "Dark/night scenes"
+          "pattern": "Single character face or mascot close-up"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Dark or night lighting"
+        },
+        {
+          "count": "3/12",
+          "pattern": "First-person hand/tool view (hose, phone)"
         }
       ],
-      "members_hash": "a0f06c0f63",
-      "newcomer_shift": "NEW games use cute pastel mascots or meme-comic art instead of realistic shots.",
+      "members_hash": "b778363a12",
+      "newcomer_shift": "NEW games use first-person tool shots (fire hose), cute mascots and meme comic faces.",
       "source": "vision",
-      "summary": "Job games show the workplace in action with a character mid-task; tone ranges from cute to creepy.",
-      "text_usage": "Titles as logos; new games add a short hook (PACK WITH CARE!, DON'T GET FIRED AT WORK).",
+      "summary": "Mixed: horror-tinged workplaces and bright first-person job tools, with a strong single character or tool.",
+      "text_usage": "Short captions only on a few; brand logos on vehicle games.",
       "thumbnail_patterns": [
         {
           "count": "5/12",
-          "pattern": "Workplace scene with the job tool in the foreground"
+          "pattern": "Workplace interior (hospital, kitchen, office)"
         },
         {
-          "count": "4/12",
-          "pattern": "Horror/anomaly twist (creepy coworkers, dark corridors)"
+          "count": "3/12",
+          "pattern": "Anomaly/horror creatures in a normal job"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Bold caption (FIX MY PHONE!, DON'T GET FIRED AT WORK)"
         }
       ]
     },
@@ -384,98 +438,98 @@
       ]
     },
     "mechanic:paint_create": {
-      "art_style": "Bright simulator cartoon in about 7/12; a few realistic (driving, renovate) outliers.",
+      "art_style": "Stylized bright cartoon dominates (~8/12); a few realistic driving/sandbox outliers.",
       "avoid": [
-        "Dark, muddy scenes",
-        "Small creations lost in a wide shot"
+        "Busy scenes where the creation is small",
+        "Dark lighting"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: the finished artwork filling the tile with a cartoon hand still holding the brush, on a bright cyan background. Thumbnail: plain-to-finished split with a red arrow and a one-word caption like PAINT.",
+      "date": "2026-10-21",
+      "direction": "Icon: a hand painting a big, simple, funny object on a flat bright background. Thumbnail: before/after split with a red arrow and a 1-2 word caps caption.",
       "do": [
-        "Show the finished creation large in the center",
-        "Include a hand or tool mid-stroke",
-        "Use a before -> after split with a red arrow on the thumbnail",
-        "One short verb caption in heavy outline type"
+        "Show the creation big and centered",
+        "Include a hand or tool actively painting it",
+        "Use a before -> after arrow or split",
+        "Flat bright blue or purple background"
       ],
       "icon_patterns": [
         {
           "count": "5/12",
-          "pattern": "The creation itself (canvas, pancake, pixel art, face) fills the frame"
+          "pattern": "Hand, tool or brush mid-action on the object (paint bottle, pressure washer, cursor)"
         },
         {
           "count": "6/12",
-          "pattern": "Hand or tool caught mid-stroke (brush, pen, bottle, pointer)"
+          "pattern": "Saturated sky-blue or purple flat background"
         },
         {
-          "count": "5/12",
-          "pattern": "Bright saturated cyan/blue sky backgrounds"
+          "count": "4/12",
+          "pattern": "Classic Roblox noob/avatar faces"
         }
       ],
-      "members_hash": "2a1ac7e69a",
-      "newcomer_shift": "NEW games lean on transformation reveals (bald->glam, plain->pixel frog) and soft pastel or purple glows instead of green-grass scenes.",
+      "members_hash": "bac9709896",
+      "newcomer_shift": "NEW games go flatter and simpler: a single object being painted, pixel-art canvases with a YOU label, glam before/after faces.",
       "source": "vision",
-      "summary": "Paint/create leaders show the finished creation up close with a hand or brush mid-action, often with a before/after arrow.",
-      "text_usage": "Short all-caps verb captions (PAINT, DRAW) on thumbnails; icons mostly textless.",
+      "summary": "Bright, clean cartoon art showing the finished creation or a before/after, often with a hand or tool doing the work.",
+      "text_usage": "Few icons use text; thumbnails use one big bold caption.",
       "thumbnail_patterns": [
         {
           "count": "4/12",
-          "pattern": "Before -> after transformation with a red arrow or split"
+          "pattern": "Before/after split or arrow transformation"
         },
         {
-          "count": "4/12",
-          "pattern": "Big bold top caption (PAINT ANYTHING!, DRAW:, PAINT)"
+          "count": "5/12",
+          "pattern": "The canvas or creation shown large in frame"
         },
         {
           "count": "3/12",
-          "pattern": "Classic blocky avatars at desks or easels"
+          "pattern": "Short caps caption (PAINT ANYTHING!, DRAW, PAINT)"
         }
       ]
     },
     "mechanic:plus_one_stat": {
-      "art_style": "Bright simulator in 11/12; one anime outlier.",
+      "art_style": "simulator_bright dominates (~11/12).",
       "avoid": [
-        "Dark backgrounds",
-        "Text-light thumbnails"
+        "Realistic lighting",
+        "More than one short word of text"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: a noob mid-action surrounded by '+1' popups and a glowing prize item at the side on a bright green/cyan scene. Thumbnail: left weak '+1' state, right huge '999M' powered-up state with a red arrow.",
+      "date": "2026-10-21",
+      "direction": "Icon: classic avatar mid-action with +1 tags flying off and one glowing reward. Thumbnail: two or three panels going from 1 to 999T with the evolved item or avatar.",
       "do": [
-        "Scatter 5+ '+1' labels with flex-arm icons",
-        "Show a noob straining at the action",
-        "Put a glowing prize egg/item on the side",
-        "Use a 1 -> 999M split on the thumbnail"
+        "Scatter 6+ outlined +1 tags around the avatar",
+        "Show a 1 -> 999T split with a red arrow",
+        "Put one glowing rare reward in frame",
+        "Keep a flat bright baseplate background"
       ],
       "icon_patterns": [
         {
           "count": "10/12",
-          "pattern": "Many floating '+1' labels around the character"
+          "pattern": "Floating white +1 text with black outline around the avatar"
         },
         {
           "count": "9/12",
-          "pattern": "Classic noob/bacon avatar with determined face"
+          "pattern": "Classic orange-haired Roblox avatar as the hero"
         },
         {
           "count": "6/12",
-          "pattern": "Bright green grass and cyan sky"
+          "pattern": "Bright green grass/blue sky baseplate"
         }
       ],
-      "members_hash": "38ca8c8a43",
-      "newcomer_shift": "NEW games add a prize target (Dragon Egg, Ruby, forged blade) as the goal and a 'You' arrow.",
+      "members_hash": "a6546855fc",
+      "newcomer_shift": "NEW games lean on 3-panel tier splits (1 / 67K / 999T) and gem/planet rewards with $Qa price tags.",
       "source": "vision",
-      "summary": "+1 games are a wall of floating '+1' numbers around a classic noob avatar straining at the action.",
-      "text_usage": "+1 everywhere, plus a giant end-number (999M, $978Qa) on thumbnails.",
+      "summary": "Classic Roblox avatar surrounded by floating +1 numbers, usually a small-to-huge stat or item jump.",
+      "text_usage": "Numbers are the text: +1, 67K, 999T, $967Qa; 'WORLD 4' banners on update icons.",
       "thumbnail_patterns": [
         {
-          "count": "4/12",
-          "pattern": "Weak -> strong progression split (1 -> 999M, +1 -> +7M)"
+          "count": "5/12",
+          "pattern": "Split panels showing low vs huge value (1 -> 999M/999T)"
         },
         {
           "count": "5/12",
-          "pattern": "Huge number text with currency or multipliers"
+          "pattern": "Glowing rare item (gem, egg, weapon) with red arrow"
         },
         {
-          "count": "6/12",
-          "pattern": "Glowing loot (egg, sword, gem) next to the player"
+          "count": "4/12",
+          "pattern": "Huge money/stat numbers in bold green or gold"
         }
       ]
     },
@@ -528,48 +582,49 @@
       ]
     },
     "mechanic:race_drive": {
-      "art_style": "Stylized/semi-realistic in about 8/12; bright simulator and pixel art outliers.",
+      "art_style": "realistic (~6/12) and stylized (~4/12); RP towns mixed in.",
       "avoid": [
-        "Static parked cars on plain backgrounds"
+        "Static parked cars with no action"
       ],
-      "date": "2026-10-18",
-      "direction": "Icon: one vehicle mid-drift kicking up dust. Thumbnail: the vehicle in action with a bold 2-word hook and visible speed effects.",
+      "date": "2026-10-21",
+      "direction": "Icon: first-person handlebars or a drifting car with police lights behind. Thumbnail: same chase wide with a 2-word title.",
       "do": [
-        "Make the vehicle huge and glossy at a 3/4 angle",
-        "Add motion: dust, flames, speed lines",
-        "Use one short hook word in bold"
+        "Put the vehicle mid-motion with dust or speed lines",
+        "Try a first-person POV",
+        "Add a punchy 2-word wordmark",
+        "Use police lights for chase games"
       ],
       "icon_patterns": [
         {
-          "count": "7/12",
-          "pattern": "Car/bike/vehicle as the main subject"
+          "count": "9/12",
+          "pattern": "Car or bike as main subject"
         },
         {
           "count": "5/12",
-          "pattern": "Game logo on the icon"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Hourglass NOW teaser"
-        }
-      ],
-      "members_hash": "4600b3b0b3",
-      "newcomer_shift": "NEW games show crazy vehicle mashups (soccer car, zombie war rig) and progression splits instead of glossy cars.",
-      "source": "vision",
-      "summary": "Hero vehicle shots, clean and glossy, with RP games using lifestyle scenes and NEW games using cheap-vs-pimped or Halloween racing.",
-      "text_usage": "Logos plus short hooks (WHEELIE STYLE, WRONG WAY!, $0.1 vs $1.5M).",
-      "thumbnail_patterns": [
-        {
-          "count": "6/12",
-          "pattern": "Glossy vehicle 3/4 view or in-cockpit view"
+          "pattern": "Realistic lighting and materials"
         },
         {
           "count": "3/12",
-          "pattern": "RP lifestyle scene with stylized avatars"
+          "pattern": "Police lights or chase"
+        }
+      ],
+      "members_hash": "fb11e9fa2b",
+      "newcomer_shift": "NEW games use first-person POV (scooter handlebars, fire hose), low-poly rally cars and pixel art.",
+      "source": "vision",
+      "summary": "Vehicles in motion, realistic or stylized, often first-person dashboards and police chases.",
+      "text_usage": "Brand wordmarks (DRIVING EMPIRE, WRONG WAY!); little other text.",
+      "thumbnail_patterns": [
+        {
+          "count": "3/12",
+          "pattern": "First-person cockpit or handlebar view"
         },
         {
-          "count": "2/12",
-          "pattern": "Halloween night palette"
+          "count": "5/12",
+          "pattern": "Dust, speed or drift effects"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Logo/title wordmark"
         }
       ]
     },
@@ -622,50 +677,50 @@
       ]
     },
     "mechanic:sell_shop": {
-      "art_style": "Mix of bright simulator (6/12) and clean stylized product renders (5/12).",
+      "art_style": "Stylized cartoon/realistic product renders (~9/12); a couple dark-gritty Halloween scenes.",
       "avoid": [
-        "Busy shop interiors where the product is small",
-        "Generic avatar-only icons"
+        "Wide shop interiors where nothing reads at icon size",
+        "Crowded product piles"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: one oversized, glossy product with a tool caught mid-action and the title in outlined type. Thumbnail: a broken-to-fixed or raw-to-finished split of the product with a short satisfying-promise caption.",
+      "date": "2026-10-21",
+      "direction": "Icon: one product mid-process with a tool, big and clean. Thumbnail: same object with sparkle or before/after and a chunky rounded title.",
       "do": [
-        "Make the product the biggest thing on the icon",
-        "Show a tool touching the product for a satisfying moment",
-        "Use before/after for repair or restore loops",
-        "Keep backgrounds clean and bright"
+        "Make the object fill the frame",
+        "Show the satisfying tool mid-action",
+        "Use a soft single-color background",
+        "Add a 2-3 word rounded caption"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "The product is the hero (fries, rug, phone, coin, star weld, basket)"
+          "count": "7/12",
+          "pattern": "Single product/object close-up as the hero (fries, phone, rug, star, gear)"
         },
         {
           "count": "5/12",
-          "pattern": "Game name in bold outlined text on icon"
+          "pattern": "Soft pastel or flat colored background"
         },
-        {
-          "count": "5/12",
-          "pattern": "Halloween dressing (pumpkins, witch hat, dark sky)"
-        }
-      ],
-      "members_hash": "66fcf1aa21",
-      "newcomer_shift": "NEW games drop avatars entirely and show an ASMR-style object close-up (cracked phone, rusty coin, rainbow weld).",
-      "source": "vision",
-      "summary": "Shop games sell the product: the item being made or sold dominates, often in a satisfying close-up.",
-      "text_usage": "Title as logo text on icon; thumbnails add a short promise (SATISFYING LASER CLEANING!, FIX MY PHONE!).",
-      "thumbnail_patterns": [
         {
           "count": "4/12",
-          "pattern": "Satisfying craft close-up (trimming rug, laser cleaning, weld) with a tool"
-        },
+          "pattern": "Game title text baked into the icon"
+        }
+      ],
+      "members_hash": "28d684e6bb",
+      "newcomer_shift": "NEW games are ASMR-style process close-ups (welding, laser cleaning) and pixel art; less avatar, more object.",
+      "source": "vision",
+      "summary": "Close-up of the product or task object, clean and satisfying, often a single item on a soft colored background.",
+      "text_usage": "Titles as chunky rounded captions; DAY 201 style counters on meme entries.",
+      "thumbnail_patterns": [
         {
-          "count": "3/12",
-          "pattern": "Before/after repair with arrow"
+          "count": "5/12",
+          "pattern": "Satisfying process shot: tool on the object (razor, laser, welder, knife)"
         },
         {
           "count": "5/12",
-          "pattern": "Clean bright gradient or table-top background"
+          "pattern": "Big rounded title caption"
+        },
+        {
+          "count": "2/12",
+          "pattern": "Before/after arrow"
         }
       ]
     },
@@ -761,50 +816,49 @@
       ]
     },
     "mechanic:tycoon_build": {
-      "art_style": "Bright simulator in 8/12; a few realistic (driving, military) leaders.",
+      "art_style": "simulator_bright (~8/12); a few realistic vehicle/military outliers.",
       "avoid": [
-        "Wide empty base shots",
-        "Realistic grey palettes for a casual tycoon"
+        "Plain base screenshots with no progress shown"
       ],
-      "date": "2026-10-20",
-      "direction": "Icon: a noob hugging an oversized, glowing build target on bright cyan. Thumbnail: noob base vs pro base split with a $/s number on each side.",
+      "date": "2026-10-21",
+      "direction": "Icon: one funny hero object plus avatar on a bright sky. Thumbnail: a $30/s -> $399M/s split showing the base or object upgraded.",
       "do": [
-        "Center one big payoff object",
-        "Add a money-per-second number",
-        "Use noob vs pro split for progression",
-        "Keep the sky bright cyan"
+        "Show $/s growth with a red arrow",
+        "Use a cutaway or small->big split",
+        "Keep a bright sky",
+        "Feature one weird, cute hero object"
       ],
       "icon_patterns": [
         {
-          "count": "6/12",
-          "pattern": "Noob avatar holding or reaching for the payoff item"
+          "count": "7/12",
+          "pattern": "Bright sky-blue background"
         },
         {
-          "count": "5/12",
-          "pattern": "Bright cyan sky background"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Halloween orange/purple palette"
-        }
-      ],
-      "members_hash": "03e0d5f2b1",
-      "newcomer_shift": "NEW games feature a single absurd object (stick of butter, phone, rainbow egg) as the build target.",
-      "source": "vision",
-      "summary": "Tycoon builders show the player next to a big, glowing payoff (egg, gem, device, monster) with money numbers.",
-      "text_usage": "Money numbers and NOOB/PRO labels; short build promises (BUILD EVERY DEVICE).",
-      "thumbnail_patterns": [
-        {
-          "count": "3/12",
-          "pattern": "Noob vs pro / cheap vs rich split"
+          "count": "8/12",
+          "pattern": "Classic Roblox avatar in frame"
         },
         {
           "count": "4/12",
-          "pattern": "Money rate text ($1B, 10,000/s, +$5,000)"
+          "pattern": "Oddball hero object (butter, sea creature, egg)"
+        }
+      ],
+      "members_hash": "a4d8537dbf",
+      "newcomer_shift": "NEW games show cutaway underground bases, mutant plants and sad sea creatures being washed.",
+      "source": "vision",
+      "summary": "Noob-to-pro progress and money-per-second numbers on bright bases, with odd hero objects.",
+      "text_usage": "Money rates and NOOB/PRO labels; few words.",
+      "thumbnail_patterns": [
+        {
+          "count": "4/12",
+          "pattern": "$ per second growth numbers (30/s -> 399,999,999/s)"
         },
         {
           "count": "3/12",
-          "pattern": "Splash or explosion effects behind the hero item"
+          "pattern": "NOOB vs PRO / small -> big split with arrow"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Cutaway base or plot view"
         }
       ]
     }

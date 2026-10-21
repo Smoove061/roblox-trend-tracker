@@ -1,382 +1,389 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "ideas": [
     {
-      "title": "+1 Mech Height",
+      "title": "Paint Eggs for Pets",
       "scope": "small",
       "genre": "Simulation · Incremental Simulator",
       "mechanics": [
-        "+1 stat per action",
-        "Obby / climb / jump"
-      ],
-      "theme": "Robots / mechs",
-      "hook": "Every step you take bolts one more block onto your mech. Walk long enough and you tower over the whole map.",
-      "core_loop": [
-        "Walk to stack +1 height onto your mech",
-        "Stomp through gated zones only tall mechs can step over",
-        "Collect scrap to buy stronger legs and arms",
-        "Rebirth into a new mech frame with a height multiplier"
-      ],
-      "twist": "Taller mechs get slower and wobblier, so players pick between a skyscraper that barely moves and a short, fast sprinter for timed zones.",
-      "monetization": [
-        "2x height multiplier pass",
-        "Auto-walk pass",
-        "VIP chrome mech skin"
-      ],
-      "retention": [
-        "Rebirth frames with permanent multipliers",
-        "Global tallest-mech leaderboard",
-        "Daily codes for scrap"
-      ],
-      "why_now": "+1 stat per action is up 1.86x (+1 Stone Skipping 25.8K CCU, +1 Assassin Leveling 12.4K) and \"+1 ___\" titles rise 1.99x. +1 × Robots / mechs is an open gap (3.58) while robot games are up 1.37x (WRONG WAY! 4.1K, RoChess! 2.7K).",
-      "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "+1 Assassin Leveling",
-        "[🎃RALLY] WRONG WAY!"
-      ],
-      "differentiator": "+1 games grow a number on a noob; here the stat is physical, and the mech you build visibly fills the screen.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Restore Fossils for Gems",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
         "Paint / create",
-        "Break / mine / dig",
+        "Hatch / gacha",
         "Collect / index"
       ],
-      "theme": "Dinosaurs",
-      "hook": "Dig up a crusty fossil, brush and paint it back to life, and put it in your museum. The better the restoration, the more visitors pay.",
+      "theme": "Eggs",
+      "hook": "Grab a blank egg, paint it any way you like, and it hatches a pet that looks like your design. Better paint jobs hatch rarer pets.",
       "core_loop": [
-        "Dig a dirty fossil from the quarry",
-        "Brush, glue and paint it on your workbench",
-        "Display it in your museum for gems per second",
-        "Spend gems on bigger digs and rarer bones"
+        "Pick up a blank egg from the conveyor",
+        "Paint it with brushes, stickers and glitter",
+        "Hatch it into a pet that copies your colors",
+        "Sell spare pets for better paint and bigger eggs"
       ],
-      "twist": "Finished skeletons wake up at night and roam the museum, and a fully restored set unlocks a rideable dino.",
+      "twist": "Other players vote on the eggs waiting on your shelf; top-voted eggs get a rarity boost before they hatch.",
       "monetization": [
-        "2x gems multiplier",
-        "VIP gold-leaf paint",
-        "Extra display hall pass"
+        "2x hatch luck pass",
+        "VIP gold and rainbow paints",
+        "Extra egg shelf storage"
       ],
       "retention": [
-        "Fossil index with set bonuses",
-        "Museum earns offline",
-        "Limited Halloween bone sets"
+        "Pet index with color variants",
+        "Daily paint theme with bonus luck",
+        "Limited Halloween egg shapes"
       ],
-      "why_now": "Paint / create is up 2.08x (Kukirin Life 25.8K, Paint a Pancake 4.5K) and Dinosaurs up 1.73x (Ride a Dino 14.2K, Prehistoric Farm 4.0K). Paint × Dinosaurs is a 4.97 gap, and restore-it ASMR is the newcomer look in shop games (Rust Blaster, Fix My Phone!). \"___ for ___\" titles lead at 3.52x.",
+      "why_now": "Paint / create is up 2.13x (Backseat Rally 34.1K CCU, Kukirin Life 33.3K, Paint a Pancake 3.3K) and Paint × Eggs is the top open gap (7.03). Eggs games lead the chart (Break and Steal an Egg 147K, Fake an Egg 19.5K), and \"___ for ___\" titles are rising 3.38x.",
       "inspired_by": [
-        "[☄️] Ride a Dino",
         "[🥞] Paint a Pancake",
-        "[🎃 HALLOWEEN] Rust Blaster",
-        "Fix My Phone!"
+        "Fake an Egg",
+        "Break and Steal an Egg",
+        "[UPD] Paint to Get Rich 🎨"
       ],
-      "differentiator": "Dino games let you ride or farm dinos; here you rebuild them bone by bone, and the satisfying clean-up is the core loop.",
+      "differentiator": "Egg games give you random pets; here you design the egg, so every pet you hatch is partly your own art.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Paint Your Way Out",
+      "scope": "medium",
+      "genre": "Survival · Escape Room",
+      "mechanics": [
+        "Paint / create",
+        "Escape / run"
+      ],
+      "theme": "Prison / police",
+      "hook": "You are locked in a cartoon jail with a paint set. Paint a door, a tunnel or a ladder on the wall, and it turns real for ten seconds.",
+      "core_loop": [
+        "Collect paint cans hidden around your cell block",
+        "Paint a door, hole or ladder on a wall",
+        "Run through before it fades and the guards notice",
+        "Escape each wing to unlock bigger brushes and new tricks"
+      ],
+      "twist": "Guards can paint too: they cover your art with wet paint traps, so you have to bait them into the wrong corridor first.",
+      "monetization": [
+        "VIP longer-lasting paint",
+        "Skip-a-wing pass",
+        "Cosmetic graffiti brush packs"
+      ],
+      "retention": [
+        "Wing-by-wing escape chapters",
+        "Best-time leaderboard per wing",
+        "Weekly new prison layout"
+      ],
+      "why_now": "Paint / create is up 2.13x and Paint × Prison is an open gap (4.99). Prison / police is rising 1.34x (Bike Universe 30.1K CCU, Steal and Escape Police! 4.2K), and interior maps are the fastest-rising map style at 2.11x (Sell Fries! 50.9K, Clone Baby Care 22.0K).",
+      "inspired_by": [
+        "🚨[AI COPS] Bike Universe",
+        "Steal and Escape Police! 🚓",
+        "[🥞] Paint a Pancake"
+      ],
+      "differentiator": "Prison escapes are usually obbies or roleplay; here the paint brush is the only tool, and what you draw decides the route.",
       "art_style": "stylized",
       "map_style": "interior"
     },
     {
-      "title": "+1 Tail Whip",
+      "title": "Sell Dino Eggs",
+      "scope": "medium",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Sell / run a shop",
+        "Hatch / gacha",
+        "Tycoon / base building"
+      ],
+      "theme": "Dinosaurs",
+      "hook": "Run a prehistoric pet shop. Incubate dino eggs, raise the babies, and sell them to cavemen customers before they grow too big for the store.",
+      "core_loop": [
+        "Buy eggs from the volcano supplier",
+        "Keep the incubators warm until they hatch",
+        "Feed and wash baby dinos for a better price",
+        "Sell to customers and expand the shop with new pens"
+      ],
+      "twist": "If you wait too long a dino outgrows its pen and starts eating stock, so you have to choose between selling fast and growing rare adults.",
+      "monetization": [
+        "2x cash multiplier",
+        "VIP rare egg supplier",
+        "Extra pen storage pass"
+      ],
+      "retention": [
+        "Dino index with rarity tiers",
+        "Shop earns offline",
+        "Limited meteor-shower egg events"
+      ],
+      "why_now": "Sell / run a shop is up 2.06x (Sell Fries! 50.9K CCU, Fix My Phone! 15.1K) and Dinosaurs is the top rising theme at 2.1x (Ride a Dino 32.6K, Prehistoric Farm 3.4K). Sell × Dinosaurs is an open gap (5.9).",
+      "inspired_by": [
+        "🎃 Sell Fries! [Anomaly] 🍟",
+        "[☄️] Ride a Dino",
+        "Prehistoric Farm [NEW WORLD 🎃]",
+        "Fix My Phone!"
+      ],
+      "differentiator": "Dino games are about riding or farming; this is a shop game where timing the sale is the whole skill.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Bonk Dinos for Eggs",
+      "scope": "small",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "Hit / swing / launch",
+        "Collect / index",
+        "+1 stat per action"
+      ],
+      "theme": "Dinosaurs",
+      "hook": "You are a caveman with a club. Bonk sleeping dinos to knock eggs loose, and every swing makes your club a little bigger.",
+      "core_loop": [
+        "Swing your club to gain +1 strength",
+        "Bonk dinos in each valley to drop eggs",
+        "Carry eggs back to camp to hatch rare dinos",
+        "Spend eggs on new clubs and the next valley"
+      ],
+      "twist": "Bonk too hard and the dino wakes up and chases you back to camp, dropping eggs on the way.",
+      "monetization": [
+        "2x strength pass",
+        "Auto-swing pass",
+        "VIP bone club"
+      ],
+      "retention": [
+        "Egg index per valley",
+        "Rebirth for permanent strength multiplier",
+        "Daily codes for eggs"
+      ],
+      "why_now": "Hit / swing / launch is up 1.73x (Cat Battles 37.4K CCU, +1 Stone Skipping 22.6K, +1 Pickaxe Swing for Eggs 9.5K). Dinosaurs is up 2.1x (Ride a Dino 32.6K), and Hit × Dinosaurs is an open gap (4.96). \"___ for ___\" titles are the top formula at 3.38x.",
+      "inspired_by": [
+        "+1 Pickaxe Swing for Eggs",
+        "[☄️] Ride a Dino",
+        "[🎃] +1 Stone Skipping",
+        "Cat Battles 🐾"
+      ],
+      "differentiator": "Swing-for-eggs games hit rocks or trees; here the egg source is a living dino that can fight back.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Scrap Robots for Parts",
+      "scope": "medium",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Break / mine / dig",
+        "Tycoon / base building",
+        "Collect / index"
+      ],
+      "theme": "Robots / mechs",
+      "hook": "A robot junkyard full of broken bots. Smash them apart for gears and chips, then bolt the parts onto your own robot that works your base.",
+      "core_loop": [
+        "Smash junk robots with a hammer or drill",
+        "Collect gears, chips and rare cores",
+        "Build helper bots that mine for you",
+        "Unlock deeper junkyard zones with tougher robots"
+      ],
+      "twist": "Some scrapped robots reboot as hostile at night and raid your base, so you have to build defense bots too.",
+      "monetization": [
+        "2x scrap multiplier",
+        "Auto-mine helper pass",
+        "VIP golden drill"
+      ],
+      "retention": [
+        "Robot parts index",
+        "Base earns offline",
+        "Limited boss-bot weekend events"
+      ],
+      "why_now": "Break / mine / dig is the fastest-rising mechanic at 2.63x (Break and Steal an Egg 147K CCU, +1 Pickaxe Swing for Eggs 9.5K, Dig For Eggs 6.9K). Break × Robots / mechs is an open gap (4.62) while robot games are up 1.22x (RoChess! 4.5K, Kit PVP! 1.7K).",
+      "inspired_by": [
+        "Break and Steal an Egg",
+        "🎃 Dig For Eggs",
+        "Bunker vs Verity",
+        "RoChess!"
+      ],
+      "differentiator": "Mining games break rocks; here every broken robot gives parts that come back as your own workers.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Sculpt Ice for Gems",
+      "scope": "small",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "Paint / create",
+        "Sell / run a shop"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "A frozen block lands on your table. Melt and carve it with a fire torch into a statue, then sell it before it drips away.",
+      "core_loop": [
+        "Pick an ice block from the freezer",
+        "Carve it with a torch to match the order",
+        "Sell it at your stand for gems",
+        "Upgrade torches and unlock bigger, rarer ice"
+      ],
+      "twist": "The torch gets hotter as you upgrade, so the better your gear, the easier it is to melt a sculpture into a puddle.",
+      "monetization": [
+        "2x gems pass",
+        "VIP blue-flame torch",
+        "Extra freezer storage"
+      ],
+      "retention": [
+        "Sculpture index",
+        "Daily statue order with bonus gems",
+        "Leaderboard for best-rated sculpture"
+      ],
+      "why_now": "Paint / create is up 2.13x and Paint × Ice / fire / elements is an open gap (4.27). Sell / run a shop is up 2.06x (Fix My Phone! 15.1K CCU), and satisfying close-up crafting is the newcomer look in shop games (Fix My Phone!, Make Ramen To Get Rich).",
+      "inspired_by": [
+        "Fix My Phone!",
+        "[🎃]Melt All The Ice!🧊",
+        "[🥞] Paint a Pancake"
+      ],
+      "differentiator": "Melt-the-ice games just clear it; here you shape it, and too much heat ruins the sale.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "+1 Purse Power",
+      "scope": "small",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "+1 stat per action",
+        "Hit / swing / launch"
+      ],
+      "theme": "Fashion / beauty",
+      "hook": "Strut down the runway and swing your purse. Every swing gives +1 power, and a strong enough swing launches rival models off the stage.",
+      "core_loop": [
+        "Swing your purse for +1 power",
+        "Knock rivals off the runway for fame",
+        "Spend fame on heavier designer bags",
+        "Unlock bigger fashion-week stages"
+      ],
+      "twist": "Each bag has a style score, so a heavy ugly bag hits hard but drops your fame, while a cute light bag earns more per hit.",
+      "monetization": [
+        "2x power pass",
+        "Auto-swing pass",
+        "VIP sparkle handbag"
+      ],
+      "retention": [
+        "Rebirth with permanent multipliers",
+        "Bag index with rarities",
+        "Fame leaderboard"
+      ],
+      "why_now": "\"+1 ___\" titles are up 1.85x and +1 stat per action is up 1.73x (+1 Stone Skipping 22.6K CCU, +1 Venom Evolution 20.3K). Fashion / beauty is up 1.51x (Makeup Salon 13.2K, Facecard: Makeup Showdown 11.8K), and Hit × Fashion is an open gap (4.26).",
+      "inspired_by": [
+        "[🎃] +1 Stone Skipping",
+        "[🌍WORLD 2] +1 Venom Evolution",
+        "[UPD✨] Makeup Salon💄",
+        "Facecard: Makeup Showdown [⭐UPD]"
+      ],
+      "differentiator": "Fashion games judge your outfit; here the accessory is the weapon, and the runway is an arena.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Smash Drums for Fans",
       "scope": "small",
       "genre": "Simulation · Incremental Simulator",
       "mechanics": [
         "Hit / swing / launch",
         "+1 stat per action"
       ],
-      "theme": "Dinosaurs",
-      "hook": "You are a baby dino and meteors keep falling. Every tail swing gives +1 power, and you whip the meteors as far as you can.",
+      "theme": "Music / dance",
+      "hook": "Hit your drum kit and each beat sends out a shockwave. More hits mean louder waves that pull in fans and knock down walls to new stages.",
       "core_loop": [
-        "Swing your tail to gain +1 whip power",
-        "Smack incoming meteors for distance",
-        "Cash in distance for eggs of bigger dino species",
-        "Evolve into a bigger dino with a stronger base whip"
+        "Hit drums to gain +1 volume",
+        "Shockwaves pull fans toward your stage",
+        "Spend fans on bigger kits",
+        "Blast through walls to bigger venues"
       ],
-      "twist": "Some meteors hatch a rare dino egg if you whip them into the volcano zone instead of for distance.",
+      "twist": "Hit on the beat and the wave doubles, so skilled players climb faster than pure grinders.",
       "monetization": [
-        "2x power pass",
-        "Auto-whip pass",
-        "VIP golden tail"
+        "2x volume pass",
+        "Auto-drum pass",
+        "VIP neon drum kit"
       ],
       "retention": [
-        "Dino evolution chain to complete",
-        "Distance leaderboard per world",
-        "Weekly meteor shower event"
+        "Venue progression with rebirths",
+        "Daily song with bonus fans",
+        "Loudest-player leaderboard"
       ],
-      "why_now": "Hit / swing / launch is up 1.89x (Cat Battles 26.5K, +1 Stone Skipping 25.8K) and Dinosaurs up 1.73x (Ride a Dino 14.2K). Hit × Dinosaurs is an open gap (4.52) and \"+1 ___\" titles rise 1.99x.",
+      "why_now": "Hit / swing / launch is up 1.73x (Cat Battles 37.4K CCU) and Music / dance is up 1.42x (Trending Emote Dance 8.1K, Piano Rhythm Tiles 4.7K, Aura Dance Battles 4.5K). Hit × Music and +1 × Music are both open gaps (3.61). \"___ for ___\" titles lead at 3.38x.",
       "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "[☄️] Ride a Dino",
+        "Trending Emote Dance",
+        "Piano Rhythm Tiles",
+        "[UPD] Aura Dance Battles 🔥",
         "Cat Battles 🐾"
       ],
-      "differentiator": "Launch games swing a bat or a pickaxe; here your dino's own tail is the bat and evolving the dino is the upgrade path.",
+      "differentiator": "Rhythm games score your timing; here timing powers an incremental climb, so it plays like a simulator with a beat.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "Stylists vs Slobs",
-      "scope": "medium",
+      "title": "Grow a Raptor Pack",
+      "scope": "large",
       "genre": "Strategy · Tower Defense",
       "mechanics": [
         "Tower defense",
-        "Dress / style"
+        "Grow / farm",
+        "Steal / raid"
       ],
-      "theme": "Fashion / beauty",
-      "hook": "Waves of badly dressed slobs are marching onto your runway. Place stylist towers that restyle them before they ruin the show.",
+      "theme": "Dinosaurs",
+      "hook": "Grow raptors from eggs in your nest and set them along the path to stop egg thieves. Other players can send their raptors to raid your nest.",
       "core_loop": [
-        "Place stylist towers along the catwalk path",
-        "Restyle each wave with makeup, hair and outfit blasts",
-        "Earn tickets from the cheering crowd",
-        "Unlock rarer stylists and runway themes"
+        "Plant eggs in nest plots and grow raptors",
+        "Place raptors on lanes to stop thief waves",
+        "Earn eggs from waves to grow rarer dinos",
+        "Raid other players' nests for their eggs"
       ],
-      "twist": "Restyled slobs join your show as models, so a clean wave makes the crowd bigger and the next wave pays more.",
+      "twist": "Raptors grow while they defend, so a baby placed early becomes your strongest guard by the last wave.",
       "monetization": [
-        "2x speed pass",
-        "VIP celebrity stylist",
-        "Extra tower slot (storage)"
+        "2x grow speed pass",
+        "VIP rare egg slot",
+        "Extra lane storage"
       ],
       "retention": [
-        "Stylist index with rarities",
-        "Weekly themed runway event",
-        "Endless mode leaderboard"
+        "Dino index with mutations",
+        "Nest grows offline",
+        "Weekly meteor-raid event"
       ],
-      "why_now": "Tower defense is up 1.71x (Cameraman Tower Defense 31.7K, Bunker vs Verity 20.1K) and Fashion / beauty up 1.73x (Facecard: Makeup Showdown 21.1K, Makeup Salon 5.3K). TD × Fashion is a 4.72 gap and \"___ vs ___\" titles rise 1.21x.",
+      "why_now": "Tower defense is up 1.53x (Cameraman Tower Defense 35.6K CCU, Bunker vs Verity 12.5K) and Dinosaurs is up 2.1x (Ride a Dino 32.6K). Steal pairs with collecting and hatching for 214K-238K young CCU, and \"Grow a ___\" titles are rising 1.1x (Grow a Plant 8.1K).",
       "inspired_by": [
         "[🎃UPD] Cameraman Tower Defense",
-        "Facecard: Makeup Showdown [⭐UPD]",
-        "[UPD✨] Makeup Salon💄",
-        "Bunker vs Verity"
+        "Bunker vs Verity",
+        "[☄️] Ride a Dino",
+        "[🌱] Grow a Plant"
       ],
-      "differentiator": "Fashion games are judged dress-up rounds; this turns styling into the attack, so fashion fans get a strategy game.",
-      "art_style": "stylized",
-      "map_style": "tower_defense_lanes"
-    },
-    {
-      "title": "Build a Hero Suit",
-      "scope": "large",
-      "genre": "Action · Battlegrounds & Fighting",
-      "mechanics": [
-        "Paint / create",
-        "Fight / battle"
-      ],
-      "theme": "Superheroes / powers",
-      "hook": "Draw your own superhero suit on a blank mannequin. The colours and symbols you paint decide your powers, then you take it into the arena.",
-      "core_loop": [
-        "Paint a suit, cape and emblem in the studio",
-        "See which powers your design rolled",
-        "Fight other players' heroes in the arena",
-        "Win ink and fabric to unlock new colours and power slots"
-      ],
-      "twist": "Red paint adds fire, blue adds ice, lightning bolts add speed, so players copy and trade winning suit designs.",
-      "monetization": [
-        "VIP studio with extra colours",
-        "2x ink multiplier",
-        "Extra saved suit slots"
-      ],
-      "retention": [
-        "Power combo index",
-        "Ranked arena seasons",
-        "Limited event colours"
-      ],
-      "why_now": "Paint / create is up 2.08x (Kukirin Life 25.8K, Paint to Get Rich 14.0K) and Superheroes up 1.29x (Superhero Arena 9.2K). Paint × Superheroes is a 4.19 gap, and the newer draw-to-fight game DRAW SPELLS MAGIC ARENA is at 2.7K. \"Build a ___\" titles rise 1.19x.",
-      "inspired_by": [
-        "Superhero Arena",
-        "[✍️]DRAW SPELLS MAGIC ARENA",
-        "[UPD] Paint to Get Rich 🎨"
-      ],
-      "differentiator": "Hero battlegrounds hand you preset heroes; here the hero is your drawing, so no two fighters look or play the same.",
-      "art_style": "stylized",
-      "map_style": "arena"
-    },
-    {
-      "title": "Forge Gadgets for Heroes",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
-        "Sell / run a shop",
-        "Forge / craft"
-      ],
-      "theme": "Superheroes / powers",
-      "hook": "Run the gadget shop superheroes rely on. Build grappling hooks, jetpacks and power gloves, then watch your customers use them in city fights.",
-      "core_loop": [
-        "Take orders from heroes at the counter",
-        "Craft the gadget on your workbench",
-        "Sell it and watch the hero fight with it outside",
-        "Upgrade benches and hire helpers to fill orders faster"
-      ],
-      "twist": "If a hero loses a fight with your gadget, they come back angry for a refund, so quality matters as much as speed.",
-      "monetization": [
-        "2x cash multiplier",
-        "VIP legendary blueprint",
-        "Extra storage shelves"
-      ],
-      "retention": [
-        "Gadget blueprint index",
-        "Daily villain attack on the city",
-        "Shop earns offline"
-      ],
-      "why_now": "Sell / run a shop is up 1.80x (Sell Fries! 41.2K, Make Rugs! 6.9K) and Superheroes up 1.29x (Superhero Arena 9.2K). Shop × Superheroes is an open gap (3.63) and Interiors maps are rising 1.95x.",
-      "inspired_by": [
-        "🎃 Sell Fries! [Anomaly] 🍟",
-        "Make Rugs!",
-        "Superhero Arena"
-      ],
-      "differentiator": "Hero games put you in the cape; this puts you behind the counter, and every sale shows up in the fight outside.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    },
-    {
-      "title": "Bass vs Ghosts",
-      "scope": "medium",
-      "genre": "Strategy · Tower Defense",
-      "mechanics": [
-        "Tower defense"
-      ],
-      "theme": "Music / dance",
-      "hook": "Ghosts are crashing your Halloween party. Set up speakers, drums and DJ decks that blast them back with sound waves.",
-      "core_loop": [
-        "Place speaker towers along the haunted path",
-        "Drop the beat to power up your towers",
-        "Clear waves for vinyl coins",
-        "Unlock bigger speakers and new music genres"
-      ],
-      "twist": "Towers hit harder when players tap in rhythm, so a good beat doubles damage for the whole team.",
-      "monetization": [
-        "2x speed pass",
-        "VIP subwoofer tower",
-        "Luck pass for rare speakers"
-      ],
-      "retention": [
-        "Speaker index by genre",
-        "Weekly song event",
-        "Co-op wave leaderboard"
-      ],
-      "why_now": "Tower defense is up 1.71x (Cameraman Tower Defense 31.7K, Bunker vs Verity 20.1K) and Music / dance up 1.45x (Trending Emote Dance 6.5K, Piano Rhythm Tiles 4.4K). TD × Music is a 3.62 gap and \"___ vs ___\" titles rise 1.21x.",
-      "inspired_by": [
-        "[🎃UPD] Cameraman Tower Defense",
-        "Piano Rhythm Tiles",
-        "Trending Emote Dance",
-        "Bunker vs Verity"
-      ],
-      "differentiator": "TD games are about armies and anime units; here the towers are a sound system and your rhythm powers them.",
+      "differentiator": "Tower defense units are bought from a shop; here you grow each one, and they keep growing on the lane.",
       "art_style": "simulator_bright",
       "map_style": "tower_defense_lanes"
     },
     {
-      "title": "Blast Tombs for Relics",
-      "scope": "medium",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "Break / mine / dig",
-        "Collect / index"
-      ],
-      "theme": "Ancient / pyramids",
-      "hook": "Sandblast your way through sealed tomb walls and watch hidden relics appear under the sand.",
-      "core_loop": [
-        "Blast through a tomb wall layer by layer",
-        "Uncover relics and add them to your index",
-        "Sell duplicates for gold",
-        "Upgrade your blaster to reach deeper chambers"
-      ],
-      "twist": "Some walls hide cursed relics that awaken a mummy chase, and surviving it doubles the haul.",
-      "monetization": [
-        "2x blast power",
-        "Auto-blast pass",
-        "Luck pass for golden relics"
-      ],
-      "retention": [
-        "Relic index with set bonuses",
-        "Offline sand-sifter earns gold",
-        "Limited curse events"
-      ],
-      "why_now": "Break / mine / dig is the top rising mechanic at 3.00x (Break and Steal an Egg 162.9K, Dig For Eggs 7.5K) and Collect / index is up 1.97x. Collect × Ancient is an open gap (3.71) and Build the Pyramid! holds 6.9K. \"___ for ___\" titles lead at 3.52x.",
-      "inspired_by": [
-        "Break and Steal an Egg",
-        "🎃 Dig For Eggs",
-        "[🎃] Build the Pyramid!",
-        "[🎃 HALLOWEEN] Rust Blaster"
-      ],
-      "differentiator": "Dig games smash blocks for eggs; this one is a slow, satisfying reveal where the blast shows the treasure taking shape.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Polish Rocks for Cash",
-      "scope": "small",
-      "genre": "Simulation · Idle",
+      "title": "Impound Cars for Cash",
+      "scope": "large",
+      "genre": "Simulation · Vehicle Sim",
       "mechanics": [
         "Sell / run a shop",
-        "Break / mine / dig"
+        "Job / shift",
+        "Race / drive"
       ],
-      "theme": "Stones / rocks / ores",
-      "hook": "Pick up dull rocks, drop them in your tumbler, and pull out shiny gems to sell at your stand.",
+      "theme": "Vehicles",
+      "hook": "Drive a tow truck around a realistic city, hook badly parked cars, and haul them to your impound lot. Owners pay to get them back, or you sell them.",
       "core_loop": [
-        "Collect plain rocks around the riverbed",
-        "Tumble and polish them into gems",
-        "Sell gems at your roadside stand",
-        "Buy bigger tumblers that run while you are away"
+        "Patrol the city for parking tickets",
+        "Hook and tow cars to your lot",
+        "Charge owners or sell unclaimed cars",
+        "Upgrade trucks and expand the lot"
       ],
-      "twist": "You never know what's inside until it's polished, and every so often a plain rock comes out as a rare geode.",
+      "twist": "Players can be car owners too: they race to unlock their car before your tow truck pulls away.",
       "monetization": [
-        "2x polish speed",
-        "Extra tumbler slots (storage)",
-        "VIP gem display"
+        "VIP heavy-duty tow truck",
+        "2x cash pass",
+        "Extra lot space"
       ],
       "retention": [
-        "Gem index by rarity",
-        "Tumblers run offline",
-        "Daily rare-rock spawn"
+        "Lot earns offline",
+        "Truck collection",
+        "Weekly city events (snow, parade)"
       ],
-      "why_now": "Stones / rocks / ores is the top rising theme at 2.11x (+1 Stone Skipping 25.8K, Lift Rock For Eggs 9.5K) and Sell / run a shop is up 1.80x (Make Rugs! 6.9K). Idle is the fastest rising subgenre at 1.97x (Don't Miss Your Flight! 15.7K) and \"___ for ___\" titles lead at 3.52x.",
+      "why_now": "Sell / run a shop is up 2.06x and Vehicles is up 1.29x (Bike Universe 30.1K CCU, Bike For Egg! 27.4K). Realistic art is the fastest-rising style at 2.02x (Kukirin Life 33.3K, Escooter Life 5.6K), and Vehicle Sim is up 1.44x.",
       "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "Lift Rock For Eggs",
-        "Make Rugs!",
-        "Don’t Miss Your Flight! ✈️"
+        "🚨[AI COPS] Bike Universe",
+        "[🎃] Kukirin Life [Testing]",
+        "Escooter Life [🔥BETA RELEASE]",
+        "Fix My Phone!"
       ],
-      "differentiator": "Rock games are about lifting or throwing rocks for stats; this is a calm ASMR shop where the rock itself turns into the prize.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Catapult vs Castle",
-      "scope": "large",
-      "genre": "Action · Physics Sim",
-      "mechanics": [
-        "Hit / swing / launch",
-        "Tycoon / base building"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "One team builds a castle, the other team builds a catapult. Then the stones fly and the walls crumble with real physics.",
-      "core_loop": [
-        "Build your side in a timed build phase",
-        "Launch stones or patch walls during the siege",
-        "Earn gold for every block smashed or saved",
-        "Unlock new ammo, wall materials and siege engines"
-      ],
-      "twist": "Teams swap sides each round, so the best builders learn from how their own castle fell.",
-      "monetization": [
-        "VIP ammo skins",
-        "2x gold multiplier",
-        "Extra build-time pass"
-      ],
-      "retention": [
-        "Ranked siege seasons",
-        "Ammo and material index",
-        "Replay of the best crumble each day"
-      ],
-      "why_now": "Hit / swing / launch is up 1.89x (Cat Battles 26.5K) and Physics Sim is rising 1.59x (Realistic Phone Drop Test 9.2K, Ragdoll Engine 6.9K). Fantasy / medieval is up 1.32x (Pixel Lineage 7.4K), Low poly art is rising 1.79x and \"___ vs ___\" titles rise 1.21x (Bunker vs Verity 20.1K).",
-      "inspired_by": [
-        "Cat Battles 🐾",
-        "🧪Realistic Phone Drop Test",
-        "Ragdoll Engine ⚙️",
-        "Pixel Lineage [🎃Spear Class + Dragon Race]",
-        "Bunker vs Verity"
-      ],
-      "differentiator": "Physics games destroy things alone; this makes the destruction a team match with a build phase and a defend phase.",
-      "art_style": "low_poly",
-      "map_style": "arena"
+      "differentiator": "Driving games are about racing or roleplay; here the car is the product, and towing other players is the job.",
+      "art_style": "realistic",
+      "map_style": "open_world"
     }
   ]
 }
