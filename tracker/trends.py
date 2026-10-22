@@ -321,4 +321,9 @@ def run() -> dict:
     ins = insights(ctx)
     t = compute(ctx, ins)
     write(t)
-    return {"games": t["games"], "rising_mechanics": len(t["rising"]["mechanic"]), "gaps": len(t["gaps"])}
+    from . import overview
+    try:
+        ov = overview.run()
+    except Exception as e:  # the overview is extra; never let it stop the trend report
+        ov = f"failed: {e}"
+    return {"games": t["games"], "rising_mechanics": len(t["rising"]["mechanic"]), "gaps": len(t["gaps"]), "overview_days": ov}

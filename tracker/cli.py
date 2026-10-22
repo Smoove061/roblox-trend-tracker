@@ -7,6 +7,7 @@
   python -m tracker thumbs     # fetch/refresh niche icons + thumbnails now and rebuild reports/thumbs.json
   python -m tracker vision-sheets [dir]   # contact sheets for Claude: niche thumbnails + game art/map styles
   python -m tracker vision-ingest <file>  # store Claude's answers: {"niches": {...}, "styles": [...]}
+  python -m tracker overview   # weekly + monthly market overview (reports/overview.json/.md)
 """
 from __future__ import annotations
 
@@ -256,6 +257,10 @@ def main(argv=None) -> int:
     if cmd == "trends":
         daily.classify(st.load_games())
         print(_trends())
+        return 0
+    if cmd == "overview":
+        from . import overview
+        print(overview.run())
         return 0
     if cmd == "idea-lab":
         from .idea_lab import build as build_lab

@@ -127,6 +127,36 @@ button.go.small { font-size: 13.5px; padding: 7px 12px; border-radius: 10px; }
 .refs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
 .refs img { width: 56px; height: 56px; border-radius: 10px; flex: none; object-fit: cover; background: var(--paper); }
 .changed { font-size: 12.5px; color: var(--ink2); }
+/* Market overview: weekly / monthly tabs */
+.ov { margin-top: 28px; }
+.ov-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
+.ov-head h2 { font: 800 26px/1.1 var(--display); letter-spacing: -0.02em; margin: 0; text-transform: none; color: var(--ink); }
+.ov .note { color: var(--ink2); font-size: 13.5px; margin: 6px 0 0; max-width: 80ch; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.kpi { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-width: 0; background: var(--paper); }
+.kpi .k { font-size: 12.5px; color: var(--muted); }
+.kpi .v { font: 800 26px/1.15 var(--display); letter-spacing: -0.02em; margin-top: 2px; overflow-wrap: anywhere; }
+.kpi .s { font-size: 12.5px; color: var(--ink2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ov-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+.ov-card { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-width: 0; }
+.ov-card h3 { font: 600 11.5px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+.ov-card h4 { font: 600 12.5px var(--body); color: var(--ink2); margin: 10px 0 2px; }
+.mv { display: grid; grid-template-columns: minmax(0, 1fr) 76px 58px; gap: 8px; align-items: center; padding: 5px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+.mv:first-of-type { border-top: 0; }
+.mv .nm { min-width: 0; }
+.mv .nm b { display: block; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mv .nm small { display: block; color: var(--muted); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mv .pc { font: 500 12.5px var(--mono); text-align: right; white-space: nowrap; }
+.mv .pc[data-d="up"] { color: var(--ok); }
+.mv .pc[data-d="down"] { color: var(--warn); }
+.spark { width: 76px; height: 24px; display: block; color: var(--ink2); overflow: visible; }
+.spark polyline { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.spark circle { fill: currentColor; }
+.spark rect { fill: transparent; }
+.spark rect:hover + circle, .spark .hl { fill: var(--accent); }
+.ov-games { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+.ov-empty { color: var(--muted); padding: 16px 0; }
+@media (max-width: 1000px) { .ov-grid, .ov-games { grid-template-columns: 1fr; } .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .tracker { margin-top: 28px; }
 .tracker > h2.big { font: 800 26px/1.1 var(--display); letter-spacing: -0.02em; margin: 0; text-transform: none; color: var(--ink); }
 .tracker .hint { color: var(--ink2); margin: 6px 0 14px; font-size: 14px; max-width: 70ch; }
@@ -188,7 +218,7 @@ footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
   <header class="top">
     <div>
       <h1>Backyard Idea Lab<span class="dot">.</span></h1>
-      <p class="lede">Fresh Roblox game concepts built on what's rising right now. Ideas follow the trend without copying the games that started it. <a href="#tracker">Thumbnail &amp; style tracker ↓</a></p>
+      <p class="lede">Fresh Roblox game concepts built on what's rising right now. Ideas follow the trend without copying the games that started it. <a href="#overview">Weekly &amp; monthly overview ↓</a> · <a href="#tracker">Thumbnail &amp; style tracker ↓</a></p>
     </div>
     <div class="asof" id="asof"></div>
   </header>
@@ -231,6 +261,18 @@ footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
       <div class="board" id="board"></div>
     </section>
   </div>
+  <section class="ov panel" id="overview" aria-labelledby="ov-h">
+    <div class="ov-head">
+      <h2 id="ov-h">Market overview</h2>
+      <div class="tabs" role="tablist" aria-label="Overview period">
+        <button type="button" role="tab" id="ov-t7" aria-selected="true" aria-controls="ov-body" data-w="7">Last 7 days</button>
+        <button type="button" role="tab" id="ov-t30" aria-selected="false" tabindex="-1" aria-controls="ov-body" data-w="30">Last 30 days</button>
+      </div>
+    </div>
+    <p class="note" id="ov-note"></p>
+    <div id="ov-body" role="tabpanel" aria-labelledby="ov-t7"></div>
+  </section>
+
   <section class="tracker panel" id="tracker" aria-labelledby="tracker-h">
     <h2 class="big" id="tracker-h">Thumbnail &amp; style tracker</h2>
     <p class="hint">What the icons and thumbnails of the top games in a niche have in common, measured every day, and what yours should do to fit in and stand out.</p>
@@ -429,6 +471,8 @@ footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; }
   const SL = P.style_labels || { art_styles: {}, map_styles: {} };
   const styleLabel = (kind, k) => k ? ((kind === "art" ? SL.art_styles : SL.map_styles)[k] || {}).label || "" : "";
   const DATA = { as_of: P.as_of, games_tracked: P.games_tracked, young_days: P.young_days, young_ccu_share: P.young_ccu_share, rising: P.rising, gaps: P.gaps, pairs: P.pairs, benchmarks: P.benchmarks, young_games_top: P.young_games_top, top_games: P.top_games,
+    weekly_movement: (() => { const o = ((P.overview || {}).windows || {})["7"]; if (!o || o.empty) return null; const pick = c => ({ beating_market: (c.gainers || []).slice(0, 5).map(r => [r.label, Math.round(r.change * 100) + "%"]), falling_behind: (c.fallers || []).slice(0, 5).map(r => [r.label, Math.round(r.change * 100) + "%"]) });
+      return { market_change: o.headline.ccu_change, genre: pick(o.categories.genre || {}), mechanic: pick(o.categories.mechanic || {}), theme: pick(o.categories.theme || {}), new_games_gaining: (o.breakouts || []).slice(0, 5).map(g => g.name) }; })(),
     style_labels: Object.fromEntries(["art_styles", "map_styles"].map(t => [t, Object.fromEntries(Object.entries(SL[t] || {}).map(([k, v]) => [k, v.label]))])) };
   const QUALITY = "Studio quality bar: AAA polish that makes players ask 'how is this Roblox?'. VFX staged anticipation → buildup → impact → follow-through → fade. Maps dense with purposeful areas, interiors and alternate routes. Weighted animations with no foot sliding. Optimized and game-ready.";
   function ideasPrompt() {
@@ -439,6 +483,7 @@ Rules:
 - Each idea rides at least one RISING mechanic, theme or title formula from the data (momentum > 1.0), and says which in why_now with real numbers from the data.
 - Prefer trends with confidence "high" (many new games share them). A "low" confidence trend (under 5 new games, or one breakout holding most of its players; see confidence_note) can only be a secondary trend, never the main reason for an idea, and at most 2 of the 10 ideas may lean on one.
 - Use at least 5 different themes across the 10 ideas.
+- weekly_movement shows which genres, mechanics and themes beat or lagged the whole market over the last week (same games, same weekdays). Favour ones beating the market; treat ones falling behind with care even if their momentum is high.
 - Each idea must be fresh: not a reskin of any game in young_games_top or top_games. Combine trends in new ways (the "gaps" and "pairs" lists help). Its title must not reuse a tracked game's title.
 - Titles follow the naming conventions breakouts use (see rising title formulas), short and clickable.
 - Monetization and retention follow what leaders in that mechanic use (benchmarks).
@@ -748,6 +793,85 @@ ${JSON.stringify(DATA)}`;
   function ideaKeys(idea) { return { mech: (idea.mechanics || []).map(m => MECH_KEY[m]).filter(Boolean), theme: [THEME_KEY[idea.theme]].filter(Boolean) }; }
   function nicheKeys(idea) { const k = ideaKeys(idea); return [...k.mech.map(x => "mechanic:" + x), ...k.theme.map(x => "theme:" + x)].filter(x => (P.thumbs || {})[x]); }
   const img = (file, alt) => { const u = file && (P.images || {})[file]; return u ? el("img", { src: u, alt: alt || "", loading: "lazy" }) : el("div", { cls: "ph", text: (alt || "?").replace(/[^A-Za-z0-9]/g, "").slice(0, 1) || "?" }); };
+
+  // ---- market overview (weekly / monthly tabs)
+  const OV = P.overview || {};
+  const fmtBig = n => n == null ? "–" : n >= 1e9 ? (n / 1e9).toFixed(1) + "B" : fmt(Math.round(n));
+  const pct = v => { if (v == null) return "–"; const r = Math.round(v * 100); return (r > 0 ? "+" : r < 0 ? "−" : "") + Math.abs(r) + "%"; };
+  const pts = v => v == null ? "" : pct(v) + " vs market";
+  const dayTxt = d => new Date(d + "T12:00:00Z").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  const SVGNS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, attrs, kids) { const e = document.createElementNS(SVGNS, tag); for (const [k, v] of Object.entries(attrs || {})) e.setAttribute(k, v); (kids || []).forEach(c => c && e.append(c)); return e; }
+  function spark(series, days, label) {
+    const W = 76, H = 24, n = series.length;
+    if (n < 2) return el("span");
+    const lo = Math.min(...series), hi = Math.max(...series), span = hi - lo || hi || 1;
+    const x = i => (i / (n - 1)) * (W - 4) + 2, y = v => H - 3 - ((v - lo) / span) * (H - 6);
+    const svg = svgEl("svg", { class: "spark", viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `${label}: share of all players each day, ${(series[0] * 100).toFixed(1)}% to ${(series[n - 1] * 100).toFixed(1)}%` });
+    svg.append(svgEl("polyline", { points: series.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ") }));
+    series.forEach((v, i) => {  // hover targets wider than the line; each shows that day's share
+      const r = svgEl("rect", { x: Math.max(0, x(i) - W / n / 2), y: 0, width: W / n, height: H }, [svgEl("title", {}, [document.createTextNode(`${dayTxt(days[i])}: ${(v * 100).toFixed(2)}% of players`)])]);
+      const c = svgEl("circle", { cx: x(i), cy: y(v), r: i === n - 1 ? 2.2 : 0 });
+      r.addEventListener("mouseenter", () => c.setAttribute("r", 2.6)); r.addEventListener("mouseleave", () => c.setAttribute("r", i === n - 1 ? 2.2 : 0));
+      svg.append(r, c);
+    });
+    return svg;
+  }
+  function moverRow(r, days) {
+    const d = r.change == null ? "" : r.change > 0.005 ? "up" : r.change < -0.005 ? "down" : "";
+    return el("div", { cls: "mv", title: `${r.label}: ${fmt(r.start_ccu)} → ${fmt(r.end_ccu)} avg players on the same games (${pct(r.change)}, ${pts(r.vs_market)}) · ${r.games} games · ${fmtBig(r.visits)} plays${r.top ? " · biggest: " + r.top : ""}` }, [
+      el("div", { cls: "nm" }, [el("b", { text: r.label }), el("small", { text: `${pts(r.vs_market)} · ${fmt(r.end_ccu)} players` })]),
+      spark(r.share || [], days, r.label),
+      el("span", { cls: "pc", "data-d": d, text: (d === "up" ? "▲ " : d === "down" ? "▼ " : "") + pct(r.change) })]);
+  }
+  function catCard(title, c, days) {
+    const card = el("div", { cls: "ov-card" }, [el("h3", { text: title })]);
+    const up = (c.gainers || []).slice(0, 5), dn = (c.fallers || []).slice(0, 5);
+    card.append(el("h4", { text: "Beating the market" }));
+    up.length ? up.forEach(r => card.append(moverRow(r, days))) : card.append(el("div", { cls: "ov-empty", text: "Nothing clearly ahead this period." }));
+    card.append(el("h4", { text: "Falling behind" }));
+    dn.length ? dn.forEach(r => card.append(moverRow(r, days))) : card.append(el("div", { cls: "ov-empty", text: "Nothing clearly behind this period." }));
+    return card;
+  }
+  function gameCard(title, list, kind, since) {
+    const card = el("div", { cls: "ov-card" }, [el("h3", { text: title })]);
+    if (!list || !list.length) { card.append(el("div", { cls: "ov-empty", text: "None this period." })); return card; }
+    list.slice(0, 6).forEach(g => {
+      const href = g.place ? "https://www.roblox.com/games/" + g.place : null, d = g.end >= g.start ? "up" : "down";
+      const fresh = g.created && since && g.created >= since;  // launched inside the comparison period
+      const sub = kind === "new" ? (g.start ? `${fmt(g.start)} → ${fmt(g.end)} players` : `${fresh ? "launched this period" : "newly tracked"} · ${fmt(g.end)} players`) + (g.created ? ` · out ${dayTxt(g.created)}` : "") : `${fmt(g.start)} → ${fmt(g.end)} players`;
+      card.append(el("div", { cls: "mv", style: "grid-template-columns:minmax(0,1fr) 64px" }, [
+        el("div", { cls: "nm" }, [href ? el("b", {}, el("a", { href, target: "_blank", rel: "noopener", text: g.name })) : el("b", { text: g.name }), el("small", { text: sub })]),
+        el("span", { cls: "pc", "data-d": d, text: g.start ? (d === "up" ? "▲ " : "▼ ") + pct(g.change) : fresh ? "NEW" : "–" })]));
+    });
+    return card;
+  }
+  function renderOverview(w) {
+    const body = $("ov-body"), o = (OV.windows || {})[w];
+    body.textContent = ""; $("ov-note").textContent = "";
+    ["ov-t7", "ov-t30"].forEach(id => { const b = $(id), on = b.dataset.w === w; b.setAttribute("aria-selected", String(on)); b.tabIndex = on ? 0 : -1; });
+    body.setAttribute("aria-labelledby", w === "7" ? "ov-t7" : "ov-t30");
+    if (!o || o.empty) { body.append(el("div", { cls: "ov-empty", text: (o && o.note) || "Not enough history yet." })); return; }
+    const h = o.headline, cmp = o.compare, days = o.share_days || o.days || [];
+    const range = d => d[0] === d[1] ? dayTxt(d[0]) : `${dayTxt(d[0])}–${dayTxt(d[1])}`;
+    $("ov-note").textContent = `${dayTxt(o.days[0])} to ${dayTxt(o.days[o.days.length - 1])}${w === "30" && o.days_of_data < 30 ? ` (${o.days_of_data} days of history so far; the full 30 arrive as data builds up)` : ""}. ` +
+      `Changes compare average players on ${range(cmp.from)} with ${range(cmp.to)}, on the same weekdays and the same games, so weekend spikes and newly tracked games don't skew them. ` +
+      `Lists are ranked against the whole market. Lines show each category's share of all players per day.`;
+    const top = (o.climbers || [])[0], brk = (o.breakouts || [])[0];
+    body.append(el("div", { cls: "kpis" }, [
+      el("div", { cls: "kpi" }, [el("div", { cls: "k", text: "Whole market" }), el("div", { cls: "v", text: pct(h.ccu_change) }), el("div", { cls: "s", text: `avg players, ${fmt(h.matched_games)} games compared` })]),
+      el("div", { cls: "kpi" }, [el("div", { cls: "k", text: "Plays" }), el("div", { cls: "v", text: fmtBig(h.visits) }), el("div", { cls: "s", text: `across ${fmt(h.games)} tracked games` })]),
+      el("div", { cls: "kpi" }, [el("div", { cls: "k", text: "Biggest climber" }), el("div", { cls: "v", text: top ? "+" + fmt(top.end - top.start) : "–" }), el("div", { cls: "s", text: top ? top.name : "" })]),
+      el("div", { cls: "kpi" }, [el("div", { cls: "k", text: "Top new game" }), el("div", { cls: "v", text: brk ? fmt(brk.end) : "–" }), el("div", { cls: "s", text: brk ? brk.name : "" })]),
+    ]));
+    const C = o.categories || {};
+    body.append(el("div", { cls: "ov-grid" }, [catCard("Genres", C.genre || {}, days), catCard("Mechanics", C.mechanic || {}, days), catCard("Themes & topics", C.theme || {}, days)]));
+    body.append(el("div", { cls: "ov-grid" }, [catCard("Subgenres", C.subgenre || {}, days), catCard("Title formulas", C.formula || {}, days), gameCard("New games gaining the most", o.breakouts, "new", cmp.from[0])]));
+    body.append(el("div", { cls: "ov-games" }, [gameCard("Biggest climbers", o.climbers), gameCard("Biggest drops", o.fallers)]));
+  }
+  ["ov-t7", "ov-t30"].forEach(id => $(id).addEventListener("click", e => renderOverview(e.currentTarget.dataset.w)));
+  $("ov-t7").parentElement.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { const next = document.activeElement === $("ov-t7") ? $("ov-t30") : $("ov-t7"); next.focus(); renderOverview(next.dataset.w); } });
+  renderOverview("7");
 
   // ---- alternate titles
   async function altTitles(idea, listName, idx, box, btn, st) {

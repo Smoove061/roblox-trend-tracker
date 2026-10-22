@@ -86,12 +86,22 @@ def build_pack() -> dict:
         "style_coverage": tr.get("style_coverage", {}),
         "vision_prompt": thumbs.NICHE_PROMPT.format(label="__LABEL__"),
         "past_ideas": past_ideas(),
+        "overview": _overview(),
         "names": [r["name"] for r in rows],
         "places": {r["name"]: r["place"] for r in rows if r["place"]},
     }
 
 
 IDEA_HISTORY = "idea_history.json"
+
+
+def _overview() -> dict:
+    """Weekly + monthly overview, computed fresh from the rollups (falls back to the saved report)."""
+    from . import overview
+    try:
+        return overview.compute()
+    except Exception:  # noqa: BLE001 - the page still works without it
+        return st.load_json(st.REPORTS / "overview.json", {})
 
 
 def past_ideas(exclude_date: str | None = None) -> list[dict]:
