@@ -13,6 +13,8 @@ Trends (reports/trends.json + reports/trends.md):
   how much of *young-game* CCU it holds (games 60 days old or less), and momentum = young share / overall
   share. Momentum above 1 means new games in that category are winning more than its size would suggest:
   it's rising. Growth rates are folded in once there's 14 days of history.
+  Each category also gets a confidence (high / medium / low): low when fewer than 5 new games share it or one
+  game holds over 60% of its new-game CCU, plus its momentum a week ago (reports/momentum_history.json).
   Combos (mechanic x theme) and gaps: rising mechanics paired with strong themes that no tracked game uses yet.
 """
 from __future__ import annotations
@@ -98,6 +100,70 @@ def _ex(c):
     return {"id": c["id"], "name": c["name"], "place": c["place"], "ccu": c["ccu"], "age": c["age"]}
 
 
+# Trend confidence. A trend carried by one breakout game, or by only a handful of new games, is a weaker
+# signal than one many new games share. Backtest over the first week of history (2026-10-16 to 10-22):
+# rising trends with < 5 young games or one game holding > 60% of young CCU lost a median 0.32 momentum
+# in 6 days vs 0.12 for broad ones. Small sample, so this only re-weights; it doesn't filter anything out.
+CONF_WEIGHT = {"high": 1.0, "medium": 0.92, "low": 0.8}
+HISTORY_DAYS = 45
+
+
+def add_confidence(i: dict, prev: float | None = None) -> dict:
+    yg, yccu = i["young_games"], i["young_ccu"]
+    top = i["young_examples"][0]["ccu"] if i.get("young_examples") else 0
+    top1 = top / yccu if yccu else 0.0
+    m = i.get("momentum_adj") or 0
+    delta = round(m - prev, 2) if prev is not None else None
+    reasons = []
+    if yg < 5:
+        reasons.append(f"only {yg} new game{'s' if yg != 1 else ''}")
+    if top1 > 0.6 and yg > 1:
+        reasons.append(f"one game holds {top1:.0%} of new-game CCU")
+    if delta is not None and delta <= -0.3:
+        reasons.append(f"momentum down {abs(delta):.2f} this week")
+    if reasons:
+        conf = "low" if (yg < 5 or top1 > 0.6) else "medium"
+    elif yg >= 10 and top1 <= 0.45:
+        conf = "high"
+    else:
+        conf = "medium"
+        reasons.append(f"{yg} new games, top one {top1:.0%} of their CCU")
+    if delta is not None and delta >= 0.15 and conf != "low":
+        reasons.append(f"momentum up {delta:.2f} this week")
+    i.update({"top1_share": round(top1, 3), "confidence": conf, "confidence_note": "; ".join(reasons) or f"{yg} new games, spread out",
+              "momentum_week_ago": prev, "momentum_change": delta})
+    return i
+
+
+def load_history() -> dict:
+    return st.load_json(st.REPORTS / "momentum_history.json", {})
+
+
+def past_momentum(hist: dict, dim: str, key: str, days_back: int = 7) -> float | None:
+    """Momentum about a week ago (the oldest snapshot within days_back days, at least 3 days old)."""
+    today = st.now_utc().date()
+    best = None
+    for d in sorted(hist):
+        try:
+            age = (today - date.fromisoformat(d)).days
+        except ValueError:
+            continue
+        if 3 <= age <= days_back and f"{dim}:{key}" in hist[d]:
+            best = hist[d][f"{dim}:{key}"]
+            break
+    return best
+
+
+def record_history(trends: dict) -> None:
+    hist = load_history()
+    day = trends["as_of"][:10]
+    hist[day] = {f"{dim}:{i['key']}": i["momentum_adj"] for dim in ("mechanic", "theme", "formula", "subgenre", "art_style", "map_style")
+                 for i in trends["dimensions"].get(dim, []) if i.get("momentum_adj") is not None}
+    for d in sorted(hist)[:-HISTORY_DAYS]:
+        del hist[d]
+    st.save_json(st.REPORTS / "momentum_history.json", hist)
+
+
 def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
     total = sum(c["ccu"] for c in ctx.values()) or 1
     young_total = sum(c["ccu"] for c in ctx.values() if c["young"]) or 1
@@ -140,9 +206,15 @@ def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
         items.sort(key=lambda i: -i["ccu"])
         dims[dim] = items
 
+    hist = load_history()
+    for dim, items in dims.items():
+        for i in items:
+            # style tags grow as the vision pass classifies more games, so their week-on-week change isn't a market signal
+            add_confidence(i, None if dim in ("art_style", "map_style") else past_momentum(hist, dim, i["key"]))
+
     def rising(dim, min_young=2, min_young_ccu=3000):
         r = [i for i in dims[dim] if i["young_games"] >= min_young and i["young_ccu"] >= min_young_ccu and (i["momentum_adj"] or 0) > 1.05]
-        return sorted(r, key=lambda i: -(i["momentum_adj"] * (1 + (i["growth"] or 0))))
+        return sorted(r, key=lambda i: -(i["momentum_adj"] * (1 + (i["growth"] or 0)) * CONF_WEIGHT[i["confidence"]]))
 
     # combos and gaps: which mechanic x theme pairings exist, and which promising ones nobody has built
     combos = defaultdict(list)
@@ -167,9 +239,11 @@ def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
         for t in strong_themes:
             if (m["key"], t["key"]) in combos:
                 continue
-            score = (m["momentum_adj"] or 0) * (0.5 + (t["momentum_adj"] or 0)) * (1 + min(t["share"] * 20, 1))
+            score = (m["momentum_adj"] or 0) * (0.5 + (t["momentum_adj"] or 0)) * (1 + min(t["share"] * 20, 1)) \
+                * CONF_WEIGHT[m["confidence"]] * CONF_WEIGHT[t["confidence"]]
             gaps.append({"mechanic": m["key"], "mechanic_label": m["label"], "theme": t["key"], "theme_label": t["label"],
                          "score": round(score, 2), "mechanic_momentum": m["momentum_adj"], "theme_momentum": t["momentum_adj"],
+                         "mechanic_confidence": m["confidence"], "theme_confidence": t["confidence"],
                          "theme_ccu": t["ccu"]})
     gaps.sort(key=lambda g: -g["score"])
 
@@ -221,6 +295,7 @@ def compute(ctx: dict, ins: list[dict] | None = None) -> dict:
 
 def write(trends: dict):
     st.save_json(st.REPORTS / "trends.json", trends)
+    record_history(trends)
     L = [f"# Uprising trends — {trends['as_of'][:10]}", "",
          f"{trends['games']:,} games tracked · {trends['young_games']} are {trends['young_days']} days old or less and hold "
          f"{trends['young_ccu'] / max(trends['total_ccu'], 1):.0%} of CCU.",
@@ -228,13 +303,13 @@ def write(trends: dict):
          "outperforming its size: it's rising.", ""]
     for dim, title in (("mechanic", "Rising core mechanics"), ("theme", "Rising themes"), ("formula", "Rising title formulas"),
                        ("subgenre", "Rising subgenres"), ("art_style", "Rising art styles"), ("map_style", "Rising map styles")):
-        L += [f"## {title}", "", "| | Momentum | Young games | Young CCU | All games | Biggest young game |", "|---|---|---|---|---|---|"]
+        L += [f"## {title}", "", "| | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |", "|---|---|---|---|---|---|---|"]
         for i in trends["rising"][dim]:
             ex = i["young_examples"][0] if i["young_examples"] else None
-            L.append(f"| {i['label']} | {i['momentum_adj']}x | {i['young_games']} | {i['young_ccu']:,} | {i['games']} | "
+            L.append(f"| {i['label']} | {i['momentum_adj']}x | {i.get('confidence', '–')} ({i.get('confidence_note', '')}) | {i['young_games']} | {i['young_ccu']:,} | {i['games']} | "
                      f"{(ex['name'] + ' (' + format(ex['ccu'], ',') + ')') if ex else '–'} |")
         if not trends["rising"][dim]:
-            L.append("| none yet | | | | | |")
+            L.append("| none yet | | | | | | |")
         L.append("")
     L += ["## Untapped combinations (rising mechanic x strong theme, no tracked game)", "", "| Mechanic | Theme | Score |", "|---|---|---|"]
     L += [f"| {g['mechanic_label']} | {g['theme_label']} | {g['score']} |" for g in trends["gaps"][:20]]

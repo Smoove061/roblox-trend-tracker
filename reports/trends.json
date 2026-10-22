@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-22T11:58:44Z",
+  "as_of": "2026-10-22T18:55:44Z",
   "benchmarks": {
     "break_mine": {
       "common_features": [
@@ -138,7 +138,8 @@
         "vip",
         "skip",
         "storage",
-        "multiplier"
+        "multiplier",
+        "luck"
       ],
       "pass_price_median": 271,
       "passes_median": 6,
@@ -190,13 +191,14 @@
       "verb": "hit, swing or launch things for distance or drops"
     },
     "job_shift": {
-      "common_features": [],
-      "common_pass_types": [
-        "multiplier",
-        "vip"
+      "common_features": [
+        "codes"
       ],
-      "pass_price_median": 136,
-      "passes_median": 9,
+      "common_pass_types": [
+        "multiplier"
+      ],
+      "pass_price_median": 149,
+      "passes_median": 10,
       "verb": "work a job or shift"
     },
     "merge": {
@@ -533,7 +535,7 @@
       "young_games": 7
     },
     {
-      "ccu": 1215805,
+      "ccu": 1215917,
       "examples": [
         {
           "age": 89,
@@ -550,14 +552,14 @@
           "place": "85738654635245"
         }
       ],
-      "games": 85,
+      "games": 88,
       "mechanic": "hatch_gacha",
       "theme": "animals",
       "young_ccu": 120030,
       "young_games": 28
     },
     {
-      "ccu": 133960,
+      "ccu": 134021,
       "examples": [
         {
           "age": 46,
@@ -574,7 +576,7 @@
           "place": "8737899170"
         }
       ],
-      "games": 46,
+      "games": 47,
       "mechanic": "hatch_gacha",
       "theme": "money",
       "young_ccu": 76212,
@@ -749,7 +751,7 @@
       "young_games": 8
     },
     {
-      "ccu": 1030826,
+      "ccu": 1033995,
       "examples": [
         {
           "age": 89,
@@ -766,11 +768,11 @@
           "place": "74023858073178"
         }
       ],
-      "games": 15,
+      "games": 16,
       "mechanic": "steal_raid",
       "theme": "animals",
-      "young_ccu": 37449,
-      "young_games": 9
+      "young_ccu": 40618,
+      "young_games": 10
     },
     {
       "ccu": 28974,
@@ -917,7 +919,7 @@
       "young_games": 4
     },
     {
-      "ccu": 38490,
+      "ccu": 38523,
       "examples": [
         {
           "age": 37,
@@ -934,7 +936,7 @@
           "place": "70906625936847"
         }
       ],
-      "games": 21,
+      "games": 22,
       "mechanic": "hatch_gacha",
       "theme": "vehicles",
       "young_ccu": 20369,
@@ -1198,7 +1200,7 @@
       "young_games": 3
     },
     {
-      "ccu": 34582,
+      "ccu": 34604,
       "examples": [
         {
           "age": 3091,
@@ -1215,7 +1217,7 @@
           "place": "106198175232796"
         }
       ],
-      "games": 18,
+      "games": 19,
       "mechanic": "hatch_gacha",
       "theme": "anime",
       "young_ccu": 12723,
@@ -1246,7 +1248,7 @@
       "young_games": 2
     },
     {
-      "ccu": 48981,
+      "ccu": 48997,
       "examples": [
         {
           "age": 30,
@@ -1263,14 +1265,14 @@
           "place": "120135584963579"
         }
       ],
-      "games": 69,
+      "games": 70,
       "mechanic": "collect_index",
       "theme": "money",
       "young_ccu": 12457,
       "young_games": 4
     },
     {
-      "ccu": 17523,
+      "ccu": 17560,
       "examples": [
         {
           "age": 25,
@@ -1287,7 +1289,7 @@
           "place": "3623096087"
         }
       ],
-      "games": 14,
+      "games": 15,
       "mechanic": "plus_one_stat",
       "theme": "animals",
       "young_ccu": 10994,
@@ -1798,7 +1800,7 @@
       "young_games": 3
     },
     {
-      "ccu": 13286,
+      "ccu": 13325,
       "examples": [
         {
           "age": 1181,
@@ -1815,7 +1817,7 @@
           "place": "90796158856427"
         }
       ],
-      "games": 15,
+      "games": 16,
       "mechanic": "hatch_gacha",
       "theme": "giant",
       "young_ccu": 5521,
@@ -1874,13 +1876,18 @@
     "art_style": [
       {
         "ccu": 1957901,
+        "confidence": "high",
+        "confidence_note": "54 new games, spread out",
         "games": 107,
         "growth": -0.1237,
         "key": "simulator_bright",
         "label": "Bright simulator",
         "momentum": 1.4,
         "momentum_adj": 1.39,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.2721,
+        "top1_share": 0.227,
         "top_examples": [
           {
             "age": 89,
@@ -1933,13 +1940,18 @@
       },
       {
         "ccu": 1023043,
+        "confidence": "high",
+        "confidence_note": "32 new games, spread out",
         "games": 105,
         "growth": -0.0853,
         "key": "stylized",
         "label": "Stylized / cartoon",
         "momentum": 1.19,
         "momentum_adj": 1.18,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.1422,
+        "top1_share": 0.183,
         "top_examples": [
           {
             "age": 3387,
@@ -1992,13 +2004,18 @@
       },
       {
         "ccu": 877688,
+        "confidence": "medium",
+        "confidence_note": "6 new games, top one 40% of their CCU",
         "games": 30,
         "growth": -0.0209,
         "key": "classic_studs",
         "label": "Classic / studded",
         "momentum": 0.49,
         "momentum_adj": 0.53,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.122,
+        "top1_share": 0.403,
         "top_examples": [
           {
             "age": 4660,
@@ -2051,13 +2068,18 @@
       },
       {
         "ccu": 603715,
+        "confidence": "high",
+        "confidence_note": "13 new games, spread out",
         "games": 113,
         "growth": -0.0572,
         "key": "anime",
         "label": "Anime / cel-shaded",
         "momentum": 0.21,
         "momentum_adj": 0.3,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0839,
+        "top1_share": 0.425,
         "top_examples": [
           {
             "age": 2836,
@@ -2110,13 +2132,18 @@
       },
       {
         "ccu": 437011,
+        "confidence": "medium",
+        "confidence_note": "9 new games, top one 29% of their CCU",
         "games": 36,
         "growth": -0.0377,
         "key": "dark_gritty",
         "label": "Dark / gritty",
         "momentum": 0.68,
         "momentum_adj": 0.73,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0607,
+        "top1_share": 0.286,
         "top_examples": [
           {
             "age": 597,
@@ -2169,13 +2196,18 @@
       },
       {
         "ccu": 362713,
+        "confidence": "high",
+        "confidence_note": "15 new games, spread out",
         "games": 61,
         "growth": -0.041,
         "key": "realistic",
         "label": "Realistic",
         "momentum": 2.29,
         "momentum_adj": 2.07,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0504,
+        "top1_share": 0.306,
         "top_examples": [
           {
             "age": 19,
@@ -2228,13 +2260,18 @@
       },
       {
         "ccu": 121160,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 79% of new-game CCU",
         "games": 8,
         "growth": -0.0045,
         "key": "meme_chaotic",
         "label": "Meme / chaotic",
         "momentum": 0.58,
         "momentum_adj": 0.74,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0168,
+        "top1_share": 0.79,
         "top_examples": [
           {
             "age": 524,
@@ -2287,13 +2324,18 @@
       },
       {
         "ccu": 89685,
+        "confidence": "low",
+        "confidence_note": "only 4 new games",
         "games": 23,
         "growth": -0.1703,
         "key": "voxel_blocky",
         "label": "Voxel / blocky",
         "momentum": 1.61,
         "momentum_adj": 1.34,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0125,
+        "top1_share": 0.434,
         "top_examples": [
           {
             "age": 62,
@@ -2346,13 +2388,18 @@
       },
       {
         "ccu": 36132,
+        "confidence": "low",
+        "confidence_note": "only 4 new games",
         "games": 7,
         "growth": 0.0666,
         "key": "low_poly",
         "label": "Low poly",
         "momentum": 2.45,
         "momentum_adj": 1.48,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.005,
+        "top1_share": 0.415,
         "top_examples": [
           {
             "age": 659,
@@ -2406,14 +2453,19 @@
     ],
     "formula": [
       {
-        "ccu": 3316917,
-        "games": 2215,
+        "ccu": 3329543,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.22 this week",
+        "games": 2218,
         "growth": -0.0889,
         "key": "emoji",
         "label": "Emoji in title",
         "momentum": 1.0,
         "momentum_adj": 1.0,
-        "share": 0.461,
+        "momentum_change": 0.22,
+        "momentum_week_ago": 0.78,
+        "share": 0.4627,
+        "top1_share": 0.073,
         "top_examples": [
           {
             "age": 2375,
@@ -2437,7 +2489,7 @@
             "place": "920587237"
           }
         ],
-        "young_ccu": 566091,
+        "young_ccu": 564708,
         "young_examples": [
           {
             "age": 46,
@@ -2462,17 +2514,22 @@
           }
         ],
         "young_games": 200,
-        "young_share": 0.4622
+        "young_share": 0.461
       },
       {
-        "ccu": 1100285,
-        "games": 41,
+        "ccu": 1103454,
+        "confidence": "high",
+        "confidence_note": "19 new games, spread out",
+        "games": 42,
         "growth": -0.148,
         "key": "steal_a",
         "label": "\"Steal a ___\"",
-        "momentum": 0.09,
-        "momentum_adj": 0.15,
-        "share": 0.1529,
+        "momentum": 0.11,
+        "momentum_adj": 0.16,
+        "momentum_change": -0.06,
+        "momentum_week_ago": 0.22,
+        "share": 0.1534,
+        "top1_share": 0.154,
         "top_examples": [
           {
             "age": 89,
@@ -2489,15 +2546,22 @@
             "place": "109983668079237"
           },
           {
-            "age": 59,
-            "ccu": 3155,
-            "id": "10758397570",
-            "name": "Steal an Egg for Squishy Dumplings!",
-            "place": "134679507313109"
+            "age": 20,
+            "ccu": 3169,
+            "id": "10768941204",
+            "name": "Steal A DNA",
+            "place": "137922625460109"
           }
         ],
-        "young_ccu": 17378,
+        "young_ccu": 20547,
         "young_examples": [
+          {
+            "age": 20,
+            "ccu": 3169,
+            "id": "10768941204",
+            "name": "Steal A DNA",
+            "place": "137922625460109"
+          },
           {
             "age": 59,
             "ccu": 3155,
@@ -2511,27 +2575,25 @@
             "id": "10765153945",
             "name": "[\ud83c\udf83] Steal A Car",
             "place": "87740422849523"
-          },
-          {
-            "age": 60,
-            "ccu": 1871,
-            "id": "10757498504",
-            "name": "Steal An Anime Egg",
-            "place": "78933302895115"
           }
         ],
-        "young_games": 18,
-        "young_share": 0.0142
+        "young_games": 19,
+        "young_share": 0.0168
       },
       {
-        "ccu": 523835,
-        "games": 405,
-        "growth": -0.0954,
+        "ccu": 531575,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.20 this week",
+        "games": 403,
+        "growth": -0.095,
         "key": "update_tag",
         "label": "[UPDATE] tag prefix",
-        "momentum": 1.13,
-        "momentum_adj": 1.12,
-        "share": 0.0728,
+        "momentum": 1.27,
+        "momentum_adj": 1.24,
+        "momentum_change": 0.2,
+        "momentum_week_ago": 1.04,
+        "share": 0.0739,
+        "top1_share": 0.247,
         "top_examples": [
           {
             "age": 731,
@@ -2555,7 +2617,7 @@
             "place": "132929771812494"
           }
         ],
-        "young_ccu": 101110,
+        "young_ccu": 115158,
         "young_examples": [
           {
             "age": 57,
@@ -2565,32 +2627,37 @@
             "place": "132929771812494"
           },
           {
+            "age": 5,
+            "ccu": 14048,
+            "id": "10771421858",
+            "name": "[UPD \ud83c\udf83] DONT SPLASH",
+            "place": "119958473240233"
+          },
+          {
             "age": 42,
             "ccu": 9342,
             "id": "10765902945",
             "name": "[UPDATE 2.5] Anime Legacy Simulator",
             "place": "106198175232796"
-          },
-          {
-            "age": 17,
-            "ccu": 8155,
-            "id": "10769514597",
-            "name": "[UPD\u2728] Makeup Salon\ud83d\udc84",
-            "place": "126608757616138"
           }
         ],
-        "young_games": 53,
-        "young_share": 0.0825
+        "young_games": 54,
+        "young_share": 0.094
       },
       {
-        "ccu": 262837,
-        "games": 210,
-        "growth": -0.0862,
+        "ccu": 263395,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.49 this week",
+        "games": 211,
+        "growth": -0.0864,
         "key": "one_word",
         "label": "One-word title",
         "momentum": 0.52,
         "momentum_adj": 0.62,
-        "share": 0.0365,
+        "momentum_change": -0.49,
+        "momentum_week_ago": 1.11,
+        "share": 0.0366,
+        "top1_share": 0.422,
         "top_examples": [
           {
             "age": 879,
@@ -2643,13 +2710,18 @@
       },
       {
         "ccu": 221811,
+        "confidence": "low",
+        "confidence_note": "one game holds 61% of new-game CCU",
         "games": 170,
         "growth": -0.0594,
         "key": "simulator",
         "label": "\"___ Simulator\"",
         "momentum": 0.41,
         "momentum_adj": 0.55,
+        "momentum_change": 0.07,
+        "momentum_week_ago": 0.48,
         "share": 0.0308,
+        "top1_share": 0.609,
         "top_examples": [
           {
             "age": 1720,
@@ -2702,13 +2774,18 @@
       },
       {
         "ccu": 173218,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.19 this week",
         "games": 159,
         "growth": -0.2097,
         "key": "plus_one",
         "label": "\"+1 ___\"",
         "momentum": 2.44,
         "momentum_adj": 2.02,
+        "momentum_change": 0.19,
+        "momentum_week_ago": 1.83,
         "share": 0.0241,
+        "top1_share": 0.198,
         "top_examples": [
           {
             "age": 277,
@@ -2761,13 +2838,18 @@
       },
       {
         "ccu": 156167,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 44,
         "growth": -0.057,
         "key": "survive_x",
         "label": "\"Survive ___\" / \"99 Nights\"",
         "momentum": 0.01,
         "momentum_adj": 0.33,
+        "momentum_change": -0.04,
+        "momentum_week_ago": 0.37,
         "share": 0.0217,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 597,
@@ -2806,13 +2888,18 @@
       },
       {
         "ccu": 105050,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
         "games": 54,
         "growth": -0.0925,
         "key": "verb_for_noun",
         "label": "\"___ for ___\" (Swing for Eggs)",
         "momentum": 5.13,
         "momentum_adj": 3.45,
+        "momentum_change": -0.04,
+        "momentum_week_ago": 3.49,
         "share": 0.0146,
+        "top1_share": 0.447,
         "top_examples": [
           {
             "age": 46,
@@ -2865,13 +2952,18 @@
       },
       {
         "ccu": 86212,
+        "confidence": "high",
+        "confidence_note": "12 new games, spread out",
         "games": 170,
         "growth": -0.0669,
         "key": "tycoon",
         "label": "\"___ Tycoon\"",
         "momentum": 0.82,
         "momentum_adj": 0.9,
+        "momentum_change": -0.15,
+        "momentum_week_ago": 1.05,
         "share": 0.012,
+        "top1_share": 0.43,
         "top_examples": [
           {
             "age": 138,
@@ -2924,13 +3016,18 @@
       },
       {
         "ccu": 77473,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 85% of new-game CCU",
         "games": 45,
         "growth": -0.1022,
         "key": "x_vs_y",
         "label": "\"___ vs ___\"",
         "momentum": 1.22,
         "momentum_adj": 1.12,
+        "momentum_change": -0.17,
+        "momentum_week_ago": 1.29,
         "share": 0.0108,
+        "top1_share": 0.853,
         "top_examples": [
           {
             "age": 71,
@@ -2983,13 +3080,18 @@
       },
       {
         "ccu": 59161,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
         "games": 54,
         "growth": -0.0631,
         "key": "build_a",
         "label": "\"Build a ___\"",
         "momentum": 1.05,
         "momentum_adj": 1.02,
+        "momentum_change": 0.31,
+        "momentum_week_ago": 0.71,
         "share": 0.0082,
+        "top1_share": 0.558,
         "top_examples": [
           {
             "age": 85,
@@ -3042,13 +3144,18 @@
       },
       {
         "ccu": 25400,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 9,
         "growth": -0.1467,
         "key": "grow_a",
         "label": "\"Grow a ___\"",
         "momentum": 1.22,
         "momentum_adj": 1.06,
+        "momentum_change": 0.22,
+        "momentum_week_ago": 0.84,
         "share": 0.0035,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 576,
@@ -3087,13 +3194,18 @@
       },
       {
         "ccu": 22961,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 61% of new-game CCU",
         "games": 58,
         "growth": -0.0675,
         "key": "escape_x",
         "label": "\"Escape ___\"",
         "momentum": 0.24,
         "momentum_adj": 0.82,
+        "momentum_change": -0.12,
+        "momentum_week_ago": 0.94,
         "share": 0.0032,
+        "top1_share": 0.608,
         "top_examples": [
           {
             "age": 2114,
@@ -3139,13 +3251,18 @@
       },
       {
         "ccu": 13939,
+        "confidence": "low",
+        "confidence_note": "only 1 new game; momentum down 0.82 this week",
         "games": 3,
         "growth": null,
         "key": "get_rich",
         "label": "\"___ to Get Rich\"",
         "momentum": 1.97,
         "momentum_adj": 1.16,
+        "momentum_change": -0.82,
+        "momentum_week_ago": 1.98,
         "share": 0.0019,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 63,
@@ -3184,13 +3301,18 @@
       },
       {
         "ccu": 7907,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
         "games": 25,
         "growth": -0.1058,
         "key": "be_a",
         "label": "\"Be a ___\"",
         "momentum": 2.35,
         "momentum_adj": 1.13,
+        "momentum_change": 0.17,
+        "momentum_week_ago": 0.96,
         "share": 0.0011,
+        "top1_share": 0.578,
         "top_examples": [
           {
             "age": 23,
@@ -3245,13 +3367,18 @@
     "genre": [
       {
         "ccu": 3176874,
+        "confidence": "high",
+        "confidence_note": "240 new games, spread out",
         "games": 1746,
         "growth": -0.096,
         "key": "Simulation",
         "label": "Simulation",
         "momentum": 1.39,
         "momentum_adj": 1.38,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.4415,
+        "top1_share": 0.142,
         "top_examples": [
           {
             "age": 89,
@@ -3304,13 +3431,18 @@
       },
       {
         "ccu": 1279467,
+        "confidence": "high",
+        "confidence_note": "41 new games, spread out",
         "games": 544,
         "growth": -0.1031,
         "key": "Survival",
         "label": "Survival",
         "momentum": 0.7,
         "momentum_adj": 0.71,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.1778,
+        "top1_share": 0.25,
         "top_examples": [
           {
             "age": 4660,
@@ -3363,13 +3495,18 @@
       },
       {
         "ccu": 639779,
+        "confidence": "high",
+        "confidence_note": "22 new games, spread out",
         "games": 363,
         "growth": -0.0739,
         "key": "Roleplay & Avatar Sim",
         "label": "Roleplay & Avatar Sim",
         "momentum": 0.26,
         "momentum_adj": 0.34,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0889,
+        "top1_share": 0.283,
         "top_examples": [
           {
             "age": 2375,
@@ -3422,13 +3559,18 @@
       },
       {
         "ccu": 473343,
+        "confidence": "high",
+        "confidence_note": "19 new games, spread out",
         "games": 443,
         "growth": -0.1022,
         "key": "Action",
         "label": "Action",
         "momentum": 1.01,
         "momentum_adj": 1.01,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0658,
+        "top1_share": 0.363,
         "top_examples": [
           {
             "age": 1649,
@@ -3481,13 +3623,18 @@
       },
       {
         "ccu": 281727,
+        "confidence": "high",
+        "confidence_note": "10 new games, spread out",
         "games": 193,
         "growth": -0.1094,
         "key": "Shooter",
         "label": "Shooter",
         "momentum": 0.31,
         "momentum_adj": 0.45,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0392,
+        "top1_share": 0.435,
         "top_examples": [
           {
             "age": 879,
@@ -3540,13 +3687,18 @@
       },
       {
         "ccu": 267729,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 57% of their CCU",
         "games": 162,
         "growth": -0.0912,
         "key": "RPG",
         "label": "RPG",
         "momentum": 0.24,
         "momentum_adj": 0.4,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0372,
+        "top1_share": 0.566,
         "top_examples": [
           {
             "age": 2836,
@@ -3599,13 +3751,18 @@
       },
       {
         "ccu": 236435,
+        "confidence": "medium",
+        "confidence_note": "11 new games, top one 49% of their CCU",
         "games": 504,
         "growth": -0.0352,
         "key": "Obby & Platformer",
         "label": "Obby & Platformer",
         "momentum": 0.72,
         "momentum_adj": 0.78,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0329,
+        "top1_share": 0.487,
         "top_examples": [
           {
             "age": 3048,
@@ -3658,13 +3815,18 @@
       },
       {
         "ccu": 189209,
+        "confidence": "medium",
+        "confidence_note": "13 new games, top one 55% of their CCU",
         "games": 135,
         "growth": -0.0781,
         "key": "Strategy",
         "label": "Strategy",
         "momentum": 1.61,
         "momentum_adj": 1.44,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0263,
+        "top1_share": 0.548,
         "top_examples": [
           {
             "age": 998,
@@ -3717,13 +3879,18 @@
       },
       {
         "ccu": 166251,
+        "confidence": "high",
+        "confidence_note": "21 new games, spread out",
         "games": 261,
         "growth": -0.133,
         "key": "Party & Casual",
         "label": "Party & Casual",
         "momentum": 0.75,
         "momentum_adj": 0.82,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0231,
+        "top1_share": 0.152,
         "top_examples": [
           {
             "age": 71,
@@ -3776,13 +3943,18 @@
       },
       {
         "ccu": 149700,
+        "confidence": "high",
+        "confidence_note": "16 new games, spread out",
         "games": 153,
         "growth": -0.1043,
         "key": "Sports & Racing",
         "label": "Sports & Racing",
         "momentum": 1.03,
         "momentum_adj": 1.02,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0208,
+        "top1_share": 0.286,
         "top_examples": [
           {
             "age": 674,
@@ -3835,13 +4007,18 @@
       },
       {
         "ccu": 124143,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 242,
         "growth": -0.0963,
         "key": "Adventure",
         "label": "Adventure",
         "momentum": 0.59,
         "momentum_adj": 0.74,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0173,
+        "top1_share": 0.424,
         "top_examples": [
           {
             "age": 659,
@@ -3894,13 +4071,18 @@
       },
       {
         "ccu": 54002,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 72% of new-game CCU",
         "games": 81,
         "growth": -0.0534,
         "key": "Social",
         "label": "Social",
         "momentum": 0.49,
         "momentum_adj": 0.78,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0075,
+        "top1_share": 0.724,
         "top_examples": [
           {
             "age": 848,
@@ -3953,13 +4135,18 @@
       },
       {
         "ccu": 52039,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 38,
         "growth": -0.0469,
         "key": "Shopping",
         "label": "Shopping",
         "momentum": 0.0,
         "momentum_adj": 0.58,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0072,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 1937,
@@ -3998,13 +4185,18 @@
       },
       {
         "ccu": 45860,
+        "confidence": "high",
+        "confidence_note": "13 new games, spread out",
         "games": 77,
         "growth": -0.1237,
         "key": "Puzzle",
         "label": "Puzzle",
         "momentum": 2.26,
         "momentum_adj": 1.49,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0064,
+        "top1_share": 0.414,
         "top_examples": [
           {
             "age": 18,
@@ -4057,13 +4249,18 @@
       },
       {
         "ccu": 21469,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 88% of new-game CCU",
         "games": 57,
         "growth": -0.1307,
         "key": "Entertainment",
         "label": "Entertainment",
         "momentum": 0.79,
         "momentum_adj": 0.95,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.003,
+        "top1_share": 0.879,
         "top_examples": [
           {
             "age": 1241,
@@ -4116,13 +4313,18 @@
       },
       {
         "ccu": 1627,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 5,
         "growth": -0.0323,
         "key": "Education",
         "label": "Education",
         "momentum": 0.0,
         "momentum_adj": 0.98,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0002,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 191,
@@ -4153,13 +4355,18 @@
       },
       {
         "ccu": 907,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 2,
         "growth": null,
         "key": "Utility & Other",
         "label": "Utility & Other",
         "momentum": 0.0,
         "momentum_adj": 0.99,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0001,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 529,
@@ -4184,14 +4391,19 @@
     ],
     "map_style": [
       {
-        "ccu": 1776991,
-        "games": 925,
-        "growth": -0.0805,
+        "ccu": 1780845,
+        "confidence": "high",
+        "confidence_note": "112 new games, spread out",
+        "games": 929,
+        "growth": -0.0802,
         "key": "plot_base",
         "label": "Personal plots / bases",
-        "momentum": 0.88,
-        "momentum_adj": 0.88,
-        "share": 0.247,
+        "momentum": 0.89,
+        "momentum_adj": 0.89,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.2475,
+        "top1_share": 0.395,
         "top_examples": [
           {
             "age": 89,
@@ -4215,7 +4427,7 @@
             "place": "109983668079237"
           }
         ],
-        "young_ccu": 265705,
+        "young_ccu": 269292,
         "young_examples": [
           {
             "age": 47,
@@ -4239,18 +4451,23 @@
             "place": "94094795358582"
           }
         ],
-        "young_games": 110,
-        "young_share": 0.2169
+        "young_games": 112,
+        "young_share": 0.2198
       },
       {
-        "ccu": 902424,
-        "games": 339,
+        "ccu": 902358,
+        "confidence": "high",
+        "confidence_note": "23 new games, spread out",
+        "games": 337,
         "growth": -0.1032,
         "key": "lobby_rounds",
         "label": "Lobby + round maps",
         "momentum": 0.23,
         "momentum_adj": 0.29,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.1254,
+        "top1_share": 0.223,
         "top_examples": [
           {
             "age": 4660,
@@ -4302,14 +4519,19 @@
         "young_share": 0.0288
       },
       {
-        "ccu": 896902,
-        "games": 178,
-        "growth": -0.0569,
+        "ccu": 896841,
+        "confidence": "high",
+        "confidence_note": "27 new games, spread out",
+        "games": 177,
+        "growth": -0.052,
         "key": "open_world",
         "label": "Open world",
         "momentum": 1.07,
         "momentum_adj": 1.06,
-        "share": 0.1247,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.1246,
+        "top1_share": 0.265,
         "top_examples": [
           {
             "age": 597,
@@ -4361,14 +4583,19 @@
         "young_share": 0.1328
       },
       {
-        "ccu": 814193,
-        "games": 507,
-        "growth": -0.1035,
+        "ccu": 816528,
+        "confidence": "high",
+        "confidence_note": "36 new games, spread out",
+        "games": 508,
+        "growth": -0.1014,
         "key": "arena",
         "label": "Arena / battleground",
         "momentum": 0.72,
         "momentum_adj": 0.74,
-        "share": 0.1132,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.1135,
+        "top1_share": 0.207,
         "top_examples": [
           {
             "age": 879,
@@ -4420,14 +4647,19 @@
         "young_share": 0.0813
       },
       {
-        "ccu": 783615,
-        "games": 826,
-        "growth": -0.126,
+        "ccu": 784091,
+        "confidence": "high",
+        "confidence_note": "81 new games, spread out",
+        "games": 836,
+        "growth": -0.1261,
         "key": "zone_progression",
         "label": "Hub + zones / worlds",
         "momentum": 1.61,
         "momentum_adj": 1.56,
-        "share": 0.1089,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.109,
+        "top1_share": 0.128,
         "top_examples": [
           {
             "age": 68,
@@ -4479,14 +4711,19 @@
         "young_share": 0.1756
       },
       {
-        "ccu": 585881,
-        "games": 823,
-        "growth": -0.0605,
+        "ccu": 585780,
+        "confidence": "high",
+        "confidence_note": "42 new games, spread out",
+        "games": 821,
+        "growth": -0.0612,
         "key": "linear_course",
         "label": "Linear course / stages",
         "momentum": 1.84,
         "momentum_adj": 1.75,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0814,
+        "top1_share": 0.224,
         "top_examples": [
           {
             "age": 46,
@@ -4538,14 +4775,19 @@
         "young_share": 0.1497
       },
       {
-        "ccu": 555519,
+        "ccu": 557329,
+        "confidence": "high",
+        "confidence_note": "15 new games, spread out",
         "games": 306,
-        "growth": -0.0857,
+        "growth": -0.0878,
         "key": "town_roleplay",
         "label": "Town / city roleplay",
-        "momentum": 0.08,
-        "momentum_adj": 0.18,
-        "share": 0.0772,
+        "momentum": 0.1,
+        "momentum_adj": 0.2,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.0775,
+        "top1_share": 0.24,
         "top_examples": [
           {
             "age": 2375,
@@ -4569,7 +4811,7 @@
             "place": "8481844229"
           }
         ],
-        "young_ccu": 7211,
+        "young_ccu": 9049,
         "young_examples": [
           {
             "age": 47,
@@ -4579,32 +4821,37 @@
             "place": "130481402522628"
           },
           {
+            "age": 8,
+            "ccu": 1838,
+            "id": "10770879065",
+            "name": "It Hears The Water [DONT SPLASH]",
+            "place": "91673151576922"
+          },
+          {
             "age": 55,
             "ccu": 1408,
             "id": "10764019529",
             "name": "Vampire life",
             "place": "122287678911982"
-          },
-          {
-            "age": 20,
-            "ccu": 821,
-            "id": "10768944846",
-            "name": "[SPIN] Morioh High",
-            "place": "111838814545019"
           }
         ],
-        "young_games": 14,
-        "young_share": 0.0059
+        "young_games": 15,
+        "young_share": 0.0074
       },
       {
-        "ccu": 406181,
-        "games": 112,
+        "ccu": 404375,
+        "confidence": "high",
+        "confidence_note": "26 new games, spread out",
+        "games": 110,
         "growth": -0.1027,
         "key": "interior",
         "label": "Interiors / corridors",
-        "momentum": 2.42,
+        "momentum": 2.43,
         "momentum_adj": 2.21,
-        "share": 0.0565,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.0562,
+        "top1_share": 0.228,
         "top_examples": [
           {
             "age": 1000,
@@ -4628,7 +4875,7 @@
             "place": "7041939546"
           }
         ],
-        "young_ccu": 167388,
+        "young_ccu": 166970,
         "young_examples": [
           {
             "age": 31,
@@ -4652,18 +4899,23 @@
             "place": "116802325837172"
           }
         ],
-        "young_games": 27,
-        "young_share": 0.1367
+        "young_games": 26,
+        "young_share": 0.1363
       },
       {
         "ccu": 123552,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 91% of new-game CCU",
         "games": 31,
         "growth": -0.0625,
         "key": "tower_defense_lanes",
         "label": "Lanes / paths",
         "momentum": 1.5,
         "momentum_adj": 1.31,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0172,
+        "top1_share": 0.906,
         "top_examples": [
           {
             "age": 998,
@@ -4718,13 +4970,18 @@
     "maturity": [
       {
         "ccu": 4598901,
+        "confidence": "high",
+        "confidence_note": "315 new games, spread out",
         "games": 2890,
         "growth": -0.0925,
         "key": "minimal",
         "label": "minimal",
         "momentum": 1.21,
         "momentum_adj": 1.21,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.6392,
+        "top1_share": 0.112,
         "top_examples": [
           {
             "age": 89,
@@ -4777,13 +5034,18 @@
       },
       {
         "ccu": 1834481,
+        "confidence": "high",
+        "confidence_note": "107 new games, spread out",
         "games": 1672,
         "growth": -0.0912,
         "key": "mild",
         "label": "mild",
         "momentum": 0.75,
         "momentum_adj": 0.76,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.255,
+        "top1_share": 0.127,
         "top_examples": [
           {
             "age": 2836,
@@ -4836,13 +5098,18 @@
       },
       {
         "ccu": 747802,
+        "confidence": "high",
+        "confidence_note": "15 new games, spread out",
         "games": 436,
         "growth": -0.1024,
         "key": "moderate",
         "label": "moderate",
         "momentum": 0.34,
         "momentum_adj": 0.4,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.1039,
+        "top1_share": 0.223,
         "top_examples": [
           {
             "age": 4660,
@@ -4895,13 +5162,18 @@
       },
       {
         "ccu": 8593,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 9,
         "growth": -0.0343,
         "key": "restricted",
         "label": "restricted",
         "momentum": 0.0,
         "momentum_adj": 0.89,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0012,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 1181,
@@ -4932,13 +5204,18 @@
       },
       {
         "ccu": 5461,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 8,
         "growth": -0.0372,
         "key": "vng-rating-override",
         "label": "vng-rating-override",
         "momentum": 0.0,
         "momentum_adj": 0.93,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0008,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 2625,
@@ -4970,14 +5247,19 @@
     ],
     "mechanic": [
       {
-        "ccu": 1813697,
-        "games": 369,
-        "growth": -0.1103,
+        "ccu": 1814219,
+        "confidence": "high",
+        "confidence_note": "69 new games, spread out",
+        "games": 382,
+        "growth": -0.1096,
         "key": "hatch_gacha",
         "label": "Hatch / gacha",
         "momentum": 1.04,
         "momentum_adj": 1.04,
+        "momentum_change": -0.08,
+        "momentum_week_ago": 1.12,
         "share": 0.2521,
+        "top1_share": 0.332,
         "top_examples": [
           {
             "age": 89,
@@ -5029,14 +5311,19 @@
         "young_share": 0.2615
       },
       {
-        "ccu": 1345246,
-        "games": 160,
+        "ccu": 1348444,
+        "confidence": "medium",
+        "confidence_note": "55 new games, top one 51% of their CCU",
+        "games": 162,
         "growth": -0.0688,
         "key": "steal_raid",
         "label": "Steal / raid",
-        "momentum": 0.9,
-        "momentum_adj": 0.9,
-        "share": 0.187,
+        "momentum": 0.91,
+        "momentum_adj": 0.91,
+        "momentum_change": -0.15,
+        "momentum_week_ago": 1.06,
+        "share": 0.1874,
+        "top1_share": 0.509,
         "top_examples": [
           {
             "age": 89,
@@ -5060,7 +5347,7 @@
             "place": "109983668079237"
           }
         ],
-        "young_ccu": 205512,
+        "young_ccu": 208681,
         "young_examples": [
           {
             "age": 47,
@@ -5084,18 +5371,23 @@
             "place": "135675416428111"
           }
         ],
-        "young_games": 54,
-        "young_share": 0.1678
+        "young_games": 55,
+        "young_share": 0.1704
       },
       {
-        "ccu": 1099288,
-        "games": 632,
+        "ccu": 1101867,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.20 this week",
+        "games": 635,
         "growth": -0.0909,
         "key": "fight_battle",
         "label": "Fight / battle",
         "momentum": 0.53,
         "momentum_adj": 0.56,
-        "share": 0.1528,
+        "momentum_change": 0.2,
+        "momentum_week_ago": 0.36,
+        "share": 0.1531,
+        "top1_share": 0.208,
         "top_examples": [
           {
             "age": 2836,
@@ -5148,13 +5440,18 @@
       },
       {
         "ccu": 1027150,
+        "confidence": "high",
+        "confidence_note": "32 new games, spread out",
         "games": 494,
         "growth": -0.0913,
         "key": "survive_nights",
         "label": "Survive",
         "momentum": 0.33,
         "momentum_adj": 0.38,
+        "momentum_change": -0.29,
+        "momentum_week_ago": 0.67,
         "share": 0.1428,
+        "top1_share": 0.235,
         "top_examples": [
           {
             "age": 4660,
@@ -5206,14 +5503,19 @@
         "young_share": 0.0478
       },
       {
-        "ccu": 855449,
-        "games": 241,
-        "growth": -0.0945,
+        "ccu": 855505,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
+        "games": 243,
+        "growth": -0.0959,
         "key": "shooter",
         "label": "Shooter",
         "momentum": 0.14,
         "momentum_adj": 0.21,
+        "momentum_change": -0.16,
+        "momentum_week_ago": 0.37,
         "share": 0.1189,
+        "top1_share": 0.146,
         "top_examples": [
           {
             "age": 4660,
@@ -5265,14 +5567,19 @@
         "young_share": 0.0169
       },
       {
-        "ccu": 639793,
-        "games": 475,
-        "growth": -0.0784,
+        "ccu": 639806,
+        "confidence": "high",
+        "confidence_note": "24 new games, spread out",
+        "games": 476,
+        "growth": -0.0781,
         "key": "roleplay_life",
         "label": "Roleplay / life sim",
         "momentum": 0.5,
         "momentum_adj": 0.55,
+        "momentum_change": 0.13,
+        "momentum_week_ago": 0.42,
         "share": 0.0889,
+        "top1_share": 0.321,
         "top_examples": [
           {
             "age": 2375,
@@ -5324,14 +5631,19 @@
         "young_share": 0.0441
       },
       {
-        "ccu": 592082,
-        "games": 268,
+        "ccu": 592244,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.56 this week",
+        "games": 273,
         "growth": -0.0789,
         "key": "collect_index",
         "label": "Collect / index",
         "momentum": 1.86,
         "momentum_adj": 1.76,
+        "momentum_change": -0.56,
+        "momentum_week_ago": 2.32,
         "share": 0.0823,
+        "top1_share": 0.568,
         "top_examples": [
           {
             "age": 3387,
@@ -5384,13 +5696,18 @@
       },
       {
         "ccu": 552282,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.44 this week",
         "games": 614,
         "growth": -0.0682,
         "key": "tycoon_build",
         "label": "Tycoon / base building",
         "momentum": 1.56,
         "momentum_adj": 1.49,
+        "momentum_change": -0.44,
+        "momentum_week_ago": 1.93,
         "share": 0.0768,
+        "top1_share": 0.28,
         "top_examples": [
           {
             "age": 46,
@@ -5442,14 +5759,19 @@
         "young_share": 0.1194
       },
       {
-        "ccu": 488442,
-        "games": 704,
-        "growth": -0.059,
+        "ccu": 488596,
+        "confidence": "high",
+        "confidence_note": "34 new games, spread out",
+        "games": 708,
+        "growth": -0.0593,
         "key": "obby_climb",
         "label": "Obby / climb / jump",
         "momentum": 1.18,
         "momentum_adj": 1.16,
+        "momentum_change": 0.09,
+        "momentum_week_ago": 1.07,
         "share": 0.0679,
+        "top1_share": 0.417,
         "top_examples": [
           {
             "age": 731,
@@ -5501,14 +5823,19 @@
         "young_share": 0.0803
       },
       {
-        "ccu": 352801,
-        "games": 331,
+        "ccu": 352846,
+        "confidence": "high",
+        "confidence_note": "24 new games, spread out",
+        "games": 333,
         "growth": -0.0789,
         "key": "race_drive",
         "label": "Race / drive",
         "momentum": 1.03,
         "momentum_adj": 1.03,
+        "momentum_change": 0.14,
+        "momentum_week_ago": 0.89,
         "share": 0.049,
+        "top1_share": 0.312,
         "top_examples": [
           {
             "age": 17,
@@ -5561,13 +5888,18 @@
       },
       {
         "ccu": 325914,
+        "confidence": "medium",
+        "confidence_note": "21 new games, top one 46% of their CCU; momentum up 0.26 this week",
         "games": 186,
         "growth": -0.1119,
         "key": "clicker",
         "label": "Clicker / tap",
         "momentum": 0.82,
         "momentum_adj": 0.85,
+        "momentum_change": 0.26,
+        "momentum_week_ago": 0.59,
         "share": 0.0453,
+        "top1_share": 0.455,
         "top_examples": [
           {
             "age": 731,
@@ -5619,14 +5951,19 @@
         "young_share": 0.037
       },
       {
-        "ccu": 314346,
-        "games": 161,
-        "growth": -0.0792,
+        "ccu": 314704,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.18 this week",
+        "games": 164,
+        "growth": -0.0866,
         "key": "rng_roll",
         "label": "RNG roll",
         "momentum": 0.54,
-        "momentum_adj": 0.62,
+        "momentum_adj": 0.63,
+        "momentum_change": 0.18,
+        "momentum_week_ago": 0.45,
         "share": 0.0437,
+        "top1_share": 0.23,
         "top_examples": [
           {
             "age": 68,
@@ -5650,7 +5987,7 @@
             "place": "15532962292"
           }
         ],
-        "young_ccu": 28842,
+        "young_ccu": 29145,
         "young_examples": [
           {
             "age": 42,
@@ -5674,18 +6011,23 @@
             "place": "110730550789828"
           }
         ],
-        "young_games": 19,
-        "young_share": 0.0235
+        "young_games": 20,
+        "young_share": 0.0238
       },
       {
-        "ccu": 263362,
-        "games": 164,
-        "growth": -0.1459,
+        "ccu": 263566,
+        "confidence": "low",
+        "confidence_note": "one game holds 80% of new-game CCU; momentum down 0.62 this week",
+        "games": 167,
+        "growth": -0.147,
         "key": "break_mine",
         "label": "Break / mine / dig",
         "momentum": 2.97,
         "momentum_adj": 2.55,
+        "momentum_change": -0.62,
+        "momentum_week_ago": 3.17,
         "share": 0.0366,
+        "top1_share": 0.798,
         "top_examples": [
           {
             "age": 47,
@@ -5737,14 +6079,19 @@
         "young_share": 0.1088
       },
       {
-        "ccu": 241209,
-        "games": 189,
+        "ccu": 256487,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.39 this week",
+        "games": 191,
         "growth": -0.0991,
         "key": "job_shift",
         "label": "Job / shift",
-        "momentum": 1.36,
-        "momentum_adj": 1.28,
-        "share": 0.0335,
+        "momentum": 1.32,
+        "momentum_adj": 1.25,
+        "momentum_change": 0.39,
+        "momentum_week_ago": 0.86,
+        "share": 0.0356,
+        "top1_share": 0.244,
         "top_examples": [
           {
             "age": 1054,
@@ -5768,7 +6115,7 @@
             "place": "131378148336503"
           }
         ],
-        "young_ccu": 55992,
+        "young_ccu": 57830,
         "young_examples": [
           {
             "age": 23,
@@ -5792,18 +6139,23 @@
             "place": "134728380684025"
           }
         ],
-        "young_games": 21,
-        "young_share": 0.0457
+        "young_games": 22,
+        "young_share": 0.0472
       },
       {
-        "ccu": 219953,
-        "games": 303,
-        "growth": -0.1056,
+        "ccu": 220039,
+        "confidence": "high",
+        "confidence_note": "13 new games, spread out",
+        "games": 305,
+        "growth": -0.1064,
         "key": "escape_run",
         "label": "Escape / run",
         "momentum": 0.45,
         "momentum_adj": 0.59,
+        "momentum_change": -0.26,
+        "momentum_week_ago": 0.85,
         "share": 0.0306,
+        "top1_share": 0.419,
         "top_examples": [
           {
             "age": 721,
@@ -5856,13 +6208,18 @@
       },
       {
         "ccu": 203444,
+        "confidence": "medium",
+        "confidence_note": "11 new games, top one 55% of their CCU",
         "games": 145,
         "growth": -0.0703,
         "key": "dress_style",
         "label": "Dress / style",
         "momentum": 0.19,
         "momentum_adj": 0.4,
+        "momentum_change": -0.03,
+        "momentum_week_ago": 0.43,
         "share": 0.0283,
+        "top1_share": 0.554,
         "top_examples": [
           {
             "age": 1100,
@@ -5914,14 +6271,19 @@
         "young_share": 0.0054
       },
       {
-        "ccu": 203398,
-        "games": 195,
-        "growth": -0.1734,
+        "ccu": 203435,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.16 this week",
+        "games": 196,
+        "growth": -0.1728,
         "key": "plus_one_stat",
         "label": "+1 stat per action",
-        "momentum": 2.17,
+        "momentum": 2.16,
         "momentum_adj": 1.86,
+        "momentum_change": 0.16,
+        "momentum_week_ago": 1.7,
         "share": 0.0283,
+        "top1_share": 0.19,
         "top_examples": [
           {
             "age": 277,
@@ -5973,14 +6335,19 @@
         "young_share": 0.0612
       },
       {
-        "ccu": 190092,
-        "games": 101,
-        "growth": -0.071,
+        "ccu": 190157,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
+        "games": 103,
+        "growth": -0.0633,
         "key": "fishing",
         "label": "Fishing",
         "momentum": 0.4,
         "momentum_adj": 0.57,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 0.57,
         "share": 0.0264,
+        "top1_share": 0.369,
         "top_examples": [
           {
             "age": 731,
@@ -6032,14 +6399,19 @@
         "young_share": 0.0106
       },
       {
-        "ccu": 174777,
-        "games": 124,
-        "growth": -0.1216,
+        "ccu": 174805,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
+        "games": 125,
+        "growth": -0.118,
         "key": "hit_swing",
         "label": "Hit / swing / launch",
-        "momentum": 1.97,
+        "momentum": 1.96,
         "momentum_adj": 1.68,
+        "momentum_change": -0.01,
+        "momentum_week_ago": 1.69,
         "share": 0.0243,
+        "top1_share": 0.353,
         "top_examples": [
           {
             "age": 1954,
@@ -6091,14 +6463,19 @@
         "young_share": 0.0477
       },
       {
-        "ccu": 171749,
-        "games": 126,
-        "growth": -0.1239,
+        "ccu": 172236,
+        "confidence": "medium",
+        "confidence_note": "17 new games, top one 51% of their CCU; momentum up 0.57 this week",
+        "games": 128,
+        "growth": -0.1232,
         "key": "sell_shop",
         "label": "Sell / run a shop",
-        "momentum": 2.52,
-        "momentum_adj": 2.07,
+        "momentum": 2.53,
+        "momentum_adj": 2.08,
+        "momentum_change": 0.57,
+        "momentum_week_ago": 1.51,
         "share": 0.0239,
+        "top1_share": 0.512,
         "top_examples": [
           {
             "age": 31,
@@ -6122,7 +6499,7 @@
             "place": "98800969324557"
           }
         ],
-        "young_ccu": 73805,
+        "young_ccu": 74223,
         "young_examples": [
           {
             "age": 31,
@@ -6146,18 +6523,23 @@
             "place": "128201586883489"
           }
         ],
-        "young_games": 16,
-        "young_share": 0.0603
+        "young_games": 17,
+        "young_share": 0.0606
       },
       {
-        "ccu": 149277,
-        "games": 170,
+        "ccu": 149560,
+        "confidence": "high",
+        "confidence_note": "21 new games, spread out",
+        "games": 173,
         "growth": -0.0837,
         "key": "grow_farm",
         "label": "Grow / farm",
-        "momentum": 1.26,
+        "momentum": 1.25,
         "momentum_adj": 1.17,
-        "share": 0.0207,
+        "momentum_change": -0.2,
+        "momentum_week_ago": 1.37,
+        "share": 0.0208,
+        "top1_share": 0.165,
         "top_examples": [
           {
             "age": 576,
@@ -6210,13 +6592,18 @@
       },
       {
         "ccu": 142600,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 24,
         "growth": -0.049,
         "key": "pet_care",
         "label": "Raise / pet care",
         "momentum": 0.0,
         "momentum_adj": 0.34,
+        "momentum_change": 0.08,
+        "momentum_week_ago": 0.26,
         "share": 0.0198,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 3387,
@@ -6247,13 +6634,18 @@
       },
       {
         "ccu": 133698,
+        "confidence": "low",
+        "confidence_note": "one game holds 61% of new-game CCU",
         "games": 109,
         "growth": -0.0635,
         "key": "tower_defense",
         "label": "Tower defense",
         "momentum": 2.07,
         "momentum_adj": 1.69,
+        "momentum_change": 0.21,
+        "momentum_week_ago": 1.48,
         "share": 0.0186,
+        "top1_share": 0.605,
         "top_examples": [
           {
             "age": 57,
@@ -6305,14 +6697,19 @@
         "young_share": 0.0384
       },
       {
-        "ccu": 119164,
-        "games": 57,
-        "growth": -0.146,
+        "ccu": 119191,
+        "confidence": "medium",
+        "confidence_note": "9 new games, top one 45% of their CCU; momentum up 0.25 this week",
+        "games": 58,
+        "growth": -0.1322,
         "key": "dice_cards",
         "label": "Dice / cards",
         "momentum": 0.74,
         "momentum_adj": 0.84,
+        "momentum_change": 0.25,
+        "momentum_week_ago": 0.59,
         "share": 0.0166,
+        "top1_share": 0.445,
         "top_examples": [
           {
             "age": 68,
@@ -6365,13 +6762,18 @@
       },
       {
         "ccu": 109113,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 102,
         "growth": -0.1401,
         "key": "paint_create",
         "label": "Paint / create",
         "momentum": 2.73,
         "momentum_adj": 2.04,
+        "momentum_change": 0.02,
+        "momentum_week_ago": 2.02,
         "share": 0.0152,
+        "top1_share": 0.38,
         "top_examples": [
           {
             "age": 17,
@@ -6424,13 +6826,18 @@
       },
       {
         "ccu": 101940,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.29 this week",
         "games": 71,
         "growth": -0.0754,
         "key": "forge_craft",
         "label": "Forge / craft",
         "momentum": 1.08,
         "momentum_adj": 1.04,
+        "momentum_change": 0.29,
+        "momentum_week_ago": 0.75,
         "share": 0.0142,
+        "top1_share": 0.189,
         "top_examples": [
           {
             "age": 1054,
@@ -6482,14 +6889,19 @@
         "young_share": 0.0152
       },
       {
-        "ccu": 101612,
-        "games": 70,
-        "growth": -0.1358,
+        "ccu": 101655,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 78% of new-game CCU",
+        "games": 71,
+        "growth": -0.1301,
         "key": "cook_serve",
         "label": "Cook / serve",
         "momentum": 1.04,
-        "momentum_adj": 1.03,
+        "momentum_adj": 1.02,
+        "momentum_change": 0.48,
+        "momentum_week_ago": 0.54,
         "share": 0.0141,
+        "top1_share": 0.784,
         "top_examples": [
           {
             "age": 674,
@@ -6542,13 +6954,18 @@
       },
       {
         "ccu": 43117,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
         "games": 58,
         "growth": -0.0684,
         "key": "trade",
         "label": "Trading",
         "momentum": 0.55,
         "momentum_adj": 0.83,
+        "momentum_change": -0.06,
+        "momentum_week_ago": 0.89,
         "share": 0.006,
+        "top1_share": 0.464,
         "top_examples": [
           {
             "age": 285,
@@ -6600,14 +7017,19 @@
         "young_share": 0.0033
       },
       {
-        "ccu": 31206,
-        "games": 36,
-        "growth": -0.0978,
+        "ccu": 31269,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
+        "games": 37,
+        "growth": -0.0872,
         "key": "merge",
         "label": "Merge / fuse",
-        "momentum": 0.75,
+        "momentum": 0.74,
         "momentum_adj": 0.92,
+        "momentum_change": 0.08,
+        "momentum_week_ago": 0.84,
         "share": 0.0043,
+        "top1_share": 0.575,
         "top_examples": [
           {
             "age": 91,
@@ -6659,14 +7081,19 @@
         "young_share": 0.0032
       },
       {
-        "ccu": 30697,
-        "games": 66,
+        "ccu": 30723,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 87% of new-game CCU",
+        "games": 67,
         "growth": -0.1266,
         "key": "party_minigames",
         "label": "Party / minigames",
         "momentum": 0.71,
         "momentum_adj": 0.91,
+        "momentum_change": -0.03,
+        "momentum_week_ago": 0.94,
         "share": 0.0043,
+        "top1_share": 0.871,
         "top_examples": [
           {
             "age": 29,
@@ -6712,13 +7139,18 @@
       },
       {
         "ccu": 8324,
+        "confidence": "medium",
+        "confidence_note": "5 new games, top one 39% of their CCU",
         "games": 35,
         "growth": -0.2191,
         "key": "quiz_guess",
         "label": "Quiz / guess",
         "momentum": 0.88,
         "momentum_adj": 0.99,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 0.99,
         "share": 0.0012,
+        "top1_share": 0.389,
         "top_examples": [
           {
             "age": 118,
@@ -6773,13 +7205,18 @@
     "subgenre": [
       {
         "ccu": 1891614,
+        "confidence": "high",
+        "confidence_note": "117 new games, spread out",
         "games": 673,
         "growth": -0.0969,
         "key": "Tycoon",
         "label": "Tycoon",
         "momentum": 1.31,
         "momentum_adj": 1.3,
+        "momentum_change": -0.03,
+        "momentum_week_ago": 1.33,
         "share": 0.2629,
+        "top1_share": 0.253,
         "top_examples": [
           {
             "age": 89,
@@ -6832,13 +7269,18 @@
       },
       {
         "ccu": 767025,
+        "confidence": "high",
+        "confidence_note": "77 new games, spread out",
         "games": 576,
         "growth": -0.127,
         "key": "Incremental Simulator",
         "label": "Incremental Simulator",
         "momentum": 1.51,
         "momentum_adj": 1.46,
+        "momentum_change": -0.12,
+        "momentum_week_ago": 1.58,
         "share": 0.1066,
+        "top1_share": 0.219,
         "top_examples": [
           {
             "age": 68,
@@ -6891,13 +7333,18 @@
       },
       {
         "ccu": 632486,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 34% of their CCU",
         "games": 86,
         "growth": -0.1024,
         "key": "1 vs All",
         "label": "1 vs All",
         "momentum": 0.04,
         "momentum_adj": 0.14,
+        "momentum_change": -0.19,
+        "momentum_week_ago": 0.33,
         "share": 0.0879,
+        "top1_share": 0.335,
         "top_examples": [
           {
             "age": 4660,
@@ -6950,13 +7397,18 @@
       },
       {
         "ccu": 386394,
+        "confidence": "high",
+        "confidence_note": "16 new games, spread out",
         "games": 335,
         "growth": -0.102,
         "key": "Battlegrounds & Fighting",
         "label": "Battlegrounds & Fighting",
         "momentum": 1.19,
         "momentum_adj": 1.16,
+        "momentum_change": 0.1,
+        "momentum_week_ago": 1.06,
         "share": 0.0537,
+        "top1_share": 0.38,
         "top_examples": [
           {
             "age": 1649,
@@ -7009,13 +7461,18 @@
       },
       {
         "ccu": 350050,
+        "confidence": "low",
+        "confidence_note": "only 4 new games",
         "games": 112,
         "growth": -0.0781,
         "key": "Life",
         "label": "Life",
         "momentum": 0.08,
         "momentum_adj": 0.24,
+        "momentum_change": -0.01,
+        "momentum_week_ago": 0.25,
         "share": 0.0487,
+        "top1_share": 0.415,
         "top_examples": [
           {
             "age": 2375,
@@ -7068,13 +7525,18 @@
       },
       {
         "ccu": 251312,
+        "confidence": "medium",
+        "confidence_note": "6 new games, top one 57% of their CCU",
         "games": 118,
         "growth": -0.1224,
         "key": "Deathmatch Shooter",
         "label": "Deathmatch Shooter",
         "momentum": 0.27,
         "momentum_adj": 0.43,
+        "momentum_change": -0.12,
+        "momentum_week_ago": 0.55,
         "share": 0.0349,
+        "top1_share": 0.565,
         "top_examples": [
           {
             "age": 879,
@@ -7127,13 +7589,18 @@
       },
       {
         "ccu": 243994,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
         "games": 124,
         "growth": -0.096,
         "key": "Action RPG",
         "label": "Action RPG",
         "momentum": 0.07,
         "momentum_adj": 0.28,
+        "momentum_change": 0.07,
+        "momentum_week_ago": 0.21,
         "share": 0.0339,
+        "top1_share": 0.529,
         "top_examples": [
           {
             "age": 2836,
@@ -7186,13 +7653,18 @@
       },
       {
         "ccu": 212021,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.52 this week",
         "games": 172,
         "growth": -0.0772,
         "key": "Vehicle Sim",
         "label": "Vehicle Sim",
         "momentum": 1.37,
         "momentum_adj": 1.28,
+        "momentum_change": 0.52,
+        "momentum_week_ago": 0.76,
         "share": 0.0295,
+        "top1_share": 0.407,
         "top_examples": [
           {
             "age": 25,
@@ -7245,13 +7717,18 @@
       },
       {
         "ccu": 167738,
+        "confidence": "high",
+        "confidence_note": "16 new games, spread out",
         "games": 160,
         "growth": -0.1109,
         "key": "Escape",
         "label": "Escape",
         "momentum": 1.29,
         "momentum_adj": 1.21,
+        "momentum_change": 0.05,
+        "momentum_week_ago": 1.16,
         "share": 0.0233,
+        "top1_share": 0.372,
         "top_examples": [
           {
             "age": 1000,
@@ -7304,13 +7781,18 @@
       },
       {
         "ccu": 148151,
+        "confidence": "low",
+        "confidence_note": "one game holds 89% of new-game CCU",
         "games": 88,
         "growth": -0.0731,
         "key": "Tower Defense",
         "label": "Tower Defense",
         "momentum": 1.26,
         "momentum_adj": 1.18,
+        "momentum_change": 0.42,
+        "momentum_week_ago": 0.76,
         "share": 0.0206,
+        "top1_share": 0.894,
         "top_examples": [
           {
             "age": 998,
@@ -7363,13 +7845,18 @@
       },
       {
         "ccu": 136706,
+        "confidence": "medium",
+        "confidence_note": "8 new games, top one 45% of their CCU",
         "games": 122,
         "growth": -0.1121,
         "key": "Sports",
         "label": "Sports",
         "momentum": 0.72,
         "momentum_adj": 0.81,
+        "momentum_change": 0.08,
+        "momentum_week_ago": 0.73,
         "share": 0.019,
+        "top1_share": 0.449,
         "top_examples": [
           {
             "age": 674,
@@ -7422,13 +7909,18 @@
       },
       {
         "ccu": 121873,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 12,
         "growth": -0.0857,
         "key": "Pet Care",
         "label": "Pet Care",
         "momentum": 0.0,
         "momentum_adj": 0.37,
+        "momentum_change": 0.09,
+        "momentum_week_ago": 0.28,
         "share": 0.0169,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 3387,
@@ -7459,13 +7951,18 @@
       },
       {
         "ccu": 98389,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 93% of new-game CCU",
         "games": 186,
         "growth": -0.0029,
         "key": "Tower Obby",
         "label": "Tower Obby",
         "momentum": 0.47,
         "momentum_adj": 0.69,
+        "momentum_change": -0.05,
+        "momentum_week_ago": 0.74,
         "share": 0.0137,
+        "top1_share": 0.927,
         "top_examples": [
           {
             "age": 3048,
@@ -7518,13 +8015,18 @@
       },
       {
         "ccu": 91529,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 43,
         "growth": -0.1049,
         "key": "Dress Up",
         "label": "Dress Up",
         "momentum": 1.45,
         "momentum_adj": 1.25,
+        "momentum_change": -0.22,
+        "momentum_week_ago": 1.47,
         "share": 0.0127,
+        "top1_share": 0.36,
         "top_examples": [
           {
             "age": 1100,
@@ -7577,13 +8079,18 @@
       },
       {
         "ccu": 75411,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 87% of new-game CCU",
         "games": 72,
         "growth": -0.0822,
         "key": "Open World Action",
         "label": "Open World Action",
         "momentum": 0.27,
         "momentum_adj": 0.63,
+        "momentum_change": 0.06,
+        "momentum_week_ago": 0.57,
         "share": 0.0105,
+        "top1_share": 0.873,
         "top_examples": [
           {
             "age": 2790,
@@ -7636,13 +8143,18 @@
       },
       {
         "ccu": 73084,
+        "confidence": "low",
+        "confidence_note": "one game holds 81% of new-game CCU",
         "games": 110,
         "growth": -0.0668,
         "key": "Sandbox",
         "label": "Sandbox",
         "momentum": 1.06,
         "momentum_adj": 1.03,
+        "momentum_change": -0.01,
+        "momentum_week_ago": 1.04,
         "share": 0.0102,
+        "top1_share": 0.809,
         "top_examples": [
           {
             "age": 45,
@@ -7695,13 +8207,18 @@
       },
       {
         "ccu": 67605,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 35% of their CCU; momentum up 0.30 this week",
         "games": 64,
         "growth": -0.09,
         "key": "Physics Sim",
         "label": "Physics Sim",
         "momentum": 1.82,
         "momentum_adj": 1.4,
+        "momentum_change": 0.3,
+        "momentum_week_ago": 1.1,
         "share": 0.0094,
+        "top1_share": 0.354,
         "top_examples": [
           {
             "age": 1954,
@@ -7754,13 +8271,18 @@
       },
       {
         "ccu": 52039,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 38,
         "growth": -0.0469,
         "key": "Avatar Shopping",
         "label": "Avatar Shopping",
         "momentum": 0.0,
         "momentum_adj": 0.58,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 0.58,
         "share": 0.0072,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 1937,
@@ -7799,13 +8321,18 @@
       },
       {
         "ccu": 51716,
+        "confidence": "medium",
+        "confidence_note": "5 new games, top one 31% of their CCU",
         "games": 75,
         "growth": -0.0494,
         "key": "Exploration",
         "label": "Exploration",
         "momentum": 0.66,
         "momentum_adj": 0.86,
+        "momentum_change": 0.14,
+        "momentum_week_ago": 0.72,
         "share": 0.0072,
+        "top1_share": 0.314,
         "top_examples": [
           {
             "age": 659,
@@ -7858,13 +8385,18 @@
       },
       {
         "ccu": 48226,
+        "confidence": "medium",
+        "confidence_note": "6 new games, top one 43% of their CCU",
         "games": 77,
         "growth": -0.1137,
         "key": "Minigame",
         "label": "Minigame",
         "momentum": 0.75,
         "momentum_adj": 0.9,
+        "momentum_change": -0.02,
+        "momentum_week_ago": 0.92,
         "share": 0.0067,
+        "top1_share": 0.433,
         "top_examples": [
           {
             "age": 1854,
@@ -7917,13 +8449,18 @@
       },
       {
         "ccu": 39757,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 91% of new-game CCU",
         "games": 104,
         "growth": -0.1315,
         "key": "Story",
         "label": "Story",
         "momentum": 0.87,
         "momentum_adj": 0.95,
+        "momentum_change": 0.24,
+        "momentum_week_ago": 0.71,
         "share": 0.0055,
+        "top1_share": 0.905,
         "top_examples": [
           {
             "age": 57,
@@ -7976,13 +8513,18 @@
       },
       {
         "ccu": 36868,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 49,
         "growth": -0.0874,
         "key": "Animal Sim",
         "label": "Animal Sim",
         "momentum": 0.02,
         "momentum_adj": 0.67,
+        "momentum_change": 0.02,
+        "momentum_week_ago": 0.65,
         "share": 0.0051,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 2310,
@@ -8021,13 +8563,18 @@
       },
       {
         "ccu": 31160,
+        "confidence": "medium",
+        "confidence_note": "5 new games, top one 53% of their CCU",
         "games": 83,
         "growth": -0.0517,
         "key": "Morph Roleplay",
         "label": "Morph Roleplay",
         "momentum": 0.16,
         "momentum_adj": 0.75,
+        "momentum_change": 0.03,
+        "momentum_week_ago": 0.72,
         "share": 0.0043,
+        "top1_share": 0.527,
         "top_examples": [
           {
             "age": 2300,
@@ -8080,13 +8627,18 @@
       },
       {
         "ccu": 22654,
+        "confidence": "low",
+        "confidence_note": "only 2 new games",
         "games": 49,
         "growth": -0.106,
         "key": "PvE Shooter",
         "label": "PvE Shooter",
         "momentum": 0.86,
         "momentum_adj": 0.97,
+        "momentum_change": 0.04,
+        "momentum_week_ago": 0.93,
         "share": 0.0031,
+        "top1_share": 0.53,
         "top_examples": [
           {
             "age": 1360,
@@ -8132,13 +8684,18 @@
       },
       {
         "ccu": 22284,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 23,
         "growth": -0.022,
         "key": "Runner",
         "label": "Runner",
         "momentum": 3.7,
         "momentum_adj": 1.64,
+        "momentum_change": 0.74,
+        "momentum_week_ago": 0.9,
         "share": 0.0031,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 5,
@@ -8177,13 +8734,18 @@
       },
       {
         "ccu": 21607,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 30,
         "growth": -0.1716,
         "key": "Childhood Game",
         "label": "Childhood Game",
         "momentum": 0.0,
         "momentum_adj": 0.77,
+        "momentum_change": 0.01,
+        "momentum_week_ago": 0.76,
         "share": 0.003,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 234,
@@ -8214,13 +8776,18 @@
       },
       {
         "ccu": 17877,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 83% of new-game CCU",
         "games": 80,
         "growth": -0.0642,
         "key": "Classic Obby",
         "label": "Classic Obby",
         "momentum": 0.35,
         "momentum_adj": 0.87,
+        "momentum_change": 0.02,
+        "momentum_week_ago": 0.85,
         "share": 0.0025,
+        "top1_share": 0.829,
         "top_examples": [
           {
             "age": 275,
@@ -8273,13 +8840,18 @@
       },
       {
         "ccu": 13091,
+        "confidence": "medium",
+        "confidence_note": "8 new games, top one 52% of their CCU; momentum up 0.35 this week",
         "games": 22,
         "growth": -0.0728,
         "key": "Idle",
         "label": "Idle",
         "momentum": 5.18,
         "momentum_adj": 1.64,
+        "momentum_change": 0.35,
+        "momentum_week_ago": 1.29,
         "share": 0.0018,
+        "top1_share": 0.518,
         "top_examples": [
           {
             "age": 14,
@@ -8332,13 +8904,18 @@
       },
       {
         "ccu": 12650,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 84% of new-game CCU",
         "games": 49,
         "growth": -0.0378,
         "key": "Scavenger Hunt",
         "label": "Scavenger Hunt",
         "momentum": 0.16,
         "momentum_adj": 0.87,
+        "momentum_change": -0.06,
+        "momentum_week_ago": 0.93,
         "share": 0.0018,
+        "top1_share": 0.844,
         "top_examples": [
           {
             "age": 1085,
@@ -8384,13 +8961,18 @@
       },
       {
         "ccu": 12202,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 77% of new-game CCU",
         "games": 18,
         "growth": -0.1668,
         "key": "Escape Room",
         "label": "Escape Room",
         "momentum": 2.46,
         "momentum_adj": 1.21,
+        "momentum_change": 0.22,
+        "momentum_week_ago": 0.99,
         "share": 0.0017,
+        "top1_share": 0.774,
         "top_examples": [
           {
             "age": 18,
@@ -8443,13 +9025,18 @@
       },
       {
         "ccu": 11689,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 42% of their CCU",
         "games": 30,
         "growth": -0.1042,
         "key": "Racing",
         "label": "Racing",
         "momentum": 4.14,
         "momentum_adj": 1.44,
+        "momentum_change": -0.16,
+        "momentum_week_ago": 1.6,
         "share": 0.0016,
+        "top1_share": 0.423,
         "top_examples": [
           {
             "age": 21,
@@ -8502,13 +9089,18 @@
       },
       {
         "ccu": 10973,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 13,
         "growth": -0.1082,
         "key": "Turn-based RPG",
         "label": "Turn-based RPG",
         "momentum": 3.34,
         "momentum_adj": 1.31,
+        "momentum_change": -0.01,
+        "momentum_week_ago": 1.32,
         "share": 0.0015,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 27,
@@ -8547,13 +9139,18 @@
       },
       {
         "ccu": 10796,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 62% of new-game CCU; momentum down 0.30 this week",
         "games": 31,
         "growth": -0.1165,
         "key": "Coloring & Drawing",
         "label": "Coloring & Drawing",
         "momentum": 2.84,
         "momentum_adj": 1.24,
+        "momentum_change": -0.3,
+        "momentum_week_ago": 1.54,
         "share": 0.0015,
+        "top1_share": 0.617,
         "top_examples": [
           {
             "age": 29,
@@ -8606,13 +9203,18 @@
       },
       {
         "ccu": 9000,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 16,
         "growth": -0.0837,
         "key": "Board & Card Games",
         "label": "Board & Card Games",
         "momentum": 1.72,
         "momentum_adj": 1.08,
+        "momentum_change": 0.1,
+        "momentum_week_ago": 0.98,
         "share": 0.0013,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 21,
@@ -8651,13 +9253,18 @@
       },
       {
         "ccu": 8803,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 91% of new-game CCU",
         "games": 25,
         "growth": -0.0911,
         "key": "Music & Audio",
         "label": "Music & Audio",
         "momentum": 1.87,
         "momentum_adj": 1.1,
+        "momentum_change": -0.12,
+        "momentum_week_ago": 1.22,
         "share": 0.0012,
+        "top1_share": 0.907,
         "top_examples": [
           {
             "age": 35,
@@ -8710,13 +9317,18 @@
       },
       {
         "ccu": 8179,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 85% of new-game CCU",
         "games": 16,
         "growth": -0.1242,
         "key": "Word",
         "label": "Word",
         "momentum": 1.32,
         "momentum_adj": 1.03,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 1.03,
         "share": 0.0011,
+        "top1_share": 0.85,
         "top_examples": [
           {
             "age": 156,
@@ -8762,13 +9374,18 @@
       },
       {
         "ccu": 7948,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 4,
         "growth": -0.1384,
         "key": "Video",
         "label": "Video",
         "momentum": 0.0,
         "momentum_adj": 0.9,
+        "momentum_change": 0.01,
+        "momentum_week_ago": 0.89,
         "share": 0.0011,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 1241,
@@ -8799,13 +9416,18 @@
       },
       {
         "ccu": 3102,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 10,
         "growth": -0.1276,
         "key": "Music & Rhythm",
         "label": "Music & Rhythm",
         "momentum": 0.0,
         "momentum_adj": 0.96,
+        "momentum_change": 0.01,
+        "momentum_week_ago": 0.95,
         "share": 0.0004,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 2064,
@@ -8836,13 +9458,18 @@
       },
       {
         "ccu": 2958,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 16,
         "growth": -0.0142,
         "key": "Open World & Survival RPG",
         "label": "Open World & Survival RPG",
         "momentum": 0.0,
         "momentum_adj": 0.96,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 0.96,
         "share": 0.0004,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 1419,
@@ -8873,13 +9500,18 @@
       },
       {
         "ccu": 2763,
+        "confidence": "low",
+        "confidence_note": "only 2 new games",
         "games": 19,
         "growth": -0.1866,
         "key": "Quiz",
         "label": "Quiz",
         "momentum": 1.81,
         "momentum_adj": 1.03,
+        "momentum_change": 0.03,
+        "momentum_week_ago": 1.0,
         "share": 0.0004,
+        "top1_share": 0.573,
         "top_examples": [
           {
             "age": 84,
@@ -8925,13 +9557,18 @@
       },
       {
         "ccu": 2332,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 6,
         "growth": -0.1429,
         "key": "Match & Merge",
         "label": "Match & Merge",
         "momentum": 2.59,
         "momentum_adj": 1.05,
+        "momentum_change": -0.05,
+        "momentum_week_ago": 1.1,
         "share": 0.0003,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 209,
@@ -8970,13 +9607,18 @@
       },
       {
         "ccu": 1717,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 15,
         "growth": -0.1841,
         "key": "Showcase & Hub",
         "label": "Showcase & Hub",
         "momentum": 0.3,
         "momentum_adj": 0.98,
+        "momentum_change": -0.28,
+        "momentum_week_ago": 1.26,
         "share": 0.0002,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 89,
@@ -9015,13 +9657,18 @@
       },
       {
         "ccu": 1228,
+        "confidence": "low",
+        "confidence_note": "only 0 new games",
         "games": 6,
         "growth": 0.0136,
         "key": "Battle Royale",
         "label": "Battle Royale",
         "momentum": 0.0,
         "momentum_adj": 0.98,
+        "momentum_change": 0.0,
+        "momentum_week_ago": 0.98,
         "share": 0.0002,
+        "top1_share": 0.0,
         "top_examples": [
           {
             "age": 254,
@@ -9053,14 +9700,19 @@
     ],
     "theme": [
       {
-        "ccu": 1393758,
-        "games": 236,
+        "ccu": 1397577,
+        "confidence": "high",
+        "confidence_note": "50 new games, spread out",
+        "games": 238,
         "growth": -0.1106,
         "key": "animals",
         "label": "Animals",
-        "momentum": 0.77,
-        "momentum_adj": 0.78,
-        "share": 0.1937,
+        "momentum": 0.78,
+        "momentum_adj": 0.79,
+        "momentum_change": 0.13,
+        "momentum_week_ago": 0.66,
+        "share": 0.1942,
+        "top1_share": 0.22,
         "top_examples": [
           {
             "age": 89,
@@ -9084,7 +9736,7 @@
             "place": "8737899170"
           }
         ],
-        "young_ccu": 182906,
+        "young_ccu": 186075,
         "young_examples": [
           {
             "age": 46,
@@ -9108,18 +9760,23 @@
             "place": "74023858073178"
           }
         ],
-        "young_games": 49,
-        "young_share": 0.1493
+        "young_games": 50,
+        "young_share": 0.1519
       },
       {
         "ccu": 1327409,
+        "confidence": "high",
+        "confidence_note": "55 new games, spread out",
         "games": 97,
         "growth": -0.188,
         "key": "eggs",
         "label": "Eggs",
         "momentum": 1.22,
         "momentum_adj": 1.21,
+        "momentum_change": -0.07,
+        "momentum_week_ago": 1.28,
         "share": 0.1845,
+        "top1_share": 0.386,
         "top_examples": [
           {
             "age": 89,
@@ -9172,13 +9829,18 @@
       },
       {
         "ccu": 378279,
+        "confidence": "high",
+        "confidence_note": "41 new games, spread out",
         "games": 377,
         "growth": -0.1023,
         "key": "money",
         "label": "Money / rich",
         "momentum": 1.93,
         "momentum_adj": 1.78,
+        "momentum_change": -0.21,
+        "momentum_week_ago": 1.99,
         "share": 0.0526,
+        "top1_share": 0.33,
         "top_examples": [
           {
             "age": 46,
@@ -9230,14 +9892,19 @@
         "young_share": 0.1014
       },
       {
-        "ccu": 299324,
-        "games": 139,
+        "ccu": 300318,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
+        "games": 140,
         "growth": -0.0848,
         "key": "anime",
         "label": "Anime",
         "momentum": 0.42,
-        "momentum_adj": 0.54,
-        "share": 0.0416,
+        "momentum_adj": 0.53,
+        "momentum_change": -0.17,
+        "momentum_week_ago": 0.7,
+        "share": 0.0417,
+        "top1_share": 0.433,
         "top_examples": [
           {
             "age": 68,
@@ -9290,13 +9957,18 @@
       },
       {
         "ccu": 279642,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.31 this week",
         "games": 251,
         "growth": -0.0724,
         "key": "vehicles",
         "label": "Vehicles",
         "momentum": 1.42,
         "momentum_adj": 1.34,
+        "momentum_change": 0.31,
+        "momentum_week_ago": 1.03,
         "share": 0.0389,
+        "top1_share": 0.298,
         "top_examples": [
           {
             "age": 25,
@@ -9348,73 +10020,19 @@
         "young_share": 0.0554
       },
       {
-        "ccu": 225598,
-        "games": 180,
-        "growth": -0.1151,
-        "key": "seasonal",
-        "label": "Seasonal / holiday",
-        "momentum": 0.78,
-        "momentum_adj": 0.83,
-        "share": 0.0314,
-        "top_examples": [
-          {
-            "age": 1000,
-            "ccu": 46463,
-            "id": "5569032992",
-            "name": "\ud83c\udf83 Dandy's World [ALPHA]",
-            "place": "16116270224"
-          },
-          {
-            "age": 5,
-            "ccu": 14048,
-            "id": "10771421858",
-            "name": "[UPD \ud83c\udf83] DONT SPLASH",
-            "place": "119958473240233"
-          },
-          {
-            "age": 1974,
-            "ccu": 12271,
-            "id": "2619619496",
-            "name": "BedWars [\ud83c\udf83HALLOWEEN PT.1]",
-            "place": "6872265039"
-          }
-        ],
-        "young_ccu": 29998,
-        "young_examples": [
-          {
-            "age": 5,
-            "ccu": 14048,
-            "id": "10771421858",
-            "name": "[UPD \ud83c\udf83] DONT SPLASH",
-            "place": "119958473240233"
-          },
-          {
-            "age": 43,
-            "ccu": 3479,
-            "id": "10765841403",
-            "name": "Steal Or Die [MASSIVE HALLOWEEN UPD!]",
-            "place": "119925538689885"
-          },
-          {
-            "age": 27,
-            "ccu": 3022,
-            "id": "10768046082",
-            "name": "My Chiikawa Restaurant! \ud83c\udf83",
-            "place": "91413789989696"
-          }
-        ],
-        "young_games": 18,
-        "young_share": 0.0245
-      },
-      {
         "ccu": 212297,
+        "confidence": "low",
+        "confidence_note": "one game holds 63% of new-game CCU",
         "games": 84,
         "growth": -0.084,
         "key": "food",
         "label": "Food / candy",
         "momentum": 0.42,
         "momentum_adj": 0.57,
+        "momentum_change": 0.28,
+        "momentum_week_ago": 0.29,
         "share": 0.0295,
+        "top1_share": 0.626,
         "top_examples": [
           {
             "age": 2836,
@@ -9466,14 +10084,83 @@
         "young_share": 0.0124
       },
       {
+        "ccu": 212243,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.24 this week",
+        "games": 180,
+        "growth": -0.1136,
+        "key": "seasonal",
+        "label": "Seasonal / holiday",
+        "momentum": 0.44,
+        "momentum_adj": 0.58,
+        "momentum_change": 0.24,
+        "momentum_week_ago": 0.34,
+        "share": 0.0295,
+        "top1_share": 0.218,
+        "top_examples": [
+          {
+            "age": 1000,
+            "ccu": 46463,
+            "id": "5569032992",
+            "name": "\ud83c\udf83 Dandy's World [ALPHA]",
+            "place": "16116270224"
+          },
+          {
+            "age": 1974,
+            "ccu": 12271,
+            "id": "2619619496",
+            "name": "BedWars [\ud83c\udf83HALLOWEEN PT.1]",
+            "place": "6872265039"
+          },
+          {
+            "age": 780,
+            "ccu": 10614,
+            "id": "6504986360",
+            "name": "[\ud83c\udf83SEASON] Bubble Gum Simulator INFINITY",
+            "place": "85896571713843"
+          }
+        ],
+        "young_ccu": 15950,
+        "young_examples": [
+          {
+            "age": 43,
+            "ccu": 3479,
+            "id": "10765841403",
+            "name": "Steal Or Die [MASSIVE HALLOWEEN UPD!]",
+            "place": "119925538689885"
+          },
+          {
+            "age": 27,
+            "ccu": 3022,
+            "id": "10768046082",
+            "name": "My Chiikawa Restaurant! \ud83c\udf83",
+            "place": "91413789989696"
+          },
+          {
+            "age": 23,
+            "ccu": 2086,
+            "id": "10768637423",
+            "name": "[\ud83c\udf83HALLOWEEN\ud83c\udf83] Roll a Barber RNG",
+            "place": "87029994390208"
+          }
+        ],
+        "young_games": 17,
+        "young_share": 0.013
+      },
+      {
         "ccu": 201198,
+        "confidence": "low",
+        "confidence_note": "one game holds 66% of new-game CCU",
         "games": 54,
         "growth": -0.0333,
         "key": "nature",
         "label": "Jungle / nature",
         "momentum": 0.79,
         "momentum_adj": 0.85,
+        "momentum_change": -0.07,
+        "momentum_week_ago": 0.92,
         "share": 0.028,
+        "top1_share": 0.66,
         "top_examples": [
           {
             "age": 597,
@@ -9526,13 +10213,18 @@
       },
       {
         "ccu": 178906,
+        "confidence": "medium",
+        "confidence_note": "8 new games, top one 33% of their CCU",
         "games": 79,
         "growth": -0.1108,
         "key": "ocean",
         "label": "Ocean / pirates",
         "momentum": 0.54,
         "momentum_adj": 0.67,
+        "momentum_change": 0.04,
+        "momentum_week_ago": 0.63,
         "share": 0.0249,
+        "top1_share": 0.335,
         "top_examples": [
           {
             "age": 2836,
@@ -9585,13 +10277,18 @@
       },
       {
         "ccu": 178002,
+        "confidence": "high",
+        "confidence_note": "13 new games, spread out",
         "games": 137,
         "growth": -0.0885,
         "key": "sports",
         "label": "Sports",
         "momentum": 0.76,
         "momentum_adj": 0.83,
+        "momentum_change": -0.05,
+        "momentum_week_ago": 0.88,
         "share": 0.0247,
+        "top1_share": 0.327,
         "top_examples": [
           {
             "age": 674,
@@ -9644,13 +10341,18 @@
       },
       {
         "ccu": 170567,
+        "confidence": "medium",
+        "confidence_note": "6 new games, top one 43% of their CCU",
         "games": 190,
         "growth": -0.0597,
         "key": "brainrot",
         "label": "Brainrot",
         "momentum": 0.15,
         "momentum_adj": 0.4,
+        "momentum_change": -0.02,
+        "momentum_week_ago": 0.42,
         "share": 0.0237,
+        "top1_share": 0.426,
         "top_examples": [
           {
             "age": 524,
@@ -9703,13 +10405,18 @@
       },
       {
         "ccu": 151649,
+        "confidence": "high",
+        "confidence_note": "10 new games, spread out",
         "games": 233,
         "growth": -0.1045,
         "key": "horror",
         "label": "Horror",
         "momentum": 0.69,
         "momentum_adj": 0.79,
+        "momentum_change": -0.14,
+        "momentum_week_ago": 0.93,
         "share": 0.0211,
+        "top1_share": 0.269,
         "top_examples": [
           {
             "age": 463,
@@ -9762,13 +10469,18 @@
       },
       {
         "ccu": 94678,
+        "confidence": "medium",
+        "confidence_note": "9 new games, top one 44% of their CCU",
         "games": 109,
         "growth": -0.0995,
         "key": "military",
         "label": "Military / war",
         "momentum": 0.73,
         "momentum_adj": 0.85,
+        "momentum_change": 0.05,
+        "momentum_week_ago": 0.8,
         "share": 0.0132,
+        "top1_share": 0.437,
         "top_examples": [
           {
             "age": 231,
@@ -9821,13 +10533,18 @@
       },
       {
         "ccu": 78292,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 51,
         "growth": -0.0655,
         "key": "fashion",
         "label": "Fashion / beauty",
         "momentum": 1.75,
         "momentum_adj": 1.39,
+        "momentum_change": -0.18,
+        "momentum_week_ago": 1.57,
         "share": 0.0109,
+        "top1_share": 0.349,
         "top_examples": [
           {
             "age": 1937,
@@ -9880,13 +10597,18 @@
       },
       {
         "ccu": 70669,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.43 this week",
         "games": 75,
         "growth": -0.1025,
         "key": "zombies",
         "label": "Zombies",
         "momentum": 0.53,
         "momentum_adj": 0.77,
+        "momentum_change": -0.43,
+        "momentum_week_ago": 1.2,
         "share": 0.0098,
+        "top1_share": 0.548,
         "top_examples": [
           {
             "age": 659,
@@ -9939,13 +10661,18 @@
       },
       {
         "ccu": 67833,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 61% of new-game CCU",
         "games": 64,
         "growth": -0.1342,
         "key": "prison",
         "label": "Prison / police",
         "momentum": 0.39,
         "momentum_adj": 0.71,
+        "momentum_change": -0.03,
+        "momentum_week_ago": 0.74,
         "share": 0.0094,
+        "top1_share": 0.611,
         "top_examples": [
           {
             "age": 1723,
@@ -9998,13 +10725,18 @@
       },
       {
         "ccu": 66301,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.91 this week",
         "games": 51,
         "growth": -0.08,
         "key": "stone_rocks",
         "label": "Stones / rocks / ores",
         "momentum": 2.57,
         "momentum_adj": 1.75,
+        "momentum_change": -0.91,
+        "momentum_week_ago": 2.66,
         "share": 0.0092,
+        "top1_share": 0.491,
         "top_examples": [
           {
             "age": 47,
@@ -10057,13 +10789,18 @@
       },
       {
         "ccu": 58461,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.51 this week",
         "games": 105,
         "growth": -0.0811,
         "key": "fantasy",
         "label": "Fantasy / medieval",
         "momentum": 1.83,
         "momentum_adj": 1.37,
+        "momentum_change": 0.51,
+        "momentum_week_ago": 0.86,
         "share": 0.0081,
+        "top1_share": 0.343,
         "top_examples": [
           {
             "age": 27,
@@ -10116,13 +10853,18 @@
       },
       {
         "ccu": 57324,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.39 this week",
         "games": 95,
         "growth": -0.1104,
         "key": "ice_fire",
         "label": "Ice / fire / elements",
         "momentum": 1.59,
         "momentum_adj": 1.26,
+        "momentum_change": -0.39,
+        "momentum_week_ago": 1.65,
         "share": 0.008,
+        "top1_share": 0.407,
         "top_examples": [
           {
             "age": 30,
@@ -10175,13 +10917,18 @@
       },
       {
         "ccu": 53935,
+        "confidence": "medium",
+        "confidence_note": "6 new games, top one 40% of their CCU",
         "games": 91,
         "growth": -0.0169,
         "key": "giant",
         "label": "Giant / huge",
         "momentum": 0.86,
         "momentum_adj": 0.94,
+        "momentum_change": -0.24,
+        "momentum_week_ago": 1.18,
         "share": 0.0075,
+        "top1_share": 0.396,
         "top_examples": [
           {
             "age": 1264,
@@ -10234,13 +10981,18 @@
       },
       {
         "ccu": 49539,
+        "confidence": "low",
+        "confidence_note": "one game holds 65% of new-game CCU",
         "games": 79,
         "growth": -0.0694,
         "key": "school",
         "label": "School",
         "momentum": 1.15,
         "momentum_adj": 1.06,
+        "momentum_change": 0.13,
+        "momentum_week_ago": 0.93,
         "share": 0.0069,
+        "top1_share": 0.645,
         "top_examples": [
           {
             "age": 1749,
@@ -10293,13 +11045,18 @@
       },
       {
         "ccu": 41439,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 44% of their CCU",
         "games": 59,
         "growth": -0.0556,
         "key": "superheroes",
         "label": "Superheroes / powers",
         "momentum": 1.96,
         "momentum_adj": 1.35,
+        "momentum_change": 0.03,
+        "momentum_week_ago": 1.32,
         "share": 0.0058,
+        "top1_share": 0.441,
         "top_examples": [
           {
             "age": 46,
@@ -10352,13 +11109,18 @@
       },
       {
         "ccu": 40181,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 90% of new-game CCU",
         "games": 26,
         "growth": -0.0642,
         "key": "dinosaurs",
         "label": "Dinosaurs",
         "momentum": 4.46,
         "momentum_adj": 2.24,
+        "momentum_change": 1.12,
+        "momentum_week_ago": 1.12,
         "share": 0.0056,
+        "top1_share": 0.9,
         "top_examples": [
           {
             "age": 59,
@@ -10411,13 +11173,18 @@
       },
       {
         "ccu": 33747,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 87% of new-game CCU; momentum down 0.32 this week",
         "games": 63,
         "growth": -0.08,
         "key": "disaster",
         "label": "Disaster / weather",
         "momentum": 0.79,
         "momentum_adj": 0.93,
+        "momentum_change": -0.32,
+        "momentum_week_ago": 1.25,
         "share": 0.0047,
+        "top1_share": 0.872,
         "top_examples": [
           {
             "age": 6782,
@@ -10462,14 +11229,19 @@
         "young_share": 0.0037
       },
       {
-        "ccu": 30490,
-        "games": 61,
+        "ccu": 30690,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.31 this week",
+        "games": 62,
         "growth": -0.0857,
         "key": "music",
         "label": "Music / dance",
-        "momentum": 1.11,
-        "momentum_adj": 1.03,
-        "share": 0.0042,
+        "momentum": 1.14,
+        "momentum_adj": 1.04,
+        "momentum_change": -0.31,
+        "momentum_week_ago": 1.35,
+        "share": 0.0043,
+        "top1_share": 0.447,
         "top_examples": [
           {
             "age": 61,
@@ -10493,7 +11265,7 @@
             "place": "117883700024872"
           }
         ],
-        "young_ccu": 5752,
+        "young_ccu": 5952,
         "young_examples": [
           {
             "age": 53,
@@ -10517,18 +11289,23 @@
             "place": "74347251800938"
           }
         ],
-        "young_games": 4,
-        "young_share": 0.0047
+        "young_games": 5,
+        "young_share": 0.0049
       },
       {
         "ccu": 26517,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 73% of new-game CCU",
         "games": 15,
         "growth": -0.0146,
         "key": "robots",
         "label": "Robots / mechs",
         "momentum": 5.05,
         "momentum_adj": 2.09,
+        "momentum_change": 0.59,
+        "momentum_week_ago": 1.5,
         "share": 0.0037,
+        "top1_share": 0.729,
         "top_examples": [
           {
             "age": 45,
@@ -10581,13 +11358,18 @@
       },
       {
         "ccu": 23321,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 64,
         "growth": -0.0925,
         "key": "memes",
         "label": "Memes / noob",
         "momentum": 0.05,
         "momentum_adj": 0.77,
+        "momentum_change": 0.01,
+        "momentum_week_ago": 0.76,
         "share": 0.0032,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 206,
@@ -10626,13 +11408,18 @@
       },
       {
         "ccu": 19191,
+        "confidence": "medium",
+        "confidence_note": "5 new games, top one 44% of their CCU; momentum up 0.37 this week",
         "games": 55,
         "growth": -0.1048,
         "key": "space",
         "label": "Space",
         "momentum": 1.43,
         "momentum_adj": 1.09,
+        "momentum_change": 0.37,
+        "momentum_week_ago": 0.72,
         "share": 0.0027,
+        "top1_share": 0.442,
         "top_examples": [
           {
             "age": 17,
@@ -10685,13 +11472,18 @@
       },
       {
         "ccu": 14578,
+        "confidence": "low",
+        "confidence_note": "only 2 new games; one game holds 93% of new-game CCU",
         "games": 18,
         "growth": -0.0348,
         "key": "toys",
         "label": "Toys / plush",
         "momentum": 0.49,
         "momentum_adj": 0.91,
+        "momentum_change": -0.2,
+        "momentum_week_ago": 1.11,
         "share": 0.002,
+        "top1_share": 0.926,
         "top_examples": [
           {
             "age": 1298,
@@ -10737,13 +11529,18 @@
       },
       {
         "ccu": 4310,
+        "confidence": "low",
+        "confidence_note": "only 1 new game",
         "games": 6,
         "growth": -0.0931,
         "key": "ancient",
         "label": "Ancient / pyramids",
         "momentum": 5.43,
         "momentum_adj": 1.25,
+        "momentum_change": -0.11,
+        "momentum_week_ago": 1.36,
         "share": 0.0006,
+        "top1_share": 1.0,
         "top_examples": [
           {
             "age": 49,
@@ -10785,272 +11582,314 @@
   "games": 5015,
   "gaps": [
     {
-      "mechanic": "break_mine",
-      "mechanic_label": "Break / mine / dig",
-      "mechanic_momentum": 2.55,
-      "score": 7.09,
-      "theme": "robots",
-      "theme_ccu": 26517,
-      "theme_label": "Robots / mechs",
-      "theme_momentum": 2.09
-    },
-    {
       "mechanic": "paint_create",
+      "mechanic_confidence": "high",
       "mechanic_label": "Paint / create",
       "mechanic_momentum": 2.04,
       "score": 6.98,
       "theme": "eggs",
       "theme_ccu": 1327409,
+      "theme_confidence": "high",
       "theme_label": "Eggs",
       "theme_momentum": 1.21
     },
     {
-      "mechanic": "sell_shop",
-      "mechanic_label": "Sell / run a shop",
-      "mechanic_momentum": 2.07,
-      "score": 6.31,
-      "theme": "dinosaurs",
-      "theme_ccu": 40181,
-      "theme_label": "Dinosaurs",
-      "theme_momentum": 2.24
-    },
-    {
       "mechanic": "paint_create",
+      "mechanic_confidence": "high",
       "mechanic_label": "Paint / create",
       "mechanic_momentum": 2.04,
-      "score": 6.22,
-      "theme": "dinosaurs",
-      "theme_ccu": 40181,
-      "theme_label": "Dinosaurs",
-      "theme_momentum": 2.24
-    },
-    {
-      "mechanic": "paint_create",
-      "mechanic_label": "Paint / create",
-      "mechanic_momentum": 2.04,
-      "score": 5.67,
-      "theme": "robots",
-      "theme_ccu": 26517,
-      "theme_label": "Robots / mechs",
-      "theme_momentum": 2.09
-    },
-    {
-      "mechanic": "paint_create",
-      "mechanic_label": "Paint / create",
-      "mechanic_momentum": 2.04,
-      "score": 5.43,
+      "score": 5.0,
       "theme": "stone_rocks",
       "theme_ccu": 66301,
+      "theme_confidence": "medium",
       "theme_label": "Stones / rocks / ores",
       "theme_momentum": 1.75
     },
     {
-      "mechanic": "plus_one_stat",
-      "mechanic_label": "+1 stat per action",
-      "mechanic_momentum": 1.86,
-      "score": 5.17,
-      "theme": "robots",
-      "theme_ccu": 26517,
-      "theme_label": "Robots / mechs",
-      "theme_momentum": 2.09
-    },
-    {
-      "mechanic": "hit_swing",
-      "mechanic_label": "Hit / swing / launch",
-      "mechanic_momentum": 1.68,
-      "score": 5.12,
+      "mechanic": "paint_create",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Paint / create",
+      "mechanic_momentum": 2.04,
+      "score": 4.97,
       "theme": "dinosaurs",
       "theme_ccu": 40181,
+      "theme_confidence": "low",
       "theme_label": "Dinosaurs",
       "theme_momentum": 2.24
     },
     {
-      "mechanic": "tower_defense",
-      "mechanic_label": "Tower defense",
-      "mechanic_momentum": 1.69,
-      "score": 4.7,
+      "mechanic": "sell_shop",
+      "mechanic_confidence": "medium",
+      "mechanic_label": "Sell / run a shop",
+      "mechanic_momentum": 2.08,
+      "score": 4.66,
+      "theme": "dinosaurs",
+      "theme_ccu": 40181,
+      "theme_confidence": "low",
+      "theme_label": "Dinosaurs",
+      "theme_momentum": 2.24
+    },
+    {
+      "mechanic": "paint_create",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Paint / create",
+      "mechanic_momentum": 2.04,
+      "score": 4.54,
       "theme": "robots",
       "theme_ccu": 26517,
+      "theme_confidence": "low",
       "theme_label": "Robots / mechs",
       "theme_momentum": 2.09
     },
     {
-      "mechanic": "hit_swing",
-      "mechanic_label": "Hit / swing / launch",
-      "mechanic_momentum": 1.68,
-      "score": 4.67,
+      "mechanic": "break_mine",
+      "mechanic_confidence": "low",
+      "mechanic_label": "Break / mine / dig",
+      "mechanic_momentum": 2.55,
+      "score": 4.54,
       "theme": "robots",
       "theme_ccu": 26517,
+      "theme_confidence": "low",
       "theme_label": "Robots / mechs",
       "theme_momentum": 2.09
     },
     {
       "mechanic": "job_shift",
+      "mechanic_confidence": "high",
       "mechanic_label": "Job / shift",
-      "mechanic_momentum": 1.28,
-      "score": 4.38,
+      "mechanic_momentum": 1.25,
+      "score": 4.28,
       "theme": "eggs",
       "theme_ccu": 1327409,
+      "theme_confidence": "high",
       "theme_label": "Eggs",
       "theme_momentum": 1.21
     },
     {
-      "mechanic": "sell_shop",
-      "mechanic_label": "Sell / run a shop",
-      "mechanic_momentum": 2.07,
-      "score": 4.27,
-      "theme": "superheroes",
-      "theme_ccu": 41439,
-      "theme_label": "Superheroes / powers",
-      "theme_momentum": 1.35
+      "mechanic": "plus_one_stat",
+      "mechanic_confidence": "high",
+      "mechanic_label": "+1 stat per action",
+      "mechanic_momentum": 1.86,
+      "score": 4.14,
+      "theme": "robots",
+      "theme_ccu": 26517,
+      "theme_confidence": "low",
+      "theme_label": "Robots / mechs",
+      "theme_momentum": 2.09
     },
     {
-      "mechanic": "paint_create",
-      "mechanic_label": "Paint / create",
-      "mechanic_momentum": 2.04,
-      "score": 4.21,
-      "theme": "superheroes",
-      "theme_ccu": 41439,
-      "theme_label": "Superheroes / powers",
-      "theme_momentum": 1.35
-    },
-    {
-      "mechanic": "paint_create",
-      "mechanic_label": "Paint / create",
-      "mechanic_momentum": 2.04,
-      "score": 4.16,
-      "theme": "ice_fire",
-      "theme_ccu": 57324,
-      "theme_label": "Ice / fire / elements",
-      "theme_momentum": 1.26
-    },
-    {
-      "mechanic": "job_shift",
-      "mechanic_label": "Job / shift",
-      "mechanic_momentum": 1.28,
-      "score": 3.9,
+      "mechanic": "hit_swing",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Hit / swing / launch",
+      "mechanic_momentum": 1.68,
+      "score": 4.1,
       "theme": "dinosaurs",
       "theme_ccu": 40181,
+      "theme_confidence": "low",
       "theme_label": "Dinosaurs",
       "theme_momentum": 2.24
     },
     {
-      "mechanic": "tower_defense",
-      "mechanic_label": "Tower defense",
-      "mechanic_momentum": 1.69,
-      "score": 3.89,
-      "theme": "fashion",
-      "theme_ccu": 78292,
-      "theme_label": "Fashion / beauty",
-      "theme_momentum": 1.39
+      "mechanic": "paint_create",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Paint / create",
+      "mechanic_momentum": 2.04,
+      "score": 3.87,
+      "theme": "superheroes",
+      "theme_ccu": 41439,
+      "theme_confidence": "medium",
+      "theme_label": "Superheroes / powers",
+      "theme_momentum": 1.35
     },
     {
       "mechanic": "hit_swing",
+      "mechanic_confidence": "high",
       "mechanic_label": "Hit / swing / launch",
       "mechanic_momentum": 1.68,
       "score": 3.87,
       "theme": "fashion",
       "theme_ccu": 78292,
+      "theme_confidence": "high",
       "theme_label": "Fashion / beauty",
       "theme_momentum": 1.39
     },
     {
       "mechanic": "paint_create",
+      "mechanic_confidence": "high",
       "mechanic_label": "Paint / create",
       "mechanic_momentum": 2.04,
-      "score": 3.62,
+      "score": 3.83,
+      "theme": "ice_fire",
+      "theme_ccu": 57324,
+      "theme_confidence": "medium",
+      "theme_label": "Ice / fire / elements",
+      "theme_momentum": 1.26
+    },
+    {
+      "mechanic": "hit_swing",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Hit / swing / launch",
+      "mechanic_momentum": 1.68,
+      "score": 3.74,
+      "theme": "robots",
+      "theme_ccu": 26517,
+      "theme_confidence": "low",
+      "theme_label": "Robots / mechs",
+      "theme_momentum": 2.09
+    },
+    {
+      "mechanic": "sell_shop",
+      "mechanic_confidence": "medium",
+      "mechanic_label": "Sell / run a shop",
+      "mechanic_momentum": 2.08,
+      "score": 3.63,
+      "theme": "superheroes",
+      "theme_ccu": 41439,
+      "theme_confidence": "medium",
+      "theme_label": "Superheroes / powers",
+      "theme_momentum": 1.35
+    },
+    {
+      "mechanic": "tower_defense",
+      "mechanic_confidence": "low",
+      "mechanic_label": "Tower defense",
+      "mechanic_momentum": 1.69,
+      "score": 3.11,
+      "theme": "fashion",
+      "theme_ccu": 78292,
+      "theme_confidence": "high",
+      "theme_label": "Fashion / beauty",
+      "theme_momentum": 1.39
+    },
+    {
+      "mechanic": "job_shift",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Job / shift",
+      "mechanic_momentum": 1.25,
+      "score": 3.05,
+      "theme": "dinosaurs",
+      "theme_ccu": 40181,
+      "theme_confidence": "low",
+      "theme_label": "Dinosaurs",
+      "theme_momentum": 2.24
+    },
+    {
+      "mechanic": "tower_defense",
+      "mechanic_confidence": "low",
+      "mechanic_label": "Tower defense",
+      "mechanic_momentum": 1.69,
+      "score": 3.01,
+      "theme": "robots",
+      "theme_ccu": 26517,
+      "theme_confidence": "low",
+      "theme_label": "Robots / mechs",
+      "theme_momentum": 2.09
+    },
+    {
+      "mechanic": "paint_create",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Paint / create",
+      "mechanic_momentum": 2.04,
+      "score": 2.9,
       "theme": "school",
       "theme_ccu": 49539,
+      "theme_confidence": "low",
       "theme_label": "School",
       "theme_momentum": 1.06
     },
     {
       "mechanic": "paint_create",
+      "mechanic_confidence": "high",
       "mechanic_label": "Paint / create",
       "mechanic_momentum": 2.04,
-      "score": 3.61,
+      "score": 2.89,
       "theme": "ancient",
       "theme_ccu": 4310,
+      "theme_confidence": "low",
       "theme_label": "Ancient / pyramids",
       "theme_momentum": 1.25
+    },
+    {
+      "mechanic": "job_shift",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Job / shift",
+      "mechanic_momentum": 1.25,
+      "score": 2.88,
+      "theme": "fashion",
+      "theme_ccu": 78292,
+      "theme_confidence": "high",
+      "theme_label": "Fashion / beauty",
+      "theme_momentum": 1.39
     },
     {
       "mechanic": "plus_one_stat",
+      "mechanic_confidence": "high",
       "mechanic_label": "+1 stat per action",
       "mechanic_momentum": 1.86,
-      "score": 3.29,
+      "score": 2.64,
       "theme": "ancient",
       "theme_ccu": 4310,
-      "theme_label": "Ancient / pyramids",
-      "theme_momentum": 1.25
-    },
-    {
-      "mechanic": "collect_index",
-      "mechanic_label": "Collect / index",
-      "mechanic_momentum": 1.76,
-      "score": 3.12,
-      "theme": "ancient",
-      "theme_ccu": 4310,
-      "theme_label": "Ancient / pyramids",
-      "theme_momentum": 1.25
-    },
-    {
-      "mechanic": "tower_defense",
-      "mechanic_label": "Tower defense",
-      "mechanic_momentum": 1.69,
-      "score": 3.0,
-      "theme": "school",
-      "theme_ccu": 49539,
-      "theme_label": "School",
-      "theme_momentum": 1.06
-    },
-    {
-      "mechanic": "tower_defense",
-      "mechanic_label": "Tower defense",
-      "mechanic_momentum": 1.69,
-      "score": 2.99,
-      "theme": "ancient",
-      "theme_ccu": 4310,
+      "theme_confidence": "low",
       "theme_label": "Ancient / pyramids",
       "theme_momentum": 1.25
     },
     {
       "mechanic": "hit_swing",
+      "mechanic_confidence": "high",
       "mechanic_label": "Hit / swing / launch",
       "mechanic_momentum": 1.68,
-      "score": 2.98,
+      "score": 2.38,
       "theme": "ancient",
       "theme_ccu": 4310,
+      "theme_confidence": "low",
       "theme_label": "Ancient / pyramids",
       "theme_momentum": 1.25
     },
     {
       "mechanic": "job_shift",
+      "mechanic_confidence": "high",
       "mechanic_label": "Job / shift",
-      "mechanic_momentum": 1.28,
-      "score": 2.95,
-      "theme": "fashion",
-      "theme_ccu": 78292,
-      "theme_label": "Fashion / beauty",
-      "theme_momentum": 1.39
-    },
-    {
-      "mechanic": "job_shift",
-      "mechanic_label": "Job / shift",
-      "mechanic_momentum": 1.28,
-      "score": 2.64,
+      "mechanic_momentum": 1.25,
+      "score": 2.37,
       "theme": "superheroes",
       "theme_ccu": 41439,
+      "theme_confidence": "medium",
       "theme_label": "Superheroes / powers",
       "theme_momentum": 1.35
     },
     {
-      "mechanic": "job_shift",
-      "mechanic_label": "Job / shift",
-      "mechanic_momentum": 1.28,
-      "score": 2.27,
+      "mechanic": "tower_defense",
+      "mechanic_confidence": "low",
+      "mechanic_label": "Tower defense",
+      "mechanic_momentum": 1.69,
+      "score": 1.92,
       "theme": "ancient",
       "theme_ccu": 4310,
+      "theme_confidence": "low",
+      "theme_label": "Ancient / pyramids",
+      "theme_momentum": 1.25
+    },
+    {
+      "mechanic": "tower_defense",
+      "mechanic_confidence": "low",
+      "mechanic_label": "Tower defense",
+      "mechanic_momentum": 1.69,
+      "score": 1.92,
+      "theme": "school",
+      "theme_ccu": 49539,
+      "theme_confidence": "low",
+      "theme_label": "School",
+      "theme_momentum": 1.06
+    },
+    {
+      "mechanic": "job_shift",
+      "mechanic_confidence": "high",
+      "mechanic_label": "Job / shift",
+      "mechanic_momentum": 1.25,
+      "score": 1.77,
+      "theme": "ancient",
+      "theme_ccu": 4310,
+      "theme_confidence": "low",
       "theme_label": "Ancient / pyramids",
       "theme_momentum": 1.25
     }
@@ -11195,16 +12034,16 @@
       "young_ccu": 15380
     },
     {
+      "a": "fight_battle",
+      "b": "rng_roll",
+      "games": 6,
+      "young_ccu": 15006
+    },
+    {
       "a": "grow_farm",
       "b": "tycoon_build",
       "games": 9,
       "young_ccu": 14754
-    },
-    {
-      "a": "fight_battle",
-      "b": "rng_roll",
-      "games": 5,
-      "young_ccu": 14703
     },
     {
       "a": "job_shift",
@@ -11256,6 +12095,12 @@
     },
     {
       "a": "dice_cards",
+      "b": "rng_roll",
+      "games": 5,
+      "young_ccu": 9706
+    },
+    {
+      "a": "dice_cards",
       "b": "fight_battle",
       "games": 4,
       "young_ccu": 9679
@@ -11271,12 +12116,6 @@
       "b": "sell_shop",
       "games": 1,
       "young_ccu": 9474
-    },
-    {
-      "a": "dice_cards",
-      "b": "rng_roll",
-      "games": 4,
-      "young_ccu": 9403
     },
     {
       "a": "steal_raid",
@@ -11421,13 +12260,18 @@
     "art_style": [
       {
         "ccu": 362713,
+        "confidence": "high",
+        "confidence_note": "15 new games, spread out",
         "games": 61,
         "growth": -0.041,
         "key": "realistic",
         "label": "Realistic",
         "momentum": 2.29,
         "momentum_adj": 2.07,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0504,
+        "top1_share": 0.306,
         "top_examples": [
           {
             "age": 19,
@@ -11480,13 +12324,18 @@
       },
       {
         "ccu": 36132,
+        "confidence": "low",
+        "confidence_note": "only 4 new games",
         "games": 7,
         "growth": 0.0666,
         "key": "low_poly",
         "label": "Low poly",
         "momentum": 2.45,
         "momentum_adj": 1.48,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.005,
+        "top1_share": 0.415,
         "top_examples": [
           {
             "age": 659,
@@ -11539,13 +12388,18 @@
       },
       {
         "ccu": 1957901,
+        "confidence": "high",
+        "confidence_note": "54 new games, spread out",
         "games": 107,
         "growth": -0.1237,
         "key": "simulator_bright",
         "label": "Bright simulator",
         "momentum": 1.4,
         "momentum_adj": 1.39,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.2721,
+        "top1_share": 0.227,
         "top_examples": [
           {
             "age": 89,
@@ -11597,73 +12451,19 @@
         "young_share": 0.3819
       },
       {
-        "ccu": 89685,
-        "games": 23,
-        "growth": -0.1703,
-        "key": "voxel_blocky",
-        "label": "Voxel / blocky",
-        "momentum": 1.61,
-        "momentum_adj": 1.34,
-        "share": 0.0125,
-        "top_examples": [
-          {
-            "age": 62,
-            "ccu": 19308,
-            "id": "10747719434",
-            "name": "[V3] Feed A Mosquito",
-            "place": "125310131519813"
-          },
-          {
-            "age": 322,
-            "ccu": 13461,
-            "id": "9294074907",
-            "name": "[FPS] One Tap",
-            "place": "90568084448279"
-          },
-          {
-            "age": 45,
-            "ccu": 10690,
-            "id": "10765523466",
-            "name": "Steve the Craftsman",
-            "place": "122274956316208"
-          }
-        ],
-        "young_ccu": 24641,
-        "young_examples": [
-          {
-            "age": 45,
-            "ccu": 10690,
-            "id": "10765523466",
-            "name": "Steve the Craftsman",
-            "place": "122274956316208"
-          },
-          {
-            "age": 44,
-            "ccu": 5958,
-            "id": "10765686447",
-            "name": "Steal ASMR!",
-            "place": "82081400078378"
-          },
-          {
-            "age": 57,
-            "ccu": 5326,
-            "id": "10762148295",
-            "name": "Something is Wrong With My Dog...",
-            "place": "133409496563091"
-          }
-        ],
-        "young_games": 4,
-        "young_share": 0.0201
-      },
-      {
         "ccu": 1023043,
+        "confidence": "high",
+        "confidence_note": "32 new games, spread out",
         "games": 105,
         "growth": -0.0853,
         "key": "stylized",
         "label": "Stylized / cartoon",
         "momentum": 1.19,
         "momentum_adj": 1.18,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.1422,
+        "top1_share": 0.183,
         "top_examples": [
           {
             "age": 3387,
@@ -11713,18 +12513,87 @@
         ],
         "young_games": 32,
         "young_share": 0.1696
+      },
+      {
+        "ccu": 89685,
+        "confidence": "low",
+        "confidence_note": "only 4 new games",
+        "games": 23,
+        "growth": -0.1703,
+        "key": "voxel_blocky",
+        "label": "Voxel / blocky",
+        "momentum": 1.61,
+        "momentum_adj": 1.34,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.0125,
+        "top1_share": 0.434,
+        "top_examples": [
+          {
+            "age": 62,
+            "ccu": 19308,
+            "id": "10747719434",
+            "name": "[V3] Feed A Mosquito",
+            "place": "125310131519813"
+          },
+          {
+            "age": 322,
+            "ccu": 13461,
+            "id": "9294074907",
+            "name": "[FPS] One Tap",
+            "place": "90568084448279"
+          },
+          {
+            "age": 45,
+            "ccu": 10690,
+            "id": "10765523466",
+            "name": "Steve the Craftsman",
+            "place": "122274956316208"
+          }
+        ],
+        "young_ccu": 24641,
+        "young_examples": [
+          {
+            "age": 45,
+            "ccu": 10690,
+            "id": "10765523466",
+            "name": "Steve the Craftsman",
+            "place": "122274956316208"
+          },
+          {
+            "age": 44,
+            "ccu": 5958,
+            "id": "10765686447",
+            "name": "Steal ASMR!",
+            "place": "82081400078378"
+          },
+          {
+            "age": 57,
+            "ccu": 5326,
+            "id": "10762148295",
+            "name": "Something is Wrong With My Dog...",
+            "place": "133409496563091"
+          }
+        ],
+        "young_games": 4,
+        "young_share": 0.0201
       }
     ],
     "formula": [
       {
         "ccu": 105050,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
         "games": 54,
         "growth": -0.0925,
         "key": "verb_for_noun",
         "label": "\"___ for ___\" (Swing for Eggs)",
         "momentum": 5.13,
         "momentum_adj": 3.45,
+        "momentum_change": -0.04,
+        "momentum_week_ago": 3.49,
         "share": 0.0146,
+        "top1_share": 0.447,
         "top_examples": [
           {
             "age": 46,
@@ -11777,13 +12646,18 @@
       },
       {
         "ccu": 173218,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.19 this week",
         "games": 159,
         "growth": -0.2097,
         "key": "plus_one",
         "label": "\"+1 ___\"",
         "momentum": 2.44,
         "momentum_adj": 2.02,
+        "momentum_change": 0.19,
+        "momentum_week_ago": 1.83,
         "share": 0.0241,
+        "top1_share": 0.198,
         "top_examples": [
           {
             "age": 277,
@@ -11835,14 +12709,19 @@
         "young_share": 0.0587
       },
       {
-        "ccu": 523835,
-        "games": 405,
-        "growth": -0.0954,
+        "ccu": 531575,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.20 this week",
+        "games": 403,
+        "growth": -0.095,
         "key": "update_tag",
         "label": "[UPDATE] tag prefix",
-        "momentum": 1.13,
-        "momentum_adj": 1.12,
-        "share": 0.0728,
+        "momentum": 1.27,
+        "momentum_adj": 1.24,
+        "momentum_change": 0.2,
+        "momentum_week_ago": 1.04,
+        "share": 0.0739,
+        "top1_share": 0.247,
         "top_examples": [
           {
             "age": 731,
@@ -11866,7 +12745,7 @@
             "place": "132929771812494"
           }
         ],
-        "young_ccu": 101110,
+        "young_ccu": 115158,
         "young_examples": [
           {
             "age": 57,
@@ -11876,32 +12755,37 @@
             "place": "132929771812494"
           },
           {
+            "age": 5,
+            "ccu": 14048,
+            "id": "10771421858",
+            "name": "[UPD \ud83c\udf83] DONT SPLASH",
+            "place": "119958473240233"
+          },
+          {
             "age": 42,
             "ccu": 9342,
             "id": "10765902945",
             "name": "[UPDATE 2.5] Anime Legacy Simulator",
             "place": "106198175232796"
-          },
-          {
-            "age": 17,
-            "ccu": 8155,
-            "id": "10769514597",
-            "name": "[UPD\u2728] Makeup Salon\ud83d\udc84",
-            "place": "126608757616138"
           }
         ],
-        "young_games": 53,
-        "young_share": 0.0825
+        "young_games": 54,
+        "young_share": 0.094
       },
       {
         "ccu": 7907,
+        "confidence": "low",
+        "confidence_note": "only 3 new games",
         "games": 25,
         "growth": -0.1058,
         "key": "be_a",
         "label": "\"Be a ___\"",
         "momentum": 2.35,
         "momentum_adj": 1.13,
+        "momentum_change": 0.17,
+        "momentum_week_ago": 0.96,
         "share": 0.0011,
+        "top1_share": 0.578,
         "top_examples": [
           {
             "age": 23,
@@ -11954,13 +12838,18 @@
       },
       {
         "ccu": 77473,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 85% of new-game CCU",
         "games": 45,
         "growth": -0.1022,
         "key": "x_vs_y",
         "label": "\"___ vs ___\"",
         "momentum": 1.22,
         "momentum_adj": 1.12,
+        "momentum_change": -0.17,
+        "momentum_week_ago": 1.29,
         "share": 0.0108,
+        "top1_share": 0.853,
         "top_examples": [
           {
             "age": 71,
@@ -12014,14 +12903,19 @@
     ],
     "map_style": [
       {
-        "ccu": 406181,
-        "games": 112,
+        "ccu": 404375,
+        "confidence": "high",
+        "confidence_note": "26 new games, spread out",
+        "games": 110,
         "growth": -0.1027,
         "key": "interior",
         "label": "Interiors / corridors",
-        "momentum": 2.42,
+        "momentum": 2.43,
         "momentum_adj": 2.21,
-        "share": 0.0565,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.0562,
+        "top1_share": 0.228,
         "top_examples": [
           {
             "age": 1000,
@@ -12045,7 +12939,7 @@
             "place": "7041939546"
           }
         ],
-        "young_ccu": 167388,
+        "young_ccu": 166970,
         "young_examples": [
           {
             "age": 31,
@@ -12069,18 +12963,23 @@
             "place": "116802325837172"
           }
         ],
-        "young_games": 27,
-        "young_share": 0.1367
+        "young_games": 26,
+        "young_share": 0.1363
       },
       {
-        "ccu": 585881,
-        "games": 823,
-        "growth": -0.0605,
+        "ccu": 585780,
+        "confidence": "high",
+        "confidence_note": "42 new games, spread out",
+        "games": 821,
+        "growth": -0.0612,
         "key": "linear_course",
         "label": "Linear course / stages",
         "momentum": 1.84,
         "momentum_adj": 1.75,
+        "momentum_change": null,
+        "momentum_week_ago": null,
         "share": 0.0814,
+        "top1_share": 0.224,
         "top_examples": [
           {
             "age": 46,
@@ -12132,14 +13031,19 @@
         "young_share": 0.1497
       },
       {
-        "ccu": 783615,
-        "games": 826,
-        "growth": -0.126,
+        "ccu": 784091,
+        "confidence": "high",
+        "confidence_note": "81 new games, spread out",
+        "games": 836,
+        "growth": -0.1261,
         "key": "zone_progression",
         "label": "Hub + zones / worlds",
         "momentum": 1.61,
         "momentum_adj": 1.56,
-        "share": 0.1089,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.109,
+        "top1_share": 0.128,
         "top_examples": [
           {
             "age": 68,
@@ -12191,73 +13095,19 @@
         "young_share": 0.1756
       },
       {
-        "ccu": 123552,
-        "games": 31,
-        "growth": -0.0625,
-        "key": "tower_defense_lanes",
-        "label": "Lanes / paths",
-        "momentum": 1.5,
-        "momentum_adj": 1.31,
-        "share": 0.0172,
-        "top_examples": [
-          {
-            "age": 998,
-            "ccu": 34648,
-            "id": "5578556129",
-            "name": "Vanguards: 2nd Anniversary",
-            "place": "16146832113"
-          },
-          {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
-          },
-          {
-            "age": 1766,
-            "ccu": 11634,
-            "id": "3183403065",
-            "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
-            "place": "8304191830"
-          }
-        ],
-        "young_ccu": 31447,
-        "young_examples": [
-          {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
-          },
-          {
-            "age": 23,
-            "ccu": 2605,
-            "id": "10768556372",
-            "name": "[RELEASE] Candy Kingdom Defense",
-            "place": "111053011787075"
-          },
-          {
-            "age": 58,
-            "ccu": 349,
-            "id": "10761375938",
-            "name": "Defend Your Treehouse!",
-            "place": "100641654440407"
-          }
-        ],
-        "young_games": 3,
-        "young_share": 0.0257
-      },
-      {
-        "ccu": 896902,
-        "games": 178,
-        "growth": -0.0569,
+        "ccu": 896841,
+        "confidence": "high",
+        "confidence_note": "27 new games, spread out",
+        "games": 177,
+        "growth": -0.052,
         "key": "open_world",
         "label": "Open world",
         "momentum": 1.07,
         "momentum_adj": 1.06,
-        "share": 0.1247,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.1246,
+        "top1_share": 0.265,
         "top_examples": [
           {
             "age": 597,
@@ -12307,136 +13157,87 @@
         ],
         "young_games": 27,
         "young_share": 0.1328
+      },
+      {
+        "ccu": 123552,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 91% of new-game CCU",
+        "games": 31,
+        "growth": -0.0625,
+        "key": "tower_defense_lanes",
+        "label": "Lanes / paths",
+        "momentum": 1.5,
+        "momentum_adj": 1.31,
+        "momentum_change": null,
+        "momentum_week_ago": null,
+        "share": 0.0172,
+        "top1_share": 0.906,
+        "top_examples": [
+          {
+            "age": 998,
+            "ccu": 34648,
+            "id": "5578556129",
+            "name": "Vanguards: 2nd Anniversary",
+            "place": "16146832113"
+          },
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 1766,
+            "ccu": 11634,
+            "id": "3183403065",
+            "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
+            "place": "8304191830"
+          }
+        ],
+        "young_ccu": 31447,
+        "young_examples": [
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 23,
+            "ccu": 2605,
+            "id": "10768556372",
+            "name": "[RELEASE] Candy Kingdom Defense",
+            "place": "111053011787075"
+          },
+          {
+            "age": 58,
+            "ccu": 349,
+            "id": "10761375938",
+            "name": "Defend Your Treehouse!",
+            "place": "100641654440407"
+          }
+        ],
+        "young_games": 3,
+        "young_share": 0.0257
       }
     ],
     "mechanic": [
       {
-        "ccu": 263362,
-        "games": 164,
-        "growth": -0.1459,
-        "key": "break_mine",
-        "label": "Break / mine / dig",
-        "momentum": 2.97,
-        "momentum_adj": 2.55,
-        "share": 0.0366,
-        "top_examples": [
-          {
-            "age": 47,
-            "ccu": 106312,
-            "id": "10765288803",
-            "name": "Break and Steal an Egg",
-            "place": "114326934417838"
-          },
-          {
-            "age": 1054,
-            "ccu": 34156,
-            "id": "5361032378",
-            "name": "Sol's RNG [ Radiant Forest\ud83c\udf19]",
-            "place": "15532962292"
-          },
-          {
-            "age": 239,
-            "ccu": 10332,
-            "id": "9796898051",
-            "name": "Drill to Earth\u2019s Core \ud83c\udf83\ud83d\udc7b",
-            "place": "101906032112547"
-          }
-        ],
-        "young_ccu": 133222,
-        "young_examples": [
-          {
-            "age": 47,
-            "ccu": 106312,
-            "id": "10765288803",
-            "name": "Break and Steal an Egg",
-            "place": "114326934417838"
-          },
-          {
-            "age": 25,
-            "ccu": 7585,
-            "id": "10768349140",
-            "name": "+1 Pickaxe Swing for Eggs",
-            "place": "109419302424115"
-          },
-          {
-            "age": 49,
-            "ccu": 5627,
-            "id": "10765013362",
-            "name": "\ud83c\udf83 Dig For Eggs",
-            "place": "121831322352666"
-          }
-        ],
-        "young_games": 17,
-        "young_share": 0.1088
-      },
-      {
-        "ccu": 171749,
-        "games": 126,
-        "growth": -0.1239,
-        "key": "sell_shop",
-        "label": "Sell / run a shop",
-        "momentum": 2.52,
-        "momentum_adj": 2.07,
-        "share": 0.0239,
-        "top_examples": [
-          {
-            "age": 31,
-            "ccu": 38020,
-            "id": "10767380385",
-            "name": "\ud83c\udf83 Sell Fries! [Anomaly] \ud83c\udf5f",
-            "place": "94891079210424"
-          },
-          {
-            "age": 553,
-            "ccu": 10080,
-            "id": "7554119808",
-            "name": "\ud83d\udecd\ufe0f My Avatar!",
-            "place": "75387700043737"
-          },
-          {
-            "age": 142,
-            "ccu": 9951,
-            "id": "10261267004",
-            "name": "[\ud83c\udf83] Storage Hunters: Open World",
-            "place": "98800969324557"
-          }
-        ],
-        "young_ccu": 73805,
-        "young_examples": [
-          {
-            "age": 31,
-            "ccu": 38020,
-            "id": "10767380385",
-            "name": "\ud83c\udf83 Sell Fries! [Anomaly] \ud83c\udf5f",
-            "place": "94891079210424"
-          },
-          {
-            "age": 17,
-            "ccu": 9664,
-            "id": "10769548496",
-            "name": "Fix My Phone!",
-            "place": "139165770588984"
-          },
-          {
-            "age": 19,
-            "ccu": 9474,
-            "id": "10769188452",
-            "name": "Eat Everything In A Grocery Store",
-            "place": "128201586883489"
-          }
-        ],
-        "young_games": 16,
-        "young_share": 0.0603
-      },
-      {
         "ccu": 109113,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 102,
         "growth": -0.1401,
         "key": "paint_create",
         "label": "Paint / create",
         "momentum": 2.73,
         "momentum_adj": 2.04,
+        "momentum_change": 0.02,
+        "momentum_week_ago": 2.02,
         "share": 0.0152,
+        "top1_share": 0.38,
         "top_examples": [
           {
             "age": 17,
@@ -12488,22 +13289,20 @@
         "young_share": 0.0414
       },
       {
-        "ccu": 592082,
-        "games": 268,
-        "growth": -0.0789,
-        "key": "collect_index",
-        "label": "Collect / index",
-        "momentum": 1.86,
-        "momentum_adj": 1.76,
-        "share": 0.0823,
+        "ccu": 263566,
+        "confidence": "low",
+        "confidence_note": "one game holds 80% of new-game CCU; momentum down 0.62 this week",
+        "games": 167,
+        "growth": -0.147,
+        "key": "break_mine",
+        "label": "Break / mine / dig",
+        "momentum": 2.97,
+        "momentum_adj": 2.55,
+        "momentum_change": -0.62,
+        "momentum_week_ago": 3.17,
+        "share": 0.0366,
+        "top1_share": 0.798,
         "top_examples": [
-          {
-            "age": 3387,
-            "ccu": 116699,
-            "id": "383310974",
-            "name": "[\ud83c\udf83] Adopt Me!",
-            "place": "920587237"
-          },
           {
             "age": 47,
             "ccu": 106312,
@@ -12512,14 +13311,21 @@
             "place": "114326934417838"
           },
           {
-            "age": 953,
-            "ccu": 50784,
-            "id": "5750914919",
-            "name": "Fisch \ud83c\udf83 [FISCHFRIGHT]",
-            "place": "16732694052"
+            "age": 1054,
+            "ccu": 34156,
+            "id": "5361032378",
+            "name": "Sol's RNG [ Radiant Forest\ud83c\udf19]",
+            "place": "15532962292"
+          },
+          {
+            "age": 239,
+            "ccu": 10332,
+            "id": "9796898051",
+            "name": "Drill to Earth\u2019s Core \ud83c\udf83\ud83d\udc7b",
+            "place": "101906032112547"
           }
         ],
-        "young_ccu": 187149,
+        "young_ccu": 133222,
         "young_examples": [
           {
             "age": 47,
@@ -12529,91 +13335,101 @@
             "place": "114326934417838"
           },
           {
-            "age": 37,
-            "ccu": 19649,
-            "id": "10766620257",
-            "name": "[\ud83c\udf83] Bike For Egg!",
-            "place": "74023858073178"
+            "age": 25,
+            "ccu": 7585,
+            "id": "10768349140",
+            "name": "+1 Pickaxe Swing for Eggs",
+            "place": "109419302424115"
           },
           {
-            "age": 30,
-            "ccu": 10859,
-            "id": "10767566226",
-            "name": "Don't Steal My Eggs!",
-            "place": "135675416428111"
+            "age": 49,
+            "ccu": 5627,
+            "id": "10765013362",
+            "name": "\ud83c\udf83 Dig For Eggs",
+            "place": "121831322352666"
           }
         ],
-        "young_games": 32,
-        "young_share": 0.1528
+        "young_games": 17,
+        "young_share": 0.1088
       },
       {
-        "ccu": 133698,
-        "games": 109,
-        "growth": -0.0635,
-        "key": "tower_defense",
-        "label": "Tower defense",
-        "momentum": 2.07,
-        "momentum_adj": 1.69,
-        "share": 0.0186,
+        "ccu": 172236,
+        "confidence": "medium",
+        "confidence_note": "17 new games, top one 51% of their CCU; momentum up 0.57 this week",
+        "games": 128,
+        "growth": -0.1232,
+        "key": "sell_shop",
+        "label": "Sell / run a shop",
+        "momentum": 2.53,
+        "momentum_adj": 2.08,
+        "momentum_change": 0.57,
+        "momentum_week_ago": 1.51,
+        "share": 0.0239,
+        "top1_share": 0.512,
         "top_examples": [
           {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
+            "age": 31,
+            "ccu": 38020,
+            "id": "10767380385",
+            "name": "\ud83c\udf83 Sell Fries! [Anomaly] \ud83c\udf5f",
+            "place": "94891079210424"
           },
           {
-            "age": 30,
-            "ccu": 13754,
-            "id": "10767567751",
-            "name": "Bunker vs Verity",
-            "place": "94094795358582"
+            "age": 553,
+            "ccu": 10080,
+            "id": "7554119808",
+            "name": "\ud83d\udecd\ufe0f My Avatar!",
+            "place": "75387700043737"
           },
           {
-            "age": 172,
-            "ccu": 8985,
-            "id": "10116272705",
-            "name": "[ \ud83c\udf83 UPD 0.75 x Halloween ] Anime Mysterious",
-            "place": "117949143041402"
+            "age": 142,
+            "ccu": 9951,
+            "id": "10261267004",
+            "name": "[\ud83c\udf83] Storage Hunters: Open World",
+            "place": "98800969324557"
           }
         ],
-        "young_ccu": 47073,
+        "young_ccu": 74223,
         "young_examples": [
           {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
+            "age": 31,
+            "ccu": 38020,
+            "id": "10767380385",
+            "name": "\ud83c\udf83 Sell Fries! [Anomaly] \ud83c\udf5f",
+            "place": "94891079210424"
           },
           {
-            "age": 30,
-            "ccu": 13754,
-            "id": "10767567751",
-            "name": "Bunker vs Verity",
-            "place": "94094795358582"
+            "age": 17,
+            "ccu": 9664,
+            "id": "10769548496",
+            "name": "Fix My Phone!",
+            "place": "139165770588984"
           },
           {
-            "age": 23,
-            "ccu": 2605,
-            "id": "10768556372",
-            "name": "[RELEASE] Candy Kingdom Defense",
-            "place": "111053011787075"
+            "age": 19,
+            "ccu": 9474,
+            "id": "10769188452",
+            "name": "Eat Everything In A Grocery Store",
+            "place": "128201586883489"
           }
         ],
-        "young_games": 6,
-        "young_share": 0.0384
+        "young_games": 17,
+        "young_share": 0.0606
       },
       {
-        "ccu": 203398,
-        "games": 195,
-        "growth": -0.1734,
+        "ccu": 203435,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.16 this week",
+        "games": 196,
+        "growth": -0.1728,
         "key": "plus_one_stat",
         "label": "+1 stat per action",
-        "momentum": 2.17,
+        "momentum": 2.16,
         "momentum_adj": 1.86,
+        "momentum_change": 0.16,
+        "momentum_week_ago": 1.7,
         "share": 0.0283,
+        "top1_share": 0.19,
         "top_examples": [
           {
             "age": 277,
@@ -12665,14 +13481,83 @@
         "young_share": 0.0612
       },
       {
-        "ccu": 174777,
-        "games": 124,
-        "growth": -0.1216,
+        "ccu": 592244,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.56 this week",
+        "games": 273,
+        "growth": -0.0789,
+        "key": "collect_index",
+        "label": "Collect / index",
+        "momentum": 1.86,
+        "momentum_adj": 1.76,
+        "momentum_change": -0.56,
+        "momentum_week_ago": 2.32,
+        "share": 0.0823,
+        "top1_share": 0.568,
+        "top_examples": [
+          {
+            "age": 3387,
+            "ccu": 116699,
+            "id": "383310974",
+            "name": "[\ud83c\udf83] Adopt Me!",
+            "place": "920587237"
+          },
+          {
+            "age": 47,
+            "ccu": 106312,
+            "id": "10765288803",
+            "name": "Break and Steal an Egg",
+            "place": "114326934417838"
+          },
+          {
+            "age": 953,
+            "ccu": 50784,
+            "id": "5750914919",
+            "name": "Fisch \ud83c\udf83 [FISCHFRIGHT]",
+            "place": "16732694052"
+          }
+        ],
+        "young_ccu": 187149,
+        "young_examples": [
+          {
+            "age": 47,
+            "ccu": 106312,
+            "id": "10765288803",
+            "name": "Break and Steal an Egg",
+            "place": "114326934417838"
+          },
+          {
+            "age": 37,
+            "ccu": 19649,
+            "id": "10766620257",
+            "name": "[\ud83c\udf83] Bike For Egg!",
+            "place": "74023858073178"
+          },
+          {
+            "age": 30,
+            "ccu": 10859,
+            "id": "10767566226",
+            "name": "Don't Steal My Eggs!",
+            "place": "135675416428111"
+          }
+        ],
+        "young_games": 32,
+        "young_share": 0.1528
+      },
+      {
+        "ccu": 174805,
+        "confidence": "high",
+        "confidence_note": "14 new games, spread out",
+        "games": 125,
+        "growth": -0.118,
         "key": "hit_swing",
         "label": "Hit / swing / launch",
-        "momentum": 1.97,
+        "momentum": 1.96,
         "momentum_adj": 1.68,
+        "momentum_change": -0.01,
+        "momentum_week_ago": 1.69,
         "share": 0.0243,
+        "top1_share": 0.353,
         "top_examples": [
           {
             "age": 1954,
@@ -12725,13 +13610,18 @@
       },
       {
         "ccu": 552282,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.44 this week",
         "games": 614,
         "growth": -0.0682,
         "key": "tycoon_build",
         "label": "Tycoon / base building",
         "momentum": 1.56,
         "momentum_adj": 1.49,
+        "momentum_change": -0.44,
+        "momentum_week_ago": 1.93,
         "share": 0.0768,
+        "top1_share": 0.28,
         "top_examples": [
           {
             "age": 46,
@@ -12783,14 +13673,83 @@
         "young_share": 0.1194
       },
       {
-        "ccu": 241209,
-        "games": 189,
+        "ccu": 133698,
+        "confidence": "low",
+        "confidence_note": "one game holds 61% of new-game CCU",
+        "games": 109,
+        "growth": -0.0635,
+        "key": "tower_defense",
+        "label": "Tower defense",
+        "momentum": 2.07,
+        "momentum_adj": 1.69,
+        "momentum_change": 0.21,
+        "momentum_week_ago": 1.48,
+        "share": 0.0186,
+        "top1_share": 0.605,
+        "top_examples": [
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 30,
+            "ccu": 13754,
+            "id": "10767567751",
+            "name": "Bunker vs Verity",
+            "place": "94094795358582"
+          },
+          {
+            "age": 172,
+            "ccu": 8985,
+            "id": "10116272705",
+            "name": "[ \ud83c\udf83 UPD 0.75 x Halloween ] Anime Mysterious",
+            "place": "117949143041402"
+          }
+        ],
+        "young_ccu": 47073,
+        "young_examples": [
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 30,
+            "ccu": 13754,
+            "id": "10767567751",
+            "name": "Bunker vs Verity",
+            "place": "94094795358582"
+          },
+          {
+            "age": 23,
+            "ccu": 2605,
+            "id": "10768556372",
+            "name": "[RELEASE] Candy Kingdom Defense",
+            "place": "111053011787075"
+          }
+        ],
+        "young_games": 6,
+        "young_share": 0.0384
+      },
+      {
+        "ccu": 256487,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.39 this week",
+        "games": 191,
         "growth": -0.0991,
         "key": "job_shift",
         "label": "Job / shift",
-        "momentum": 1.36,
-        "momentum_adj": 1.28,
-        "share": 0.0335,
+        "momentum": 1.32,
+        "momentum_adj": 1.25,
+        "momentum_change": 0.39,
+        "momentum_week_ago": 0.86,
+        "share": 0.0356,
+        "top1_share": 0.244,
         "top_examples": [
           {
             "age": 1054,
@@ -12814,7 +13773,7 @@
             "place": "131378148336503"
           }
         ],
-        "young_ccu": 55992,
+        "young_ccu": 57830,
         "young_examples": [
           {
             "age": 23,
@@ -12838,18 +13797,23 @@
             "place": "134728380684025"
           }
         ],
-        "young_games": 21,
-        "young_share": 0.0457
+        "young_games": 22,
+        "young_share": 0.0472
       },
       {
-        "ccu": 488442,
-        "games": 704,
-        "growth": -0.059,
+        "ccu": 488596,
+        "confidence": "high",
+        "confidence_note": "34 new games, spread out",
+        "games": 708,
+        "growth": -0.0593,
         "key": "obby_climb",
         "label": "Obby / climb / jump",
         "momentum": 1.18,
         "momentum_adj": 1.16,
+        "momentum_change": 0.09,
+        "momentum_week_ago": 1.07,
         "share": 0.0679,
+        "top1_share": 0.417,
         "top_examples": [
           {
             "age": 731,
@@ -12901,14 +13865,19 @@
         "young_share": 0.0803
       },
       {
-        "ccu": 149277,
-        "games": 170,
+        "ccu": 149560,
+        "confidence": "high",
+        "confidence_note": "21 new games, spread out",
+        "games": 173,
         "growth": -0.0837,
         "key": "grow_farm",
         "label": "Grow / farm",
-        "momentum": 1.26,
+        "momentum": 1.25,
         "momentum_adj": 1.17,
-        "share": 0.0207,
+        "momentum_change": -0.2,
+        "momentum_week_ago": 1.37,
+        "share": 0.0208,
+        "top1_share": 0.165,
         "top_examples": [
           {
             "age": 576,
@@ -12963,13 +13932,18 @@
     "subgenre": [
       {
         "ccu": 13091,
+        "confidence": "medium",
+        "confidence_note": "8 new games, top one 52% of their CCU; momentum up 0.35 this week",
         "games": 22,
         "growth": -0.0728,
         "key": "Idle",
         "label": "Idle",
         "momentum": 5.18,
         "momentum_adj": 1.64,
+        "momentum_change": 0.35,
+        "momentum_week_ago": 1.29,
         "share": 0.0018,
+        "top1_share": 0.518,
         "top_examples": [
           {
             "age": 14,
@@ -13021,73 +13995,19 @@
         "young_share": 0.0094
       },
       {
-        "ccu": 11689,
-        "games": 30,
-        "growth": -0.1042,
-        "key": "Racing",
-        "label": "Racing",
-        "momentum": 4.14,
-        "momentum_adj": 1.44,
-        "share": 0.0016,
-        "top_examples": [
-          {
-            "age": 21,
-            "ccu": 3481,
-            "id": "10768866246",
-            "name": "[ANOMALY RALLY] WRONG WAY!",
-            "place": "121671165541545"
-          },
-          {
-            "age": 20,
-            "ccu": 2538,
-            "id": "10769037074",
-            "name": "[\ud83c\udf83] Rally Panic! [2 Player Rally]",
-            "place": "138572313449154"
-          },
-          {
-            "age": 23,
-            "ccu": 956,
-            "id": "10768630078",
-            "name": "Catastrophic Horse Racing",
-            "place": "109917531711176"
-          }
-        ],
-        "young_ccu": 8235,
-        "young_examples": [
-          {
-            "age": 21,
-            "ccu": 3481,
-            "id": "10768866246",
-            "name": "[ANOMALY RALLY] WRONG WAY!",
-            "place": "121671165541545"
-          },
-          {
-            "age": 20,
-            "ccu": 2538,
-            "id": "10769037074",
-            "name": "[\ud83c\udf83] Rally Panic! [2 Player Rally]",
-            "place": "138572313449154"
-          },
-          {
-            "age": 23,
-            "ccu": 956,
-            "id": "10768630078",
-            "name": "Catastrophic Horse Racing",
-            "place": "109917531711176"
-          }
-        ],
-        "young_games": 7,
-        "young_share": 0.0067
-      },
-      {
         "ccu": 767025,
+        "confidence": "high",
+        "confidence_note": "77 new games, spread out",
         "games": 576,
         "growth": -0.127,
         "key": "Incremental Simulator",
         "label": "Incremental Simulator",
         "momentum": 1.51,
         "momentum_adj": 1.46,
+        "momentum_change": -0.12,
+        "momentum_week_ago": 1.58,
         "share": 0.1066,
+        "top1_share": 0.219,
         "top_examples": [
           {
             "age": 68,
@@ -13139,73 +14059,83 @@
         "young_share": 0.1607
       },
       {
-        "ccu": 67605,
-        "games": 64,
-        "growth": -0.09,
-        "key": "Physics Sim",
-        "label": "Physics Sim",
-        "momentum": 1.82,
-        "momentum_adj": 1.4,
-        "share": 0.0094,
+        "ccu": 11689,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 42% of their CCU",
+        "games": 30,
+        "growth": -0.1042,
+        "key": "Racing",
+        "label": "Racing",
+        "momentum": 4.14,
+        "momentum_adj": 1.44,
+        "momentum_change": -0.16,
+        "momentum_week_ago": 1.6,
+        "share": 0.0016,
+        "top1_share": 0.423,
         "top_examples": [
           {
-            "age": 1954,
-            "ccu": 24634,
-            "id": "2668101271",
-            "name": "Fling Things and People",
-            "place": "6961824067"
+            "age": 21,
+            "ccu": 3481,
+            "id": "10768866246",
+            "name": "[ANOMALY RALLY] WRONG WAY!",
+            "place": "121671165541545"
           },
           {
-            "age": 28,
-            "ccu": 7409,
-            "id": "10767840473",
-            "name": "Crazy Diver",
-            "place": "93756155297797"
+            "age": 20,
+            "ccu": 2538,
+            "id": "10769037074",
+            "name": "[\ud83c\udf83] Rally Panic! [2 Player Rally]",
+            "place": "138572313449154"
           },
           {
-            "age": 18,
-            "ccu": 5463,
-            "id": "10769415620",
-            "name": "\ud83e\uddeaRealistic Phone Drop Test",
-            "place": "82437948429564"
+            "age": 23,
+            "ccu": 956,
+            "id": "10768630078",
+            "name": "Catastrophic Horse Racing",
+            "place": "109917531711176"
           }
         ],
-        "young_ccu": 20923,
+        "young_ccu": 8235,
         "young_examples": [
           {
-            "age": 28,
-            "ccu": 7409,
-            "id": "10767840473",
-            "name": "Crazy Diver",
-            "place": "93756155297797"
+            "age": 21,
+            "ccu": 3481,
+            "id": "10768866246",
+            "name": "[ANOMALY RALLY] WRONG WAY!",
+            "place": "121671165541545"
           },
           {
-            "age": 18,
-            "ccu": 5463,
-            "id": "10769415620",
-            "name": "\ud83e\uddeaRealistic Phone Drop Test",
-            "place": "82437948429564"
+            "age": 20,
+            "ccu": 2538,
+            "id": "10769037074",
+            "name": "[\ud83c\udf83] Rally Panic! [2 Player Rally]",
+            "place": "138572313449154"
           },
           {
-            "age": 28,
-            "ccu": 3786,
-            "id": "10767907509",
-            "name": "Ragdoll Engine \u2699\ufe0f",
-            "place": "112332082095944"
+            "age": 23,
+            "ccu": 956,
+            "id": "10768630078",
+            "name": "Catastrophic Horse Racing",
+            "place": "109917531711176"
           }
         ],
         "young_games": 7,
-        "young_share": 0.0171
+        "young_share": 0.0067
       },
       {
         "ccu": 212021,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.52 this week",
         "games": 172,
         "growth": -0.0772,
         "key": "Vehicle Sim",
         "label": "Vehicle Sim",
         "momentum": 1.37,
         "momentum_adj": 1.28,
+        "momentum_change": 0.52,
+        "momentum_week_ago": 0.76,
         "share": 0.0295,
+        "top1_share": 0.407,
         "top_examples": [
           {
             "age": 25,
@@ -13258,13 +14188,18 @@
       },
       {
         "ccu": 1891614,
+        "confidence": "high",
+        "confidence_note": "117 new games, spread out",
         "games": 673,
         "growth": -0.0969,
         "key": "Tycoon",
         "label": "Tycoon",
         "momentum": 1.31,
         "momentum_adj": 1.3,
+        "momentum_change": -0.03,
+        "momentum_week_ago": 1.33,
         "share": 0.2629,
+        "top1_share": 0.253,
         "top_examples": [
           {
             "age": 89,
@@ -13316,14 +14251,83 @@
         "young_share": 0.3434
       },
       {
+        "ccu": 67605,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 35% of their CCU; momentum up 0.30 this week",
+        "games": 64,
+        "growth": -0.09,
+        "key": "Physics Sim",
+        "label": "Physics Sim",
+        "momentum": 1.82,
+        "momentum_adj": 1.4,
+        "momentum_change": 0.3,
+        "momentum_week_ago": 1.1,
+        "share": 0.0094,
+        "top1_share": 0.354,
+        "top_examples": [
+          {
+            "age": 1954,
+            "ccu": 24634,
+            "id": "2668101271",
+            "name": "Fling Things and People",
+            "place": "6961824067"
+          },
+          {
+            "age": 28,
+            "ccu": 7409,
+            "id": "10767840473",
+            "name": "Crazy Diver",
+            "place": "93756155297797"
+          },
+          {
+            "age": 18,
+            "ccu": 5463,
+            "id": "10769415620",
+            "name": "\ud83e\uddeaRealistic Phone Drop Test",
+            "place": "82437948429564"
+          }
+        ],
+        "young_ccu": 20923,
+        "young_examples": [
+          {
+            "age": 28,
+            "ccu": 7409,
+            "id": "10767840473",
+            "name": "Crazy Diver",
+            "place": "93756155297797"
+          },
+          {
+            "age": 18,
+            "ccu": 5463,
+            "id": "10769415620",
+            "name": "\ud83e\uddeaRealistic Phone Drop Test",
+            "place": "82437948429564"
+          },
+          {
+            "age": 28,
+            "ccu": 3786,
+            "id": "10767907509",
+            "name": "Ragdoll Engine \u2699\ufe0f",
+            "place": "112332082095944"
+          }
+        ],
+        "young_games": 7,
+        "young_share": 0.0171
+      },
+      {
         "ccu": 91529,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 43,
         "growth": -0.1049,
         "key": "Dress Up",
         "label": "Dress Up",
         "momentum": 1.45,
         "momentum_adj": 1.25,
+        "momentum_change": -0.22,
+        "momentum_week_ago": 1.47,
         "share": 0.0127,
+        "top1_share": 0.36,
         "top_examples": [
           {
             "age": 1100,
@@ -13375,132 +14379,19 @@
         "young_share": 0.0185
       },
       {
-        "ccu": 10796,
-        "games": 31,
-        "growth": -0.1165,
-        "key": "Coloring & Drawing",
-        "label": "Coloring & Drawing",
-        "momentum": 2.84,
-        "momentum_adj": 1.24,
-        "share": 0.0015,
-        "top_examples": [
-          {
-            "age": 29,
-            "ccu": 3225,
-            "id": "10767774668",
-            "name": "[\ud83e\udd5e] Paint a Pancake",
-            "place": "97606215092194"
-          },
-          {
-            "age": 27,
-            "ccu": 1886,
-            "id": "10768026334",
-            "name": "[\ud83c\udfa8] Hide In Pixels",
-            "place": "97572766830918"
-          },
-          {
-            "age": 539,
-            "ccu": 1343,
-            "id": "7628118889",
-            "name": "Draw Me! \ud83c\udfa8",
-            "place": "80898524797320"
-          }
-        ],
-        "young_ccu": 5228,
-        "young_examples": [
-          {
-            "age": 29,
-            "ccu": 3225,
-            "id": "10767774668",
-            "name": "[\ud83e\udd5e] Paint a Pancake",
-            "place": "97606215092194"
-          },
-          {
-            "age": 27,
-            "ccu": 1886,
-            "id": "10768026334",
-            "name": "[\ud83c\udfa8] Hide In Pixels",
-            "place": "97572766830918"
-          },
-          {
-            "age": 35,
-            "ccu": 117,
-            "id": "10766834928",
-            "name": "Draw the Anime!",
-            "place": "111623864036776"
-          }
-        ],
-        "young_games": 3,
-        "young_share": 0.0043
-      },
-      {
-        "ccu": 148151,
-        "games": 88,
-        "growth": -0.0731,
-        "key": "Tower Defense",
-        "label": "Tower Defense",
-        "momentum": 1.26,
-        "momentum_adj": 1.18,
-        "share": 0.0206,
-        "top_examples": [
-          {
-            "age": 998,
-            "ccu": 34648,
-            "id": "5578556129",
-            "name": "Vanguards: 2nd Anniversary",
-            "place": "16146832113"
-          },
-          {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
-          },
-          {
-            "age": 1766,
-            "ccu": 11634,
-            "id": "3183403065",
-            "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
-            "place": "8304191830"
-          }
-        ],
-        "young_ccu": 31857,
-        "young_examples": [
-          {
-            "age": 57,
-            "ccu": 28493,
-            "id": "10762636904",
-            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
-            "place": "132929771812494"
-          },
-          {
-            "age": 23,
-            "ccu": 2605,
-            "id": "10768556372",
-            "name": "[RELEASE] Candy Kingdom Defense",
-            "place": "111053011787075"
-          },
-          {
-            "age": 8,
-            "ccu": 292,
-            "id": "10770748262",
-            "name": "Anime Galaxies | RELEASE",
-            "place": "83869074416117"
-          }
-        ],
-        "young_games": 5,
-        "young_share": 0.026
-      },
-      {
         "ccu": 167738,
+        "confidence": "high",
+        "confidence_note": "16 new games, spread out",
         "games": 160,
         "growth": -0.1109,
         "key": "Escape",
         "label": "Escape",
         "momentum": 1.29,
         "momentum_adj": 1.21,
+        "momentum_change": 0.05,
+        "momentum_week_ago": 1.16,
         "share": 0.0233,
+        "top1_share": 0.372,
         "top_examples": [
           {
             "age": 1000,
@@ -13553,13 +14444,18 @@
       },
       {
         "ccu": 386394,
+        "confidence": "high",
+        "confidence_note": "16 new games, spread out",
         "games": 335,
         "growth": -0.102,
         "key": "Battlegrounds & Fighting",
         "label": "Battlegrounds & Fighting",
         "momentum": 1.19,
         "momentum_adj": 1.16,
+        "momentum_change": 0.1,
+        "momentum_week_ago": 1.06,
         "share": 0.0537,
+        "top1_share": 0.38,
         "top_examples": [
           {
             "age": 1649,
@@ -13611,14 +14507,147 @@
         "young_share": 0.0639
       },
       {
+        "ccu": 10796,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 62% of new-game CCU; momentum down 0.30 this week",
+        "games": 31,
+        "growth": -0.1165,
+        "key": "Coloring & Drawing",
+        "label": "Coloring & Drawing",
+        "momentum": 2.84,
+        "momentum_adj": 1.24,
+        "momentum_change": -0.3,
+        "momentum_week_ago": 1.54,
+        "share": 0.0015,
+        "top1_share": 0.617,
+        "top_examples": [
+          {
+            "age": 29,
+            "ccu": 3225,
+            "id": "10767774668",
+            "name": "[\ud83e\udd5e] Paint a Pancake",
+            "place": "97606215092194"
+          },
+          {
+            "age": 27,
+            "ccu": 1886,
+            "id": "10768026334",
+            "name": "[\ud83c\udfa8] Hide In Pixels",
+            "place": "97572766830918"
+          },
+          {
+            "age": 539,
+            "ccu": 1343,
+            "id": "7628118889",
+            "name": "Draw Me! \ud83c\udfa8",
+            "place": "80898524797320"
+          }
+        ],
+        "young_ccu": 5228,
+        "young_examples": [
+          {
+            "age": 29,
+            "ccu": 3225,
+            "id": "10767774668",
+            "name": "[\ud83e\udd5e] Paint a Pancake",
+            "place": "97606215092194"
+          },
+          {
+            "age": 27,
+            "ccu": 1886,
+            "id": "10768026334",
+            "name": "[\ud83c\udfa8] Hide In Pixels",
+            "place": "97572766830918"
+          },
+          {
+            "age": 35,
+            "ccu": 117,
+            "id": "10766834928",
+            "name": "Draw the Anime!",
+            "place": "111623864036776"
+          }
+        ],
+        "young_games": 3,
+        "young_share": 0.0043
+      },
+      {
+        "ccu": 148151,
+        "confidence": "low",
+        "confidence_note": "one game holds 89% of new-game CCU",
+        "games": 88,
+        "growth": -0.0731,
+        "key": "Tower Defense",
+        "label": "Tower Defense",
+        "momentum": 1.26,
+        "momentum_adj": 1.18,
+        "momentum_change": 0.42,
+        "momentum_week_ago": 0.76,
+        "share": 0.0206,
+        "top1_share": 0.894,
+        "top_examples": [
+          {
+            "age": 998,
+            "ccu": 34648,
+            "id": "5578556129",
+            "name": "Vanguards: 2nd Anniversary",
+            "place": "16146832113"
+          },
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 1766,
+            "ccu": 11634,
+            "id": "3183403065",
+            "name": "[\ud83e\udd39APRIL FOOL'S\ud83e\udd21] Anime Adventures",
+            "place": "8304191830"
+          }
+        ],
+        "young_ccu": 31857,
+        "young_examples": [
+          {
+            "age": 57,
+            "ccu": 28493,
+            "id": "10762636904",
+            "name": "[\ud83c\udf83UPD] Cameraman Tower Defense",
+            "place": "132929771812494"
+          },
+          {
+            "age": 23,
+            "ccu": 2605,
+            "id": "10768556372",
+            "name": "[RELEASE] Candy Kingdom Defense",
+            "place": "111053011787075"
+          },
+          {
+            "age": 8,
+            "ccu": 292,
+            "id": "10770748262",
+            "name": "Anime Galaxies | RELEASE",
+            "place": "83869074416117"
+          }
+        ],
+        "young_games": 5,
+        "young_share": 0.026
+      },
+      {
         "ccu": 12202,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 77% of new-game CCU",
         "games": 18,
         "growth": -0.1668,
         "key": "Escape Room",
         "label": "Escape Room",
         "momentum": 2.46,
         "momentum_adj": 1.21,
+        "momentum_change": 0.22,
+        "momentum_week_ago": 0.99,
         "share": 0.0017,
+        "top1_share": 0.774,
         "top_examples": [
           {
             "age": 18,
@@ -13673,13 +14702,18 @@
     "theme": [
       {
         "ccu": 40181,
+        "confidence": "low",
+        "confidence_note": "only 3 new games; one game holds 90% of new-game CCU",
         "games": 26,
         "growth": -0.0642,
         "key": "dinosaurs",
         "label": "Dinosaurs",
         "momentum": 4.46,
         "momentum_adj": 2.24,
+        "momentum_change": 1.12,
+        "momentum_week_ago": 1.12,
         "share": 0.0056,
+        "top1_share": 0.9,
         "top_examples": [
           {
             "age": 59,
@@ -13732,13 +14766,18 @@
       },
       {
         "ccu": 26517,
+        "confidence": "low",
+        "confidence_note": "only 4 new games; one game holds 73% of new-game CCU",
         "games": 15,
         "growth": -0.0146,
         "key": "robots",
         "label": "Robots / mechs",
         "momentum": 5.05,
         "momentum_adj": 2.09,
+        "momentum_change": 0.59,
+        "momentum_week_ago": 1.5,
         "share": 0.0037,
+        "top1_share": 0.729,
         "top_examples": [
           {
             "age": 45,
@@ -13790,73 +14829,19 @@
         "young_share": 0.0186
       },
       {
-        "ccu": 66301,
-        "games": 51,
-        "growth": -0.08,
-        "key": "stone_rocks",
-        "label": "Stones / rocks / ores",
-        "momentum": 2.57,
-        "momentum_adj": 1.75,
-        "share": 0.0092,
-        "top_examples": [
-          {
-            "age": 47,
-            "ccu": 14237,
-            "id": "10765298801",
-            "name": "[\ud83c\udf83] +1 Stone Skipping",
-            "place": "111543903102439"
-          },
-          {
-            "age": 64,
-            "ccu": 9343,
-            "id": "10740316645",
-            "name": "\u26cf\ufe0f My Anime Mine",
-            "place": "79389059854988"
-          },
-          {
-            "age": 25,
-            "ccu": 6556,
-            "id": "10768316438",
-            "name": "Lift Rock For Eggs",
-            "place": "76731343328034"
-          }
-        ],
-        "young_ccu": 28978,
-        "young_examples": [
-          {
-            "age": 47,
-            "ccu": 14237,
-            "id": "10765298801",
-            "name": "[\ud83c\udf83] +1 Stone Skipping",
-            "place": "111543903102439"
-          },
-          {
-            "age": 25,
-            "ccu": 6556,
-            "id": "10768316438",
-            "name": "Lift Rock For Eggs",
-            "place": "76731343328034"
-          },
-          {
-            "age": 40,
-            "ccu": 3222,
-            "id": "10766135603",
-            "name": "+1 Lift Rock for Treasure",
-            "place": "102555956950143"
-          }
-        ],
-        "young_games": 9,
-        "young_share": 0.0237
-      },
-      {
         "ccu": 378279,
+        "confidence": "high",
+        "confidence_note": "41 new games, spread out",
         "games": 377,
         "growth": -0.1023,
         "key": "money",
         "label": "Money / rich",
         "momentum": 1.93,
         "momentum_adj": 1.78,
+        "momentum_change": -0.21,
+        "momentum_week_ago": 1.99,
         "share": 0.0526,
+        "top1_share": 0.33,
         "top_examples": [
           {
             "age": 46,
@@ -13908,14 +14893,83 @@
         "young_share": 0.1014
       },
       {
+        "ccu": 66301,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.91 this week",
+        "games": 51,
+        "growth": -0.08,
+        "key": "stone_rocks",
+        "label": "Stones / rocks / ores",
+        "momentum": 2.57,
+        "momentum_adj": 1.75,
+        "momentum_change": -0.91,
+        "momentum_week_ago": 2.66,
+        "share": 0.0092,
+        "top1_share": 0.491,
+        "top_examples": [
+          {
+            "age": 47,
+            "ccu": 14237,
+            "id": "10765298801",
+            "name": "[\ud83c\udf83] +1 Stone Skipping",
+            "place": "111543903102439"
+          },
+          {
+            "age": 64,
+            "ccu": 9343,
+            "id": "10740316645",
+            "name": "\u26cf\ufe0f My Anime Mine",
+            "place": "79389059854988"
+          },
+          {
+            "age": 25,
+            "ccu": 6556,
+            "id": "10768316438",
+            "name": "Lift Rock For Eggs",
+            "place": "76731343328034"
+          }
+        ],
+        "young_ccu": 28978,
+        "young_examples": [
+          {
+            "age": 47,
+            "ccu": 14237,
+            "id": "10765298801",
+            "name": "[\ud83c\udf83] +1 Stone Skipping",
+            "place": "111543903102439"
+          },
+          {
+            "age": 25,
+            "ccu": 6556,
+            "id": "10768316438",
+            "name": "Lift Rock For Eggs",
+            "place": "76731343328034"
+          },
+          {
+            "age": 40,
+            "ccu": 3222,
+            "id": "10766135603",
+            "name": "+1 Lift Rock for Treasure",
+            "place": "102555956950143"
+          }
+        ],
+        "young_games": 9,
+        "young_share": 0.0237
+      },
+      {
         "ccu": 78292,
+        "confidence": "high",
+        "confidence_note": "11 new games, spread out",
         "games": 51,
         "growth": -0.0655,
         "key": "fashion",
         "label": "Fashion / beauty",
         "momentum": 1.75,
         "momentum_adj": 1.39,
+        "momentum_change": -0.18,
+        "momentum_week_ago": 1.57,
         "share": 0.0109,
+        "top1_share": 0.349,
         "top_examples": [
           {
             "age": 1937,
@@ -13967,73 +15021,19 @@
         "young_share": 0.0191
       },
       {
-        "ccu": 41439,
-        "games": 59,
-        "growth": -0.0556,
-        "key": "superheroes",
-        "label": "Superheroes / powers",
-        "momentum": 1.96,
-        "momentum_adj": 1.35,
-        "share": 0.0058,
-        "top_examples": [
-          {
-            "age": 46,
-            "ccu": 6110,
-            "id": "10765491459",
-            "name": "Superhero Arena",
-            "place": "78710221869926"
-          },
-          {
-            "age": 26,
-            "ccu": 2873,
-            "id": "10768128625",
-            "name": "[GUILDS] Build a Dungeon",
-            "place": "119238997901301"
-          },
-          {
-            "age": 1897,
-            "ccu": 2762,
-            "id": "2822776643",
-            "name": "Elemental Magic Arena [\ud83c\udf83]",
-            "place": "7243409883"
-          }
-        ],
-        "young_ccu": 13848,
-        "young_examples": [
-          {
-            "age": 46,
-            "ccu": 6110,
-            "id": "10765491459",
-            "name": "Superhero Arena",
-            "place": "78710221869926"
-          },
-          {
-            "age": 26,
-            "ccu": 2873,
-            "id": "10768128625",
-            "name": "[GUILDS] Build a Dungeon",
-            "place": "119238997901301"
-          },
-          {
-            "age": 23,
-            "ccu": 2605,
-            "id": "10768556372",
-            "name": "[RELEASE] Candy Kingdom Defense",
-            "place": "111053011787075"
-          }
-        ],
-        "young_games": 7,
-        "young_share": 0.0113
-      },
-      {
         "ccu": 58461,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.51 this week",
         "games": 105,
         "growth": -0.0811,
         "key": "fantasy",
         "label": "Fantasy / medieval",
         "momentum": 1.83,
         "momentum_adj": 1.37,
+        "momentum_change": 0.51,
+        "momentum_week_ago": 0.86,
         "share": 0.0081,
+        "top1_share": 0.343,
         "top_examples": [
           {
             "age": 27,
@@ -14086,13 +15086,18 @@
       },
       {
         "ccu": 279642,
+        "confidence": "high",
+        "confidence_note": "momentum up 0.31 this week",
         "games": 251,
         "growth": -0.0724,
         "key": "vehicles",
         "label": "Vehicles",
         "momentum": 1.42,
         "momentum_adj": 1.34,
+        "momentum_change": 0.31,
+        "momentum_week_ago": 1.03,
         "share": 0.0389,
+        "top1_share": 0.298,
         "top_examples": [
           {
             "age": 25,
@@ -14144,14 +15149,83 @@
         "young_share": 0.0554
       },
       {
+        "ccu": 41439,
+        "confidence": "medium",
+        "confidence_note": "7 new games, top one 44% of their CCU",
+        "games": 59,
+        "growth": -0.0556,
+        "key": "superheroes",
+        "label": "Superheroes / powers",
+        "momentum": 1.96,
+        "momentum_adj": 1.35,
+        "momentum_change": 0.03,
+        "momentum_week_ago": 1.32,
+        "share": 0.0058,
+        "top1_share": 0.441,
+        "top_examples": [
+          {
+            "age": 46,
+            "ccu": 6110,
+            "id": "10765491459",
+            "name": "Superhero Arena",
+            "place": "78710221869926"
+          },
+          {
+            "age": 26,
+            "ccu": 2873,
+            "id": "10768128625",
+            "name": "[GUILDS] Build a Dungeon",
+            "place": "119238997901301"
+          },
+          {
+            "age": 1897,
+            "ccu": 2762,
+            "id": "2822776643",
+            "name": "Elemental Magic Arena [\ud83c\udf83]",
+            "place": "7243409883"
+          }
+        ],
+        "young_ccu": 13848,
+        "young_examples": [
+          {
+            "age": 46,
+            "ccu": 6110,
+            "id": "10765491459",
+            "name": "Superhero Arena",
+            "place": "78710221869926"
+          },
+          {
+            "age": 26,
+            "ccu": 2873,
+            "id": "10768128625",
+            "name": "[GUILDS] Build a Dungeon",
+            "place": "119238997901301"
+          },
+          {
+            "age": 23,
+            "ccu": 2605,
+            "id": "10768556372",
+            "name": "[RELEASE] Candy Kingdom Defense",
+            "place": "111053011787075"
+          }
+        ],
+        "young_games": 7,
+        "young_share": 0.0113
+      },
+      {
         "ccu": 57324,
+        "confidence": "medium",
+        "confidence_note": "momentum down 0.39 this week",
         "games": 95,
         "growth": -0.1104,
         "key": "ice_fire",
         "label": "Ice / fire / elements",
         "momentum": 1.59,
         "momentum_adj": 1.26,
+        "momentum_change": -0.39,
+        "momentum_week_ago": 1.65,
         "share": 0.008,
+        "top1_share": 0.407,
         "top_examples": [
           {
             "age": 30,
@@ -14203,73 +15277,19 @@
         "young_share": 0.0127
       },
       {
-        "ccu": 49539,
-        "games": 79,
-        "growth": -0.0694,
-        "key": "school",
-        "label": "School",
-        "momentum": 1.15,
-        "momentum_adj": 1.06,
-        "share": 0.0069,
-        "top_examples": [
-          {
-            "age": 1749,
-            "ccu": 14457,
-            "id": "3240075297",
-            "name": "Berry Avenue \ud83c\udfe0 RP",
-            "place": "8481844229"
-          },
-          {
-            "age": 27,
-            "ccu": 6246,
-            "id": "10767928510",
-            "name": "Pixel Lineage [\ud83c\udf83Spear Class + Dragon Race]",
-            "place": "126256942507957"
-          },
-          {
-            "age": 1176,
-            "ccu": 2388,
-            "id": "4944984948",
-            "name": "Team School Breakout! (TEAMWORK OBBY)",
-            "place": "14301835518"
-          }
-        ],
-        "young_ccu": 9681,
-        "young_examples": [
-          {
-            "age": 27,
-            "ccu": 6246,
-            "id": "10767928510",
-            "name": "Pixel Lineage [\ud83c\udf83Spear Class + Dragon Race]",
-            "place": "126256942507957"
-          },
-          {
-            "age": 47,
-            "ccu": 2173,
-            "id": "10765190004",
-            "name": "Anime High School RP",
-            "place": "130481402522628"
-          },
-          {
-            "age": 20,
-            "ccu": 821,
-            "id": "10768944846",
-            "name": "[SPIN] Morioh High",
-            "place": "111838814545019"
-          }
-        ],
-        "young_games": 5,
-        "young_share": 0.0079
-      },
-      {
         "ccu": 1327409,
+        "confidence": "high",
+        "confidence_note": "55 new games, spread out",
         "games": 97,
         "growth": -0.188,
         "key": "eggs",
         "label": "Eggs",
         "momentum": 1.22,
         "momentum_adj": 1.21,
+        "momentum_change": -0.07,
+        "momentum_week_ago": 1.28,
         "share": 0.1845,
+        "top1_share": 0.386,
         "top_examples": [
           {
             "age": 89,
@@ -14322,13 +15342,18 @@
       },
       {
         "ccu": 19191,
+        "confidence": "medium",
+        "confidence_note": "5 new games, top one 44% of their CCU; momentum up 0.37 this week",
         "games": 55,
         "growth": -0.1048,
         "key": "space",
         "label": "Space",
         "momentum": 1.43,
         "momentum_adj": 1.09,
+        "momentum_change": 0.37,
+        "momentum_week_ago": 0.72,
         "share": 0.0027,
+        "top1_share": 0.442,
         "top_examples": [
           {
             "age": 17,
@@ -14378,12 +15403,76 @@
         ],
         "young_games": 5,
         "young_share": 0.0038
+      },
+      {
+        "ccu": 49539,
+        "confidence": "low",
+        "confidence_note": "one game holds 65% of new-game CCU",
+        "games": 79,
+        "growth": -0.0694,
+        "key": "school",
+        "label": "School",
+        "momentum": 1.15,
+        "momentum_adj": 1.06,
+        "momentum_change": 0.13,
+        "momentum_week_ago": 0.93,
+        "share": 0.0069,
+        "top1_share": 0.645,
+        "top_examples": [
+          {
+            "age": 1749,
+            "ccu": 14457,
+            "id": "3240075297",
+            "name": "Berry Avenue \ud83c\udfe0 RP",
+            "place": "8481844229"
+          },
+          {
+            "age": 27,
+            "ccu": 6246,
+            "id": "10767928510",
+            "name": "Pixel Lineage [\ud83c\udf83Spear Class + Dragon Race]",
+            "place": "126256942507957"
+          },
+          {
+            "age": 1176,
+            "ccu": 2388,
+            "id": "4944984948",
+            "name": "Team School Breakout! (TEAMWORK OBBY)",
+            "place": "14301835518"
+          }
+        ],
+        "young_ccu": 9681,
+        "young_examples": [
+          {
+            "age": 27,
+            "ccu": 6246,
+            "id": "10767928510",
+            "name": "Pixel Lineage [\ud83c\udf83Spear Class + Dragon Race]",
+            "place": "126256942507957"
+          },
+          {
+            "age": 47,
+            "ccu": 2173,
+            "id": "10765190004",
+            "name": "Anime High School RP",
+            "place": "130481402522628"
+          },
+          {
+            "age": 20,
+            "ccu": 821,
+            "id": "10768944846",
+            "name": "[SPIN] Morioh High",
+            "place": "111838814545019"
+          }
+        ],
+        "young_games": 5,
+        "young_share": 0.0079
       }
     ]
   },
   "style_coverage": {
     "art_style": 490,
-    "map_style": 4047
+    "map_style": 4055
   },
   "total_ccu": 7195238,
   "young_ccu": 1224895,

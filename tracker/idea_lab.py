@@ -59,6 +59,8 @@ def build_pack() -> dict:
     def slim(items, n=10):
         return [{"key": i["key"], "label": i["label"], "momentum": i.get("momentum_adj"), "young_games": i["young_games"],
                  "young_ccu": i["young_ccu"], "games": i["games"], "share": i["share"],
+                 "confidence": i.get("confidence"), "confidence_note": i.get("confidence_note"), "top1_share": i.get("top1_share"),
+                 "momentum_week_ago": i.get("momentum_week_ago"), "momentum_change": i.get("momentum_change"),
                  "examples": [{"name": e["name"], "ccu": e["ccu"], "age": e["age"]} for e in i.get("young_examples", [])[:3]]}
                 for i in items[:n]]
     return {
@@ -67,7 +69,8 @@ def build_pack() -> dict:
         "young_ccu_share": round(tr.get("young_ccu", 0) / max(tr.get("total_ccu", 1), 1), 3),
         "rising": {d: slim(v) for d, v in tr.get("rising", {}).items()},
         "top_mechanics": slim(tr.get("dimensions", {}).get("mechanic", []), 14),
-        "gaps": [{"mechanic": g["mechanic_label"], "theme": g["theme_label"], "score": g["score"]} for g in tr.get("gaps", [])[:20]],
+        "gaps": [{"mechanic": g["mechanic_label"], "theme": g["theme_label"], "score": g["score"],
+                  "thin": "low" in (g.get("mechanic_confidence"), g.get("theme_confidence"))} for g in tr.get("gaps", [])[:20]],
         "pairs": [{"a": tax.get("mechanics", {}).get(p["a"], {}).get("label", p["a"]), "b": tax.get("mechanics", {}).get(p["b"], {}).get("label", p["b"]),
                    "young_games": p["games"], "young_ccu": p["young_ccu"]} for p in tr.get("pairs", [])[:15]],
         "benchmarks": {tax.get("mechanics", {}).get(k, {}).get("label", k): v for k, v in tr.get("benchmarks", {}).items()
@@ -82,9 +85,30 @@ def build_pack() -> dict:
         "style_labels": styles.labels(),
         "style_coverage": tr.get("style_coverage", {}),
         "vision_prompt": thumbs.NICHE_PROMPT.format(label="__LABEL__"),
+        "past_ideas": past_ideas(),
         "names": [r["name"] for r in rows],
         "places": {r["name"]: r["place"] for r in rows if r["place"]},
     }
+
+
+IDEA_HISTORY = "idea_history.json"
+
+
+def past_ideas(exclude_date: str | None = None) -> list[dict]:
+    """Every idea pitched on earlier days (title, mechanics, theme, date), newest first, so new sets don't repeat them."""
+    hist = st.load_json(st.REPORTS / IDEA_HISTORY, {})
+    today = exclude_date or st.now_utc().date().isoformat()
+    return [{"date": d, **i} for d in sorted(hist, reverse=True) if d != today for i in hist[d]]
+
+
+def record_ideas(ideas: dict) -> None:
+    """Keep a running log of each day's ideas (one entry per date; a rerun the same day replaces it)."""
+    if not ideas.get("date") or not ideas.get("ideas"):
+        return
+    hist = st.load_json(st.REPORTS / IDEA_HISTORY, {})
+    hist[ideas["date"]] = [{"title": i.get("title", ""), "mechanics": i.get("mechanics", []), "theme": i.get("theme", "")}
+                           for i in ideas["ideas"]]
+    st.save_json(st.REPORTS / IDEA_HISTORY, hist)
 
 
 def _thumb_pack(budget_mb: float):
@@ -148,6 +172,7 @@ def build(out: str = "site/idea-lab.html", ideas_path: str | None = None) -> Pat
         ideas = json.loads(Path(ideas_path).read_text(encoding="utf-8"))
     elif (st.REPORTS / "daily_ideas.json").exists():
         ideas = st.load_json(st.REPORTS / "daily_ideas.json", ideas)
+    record_ideas(ideas)
     tpl = Path(__file__).with_name("idea_lab_template.html").read_text(encoding="utf-8")
     page = st.fill_template(tpl, {"PACK": st.embed_json(pack), "IDEAS": st.embed_json(ideas)})
     p = Path(out)
