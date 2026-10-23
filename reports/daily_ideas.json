@@ -1,390 +1,390 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "ideas": [
     {
-      "title": "Egg Inspector [Anomaly]",
-      "scope": "small",
-      "genre": "Horror · Anomaly",
+      "title": "Draw Forts for Survival",
+      "scope": "medium",
+      "genre": "Survival · Battlegrounds & Fighting",
       "mechanics": [
-        "Job / shift",
+        "Paint / create",
         "Survive",
+        "Fight / battle"
+      ],
+      "theme": "Zombies",
+      "hook": "Zombies pour in every night. Draw walls, spikes and towers straight onto the ground with your marker, and whatever you draw becomes real.",
+      "core_loop": [
+        "Daytime: collect ink from crates around the map",
+        "Draw your fort lines before the horde arrives",
+        "Hold the night as zombies claw through weak strokes",
+        "Spend ink on thicker markers, fire ink and bigger canvases"
+      ],
+      "twist": "Shapes matter: a closed circle becomes a dome, a zigzag becomes spikes, and the zombies learn to dig under straight lines.",
+      "monetization": [
+        "2x ink multiplier pass",
+        "VIP gold marker",
+        "Extra canvas size (storage)"
+      ],
+      "retention": [
+        "Night counter leaderboard",
+        "Unlockable ink types",
+        "Squads that draw one shared fort"
+      ],
+      "why_now": "Paint / create is the hottest mechanic at 2.18 momentum (up 0.16 this week) with Backseat Rally (29.0K CCU) and Kukirin Life (28.7K) on top, and [✍️]DRAW SPELLS MAGIC ARENA (4.0K) proves drawn shapes work as weapons. Paint / create × Zombies is an open gap (3.74).",
+      "inspired_by": [
+        "[✍️]DRAW SPELLS MAGIC ARENA",
+        "[🎃] Zombie Rush Survival 🧟‍♂️",
+        "Bunker vs Verity"
+      ],
+      "differentiator": "Zombie survival games hand you fixed walls; here your own drawing skill is the defence, so every fort looks different and fails in funny ways.",
+      "art_style": "stylized",
+      "map_style": "arena"
+    },
+    {
+      "title": "Forge Swords for Knights",
+      "scope": "large",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Forge / craft",
+        "Sell / run a shop",
+        "Tycoon / base building"
+      ],
+      "theme": "Fantasy / medieval",
+      "hook": "Run the blacksmith of a medieval town. Knights walk in with a quest, you forge the blade, and you watch them take it into the dragon fight.",
+      "core_loop": [
+        "A knight orders a sword for a quest",
+        "Smelt ore, hammer the blade and pick a hilt",
+        "The knight fights live in the arena next door",
+        "A win pays big and raises your forge's fame"
+      ],
+      "twist": "Swords that lose come back broken with the knight's complaint, and your forge's star rating is public to every player in the server.",
+      "monetization": [
+        "VIP anvil skin",
+        "Skip the cooling timer",
+        "Extra ore storage",
+        "2x fame multiplier"
+      ],
+      "retention": [
+        "Sword index of every blade type",
+        "Weekly dragon boss",
+        "Hire apprentices for offline earnings"
+      ],
+      "why_now": "Forge / craft momentum is 1.09 and up 0.34 this week ([🎃] +1 Gun Forge 3.6K, HUSH 4.8K), and Fantasy / medieval is up 0.58 to 1.44 across 11 new games (Pixel Lineage 6.0K, Candy Kingdom Defense 5.1K). Sell / run a shop adds a second rising leg at 2.06.",
+      "inspired_by": [
+        "[🎃] +1 Gun Forge",
+        "Gladiator Life",
+        "Pixel Lineage [🎃Spear Class + Dragon Race]"
+      ],
+      "differentiator": "Forge games stop at the shiny weapon; here every sword gets a public test in a live fight, so quality matters more than grinding.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "+1 Horsepower Per Lap",
+      "scope": "medium",
+      "genre": "Sports & Racing · Vehicle Sim",
+      "mechanics": [
+        "+1 stat per action",
+        "Race / drive",
+        "Collect / index"
+      ],
+      "theme": "Vehicles",
+      "hook": "Every lap you drive adds +1 horsepower to your car. Grind laps, then line up for the drag strip and launch past everyone.",
+      "core_loop": [
+        "Drive laps on the loop track to gain +1 HP each",
+        "Race the drag strip to earn cash",
+        "Buy faster cars that keep a share of your HP",
+        "Rebirth to unlock new tracks and HP multipliers"
+      ],
+      "twist": "Each track has a shortcut that only opens above a set horsepower, so new zones are reached by driving, not menus.",
+      "monetization": [
+        "2x HP pass",
+        "Auto-drive",
+        "VIP garage slots",
+        "Speed boost"
+      ],
+      "retention": [
+        "Car index",
+        "Drag strip leaderboards",
+        "Rebirth tiers"
+      ],
+      "why_now": "The \"+1 ___\" title formula sits at 1.97 (up 0.14) with +1 stat per action at 1.85 across 27 new games ([🎃] +1 Stone Skipping 19.0K). Vehicles jumped 0.47 to 1.50 ([🎃] Bike Universe 34.0K, [🎃] Bike For Egg! 30.4K) and Vehicle Sim is up 0.79.",
+      "inspired_by": [
+        "[🎃] Bike Universe",
+        "[🎃] +1 Stone Skipping",
+        "(WHEELIE STYLE x BIG UPDATE) Drag Drive Simulator"
+      ],
+      "differentiator": "+1 games are on foot; putting the +1 on the car turns grinding into driving, and the drag strip is a fair PvP payoff.",
+      "art_style": "realistic",
+      "map_style": "linear_course"
+    },
+    {
+      "title": "Smelt Eggs for Armor",
+      "scope": "medium",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "Forge / craft",
+        "Hatch / gacha",
         "Collect / index"
       ],
       "theme": "Eggs",
-      "hook": "Work the night shift at an egg factory. Check every egg on the belt and pull out the ones that are wrong before they hatch.",
+      "hook": "Rare eggs have metal shells. Crack them, smelt the shells into armor, and the pet inside joins you.",
       "core_loop": [
-        "Eggs roll past on the conveyor",
-        "Inspect each one for cracks, eyes or odd colours",
-        "Reject anomalies and pass normal eggs",
-        "Survive the night and unlock the next shift"
+        "Buy or find metal eggs (iron, gold, diamond)",
+        "Crack them at the furnace to get a pet and shell scraps",
+        "Forge scraps into armor sets with bonuses",
+        "Armor lets you reach tougher egg zones"
       ],
-      "twist": "Some anomalies only show under the UV lamp or when you look away, and missed ones hatch into creatures that roam the factory.",
+      "twist": "Melting two different shells together makes alloy armor, and alloy eggs only drop in a shared server event.",
       "monetization": [
-        "VIP flashlight skins",
-        "Extra lives pass",
-        "Skip a night"
+        "Luck pass",
+        "Auto-smelt",
+        "Skip furnace timer",
+        "VIP furnace"
       ],
       "retention": [
-        "Anomaly index",
-        "Harder nightly shifts",
-        "Co-op shifts with friends"
+        "Armor and pet index",
+        "Alloy events",
+        "Offline smelting"
       ],
-      "why_now": "Job / shift momentum rose from 0.86 to 1.25 this week and is spread across 21 new games (Save the Krusty Krab 🍔 14.1K CCU, Fix My Phone! 9.7K). Interior maps are up to 2.21x across 27 new games (🎃 Sell Fries! [Anomaly] 🍟 38.0K, Clone Baby Care (Anomaly) 14.6K), and Job / shift × Eggs is an open gap (4.28) on a theme with 55 new games.",
+      "why_now": "Forge / craft is up 0.34 this week to 1.09, and Forge / craft × Eggs is an open gap (3.64) on a theme with 52 new games (Break and Steal an Egg 111.5K, Climb For Animals Eggs 49.3K). Eggs momentum is steady at 1.17.",
+      "inspired_by": [
+        "Break and Steal an Egg",
+        "+1 Forge Blade Loot",
+        "[🎃]+1 Loot To Forge"
+      ],
+      "differentiator": "Egg games throw away the shell; here the shell is the crafting loot, so every hatch feeds two progressions at once.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Stop Robbers for Cash",
+      "scope": "large",
+      "genre": "Strategy · Tower Defense",
+      "mechanics": [
+        "Tower defense",
+        "Tycoon / base building",
+        "Collect / index"
+      ],
+      "theme": "Money / rich",
+      "hook": "Your bank vault fills with cash every second. Robber crews come in waves, and you place guards, lasers and traps to keep the money.",
+      "core_loop": [
+        "The vault earns cash over time",
+        "Place guards and traps on the robber routes",
+        "Survive the heist wave and bank what is left",
+        "Upgrade the vault and unlock new security"
+      ],
+      "twist": "Robbers that escape drop a trail of cash; collect it back before the next wave or it's gone for good.",
+      "monetization": [
+        "VIP guard pack",
+        "2x vault income",
+        "Speed waves",
+        "Luck on rare guards"
+      ],
+      "retention": [
+        "Guard index",
+        "Boss heist every weekend",
+        "Offline vault earnings"
+      ],
+      "why_now": "Tower defense is at 1.53 across 6 new games ([🎃UPD] Cameraman Tower Defense 25.8K, Bunker vs Verity 14.8K), and Money / rich holds 1.93 on 41 new games (Climb For Animals Eggs 49.3K, Fix My Phone! 12.7K).",
+      "inspired_by": [
+        "[🎃UPD] Cameraman Tower Defense",
+        "Bunker vs Verity",
+        "Defend Your Treehouse!"
+      ],
+      "differentiator": "TD games defend a lane goal; here the thing you defend is your income, so every leak hurts and every win grows the vault.",
+      "art_style": "stylized",
+      "map_style": "tower_defense_lanes"
+    },
+    {
+      "title": "Pawn Junk for Cash",
+      "scope": "medium",
+      "genre": "Simulation · Tycoon",
+      "mechanics": [
+        "Sell / run a shop",
+        "Job / shift",
+        "Collect / index"
+      ],
+      "theme": "Money / rich",
+      "hook": "Customers walk into your pawn shop with junk and treasures. Haggle a price, spot the fakes, and flip the good stuff for profit.",
+      "core_loop": [
+        "A customer offers an item",
+        "Inspect it with a loupe and haggle",
+        "Clean it up and put it on the shelf",
+        "Sell to buyers and expand the shop"
+      ],
+      "twist": "One item a day is a fake, and buying it costs your shop's reputation unless you catch it under the blacklight.",
+      "monetization": [
+        "2x sale multiplier",
+        "Extra shelf storage",
+        "VIP appraisal loupe"
+      ],
+      "retention": [
+        "Rare item index",
+        "Daily auction",
+        "Shop upgrades"
+      ],
+      "why_now": "Sell / run a shop jumped 0.55 this week to 2.06 (🎃 Sell Fries! [Anomaly] 50.5K, Fix My Phone! 12.7K), and Interiors are rising at 1.97 across 27 new games. Money / rich sits at 1.93.",
       "inspired_by": [
         "🎃 Sell Fries! [Anomaly] 🍟",
-        "Clone Baby Care (Anomaly)",
-        "Save the Krusty Krab 🍔"
+        "Fix My Phone!",
+        "[🎃] Storage Hunters: Open World"
       ],
-      "differentiator": "Anomaly games mostly use food or rooms; eggs add a payoff, because a missed anomaly hatches and hunts you for the rest of the shift.",
-      "art_style": "dark_gritty",
+      "differentiator": "Shop games sell one product; a pawn shop gets a new mystery item every customer, and haggling plus fake-spotting gives each sale a small puzzle.",
+      "art_style": "stylized",
       "map_style": "interior"
     },
     {
-      "title": "Wrap Cars for Cash",
+      "title": "Toss Villains to Jail",
       "scope": "small",
-      "genre": "Simulation · Vehicle Sim",
+      "genre": "Simulation · Physics Sim",
+      "mechanics": [
+        "Hit / swing / launch",
+        "+1 stat per action",
+        "Fight / battle"
+      ],
+      "theme": "Superheroes / powers",
+      "hook": "Grab the villain, wind up, and throw them across the city into jail. Every throw makes you stronger and the jail moves further away.",
+      "core_loop": [
+        "Catch a villain on the street",
+        "Charge and launch them toward the jail",
+        "Earn strength for distance and bonus for a bullseye",
+        "Unlock bigger villains and farther jails"
+      ],
+      "twist": "Villains ragdoll through the city and smash things on the way, and rare villains try to fly back unless you land them dead-on.",
+      "monetization": [
+        "2x strength pass",
+        "Auto-throw",
+        "VIP hero suit"
+      ],
+      "retention": [
+        "Villain index",
+        "Distance leaderboard",
+        "Codes and weekly events"
+      ],
+      "why_now": "Hit / swing / launch is at 1.88 and up 0.19 (Cat Battles 28.3K, [🎃] +1 Stone Skipping 19.0K), and Physics Sim is up 0.50 to 1.60 (Ragdoll Reality 10.5K). Superheroes / powers holds 1.45 with Superhero Arena at 10.2K.",
+      "inspired_by": [
+        "Superhero Arena",
+        "Cat Battles 🐾",
+        "Ragdoll Reality 🩸"
+      ],
+      "differentiator": "Hero games are fighting arenas; this one is a one-button throwing game with a hero skin, so it's quick to learn and the ragdoll throws are funny to watch.",
+      "art_style": "stylized",
+      "map_style": "open_world"
+    },
+    {
+      "title": "+1 Hero Flight",
+      "scope": "medium",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "+1 stat per action",
+        "Obby / climb / jump",
+        "Collect / index"
+      ],
+      "theme": "Superheroes / powers",
+      "hook": "Every second in the air gives +1 flight power. Fly through rings over the city to reach floating hero worlds.",
+      "core_loop": [
+        "Jump off a rooftop and fly",
+        "Gain +1 flight power each second airborne",
+        "Reach higher rings and floating islands",
+        "Rebirth for capes with flight multipliers"
+      ],
+      "twist": "Each world has a villain that knocks you out of the sky, so you have to dodge mid-flight to keep your streak.",
+      "monetization": [
+        "2x flight pass",
+        "Speed cape",
+        "VIP world",
+        "Auto-fly"
+      ],
+      "retention": [
+        "Cape index",
+        "Rebirth tiers",
+        "Flight-time leaderboards"
+      ],
+      "why_now": "+1 stat per action sits at 1.85 (up 0.15) across 27 new games ([🌍WORLD 2] +1 Venom Evolution 16.4K, +1 Pickaxe Swing for Eggs 17.2K), and the \"+1 ___\" formula is at 1.97. Superheroes / powers holds 1.45 (Superhero Arena 10.2K).",
+      "inspired_by": [
+        "[🌍WORLD 2] +1 Venom Evolution",
+        "Superhero Arena",
+        "+1 Assassin Leveling"
+      ],
+      "differentiator": "+1 games grind on the ground; flying makes the stat something you can see, because the more power you have, the higher and farther you get.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Groom Dogs for Cash",
+      "scope": "small",
+      "genre": "Simulation · Animal Sim",
       "mechanics": [
         "Paint / create",
         "Job / shift",
         "Sell / run a shop"
       ],
-      "theme": "Vehicles",
-      "hook": "Cars roll into your wrap shop. Design a vinyl wrap with stickers, stripes and flames, and the customer pays more the cooler it looks.",
+      "theme": "Animals",
+      "hook": "Messy dogs come into your grooming salon. Shave, trim and dye their fur into any shape, and the owner tips by how good it looks.",
       "core_loop": [
-        "A customer drives in and asks for a style",
-        "Wrap the car with paint, decals and stripes",
-        "They drive it out and you get paid by their rating",
-        "Unlock rarer cars, chrome vinyl and a bigger garage"
+        "A muddy dog arrives with a style request",
+        "Wash, shave and sculpt the fur",
+        "Dye patterns and add accessories",
+        "Get tipped and upgrade your salon tools"
       ],
-      "twist": "Wrapped cars show up driving around the shared town and on the race track, so other players see your work and can order a copy from you.",
+      "twist": "Players vote on the best groom of the round, and the top dog walks a runway in the town square.",
       "monetization": [
-        "VIP chrome and neon vinyl",
-        "2x tip pass",
-        "Extra garage bay"
+        "VIP clipper set",
+        "2x tips",
+        "Rare dye colours"
       ],
       "retention": [
-        "Car index of every model you've wrapped",
-        "Daily customer theme with bonus pay",
-        "Weekly best-wrap vote"
+        "Breed index",
+        "Daily style contest",
+        "Salon upgrades"
       ],
-      "why_now": "Paint / create is up 2.04x with high confidence (11 new games, spread out), and its two biggest new games are vehicle games (Backseat Rally 19.3K CCU, [🎃] Kukirin Life [Testing] 17.3K). Vehicles rose from 1.03 to 1.34 this week across 22 new games ([🎃] Bike Universe 20.2K), and Job / shift is up to 1.25.",
+      "why_now": "Paint / create is the top rising mechanic at 2.18 (up 0.16) with [🥞] Paint a Pancake at 4.2K, and satisfying shave/clean games like Make Rugs! show the same tactile hook. Job-style pet games are working too (7 Days Cat-Sitting).",
       "inspired_by": [
-        "Backseat Rally",
-        "[🎃] Kukirin Life [Testing]",
-        "Fix My Phone!",
-        "[🎃] Bike Universe"
+        "Make Rugs!",
+        "[🥞] Paint a Pancake",
+        "7 Days Cat-Sitting"
       ],
-      "differentiator": "Car games let you pick a paint colour; here designing the wrap is the whole job, and your designs drive around the server.",
+      "differentiator": "Paint games use flat canvases; fur you shave and sculpt is a 3D canvas, and the dog reacting to its new look sells the moment.",
       "art_style": "stylized",
       "map_style": "interior"
     },
     {
-      "title": "Joust for Gold",
-      "scope": "large",
-      "genre": "Action · Battlegrounds",
-      "mechanics": [
-        "Hit / swing / launch",
-        "Fight / battle",
-        "Collect / index"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "Charge down the lane on horseback and knock the other knight flying. The further they fly, the more gold you win.",
-      "core_loop": [
-        "Pick a horse and lance",
-        "Charge and time your hit",
-        "Send your rival flying for distance gold",
-        "Buy faster horses and longer lances, collect armour sets"
-      ],
-      "twist": "Hit timing decides the launch angle, so a perfect hit sends knights over the castle wall into a bonus moat for double gold.",
-      "monetization": [
-        "2x gold pass",
-        "VIP golden horse",
-        "Extra armour storage"
-      ],
-      "retention": [
-        "Horse and armour index",
-        "Tournament ladder each weekend",
-        "Distance leaderboard"
-      ],
-      "why_now": "Hit / swing / launch is up 1.68x with high confidence (14 new games: Cat Battles 🐾 20.6K CCU, [🎃] +1 Stone Skipping 14.2K). Fantasy / medieval rose from 0.86 to 1.37 this week (Pixel Lineage [🎃Spear Class + Dragon Race] 6.2K), and \"___ for ___\" titles are up 3.45x.",
-      "inspired_by": [
-        "Cat Battles 🐾",
-        "[🎃] +1 Stone Skipping",
-        "Pixel Lineage [🎃Spear Class + Dragon Race]"
-      ],
-      "differentiator": "Launch games fling players or stones from a standstill; jousting adds a timed charge and a rival who hits back, so each launch is a one-on-one duel.",
-      "art_style": "stylized",
-      "map_style": "arena"
-    },
-    {
-      "title": "Brew Potions for Adventurers",
+      "title": "Paint Planets for Aliens",
       "scope": "medium",
       "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Sell / run a shop",
+        "Paint / create",
         "Tycoon / base building",
         "Collect / index"
       ],
-      "theme": "Fantasy / medieval",
-      "hook": "Run a tiny potion shop. Mix ingredients in your cauldron, sell potions to adventurers, and grow it into the biggest magic store in town.",
+      "theme": "Space",
+      "hook": "You own a blank planet. Paint oceans, forests and lava on it, and aliens move in and pay rent if they like the climate.",
       "core_loop": [
-        "An adventurer orders a potion",
-        "Mix the right ingredients in the cauldron",
-        "Sell it and restock from your herb garden",
-        "Expand the shop with more cauldrons and shelves"
+        "Paint biomes onto your planet",
+        "Aliens that like those biomes move in",
+        "Collect rent and buy new colours",
+        "Unlock bigger planets and rarer aliens"
       ],
-      "twist": "Wrong mixes don't fail: they make weird potions (shrink, float, turn into a frog) that you can test on yourself or prank other players with.",
+      "twist": "Each alien species needs a mix of biomes, so painting the right map is a small puzzle, and players can visit and rate each other's planets.",
       "monetization": [
-        "2x profit pass",
-        "Auto-brewer",
-        "VIP rare ingredients",
-        "Extra shelf"
+        "2x rent pass",
+        "VIP colour pack",
+        "Bigger planet slots"
       ],
       "retention": [
-        "Recipe index including weird potions",
-        "Offline sales from your shelves",
-        "Daily rush-order event"
+        "Alien index",
+        "Planet ratings leaderboard",
+        "Offline rent"
       ],
-      "why_now": "Sell / run a shop rose from 1.51 to 2.08 this week and is now spread over 17 new games (🎃 Sell Fries! [Anomaly] 🍟 38.0K CCU, Eat Everything In A Grocery Store 9.5K). Fantasy / medieval rose from 0.86 to 1.37, and interior maps are up 2.21x.",
+      "why_now": "Paint / create leads rising mechanics at 2.18 (up 0.16; Backseat Rally 29.0K, [🎃] Kukirin Life 28.7K), and \"Paint to Get Rich\" style earning is proven by [NOW] Paint to Get Rich 🎨. Paint / create gaps are the top 4 on the list.",
       "inspired_by": [
-        "🎃 Sell Fries! [Anomaly] 🍟",
-        "Eat Everything In A Grocery Store",
-        "Pixel Lineage [🎃Spear Class + Dragon Race]"
+        "[NOW] Paint to Get Rich 🎨",
+        "[🥞] Paint a Pancake",
+        "My Planet Tycoon 🌎"
       ],
-      "differentiator": "Shop games sell fixed goods; here recipes are a puzzle and failed brews are a toy, so mistakes are part of the fun.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    },
-    {
-      "title": "Kick Piggy Banks for Cash",
-      "scope": "small",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "Hit / swing / launch",
-        "+1 stat per action",
-        "Collect / index"
-      ],
-      "theme": "Money / rich",
-      "hook": "Kick giant piggy banks down the street. They smash open where they land, and coins spray everywhere.",
-      "core_loop": [
-        "Charge a kick and launch a piggy bank",
-        "Watch it bounce and smash",
-        "Collect the coins that spill out",
-        "Upgrade your kick and unlock golden and diamond piggies"
-      ],
-      "twist": "Rare piggies have a coin multiplier painted on their side, but they're heavier, so you trade distance for a bigger payout.",
-      "monetization": [
-        "2x coins pass",
-        "Auto-kick",
-        "VIP diamond piggy",
-        "Coin magnet"
-      ],
-      "retention": [
-        "Piggy index with rare designs",
-        "Distance leaderboard",
-        "Daily golden piggy"
-      ],
-      "why_now": "Money / rich is up 1.78x with high confidence: 41 new games, spread out (Climb For Animals Eggs🥚 41.0K CCU, Don't Steal My Eggs! 10.9K). Hit / swing / launch is up 1.68x across 14 new games (Cat Battles 🐾 20.6K, [🎃] +1 Stone Skipping 14.2K), and \"___ for ___\" titles are up 3.45x.",
-      "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "Cat Battles 🐾",
-        "Climb For Animals Eggs🥚"
-      ],
-      "differentiator": "Most money games show cash as a number; here the money is a physical object you launch and smash, which makes every payout a visual moment.",
+      "differentiator": "Paint-for-cash games paint pictures; here the painting is your base, so what you draw decides who lives there and how much you earn.",
       "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Truck Crates Up the Cliff",
-      "scope": "medium",
-      "genre": "Simulation · Physics Sim",
-      "mechanics": [
-        "Race / drive",
-        "Job / shift",
-        "Obby / climb / jump"
-      ],
-      "theme": "Vehicles",
-      "hook": "Load your pickup with wobbly crates and drive them up a steep cliff road. Every crate that makes it to the top gets paid.",
-      "core_loop": [
-        "Stack crates in your truck bed",
-        "Drive up the cliff road without spilling",
-        "Get paid for each crate delivered",
-        "Upgrade suspension, straps and bigger trucks"
-      ],
-      "twist": "Friends can ride in the back to hold crates down, so co-op runs earn more but one bad bump can throw everyone off.",
-      "monetization": [
-        "VIP monster truck",
-        "2x delivery pay",
-        "Extra straps pass"
-      ],
-      "retention": [
-        "Truck index",
-        "Harder cliff stages",
-        "Weekly heavy-cargo event"
-      ],
-      "why_now": "Vehicles rose from 1.03 to 1.34 this week across 22 new games ([🎃] Bike Universe 20.2K CCU, [BETA EVENT!] Turbo Soccer : Beta 1.0 7.5K). Linear course maps rose from 1.47 to 1.75 across 42 new games, realistic art is up 2.07x, and Physics Sim is up 1.40x (Crazy Diver 7.4K).",
-      "inspired_by": [
-        "[🎃] Bike Universe",
-        "Backseat Rally",
-        "Crazy Diver"
-      ],
-      "differentiator": "Driving games reward speed; here going slow and steady wins, and the cargo physics is the challenge.",
-      "art_style": "realistic",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Paint Sneakers for Hype",
-      "scope": "medium",
-      "genre": "Roleplay & Avatar Sim · Dress Up",
-      "mechanics": [
-        "Paint / create",
-        "Sell / run a shop",
-        "Collect / index"
-      ],
-      "theme": "Fashion / beauty",
-      "hook": "Customise blank sneakers with paint, laces and patches, then drop them in limited runs. If players want them, the price goes up.",
-      "core_loop": [
-        "Paint a blank sneaker",
-        "Choose how many pairs to drop",
-        "Players and NPCs buy and wear them",
-        "Spend profits on rarer blanks and a bigger store"
-      ],
-      "twist": "Every sneaker you sell is wearable, so your designs spread around the server and the most-worn pair each day gets a hype bonus.",
-      "monetization": [
-        "VIP gold and glow paints",
-        "Extra drop slots",
-        "2x hype pass"
-      ],
-      "retention": [
-        "Sneaker index of your designs",
-        "Daily design theme",
-        "Hype leaderboard"
-      ],
-      "why_now": "Paint / create is up 2.04x with high confidence (11 new games, spread out). Fashion / beauty is up 1.39x across 11 new games ([UPD✨] Makeup Salon💄 8.2K CCU, Facecard: Makeup Showdown [⭐UPD] 7.9K), and Sell / run a shop rose to 2.08 this week.",
-      "inspired_by": [
-        "[UPD✨] Makeup Salon💄",
-        "Facecard: Makeup Showdown [⭐UPD]",
-        "Sneaker Resell Simulator",
-        "[NOW] Paint to Get Rich 🎨"
-      ],
-      "differentiator": "Sneaker games flip shoes others made; here you design them, and players actually wear your designs.",
-      "art_style": "stylized",
       "map_style": "plot_base"
-    },
-    {
-      "title": "7 Nights With a Dragon",
-      "scope": "small",
-      "genre": "Simulation · Pet Care",
-      "mechanics": [
-        "Job / shift",
-        "Raise / pet care",
-        "Survive"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "A wizard leaves you his baby dragon for a week. Feed it, play with it, and keep it from burning the house down.",
-      "core_loop": [
-        "Each night the dragon has new needs",
-        "Feed, bathe and calm it before it gets angry",
-        "Put out fires and fix what it breaks",
-        "Survive all 7 nights to keep the grown dragon"
-      ],
-      "twist": "How you treat it changes what it grows into: a calm dragon becomes a pet you can ride, a neglected one becomes the boss of night 7.",
-      "monetization": [
-        "Extra lives pass",
-        "VIP dragon colours",
-        "Skip a night"
-      ],
-      "retention": [
-        "Dragon form index",
-        "Harder nights each run",
-        "Co-op dragon-sitting"
-      ],
-      "why_now": "Job / shift rose from 0.86 to 1.25 this week (Save the Krusty Krab 🍔 14.1K CCU), and care-for-a-week games are breaking out (7 Days Cat-Sitting 14.2K, Clone Baby Care (Anomaly) 14.6K). Fantasy / medieval rose from 0.86 to 1.37 and interior maps are up 2.21x.",
-      "inspired_by": [
-        "7 Days Cat-Sitting",
-        "Clone Baby Care (Anomaly)",
-        "Pixel Lineage [🎃Spear Class + Dragon Race]"
-      ],
-      "differentiator": "Pet-sitting games use cats and babies; a dragon raises the stakes (fire, flying, growing) and gives a payoff you keep at the end.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    },
-    {
-      "title": "Valet Rush",
-      "scope": "small",
-      "genre": "Simulation · Vehicle Sim",
-      "mechanics": [
-        "Job / shift",
-        "Race / drive",
-        "Tycoon / base building"
-      ],
-      "theme": "Vehicles",
-      "hook": "Park guests' cars as fast as you can without a scratch. Fast, clean parking earns big tips; dents come out of your pay.",
-      "core_loop": [
-        "Grab the keys of an arriving car",
-        "Drive it into a free space in the garage",
-        "Bring it back when the guest leaves",
-        "Spend tips on more floors, better valets and fancier guests"
-      ],
-      "twist": "Rich guests arrive in supercars that are fast but twitchy, so the best tips come with the highest crash risk.",
-      "monetization": [
-        "2x tips pass",
-        "VIP supercar guests",
-        "Hire an auto-valet"
-      ],
-      "retention": [
-        "Car index of every model parked",
-        "Offline tips from hired valets",
-        "Rush-hour events"
-      ],
-      "why_now": "Job / shift rose from 0.86 to 1.25 this week across 21 new games (Fix My Phone! 9.7K CCU, Save the Krusty Krab 🍔 14.1K). Vehicles rose from 1.03 to 1.34 across 22 new games ([🎃] Bike Universe 20.2K), and interior maps are up 2.21x.",
-      "inspired_by": [
-        "Save the Krusty Krab 🍔",
-        "[🎃] Bike Universe",
-        "[🏆] Car Parking Level 7 🅿️🚗"
-      ],
-      "differentiator": "Parking games are solo puzzles; this one is a timed job with customers and a garage you grow, so it plays like a shift game with driving.",
-      "art_style": "low_poly",
-      "map_style": "interior"
-    },
-    {
-      "title": "+1 Armor Every Step",
-      "scope": "medium",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "+1 stat per action",
-        "Fight / battle",
-        "Hatch / gacha"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "Every step adds +1 armor. Walk until you're a giant armored knight, then storm castles and beat their bosses.",
-      "core_loop": [
-        "Walk to gain +1 armor per step",
-        "Your knight grows bigger and tougher",
-        "Storm the next castle and beat its boss",
-        "Open chests for helmets and shields, then rebirth"
-      ],
-      "twist": "Armor slows you down, so you pick between a fast light knight for racing between castles and a slow tank for bosses.",
-      "monetization": [
-        "2x armor pass",
-        "Auto-walk",
-        "Luck pass on chests",
-        "Extra gear storage"
-      ],
-      "retention": [
-        "Gear index with rare sets",
-        "Rebirth worlds",
-        "Boss leaderboard"
-      ],
-      "why_now": "+1 stat per action rose from 1.70 to 1.86 this week with high confidence (27 new games: [🌍WORLD 2] +1 Venom Evolution 10.6K CCU, +1 Assassin Leveling 10.1K). Fantasy / medieval rose from 0.86 to 1.37, and \"+1 ___\" titles are up 2.02x.",
-      "inspired_by": [
-        "[🌍WORLD 2] +1 Venom Evolution",
-        "+1 Assassin Leveling",
-        "[🎃] +1 Stone Skipping"
-      ],
-      "differentiator": "+1 games mostly pump speed or strength; armor has a real trade-off (speed vs toughness), which gives players a choice the genre usually skips.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
     }
   ]
 }
