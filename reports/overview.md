@@ -43,7 +43,7 @@
 - صيد الضبّان: 15,673 → 36,087 CCU
 - Backseat Rally: 0 → 20,323 CCU
 - [🎃] Bike Universe: 0 → 18,406 CCU
-- [NOW] Fake an Egg: 0 → 15,098 CCU
+- [🎃] Fake an Egg: 0 → 15,098 CCU
 - Facecard: Makeup Showdown [⭐UPD]: 10,303 → 24,226 CCU
 
 ## Last 30 days
@@ -89,6 +89,6 @@
 - صيد الضبّان: 15,673 → 36,087 CCU
 - Backseat Rally: 0 → 20,323 CCU
 - [🎃] Bike Universe: 0 → 18,406 CCU
-- [NOW] Fake an Egg: 0 → 15,098 CCU
+- [🎃] Fake an Egg: 0 → 15,098 CCU
 - Facecard: Makeup Showdown [⭐UPD]: 10,303 → 24,226 CCU
 

@@ -1,6 +1,6 @@
 # Uprising trends — 2026-10-24
 
-5,070 games tracked · 416 are 60 days old or less and hold 15% of CCU.
+5,096 games tracked · 429 are 60 days old or less and hold 16% of CCU.
 
 Momentum = a category's share of young-game CCU divided by its share of all CCU. Above 1 means new games in it are outperforming its size: it's rising.
 
@@ -8,104 +8,104 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Hit / swing / launch | 2.45x | high (momentum up 0.46 this week) | 13 | 146,400 | 128 | Cat Battles 🐾 (63,159) |
-| Paint / create | 2.02x | high (12 new games, spread out) | 12 | 69,068 | 107 | Backseat Rally (24,562) |
-| Break / mine / dig | 2.45x | low (one game holds 72% of new-game CCU; momentum down 0.39 this week) | 18 | 135,312 | 167 | Break and Steal an Egg (97,284) |
-| +1 stat per action | 2.05x | high (momentum up 0.33 this week) | 26 | 114,048 | 199 | [🌍WORLD 2] +1 Venom Evolution (21,266) |
-| Sell / run a shop | 1.94x | medium (18 new games, top one 47% of their CCU) | 18 | 85,622 | 130 | 🎃 Sell Fries! [Anomaly] 🍟 (39,857) |
-| Tycoon / base building | 1.59x | medium (momentum down 0.33 this week) | 59 | 179,112 | 620 | Climb For Animals Eggs🥚 (37,344) |
-| Tower defense | 1.47x | medium (6 new games, top one 48% of their CCU) | 6 | 49,683 | 109 | [💰X2] Cameraman Tower Defense (23,929) |
-| Collect / index | 1.46x | medium (29 new games, top one 49% of their CCU) | 29 | 199,684 | 277 | Break and Steal an Egg (97,284) |
-| Clicker / tap | 1.4x | medium (20 new games, top one 51% of their CCU; momentum up 0.73 this week) | 20 | 124,827 | 188 | Cat Battles 🐾 (63,159) |
-| Job / shift | 1.28x | high (momentum up 0.48 this week) | 23 | 85,618 | 197 | Save the Krusty Krab 🍔 (17,822) |
-| Race / drive | 1.19x | high (momentum up 0.26 this week) | 24 | 102,184 | 334 | [BETA EVENT!] Turbo Soccer : Beta 1.0 (28,837) |
-| Obby / climb / jump | 1.07x | high (34 new games, spread out) | 34 | 114,489 | 717 | Climb For Animals Eggs🥚 (37,344) |
+| Paint / create | 2.32x | high (12 new games, spread out) | 12 | 109,665 | 107 | [🎃] Kukirin Life [Testing] (41,364) |
+| Hit / swing / launch | 2.15x | high (momentum up 0.16 this week) | 13 | 143,965 | 128 | Ragdoll Reality 🩸 (44,254) |
+| Sell / run a shop | 2.26x | medium (18 new games, top one 58% of their CCU; momentum up 0.42 this week) | 18 | 138,728 | 130 | 🎃 Sell Fries! [Anomaly] 🍟 (79,987) |
+| +1 stat per action | 2.11x | high (momentum up 0.39 this week) | 26 | 167,929 | 199 | [🌍WORLD 2] +1 Venom Evolution (25,316) |
+| Break / mine / dig | 2.34x | low (one game holds 70% of new-game CCU; momentum down 0.50 this week) | 18 | 164,154 | 167 | Break and Steal an Egg (114,579) |
+| Tower defense | 1.66x | medium (6 new games, top one 56% of their CCU) | 6 | 71,892 | 109 | [💰X2] Cameraman Tower Defense (40,376) |
+| Collect / index | 1.51x | high (29 new games, spread out) | 29 | 266,202 | 277 | Break and Steal an Egg (114,579) |
+| Tycoon / base building | 1.54x | medium (momentum down 0.38 this week) | 59 | 240,290 | 622 | Climb For Animals Eggs🥚 (61,266) |
+| Obby / climb / jump | 1.16x | high (34 new games, spread out) | 34 | 157,775 | 719 | Climb For Animals Eggs🥚 (61,266) |
+| Clicker / tap | 1.17x | high (momentum up 0.50 this week) | 20 | 100,721 | 189 | Cat Battles 🐾 (34,792) |
+| Job / shift | 1.13x | high (momentum up 0.33 this week) | 23 | 89,538 | 198 | Save the Krusty Krab 🍔 (20,949) |
+| Race / drive | 1.06x | high (24 new games, spread out) | 24 | 112,750 | 337 | Backseat Rally (41,116) |
 
 ## Rising themes
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Robots / mechs | 2.38x | low (only 4 new games) | 4 | 40,227 | 15 | Steel Fighters (22,680) |
-| Money / rich | 1.98x | high (41 new games, spread out) | 41 | 163,205 | 383 | Climb For Animals Eggs🥚 (37,344) |
-| Vehicles | 1.76x | high (momentum up 0.58 this week) | 23 | 127,294 | 261 | [🎃] Bike Universe (40,626) |
-| Fantasy / medieval | 1.54x | high (momentum up 0.71 this week) | 11 | 34,223 | 108 | [✍️]DRAW SPELLS MAGIC ARENA (8,640) |
-| Stones / rocks / ores | 1.58x | medium (momentum down 0.92 this week) | 8 | 33,021 | 53 | [🎃] +1 Stone Skipping (14,579) |
-| Ice / fire / elements | 1.38x | high (10 new games, spread out) | 10 | 25,422 | 99 | Free Fire Zone (Max) (9,652) |
-| Superheroes / powers | 1.35x | medium (8 new games, top one 40% of their CCU) | 8 | 22,056 | 61 | Superhero Arena (8,926) |
-| Music / dance | 1.36x | medium (6 new games, top one 47% of their CCU) | 6 | 18,907 | 65 | +1 Dance Battle Evolution (8,901) |
-| Zombies | 1.52x | low (one game holds 77% of new-game CCU) | 6 | 37,402 | 74 | Ragdoll Reality 🩸 (28,814) |
-| Eggs | 1.32x | high (48 new games, spread out) | 48 | 282,282 | 91 | Break and Steal an Egg (97,284) |
-| Fashion / beauty | 1.24x | medium (momentum down 0.59 this week) | 12 | 31,202 | 51 | Facecard: Makeup Showdown [⭐UPD] (13,016) |
-| Toys / plush | 1.13x | low (only 2 new games; one game holds 75% of new-game CCU) | 2 | 5,557 | 18 | [🎃]🧸 Toy Story 5 Roleplay! (4,173) |
+| Money / rich | 2.05x | high (41 new games, spread out) | 41 | 231,608 | 386 | Climb For Animals Eggs🥚 (61,266) |
+| Robots / mechs | 2.38x | low (only 4 new games; one game holds 65% of new-game CCU) | 4 | 50,609 | 15 | Steel Fighters (32,795) |
+| Stones / rocks / ores | 1.78x | medium (momentum down 0.72 this week) | 8 | 46,411 | 53 | [🎃] +1 Stone Skipping (24,323) |
+| Vehicles | 1.58x | high (momentum up 0.40 this week) | 23 | 151,183 | 262 | [🎃] Bike Universe (52,944) |
+| Fantasy / medieval | 1.48x | high (momentum up 0.65 this week) | 11 | 33,456 | 109 | [🎃] Candy Kingdom Defense (8,965) |
+| Superheroes / powers | 1.54x | medium (8 new games, top one 45% of their CCU; momentum up 0.22 this week) | 8 | 30,218 | 61 | Superhero Arena (13,522) |
+| Music / dance | 1.34x | medium (6 new games, top one 59% of their CCU) | 6 | 21,986 | 64 | +1 Dance Battle Evolution (12,890) |
+| Zombies | 1.56x | low (one game holds 82% of new-game CCU) | 6 | 53,864 | 74 | Ragdoll Reality 🩸 (44,254) |
+| Fashion / beauty | 1.33x | medium (momentum down 0.50 this week) | 12 | 34,175 | 51 | Facecard: Makeup Showdown [⭐UPD] (11,506) |
+| Ice / fire / elements | 1.27x | medium (10 new games, top one 47% of their CCU) | 10 | 25,449 | 99 | Firefighting Sim 🚒 (11,870) |
+| Eggs | 1.2x | high (48 new games, spread out) | 48 | 383,085 | 91 | Break and Steal an Egg (114,579) |
 
 ## Rising title formulas
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| "___ for ___" (Swing for Eggs) | 3.23x | high (12 new games, spread out) | 12 | 87,528 | 49 | Climb For Animals Eggs🥚 (37,344) |
-| "+1 ___" | 2.25x | high (momentum up 0.40 this week) | 24 | 110,159 | 162 | [🌍WORLD 2] +1 Venom Evolution (21,266) |
-| [UPDATE] tag prefix | 1.23x | high (momentum up 0.30 this week) | 50 | 183,048 | 404 | [NEW STAGES] DONT SPLASH 🎃 (53,616) |
-| "Build a ___" | 1.14x | low (only 3 new games) | 3 | 15,569 | 54 | [🎃] 📱 Build a Phone Empire (9,219) |
-| "Be a ___" | 1.11x | low (only 3 new games) | 3 | 3,299 | 25 | [🥟] Be an ASMR Streamer (1,672) |
+| "___ for ___" (Swing for Eggs) | 3.51x | high (12 new games, spread out) | 12 | 146,081 | 49 | Climb For Animals Eggs🥚 (61,266) |
+| "+1 ___" | 2.27x | high (momentum up 0.42 this week) | 24 | 163,777 | 162 | [🌍WORLD 2] +1 Venom Evolution (25,316) |
+| [UPDATE] tag prefix | 1.28x | high (momentum up 0.35 this week) | 51 | 186,807 | 404 | [NEW STAGES] DONT SPLASH 🎃 (44,143) |
+| Emoji in title | 1.06x | high (momentum up 0.25 this week) | 195 | 1,061,103 | 2283 | 🎃 Sell Fries! [Anomaly] 🍟 (79,987) |
+| "Build a ___" | 1.13x | low (only 3 new games; one game holds 68% of new-game CCU) | 3 | 22,944 | 56 | [🎃] 📱 Build a Phone Empire (15,523) |
+| "Be a ___" | 1.1x | low (only 3 new games; one game holds 60% of new-game CCU) | 3 | 4,261 | 25 | Be a Pirate (2,562) |
 
 ## Rising subgenres
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Showcase & Hub | 2.48x | low (only 2 new games; one game holds 100% of new-game CCU) | 2 | 42,570 | 16 | The Hollow (42,456) |
-| Physics Sim | 2.13x | medium (8 new games, top one 52% of their CCU; momentum up 0.84 this week) | 8 | 55,364 | 66 | Ragdoll Reality 🩸 (28,814) |
-| Incremental Simulator | 1.56x | high (66 new games, spread out) | 66 | 237,875 | 580 | صيد الضبّان (28,332) |
-| Racing | 1.59x | medium (7 new games, top one 48% of their CCU) | 7 | 15,300 | 31 | [DUELS] Rally Panic! [2 Player Rally] (7,343) |
-| Vehicle Sim | 1.47x | medium (12 new games, top one 55% of their CCU; momentum up 0.46 this week) | 12 | 73,470 | 173 | [🎃] Bike Universe (40,626) |
-| Tycoon | 1.32x | high (104 new games, spread out) | 104 | 429,909 | 664 | Break and Steal an Egg (97,284) |
-| Story | 1.44x | medium (5 new games, top one 51% of their CCU; momentum up 0.74 this week) | 5 | 26,980 | 106 | [UPD] Something is Wrong With My Dog... (13,682) |
-| Idle | 1.47x | medium (8 new games, top one 43% of their CCU; momentum up 0.28 this week) | 8 | 10,871 | 22 | Don’t Miss Your Flight! ✈️ (4,675) |
-| Turn-based RPG | 1.3x | low (only 2 new games; one game holds 72% of new-game CCU) | 2 | 8,564 | 14 | Pixel Lineage [🎃Spear Class + Dragon Race] (6,170) |
-| Dress Up | 1.09x | medium (momentum down 0.58 this week) | 11 | 27,229 | 42 | Facecard: Makeup Showdown [⭐UPD] (13,016) |
-| Coloring & Drawing | 1.28x | low (only 3 new games) | 3 | 9,053 | 31 | [🎨] Hide In Pixels (5,416) |
-| Music & Audio | 1.14x | low (only 3 new games; one game holds 93% of new-game CCU) | 3 | 4,973 | 25 | Piano Rhythm Tiles (4,623) |
+| Physics Sim | 2.11x | medium (8 new games, top one 56% of their CCU; momentum up 0.82 this week) | 8 | 79,079 | 66 | Ragdoll Reality 🩸 (44,254) |
+| Vehicle Sim | 1.69x | high (momentum up 0.68 this week) | 14 | 122,870 | 178 | [🎃] Bike Universe (52,944) |
+| Showcase & Hub | 2.1x | low (only 2 new games; one game holds 100% of new-game CCU) | 2 | 36,488 | 16 | The Hollow (36,329) |
+| Incremental Simulator | 1.64x | high (67 new games, spread out) | 67 | 317,389 | 587 | صيد الضبّان (44,526) |
+| Idle | 1.6x | medium (8 new games, top one 55% of their CCU; momentum up 0.41 this week) | 8 | 17,747 | 22 | Don’t Miss Your Flight! ✈️ (9,681) |
+| Racing | 1.38x | medium (momentum down 0.32 this week) | 7 | 11,844 | 31 | [ANOMALY RALLY] WRONG WAY! (4,593) |
+| Tycoon | 1.24x | high (104 new games, spread out) | 104 | 587,315 | 667 | Break and Steal an Egg (114,579) |
+| Story | 1.34x | medium (5 new games, top one 56% of their CCU; momentum up 0.64 this week) | 5 | 27,245 | 106 | [UPD] Something is Wrong With My Dog... (15,237) |
+| Turn-based RPG | 1.32x | low (only 3 new games; one game holds 61% of new-game CCU) | 3 | 10,395 | 15 | Pixel Lineage [🎃Spear Class + Dragon Race] (6,337) |
+| Tower Defense | 1.27x | low (one game holds 79% of new-game CCU) | 6 | 51,141 | 92 | [💰X2] Cameraman Tower Defense (40,376) |
+| Dress Up | 1.07x | medium (momentum down 0.60 this week) | 11 | 28,753 | 42 | Facecard: Makeup Showdown [⭐UPD] (11,506) |
+| Coloring & Drawing | 1.18x | low (only 3 new games; one game holds 68% of new-game CCU; momentum down 0.35 this week) | 3 | 7,981 | 31 | [🥞] Paint a Pancake (5,446) |
 
 ## Rising art styles
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Realistic | 1.81x | high (15 new games, spread out) | 15 | 133,573 | 64 | صيد الضبّان (28,332) |
-| Low poly | 1.67x | medium (5 new games, top one 47% of their CCU) | 5 | 25,856 | 8 | Tribes 3v3 (12,206) |
-| Voxel / blocky | 1.99x | medium (7 new games, top one 25% of their CCU) | 7 | 55,568 | 26 | [UPD] Something is Wrong With My Dog... (13,682) |
-| Stylized / cartoon | 1.33x | high (36 new games, spread out) | 36 | 392,625 | 113 | Cat Battles 🐾 (63,159) |
-| Bright simulator | 1.41x | high (50 new games, spread out) | 50 | 486,541 | 104 | Break and Steal an Egg (97,284) |
+| Low poly | 1.66x | medium (5 new games, top one 31% of their CCU) | 5 | 28,374 | 7 | Tribes 3v3 (8,771) |
+| Realistic | 1.71x | high (14 new games, spread out) | 14 | 173,713 | 64 | صيد الضبّان (44,526) |
+| Voxel / blocky | 2.1x | medium (7 new games, top one 21% of their CCU) | 7 | 71,730 | 25 | [UPD] Something is Wrong With My Dog... (15,237) |
+| Bright simulator | 1.39x | high (52 new games, spread out) | 52 | 679,473 | 107 | Break and Steal an Egg (114,579) |
+| Stylized / cartoon | 1.21x | high (36 new games, spread out) | 36 | 492,815 | 117 | 🎃 Sell Fries! [Anomaly] 🍟 (79,987) |
 
 ## Rising map styles
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Linear course / stages | 1.9x | high (43 new games, spread out) | 43 | 276,204 | 831 | [🎃] Huss Valley (54,740) |
-| Interiors / corridors | 1.72x | high (25 new games, spread out) | 25 | 208,194 | 111 | 🎃 Sell Fries! [Anomaly] 🍟 (39,857) |
-| Hub + zones / worlds | 1.58x | high (75 new games, spread out) | 75 | 261,856 | 842 | [CH2] 🪵 Chop A Forest (25,909) |
-| Open world | 1.21x | high (25 new games, spread out) | 25 | 213,260 | 176 | [🎃] Bike Universe (40,626) |
-| Lanes / paths | 1.21x | low (only 3 new games; one game holds 76% of new-game CCU) | 3 | 31,329 | 31 | [💰X2] Cameraman Tower Defense (23,929) |
+| Interiors / corridors | 1.92x | high (24 new games, spread out) | 24 | 267,441 | 110 | 🎃 Sell Fries! [Anomaly] 🍟 (79,987) |
+| Linear course / stages | 1.73x | high (43 new games, spread out) | 43 | 304,825 | 834 | Climb For Animals Eggs🥚 (61,266) |
+| Hub + zones / worlds | 1.79x | high (79 new games, spread out) | 79 | 389,751 | 849 | [🎃] Bike For Egg! (44,919) |
+| Lanes / paths | 1.4x | low (only 3 new games; one game holds 81% of new-game CCU) | 3 | 49,868 | 31 | [💰X2] Cameraman Tower Defense (40,376) |
+| Open world | 1.08x | high (25 new games, spread out) | 25 | 260,579 | 178 | [🎃] Bike Universe (52,944) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
 | Mechanic | Theme | Score |
 |---|---|---|
-| Paint / create | Eggs | 7.35 |
-| Hit / swing / launch | Robots / mechs | 6.1 |
-| +1 stat per action | Robots / mechs | 5.1 |
-| Paint / create | Robots / mechs | 5.03 |
-| Hit / swing / launch | Fashion / beauty | 4.91 |
-| Break / mine / dig | Robots / mechs | 4.88 |
-| Job / shift | Eggs | 4.66 |
-| Paint / create | Stones / rocks / ores | 4.51 |
-| Paint / create | Ice / fire / elements | 4.4 |
-| Paint / create | Zombies | 3.97 |
-| Break / mine / dig | Zombies | 3.85 |
-| Sell / run a shop | Zombies | 3.51 |
-| Sell / run a shop | Superheroes / powers | 3.45 |
-| Hit / swing / launch | Ancient / pyramids | 3.42 |
-| Tower defense | Robots / mechs | 3.37 |
-| Hit / swing / launch | Toys / plush | 3.3 |
-| +1 stat per action | Ancient / pyramids | 2.87 |
-| Paint / create | Ancient / pyramids | 2.82 |
-| Paint / create | Toys / plush | 2.72 |
-| Tower defense | Fashion / beauty | 2.71 |
+| Paint / create | Eggs | 7.89 |
+| Paint / create | Robots / mechs | 5.82 |
+| Paint / create | Stones / rocks / ores | 5.65 |
+| Hit / swing / launch | Robots / mechs | 5.39 |
+| +1 stat per action | Robots / mechs | 5.29 |
+| Paint / create | Zombies | 4.81 |
+| Break / mine / dig | Robots / mechs | 4.69 |
+| Sell / run a shop | Superheroes / powers | 4.35 |
+| Paint / create | Ice / fire / elements | 4.34 |
+| Hit / swing / launch | Fashion / beauty | 4.33 |
+| Sell / run a shop | Zombies | 4.31 |
+| Break / mine / dig | Zombies | 3.88 |
+| Tower defense | Robots / mechs | 3.83 |
+| Paint / create | Ancient / pyramids | 3.22 |
+| Tower defense | Fashion / beauty | 3.08 |
+| Hit / swing / launch | Ancient / pyramids | 2.99 |
+| +1 stat per action | Ancient / pyramids | 2.93 |
+| Tower defense | Music / dance | 2.85 |
+| Tower defense | Ancient / pyramids | 2.12 |
+| Clicker / tap | Ancient / pyramids | 1.63 |
