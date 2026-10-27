@@ -1,385 +1,377 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "ideas": [
     {
-      "title": "Bowl Cars for Cash",
+      "title": "Paint Mechs for Battles",
       "scope": "medium",
+      "genre": "Action · Battlegrounds & Fighting",
+      "mechanics": [
+        "Paint / create",
+        "Hit / swing / launch",
+        "Tycoon / base building"
+      ],
+      "theme": "Robots / mechs",
+      "hook": "Every mech starts as a bare grey frame. Paint armor plates onto it with spray cans, and every painted panel becomes real armor, so how you paint decides where you can take a hit.",
+      "core_loop": [
+        "Spray paint panels on your mech in the garage",
+        "Painted areas turn into armor with their own colour bonus (red = power, blue = shield, gold = cash)",
+        "Fight another player's mech in a short arena round",
+        "Win parts and new paint colours, then repaint for the next fight"
+      ],
+      "twist": "Hits chip the paint off, and bare spots take double damage, so a quick mid-fight touch-up spray can win a fight.",
+      "monetization": [
+        "2x cash pass",
+        "VIP paint colours (chrome, neon)",
+        "Extra garage slot pass"
+      ],
+      "retention": [
+        "Paint colour collection",
+        "Daily arena ladder",
+        "Weekly best-looking mech vote"
+      ],
+      "why_now": "Robots / mechs is the fastest-climbing theme at 2.17 momentum (+0.80 this week), led by Steel Fighters (14.2K CCU, 50 days old) and [🎃] Create a Robot Fighter (5.0K). Paint / create holds 2.21 (+0.13) with [🎃] Kukirin Life [Testing] (21.2K) and Backseat Rally (17.0K), and Paint + Robots is one of the top open gaps (score 5.84).",
+      "inspired_by": [
+        "Steel Fighters",
+        "[🎃] Create a Robot Fighter",
+        "[🎃] Kukirin Life [Testing]"
+      ],
+      "differentiator": "Robot fighters let you pick parts; here the paint job is the build, so every player's mech looks and plays different.",
+      "art_style": "stylized",
+      "map_style": "arena"
+    },
+    {
+      "title": "Bat Robots for Bolts",
+      "scope": "small",
       "genre": "Simulation · Physics Sim",
       "mechanics": [
         "Hit / swing / launch",
-        "+1 stat per action",
-        "Race / drive"
+        "+1 stat per action"
       ],
-      "theme": "Vehicles",
-      "hook": "A giant bowling alley where the ball is a junk car with a ragdoll driver. Launch it down the lane, smash the pins (and the buildings behind them) and get paid for the wreck.",
+      "theme": "Robots / mechs",
+      "hook": "A junkyard pitching machine fires broken robots at you. Swing your bat, send them flying across the scrapyard, and collect the bolts that rain out where they land.",
       "core_loop": [
-        "Pick a car from the scrapyard and line up your shot",
-        "Launch it with the boost ramp and steer mid-air",
-        "Get cash for pins, damage and how far the driver flies",
-        "Upgrade launch power, armor and spin to clear bigger lanes"
+        "Step up to the plate as robots are pitched",
+        "Time your swing to launch them for distance",
+        "Collect bolts scattered along the landing zone",
+        "Spend bolts on bats and swing power to reach farther zones"
       ],
-      "twist": "Every lane has a bonus pin that only breaks if the driver hits it after being thrown from the car, so a perfect crash scores more than a perfect strike.",
+      "twist": "Some robots grab the bat on the way past, so you have to swing early or late to shake them off, and those ones drop rare cores.",
       "monetization": [
-        "2x cash pass",
-        "Auto-launch pass",
-        "VIP garage with exclusive cars"
+        "2x bolts pass",
+        "Auto-swing pass",
+        "VIP golden bat"
       ],
       "retention": [
-        "Car collection with rare paint jobs",
-        "Daily lane challenge",
-        "Weekly strike leaderboard"
+        "Bat collection",
+        "Farthest-hit leaderboard",
+        "Daily rare robot pitch"
       ],
-      "why_now": "Hit / swing / launch sits at 2.16 momentum (+0.22 this week) with Ragdoll Reality 🩸 (25.7K CCU, 13 days old) and Cat Battles 🐾 (17.7K). Physics Sim rose 0.54 to 2.03, and Vehicles is up 0.51 to 1.65 led by [🎃] Bike For Egg! (28.5K) and [🎃] Bike Universe (25.9K).",
+      "why_now": "Hit / swing / launch is at 2.05 momentum (+0.16 this week) with Ragdoll Reality 🩸 (23.6K CCU, 14 days old), [🎃] Throw Food For Animals (21.0K) and Cat Battles 🐾 (13.9K). Robots / mechs jumped +0.80 to 2.17, and the \"___ for ___\" title formula leads all formulas at 3.26.",
       "inspired_by": [
         "Ragdoll Reality 🩸",
-        "Cat Battles 🐾",
-        "[🎃] Bike Universe"
+        "[🎃] Throw Food For Animals",
+        "Steel Fighters"
       ],
-      "differentiator": "Ragdoll games are sandboxes and car games are about driving; this turns the crash into a scored bowling shot with a clear goal and upgrade path.",
-      "art_style": "low_poly",
-      "map_style": "linear_course"
+      "differentiator": "Launch games throw food or objects; here the target is a robot that fights back mid-swing, which adds timing to a one-button loop.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
     },
     {
-      "title": "+1 Egg Size Per Roll",
+      "title": "1 Mech vs Everyone",
+      "scope": "large",
+      "genre": "Party & Casual",
+      "mechanics": [
+        "Party / minigames",
+        "Fight / battle"
+      ],
+      "theme": "Robots / mechs",
+      "hook": "Each round one random player pilots a giant mech and everyone else has to survive a short minigame on its map: hide, sabotage its legs, or race it to the exit.",
+      "core_loop": [
+        "Join the lobby and get picked as pilot or runner",
+        "Play a 2-minute round on one of the rotating maps",
+        "Runners earn coins for surviving, the pilot earns for catches",
+        "Unlock mech skins and runner gadgets between rounds"
+      ],
+      "twist": "Runners can climb onto the mech and unscrew panels; if enough panels come off, the mech collapses and the runners win the round.",
+      "monetization": [
+        "Pilot chance boost pass",
+        "VIP lobby with skin preview",
+        "2x coins pass"
+      ],
+      "retention": [
+        "New map each week",
+        "Mech skin collection",
+        "Season leaderboard for pilots and runners"
+      ],
+      "why_now": "Party / minigames rose +0.24 to 1.18 with 🎃 [HALLOWEEN] Hunting Together RPG (4.6K CCU) and 1v1 Minigame Duel (1.0K), and Party + Robots is an open gap (score 2.87). Robots / mechs is the top theme mover at 2.17 (+0.80) behind Steel Fighters (14.2K).",
+      "inspired_by": [
+        "🎃 [HALLOWEEN] Hunting Together RPG",
+        "1v1 Minigame Duel",
+        "Steel Fighters"
+      ],
+      "differentiator": "Asymmetric round games use a monster or killer; a pilotable mech that runners can take apart gives both sides a goal.",
+      "art_style": "low_poly",
+      "map_style": "lobby_rounds"
+    },
+    {
+      "title": "Sort Coins for Rares",
       "scope": "small",
       "genre": "Simulation · Incremental Simulator",
       "mechanics": [
-        "+1 stat per action",
-        "Obby / climb / jump",
-        "Hatch / gacha"
+        "Collect / index",
+        "Merge / fuse"
       ],
-      "theme": "Eggs",
-      "hook": "Roll an egg down a long course. Every roll makes it +1 bigger, and the bigger it is when you reach a nest, the rarer the pet that hatches.",
+      "theme": "Money / rich",
+      "hook": "Buckets of loose change pour onto your sorting table. Drag coins into the right slots fast, and spot the rare misprints and gold coins hidden in the pile for your collection book.",
       "core_loop": [
-        "Push your egg along the stage course",
-        "Gain +1 size every roll and dodge cracks and spikes",
-        "Drop it in a nest at a checkpoint to hatch a pet",
-        "Pets boost size per roll so you reach farther stages"
+        "Tip a bucket of coins onto the table",
+        "Sort them into slots before the timer runs out for cash",
+        "Pull rare coins into your coin book as you spot them",
+        "Buy bigger buckets from richer places (piggy bank, fountain, casino vault)"
       ],
-      "twist": "A huge egg rolls faster but cracks on hard hits, so players choose between cashing in early at a safe nest or risking it for the giant nest at the end.",
+      "twist": "Stack 5 of the same coin and they merge into the next coin up, so you choose between selling fast and building a rarer coin.",
       "monetization": [
-        "2x size pass",
-        "Crack shield pass",
-        "Lucky hatch pass"
+        "2x luck pass for rare coins",
+        "Auto-sort pass",
+        "Bigger bucket pass"
       ],
       "retention": [
-        "Pet index with shiny variants",
-        "Rebirth for permanent size multipliers",
-        "Limited event eggs"
+        "Coin book index with sets",
+        "Daily vault bucket",
+        "Rare coin trading"
       ],
-      "why_now": "+1 stat per action climbed 0.53 this week to 2.22 ([🎃] +1 Stone Skipping 14.1K, [🎃] +1 Venom Evolution 11.8K), and \"+1 ___\" titles are at 2.47 (+0.64). Eggs is steady at 1.32 across 46 new games, led by Break and Steal an Egg (133K) and [🎃]Climb For Animals Eggs🥚 (39.9K). Linear courses sit at 1.94.",
+      "why_now": "Money / rich is at 2.04 momentum (+0.26 this week) with [🎃]Climb For Animals Eggs🥚 (32.8K CCU) and +1 Money Per Click 💸 (8.9K). Collect / index sits at 1.8 (-0.17) behind Break and Steal an Egg (112.6K) and [🎃] Eat Everything In A Grocery Store (7.2K).",
       "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "[🎃]Climb For Animals Eggs🥚",
-        "Break and Steal an Egg"
+        "+1 Money Per Click 💸",
+        "Break and Steal an Egg",
+        "[🎃] Eat Everything In A Grocery Store"
       ],
-      "differentiator": "Egg games mostly break or steal eggs; here the egg itself is your growing stat and your risk, which suits short sessions.",
+      "differentiator": "Money games click for cash; this turns money into the collectible itself, with a coin book to fill and a skill-based sort.",
       "art_style": "simulator_bright",
-      "map_style": "linear_course"
+      "map_style": "zone_progression"
     },
     {
-      "title": "Fix Satellites for Cash",
+      "title": "+1 Tire Size Per Jump",
+      "scope": "medium",
+      "genre": "Simulation · Vehicle Sim",
+      "mechanics": [
+        "+1 stat per action",
+        "Obby / climb / jump",
+        "Race / drive"
+      ],
+      "theme": "Vehicles",
+      "hook": "Drive a tiny truck off ramps. Every jump gives your tires +1 size, and bigger tires let you roll over cars, buses and eventually whole buildings.",
+      "core_loop": [
+        "Hit ramps on the course to gain +1 tire size",
+        "Roll over obstacles that block smaller trucks",
+        "Reach a new zone gate once your tires are big enough",
+        "Rebirth for a tire multiplier and a new truck body"
+      ],
+      "twist": "Tires that get too big for a tunnel get stuck, so some shortcuts need you to deflate on purpose.",
+      "monetization": [
+        "2x tire growth pass",
+        "Auto-jump pass",
+        "VIP monster truck bodies"
+      ],
+      "retention": [
+        "Truck body collection",
+        "Rebirth tiers",
+        "Biggest tire leaderboard"
+      ],
+      "why_now": "\"+1 ___\" titles climbed +0.47 to 2.46 and +1 stat per action is up +0.35 to 2.21 ([🎃] +1 Stone Skipping 13.9K, [🎃] +1 Venom Evolution 13.7K). Vehicles rose +0.45 to 1.60 with [🎃] Bike For Egg! (25.9K) and [🎃] Bike Universe (25.4K).",
+      "inspired_by": [
+        "[🎃] +1 Stone Skipping",
+        "[🎃] Bike For Egg!",
+        "[🎃] Bike Universe"
+      ],
+      "differentiator": "+1 games grow the player; here the vehicle grows, which changes what you can drive over in each zone.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "Gatekeeper [Anomaly] 🏰",
+      "scope": "small",
+      "genre": "Horror · Story",
+      "mechanics": [
+        "Job / shift",
+        "Quiz / guess"
+      ],
+      "theme": "Fantasy / medieval",
+      "hook": "You guard the only gate into the castle town. Check every traveller's papers, look for the monster in disguise, and decide who gets in before night falls.",
+      "core_loop": [
+        "Inspect each traveller: face, papers, cart",
+        "Spot what's wrong (extra fingers, wrong seal, glowing eyes)",
+        "Let them in or turn them away",
+        "Survive the night with whoever you let inside"
+      ],
+      "twist": "Some anomalies only show under a torch, and torches burn down, so you have to choose who gets the light.",
+      "monetization": [
+        "VIP lantern that lasts longer",
+        "Extra life pass",
+        "Cosmetic guard armor"
+      ],
+      "retention": [
+        "New anomalies each week",
+        "Night streak counter",
+        "Anomaly book to complete"
+      ],
+      "why_now": "Job / shift is steady at 1.07 (+0.01) with Save the Krusty Krab 🍔 (10.1K CCU) and Aisles Of The Locust (7.6K), and anomaly shifts lead new games: 🎃 Sell Fries! [Anomaly] 🍟 (34.6K) and Clone Baby Care (Anomaly) (9.4K). Fantasy / medieval is up +0.17 to 1.49.",
+      "inspired_by": [
+        "🎃 Sell Fries! [Anomaly] 🍟",
+        "Clone Baby Care (Anomaly)",
+        "Save the Krusty Krab 🍔"
+      ],
+      "differentiator": "Anomaly games are set in modern shops; a castle gate with medieval monsters is an unused setting for the same proven format.",
+      "art_style": "dark_gritty",
+      "map_style": "interior"
+    },
+    {
+      "title": "Paint Shields for Knights",
+      "scope": "small",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "Paint / create",
+        "Sell / run a shop"
+      ],
+      "theme": "Fantasy / medieval",
+      "hook": "Knights line up at your workshop wanting a crest on their shield. Paint the design they ask for, get paid by how close you get, then watch your shields fight in the tournament.",
+      "core_loop": [
+        "Read the knight's request (lion, dragon, two colours)",
+        "Paint the shield with brushes and stencils",
+        "Get paid by match score and tips",
+        "Unlock new paints, stencils and richer noble customers"
+      ],
+      "twist": "Shields you painted show up in the castle tournament, and if a knight carrying your shield wins, every player who painted for him gets a bonus.",
+      "monetization": [
+        "2x gold pass",
+        "Premium stencil pack",
+        "VIP royal customers"
+      ],
+      "retention": [
+        "Stencil collection",
+        "Daily royal commission",
+        "Weekly tournament payout"
+      ],
+      "why_now": "Paint / create is at 2.21 (+0.13) with [🎃] Kukirin Life [Testing] (21.2K CCU) and [✍️]DRAW SPELLS MAGIC ARENA (2.0K, new). Fantasy / medieval rose +0.17 to 1.49 with [🎃] Candy Kingdom Defense (5.0K) and Pixel Lineage (3.3K).",
+      "inspired_by": [
+        "[✍️]DRAW SPELLS MAGIC ARENA",
+        "[🎃] Kukirin Life [Testing]",
+        "[🎃] Candy Kingdom Defense"
+      ],
+      "differentiator": "Paint games pay for any picture; here customers want a specific crest, and your work keeps earning through the tournament.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Hero Hotline 📞",
       "scope": "medium",
       "genre": "Simulation",
       "mechanics": [
         "Job / shift",
-        "Forge / craft",
         "Collect / index"
-      ],
-      "theme": "Space",
-      "hook": "Work shifts as an orbit repair crew. Spacewalk to broken satellites, patch them before they drift into Earth's shadow, and get paid by the job.",
-      "core_loop": [
-        "Take a repair ticket from the station board",
-        "Jetpack out and find the broken parts",
-        "Patch panels and swap parts in a quick repair minigame",
-        "Spend pay on better tools, jetpacks and a bigger crew shuttle"
-      ],
-      "twist": "Space junk flies through each orbit on a timer, so crews must call warnings and shield each other while one player repairs.",
-      "monetization": [
-        "2x pay pass",
-        "VIP shuttle with a faster jetpack",
-        "Auto-repair drone"
-      ],
-      "retention": [
-        "Satellite logbook to complete",
-        "Daily emergency repair with bonus pay",
-        "Limited event orbits (meteor shower week)"
-      ],
-      "why_now": "Job / shift holds 1.19 across 24 new games and edged up 0.13 this week (Save the Krusty Krab 🍔 12.5K, [UPD] Firefighting Sim 🚒 7.8K). Space rose 0.33 to 1.42 with [🚀 SPACE] roll the world 🌎 (4.4K) and [W2] +1 Slinky Escape (3.8K).",
-      "inspired_by": [
-        "Save the Krusty Krab 🍔",
-        "[UPD] Firefighting Sim 🚒",
-        "[🚀 SPACE] roll the world 🌎"
-      ],
-      "differentiator": "Job games are set in kitchens, shops and towns; zero gravity and a co-op repair crew make the shift feel new.",
-      "art_style": "stylized",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Net Comets for Pets",
-      "scope": "medium",
-      "genre": "Simulation",
-      "mechanics": [
-        "Collect / index",
-        "Hit / swing / launch",
-        "Hatch / gacha"
-      ],
-      "theme": "Space",
-      "hook": "Stand on a floating asteroid and swing a giant net at the comets streaking past. Every comet you catch cracks open into a space pet for your index.",
-      "core_loop": [
-        "Watch the sky for comets and time your swing",
-        "Catch comets of different colours and speeds",
-        "Crack them open at your base to hatch space pets",
-        "Use pets to unlock new orbits with rarer comets"
-      ],
-      "twist": "Comet showers hit the whole server at once, and rare comets split in two when netted, so the players nearby get the second half.",
-      "monetization": [
-        "Luck pass",
-        "Bigger net pass",
-        "VIP orbit"
-      ],
-      "retention": [
-        "Space pet index with secret pets",
-        "Timed comet showers",
-        "Weekly rarest-catch board"
-      ],
-      "why_now": "Collect / index sits at 1.96 across 34 new games ([🎃] Bike For Egg! 28.5K, [🎃] Eat Everything In A Grocery Store 8.3K), and Collect plus Hatch is the top pair (16 new games, 196K CCU). Space is up 0.33 to 1.42. Hit / swing / launch adds the swing at 2.16 (+0.22).",
-      "inspired_by": [
-        "[🎃] Bike For Egg!",
-        "[🎃] Throw Food For Animals",
-        "[W2] +1 Slinky Escape"
-      ],
-      "differentiator": "Index games make you walk to things; here the rare items fly past and you need timing to catch them, with shared server events.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Launch Snowmen for Gems",
-      "scope": "small",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "Hit / swing / launch",
-        "+1 stat per action",
-        "Collect / index"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "Build a snowman, then whack it off a cliff with a giant bat. The farther it flies over the frozen valley, the more gems you find where it lands.",
-      "core_loop": [
-        "Roll snow to build your snowman",
-        "Swing to launch it over the valley",
-        "Collect gems and ice crystals where it lands",
-        "Gain +1 swing power every launch and upgrade your bat"
-      ],
-      "twist": "Snowmen get hats and carrots that change how they fly: a top hat glides, a bucket spins, a scarf catches the wind.",
-      "monetization": [
-        "2x gems pass",
-        "Auto-swing pass",
-        "Golden bat"
-      ],
-      "retention": [
-        "Snowman part index",
-        "Daily wind direction bonus",
-        "Weekly distance leaderboard"
-      ],
-      "why_now": "Hit / swing / launch is at 2.16 (+0.22 this week) and the Hit plus +1 stat pair has 2 new games with 23.5K CCU ([🎃] +1 Stone Skipping 14.1K, [🎃] Throw Food For Animals). Ice / fire / elements is at 1.27 across 10 new games ([UPD] Firefighting Sim 🚒 7.8K, Free Fire Zone (Max) 4.3K).",
-      "inspired_by": [
-        "[🎃] +1 Stone Skipping",
-        "[🎃] Throw Food For Animals",
-        "Ragdoll Reality 🩸"
-      ],
-      "differentiator": "Launch games throw stones, food or people; a snowman you build yourself gives each launch a different flight and a reason to collect parts.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Race Snowmobiles for Cash",
-      "scope": "medium",
-      "genre": "Sports & Racing · Racing",
-      "mechanics": [
-        "Race / drive",
-        "Obby / climb / jump",
-        "Tycoon / base building"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "Race snowmobiles down frozen mountain stages while avalanches chase you. Win cash to tune your ride and unlock steeper peaks.",
-      "core_loop": [
-        "Pick a stage and line up with other riders",
-        "Race down, jump crevasses and dodge the avalanche",
-        "Win cash by place and stunts",
-        "Upgrade engine, skis and boost at your cabin garage"
-      ],
-      "twist": "The ice cracks under heavy riders, so whoever leads changes the track for everyone behind them.",
-      "monetization": [
-        "VIP snowmobile",
-        "2x cash pass",
-        "Extra boost slot"
-      ],
-      "retention": [
-        "Snowmobile collection with rare skins",
-        "Daily stage record",
-        "Weekly peak tournaments"
-      ],
-      "why_now": "Race / drive is at 1.07 across 30 new games (Backseat Rally 18.3K, [🎃] Turbo Soccer : Beta 1.0 5.6K), Racing is at 1.5, and linear courses lead map styles at 1.94. Ice / fire / elements holds 1.27.",
-      "inspired_by": [
-        "Backseat Rally",
-        "[ANOMALY RALLY] WRONG WAY!",
-        "[DUELS] Rally Panic!"
-      ],
-      "differentiator": "New racing games stay on roads and rally tracks; a falling mountain with breakable ice adds a chase and a reason to race again.",
-      "art_style": "stylized",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Balance Eggs for Pets",
-      "scope": "medium",
-      "genre": "Party & Casual",
-      "mechanics": [
-        "Party / minigames",
-        "Hatch / gacha",
-        "Obby / climb / jump"
-      ],
-      "theme": "Eggs",
-      "hook": "Quick party rounds where everyone carries an egg on a spoon. Race, dodge and shove through each minigame without dropping it, and the eggs that survive hatch.",
-      "core_loop": [
-        "Join a lobby and get a spoon and egg",
-        "Play short rounds: races, see-saws, windy bridges",
-        "Keep your egg intact to earn a hatch at the end",
-        "Rare pets give better spoons and grip"
-      ],
-      "twist": "You can bump other players to make them drop their eggs, but a cracked egg drops a bonus yolk anyone can grab.",
-      "monetization": [
-        "2x hatch luck",
-        "VIP spoon skins",
-        "Extra egg slot pass"
-      ],
-      "retention": [
-        "Pet index with secret pets",
-        "Daily featured minigame",
-        "Seasonal event eggs"
-      ],
-      "why_now": "Party / minigames climbed 0.28 this week to 1.2 (🎃 [HALLOWEEN] Hunting Together RPG 4.8K, 1v1 Minigame Duel 1.9K), and Party plus Eggs is an open gap (score 4.02). Eggs holds 1.32 across 46 new games, led by Break and Steal an Egg (133K).",
-      "inspired_by": [
-        "1v1 Minigame Duel",
-        "Break and Steal an Egg",
-        "[🎃]Climb For Animals Eggs🥚"
-      ],
-      "differentiator": "Egg games are solo grinds or steal games; this turns eggs into a party round where friends can cause the drop.",
-      "art_style": "simulator_bright",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Tryout for Powers",
-      "scope": "large",
-      "genre": "Party & Casual",
-      "mechanics": [
-        "Party / minigames",
-        "+1 stat per action",
-        "Fight / battle"
       ],
       "theme": "Superheroes / powers",
-      "hook": "A hero academy runs tryouts in short rounds: lift a bus, outrun a train, catch falling citizens. Top scores pick a new power first.",
+      "hook": "You run the phones at a superhero agency. Calls come in (cat on a roof, giant robot downtown) and you pick which hero to send before the city map turns red.",
       "core_loop": [
-        "Queue for a tryout lobby",
-        "Play 5 quick power tests against other recruits",
-        "Earn power points and +1 stat for every test",
-        "Unlock and level powers to rank up through the academy"
+        "Answer emergency calls on the city map",
+        "Send the hero whose power fits the job",
+        "Earn cash and fame for every saved call",
+        "Recruit new heroes for your roster and upgrade the agency"
       ],
-      "twist": "The power you pick changes the next tryout for everyone, so a speedster round plays differently from a strongman round.",
+      "twist": "Heroes get tired and grumpy, so the best hero is not always free, and sending the wrong one can turn a small call into a bigger disaster.",
       "monetization": [
-        "VIP academy dorm",
-        "2x power points",
-        "Power reroll"
+        "2x fame pass",
+        "Extra hero slot pass",
+        "VIP legendary hero recruit"
       ],
       "retention": [
-        "Power index",
-        "Weekly academy rank",
-        "Limited villain-invasion rounds"
+        "Hero roster index",
+        "Daily city crisis",
+        "Agency rank leaderboard"
       ],
-      "why_now": "Superheroes / powers rose 0.21 to 1.51 ([🎃] Candy Kingdom Defense 6.8K, Superhero Arena 6.7K), and Party / minigames is up 0.28 to 1.2. Party plus Superheroes is an open gap (score 2.3), and +1 stat per action sits at 2.22.",
+      "why_now": "Superheroes / powers is up +0.18 to 1.47 with Superhero Arena (8.8K CCU) and [🎃] Candy Kingdom Defense (5.0K). Job / shift holds 1.07 (+0.01) with high confidence, led by Save the Krusty Krab 🍔 (10.1K) and [UPD] Firefighting Sim 🚒 (8.3K).",
       "inspired_by": [
         "Superhero Arena",
-        "1v1 Minigame Duel",
-        "[🎃] Candy Kingdom Defense"
+        "[UPD] Firefighting Sim 🚒",
+        "Save the Krusty Krab 🍔"
       ],
-      "differentiator": "Hero games are fights or sims; this gives heroes a minigame show where losing a round still levels you up.",
+      "differentiator": "Hero games let you be the hero; here you manage a roster of them, which turns powers into a matching puzzle.",
       "art_style": "stylized",
-      "map_style": "lobby_rounds"
+      "map_style": "interior"
     },
     {
-      "title": "Race Brooms for Gold",
-      "scope": "large",
-      "genre": "Sports & Racing · Racing",
+      "title": "Sell Snacks to Aliens",
+      "scope": "medium",
+      "genre": "Simulation · Tycoon",
       "mechanics": [
-        "Race / drive",
-        "Obby / climb / jump",
-        "Collect / index"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "Race witches' brooms through a floating castle course. Fly through rune rings, cast tricks on rivals and win gold to craft faster brooms.",
-      "core_loop": [
-        "Pick your broom and join a race",
-        "Fly the course through rings and shortcuts",
-        "Cast one spell per lap to slow or swap places with rivals",
-        "Craft and collect brooms with the gold you win"
-      ],
-      "twist": "Some rings only open for the player in last place, so a bad start can turn into a comeback.",
-      "monetization": [
-        "VIP broom",
-        "2x gold pass",
-        "Extra spell slot"
-      ],
-      "retention": [
-        "Broom collection",
-        "Weekly league with promotion",
-        "Limited event tracks"
-      ],
-      "why_now": "Fantasy / medieval rose 0.51 this week to 1.44 ([🎃] Candy Kingdom Defense 6.8K, Pixel Lineage [🎃Spear Class + Dragon Race] 4.2K, [✍️]DRAW SPELLS MAGIC ARENA 2.3K). Race / drive holds 1.07 across 30 new games and linear courses lead at 1.94.",
-      "inspired_by": [
-        "Pixel Lineage [🎃Spear Class + Dragon Race]",
-        "[✍️]DRAW SPELLS MAGIC ARENA",
-        "Backseat Rally"
-      ],
-      "differentiator": "Fantasy games are fights or defense; racing on brooms with comeback rings gives short, replayable rounds.",
-      "art_style": "stylized",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Drive Rovers for Moon Rocks",
-      "scope": "large",
-      "genre": "Simulation · Vehicle Sim",
-      "mechanics": [
-        "Race / drive",
-        "Tycoon / base building",
-        "Collect / index"
+        "Sell / run a shop",
+        "Cook / serve"
       ],
       "theme": "Space",
-      "hook": "Start with a tiny rover on the moon. Drive out to craters, haul back rare rocks and bolt new parts on until your rover is a moving base.",
+      "hook": "Open a snack cart at the edge of a space station. Every alien species wants something odd (slime on toast, frozen soda), and a happy alien pays in rare space coins.",
       "core_loop": [
-        "Drive into craters to find rocks and parts",
-        "Haul them back before your battery runs out",
-        "Sell rocks and build rover parts in your garage",
-        "Unlock farther moons with tougher terrain"
+        "Read the alien's order from their speech bubble",
+        "Build the snack from ingredients on your counter",
+        "Serve it fast for coins and tips",
+        "Upgrade the cart into a full station diner"
       ],
-      "twist": "Your rover is your base: other players can hitch rides, and bigger rovers carry a crew that mines while you drive.",
+      "twist": "Each species reacts to the wrong order differently: one shrinks your cart, one abducts a customer, one leaves a 5-star review anyway.",
       "monetization": [
-        "Battery pass",
-        "VIP rover body",
-        "2x rock value"
+        "Storage pass for more ingredients",
+        "2x coins pass",
+        "VIP alien regulars"
       ],
       "retention": [
-        "Rock and part index",
-        "Daily crater with rare rocks",
-        "Weekly longest-trip board"
+        "Alien species index",
+        "Daily mystery order",
+        "Station rank leaderboard"
       ],
-      "why_now": "Vehicles is up 0.51 to 1.65 ([🎃] Bike For Egg! 28.5K, [🎃] Bike Universe 25.9K) and Vehicle Sim is at 1.41 across 17 new games. Space rose 0.33 to 1.42 ([🚀 SPACE] roll the world 🌎 4.4K).",
+      "why_now": "Sell / run a shop is at 1.90 (+0.10) with 🎃 Sell Fries! [Anomaly] 🍟 (34.6K CCU) and 🧸 My Small Business (12.9K, 10 days old). Space rose +0.42 to 1.41 with [🚀 SPACE] roll the world 🌎 (5.5K).",
       "inspired_by": [
-        "[🎃] Bike Universe",
-        "[🎃] Kukirin Life [Testing]",
+        "🎃 Sell Fries! [Anomaly] 🍟",
+        "🧸 My Small Business",
         "[🚀 SPACE] roll the world 🌎"
       ],
-      "differentiator": "Vehicle games give you a car to drive around a city; here the vehicle grows into your base and the moon terrain is the challenge.",
+      "differentiator": "Shop games serve normal customers; aliens with strange orders and reactions give every serve a surprise.",
       "art_style": "stylized",
-      "map_style": "open_world"
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Catch Lightning for Pets",
+      "scope": "medium",
+      "genre": "Simulation · Incremental Simulator",
+      "mechanics": [
+        "Collect / index",
+        "Hatch / gacha"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "Chase storms with a glass jar. Catch lightning bolts as they strike, and each bottled bolt hatches into an electric pet, with rarer storms giving rarer pets.",
+      "core_loop": [
+        "Follow the storm across the map",
+        "Stand where the bolt lands and catch it in your jar",
+        "Hatch bottled bolts into elemental pets",
+        "Use pets to unlock bigger storms in new zones"
+      ],
+      "twist": "Metal gear makes bolts hit you more often but also fries your jar, so you balance gear for catch rate against how many jars you lose.",
+      "monetization": [
+        "Luck pass for rare storms",
+        "Extra jar slots",
+        "Auto-chase pass"
+      ],
+      "retention": [
+        "Elemental pet index",
+        "Daily super storm",
+        "Pet trading"
+      ],
+      "why_now": "Collect / index is at 1.8 (-0.17) behind Break and Steal an Egg (112.6K CCU) and [🎃] Bike For Egg! (25.9K), and Collect + Hatch is the top mechanic pair (16 new games, 170.6K CCU). Ice / fire / elements holds 1.22 (-0.13) with [UPD] Firefighting Sim 🚒 (8.3K); Disaster / weather (1.44, +0.35, low confidence) adds the storm setting.",
+      "inspired_by": [
+        "Break and Steal an Egg",
+        "[🎃] Bike For Egg!",
+        "[🎃] Steal A Pet And Ride It!"
+      ],
+      "differentiator": "Egg games collect eggs from the ground; catching the egg from a live lightning strike adds a positioning skill to every catch.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
     }
   ]
 }
