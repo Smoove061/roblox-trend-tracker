@@ -1,94 +1,94 @@
-# Market overview — through 2026-10-27
+# Market overview — through 2026-10-28
 
 ## Last 7 days
 
-7 days of data · whole market (same games) -0% · 8,276,585,791 visits · 6 new games launched, holding 0.6% of CCU
+7 days of data · whole market (same games) +1% · 8,185,834,382 visits · 2 new games launched, holding 0.6% of CCU
 
 ### Genres (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Survival | +36% | | Entertainment | -13% |
-| Action | +3% | | RPG | -12% |
-|  |  | | Simulation | -10% |
+| Survival | +30% | | Entertainment | -12% |
+|  |  | | RPG | -10% |
+|  |  | | Puzzle | -8% |
 |  |  | | Party & Casual | -8% |
+|  |  | | Simulation | -7% |
 |  |  | | Shooter | -7% |
-|  |  | | Roleplay & Avatar Sim | -6% |
 
 ### Mechanics (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Shooter | +64% | | +1 stat per action | -30% |
-| Survive | +45% | | Raise / pet care | -20% |
-| Dice / cards | +11% | | Break / mine / dig | -19% |
-| Clicker / tap | +4% | | Hatch / gacha | -16% |
-| Job / shift | +4% | | RNG roll | -14% |
-| Merge / fuse | +3% | | Quiz / guess | -13% |
+| Shooter | +47% | | +1 stat per action | -25% |
+| Survive | +37% | | Break / mine / dig | -18% |
+| Dice / cards | +11% | | RNG roll | -15% |
+| Job / shift | +9% | | Hatch / gacha | -13% |
+| Paint / create | +6% | | Raise / pet care | -13% |
+| Merge / fuse | +3% | | Fishing | -12% |
 
 ### Themes (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Dinosaurs | +37% | | Ancient / pyramids | -35% |
-| Robots / mechs | +34% | | Stones / rocks / ores | -24% |
-| Brainrot | +32% | | Ice / fire / elements | -18% |
-| Anime | +16% | | Eggs | -17% |
-| Zombies | +2% | | Space | -17% |
-|  |  | | Food / candy | -16% |
+| Brainrot | +36% | | Ancient / pyramids | -33% |
+| Dinosaurs | +23% | | Stones / rocks / ores | -21% |
+| Robots / mechs | +22% | | Space | -17% |
+| Anime | +17% | | Food / candy | -17% |
+| Vehicles | +6% | | Ice / fire / elements | -15% |
+|  |  | | Eggs | -14% |
 
 ### New games gaining the most (30 days old or less)
 
-- The Hollow: 0 → 55,818 CCU
-- DONT SPLASH: 0 → 54,697 CCU
-- [🎃] Bike Universe: 0 → 38,794 CCU
-- Ragdoll Reality 🩸: 0 → 23,976 CCU
-- [🎃] +1 Venom Evolution: 0 → 20,066 CCU
-- Backseat Rally: 8,566 → 28,501 CCU
+- DONT SPLASH: 0 → 64,541 CCU
+- The Hollow: 0 → 61,084 CCU
+- Ragdoll Reality 🩸: 0 → 28,567 CCU
+- Clone Baby Care (Anomaly): 0 → 16,600 CCU
+- Backseat Rally: 12,288 → 27,746 CCU
+- [🎃] Fake an Egg: 9,399 → 23,875 CCU
 
 ## Last 30 days
 
-22 days of data · whole market (same games) -5% · 23,858,505,418 visits · 16 new games launched, holding 1.6% of CCU
+23 days of data · whole market (same games) -5% · 24,740,682,096 visits · 18 new games launched, holding 1.8% of CCU
 
 ### Genres (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Survival | +44% | | Education | -27% |
-| Strategy | +5% | | Puzzle | -27% |
-| Shooter | -1% | | Simulation | -20% |
-| Action | -2% | | Party & Casual | -20% |
-| Social | -2% | | Entertainment | -19% |
-|  |  | | RPG | -18% |
+| Survival | +42% | | Puzzle | -27% |
+| Strategy | +6% | | Education | -26% |
+| Shooter | -2% | | Party & Casual | -20% |
+| Social | -2% | | Entertainment | -20% |
+| Action | -2% | | Simulation | -19% |
+| Shopping | -3% | | RPG | -18% |
 
 ### Mechanics (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Shooter | +92% | | Quiz / guess | -38% |
-| Survive | +57% | | +1 stat per action | -34% |
-| Dice / cards | +10% | | Raise / pet care | -28% |
-| Dress / style | +9% | | Hatch / gacha | -26% |
-| Clicker / tap | +9% | | Steal / raid | -25% |
-| Tower defense | +1% | | Party / minigames | -23% |
+| Shooter | +86% | | Quiz / guess | -37% |
+| Survive | +54% | | +1 stat per action | -37% |
+| Dress / style | +9% | | Raise / pet care | -26% |
+| Dice / cards | +9% | | Hatch / gacha | -24% |
+| Clicker / tap | +8% | | Party / minigames | -23% |
+| Tower defense | +0% | | Break / mine / dig | -23% |
 
 ### Themes (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Brainrot | +23% | | Ancient / pyramids | -55% |
-| Anime | +10% | | Eggs | -32% |
+| Brainrot | +28% | | Ancient / pyramids | -56% |
+| Anime | +11% | | Eggs | -30% |
 | Jungle / nature | +6% | | Ice / fire / elements | -30% |
-| School | -3% | | Stones / rocks / ores | -29% |
-|  |  | | Animals | -28% |
-|  |  | | Dinosaurs | -27% |
+|  |  | | Stones / rocks / ores | -30% |
+|  |  | | Dinosaurs | -28% |
+|  |  | | Space | -28% |
 
 ### New games gaining the most (30 days old or less)
 
-- The Hollow: 0 → 55,818 CCU
-- DONT SPLASH: 0 → 54,697 CCU
-- [🎃] Bike Universe: 0 → 38,794 CCU
-- Cat Battles 🐾: 4,764 → 40,566 CCU
-- Backseat Rally: 0 → 28,501 CCU
-- Ragdoll Reality 🩸: 0 → 23,976 CCU
+- DONT SPLASH: 0 → 64,541 CCU
+- The Hollow: 0 → 61,084 CCU
+- Cat Battles 🐾: 4,764 → 37,542 CCU
+- Ragdoll Reality 🩸: 0 → 28,567 CCU
+- Backseat Rally: 0 → 27,746 CCU
+- [🎃] Fake an Egg: 0 → 23,875 CCU
 
