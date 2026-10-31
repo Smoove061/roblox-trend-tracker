@@ -1,396 +1,395 @@
 {
-  "date": "2026-10-30",
-  "ideas": [
-    {
-      "title": "Escape the Giant Vacuum 🧹",
-      "scope": "medium",
-      "genre": "Action · Runner",
-      "mechanics": [
-        "Escape / run",
-        "Collect / index"
-      ],
-      "theme": "Giant / huge",
-      "hook": "You are crumb-sized in a giant's house. Run out of your mousehole, grab crumbs and lost coins off the floor, and get back before the giant robot vacuum sweeps the room.",
-      "core_loop": [
-        "Leave the mousehole into a giant room",
-        "Grab crumbs, coins and lost items (each one makes you slower)",
-        "The vacuum switches on and sweeps toward you; race home to bank your haul",
-        "Spend on speed and pockets, unlock bigger rooms (kitchen, garage, attic)"
-      ],
-      "twist": "The vacuum pulls you backwards, so you can drop loot mid-run to break free. Greed versus speed on every trip.",
-      "monetization": [
-        "2x loot pass (~400 R$)",
-        "Speed sneakers pass",
-        "VIP mouse skins and trails",
-        "Bigger backpack pass"
-      ],
-      "retention": [
-        "New room every week as a limited event",
-        "Lost-items index with rare finds",
-        "Daily 'boss vacuum' run with bonus loot",
-        "Fastest-run leaderboard per room"
-      ],
-      "why_now": "Escape / run jumped 0.70 this week to 1.25 momentum ([🎃] Steal A Pet And Ride It! 40.5K CCU, +1 Spider Arm🕷️ 16.9K), and Giant / huge rose 0.75 to 1.63 (Raise The Biggest Family 21.8K, Durian Garden 🍈 15.2K). Interior maps are at 1.88.",
-      "inspired_by": [
-        "[🎃] Steal A Pet And Ride It!",
-        "Raise The Biggest Family",
-        "[🎃] Eat Everything In A Grocery Store"
-      ],
-      "differentiator": "Most giant games make you the giant. Here you are tiny, the giant house is the hazard, and every pickup slows your escape.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    },
-    {
-      "title": "Outrun the Supernova ☄️",
-      "scope": "small",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "Escape / run",
-        "+1 stat per action"
-      ],
-      "theme": "Space",
-      "hook": "Run laps around tiny round planets while a supernova shockwave chases you. Every lap gives +1 speed; get fast enough and you launch to the next planet before the wave hits.",
-      "core_loop": [
-        "Run around a small planet ahead of the shockwave",
-        "Each lap adds +1 speed",
-        "Hit the launch pad once you pass the speed gate to hop to the next planet",
-        "Collect star shards for trails, then rebirth into a new galaxy"
-      ],
-      "twist": "The planets are round, so a fast runner can lap the shockwave from behind and grab a speed bonus for catching it.",
-      "monetization": [
-        "2x speed per lap (~180 R$)",
-        "Auto-run pass",
-        "Comet trail cosmetics",
-        "Extra shard storage"
-      ],
-      "retention": [
-        "Rebirth into new galaxies",
-        "Offline speed gains",
-        "Codes for trails",
-        "Star-buddy pets that boost laps"
-      ],
-      "why_now": "The \"+1 ___\" formula is at 2.40, up 0.43 this week, and +1 stat per action at 2.26 (+0.41) with +1 Slinky Escape (5.4K) and +1 Spider Arm🕷️ (16.9K). Space rose 0.59 to 1.65 (roll the world 🌎 6.2K) and Escape / run gained 0.70.",
-      "inspired_by": [
-        "+1 Slinky Escape",
-        "roll the world 🌎",
-        "+1 Spider Arm🕷️"
-      ],
-      "differentiator": "+1 speed escapes run in a straight line. Round planets turn the chase into a loop and planet-hopping becomes the progression.",
-      "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Slingshot for Cash 💸",
-      "scope": "small",
-      "genre": "Simulation · Physics Sim",
-      "mechanics": [
-        "Hit / swing / launch",
-        "Collect / index"
-      ],
-      "theme": "Money / rich",
-      "hook": "Load your ragdoll into a giant slingshot and fire it through a bank. Cash sticks to whatever body part hits it, so the wilder you tumble, the more you grab.",
-      "core_loop": [
-        "Pull back and aim the slingshot",
-        "Fly and bounce through rooms of cash stacks, safes and gold bars",
-        "Everything stuck to you banks when you land",
-        "Upgrade slingshot power and sticky suits to reach deeper vaults"
-      ],
-      "twist": "Laser alarms knock cash off you, so you choose between a clean aimed shot and a chaotic tumble through more money.",
-      "monetization": [
-        "2x cash pass (~220 R$)",
-        "Auto-launch pass",
-        "VIP golden ragdoll",
-        "Sticky gloves multiplier"
-      ],
-      "retention": [
-        "Deeper vault floors to unlock",
-        "Daily biggest-haul leaderboard",
-        "Ragdoll suit collection",
-        "Weekly heist event bank"
-      ],
-      "why_now": "Hit / swing / launch climbed 0.50 this week to 2.38 ([🎃] Throw Food For Animals 104.9K CCU, Ragdoll Reality 🩸 34.8K) and Physics Sim rose 0.60 to 2.20 ([🎃] Realistic Ragdoll Engine 🩸 25.2K). Money / rich is at 2.04.",
-      "inspired_by": [
-        "[🎃] Throw Food For Animals",
-        "Ragdoll Reality 🩸",
-        "[🎃] Realistic Ragdoll Engine 🩸"
-      ],
-      "differentiator": "Ragdoll sandboxes have no economy and launch games throw objects. Here you are the projectile and your crash path is your loot.",
-      "art_style": "stylized",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Sell Shoes to Giants 👟",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
-        "Sell / run a shop",
-        "Tycoon / base building"
-      ],
-      "theme": "Giant / huge",
-      "hook": "Run a cobbler shop at the foot of a giants' village. Giants stomp in with ruined boots; stitch, glue and polish shoes bigger than your house, then send them back for giant tips.",
-      "core_loop": [
-        "Take a giant's order at the shop window",
-        "Climb the shoe and fix it: stitch holes, glue the sole, polish",
-        "Hand it back and collect the tip",
-        "Expand the shop with cranes, sewing machines and NPC workers"
-      ],
-      "twist": "Each giant has a mood. Rush a job and they stomp in anger, shaking the shop and knocking your tools around.",
-      "monetization": [
-        "2x tips pass (~200 R$)",
-        "Fast-stitch speed pass",
-        "VIP rare giant customers",
-        "Extra workbench slot"
-      ],
-      "retention": [
-        "New giant species each week",
-        "Shoe style index",
-        "Offline income from workers",
-        "Co-op shop with friends"
-      ],
-      "why_now": "Sell / run a shop is at 1.80 (down 0.26 but still high confidence: 🎃 Sell Fries! [Anomaly] 🍟 36.5K CCU, 🧸 My Small Business 29.5K). Giant / huge jumped 0.75 to 1.63 (Raise The Biggest Family 21.8K).",
-      "inspired_by": [
-        "🧸 My Small Business",
-        "🎃 Sell Fries! [Anomaly] 🍟",
-        "Raise The Biggest Family"
-      ],
-      "differentiator": "Shop games sell normal-sized goods. Here each order is a climbable giant object, so the work itself is a mini obby.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Rent Scooters for Cash 🛴",
-      "scope": "medium",
-      "genre": "Sports & Racing · Vehicle Sim",
-      "mechanics": [
-        "Sell / run a shop",
-        "Race / drive"
-      ],
-      "theme": "Vehicles",
-      "hook": "Run an e-scooter rental across a city. Place docks at hotspots, earn fares from riders, and ride out yourself to rescue scooters dumped on rooftops, in rivers and down alleys.",
-      "core_loop": [
-        "Buy scooters and place docks around the city",
-        "NPC riders rent and pay per minute",
-        "Track and ride back abandoned scooters before their battery dies",
-        "Upgrade batteries, docks and fleet size to unlock new districts"
-      ],
-      "twist": "Rival players run fleets on the same server and compete for the best hotspots during rush hour.",
-      "monetization": [
-        "2x fares pass (~200 R$)",
-        "Fast-charge pass",
-        "VIP gold scooter skins",
-        "Extra dock slots"
-      ],
-      "retention": [
-        "New districts to unlock",
-        "Daily rush-hour events",
-        "Scooter model index",
-        "Biggest-fleet leaderboard"
-      ],
-      "why_now": "Vehicle Sim is at 1.56 ([🎃] Bike Universe 33.4K CCU, [🎃] Kukirin Life [Testing] 26.6K) and Vehicles at 1.52. Realistic art is rising at 1.73 and Sell / run a shop holds 1.80 (🧸 My Small Business 29.5K).",
-      "inspired_by": [
-        "[🎃] Kukirin Life [Testing]",
-        "[🎃] Bike Universe",
-        "🧸 My Small Business"
-      ],
-      "differentiator": "Scooter games are about riding. Here you own the fleet, and riding is how you recover it and grow the business.",
-      "art_style": "realistic",
-      "map_style": "open_world"
-    },
-    {
-      "title": "+1 Reach Per Save ⚽",
-      "scope": "small",
-      "genre": "Simulation · Incremental Simulator",
-      "mechanics": [
-        "+1 stat per action",
-        "Hit / swing / launch"
-      ],
-      "theme": "Sports",
-      "hook": "Be a ragdoll goalkeeper. Every shot you block gives +1 arm reach, until your stretchy arms cover the whole goal and the shooters switch to fireballs, rockets and buses.",
-      "core_loop": [
-        "Dive to block shots",
-        "Each save adds +1 arm reach",
-        "Shooter waves escalate from balls to fireballs to cars",
-        "Rebirth for wider goals and new stadiums"
-      ],
-      "twist": "Long arms flop with ragdoll physics, so more reach also means wilder dives. Buy grip upgrades to control them.",
-      "monetization": [
-        "2x reach per save (~180 R$)",
-        "Auto-dive pass",
-        "Glove and kit cosmetics",
-        "Faster dive pass"
-      ],
-      "retention": [
-        "Rebirth stadiums",
-        "Offline reach gains",
-        "Codes for gloves",
-        "Longest-arms leaderboard; friends can play the shooter"
-      ],
-      "why_now": "The \"+1 ___\" formula is at 2.40 (+0.43) with +1 Spider Arm🕷️ (16.9K CCU) already selling stretchy arms, and Hit / swing / launch rose 0.50 to 2.38. Soccer hit games like Illegal Soccer pull 32.5K.",
-      "inspired_by": [
-        "+1 Spider Arm🕷️",
-        "Illegal Soccer",
-        "Ragdoll Reality 🩸"
-      ],
-      "differentiator": "Soccer games are about scoring. This flips you into the keeper, and your growing arms are the stat players watch climb.",
-      "art_style": "stylized",
-      "map_style": "arena"
-    },
-    {
-      "title": "Zamboni Art 🧊",
-      "scope": "medium",
-      "genre": "Party & Casual",
-      "mechanics": [
-        "Paint / create",
-        "Race / drive"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "Drive a zamboni across frozen lakes to carve giant pictures into the ice. A blimp crowd overhead rates each drawing and pays you; better machines carve thicker, glowing lines.",
-      "core_loop": [
-        "Get a prompt (a fish, a heart, a rocket)",
-        "Drive the zamboni to carve the shape",
-        "The blimp crowd rates it from above and pays out",
-        "Upgrade blades, ice colours and unlock bigger lakes"
-      ],
-      "twist": "Thin ice cracks if you cross your own line too often, so every picture is a one-line route puzzle.",
-      "monetization": [
-        "2x rating cash (~110 R$)",
-        "VIP rainbow ice colours",
-        "Extra blade widths",
-        "Turbo zamboni pass"
-      ],
-      "retention": [
-        "Daily prompt contest",
-        "Player-voted gallery of best carvings",
-        "New lakes, ending with a lava lake",
-        "Seasonal prompts"
-      ],
-      "why_now": "Paint / create holds 2.13 with high confidence, led by vehicle-creation games (Backseat Rally 26.8K CCU, [🎃] Kukirin Life [Testing] 26.6K, Paint and Hide! 🎨 14.0K). Paint / create × Ice / fire is an open gap (score 4.67) and Ice / fire sits at 1.37.",
-      "inspired_by": [
-        "Backseat Rally",
-        "Paint and Hide! 🎨",
-        "Firefighting Sim 🚒"
-      ],
-      "differentiator": "Drawing games use a cursor. Here the vehicle is the pen, so driving skill and drawing skill are the same thing.",
-      "art_style": "simulator_bright",
-      "map_style": "zone_progression"
-    },
-    {
-      "title": "Draw Your Ride 🚗",
-      "scope": "medium",
-      "genre": "Simulation · Physics Sim",
-      "mechanics": [
-        "Paint / create",
-        "Race / drive"
-      ],
-      "theme": "Vehicles",
-      "hook": "Draw any vehicle shape with your mouse, from wheels and body to wings, and it spawns as a physics car. Race it down crazy hills and see if your doodle survives.",
-      "core_loop": [
-        "Draw a vehicle with limited ink",
-        "It spawns as a physics car at the top of the hill",
-        "Distance and finish time pay out",
-        "Unlock ink types, longer ink and harder courses"
-      ],
-      "twist": "Ink changes physics: rubber ink bounces, metal ink is heavy and smashes walls, rocket ink thrusts.",
-      "monetization": [
-        "2x cash pass (~110 R$)",
-        "VIP gold ink",
-        "Extra ink length",
-        "Rocket ink pass"
-      ],
-      "retention": [
-        "Daily course",
-        "Player-voted ride gallery",
-        "Ink collection index",
-        "Course leaderboards"
-      ],
-      "why_now": "Paint / create is at 2.13 and Physics Sim rose 0.60 this week to 2.20 (Ragdoll Reality 🩸 34.8K CCU, Crazy Diver 12.9K). Crash games like Realistic Car Destruction (12.3K) show vehicle chaos is pulling players.",
-      "inspired_by": [
-        "Realistic Car Destruction",
-        "Backseat Rally",
-        "Crazy Diver"
-      ],
-      "differentiator": "Car games give you cars to buy. Here you invent the car, so every crash is a funny one-off.",
-      "art_style": "stylized",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Mush Huskies for Gold 🛷",
-      "scope": "large",
-      "genre": "Sports & Racing · Vehicle Sim",
-      "mechanics": [
-        "Race / drive",
-        "Collect / index",
-        "Raise / pet care"
-      ],
-      "theme": "Animals",
-      "hook": "Raise a team of sled dogs, hitch them up and race across frozen trails for gold. Every husky has its own speed, stamina and personality, and you breed toward the perfect team.",
-      "core_loop": [
-        "Adopt and train pups",
-        "Pick a team order and hitch them to your sled",
-        "Race trails against other players for gold",
-        "Buy better sleds and breed rarer dogs for the index"
-      ],
-      "twist": "Team order matters: put a lazy dog up front and the team tangles mid-race.",
-      "monetization": [
-        "VIP musher pass",
-        "2x gold pass",
-        "Extra kennel slots",
-        "Rare pup pass (~299 R$)"
-      ],
-      "retention": [
-        "Husky breed index",
-        "Weekly race tournament",
-        "Breeding for rare coats",
-        "Seasonal trails"
-      ],
-      "why_now": "The \"___ for ___\" formula is still the top title pattern at 2.78, though it cooled 0.59 this week ([🎃] Bike For Egg! 31.7K CCU, Hike For Eggs 7.9K). Race / drive is steady at 1.13 and Vehicle Sim at 1.56 ([🎃] Bike Universe 33.4K).",
-      "inspired_by": [
-        "[🎃] Bike For Egg!",
-        "[🎃] Bike Universe",
-        "[🎃] Steal A Pet And Ride It!"
-      ],
-      "differentiator": "Pet games stop at collecting and racing games use machines. Here the pets are the engine, and team building decides the race.",
-      "art_style": "stylized",
-      "map_style": "open_world"
-    },
-    {
-      "title": "Build a Ship in a Bottle 🍾",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
-        "Paint / create",
-        "Sell / run a shop"
-      ],
-      "theme": "Ocean / pirates",
-      "hook": "Use tweezers to build tiny pirate ships inside glass bottles. Every finished bottle goes on your shop shelf, and rare ships sell to collectors for a fortune.",
-      "core_loop": [
-        "Pick a bottle and a ship kit",
-        "Slide masts, sails and cannons through the neck with tweezers",
-        "Pull the string to raise the sails, then shelve it",
-        "Sell to collectors and unlock bigger bottles, up to whole islands"
-      ],
-      "twist": "A storm event shakes the shop, and ships with sloppy glue collapse inside their bottles.",
-      "monetization": [
-        "2x sale price pass (~110 R$)",
-        "VIP golden bottles",
-        "Steady-hands pass",
-        "Extra shelf space"
-      ],
-      "retention": [
-        "Ship kit index",
-        "Daily collector requests",
-        "Friends can visit and like your shelf",
-        "Seasonal kits"
-      ],
-      "why_now": "Paint / create holds 2.13 and Sell / run a shop 1.80 (🧸 My Small Business 29.5K CCU). Tactile craft-and-sell newcomers like Make Rugs! and Dressmaker's Dream show the same cozy hands-on style, and interior maps sit at 1.88.",
-      "inspired_by": [
-        "🧸 My Small Business",
-        "Make Rugs!",
-        "Dressmaker's Dream"
-      ],
-      "differentiator": "Craft games make normal-sized goods. This is a precision build in a tiny space, with a big collector payoff.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    }
-  ]
+ "date": "2026-10-31",
+ "ideas": [
+  {
+   "title": "+1 Stealth Per Step 🔦",
+   "scope": "medium",
+   "genre": "Action · Escape",
+   "mechanics": [
+    "Escape / run",
+    "+1 stat per action"
+   ],
+   "theme": "Prison / police",
+   "hook": "Every step you take in the prison yard gives +1 Stealth. Stealth shrinks the guards' flashlight cones, so the more you sneak, the further you can push toward the outer wall before a light catches you.",
+   "core_loop": [
+    "Sneak out of your cell block; each step adds +1 Stealth",
+    "Slip past searchlights and patrolling guards toward the next fence",
+    "Get spotted and you're dragged back to the cell, keeping your Stealth",
+    "Rebirth after each wall you clear for a stealth multiplier and a new, bigger prison"
+   ],
+   "twist": "Stealth is also your speed limit: sprinting drains it, so you choose between slow and invisible or fast and loud.",
+   "monetization": [
+    "2x Stealth pass (~180 R$)",
+    "Auto-sneak pass",
+    "Speed boots pass",
+    "VIP prisoner outfits and trails"
+   ],
+   "retention": [
+    "Rebirth into harder prisons (desert, island, space)",
+    "Daily lockdown event with double guards and double Stealth",
+    "Wall-cleared leaderboard",
+    "Codes for Stealth boosts"
+   ],
+   "why_now": "Escape / run jumped 0.81 this week to 1.42 momentum ([🎃] Steal A Pet And Ride It! 45.7K CCU, +1 Spider Arm🕷️ 23.5K), +1 stat per action is at 2.39 (up 0.28; [🎃] +1 Venom Evolution 36.3K) and Prison / police rose 0.36 to 1.12 (Punch to Escape! 👊 4.8K, 🥟SQUISHY DUMPLING PRISON RUN! (Obby) 4.6K).",
+   "inspired_by": [
+    "[🎃] Steal A Pet And Ride It!",
+    "+1 Spider Arm🕷️",
+    "Punch to Escape! 👊"
+   ],
+   "differentiator": "Prison games are about digging or punching out. Here the +1 grind itself is the escape tool: your stat literally shrinks the lights.",
+   "art_style": "simulator_bright",
+   "map_style": "linear_course"
+  },
+  {
+   "title": "Launch Into a Giant's Pocket 👖",
+   "scope": "small",
+   "genre": "Simulation · Physics Sim",
+   "mechanics": [
+    "Hit / swing / launch",
+    "Collect / index"
+   ],
+   "theme": "Giant / huge",
+   "hook": "A giant strolls past your slingshot. Fling yourself as a ragdoll and try to land in his pockets: shirt pocket, jeans, backpack. Each pocket holds loot by rarity, and the giant never stops walking.",
+   "core_loop": [
+    "Pull back the slingshot and aim at the walking giant",
+    "Ragdoll through the air and hope to land in a pocket",
+    "Grab the loot inside (coins, keys, rare trinkets) before you fall out",
+    "Upgrade slingshot power and grip; unlock bigger giants"
+   ],
+   "twist": "Pockets move with every step, so timing beats raw power. Bounce off his shoulder for bonus distance.",
+   "monetization": [
+    "2x loot pass (~220 R$)",
+    "Auto-launch pass",
+    "VIP slingshot skins",
+    "Grip boost pass"
+   ],
+   "retention": [
+    "Index of pocket trinkets with secret items",
+    "New giant every week (chef, astronaut, king)",
+    "Daily bullseye challenge",
+    "Farthest-pocket leaderboard"
+   ],
+   "why_now": "Hit / swing / launch is at 2.42 (up 0.27; [🎃] Throw Food For Animals 129.7K, Ragdoll Reality 🩸 31.1K) and Giant / huge jumped 0.88 to 1.70 (Durian Garden 🍈 27.5K, Raise The Biggest Family 14.9K). Physics Sim is steady at 2.10 ([🎃] Realistic Ragdoll Engine 🩸 23.0K).",
+   "inspired_by": [
+    "[🎃] Throw Food For Animals",
+    "Ragdoll Reality 🩸",
+    "Raise The Biggest Family"
+   ],
+   "differentiator": "Launch games aim at a static target or distance. Here the target is a moving giant, and every pocket is its own loot table.",
+   "art_style": "simulator_bright",
+   "map_style": "linear_course"
+  },
+  {
+   "title": "+1 Planet Size 🪐",
+   "scope": "small",
+   "genre": "Simulation · Incremental Simulator",
+   "mechanics": [
+    "+1 stat per action",
+    "Collect / index"
+   ],
+   "theme": "Space",
+   "hook": "You are a tiny planet. Every asteroid you swallow gives +1 Size, and bigger planets pull in bigger rocks, moons and finally whole stars.",
+   "core_loop": [
+    "Drift through space and swallow asteroids for +1 Size",
+    "Size up to pull in moons, comets and space junk",
+    "Collect rare cores to fill your planet index",
+    "Rebirth into a new galaxy with a gravity multiplier"
+   ],
+   "twist": "Other players are planets too. Get big enough and you can pull a smaller player into orbit as your moon, sharing their gains.",
+   "monetization": [
+    "2x Size pass (~180 R$)",
+    "Auto-orbit pass",
+    "Planet skins (lava, ice, ring planet)",
+    "Gravity boost pass"
+   ],
+   "retention": [
+    "Galaxy rebirths with new rock types",
+    "Planet-core index with secret cores",
+    "Weekly meteor shower event",
+    "Biggest-planet server leaderboard"
+   ],
+   "why_now": "+1 stat per action is at 2.39, up 0.28 this week ([🎃] +1 Venom Evolution 36.3K, [🌍UPD] +1 Anime Eyes 34.6K), and Space rose 0.52 to 1.56 ([🎃] Clean the Moon! 5.3K, +1 Slinky Escape 4.3K). Hub + zone maps are at 1.58.",
+   "inspired_by": [
+    "[🎃] +1 Venom Evolution",
+    "[🌍UPD] +1 Anime Eyes",
+    "[🎃] Clean the Moon!"
+   ],
+   "differentiator": "+1 games grow a body part or a stat bar; here you are the planet, and growing changes what the world gets pulled toward you.",
+   "art_style": "simulator_bright",
+   "map_style": "zone_progression"
+  },
+  {
+   "title": "Chase the Runaway ATM 🏧",
+   "scope": "medium",
+   "genre": "Action · Runner",
+   "mechanics": [
+    "Escape / run",
+    "Hit / swing / launch"
+   ],
+   "theme": "Money / rich",
+   "hook": "An ATM grew legs and bolted down the street. Chase it through a course of traffic, fences and rooftops, and every hit you land makes it spit out cash.",
+   "core_loop": [
+    "The ATM sprints off down a hazard course",
+    "Chase it, dodging cars and jumping gaps",
+    "Smack it with your bat to knock cash loose and pick it up",
+    "Upgrade speed and bat; later ATMs are faster and drop more"
+   ],
+   "twist": "Hit it too hard and it spins out and runs faster, so steady hits beat big swings.",
+   "monetization": [
+    "2x cash pass (~400 R$)",
+    "Speed shoes pass",
+    "VIP golden bat",
+    "Magnet pass to grab dropped cash"
+   ],
+   "retention": [
+    "New ATM types (vault, piggy bank, slot machine) weekly",
+    "Daily jackpot ATM",
+    "Fastest-catch leaderboard",
+    "Bat index"
+   ],
+   "why_now": "Escape / run is up 0.81 to 1.42 ([🎃] Steal A Pet And Ride It! 45.7K, +1 Spider Arm🕷️ 23.5K), Money / rich is at 2.21 and up 0.16 ([🎃]Climb For Animals Eggs🥚 46.7K, [🎃] Steal A Pet And Ride It! 45.7K), and linear courses lead map styles at 2.17 (DONT SPLASH 81.5K).",
+   "inspired_by": [
+    "[🎃] Steal A Pet And Ride It!",
+    "[🎃]Climb For Animals Eggs🥚",
+    "DONT SPLASH"
+   ],
+   "differentiator": "Runners make you flee. Here you are the chaser and the loot runs away, which flips the escape loop.",
+   "art_style": "simulator_bright",
+   "map_style": "linear_course"
+  },
+  {
+   "title": "Grow a Volcano 🌋",
+   "scope": "medium",
+   "genre": "Simulation · Tycoon",
+   "mechanics": [
+    "Grow / farm",
+    "Break / mine / dig"
+   ],
+   "theme": "Ice / fire / elements",
+   "hook": "Plant a volcano seed on your plot and keep it hot. It grows taller each hour, then erupts and rains lava rocks you crack open for gems.",
+   "core_loop": [
+    "Plant volcano seeds of different rarity",
+    "Feed them heat (coal, fire crystals) to grow",
+    "Trigger an eruption and catch the lava rocks",
+    "Crack rocks for gems, sell, buy rarer seeds"
+   ],
+   "twist": "Neighbours can cool your volcano with water balloons to stall it, so you guard your plot while it grows.",
+   "monetization": [
+    "2x growth pass (~250 R$)",
+    "Auto-feed pass",
+    "Lucky eruption pass",
+    "VIP plot themes"
+   ],
+   "retention": [
+    "Seed index (ice volcano, rainbow volcano, secret)",
+    "Offline growth",
+    "Weekly mega-eruption event",
+    "Codes for heat boosts"
+   ],
+   "why_now": "Grow / farm is steady and high-confidence at 1.16 (Durian Garden 🍈 27.5K, [🎃] Steal a Forest 5.7K) and Ice / fire / elements is at 1.39, up 0.12 (Firefighting Sim 🚒 9.4K). Break / mine / dig is at 2.0 but low confidence (Break and Steal an Egg holds most of it), so it is only the side ingredient here.",
+   "inspired_by": [
+    "Durian Garden 🍈",
+    "[🎃] Steal a Forest",
+    "Firefighting Sim 🚒"
+   ],
+   "differentiator": "Grow games harvest calm crops. Here the crop is a disaster you trigger, and the payout comes from cracking what it throws.",
+   "art_style": "stylized",
+   "map_style": "plot_base"
+  },
+  {
+   "title": "Run a Knight School 🛡️",
+   "scope": "large",
+   "genre": "Simulation · Tycoon",
+   "mechanics": [
+    "Tycoon / base building",
+    "Collect / index"
+   ],
+   "theme": "Fantasy / medieval",
+   "hook": "Build a training yard, recruit peasant students, and turn them into knights. Graduates go on quests and send gold back to your school.",
+   "core_loop": [
+    "Recruit students and place training stations (dummies, archery, horses)",
+    "Students train on their own and level up",
+    "Graduate them into knight classes and send them on quests",
+    "Spend quest gold on bigger yards and rarer classes"
+   ],
+   "twist": "Rare students roll random traits (clumsy, giant, dragon-blooded), so recruiting has a collection side.",
+   "monetization": [
+    "2x gold pass (~100 R$)",
+    "Auto-recruit pass",
+    "Faster training pass",
+    "VIP castle skin"
+   ],
+   "retention": [
+    "Knight class index with secret classes",
+    "Offline quest earnings",
+    "Weekly tournament between servers' schools",
+    "Codes for free recruits"
+   ],
+   "why_now": "Tycoon / base building is still high confidence at 1.33 despite a 0.21 dip ([🎃]Climb For Animals Eggs🥚 46.7K, 🧸 My Small Business 20.7K), and Fantasy / medieval is steady at 1.46 (🍀 Tower Of Luck [1.8] 5.9K, [🐶] +1 Forge Blade Loot 3.4K).",
+   "inspired_by": [
+    "[🎃]Climb For Animals Eggs🥚",
+    "🧸 My Small Business",
+    "🍀 Tower Of Luck [1.8]"
+   ],
+   "differentiator": "Fantasy tycoons build forges or towers. Here you build people: the students are the upgrades and the collection.",
+   "art_style": "stylized",
+   "map_style": "plot_base"
+  },
+  {
+   "title": "+1 Magnet Pull 🧲",
+   "scope": "small",
+   "genre": "Simulation · Incremental Simulator",
+   "mechanics": [
+    "+1 stat per action",
+    "Collect / index"
+   ],
+   "theme": "Robots / mechs",
+   "hook": "You are a little scrap robot with a magnet. Every second it gains +1 Pull, dragging in bolts, then car doors, then whole robots from across the junkyard.",
+   "core_loop": [
+    "Stand in the junkyard; your magnet gains +1 Pull every second",
+    "Pull in heavier scrap as Pull grows",
+    "Bolt scrap onto your body to unlock new robot forms",
+    "Rebirth into a bigger junkyard with a pull multiplier"
+   ],
+   "twist": "Players' magnets fight over the same scrap, so the strongest pull steals it mid-air.",
+   "monetization": [
+    "2x Pull pass (~180 R$)",
+    "Auto-collect pass",
+    "Robot skins",
+    "Range boost pass"
+   ],
+   "retention": [
+    "Robot form index",
+    "Rebirth junkyards (city, moon, factory)",
+    "Daily golden scrap drop",
+    "Strongest-magnet leaderboard"
+   ],
+   "why_now": "+1 stat per action + Robots / mechs is the biggest open gap (score 6.28). +1 stat is at 2.39 (up 0.28; [🎃] +1 Venom Evolution 36.3K) and Robots / mechs is at 2.09 ([x2💵] Steel Fighters 18.8K, RoChess! 9.7K), though it slipped 0.29 this week.",
+   "inspired_by": [
+    "[🎃] +1 Venom Evolution",
+    "[x2💵] Steel Fighters",
+    "+1 Spider Arm🕷️"
+   ],
+   "differentiator": "Robot +1 games grow arms or height. Here the stat is a pull radius, so the world around you changes as it grows.",
+   "art_style": "simulator_bright",
+   "map_style": "zone_progression"
+  },
+  {
+   "title": "Ragdoll Bowling 🎳",
+   "scope": "medium",
+   "genre": "Simulation · Physics Sim",
+   "mechanics": [
+    "Hit / swing / launch",
+    "Party / minigames"
+   ],
+   "theme": "Giant / huge",
+   "hook": "You are the bowling ball. Launch your ragdoll down the lane into pins that get bigger every round, until you are knocking over giant pins the size of houses.",
+   "core_loop": [
+    "Pick your launch angle and power",
+    "Ragdoll down the lane and crash into the pins",
+    "Score by pins toppled; strikes pay double",
+    "Upgrade weight and spin; unlock giant lanes"
+   ],
+   "twist": "Up to 6 players launch at once, and you can knock each other off line for steals.",
+   "monetization": [
+    "2x score pass (~220 R$)",
+    "Heavy body pass",
+    "VIP lane skins",
+    "Extra throw pass"
+   ],
+   "retention": [
+    "Giant pin tiers to unlock",
+    "Weekly lane theme",
+    "Strike-streak leaderboard",
+    "Daily perfect-game challenge"
+   ],
+   "why_now": "Hit / swing / launch is at 2.42, up 0.27 ([🎃] Throw Food For Animals 129.7K, Cat Battles 🐾 15.5K); Physics Sim is at 2.10 (Ragdoll Reality 🩸 31.1K, [🎃] Realistic Ragdoll Engine 🩸 23.0K); Giant / huge is up 0.88 to 1.70. Low poly art is rising at 2.23.",
+   "inspired_by": [
+    "Ragdoll Reality 🩸",
+    "[🎃] Realistic Ragdoll Engine 🩸",
+    "[🎃] Throw Food For Animals"
+   ],
+   "differentiator": "Ragdoll games are sandboxes. This gives the ragdoll a scored goal and a clear round structure.",
+   "art_style": "low_poly",
+   "map_style": "lobby_rounds"
+  },
+  {
+   "title": "Surf the Avalanche 🏂",
+   "scope": "medium",
+   "genre": "Action · Runner",
+   "mechanics": [
+    "Escape / run",
+    "Collect / index"
+   ],
+   "theme": "Ice / fire / elements",
+   "hook": "An avalanche breaks loose at the top of the mountain. Ride the front of the snow wave on a board, dodging trees and cabins, and grab frozen pets out of ice blocks on the way down.",
+   "core_loop": [
+    "The avalanche starts; drop in ahead of it",
+    "Steer around trees, rocks and cabins",
+    "Smash ice blocks to free frozen pets for your index",
+    "Reach the valley to bank pets; upgrade board and steering"
+   ],
+   "twist": "Fall behind and the snow buries you, but stay too far ahead and you miss the pets in the wave's path.",
+   "monetization": [
+    "2x pets pass (~400 R$)",
+    "Board skins",
+    "Extra-life pass",
+    "Lucky ice pass"
+   ],
+   "retention": [
+    "Frozen pet index with secret pets",
+    "New mountain each week",
+    "Daily blizzard run",
+    "Longest-ride leaderboard"
+   ],
+   "why_now": "Escape / run jumped 0.81 to 1.42 ([🎃] Steal A Pet And Ride It! 45.7K), Ice / fire / elements is up 0.12 to 1.39 (Firefighting Sim 🚒 9.4K) and linear courses lead at 2.17 (DONT SPLASH 81.5K). Disaster / weather is up 0.96 but low confidence ([☢️UPD] Create A Disaster💥 6.9K), so it is only flavour here.",
+   "inspired_by": [
+    "[🎃] Steal A Pet And Ride It!",
+    "DONT SPLASH",
+    "Firefighting Sim 🚒"
+   ],
+   "differentiator": "Outrun games put the hazard behind you. Here you ride on top of it, and the reward sits right in its path.",
+   "art_style": "simulator_bright",
+   "map_style": "linear_course"
+  },
+  {
+   "title": "Doodle a Dragon 🐉",
+   "scope": "small",
+   "genre": "Simulation · Coloring & Drawing",
+   "mechanics": [
+    "Paint / create",
+    "Fight / battle"
+   ],
+   "theme": "Fantasy / medieval",
+   "hook": "Draw a dragon on a canvas and it comes to life. Wing size, tail length and colours you draw set its speed, power and element, then it fights other players' dragons.",
+   "core_loop": [
+    "Draw your dragon on the canvas",
+    "It hatches with stats based on the drawing",
+    "Fight other dragons in a quick arena round",
+    "Win ink colours and stickers to draw stronger dragons"
+   ],
+   "twist": "Colours are elements: red ink breathes fire, blue freezes, so the drawing is the build.",
+   "monetization": [
+    "Rare ink colours (~99 R$)",
+    "VIP canvas sizes",
+    "2x ink pass",
+    "Sticker packs"
+   ],
+   "retention": [
+    "Ink colour index",
+    "Weekly theme (ghost dragons, robot dragons)",
+    "Best-dragon vote board",
+    "Daily free ink"
+   ],
+   "why_now": "Paint / create is at 1.90 but down 0.42 this week (Backseat Rally 24.6K, Paint and Hide! 🎨 13.9K), so this is a small build. Fantasy / medieval is steady at 1.46 (🍀 Tower Of Luck [1.8] 5.9K).",
+   "inspired_by": [
+    "Paint and Hide! 🎨",
+    "🍀 Tower Of Luck [1.8]",
+    "[🥞] Paint a Pancake"
+   ],
+   "differentiator": "Drawing games are judged by votes. Here the drawing becomes a fighter, so how you draw decides who wins.",
+   "art_style": "stylized",
+   "map_style": "arena"
+  }
+ ]
 }
