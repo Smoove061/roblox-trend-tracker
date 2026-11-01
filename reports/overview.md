@@ -42,7 +42,7 @@
 - DONT SPLASH: 20,806 → 89,623 CCU
 - The Hollow: 0 → 62,647 CCU
 - Ragdoll Reality 🩸: 0 → 34,317 CCU
-- [🎃] Realistic Ragdoll Engine 🩸: 0 → 24,495 CCU
+- Realistic Ragdoll Engine 🩸: 0 → 24,495 CCU
 - [🎃] Steal A Pet And Ride It!: 0 → 20,745 CCU
 - 🧸 My Small Business: 0 → 20,257 CCU
 
@@ -89,6 +89,6 @@
 - The Hollow: 0 → 62,647 CCU
 - Ragdoll Reality 🩸: 0 → 34,317 CCU
 - [🎃] +1 Venom Evolution: 0 → 25,149 CCU
-- [🎃] Realistic Ragdoll Engine 🩸: 0 → 24,495 CCU
+- Realistic Ragdoll Engine 🩸: 0 → 24,495 CCU
 - [🎃] Steal A Pet And Ride It!: 0 → 20,745 CCU
 

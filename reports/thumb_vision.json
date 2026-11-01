@@ -1,54 +1,54 @@
 {
   "niches": {
     "mechanic:break_mine": {
-      "art_style": "simulator_bright majority (about 7/12); dark purple anime/fantasy outliers (Sol's RNG, Forge).",
+      "art_style": "Bright simulator art in about 7/12; the rest dark or anime promo art.",
       "avoid": [
-        "Dark purple gloom unless it's an RNG/fantasy game",
-        "Tiny prizes that read as noise"
+        "Dark scenes for a casual break game",
+        "Hiding the prize"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: avatar mid-swing at a cracked block revealing a glowing rare item. Thumbnail: debris foreground, prize centre, rarity in rainbow text.",
+      "date": "2026-11-01",
+      "direction": "Icon: avatar swinging a pickaxe at a glowing rare egg. Thumbnail: cracked ground or wall revealing a labelled Divine-tier prize with its odds.",
       "do": [
-        "Put a glowing rare prize next to the tool",
-        "Name the rarity in rainbow gradient text",
-        "Fill the foreground with flying debris",
-        "Use a sunny sky through the broken material"
+        "Make the rare prize glow and take a third of the frame",
+        "Show the tool mid-swing",
+        "Label the rarity with odds or price",
+        "Use cracked debris for impact"
       ],
       "icon_patterns": [
         {
           "count": "6/12",
-          "pattern": "Glowing egg/crystal/lucky block prize next to the avatar"
+          "pattern": "Rare egg / lucky block / crystal as the hero object"
         },
         {
-          "count": "6/12",
-          "pattern": "Avatar holding a pickaxe/shovel/hammer"
+          "count": "5/12",
+          "pattern": "Avatar holding a pickaxe, hammer or shovel"
         },
         {
           "count": "3/12",
-          "pattern": "First-person fists breaking a grey brick wall to a sunny field"
+          "pattern": "Countdown hourglass overlays (NOW, 12 HOURS)"
         },
         {
-          "count": "1/12",
-          "pattern": "Hourglass countdown icon"
+          "count": "2/12",
+          "pattern": "Broken-wall hole with first-person hands"
         }
       ],
-      "members_hash": "b51faa3e31",
-      "newcomer_shift": "NEW games use first-person wall-punch frames and prison/lab escape settings instead of open fields.",
+      "members_hash": "878da13e83",
+      "newcomer_shift": "NEW games pair the break mechanic with a named rare egg and use punch/first-person wall-break framing.",
       "source": "vision",
-      "summary": "Break/mine games pair a tool-swinging avatar with a glowing prize (egg, ore, lucky block) and newer entries copy the first-person 'punch through a wall' frame.",
-      "text_usage": "Rarity callouts only: rainbow 'Divine Egg', '0.001%', 'SECRET'; keybind chip on wall-break shots.",
+      "summary": "Avatar swinging a tool at an egg, block or wall with a rare glowing prize beside it.",
+      "text_usage": "Rarity names and odds (DIVINE 0.001%, Diamond Egg $999M+), short update tags.",
       "thumbnail_patterns": [
         {
+          "count": "5/12",
+          "pattern": "Glowing rare egg or block with a rarity label (Divine, 0.001%)"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Bright green grass / blue sky voxel scene"
+        },
+        {
           "count": "4/12",
-          "pattern": "Rare item named in rainbow text (Divine Egg, DIVINE 0.001%, Lucky Block SECRET)"
-        },
-        {
-          "count": "6/12",
-          "pattern": "Cracked bricks/dirt debris filling the foreground"
-        },
-        {
-          "count": "6/12",
-          "pattern": "Bright green/blue simulator palette"
+          "pattern": "Dark purple/red promo art for larger games"
         }
       ]
     },
@@ -198,49 +198,54 @@
       ]
     },
     "mechanic:escape_run": {
-      "art_style": "dark_gritty (about 5/12) vs simulator_bright (about 5/12).",
+      "art_style": "Split: bright simulator (~6/12) vs dark gritty horror (~5/12).",
       "avoid": [
-        "Mixing horror palette with simulator UI"
+        "Hiding the goal",
+        "Unreadable dark icons"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: runner fleeing toward a bright hole with a monster close behind. Thumbnail: same chase, YOU arrow on the player, exit glowing.",
+      "date": "2026-11-01",
+      "direction": "Icon: avatar sprinting toward a bright exit with a threat right behind. Thumbnail: a corridor view with the exit glowing and the danger closing in.",
       "do": [
-        "Choose one lane: horror-red frame or bright-cartoon",
-        "Show the threat and the runner in the same frame",
-        "Use a YOU arrow on the player",
-        "Keep the escape exit (light, hole) visible"
+        "Show the exit (light, hole, door) clearly",
+        "Put the threat or obstacle behind the avatar",
+        "Add motion lines",
+        "Use one bold colour contrast"
       ],
       "icon_patterns": [
         {
           "count": "4/12",
-          "pattern": "Red event-style frame border around a dark horror subject"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Hourglass countdown icon"
-        },
-        {
-          "count": "2/12",
-          "pattern": "First-person fists breaking a grey wall"
-        }
-      ],
-      "members_hash": "8a8d556e51",
-      "newcomer_shift": "NEW games drop horror for bright first-person wall breaking and goofy chase scenes (curing zombies).",
-      "source": "vision",
-      "summary": "Escape/run games are split between horror events in thick red 'Hollow' frames and bright first-person wall-break escapes, with countdown hourglasses on several leaders.",
-      "text_usage": "Horror uses the event logo and a two-word title; bright ones use YOU arrows and rarity numbers.",
-      "thumbnail_patterns": [
-        {
-          "count": "5/12",
-          "pattern": "Dark blue/red horror scene with a monster looming"
+          "pattern": "Avatar mid-run or climbing with '+1' popups"
         },
         {
           "count": "3/12",
-          "pattern": "Bright simulator scene with arrows labelled YOU/YOUR PET"
+          "pattern": "Broken-wall hole showing outside"
         },
         {
-          "count": "2/12",
-          "pattern": "First-person wall break with keybind chip"
+          "count": "3/12",
+          "pattern": "Dark horror palette with a pursuer"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Countdown/hourglass event overlay"
+        }
+      ],
+      "members_hash": "1b5ebb82e5",
+      "newcomer_shift": "NEW games use first-person wall breaks and silly faces rather than horror pursuers.",
+      "source": "vision",
+      "summary": "Escape games mix bright obby-style progress art with dark chase scenes; the escape route is shown.",
+      "text_usage": "Short: event tags (NOW, TODAY), WORLD 3!, odds.",
+      "thumbnail_patterns": [
+        {
+          "count": "5/12",
+          "pattern": "Corridor or path leading to an exit"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Pursuer or threat behind the player"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Red Halloween event frame"
         }
       ]
     },
@@ -338,54 +343,54 @@
       ]
     },
     "mechanic:hit_swing": {
-      "art_style": "stylized/simulator_bright split (about 8/12 bright); two dark anime-gritty boxing outliers.",
+      "art_style": "Stylized cartoon / simulator bright dominates (about 9/12); a few realistic sports and dark anime fighters.",
       "avoid": [
-        "Busy collages with no clear impact",
-        "More than one line of text"
+        "Static poses with no motion",
+        "Cluttered dark scenes"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: the launched object mid-flight with a big arc trail and a shocked target. Thumbnail: first-person or over-shoulder hit with debris flying and a single keybind chip.",
+      "date": "2026-11-01",
+      "direction": "Icon: avatar mid-swing with the object flying off on a bright arc. Thumbnail: the launch arc ending at a rare reward, with a small key-prompt badge.",
       "do": [
-        "Freeze the exact moment of impact with debris or splash",
-        "Draw a curved motion arc showing distance",
-        "Add one keybind chip like '[E] LAUNCH'",
-        "Keep the sky bright and the target centred"
+        "Freeze the moment of impact",
+        "Draw a bright arc or trail for the launched object",
+        "Add a key-prompt badge showing the one action",
+        "Keep the background bright and simple"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "Object or limb frozen mid-impact (ball, arrow, fist, stone)"
+          "count": "9/12",
+          "pattern": "Character caught mid-kick, throw or punch"
+        },
+        {
+          "count": "7/12",
+          "pattern": "Bright blue sky / green grass background"
         },
         {
           "count": "6/12",
-          "pattern": "Blue sky / bright daylight background"
+          "pattern": "Ball, projectile or thrown object in frame"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Classic avatar or white ragdoll figure"
+        }
+      ],
+      "members_hash": "4f0f4db763",
+      "newcomer_shift": "NEW games show keyboard prompts (E HIT, PUNCH) and first-person fists, or '+1' popups.",
+      "source": "vision",
+      "summary": "Dynamic mid-swing action shots with a clear arc or projectile and bright outdoor backgrounds.",
+      "text_usage": "Little text: key prompts (HIT, PUNCH), luck odds (1%), or a big earnings number.",
+      "thumbnail_patterns": [
+        {
+          "count": "4/12",
+          "pattern": "Yellow arc or motion trail showing the launch path"
         },
         {
           "count": "5/12",
-          "pattern": "Character with shocked or determined face"
-        }
-      ],
-      "members_hash": "dea381b956",
-      "newcomer_shift": "NEW games go first-person (fists punching through walls) and show a UI keybind chip right on the thumbnail; ragdoll gore splashes appear.",
-      "source": "vision",
-      "summary": "Hit/launch games show a single impact moment - a projectile, punch or kick frozen mid-motion - mostly in bright stylized or simulator art, with newcomers adding first-person fists and keybind prompts.",
-      "text_usage": "Minimal: a keybind chip (E HIT, PUNCH), a value counter ($68.5B/s), or a NEW sticker; no headlines.",
-      "thumbnail_patterns": [
-        {
-          "count": "5/12",
-          "pattern": "Motion arc or speed trail showing the launch path"
+          "pattern": "Impact moment with debris or splash"
         },
         {
           "count": "2/12",
-          "pattern": "On-screen keybind prompt ([E] HIT / PUNCH)"
-        },
-        {
-          "count": "3/12",
-          "pattern": "First-person hands in frame"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Ragdolled blocky dummy as the target"
+          "pattern": "First-person hands breaking/punching"
         }
       ]
     },
@@ -485,158 +490,149 @@
       ]
     },
     "mechanic:paint_create": {
-      "art_style": "Mixed: realistic (about 5/12) for the sandbox games, simulator_bright (about 5/12) for paint games.",
+      "art_style": "Mixed: stylized/realistic about 6/12, simulator bright 4/12.",
       "avoid": [
-        "Wide shots where the canvas is small"
+        "Wide scenes where the created object is small"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: first-person tool sweeping across a half-finished picture. Thumbnail: before/after split of the canvas with one bold callout.",
+      "date": "2026-11-01",
+      "direction": "Icon: first-person hand painting a funny face on the object. Thumbnail: a before/after split of the creation with a cash payout number.",
       "do": [
-        "Show the canvas half-painted so the reveal is obvious",
-        "Keep the hand and tool in first person",
-        "Use one short bold callout",
-        "Pick a recognizable funny result (smiley, masterpiece)"
+        "Fill the frame with the canvas mid-creation",
+        "Show the tool touching it in first person",
+        "Use a before/after split for transformation",
+        "Add one money or score number"
       ],
       "icon_patterns": [
         {
-          "count": "4/12",
-          "pattern": "Canvas/surface mid-paint with brush, sponge or bottle in frame"
+          "count": "6/12",
+          "pattern": "The thing being made or painted is the hero (painting, pancake, house)"
         },
         {
           "count": "4/12",
-          "pattern": "Realistic vehicle in a desert/road scene"
+          "pattern": "First-person hands holding a tool (sponge, bottle, washer)"
         },
         {
-          "count": "2/12",
-          "pattern": "Hourglass countdown icon"
+          "count": "4/12",
+          "pattern": "Realistic-looking vehicles or houses"
         }
       ],
-      "members_hash": "1a62cce447",
-      "newcomer_shift": "NEW games show first-person painting (smiley on a grill, restoring a masterpiece) and drawn spell shapes.",
+      "members_hash": "e47e4fa5f4",
+      "newcomer_shift": "NEW games use famous-painting or face-on-object close-ups and first-person tool framing.",
       "source": "vision",
-      "summary": "Paint/create games split between realistic driving/desert sandboxes and bright paint-tool simulators that show a canvas being filled with a funny face or famous painting.",
-      "text_usage": "Paint games use one bold callout (PAINT ANYTHING!, DRAW YOUR SPELL!); realistic sandboxes use none.",
+      "summary": "Mixed niche: creative games show the canvas or object being made, often first-person hands with a tool.",
+      "text_usage": "Minimal; short hooks like PAINT ANYTHING! or money gain (+$5,000).",
       "thumbnail_patterns": [
         {
           "count": "3/12",
-          "pattern": "First-person hands holding a paint tool over the canvas"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Half-done/before-after painting split"
+          "pattern": "Before/after split of the object"
         },
         {
           "count": "4/12",
-          "pattern": "Realistic sunlit sandbox scene with no text"
+          "pattern": "Close-up of the canvas with the tool touching it"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Bright simple backgrounds"
         }
       ]
     },
     "mechanic:plus_one_stat": {
-      "art_style": "simulator_bright dominates (about 9/12); a few lean anime close-ups or realistic snow scenes.",
+      "art_style": "Bright simulator / stylized cartoon, about 10/12; one dark Halloween-framed entry.",
       "avoid": [
-        "Text sentences",
-        "Dark muddy backgrounds that hide the +1 popups"
+        "Dark muted palettes",
+        "Long text titles on the icon"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: close-up of the avatar halfway through its upgrade, aura glowing, ringed by +1 popups on bright blue. Thumbnail: weak-left / huge-right split with a gold stat number on the strong side.",
+      "date": "2026-11-01",
+      "direction": "Icon: close-up avatar mid-action with '+1' popups bursting around it on bright blue. Thumbnail: split panel from weak start to huge evolved form, with escalating numbers.",
       "do": [
-        "Show one avatar mid-transformation with a glowing aura",
-        "Scatter 6-10 bold white '+1' popups with dark outlines",
-        "Use a saturated cyan sky/green grass backdrop",
-        "Put a single giant stat number (e.g. +9.9B) in gold",
-        "Use a split before/after panel in the thumbnail"
+        "Put one avatar doing the stat action in the centre",
+        "Scatter 4-6 white '+1' popups with black outline",
+        "Use a saturated sky-blue/green background",
+        "Show the growth payoff (huge number or evolved form) in the thumbnail"
       ],
       "icon_patterns": [
         {
-          "count": "4/12",
-          "pattern": "White hourglass countdown icon with '24 HOURS'/'NOW' text"
+          "count": "9/12",
+          "pattern": "Classic bacon-hair avatar as the main subject"
+        },
+        {
+          "count": "8/12",
+          "pattern": "Floating white '+1' numbers with dark outline"
         },
         {
           "count": "7/12",
-          "pattern": "Floating white '+1' popups around the character"
+          "pattern": "Saturated sky-blue or grass-green background"
         },
         {
-          "count": "7/12",
-          "pattern": "Classic bacon-hair or noob avatar as the subject"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Bright cyan/green sky or grass background"
+          "count": "2/12",
+          "pattern": "Countdown hourglass overlay (16 HOURS / NOW)"
         }
       ],
-      "members_hash": "c67261ce23",
-      "newcomer_shift": "NEW games push the transformed body (giant muscled fighter, celebrity-style outfit, diamond egg) and add before/after splits; one tries a moody realistic snow scene.",
+      "members_hash": "ec45394ad2",
+      "newcomer_shift": "NEW games lean on goofy-face avatars and a single weird body part or object (slinky, worm, eye) plus a prize egg.",
       "source": "vision",
-      "summary": "+1 games lean on a single Roblox avatar mid-transformation surrounded by floating white '+1' popups on bright saturated backgrounds, while leaders swap icons for countdown hourglasses.",
-      "text_usage": "Icons use one huge white word block (24 HOURS, NOW, 3 NEW WORLDS); thumbnails use only stat numbers (+1, +7M, $999M+) with no sentences.",
+      "summary": "Bright simulator art with a classic Roblox avatar mid-action surrounded by floating white '+1' numbers.",
+      "text_usage": "Almost only '+1' numbers and growth totals; few words, sometimes WORLD 3! or a big prize value.",
       "thumbnail_patterns": [
         {
+          "count": "8/12",
+          "pattern": "Avatar performing the core action with '+1' popups around it"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Before/after or tier split panels showing growth (+1 to +7M, $1 to $999T)"
+        },
+        {
           "count": "7/12",
-          "pattern": "Dozens of '+1' popups scattered across the frame"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Before/after or split-panel showing growth (weak to huge, 1 to 999T)"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Avatar mid-action with glowing aura or energy VFX"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Big gold/yellow stat numbers (+7M, $999M+)"
+          "pattern": "Bright blue sky and green grass voxel world"
         }
       ]
     },
     "mechanic:quiz_guess": {
-      "art_style": "Stylized simulator-bright renders with classic avatars, about 11/12.",
+      "art_style": "Bright simulator / stylized cartoon in about 10/11.",
       "avoid": [
-        "Hiding what is being guessed",
-        "Small faces in a cluttered grid"
+        "Single avatar with no rival",
+        "Small unreadable text"
       ],
-      "date": "2026-10-30",
-      "direction": "Icon: a puzzled avatar with question marks next to the mystery item. Thumbnail: two players across a red/blue board with a big question caption and one speech-bubble guess.",
+      "date": "2026-11-01",
+      "direction": "Icon: two avatars across a board, one smug and one panicking, with a big question mark. Thumbnail: the board with the mystery item and a YES/NO bubble.",
       "do": [
-        "Put two avatars facing off with '?' above their heads",
-        "Write the question as a big caption",
-        "Show the thing to guess large and recognisable",
-        "Use red vs blue sides for duels"
+        "Show two avatars with opposite reactions",
+        "Put a big question mark or bubble",
+        "Show the item to guess clearly",
+        "Use a short question as text"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "Bacon-hair avatar with thinking pose and floating '?' marks"
+          "count": "7/11",
+          "pattern": "Two avatars head-to-head, puzzled expressions"
         },
         {
-          "count": "4/12",
-          "pattern": "Big bold question caption ('WHAT COLOR?!', 'GUESS THE SIZE')"
+          "count": "6/11",
+          "pattern": "Big question mark"
         },
         {
-          "count": "5/12",
-          "pattern": "Two players facing each other across a board/table"
-        },
-        {
-          "count": "8/12",
-          "pattern": "Bright saturated blue/red backgrounds"
+          "count": "7/11",
+          "pattern": "Bright blue sky backdrop"
         }
       ],
-      "members_hash": "135d4deea2",
-      "newcomer_shift": "NEW games go 2-player head-to-head with Guess-Who boards and anime character grids.",
+      "members_hash": "a1f81287fc",
+      "newcomer_shift": "NEW games use 2-player board setups with themed character grids.",
       "source": "vision",
-      "summary": "Two bacon-hair avatars facing off at a table or board with question marks, a big caption asking the question, and the thing to guess shown large.",
-      "text_usage": "One big shouted question caption; speech bubbles with the guess.",
+      "summary": "Two avatars facing each other across a table with a question mark and the item to guess.",
+      "text_usage": "Heavy: question words (WHAT COLOR?!, GUESS THE SIZE), answer bubbles, distances.",
       "thumbnail_patterns": [
         {
-          "count": "3/12",
-          "pattern": "Guess-Who style grid of faces/characters"
+          "count": "6/11",
+          "pattern": "Table or board between players (Guess Who style)"
         },
         {
-          "count": "6/12",
-          "pattern": "The subject to guess shown large (meme, flag, character)"
+          "count": "5/11",
+          "pattern": "Speech bubbles or answer cards"
         },
         {
-          "count": "2/12",
-          "pattern": "Speech bubbles or 'YES!' answer reaction"
+          "count": "4/11",
+          "pattern": "Flags or famous faces as the subject"
         }
       ]
     },
@@ -741,50 +737,50 @@
       ]
     },
     "mechanic:sell_shop": {
-      "art_style": "stylized warm/cozy (about 6/12); a few realistic vehicles and dark horror outliers.",
+      "art_style": "Stylized cartoon in about 8/12; a few dark horror entries.",
       "avoid": [
-        "Text headlines",
-        "Dark palettes for cozy shop games"
+        "Empty shops",
+        "Too many tiny items with no focus"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: tight close-up of the signature product with a red ! badge. Thumbnail: first-person hands mid-work over a big pile of stock.",
+      "date": "2026-11-01",
+      "direction": "Icon: a big appetising product close-up with a shopkeeper's face. Thumbnail: worker avatars behind a full counter in warm light, with a small twist hint.",
       "do": [
-        "Fill the frame with the product in tidy rows",
-        "Use first-person hands for the action",
-        "Use warm pastel lighting",
-        "Add one red '!' notification badge"
+        "Show the product in appetising close-up",
+        "Use warm interior lighting",
+        "Include a customer or worker reaction",
+        "Hint at scale (rows of product, a day counter)"
       ],
       "icon_patterns": [
         {
           "count": "5/12",
-          "pattern": "Product close-up filling the frame (fries, sushi, packages)"
+          "pattern": "Product/food close-up as the subject (fries, sushi, snacks)"
+        },
+        {
+          "count": "2/12",
+          "pattern": "Countdown hourglass overlay (24H, NOW)"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Two avatars behind a counter or shop"
+        }
+      ],
+      "members_hash": "4604d16616",
+      "newcomer_shift": "NEW games mix shops with anomalies/horror or first-person punch escapes.",
+      "source": "vision",
+      "summary": "Cosy shop interiors and food close-ups, with frequent countdown overlays.",
+      "text_usage": "Little text; hooks like DAY 201, PACK ORDERS, store names.",
+      "thumbnail_patterns": [
+        {
+          "count": "5/12",
+          "pattern": "Warm interior lighting in a shop or kitchen"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Product rows filling the frame"
         },
         {
           "count": "4/12",
-          "pattern": "Cozy pastel or warm interior"
-        },
-        {
-          "count": "1/12",
-          "pattern": "Hourglass countdown icon"
-        }
-      ],
-      "members_hash": "2ee1b2969e",
-      "newcomer_shift": "NEW games show sheer quantity (rows of sushi) and meme-faced avatars gorging, plus horror twists ('HE'S COMING').",
-      "source": "vision",
-      "summary": "Shop games show close-up product piles (fries, sushi, parcels) or cozy pastel interiors, often from first-person hands, with almost no text.",
-      "text_usage": "Mostly none; a single 'EQUIP' button or 'DAY 201' badge at most.",
-      "thumbnail_patterns": [
-        {
-          "count": "3/12",
-          "pattern": "First-person hands working with the product"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Huge pile/rows of the product"
-        },
-        {
-          "count": "7/12",
-          "pattern": "No text at all"
+          "pattern": "First-person hands packing or punching"
         }
       ]
     },
@@ -883,49 +879,49 @@
       ]
     },
     "mechanic:tycoon_build": {
-      "art_style": "simulator_bright for newcomers (about 6/12); realistic for established driving/house games.",
+      "art_style": "Mixed: bright simulator ~6/12, realistic/dark ~4/12.",
       "avoid": [
-        "Busy brand logos for a new title"
+        "Plain logo-only icons for a new game"
       ],
-      "date": "2026-10-31",
-      "direction": "Icon: avatar hauling a glowing mythic prize with a creature looming. Thumbnail: the base upgrade on show with one rarity callout.",
+      "date": "2026-11-01",
+      "direction": "Icon: avatar beside a towering build or mythic creature. Thumbnail: wide shot of the base at scale with a reward label.",
       "do": [
-        "Show the base or prize at huge scale beside a tiny avatar",
-        "Use one rainbow rarity word",
-        "Keep the sky bright",
-        "Show the base's best upgrade"
+        "Show the base or creation large",
+        "Put the avatar small next to it for scale",
+        "Add a rarity or reward label",
+        "Use bright skies"
       ],
       "icon_patterns": [
         {
           "count": "5/12",
-          "pattern": "Branded logo/wordmark on the icon"
+          "pattern": "Avatar beside a large creature or build"
         },
         {
           "count": "5/12",
-          "pattern": "Big creature or vehicle beside the avatar"
+          "pattern": "Bright blue sky backgrounds"
         },
         {
-          "count": "5/12",
-          "pattern": "Bright sky gradient background"
+          "count": "4/12",
+          "pattern": "Game logo text as main icon element"
         }
       ],
-      "members_hash": "1a63c121a5",
-      "newcomer_shift": "NEW games lean on big creatures and egg rarity labels, plus product-pile shots (sushi).",
+      "members_hash": "0799633891",
+      "newcomer_shift": "NEW games use mythic eggs, food rows and anime collabs.",
       "source": "vision",
-      "summary": "Tycoon/build games show the avatar with a giant prize creature or vehicle on a bright sky, alongside branded logo icons for the established leaders.",
-      "text_usage": "Logos on leaders; newcomers use one rainbow rarity label.",
+      "summary": "Builder/tycoon art shows the creation or creature at scale, with bright skies and big reward labels.",
+      "text_usage": "Logos and reward labels; promo codes for older titles.",
       "thumbnail_patterns": [
         {
+          "count": "6/12",
+          "pattern": "Wide shot showing the build or base at scale"
+        },
+        {
           "count": "3/12",
-          "pattern": "Avatar carrying a mythic egg with a creature behind"
+          "pattern": "Rarity/reward labels (MYTHIC EGG, CODE)"
         },
         {
-          "count": "2/12",
-          "pattern": "Rainbow 'MYTHIC EGG' style callout"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Dark horror scene in red frame"
+          "count": "3/12",
+          "pattern": "Dark realistic art for older titles"
         }
       ]
     }
