@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-02T07:00:15Z",
+  "as_of": "2026-11-02T13:06:33Z",
   "baseline": {
     "icon": {
       "hues": [
@@ -97,16 +97,17 @@
   "niches": {
     "genre:Action": {
       "art_styles": {
-        "anime": 3,
+        "anime": 2,
         "classic_studs": 1,
-        "realistic": 2,
-        "stylized": 5,
+        "realistic": 3,
+        "simulator_bright": 1,
+        "stylized": 4,
         "voxel_blocky": 1
       },
       "games": [
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -142,7 +143,7 @@
           "ccu": 21888,
           "icon": "10764627709_i.jpg",
           "id": "10764627709",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10764627709_m0.jpg",
             "10764627709_m1.jpg"
@@ -153,11 +154,11 @@
         },
         {
           "age": 631,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 21625,
           "icon": "7219654364_i.jpg",
           "id": "7219654364",
-          "map_style": "lobby_rounds",
+          "map_style": "arena",
           "media": [
             "7219654364_m0.jpg",
             "7219654364_m1.jpg"
@@ -394,8 +395,8 @@
       "label": "Action",
       "map_styles": {
         "arena": 6,
-        "lobby_rounds": 2,
-        "open_world": 2,
+        "lobby_rounds": 1,
+        "open_world": 3,
         "town_roleplay": 1,
         "zone_progression": 1
       },
@@ -1487,7 +1488,7 @@
       "art_styles": {
         "classic_studs": 1,
         "dark_gritty": 1,
-        "simulator_bright": 4,
+        "simulator_bright": 5,
         "stylized": 3
       },
       "games": [
@@ -1605,7 +1606,7 @@
         },
         {
           "age": 18,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5627,
           "icon": "10771124452_i.jpg",
           "id": "10771124452",
@@ -1615,7 +1616,7 @@
             "10771124452_m1.jpg"
           ],
           "name": "TROLL Jail Hug Tower",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -2005,14 +2006,14 @@
           "ccu": 5367,
           "icon": "10770197883_i.jpg",
           "id": "10770197883",
-          "map_style": "town_roleplay",
+          "map_style": "interior",
           "media": [
             "10770197883_m0.jpg",
             "10770197883_m1.jpg",
             "10770197883_m2.jpg"
           ],
           "name": "\ud83c\udfac Make a Cartoon!",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -2181,10 +2182,10 @@
       "label": "Party & Casual",
       "map_styles": {
         "arena": 1,
+        "interior": 1,
         "lobby_rounds": 8,
         "open_world": 1,
-        "plot_base": 1,
-        "town_roleplay": 1
+        "plot_base": 1
       },
       "media": {
         "hues": [
@@ -3501,8 +3502,7 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 3,
-        "simulator_bright": 1,
-        "stylized": 4,
+        "stylized": 5,
         "voxel_blocky": 1
       },
       "games": [
@@ -3540,7 +3540,7 @@
         },
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -4281,7 +4281,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -4440,7 +4440,7 @@
           "ccu": 20970,
           "icon": "10769464063_i.jpg",
           "id": "10769464063",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10769464063_m0.jpg",
             "10769464063_m1.jpg"
@@ -4547,9 +4547,9 @@
       "label": "Simulation",
       "map_styles": {
         "linear_course": 2,
-        "open_world": 2,
-        "plot_base": 4,
-        "zone_progression": 4
+        "open_world": 3,
+        "plot_base": 5,
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -5385,7 +5385,7 @@
           "ccu": 8667,
           "icon": "7613921865_i.jpg",
           "id": "7613921865",
-          "map_style": "tower_defense_lanes",
+          "map_style": "zone_progression",
           "media": [
             "7613921865_m0.jpg",
             "7613921865_m1.jpg",
@@ -5606,7 +5606,8 @@
         "arena": 2,
         "open_world": 2,
         "plot_base": 2,
-        "tower_defense_lanes": 6
+        "tower_defense_lanes": 5,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -6117,7 +6118,8 @@
         "anime": 1,
         "dark_gritty": 2,
         "realistic": 1,
-        "simulator_bright": 6
+        "simulator_bright": 6,
+        "stylized": 1
       },
       "games": [
         {
@@ -6126,7 +6128,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -6234,18 +6236,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -6412,10 +6414,11 @@
       "key": "break_mine",
       "label": "Break / mine / dig",
       "map_styles": {
+        "interior": 1,
         "linear_course": 1,
         "open_world": 1,
         "plot_base": 2,
-        "zone_progression": 8
+        "zone_progression": 7
       },
       "media": {
         "hues": [
@@ -6515,63 +6518,60 @@
       "members_hash": "2ecc8681b3",
       "type": "mechanic",
       "vision": {
-        "art_style": "Bright simulator art in about 7/12; the rest dark or anime promo art.",
+        "art_style": "simulator_bright dominates (about 8/12); dark RPG outliers (Sol's RNG, The Forge)",
         "avoid": [
-          "Dark scenes for a casual break game",
-          "Hiding the prize"
+          "Dark caves with no glow",
+          "Small tools that read poorly at icon size"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: avatar swinging a pickaxe at a glowing rare egg. Thumbnail: cracked ground or wall revealing a labelled Divine-tier prize with its odds.",
+        "date": "2026-11-02",
+        "direction": "Icon: avatar mid-swing at a glowing rare egg or crystal, tiny on bright cyan. Thumbnail: the egg cracking with a rainbow 'DIVINE 0.001%' tag and a money rate.",
         "do": [
-          "Make the rare prize glow and take a third of the frame",
-          "Show the tool mid-swing",
-          "Label the rarity with odds or price",
-          "Use cracked debris for impact"
+          "Show the tool hitting a glowing rare object",
+          "Add a rarity tag like 0.001% in rainbow text",
+          "Use bright sky and green grass",
+          "Scatter debris cubes on impact"
         ],
         "icon_patterns": [
           {
-            "count": "6/12",
-            "pattern": "Rare egg / lucky block / crystal as the hero object"
+            "count": "7/12",
+            "pattern": "Avatar swinging a tool at a glowing target (egg, rock, wall)"
           },
           {
-            "count": "5/12",
-            "pattern": "Avatar holding a pickaxe, hammer or shovel"
+            "count": "6/12",
+            "pattern": "Glowing rare item (egg, crystal) as the hero object"
           },
           {
             "count": "3/12",
-            "pattern": "Countdown hourglass overlays (NOW, 12 HOURS)"
-          },
-          {
-            "count": "2/12",
-            "pattern": "Broken-wall hole with first-person hands"
+            "pattern": "Hourglass NOW / UPDATE badge"
           }
         ],
-        "members_hash": "878da13e83",
-        "newcomer_shift": "NEW games pair the break mechanic with a named rare egg and use punch/first-person wall-break framing.",
+        "members_hash": "2ecc8681b3",
+        "newcomer_shift": "New games show prison wall breaks with first-person orange-sleeve arms and eggs dug from dirt.",
         "source": "vision",
-        "summary": "Avatar swinging a tool at an egg, block or wall with a rare glowing prize beside it.",
-        "text_usage": "Rarity names and odds (DIVINE 0.001%, Diamond Egg $999M+), short update tags.",
+        "summary": "Avatar swinging a pickaxe or tool at a glowing egg, rock or wall, with rarity labels and money rates on bright simulator art.",
+        "text_usage": "Rarity words and percentages, money rates ($999M+), short titles.",
         "thumbnail_patterns": [
           {
-            "count": "5/12",
-            "pattern": "Glowing rare egg or block with a rarity label (Divine, 0.001%)"
-          },
-          {
-            "count": "5/12",
-            "pattern": "Bright green grass / blue sky voxel scene"
-          },
-          {
             "count": "4/12",
-            "pattern": "Dark purple/red promo art for larger games"
+            "pattern": "Rarity text (DIVINE 0.001%, Divine Egg, SECRET)"
+          },
+          {
+            "count": "6/12",
+            "pattern": "Bright green/cyan simulator backdrop"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Wall break with debris cubes"
           }
         ]
       }
     },
     "mechanic:clicker": {
       "art_styles": {
-        "anime": 2,
+        "anime": 1,
         "classic_studs": 1,
         "dark_gritty": 1,
+        "realistic": 1,
         "simulator_bright": 2,
         "stylized": 4,
         "voxel_blocky": 1
@@ -6579,7 +6579,7 @@
       "games": [
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -7016,7 +7016,7 @@
     "mechanic:collect_index": {
       "art_styles": {
         "dark_gritty": 1,
-        "simulator_bright": 4,
+        "simulator_bright": 6,
         "stylized": 4
       },
       "games": [
@@ -7026,7 +7026,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -7150,7 +7150,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -7161,12 +7161,12 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5557,
           "icon": "10769660375_i.jpg",
           "id": "10769660375",
@@ -7177,7 +7177,7 @@
             "10769660375_m2.jpg"
           ],
           "name": "Steal a Forest",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -7315,8 +7315,8 @@
         "interior": 1,
         "lobby_rounds": 1,
         "open_world": 3,
-        "plot_base": 4,
-        "zone_progression": 2
+        "plot_base": 5,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -7877,8 +7877,7 @@
         "anime": 4,
         "low_poly": 1,
         "realistic": 1,
-        "simulator_bright": 3,
-        "stylized": 1
+        "simulator_bright": 4
       },
       "games": [
         {
@@ -7928,7 +7927,7 @@
         },
         {
           "age": 53,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7526,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -7948,7 +7947,7 @@
           "ccu": 6149,
           "icon": "6682487255_i.jpg",
           "id": "6682487255",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "6682487255_m0.jpg",
             "6682487255_m1.jpg",
@@ -8170,9 +8169,10 @@
       "label": "Dice / cards",
       "map_styles": {
         "interior": 2,
+        "lobby_rounds": 1,
         "open_world": 2,
         "plot_base": 3,
-        "zone_progression": 5
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -8733,7 +8733,8 @@
         "classic_studs": 2,
         "dark_gritty": 3,
         "realistic": 1,
-        "simulator_bright": 4
+        "simulator_bright": 4,
+        "stylized": 1
       },
       "games": [
         {
@@ -8866,18 +8867,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -9031,10 +9032,10 @@
       "label": "Escape / run",
       "map_styles": {
         "arena": 1,
-        "interior": 1,
+        "interior": 2,
         "linear_course": 3,
         "lobby_rounds": 3,
-        "plot_base": 3,
+        "plot_base": 2,
         "zone_progression": 1
       },
       "media": {
@@ -9137,63 +9138,64 @@
       "members_hash": "920ad2b37c",
       "type": "mechanic",
       "vision": {
-        "art_style": "Split: bright simulator (~6/12) vs dark gritty horror (~5/12).",
+        "art_style": "Split: dark_gritty horror (about 5/12) vs simulator_bright (about 6/12)",
         "avoid": [
-          "Hiding the goal",
-          "Unreadable dark icons"
+          "Mixing dark horror with cartoon brightness",
+          "No visible threat"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: avatar sprinting toward a bright exit with a threat right behind. Thumbnail: a corridor view with the exit glowing and the danger closing in.",
+        "date": "2026-11-02",
+        "direction": "Icon: POV hands breaking through a wall to bright daylight. Thumbnail: the player sprinting toward the hole with the chaser behind, arrow labelled YOU.",
         "do": [
-          "Show the exit (light, hole, door) clearly",
-          "Put the threat or obstacle behind the avatar",
-          "Add motion lines",
-          "Use one bold colour contrast"
+          "Show the threat and the exit in one frame",
+          "Use POV arms for breakout hooks",
+          "Label the player with an arrow",
+          "Pick one palette: full horror or full bright"
         ],
         "icon_patterns": [
           {
+            "count": "3/12",
+            "pattern": "Red frame 'The Hollow' event border"
+          },
+          {
+            "count": "2/12",
+            "pattern": "First-person arms breaking out of a wall"
+          },
+          {
             "count": "4/12",
-            "pattern": "Avatar mid-run or climbing with '+1' popups"
+            "pattern": "Bright cyan simulator backdrop"
           },
           {
-            "count": "3/12",
-            "pattern": "Broken-wall hole showing outside"
-          },
-          {
-            "count": "3/12",
-            "pattern": "Dark horror palette with a pursuer"
-          },
-          {
-            "count": "3/12",
-            "pattern": "Countdown/hourglass event overlay"
+            "count": "4/12",
+            "pattern": "Dark horror palette"
           }
         ],
-        "members_hash": "1b5ebb82e5",
-        "newcomer_shift": "NEW games use first-person wall breaks and silly faces rather than horror pursuers.",
+        "members_hash": "920ad2b37c",
+        "newcomer_shift": "New games show the escape hole itself (wall break with a spoon, punching out) in bright POV.",
         "source": "vision",
-        "summary": "Escape games mix bright obby-style progress art with dark chase scenes; the escape route is shown.",
-        "text_usage": "Short: event tags (NOW, TODAY), WORLD 3!, odds.",
+        "summary": "Split between red-framed horror (The Hollow event branding) and bright escape gags like wall breaks and spider arms.",
+        "text_usage": "Moderate; titles on horror games, labels like YOU and CURE THEM ALL on bright ones.",
         "thumbnail_patterns": [
           {
             "count": "5/12",
-            "pattern": "Corridor or path leading to an exit"
+            "pattern": "Pursuer or threat visible (killer, monster, zombie)"
           },
           {
-            "count": "4/12",
-            "pattern": "Pursuer or threat behind the player"
+            "count": "2/12",
+            "pattern": "Hole or exit in a wall showing outside"
           },
           {
-            "count": "3/12",
-            "pattern": "Red Halloween event frame"
+            "count": "2/12",
+            "pattern": "Arrows labelling YOU / YOUR PET"
           }
         ]
       }
     },
     "mechanic:fight_battle": {
       "art_styles": {
-        "anime": 4,
+        "anime": 3,
         "classic_studs": 1,
         "dark_gritty": 1,
+        "realistic": 1,
         "simulator_bright": 3,
         "stylized": 3
       },
@@ -9232,7 +9234,7 @@
         },
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -9316,7 +9318,7 @@
           "ccu": 21888,
           "icon": "10764627709_i.jpg",
           "id": "10764627709",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10764627709_m0.jpg",
             "10764627709_m1.jpg"
@@ -9488,9 +9490,9 @@
       "key": "fight_battle",
       "label": "Fight / battle",
       "map_styles": {
-        "arena": 5,
+        "arena": 4,
         "lobby_rounds": 1,
-        "open_world": 3,
+        "open_world": 4,
         "plot_base": 1,
         "zone_progression": 2
       },
@@ -9686,7 +9688,7 @@
           "ccu": 5374,
           "icon": "10526853622_i.jpg",
           "id": "10526853622",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10526853622_m0.jpg",
             "10526853622_m1.jpg",
@@ -9891,9 +9893,9 @@
       "label": "Fishing",
       "map_styles": {
         "interior": 1,
-        "open_world": 5,
+        "open_world": 6,
         "plot_base": 2,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -10447,7 +10449,7 @@
         "anime": 1,
         "dark_gritty": 1,
         "realistic": 1,
-        "simulator_bright": 5
+        "simulator_bright": 6
       },
       "games": [
         {
@@ -10530,7 +10532,7 @@
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5557,
           "icon": "10769660375_i.jpg",
           "id": "10769660375",
@@ -10541,7 +10543,7 @@
             "10769660375_m2.jpg"
           ],
           "name": "Steal a Forest",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -10566,7 +10568,7 @@
           "ccu": 5208,
           "icon": "10700618962_i.jpg",
           "id": "10700618962",
-          "map_style": "zone_progression",
+          "map_style": "arena",
           "media": [
             "10700618962_m0.jpg",
             "10700618962_m1.jpg"
@@ -10741,10 +10743,10 @@
       "key": "grow_farm",
       "label": "Grow / farm",
       "map_styles": {
+        "arena": 1,
         "interior": 1,
         "open_world": 1,
-        "plot_base": 9,
-        "zone_progression": 1
+        "plot_base": 9
       },
       "media": {
         "hues": [
@@ -10895,8 +10897,7 @@
     "mechanic:hatch_gacha": {
       "art_styles": {
         "dark_gritty": 1,
-        "simulator_bright": 9,
-        "stylized": 1
+        "simulator_bright": 11
       },
       "games": [
         {
@@ -10921,7 +10922,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -11060,7 +11061,7 @@
         },
         {
           "age": 53,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7526,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -11076,7 +11077,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -11087,7 +11088,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         }
       ],
@@ -11195,8 +11196,8 @@
       "map_styles": {
         "linear_course": 1,
         "open_world": 2,
-        "plot_base": 4,
-        "zone_progression": 5
+        "plot_base": 5,
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -11305,7 +11306,7 @@
         "classic_studs": 1,
         "realistic": 1,
         "simulator_bright": 4,
-        "stylized": 4
+        "stylized": 5
       },
       "games": [
         {
@@ -11439,7 +11440,7 @@
           "ccu": 6398,
           "icon": "10765298801_i.jpg",
           "id": "10765298801",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10765298801_m0.jpg",
             "10765298801_m1.jpg",
@@ -11451,18 +11452,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -11597,10 +11598,10 @@
       "label": "Hit / swing / launch",
       "map_styles": {
         "arena": 5,
-        "linear_course": 2,
+        "interior": 1,
+        "linear_course": 3,
         "open_world": 2,
-        "plot_base": 1,
-        "zone_progression": 2
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -11701,54 +11702,50 @@
       "members_hash": "8a2b6dc90d",
       "type": "mechanic",
       "vision": {
-        "art_style": "Stylized cartoon / simulator bright dominates (about 9/12); a few realistic sports and dark anime fighters.",
+        "art_style": "Mostly simulator_bright / stylized Roblox (8/12), with a few realistic ragdoll and dark anime outliers",
         "avoid": [
-          "Static poses with no motion",
-          "Cluttered dark scenes"
+          "Static standing poses",
+          "Cluttered UI screenshots"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: avatar mid-swing with the object flying off on a bright arc. Thumbnail: the launch arc ending at a rare reward, with a small key-prompt badge.",
+        "date": "2026-11-02",
+        "direction": "Icon: avatar mid-swing with the hit object launching out of frame with a speed trail. Thumbnail: the full arc of the launch across a bright sky ending at a reward target with a big number.",
         "do": [
-          "Freeze the moment of impact",
-          "Draw a bright arc or trail for the launched object",
-          "Add a key-prompt badge showing the one action",
-          "Keep the background bright and simple"
+          "Freeze the exact frame of impact with debris or a flying object",
+          "Add a curved trajectory line to show distance",
+          "Use a bright sky and one strong contrast colour for the hit object",
+          "Consider a first-person arms shot for a POV hook"
         ],
         "icon_patterns": [
           {
-            "count": "9/12",
-            "pattern": "Character caught mid-kick, throw or punch"
-          },
-          {
-            "count": "7/12",
-            "pattern": "Bright blue sky / green grass background"
+            "count": "8/12",
+            "pattern": "Character caught mid-swing, punch or throw with motion streaks"
           },
           {
             "count": "6/12",
-            "pattern": "Ball, projectile or thrown object in frame"
-          },
-          {
-            "count": "6/12",
-            "pattern": "Classic avatar or white ragdoll figure"
-          }
-        ],
-        "members_hash": "4f0f4db763",
-        "newcomer_shift": "NEW games show keyboard prompts (E HIT, PUNCH) and first-person fists, or '+1' popups.",
-        "source": "vision",
-        "summary": "Dynamic mid-swing action shots with a clear arc or projectile and bright outdoor backgrounds.",
-        "text_usage": "Little text: key prompts (HIT, PUNCH), luck odds (1%), or a big earnings number.",
-        "thumbnail_patterns": [
-          {
-            "count": "4/12",
-            "pattern": "Yellow arc or motion trail showing the launch path"
-          },
-          {
-            "count": "5/12",
-            "pattern": "Impact moment with debris or splash"
+            "pattern": "Bright blue sky / green ground simulator backdrop"
           },
           {
             "count": "2/12",
-            "pattern": "First-person hands breaking/punching"
+            "pattern": "First-person fists or arms breaking something"
+          }
+        ],
+        "members_hash": "8a2b6dc90d",
+        "newcomer_shift": "New games use first-person fists, a pixel rock skipping water, or plain grey ragdolls; more POV and physics, less character art.",
+        "source": "vision",
+        "summary": "Action poses of a character hitting, throwing or punching something with motion lines and impact, mostly bright and clean.",
+        "text_usage": "Light; either short titles (PUNCH OUT OF PRISON, MULTIPLAYER WITH FRIENDS) or a single key-prompt chip like 'E HIT'.",
+        "thumbnail_patterns": [
+          {
+            "count": "9/12",
+            "pattern": "Clear impact moment: object flying, debris, ragdolled target"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Arc or trajectory line showing the launch"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Big bold game-title text in the thumbnail"
           }
         ]
       }
@@ -12748,14 +12745,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -12873,9 +12870,10 @@
       "label": "Obby / climb / jump",
       "map_styles": {
         "arena": 2,
-        "linear_course": 7,
+        "linear_course": 6,
         "open_world": 1,
-        "tower_defense_lanes": 2
+        "tower_defense_lanes": 2,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -13029,7 +13027,7 @@
       "art_styles": {
         "realistic": 3,
         "simulator_bright": 1,
-        "stylized": 4
+        "stylized": 5
       },
       "games": [
         {
@@ -13082,18 +13080,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 7827,
           "icon": "10771155665_i.jpg",
           "id": "10771155665",
-          "map_style": "",
+          "map_style": "open_world",
           "media": [
             "10771155665_m0.jpg",
             "10771155665_m1.jpg",
             "10771155665_m2.jpg"
           ],
           "name": "[\ud83c\udf83] Ragdoll Sandbox",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -13118,14 +13116,14 @@
           "ccu": 5367,
           "icon": "10770197883_i.jpg",
           "id": "10770197883",
-          "map_style": "town_roleplay",
+          "map_style": "interior",
           "media": [
             "10770197883_m0.jpg",
             "10770197883_m1.jpg",
             "10770197883_m2.jpg"
           ],
           "name": "\ud83c\udfac Make a Cartoon!",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -13322,11 +13320,12 @@
       "label": "Paint / create",
       "map_styles": {
         "arena": 3,
+        "interior": 1,
         "linear_course": 1,
         "lobby_rounds": 1,
-        "open_world": 2,
+        "open_world": 3,
         "plot_base": 1,
-        "town_roleplay": 2
+        "town_roleplay": 1
       },
       "media": {
         "hues": [
@@ -13426,49 +13425,50 @@
       "members_hash": "9347236af2",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mixed: stylized/realistic about 6/12, simulator bright 4/12.",
+        "art_style": "No single style; stylized cartoon (about 5/12) and realistic sandbox (about 4/12)",
         "avoid": [
-          "Wide scenes where the created object is small"
+          "Pure UI screenshots with no character",
+          "Grey sandbox scenes with no focal point"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: first-person hand painting a funny face on the object. Thumbnail: a before/after split of the creation with a cash payout number.",
+        "date": "2026-11-02",
+        "direction": "Icon: a hand holding the brush over a half-finished, bright canvas. Thumbnail: the avatar next to a finished painting with a cash pop and a queue of buyers.",
         "do": [
-          "Fill the frame with the canvas mid-creation",
-          "Show the tool touching it in first person",
-          "Use a before/after split for transformation",
-          "Add one money or score number"
+          "Show the tool touching the canvas",
+          "Use a half-done split so the result is obvious",
+          "Add a cash pop if creations earn money",
+          "Use a recognisable subject on the canvas"
         ],
         "icon_patterns": [
           {
-            "count": "6/12",
-            "pattern": "The thing being made or painted is the hero (painting, pancake, house)"
-          },
-          {
-            "count": "4/12",
-            "pattern": "First-person hands holding a tool (sponge, bottle, washer)"
-          },
-          {
-            "count": "4/12",
-            "pattern": "Realistic-looking vehicles or houses"
-          }
-        ],
-        "members_hash": "e47e4fa5f4",
-        "newcomer_shift": "NEW games use famous-painting or face-on-object close-ups and first-person tool framing.",
-        "source": "vision",
-        "summary": "Mixed niche: creative games show the canvas or object being made, often first-person hands with a tool.",
-        "text_usage": "Minimal; short hooks like PAINT ANYTHING! or money gain (+$5,000).",
-        "thumbnail_patterns": [
-          {
-            "count": "3/12",
-            "pattern": "Before/after split of the object"
-          },
-          {
-            "count": "4/12",
-            "pattern": "Close-up of the canvas with the tool touching it"
+            "count": "5/12",
+            "pattern": "The creation tool in hand (brush, sponge, pencil, paint gun)"
           },
           {
             "count": "5/12",
-            "pattern": "Bright simple backgrounds"
+            "pattern": "Stylized cartoon characters rather than classic Roblox"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Bold title text on the icon"
+          }
+        ],
+        "members_hash": "9347236af2",
+        "newcomer_shift": "New games use famous-art parody (Mona Lisa, Starry Night) half cleaned, and comic-panel cartoon art.",
+        "source": "vision",
+        "summary": "A very mixed niche where creation tools are shown literally: a canvas, a brush, a sponge on a famous painting or an editor UI.",
+        "text_usage": "Short punchy titles (PAINT ANYTHING!, BECOME A STRIKER) or none; money pop-ups when paint pays.",
+        "thumbnail_patterns": [
+          {
+            "count": "3/12",
+            "pattern": "Before/after or work-in-progress of the creation"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Realistic or semi-realistic vehicles and terrain (sandbox games)"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Editor UI or tool bar visible"
           }
         ]
       }
@@ -14226,7 +14226,7 @@
           "ccu": 20970,
           "icon": "10769464063_i.jpg",
           "id": "10769464063",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10769464063_m0.jpg",
             "10769464063_m1.jpg"
@@ -14337,7 +14337,7 @@
           "ccu": 6398,
           "icon": "10765298801_i.jpg",
           "id": "10765298801",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10765298801_m0.jpg",
             "10765298801_m1.jpg",
@@ -14511,8 +14511,9 @@
       "key": "plus_one_stat",
       "label": "+1 stat per action",
       "map_styles": {
-        "linear_course": 2,
-        "zone_progression": 10
+        "linear_course": 3,
+        "open_world": 1,
+        "zone_progression": 8
       },
       "media": {
         "hues": [
@@ -14614,54 +14615,54 @@
       "members_hash": "e3b16f0922",
       "type": "mechanic",
       "vision": {
-        "art_style": "Bright simulator / stylized cartoon, about 10/12; one dark Halloween-framed entry.",
+        "art_style": "simulator_bright dominates (about 9/12); 2 anime-glow outliers (Anime Eyes, Anime Astral)",
         "avoid": [
-          "Dark muted palettes",
-          "Long text titles on the icon"
+          "Dark, low-contrast backgrounds",
+          "Long titles on the icon"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: close-up avatar mid-action with '+1' popups bursting around it on bright blue. Thumbnail: split panel from weak start to huge evolved form, with escalating numbers.",
+        "date": "2026-11-02",
+        "direction": "Icon: the avatar close-up doing the core action, ringed by white '+1' pops on a bright cyan background. Thumbnail: a before/after split where the left side shows +1 and the right shows the same character transformed with a huge number like +9.2B.",
         "do": [
-          "Put one avatar doing the stat action in the centre",
-          "Scatter 4-6 white '+1' popups with black outline",
-          "Use a saturated sky-blue/green background",
-          "Show the growth payoff (huge number or evolved form) in the thumbnail"
+          "Put the avatar mid-action in the centre with 5-8 white outlined '+1' pops around it",
+          "Use a saturated cyan sky and green studded ground",
+          "Show one huge end-state number or object to promise scale",
+          "Keep the icon to one subject plus the +1s, no title text"
         ],
         "icon_patterns": [
           {
-            "count": "9/12",
-            "pattern": "Classic bacon-hair avatar as the main subject"
-          },
-          {
             "count": "8/12",
-            "pattern": "Floating white '+1' numbers with dark outline"
+            "pattern": "Floating white '+1' numbers with dark outline around the character"
           },
           {
-            "count": "7/12",
-            "pattern": "Saturated sky-blue or grass-green background"
+            "count": "6/12",
+            "pattern": "Classic Roblox avatar (brown hair, black suit) as the main subject"
           },
           {
-            "count": "2/12",
-            "pattern": "Countdown hourglass overlay (16 HOURS / NOW)"
-          }
-        ],
-        "members_hash": "ec45394ad2",
-        "newcomer_shift": "NEW games lean on goofy-face avatars and a single weird body part or object (slinky, worm, eye) plus a prize egg.",
-        "source": "vision",
-        "summary": "Bright simulator art with a classic Roblox avatar mid-action surrounded by floating white '+1' numbers.",
-        "text_usage": "Almost only '+1' numbers and growth totals; few words, sometimes WORLD 3! or a big prize value.",
-        "thumbnail_patterns": [
-          {
-            "count": "8/12",
-            "pattern": "Avatar performing the core action with '+1' popups around it"
+            "count": "5/12",
+            "pattern": "Bright cyan sky / green grass background"
           },
           {
             "count": "3/12",
-            "pattern": "Before/after or tier split panels showing growth (+1 to +7M, $1 to $999T)"
+            "pattern": "Hourglass 'NOW' or 'WORLD 3/W3 UPDATE' banner for countdowns and updates"
+          }
+        ],
+        "members_hash": "e3b16f0922",
+        "newcomer_shift": "New games lean on a single giant result object (money stack, diamond egg, buff titan, worm in a maze) plus +1s, and use bold 'W3 UPDATE'/'WORLD 3!' badges on icons.",
+        "source": "vision",
+        "summary": "Bright cyan-sky simulator art of a classic Roblox avatar surrounded by floating white '+1' numbers, often showing a before/after power jump.",
+        "text_usage": "Almost no words; text is the '+1' counters and occasional huge numbers or a short update tag.",
+        "thumbnail_patterns": [
+          {
+            "count": "8/12",
+            "pattern": "Character mid-action with many '+1' pops filling empty space"
           },
           {
-            "count": "7/12",
-            "pattern": "Bright blue sky and green grass voxel world"
+            "count": "3/12",
+            "pattern": "Big stat numbers (+7M, 999T, $999M+) showing the endgame scale"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Split before/after or tiered panels showing growth"
           }
         ]
       }
@@ -15065,50 +15066,50 @@
       "members_hash": "5e25558203",
       "type": "mechanic",
       "vision": {
-        "art_style": "Bright simulator / stylized cartoon in about 10/11.",
+        "art_style": "simulator_bright cartoon Roblox (about 10/12)",
         "avoid": [
-          "Single avatar with no rival",
-          "Small unreadable text"
+          "Single character with no opponent",
+          "Small unreadable answer cards"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: two avatars across a board, one smug and one panicking, with a big question mark. Thumbnail: the board with the mystery item and a YES/NO bubble.",
+        "date": "2026-11-02",
+        "direction": "Icon: two shocked avatars at a table with the mystery item and big ? marks. Thumbnail: red vs blue split with the answer reveal and a bold question.",
         "do": [
-          "Show two avatars with opposite reactions",
-          "Put a big question mark or bubble",
-          "Show the item to guess clearly",
-          "Use a short question as text"
+          "Put two avatars face to face with ? marks",
+          "Show the guessed item big in the middle",
+          "Add one bold question line",
+          "Use a red vs blue split for duels"
         ],
         "icon_patterns": [
           {
-            "count": "7/11",
-            "pattern": "Two avatars head-to-head, puzzled expressions"
+            "count": "8/12",
+            "pattern": "Two avatars opposite each other across a table"
           },
           {
-            "count": "6/11",
-            "pattern": "Big question mark"
+            "count": "8/12",
+            "pattern": "Red question marks over heads"
           },
           {
-            "count": "7/11",
-            "pattern": "Bright blue sky backdrop"
+            "count": "7/12",
+            "pattern": "Confused or shocked faces"
           }
         ],
-        "members_hash": "a1f81287fc",
-        "newcomer_shift": "NEW games use 2-player board setups with themed character grids.",
+        "members_hash": "5e25558203",
+        "newcomer_shift": "New games use a split blue/red team board and price comparison tags.",
         "source": "vision",
-        "summary": "Two avatars facing each other across a table with a question mark and the item to guess.",
-        "text_usage": "Heavy: question words (WHAT COLOR?!, GUESS THE SIZE), answer bubbles, distances.",
+        "summary": "Two classic Roblox avatars facing each other across a table with question marks, big bold question text and the answer object between them.",
+        "text_usage": "Heavy: questions, answers, prices or distances in thick outlined text.",
         "thumbnail_patterns": [
           {
-            "count": "6/11",
-            "pattern": "Table or board between players (Guess Who style)"
+            "count": "9/12",
+            "pattern": "The thing to guess placed between players (map, card, price tag, board)"
           },
           {
-            "count": "5/11",
-            "pattern": "Speech bubbles or answer cards"
+            "count": "6/12",
+            "pattern": "Bold question or answer text (TOO OBVIOUS!, WHAT COLOR?!, prices)"
           },
           {
-            "count": "4/11",
-            "pattern": "Flags or famous faces as the subject"
+            "count": "8/12",
+            "pattern": "Bright blue sky and green grass"
           }
         ]
       }
@@ -15253,7 +15254,7 @@
           "ccu": 6480,
           "icon": "10771051754_i.jpg",
           "id": "10771051754",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771051754_m0.jpg",
             "10771051754_m1.jpg",
@@ -15412,10 +15413,10 @@
       "key": "race_drive",
       "label": "Race / drive",
       "map_styles": {
-        "arena": 3,
+        "arena": 2,
         "interior": 1,
         "linear_course": 3,
-        "open_world": 3,
+        "open_world": 4,
         "town_roleplay": 2
       },
       "media": {
@@ -15574,8 +15575,8 @@
       "art_styles": {
         "anime": 4,
         "dark_gritty": 1,
-        "simulator_bright": 2,
-        "stylized": 3,
+        "simulator_bright": 3,
+        "stylized": 2,
         "voxel_blocky": 2
       },
       "games": [
@@ -15660,7 +15661,7 @@
         },
         {
           "age": 53,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7526,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -15696,7 +15697,7 @@
           "ccu": 6398,
           "icon": "10765298801_i.jpg",
           "id": "10765298801",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10765298801_m0.jpg",
             "10765298801_m1.jpg",
@@ -15712,14 +15713,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -16430,10 +16431,10 @@
     },
     "mechanic:sell_shop": {
       "art_styles": {
-        "dark_gritty": 2,
+        "dark_gritty": 3,
         "realistic": 1,
         "simulator_bright": 1,
-        "stylized": 5
+        "stylized": 6
       },
       "games": [
         {
@@ -16546,34 +16547,34 @@
         },
         {
           "age": 77,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 6092,
           "icon": "10733617110_i.jpg",
           "id": "10733617110",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10733617110_m0.jpg",
             "10733617110_m1.jpg",
             "10733617110_m2.jpg"
           ],
           "name": "[\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0fMIMIC] Scary Baboon Reimagined",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -16723,10 +16724,10 @@
       "key": "sell_shop",
       "label": "Sell / run a shop",
       "map_styles": {
-        "interior": 4,
+        "interior": 6,
         "lobby_rounds": 1,
         "open_world": 2,
-        "plot_base": 4,
+        "plot_base": 2,
         "zone_progression": 1
       },
       "media": {
@@ -16828,50 +16829,50 @@
       "members_hash": "f619893d21",
       "type": "mechanic",
       "vision": {
-        "art_style": "Stylized cartoon in about 8/12; a few dark horror entries.",
+        "art_style": "stylized (about 6/12), with dark horror outliers (HUSH, Scary Baboon, The Forge)",
         "avoid": [
-          "Empty shops",
-          "Too many tiny items with no focus"
+          "Empty shop interiors",
+          "Cold blue lighting"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: a big appetising product close-up with a shopkeeper's face. Thumbnail: worker avatars behind a full counter in warm light, with a small twist hint.",
+        "date": "2026-11-02",
+        "direction": "Icon: a pile of the shop's signature product on a warm counter. Thumbnail: POV hands serving a queue with a coin burst, warm light.",
         "do": [
-          "Show the product in appetising close-up",
-          "Use warm interior lighting",
-          "Include a customer or worker reaction",
-          "Hint at scale (rows of product, a day counter)"
+          "Fill the frame with appetising goods",
+          "Use warm, soft lighting",
+          "Show hands working the product",
+          "Hint a twist with one small creepy detail if relevant"
         ],
         "icon_patterns": [
           {
-            "count": "5/12",
-            "pattern": "Product/food close-up as the subject (fries, sushi, snacks)"
+            "count": "6/12",
+            "pattern": "The product as the hero (fries, sushi, snacks, packages, dress)"
           },
           {
-            "count": "2/12",
-            "pattern": "Countdown hourglass overlay (24H, NOW)"
+            "count": "5/12",
+            "pattern": "Warm interior lighting and wooden counters"
           },
           {
             "count": "3/12",
-            "pattern": "Two avatars behind a counter or shop"
+            "pattern": "Cute stylized avatar handling goods"
           }
         ],
-        "members_hash": "4604d16616",
-        "newcomer_shift": "NEW games mix shops with anomalies/horror or first-person punch escapes.",
+        "members_hash": "f619893d21",
+        "newcomer_shift": "New games use POV hands crafting (sewing, packing) and chaotic eat-everything shots.",
         "source": "vision",
-        "summary": "Cosy shop interiors and food close-ups, with frequent countdown overlays.",
-        "text_usage": "Little text; hooks like DAY 201, PACK ORDERS, store names.",
+        "summary": "Warm, cosy shop and product shots: the goods themselves (fries, sushi, boxes, snacks) fill the frame.",
+        "text_usage": "Sparse; a store sign, DAY 201 counter or an EQUIP button.",
         "thumbnail_patterns": [
           {
-            "count": "5/12",
-            "pattern": "Warm interior lighting in a shop or kitchen"
+            "count": "6/12",
+            "pattern": "Close-up of goods in a shop setting"
           },
           {
             "count": "3/12",
-            "pattern": "Product rows filling the frame"
+            "pattern": "Hands-in-frame POV packing or preparing"
           },
           {
-            "count": "4/12",
-            "pattern": "First-person hands packing or punching"
+            "count": "3/12",
+            "pattern": "Horror twist in the background (red eyes, monster)"
           }
         ]
       }
@@ -16880,8 +16881,7 @@
       "art_styles": {
         "classic_studs": 2,
         "realistic": 1,
-        "simulator_bright": 1,
-        "stylized": 8
+        "stylized": 9
       },
       "games": [
         {
@@ -16980,7 +16980,7 @@
         },
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -17289,7 +17289,7 @@
         "dark_gritty": 1,
         "meme_chaotic": 1,
         "realistic": 1,
-        "simulator_bright": 6
+        "simulator_bright": 9
       },
       "games": [
         {
@@ -17314,7 +17314,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -17406,7 +17406,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -17417,7 +17417,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -17438,7 +17438,7 @@
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5557,
           "icon": "10769660375_i.jpg",
           "id": "10769660375",
@@ -17449,12 +17449,12 @@
             "10769660375_m2.jpg"
           ],
           "name": "Steal a Forest",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
           "age": 39,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5317,
           "icon": "10767913047_i.jpg",
           "id": "10767913047",
@@ -17464,7 +17464,7 @@
             "10767913047_m1.jpg"
           ],
           "name": "Feed to Steal",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -17585,9 +17585,8 @@
       "label": "Steal / raid",
       "map_styles": {
         "interior": 1,
-        "plot_base": 9,
-        "town_roleplay": 1,
-        "zone_progression": 1
+        "plot_base": 10,
+        "town_roleplay": 1
       },
       "media": {
         "hues": [
@@ -18195,14 +18194,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -18446,10 +18445,10 @@
       "key": "tower_defense",
       "label": "Tower defense",
       "map_styles": {
-        "linear_course": 1,
         "open_world": 1,
         "plot_base": 3,
-        "tower_defense_lanes": 7
+        "tower_defense_lanes": 7,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -18602,13 +18601,12 @@
         "anime": 1,
         "dark_gritty": 1,
         "realistic": 1,
-        "simulator_bright": 1,
-        "stylized": 2
+        "stylized": 3
       },
       "games": [
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -19006,7 +19004,7 @@
       "art_styles": {
         "anime": 1,
         "dark_gritty": 1,
-        "realistic": 1,
+        "realistic": 2,
         "simulator_bright": 3,
         "stylized": 5
       },
@@ -19157,18 +19155,18 @@
         },
         {
           "age": 21,
-          "art_style": "",
+          "art_style": "realistic",
           "ccu": 6067,
           "icon": "10770466814_i.jpg",
           "id": "10770466814",
-          "map_style": "plot_base",
+          "map_style": "open_world",
           "media": [
             "10770466814_m0.jpg",
             "10770466814_m1.jpg",
             "10770466814_m2.jpg"
           ],
           "name": "[\ud83c\udf83] Clean the Moon!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -19303,8 +19301,8 @@
         "arena": 1,
         "interior": 3,
         "linear_course": 3,
-        "open_world": 2,
-        "plot_base": 2,
+        "open_world": 3,
+        "plot_base": 1,
         "town_roleplay": 1
       },
       "media": {
@@ -19408,56 +19406,58 @@
       "members_hash": "4a1c65d7ac",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mixed: bright simulator ~6/12, realistic/dark ~4/12.",
+        "art_style": "simulator_bright and stylized (about 8/12), with realistic car and horror outliers",
         "avoid": [
-          "Plain logo-only icons for a new game"
+          "Busy whole-base overviews",
+          "Logo-only icons for a new game"
         ],
-        "date": "2026-11-01",
-        "direction": "Icon: avatar beside a towering build or mythic creature. Thumbnail: wide shot of the base at scale with a reward label.",
+        "date": "2026-11-02",
+        "direction": "Icon: a single upgraded base piece being placed with a glowing outline and cursor. Thumbnail: the base growing from tiny to huge with a money rate.",
         "do": [
-          "Show the base or creation large",
-          "Put the avatar small next to it for scale",
-          "Add a rarity or reward label",
-          "Use bright skies"
+          "Show one bold object being built or placed",
+          "Add a cursor or placement outline",
+          "Keep colours bright and simple",
+          "Use one word max"
         ],
         "icon_patterns": [
           {
-            "count": "5/12",
-            "pattern": "Avatar beside a large creature or build"
+            "count": "7/12",
+            "pattern": "Bright clean background with one clear subject"
           },
           {
-            "count": "5/12",
-            "pattern": "Bright blue sky backgrounds"
+            "count": "2/12",
+            "pattern": "Pointer/cursor or build outline showing placement"
           },
           {
             "count": "4/12",
-            "pattern": "Game logo text as main icon element"
+            "pattern": "Brand logo text (Driving Empire, Bloxburg, Anime Galaxies)"
           }
         ],
-        "members_hash": "0799633891",
-        "newcomer_shift": "NEW games use mythic eggs, food rows and anime collabs.",
+        "members_hash": "4a1c65d7ac",
+        "newcomer_shift": "New games use one funny chore image (cleaning the moon, sushi rows) instead of a base overview.",
         "source": "vision",
-        "summary": "Builder/tycoon art shows the creation or creature at scale, with bright skies and big reward labels.",
-        "text_usage": "Logos and reward labels; promo codes for older titles.",
+        "summary": "Clean bright build scenes and cosy product art; many show the base or item being placed with a cursor.",
+        "text_usage": "Logos on older games; new ones mostly no text or one word (SECRET).",
         "thumbnail_patterns": [
           {
-            "count": "6/12",
-            "pattern": "Wide shot showing the build or base at scale"
+            "count": "7/12",
+            "pattern": "Single hero object (raft, car, egg, sushi, moon)"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Placement box or cursor click"
           },
           {
             "count": "3/12",
-            "pattern": "Rarity/reward labels (MYTHIC EGG, CODE)"
-          },
-          {
-            "count": "3/12",
-            "pattern": "Dark realistic art for older titles"
+            "pattern": "Dark or night scenes for older titles"
           }
         ]
       }
     },
     "niche:anime_fighting": {
       "art_styles": {
-        "anime": 11,
+        "anime": 10,
+        "realistic": 1,
         "stylized": 1
       },
       "games": [
@@ -19477,7 +19477,7 @@
         },
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -19560,7 +19560,7 @@
           "ccu": 8667,
           "icon": "7613921865_i.jpg",
           "id": "7613921865",
-          "map_style": "tower_defense_lanes",
+          "map_style": "zone_progression",
           "media": [
             "7613921865_m0.jpg",
             "7613921865_m1.jpg",
@@ -19592,14 +19592,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -19752,10 +19752,9 @@
       "label": "Anime fighting",
       "map_styles": {
         "arena": 4,
-        "linear_course": 1,
         "plot_base": 1,
-        "tower_defense_lanes": 2,
-        "zone_progression": 4
+        "tower_defense_lanes": 1,
+        "zone_progression": 6
       },
       "media": {
         "hues": [
@@ -21019,7 +21018,8 @@
         "classic_studs": 1,
         "dark_gritty": 2,
         "realistic": 1,
-        "simulator_bright": 3
+        "simulator_bright": 3,
+        "stylized": 1
       },
       "games": [
         {
@@ -21072,18 +21072,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -21315,11 +21315,11 @@
       "key": "escape",
       "label": "Escape",
       "map_styles": {
-        "interior": 1,
+        "interior": 2,
         "linear_course": 3,
         "lobby_rounds": 1,
         "open_world": 1,
-        "plot_base": 2,
+        "plot_base": 1,
         "zone_progression": 4
       },
       "media": {
@@ -21480,7 +21480,7 @@
           "ccu": 5374,
           "icon": "10526853622_i.jpg",
           "id": "10526853622",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10526853622_m0.jpg",
             "10526853622_m1.jpg",
@@ -21608,9 +21608,8 @@
       "key": "fishing",
       "label": "Fishing",
       "map_styles": {
-        "open_world": 6,
-        "plot_base": 1,
-        "zone_progression": 1
+        "open_world": 7,
+        "plot_base": 1
       },
       "media": {
         "hues": [
@@ -21714,7 +21713,7 @@
           "ccu": 5208,
           "icon": "10700618962_i.jpg",
           "id": "10700618962",
-          "map_style": "zone_progression",
+          "map_style": "arena",
           "media": [
             "10700618962_m0.jpg",
             "10700618962_m1.jpg"
@@ -21962,9 +21961,10 @@
       "key": "gardening_farming",
       "label": "Gardening farming",
       "map_styles": {
+        "arena": 1,
         "plot_base": 8,
         "tower_defense_lanes": 1,
-        "zone_progression": 3
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -22315,7 +22315,7 @@
     },
     "niche:horror": {
       "art_styles": {
-        "dark_gritty": 8
+        "dark_gritty": 9
       },
       "games": [
         {
@@ -22336,18 +22336,18 @@
         },
         {
           "age": 77,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 6092,
           "icon": "10733617110_i.jpg",
           "id": "10733617110",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10733617110_m0.jpg",
             "10733617110_m1.jpg",
             "10733617110_m2.jpg"
           ],
           "name": "[\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0fMIMIC] Scary Baboon Reimagined",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -22605,10 +22605,9 @@
       "label": "Horror",
       "map_styles": {
         "arena": 1,
-        "interior": 6,
+        "interior": 7,
         "linear_course": 1,
-        "lobby_rounds": 2,
-        "plot_base": 1
+        "lobby_rounds": 2
       },
       "media": {
         "hues": [
@@ -23916,7 +23915,7 @@
     "niche:pet_collecting": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 10
+        "simulator_bright": 11
       },
       "games": [
         {
@@ -23941,7 +23940,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -24064,7 +24063,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -24075,7 +24074,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -24213,8 +24212,8 @@
       "label": "Pet collecting",
       "map_styles": {
         "linear_course": 2,
-        "plot_base": 5,
-        "zone_progression": 5
+        "plot_base": 6,
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -24348,7 +24347,7 @@
           "ccu": 5539,
           "icon": "4420562665_i.jpg",
           "id": "4420562665",
-          "map_style": "linear_course",
+          "map_style": "open_world",
           "media": [
             "4420562665_m0.jpg",
             "4420562665_m1.jpg",
@@ -24615,8 +24614,8 @@
       "key": "racing_driving",
       "label": "Racing driving",
       "map_styles": {
-        "linear_course": 4,
-        "open_world": 5,
+        "linear_course": 3,
+        "open_world": 6,
         "plot_base": 1,
         "town_roleplay": 1,
         "zone_progression": 1
@@ -24727,8 +24726,7 @@
         "anime": 3,
         "dark_gritty": 1,
         "meme_chaotic": 1,
-        "simulator_bright": 1,
-        "stylized": 1,
+        "simulator_bright": 2,
         "voxel_blocky": 2
       },
       "games": [
@@ -24750,7 +24748,7 @@
         },
         {
           "age": 53,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 7526,
           "icon": "10765938934_i.jpg",
           "id": "10765938934",
@@ -24770,7 +24768,7 @@
           "ccu": 6149,
           "icon": "6682487255_i.jpg",
           "id": "6682487255",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "6682487255_m0.jpg",
             "6682487255_m1.jpg",
@@ -24802,14 +24800,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -25026,8 +25024,8 @@
       "label": "Rng",
       "map_styles": {
         "arena": 1,
-        "linear_course": 2,
-        "lobby_rounds": 1,
+        "linear_course": 1,
+        "lobby_rounds": 2,
         "open_world": 2,
         "plot_base": 1,
         "zone_progression": 4
@@ -25545,8 +25543,8 @@
         "classic_studs": 1,
         "dark_gritty": 1,
         "realistic": 2,
-        "simulator_bright": 2,
-        "stylized": 5,
+        "simulator_bright": 1,
+        "stylized": 6,
         "voxel_blocky": 1
       },
       "games": [
@@ -25600,7 +25598,7 @@
         },
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -26753,7 +26751,7 @@
     "niche:steal_a": {
       "art_styles": {
         "meme_chaotic": 1,
-        "simulator_bright": 3,
+        "simulator_bright": 5,
         "voxel_blocky": 2
       },
       "games": [
@@ -26791,7 +26789,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -26802,12 +26800,12 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5557,
           "icon": "10769660375_i.jpg",
           "id": "10769660375",
@@ -26818,7 +26816,7 @@
             "10769660375_m2.jpg"
           ],
           "name": "Steal a Forest",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -27154,7 +27152,7 @@
         "dark_gritty": 2,
         "meme_chaotic": 1,
         "realistic": 1,
-        "stylized": 1
+        "stylized": 2
       },
       "games": [
         {
@@ -27179,7 +27177,7 @@
           "ccu": 6149,
           "icon": "6682487255_i.jpg",
           "id": "6682487255",
-          "map_style": "zone_progression",
+          "map_style": "lobby_rounds",
           "media": [
             "6682487255_m0.jpg",
             "6682487255_m1.jpg",
@@ -27206,18 +27204,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -27444,11 +27442,11 @@
       "key": "story",
       "label": "Story",
       "map_styles": {
-        "interior": 4,
+        "interior": 5,
+        "lobby_rounds": 1,
         "open_world": 2,
-        "plot_base": 2,
-        "town_roleplay": 3,
-        "zone_progression": 1
+        "plot_base": 1,
+        "town_roleplay": 3
       },
       "media": {
         "hues": [
@@ -27708,14 +27706,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -27854,10 +27852,10 @@
       "map_styles": {
         "arena": 1,
         "interior": 1,
-        "linear_course": 1,
         "lobby_rounds": 3,
         "open_world": 5,
-        "plot_base": 1
+        "plot_base": 1,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -28006,14 +28004,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -28223,10 +28221,9 @@
       "key": "tower_defense",
       "label": "Tower defense",
       "map_styles": {
-        "linear_course": 1,
         "plot_base": 1,
         "tower_defense_lanes": 7,
-        "zone_progression": 1
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -30435,15 +30432,17 @@
     },
     "subgenre:Battlegrounds & Fighting": {
       "art_styles": {
-        "anime": 3,
+        "anime": 2,
         "classic_studs": 1,
-        "stylized": 7,
+        "realistic": 1,
+        "simulator_bright": 1,
+        "stylized": 6,
         "voxel_blocky": 1
       },
       "games": [
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -30479,7 +30478,7 @@
           "ccu": 21888,
           "icon": "10764627709_i.jpg",
           "id": "10764627709",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10764627709_m0.jpg",
             "10764627709_m1.jpg"
@@ -30490,11 +30489,11 @@
         },
         {
           "age": 631,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 21625,
           "icon": "7219654364_i.jpg",
           "id": "7219654364",
-          "map_style": "lobby_rounds",
+          "map_style": "arena",
           "media": [
             "7219654364_m0.jpg",
             "7219654364_m1.jpg"
@@ -30731,8 +30730,8 @@
       "label": "Battlegrounds & Fighting",
       "map_styles": {
         "arena": 8,
-        "lobby_rounds": 2,
-        "open_world": 1,
+        "lobby_rounds": 1,
+        "open_world": 2,
         "zone_progression": 1
       },
       "media": {
@@ -31700,14 +31699,14 @@
           "ccu": 5367,
           "icon": "10770197883_i.jpg",
           "id": "10770197883",
-          "map_style": "town_roleplay",
+          "map_style": "interior",
           "media": [
             "10770197883_m0.jpg",
             "10770197883_m1.jpg",
             "10770197883_m2.jpg"
           ],
           "name": "\ud83c\udfac Make a Cartoon!",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -31950,9 +31949,10 @@
       "key": "Coloring & Drawing",
       "label": "Coloring & Drawing",
       "map_styles": {
+        "interior": 1,
         "lobby_rounds": 4,
         "plot_base": 1,
-        "town_roleplay": 2
+        "town_roleplay": 1
       },
       "media": {
         "hues": [
@@ -32060,8 +32060,7 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 3,
-        "simulator_bright": 1,
-        "stylized": 4,
+        "stylized": 5,
         "voxel_blocky": 1
       },
       "games": [
@@ -32099,7 +32098,7 @@
         },
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -32868,7 +32867,7 @@
     "subgenre:Escape": {
       "art_styles": {
         "classic_studs": 1,
-        "dark_gritty": 6,
+        "dark_gritty": 7,
         "simulator_bright": 1,
         "stylized": 1
       },
@@ -32955,18 +32954,18 @@
         },
         {
           "age": 77,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 6092,
           "icon": "10733617110_i.jpg",
           "id": "10733617110",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10733617110_m0.jpg",
             "10733617110_m1.jpg",
             "10733617110_m2.jpg"
           ],
           "name": "[\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0fMIMIC] Scary Baboon Reimagined",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -33165,10 +33164,10 @@
       "key": "Escape",
       "label": "Escape",
       "map_styles": {
-        "interior": 7,
+        "interior": 8,
         "linear_course": 1,
         "lobby_rounds": 2,
-        "plot_base": 2
+        "plot_base": 1
       },
       "media": {
         "hues": [
@@ -34533,7 +34532,7 @@
           "ccu": 20970,
           "icon": "10769464063_i.jpg",
           "id": "10769464063",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10769464063_m0.jpg",
             "10769464063_m1.jpg"
@@ -34720,9 +34719,9 @@
       "label": "Incremental Simulator",
       "map_styles": {
         "linear_course": 2,
-        "open_world": 3,
+        "open_world": 4,
         "plot_base": 1,
-        "zone_progression": 6
+        "zone_progression": 5
       },
       "media": {
         "hues": [
@@ -37690,7 +37689,7 @@
           "ccu": 12227,
           "icon": "10770593871_i.jpg",
           "id": "10770593871",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10770593871_m0.jpg",
             "10770593871_m1.jpg",
@@ -37942,9 +37941,9 @@
       "key": "Physics Sim",
       "label": "Physics Sim",
       "map_styles": {
-        "arena": 4,
+        "arena": 3,
         "linear_course": 2,
-        "open_world": 5,
+        "open_world": 6,
         "zone_progression": 1
       },
       "media": {
@@ -39162,6 +39161,7 @@
       "art_styles": {
         "classic_studs": 2,
         "simulator_bright": 1,
+        "stylized": 1,
         "voxel_blocky": 3
       },
       "games": [
@@ -39183,18 +39183,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 7827,
           "icon": "10771155665_i.jpg",
           "id": "10771155665",
-          "map_style": "",
+          "map_style": "open_world",
           "media": [
             "10771155665_m0.jpg",
             "10771155665_m1.jpg",
             "10771155665_m2.jpg"
           ],
           "name": "[\ud83c\udf83] Ragdoll Sandbox",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -39452,7 +39452,7 @@
       "label": "Sandbox",
       "map_styles": {
         "linear_course": 2,
-        "open_world": 2,
+        "open_world": 3,
         "plot_base": 5
       },
       "media": {
@@ -41101,7 +41101,7 @@
           "ccu": 8667,
           "icon": "7613921865_i.jpg",
           "id": "7613921865",
-          "map_style": "tower_defense_lanes",
+          "map_style": "zone_progression",
           "media": [
             "7613921865_m0.jpg",
             "7613921865_m1.jpg",
@@ -41336,8 +41336,8 @@
         "arena": 2,
         "open_world": 1,
         "plot_base": 1,
-        "tower_defense_lanes": 7,
-        "zone_progression": 1
+        "tower_defense_lanes": 6,
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -41445,7 +41445,7 @@
         "dark_gritty": 1,
         "low_poly": 1,
         "meme_chaotic": 1,
-        "simulator_bright": 2
+        "simulator_bright": 3
       },
       "games": [
         {
@@ -41498,7 +41498,7 @@
         },
         {
           "age": 18,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5627,
           "icon": "10771124452_i.jpg",
           "id": "10771124452",
@@ -41508,7 +41508,7 @@
             "10771124452_m1.jpg"
           ],
           "name": "TROLL Jail Hug Tower",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -42118,7 +42118,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -42388,8 +42388,7 @@
         "arena": 1,
         "interior": 2,
         "linear_course": 2,
-        "plot_base": 6,
-        "zone_progression": 1
+        "plot_base": 7
       },
       "media": {
         "hues": [
@@ -42495,7 +42494,7 @@
     "subgenre:Vehicle Sim": {
       "art_styles": {
         "classic_studs": 1,
-        "realistic": 6,
+        "realistic": 7,
         "stylized": 2
       },
       "games": [
@@ -42565,18 +42564,18 @@
         },
         {
           "age": 1976,
-          "art_style": "",
+          "art_style": "realistic",
           "ccu": 8956,
           "icon": "2640407187_i.jpg",
           "id": "2640407187",
-          "map_style": "linear_course",
+          "map_style": "open_world",
           "media": [
             "2640407187_m0.jpg",
             "2640407187_m1.jpg",
             "2640407187_m2.jpg"
           ],
           "name": "(\ud83d\udc7b) Car Driving Indonesia",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -42633,7 +42632,7 @@
           "ccu": 6480,
           "icon": "10771051754_i.jpg",
           "id": "10771051754",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771051754_m0.jpg",
             "10771051754_m1.jpg",
@@ -42790,9 +42789,8 @@
       "key": "Vehicle Sim",
       "label": "Vehicle Sim",
       "map_styles": {
-        "arena": 1,
-        "linear_course": 2,
-        "open_world": 7,
+        "linear_course": 1,
+        "open_world": 9,
         "town_roleplay": 2
       },
       "media": {
@@ -44114,7 +44112,7 @@
           "ccu": 8667,
           "icon": "7613921865_i.jpg",
           "id": "7613921865",
-          "map_style": "tower_defense_lanes",
+          "map_style": "zone_progression",
           "media": [
             "7613921865_m0.jpg",
             "7613921865_m1.jpg",
@@ -44146,14 +44144,14 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -44306,11 +44304,10 @@
       "label": "Anime",
       "map_styles": {
         "arena": 3,
-        "linear_course": 1,
         "open_world": 1,
         "plot_base": 1,
-        "tower_defense_lanes": 2,
-        "zone_progression": 4
+        "tower_defense_lanes": 1,
+        "zone_progression": 6
       },
       "media": {
         "hues": [
@@ -44812,7 +44809,7 @@
           "ccu": 10094,
           "icon": "10758824872_i.jpg",
           "id": "10758824872",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10758824872_m0.jpg",
             "10758824872_m1.jpg",
@@ -45063,12 +45060,12 @@
       "label": "Dinosaurs",
       "map_styles": {
         "arena": 1,
-        "linear_course": 1,
+        "linear_course": 2,
         "lobby_rounds": 2,
         "open_world": 2,
         "plot_base": 1,
         "town_roleplay": 1,
-        "zone_progression": 2
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -45214,7 +45211,7 @@
           "ccu": 5539,
           "icon": "4420562665_i.jpg",
           "id": "4420562665",
-          "map_style": "linear_course",
+          "map_style": "open_world",
           "media": [
             "4420562665_m0.jpg",
             "4420562665_m1.jpg",
@@ -45468,9 +45465,9 @@
       "key": "disaster",
       "label": "Disaster / weather",
       "map_styles": {
-        "linear_course": 3,
+        "linear_course": 2,
         "lobby_rounds": 3,
-        "open_world": 1,
+        "open_world": 2,
         "plot_base": 4
       },
       "media": {
@@ -45575,7 +45572,7 @@
     },
     "theme:eggs": {
       "art_styles": {
-        "simulator_bright": 10
+        "simulator_bright": 11
       },
       "games": [
         {
@@ -45600,7 +45597,7 @@
           "ccu": 144339,
           "icon": "10765288803_i.jpg",
           "id": "10765288803",
-          "map_style": "zone_progression",
+          "map_style": "plot_base",
           "media": [
             "10765288803_m0.jpg",
             "10765288803_m1.jpg",
@@ -45676,7 +45673,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -45687,7 +45684,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -45871,8 +45868,8 @@
       "label": "Eggs",
       "map_styles": {
         "linear_course": 3,
-        "plot_base": 5,
-        "zone_progression": 4
+        "plot_base": 6,
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -47195,7 +47192,7 @@
       "art_styles": {
         "anime": 1,
         "realistic": 1,
-        "simulator_bright": 4,
+        "simulator_bright": 5,
         "stylized": 3
       },
       "games": [
@@ -47246,7 +47243,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -47257,7 +47254,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -47597,7 +47594,7 @@
     },
     "theme:horror": {
       "art_styles": {
-        "dark_gritty": 5,
+        "dark_gritty": 6,
         "realistic": 2,
         "simulator_bright": 2
       },
@@ -47652,18 +47649,18 @@
         },
         {
           "age": 77,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 6092,
           "icon": "10733617110_i.jpg",
           "id": "10733617110",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10733617110_m0.jpg",
             "10733617110_m1.jpg",
             "10733617110_m2.jpg"
           ],
           "name": "[\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0fMIMIC] Scary Baboon Reimagined",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -47892,11 +47889,10 @@
       "key": "horror",
       "label": "Horror",
       "map_styles": {
-        "interior": 4,
+        "interior": 5,
         "linear_course": 1,
         "lobby_rounds": 2,
         "open_world": 3,
-        "plot_base": 1,
         "zone_progression": 1
       },
       "media": {
@@ -49189,9 +49185,9 @@
     },
     "theme:money": {
       "art_styles": {
-        "classic_studs": 1,
+        "classic_studs": 2,
         "realistic": 1,
-        "simulator_bright": 6,
+        "simulator_bright": 5,
         "stylized": 2,
         "voxel_blocky": 1
       },
@@ -49230,7 +49226,7 @@
         },
         {
           "age": 296,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 14668,
           "icon": "9534705677_i.jpg",
           "id": "9534705677",
@@ -49340,11 +49336,11 @@
         },
         {
           "age": 31,
-          "art_style": "stylized",
+          "art_style": "classic_studs",
           "ccu": 6908,
           "icon": "10769020444_i.jpg",
           "id": "10769020444",
-          "map_style": "interior",
+          "map_style": "town_roleplay",
           "media": [
             "10769020444_m0.jpg",
             "10769020444_m1.jpg",
@@ -49488,10 +49484,11 @@
       "label": "Money / rich",
       "map_styles": {
         "arena": 1,
-        "interior": 2,
+        "interior": 1,
         "linear_course": 2,
         "open_world": 1,
         "plot_base": 3,
+        "town_roleplay": 1,
         "zone_progression": 2
       },
       "media": {
@@ -49963,7 +49960,7 @@
       "art_styles": {
         "anime": 1,
         "dark_gritty": 1,
-        "simulator_bright": 1,
+        "simulator_bright": 2,
         "stylized": 3
       },
       "games": [
@@ -50001,7 +49998,7 @@
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 5557,
           "icon": "10769660375_i.jpg",
           "id": "10769660375",
@@ -50012,7 +50009,7 @@
             "10769660375_m2.jpg"
           ],
           "name": "Steal a Forest",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -50757,7 +50754,7 @@
       "art_styles": {
         "classic_studs": 1,
         "simulator_bright": 1,
-        "stylized": 6
+        "stylized": 7
       },
       "games": [
         {
@@ -50778,18 +50775,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -51050,10 +51047,9 @@
       "label": "Prison / police",
       "map_styles": {
         "arena": 1,
-        "interior": 1,
+        "interior": 2,
         "linear_course": 2,
         "open_world": 4,
-        "plot_base": 1,
         "town_roleplay": 2,
         "zone_progression": 1
       },
@@ -51159,6 +51155,7 @@
     "theme:robots": {
       "art_styles": {
         "realistic": 1,
+        "simulator_bright": 1,
         "stylized": 1,
         "voxel_blocky": 1
       },
@@ -51181,7 +51178,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -51192,7 +51189,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -51889,11 +51886,11 @@
     },
     "theme:seasonal": {
       "art_styles": {
-        "anime": 3,
+        "anime": 2,
         "dark_gritty": 1,
-        "realistic": 3,
+        "realistic": 4,
         "simulator_bright": 1,
-        "stylized": 3
+        "stylized": 4
       },
       "games": [
         {
@@ -51914,7 +51911,7 @@
         },
         {
           "age": 1553,
-          "art_style": "anime",
+          "art_style": "realistic",
           "ccu": 65704,
           "icon": "3808081382_i.jpg",
           "id": "3808081382",
@@ -52030,30 +52027,30 @@
           "ccu": 5677,
           "icon": "10767081098_i.jpg",
           "id": "10767081098",
-          "map_style": "linear_course",
+          "map_style": "zone_progression",
           "media": [
             "10767081098_m0.jpg",
             "10767081098_m1.jpg",
             "10767081098_m2.jpg"
           ],
           "name": "[\ud83d\udc80UPD] Anime Nexus RNG : HALLOWEEN PART 2",
-          "style_source": "keywords",
+          "style_source": "vision",
           "young": true
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": true
         },
         {
@@ -52188,10 +52185,10 @@
       "label": "Seasonal / holiday",
       "map_styles": {
         "arena": 1,
-        "linear_course": 1,
+        "interior": 1,
         "open_world": 7,
-        "plot_base": 1,
-        "town_roleplay": 2
+        "town_roleplay": 2,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -52299,7 +52296,7 @@
     "theme:space": {
       "art_styles": {
         "classic_studs": 1,
-        "realistic": 1,
+        "realistic": 2,
         "simulator_bright": 2,
         "stylized": 1
       },
@@ -52322,18 +52319,18 @@
         },
         {
           "age": 21,
-          "art_style": "",
+          "art_style": "realistic",
           "ccu": 6067,
           "icon": "10770466814_i.jpg",
           "id": "10770466814",
-          "map_style": "plot_base",
+          "map_style": "open_world",
           "media": [
             "10770466814_m0.jpg",
             "10770466814_m1.jpg",
             "10770466814_m2.jpg"
           ],
           "name": "[\ud83c\udf83] Clean the Moon!",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -52593,8 +52590,8 @@
         "arena": 4,
         "linear_course": 2,
         "lobby_rounds": 1,
-        "open_world": 1,
-        "plot_base": 3
+        "open_world": 2,
+        "plot_base": 2
       },
       "media": {
         "hues": [
@@ -53104,7 +53101,8 @@
       "art_styles": {
         "anime": 1,
         "dark_gritty": 1,
-        "simulator_bright": 5
+        "simulator_bright": 6,
+        "stylized": 1
       },
       "games": [
         {
@@ -53157,7 +53155,7 @@
         },
         {
           "age": 31,
-          "art_style": "",
+          "art_style": "simulator_bright",
           "ccu": 7232,
           "icon": "10769020044_i.jpg",
           "id": "10769020044",
@@ -53168,7 +53166,7 @@
             "10769020044_m2.jpg"
           ],
           "name": "steal a strange egg",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -53177,7 +53175,7 @@
           "ccu": 6398,
           "icon": "10765298801_i.jpg",
           "id": "10765298801",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10765298801_m0.jpg",
             "10765298801_m1.jpg",
@@ -53189,18 +53187,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 5278,
           "icon": "10771327607_i.jpg",
           "id": "10771327607",
-          "map_style": "plot_base",
+          "map_style": "interior",
           "media": [
             "10771327607_m0.jpg",
             "10771327607_m1.jpg",
             "10771327607_m2.jpg"
           ],
           "name": "Punch Out Of Prison",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -53397,9 +53395,11 @@
       "key": "stone_rocks",
       "label": "Stones / rocks / ores",
       "map_styles": {
+        "interior": 1,
+        "linear_course": 1,
         "open_world": 1,
-        "plot_base": 6,
-        "zone_progression": 5
+        "plot_base": 5,
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -54148,7 +54148,7 @@
     "theme:vehicles": {
       "art_styles": {
         "classic_studs": 1,
-        "realistic": 3,
+        "realistic": 4,
         "simulator_bright": 4,
         "stylized": 3
       },
@@ -54235,18 +54235,18 @@
         },
         {
           "age": 1976,
-          "art_style": "",
+          "art_style": "realistic",
           "ccu": 8956,
           "icon": "2640407187_i.jpg",
           "id": "2640407187",
-          "map_style": "linear_course",
+          "map_style": "open_world",
           "media": [
             "2640407187_m0.jpg",
             "2640407187_m1.jpg",
             "2640407187_m2.jpg"
           ],
           "name": "(\ud83d\udc7b) Car Driving Indonesia",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -54303,7 +54303,7 @@
           "ccu": 6480,
           "icon": "10771051754_i.jpg",
           "id": "10771051754",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771051754_m0.jpg",
             "10771051754_m1.jpg",
@@ -54446,9 +54446,8 @@
       "key": "vehicles",
       "label": "Vehicles",
       "map_styles": {
-        "arena": 1,
-        "linear_course": 3,
-        "open_world": 4,
+        "linear_course": 2,
+        "open_world": 6,
         "plot_base": 2,
         "town_roleplay": 2
       },
@@ -54559,7 +54558,7 @@
         "dark_gritty": 2,
         "realistic": 3,
         "simulator_bright": 1,
-        "stylized": 1
+        "stylized": 2
       },
       "games": [
         {
@@ -54625,18 +54624,18 @@
         },
         {
           "age": 17,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 7827,
           "icon": "10771155665_i.jpg",
           "id": "10771155665",
-          "map_style": "",
+          "map_style": "open_world",
           "media": [
             "10771155665_m0.jpg",
             "10771155665_m1.jpg",
             "10771155665_m2.jpg"
           ],
           "name": "[\ud83c\udf83] Ragdoll Sandbox",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -54851,7 +54850,7 @@
         "arena": 3,
         "linear_course": 2,
         "lobby_rounds": 2,
-        "open_world": 2,
+        "open_world": 3,
         "plot_base": 1,
         "tower_defense_lanes": 1
       },
