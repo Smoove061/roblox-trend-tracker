@@ -1,395 +1,405 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "ideas": [
     {
-      "title": "+1 Horde Size 🧟",
+      "title": "Paint the Getaway Car 🚓",
+      "scope": "medium",
+      "genre": "Vehicle Sim · Chase",
+      "mechanics": [
+        "Paint / create",
+        "Escape / run"
+      ],
+      "theme": "Prison / police",
+      "hook": "You just robbed a toy store and every cop in town knows your car. Pull into a hidden garage, repaint it with your own design in 30 seconds, and drive out past the roadblock hoping they don't recognise you.",
+      "core_loop": [
+        "Grab loot from a shop and get a wanted level",
+        "Lose the cops long enough to reach a paint garage",
+        "Paint a new design on your car with spray tools and stickers",
+        "Drive past checkpoints; the more your car changed, the less heat you get",
+        "Spend loot on faster cars, better spray cans and new garages"
+      ],
+      "twist": "Cops remember your last three designs. Reuse a colour scheme and the checkpoint flags you, so you have to keep inventing new looks.",
+      "monetization": [
+        "2x Loot pass (~99 R$)",
+        "VIP spray can pack (chrome, neon, glitter)",
+        "Instant-dry paint pass",
+        "Supercar unlock"
+      ],
+      "retention": [
+        "Daily wanted poster with a bonus target",
+        "Best-disguise vote each server",
+        "Codes for rare stickers",
+        "New city districts every update"
+      ],
+      "why_now": "Paint / create sits at 1.98 momentum with 18 new games (high confidence; Make a Cartoon! and Paint and Hide! are both new paint hits). Prison / police jumped 0.63 this week to 1.47 (Tesla Roadster Chase 6,557 CCU at 13 days old, Punch Out Of Prison 4,703). Escape / run is up 0.98 to 1.58.",
+      "inspired_by": [
+        "Paint and Hide! 🎨",
+        "Tesla Roadster Chase",
+        "🎬 Make a Cartoon!"
+      ],
+      "differentiator": "Car paint games are about looking cool. Here the paint job is your escape tool, and the cops' memory forces a new design every run.",
+      "art_style": "stylized",
+      "map_style": "open_world"
+    },
+    {
+      "title": "+1 Vine Height 🌱",
       "scope": "small",
       "genre": "Simulation · Incremental",
       "mechanics": [
+        "Grow / farm",
         "+1 stat per action",
         "Escape / run"
       ],
-      "theme": "Zombies",
-      "hook": "You are one slow zombie. Every step you take adds +1 zombie to your horde. Shamble down a long street of fleeing townsfolk and see how big your horde is when you hit the barricade at the end.",
+      "theme": "Prison / police",
+      "hook": "You smuggled one seed into your cell. Water it and your vine grows +1 block every second. When it's taller than the wall, climb it and escape before the guard's flashlight swings back.",
       "core_loop": [
-        "Walk forward to grow your horde by +1 per step",
-        "Catch fleeing townsfolk for bonus horde members",
-        "Smash the barricade at the end; bigger horde breaks stronger walls",
-        "Rebirth to start with a faster base zombie and new towns"
+        "Water your vine for +1 height per second (more while you hold the can)",
+        "Buy fertiliser and better seeds with escape coins",
+        "Climb when the guard looks away; get caught and drop back",
+        "Escape to unlock the next, taller prison",
+        "Rebirth for faster growth and new vine types"
       ],
-      "twist": "The townsfolk fight back with water hoses and fences. A bigger horde is also slower, so you have to pick when to sprint ahead with a small pack.",
+      "twist": "Taller vines are easier for the guards to spot, so you balance growing fast against keeping it hidden behind laundry and posters.",
       "monetization": [
-        "2x Horde pass (~220 R$)",
-        "Auto-walk pass",
-        "Speed boost pass",
-        "Zombie skins (VIP)"
+        "2x Growth pass (~199 R$)",
+        "Auto-water pass",
+        "Offline growth pass",
+        "Golden seed skins"
       ],
       "retention": [
-        "Rebirths unlock new towns",
-        "Global biggest-horde leaderboard",
-        "Codes for horde boosts",
-        "Pet crows that add bonus zombies"
+        "Offline growth while away",
+        "Rebirths unlock higher-security prisons",
+        "Leaderboard for tallest vine",
+        "Codes for fertiliser"
       ],
-      "why_now": "+1 stat per action is at 2.07 momentum with 35 new games (high confidence; [UPD🎃] +1 Venom Evolution 20,970 CCU, +1 Spider Arm🕷️ 18,878). Escape / run jumped 0.90 this week to 1.49, and +1 × escape already has 9 new games together. Zombies is up 0.18 to 1.54 (Ragdoll Reality 🩸 15,895).",
+      "why_now": "Grow / farm is up 0.53 this week to 1.40 with 34 new games (high; Durian Garden 8,569 CCU at 13 days). +1 stat per action is at 2.12 with 37 new games (+1 Anime Eyes 21,245). Prison / police jumped 0.63 to 1.47 (TROLL Jail Hug Tower 7,539).",
       "inspired_by": [
-        "[UPD🎃] +1 Venom Evolution",
-        "+1 Spider Arm🕷️",
-        "Ragdoll Reality 🩸"
+        "[UPD] Durian Garden 🍈",
+        "[🌍UPD] +1 Anime Eyes",
+        "TROLL Jail Hug Tower"
       ],
-      "differentiator": "Zombie games put you on the run from the horde. Here you are the horde, and the +1 counter is the size of the crowd you can see behind you.",
+      "differentiator": "Prison games break walls. Here you grow your way over them, and the vine itself is the +1 counter and the escape route.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Locked in the Freezer ❄️",
+      "scope": "small",
+      "genre": "Escape · Story",
+      "mechanics": [
+        "Escape / run"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "Your ice cream shop shift ended and someone locked you in the walk-in freezer. Your body temperature drops every second. Find warm things, solve the freezer's puzzles and get out before you turn into a popsicle.",
+      "core_loop": [
+        "Explore freezer rooms while your warmth meter drains",
+        "Grab hand warmers, cocoa and heaters to refill warmth",
+        "Open locked doors with codes hidden in boxes of ice cream",
+        "Reach the exit; faster escapes earn more coins",
+        "Spend coins on coats and lights for the next chapter"
+      ],
+      "twist": "Something else is in the freezer with you, and it only moves when the lights flicker. Heaters keep you warm but also show it where you are.",
+      "monetization": [
+        "Warm coat pass (~149 R$)",
+        "Revive at the last heater",
+        "Flashlight upgrades",
+        "VIP chapter skip"
+      ],
+      "retention": [
+        "New chapters each update",
+        "Speedrun leaderboard",
+        "Badges for each ending",
+        "Codes for free warmers"
+      ],
+      "why_now": "Escape / run jumped 0.98 this week to 1.58 with 34 new games (high; Steal A Pet And Ride It! 27,419, +1 Spider Arm 17,204). Interiors are at 1.93 momentum (DONT SPLASH 47,393). Ice / fire / elements is up 0.33 to 1.55, led by Ice Cream Shop [Anomaly] 6,562 CCU at 21 days.",
+      "inspired_by": [
+        "[🎃] Ice Cream Shop [Anomaly] 🍦",
+        "DONT SPLASH",
+        "[CH3] Escape the Cave"
+      ],
+      "differentiator": "Escape rooms use a timer. Here the timer is your body heat, and every warm item helps you and gives you away.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Draw Fireworks 🎆",
+      "scope": "medium",
+      "genre": "Creation · Showcase",
+      "mechanics": [
+        "Paint / create",
+        "Sell / run a shop"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "Draw a shape on a canvas and it becomes a firework. Launch your drawings over the town at night, and the crowd pays more for bigger, brighter and weirder shows.",
+      "core_loop": [
+        "Draw a firework pattern on a sky canvas",
+        "Pick colours and fuse powder, then launch it",
+        "Crowd reacts; better shows earn more cash",
+        "Buy new powders (glitter, crackle, rainbow) and bigger launchers",
+        "Book bigger venues for bigger crowds"
+      ],
+      "twist": "Every night one player's show is picked for the town finale and everyone watches it, so the best creators get a server-wide spotlight.",
+      "monetization": [
+        "2x Show cash pass (~99 R$)",
+        "VIP powder pack",
+        "Extra launcher slots",
+        "Finale priority ticket"
+      ],
+      "retention": [
+        "Nightly finale vote",
+        "Weekly theme contests",
+        "Unlock new venues",
+        "Codes for rare powders"
+      ],
+      "why_now": "Paint / create is at 1.98 momentum with 18 new games, spread out (high; Make a Cartoon! 6,666 CCU, Make Viral Candy! 5,314). Ice / fire / elements is up 0.33 this week to 1.55. Sell / run a shop is at 1.62 with 28 new games (Sell Fries! 20,249).",
+      "inspired_by": [
+        "🎬 Make a Cartoon!",
+        "Make Viral Candy! 🍬",
+        "[CH2] Sell Fries! [Anomaly] 🍟"
+      ],
+      "differentiator": "Firework games are sandboxes where you set off presets. Here you draw every firework yourself and the crowd pays for your art.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Design a Dollar 💵",
+      "scope": "medium",
+      "genre": "Tycoon · Creation",
+      "mechanics": [
+        "Paint / create",
+        "Tycoon / base building"
+      ],
+      "theme": "Money / rich",
+      "hook": "Your town needs new money and you get to draw it. Design a bill, print it in your mint, and the more people like your design the more it's worth per second.",
+      "core_loop": [
+        "Draw a bill with stamps, portraits and colours",
+        "Print it in your mint; each bill earns cash per second",
+        "Other players rate bills; high ratings raise their value",
+        "Upgrade presses, ink and vaults on your plot",
+        "Unlock bigger notes ($1 to $1,000,000)"
+      ],
+      "twist": "Fake bills show up in your vault. Spot the forgeries by comparing details with your own design before they lower your bank's value.",
+      "monetization": [
+        "2x Print speed pass (~114 R$)",
+        "Gold ink pack",
+        "Auto-press pass",
+        "VIP vault skins"
+      ],
+      "retention": [
+        "Daily most-valuable-bill board",
+        "Offline printing",
+        "New note sizes each update",
+        "Codes for rare stamps"
+      ],
+      "why_now": "Paint / create is at 1.98 with 18 new games (high). Money / rich is at 1.79 with 55 new games (high; Sell a Million Sushi 9,268, Steal A Pet And Ride It! 27,419), down 0.25 this week but still strong. Tycoon / base building is at 1.23 with 78 new games (My Small Business 11,183).",
+      "inspired_by": [
+        "Sell a Million Sushi",
+        "🧸 My Small Business",
+        "Clean a Painting"
+      ],
+      "differentiator": "Money games give you cash. Here you design the cash, and your art directly sets how much it earns.",
+      "art_style": "simulator_bright",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Rock Makeover Stand 🎨",
+      "scope": "small",
+      "genre": "Simulation · Shop",
+      "mechanics": [
+        "Sell / run a shop",
+        "Paint / create"
+      ],
+      "theme": "Stones / rocks / ores",
+      "hook": "Pick up plain rocks, give them a makeover with paint, googly eyes and tiny hats, and sell them at your roadside stand. Customers pay more for the cutest and funniest ones.",
+      "core_loop": [
+        "Collect rocks around the map (rarer shapes deeper in)",
+        "Decorate them at your workbench",
+        "Price them and put them on your stand",
+        "Customers buy; trending styles pay extra",
+        "Upgrade your stand, tools and rock fields"
+      ],
+      "twist": "Each day customers want a different style (spooky, sporty, royal). Match it and they pay double, so you keep changing what you make.",
+      "monetization": [
+        "2x Sale price pass (~174 R$)",
+        "VIP decoration pack",
+        "Bigger stand shelves",
+        "Auto-collect rocks"
+      ],
+      "retention": [
+        "Daily style request",
+        "Collect rare rock shapes",
+        "Best-rock vote each server",
+        "Codes for free stickers"
+      ],
+      "why_now": "Sell / run a shop is at 1.62 with 28 new games, spread out (high; Sell Fries! 20,249, My Small Business 11,183). Stones / rocks / ores is at 1.75 with 14 new games, up 0.12 this week (Cut a Rock 14,486). Paint × stones is the second-best gap in the data (score 5.5).",
+      "inspired_by": [
+        "Cut a Rock",
+        "🧸 My Small Business",
+        "Paint and Hide! 🎨"
+      ],
+      "differentiator": "Rock games are about mining or smashing. Here rocks are blank canvases, and your shop's success depends on your designs.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Outrun the Cave-In ⛏️",
+      "scope": "medium",
+      "genre": "Obby · Escape",
+      "mechanics": [
+        "Escape / run",
+        "Break / mine / dig"
+      ],
+      "theme": "Stones / rocks / ores",
+      "hook": "You dug too deep and the mine is collapsing. Sprint up the tunnels as rocks fall behind you. Grab the ores you mined on the way, but every ore in your bag makes you slower.",
+      "core_loop": [
+        "Mine ores at the bottom while the timer runs",
+        "Cave-in starts; run up the tunnels",
+        "Break through blocked spots with your pickaxe",
+        "Cash in the ores you carried out",
+        "Buy bigger bags, faster boots and stronger pickaxes"
+      ],
+      "twist": "Players who escape can drop ropes for others still running, and carrying a friend's ore out splits the cash.",
+      "monetization": [
+        "2x Ore value pass (~286 R$)",
+        "Speed boots pass",
+        "Bigger bag pass",
+        "Revive at checkpoint"
+      ],
+      "retention": [
+        "Deeper mines each world",
+        "Rarest-ore index",
+        "Weekly fastest-escape board",
+        "Codes for boosts"
+      ],
+      "why_now": "Escape / run is up 0.98 this week to 1.58 with 34 new games (high). Stones / rocks / ores is at 1.75 with 14 new games (high; Cut a Rock 14,486, steal a strange egg 7,232). Break / mine / dig is at 2.27 but low confidence because Break and Steal an Egg holds 74% of its new-game CCU, so it is only the side mechanic here. Linear courses are at 1.89.",
+      "inspired_by": [
+        "Cut a Rock",
+        "[🚨] Escape The Walls",
+        "+1 Spider Arm🕷️"
+      ],
+      "differentiator": "Mining games are calm and escape games have nothing to keep. Here the loot you carry is what slows you down.",
       "art_style": "simulator_bright",
       "map_style": "linear_course"
     },
     {
-      "title": "+1 Frost Per Step ❄️",
+      "title": "Giant's Lost and Found 🔍",
+      "scope": "large",
+      "genre": "Collection · Tycoon",
+      "mechanics": [
+        "Collect / index",
+        "Tycoon / base building"
+      ],
+      "theme": "Giant / huge",
+      "hook": "Giants walk past your village every day and drop things: a button as big as a house, a coin you can stand on, a lost earring. Find them, haul them home and run a lost-and-found museum that earns cash per second.",
+      "core_loop": [
+        "Follow a giant's path and look for dropped items",
+        "Haul items home with carts, cranes and friends",
+        "Display them in your museum; each earns per second",
+        "Fill the index of every item from every giant",
+        "Return rare items to giants for big rewards"
+      ],
+      "twist": "A giant sometimes comes back for its lost item. Hand it over for a huge one-time reward or keep it for steady income.",
+      "monetization": [
+        "2x Museum income (~212 R$)",
+        "Luck pass for rare drops",
+        "Faster crane pass",
+        "VIP giant route"
+      ],
+      "retention": [
+        "Full index rewards",
+        "New giants each update",
+        "Offline museum income",
+        "Codes for luck boosts"
+      ],
+      "why_now": "Giant / huge is up 0.46 this week to 1.26 with 10 new games (high; Raise The Biggest Family 9,530, Durian Garden 8,569). Collect / index is at 1.66 with 47 new games (medium; Break and Steal an Egg 126,085, Bike For Egg! 25,041). Tycoon / base building is at 1.23 with 78 new games.",
+      "inspired_by": [
+        "Raise The Biggest Family",
+        "Break and Steal an Egg",
+        "[🏰] Bike For Egg!"
+      ],
+      "differentiator": "Collect games make you hunt tiny things. Here every find is huge and hauling it home is part of the fun.",
+      "art_style": "simulator_bright",
+      "map_style": "open_world"
+    },
+    {
+      "title": "+1 Shoe Size 👟",
       "scope": "small",
       "genre": "Obby · Incremental",
       "mechanics": [
         "+1 stat per action",
         "Escape / run"
       ],
-      "theme": "Ice / fire / elements",
-      "hook": "The lava is rising. Every step you take gives you +1 frost, and your footprints freeze the lava into a platform you can stand on. Climb the volcano before the lava catches up.",
+      "theme": "Giant / huge",
+      "hook": "Every step makes your shoes +1 size bigger. Huge shoes squash obstacles and jump higher, but they also trip you on narrow paths. Run the course and see how big your shoes are at the finish.",
       "core_loop": [
-        "Run up the volcano while lava rises under you",
-        "Each step adds +1 frost; more frost freezes wider paths",
-        "Spend frost on ice walls, slides and jump pads",
-        "Reach the crater to bank frost and rebirth"
+        "Walk to grow your shoes +1 size per step",
+        "Stomp through walls that need a big enough shoe",
+        "Cross narrow bridges before your shoes get too wide",
+        "Finish to bank shoe size as coins",
+        "Rebirth for faster growth and new shoe styles"
       ],
-      "twist": "Every few minutes the volcano erupts and lava bombs melt your frozen paths, so players race to rebuild before the next wave.",
+      "twist": "You can kick your shoes off to shrink back down for tight spots, but then you have to grow them again.",
       "monetization": [
-        "2x Frost pass (~220 R$)",
-        "Auto-run pass",
-        "Storage pass for more banked frost",
-        "Snowy trails (VIP)"
+        "2x Size pass (~224 R$)",
+        "Auto-walk pass",
+        "Shoe skins (VIP)",
+        "Speed boost"
       ],
       "retention": [
-        "Rebirths unlock new volcanoes",
-        "Fastest-climb leaderboard",
-        "Codes for frost boosts",
-        "Ice pets that add frost per step"
+        "Rebirths unlock new worlds",
+        "Biggest-shoe leaderboard",
+        "Pet socks that add bonus size",
+        "Codes for boosts"
       ],
-      "why_now": "\"+1 ___\" titles sit at 2.31 momentum with 33 new games (high). Escape / run gained 0.90 this week to 1.49, and rising-floor runs are hot: DONT SPLASH has 59,626 CCU in an interior run. Ice / fire is a steady 1.37 with 11 new games (Firefighting Sim 🚒 5,336).",
+      "why_now": "+1 stat per action is at 2.12 momentum with 37 new games (high; [UPD🎃] +1 Venom Evolution 20,219, +1 Spider Arm 17,204). Giant / huge is up 0.46 this week to 1.26. Escape / run is up 0.98 to 1.58, and linear courses are at 1.89.",
       "inspired_by": [
+        "[UPD🎃] +1 Venom Evolution",
         "+1 Spider Arm🕷️",
-        "DONT SPLASH",
-        "Firefighting Sim 🚒"
+        "Raise The Biggest Family"
       ],
-      "differentiator": "Most +1 games just make a number bigger. Here the stat you earn is the floor under your feet, so stopping to upgrade is a real risk.",
+      "differentiator": "+1 games grow a number you can't see. Here the stat is your shoes, and their size helps and blocks you on the course.",
       "art_style": "simulator_bright",
       "map_style": "linear_course"
     },
     {
-      "title": "Make a Mosaic 🧩",
-      "scope": "medium",
-      "genre": "Simulation · Creative",
-      "mechanics": [
-        "Paint / create",
-        "Tycoon / base building"
-      ],
-      "theme": "Stones / rocks / ores",
-      "hook": "Crack coloured stones and lay them tile by tile into a giant mosaic on your plot. Visitors walk across your art and pay to see it. Rarer stones glow, sparkle or change colour at night.",
-      "core_loop": [
-        "Collect coloured stones from the quarry",
-        "Place them on your plot's grid to make a mosaic",
-        "Visitors walk by and tip based on size and rarity",
-        "Buy a bigger grid and rarer stone types"
-      ],
-      "twist": "Each week there is a theme (a dragon, a pumpkin). Mosaics that match the theme get a crowd of extra visitors.",
-      "monetization": [
-        "2x Tips pass (~90 R$)",
-        "Bigger grid pass",
-        "Auto-place stamp tool",
-        "Glowing tile pack (VIP)"
-      ],
-      "retention": [
-        "Weekly theme contests",
-        "Like-a-mosaic voting board",
-        "New stone colours each update",
-        "Codes for rare stones"
-      ],
-      "why_now": "Paint / create is at 1.88 momentum with 17 new games spread out (high; Paint and Hide! 🎨 9,769 CCU). Stones / rocks sits at 1.73 with 13 new games (Cut a Rock 13,609), and paint × stones is an open gap in the data.",
-      "inspired_by": [
-        "Paint and Hide! 🎨",
-        "Cut a Rock",
-        "🧸 My Small Business"
-      ],
-      "differentiator": "Stone games are about breaking rocks. Here the rocks are your paint, and the reward is a piece of art other players walk on.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Jail Snack Shop 🍩",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
+      "title": "Dungeon Exit Inn 🏰",
+      "scope": "large",
+      "genre": "Tycoon · Shop",
       "mechanics": [
         "Sell / run a shop",
-        "Escape / run"
+        "Tycoon / base building"
       ],
-      "theme": "Prison / police",
-      "hook": "You run the snack counter inside a cartoon jail. Inmates pay in coins and favours. Every night someone tries a breakout through your shop, and you have to sound the alarm or join the run.",
+      "theme": "Fantasy / medieval",
+      "hook": "You run the only inn at the exit of a huge dungeon. Adventurers stumble out hurt, hungry and carrying loot. Sell them stew, beds and potions, buy their loot cheap, and grow your inn into a fantasy town.",
       "core_loop": [
-        "Stock snacks and serve the inmate queue for coins",
-        "Unlock new snacks, a bigger counter and a vending wall",
-        "Each night a breakout starts in your shop",
-        "Choose: stop it for a guard bonus, or escape with them for a big payout"
+        "Serve adventurers food, rooms and potions",
+        "Buy their loot and resell it at your market stall",
+        "Build new rooms: kitchen, stables, armoury",
+        "Hire NPC staff to run rooms on their own",
+        "Unlock deeper dungeon exits with richer adventurers"
       ],
-      "twist": "Inmates hide escape tools in their orders. Spot a spoon in a donut order and you can trade it to the guards or keep it.",
+      "twist": "Sometimes a monster follows the adventurers out. Defend your inn with the gear you bought, or the monster wrecks a room.",
       "monetization": [
-        "2x Coins pass (~170 R$)",
-        "Auto-cashier pass",
-        "Bigger storeroom pass",
-        "Guard and inmate outfits (VIP)"
+        "2x Gold pass (~174 R$)",
+        "VIP room styles",
+        "Auto-serve staff pass",
+        "Extra market slots"
       ],
       "retention": [
-        "Nightly breakout event",
-        "New prison wings",
-        "Daily best-shop leaderboard",
-        "Codes for coin boosts"
+        "New dungeon exits each update",
+        "Inn rank leaderboard",
+        "Offline earnings from staff",
+        "Codes for gold"
       ],
-      "why_now": "Sell / run a shop is at 1.64 momentum with 27 new games (high; [CH2] Sell Fries! [Anomaly] 🍟 23,498 CCU, 🧸 My Small Business 13,251). Prison / police is up 0.34 this week to 1.26 (Punch Out Of Prison 5,278), and Escape / run gained 0.90 to 1.49.",
+      "why_now": "Sell / run a shop is at 1.62 with 28 new games, spread out (high; Sell Fries! 20,249, My Small Business 11,183). Fantasy / medieval is at 1.34 with 14 new games (medium; Tower Of Luck 3,983). Sell × fantasy is an open gap in the data (score 3.19), and interiors are at 1.93.",
       "inspired_by": [
         "[CH2] Sell Fries! [Anomaly] 🍟",
         "🧸 My Small Business",
-        "Punch Out Of Prison"
-      ],
-      "differentiator": "Prison games are about escaping. Here you have a job inside, and every escape walks through your shop.",
-      "art_style": "stylized",
-      "map_style": "interior"
-    },
-    {
-      "title": "Build on a Giant 🏗️",
-      "scope": "large",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
-        "Tycoon / base building",
-        "Escape / run"
-      ],
-      "theme": "Giant / huge",
-      "hook": "Your base sits on the back of a sleeping giant who wanders the map. Build upwards for cash. When the giant wakes up and shakes, anything not bolted down falls off.",
-      "core_loop": [
-        "Build floors, shops and farms on your giant's back",
-        "Earn cash over time as the giant walks past towns",
-        "Bolt down your best parts before the giant wakes",
-        "Feed the giant to make it bigger so it can carry more"
-      ],
-      "twist": "When two giants meet they wrestle, and players on both bases race to hold on and steal fallen parts.",
-      "monetization": [
-        "2x Cash pass (~120 R$)",
-        "Auto-build pass",
-        "Super bolts pass",
-        "Giant skins (VIP)"
-      ],
-      "retention": [
-        "Giant feeding upgrades",
-        "Wake-up shake events",
-        "Biggest-giant leaderboard",
-        "New giant types each update"
-      ],
-      "why_now": "Tycoon is up 0.34 this week to 1.50 with 136 new games (high). Tycoon / base building is at 1.26 with 77 new games ([🎃]Climb For Animals Eggs🥚 24,304 CCU). Giant / huge jumped 0.60 this week to 1.38 (Raise The Biggest Family 9,970).",
-      "inspired_by": [
-        "[🎃]Climb For Animals Eggs🥚",
-        "Raise The Biggest Family",
-        "🧸 My Small Business"
-      ],
-      "differentiator": "Tycoon plots never move. Here the plot is alive, walks around, and tries to shake your base off.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Stack Cash to the Sky 💵",
-      "scope": "large",
-      "genre": "Obby · Tycoon",
-      "mechanics": [
-        "Tycoon / base building",
-        "Obby / climb / jump"
-      ],
-      "theme": "Money / rich",
-      "hook": "Every cash bundle you earn becomes a block in your own tower. Climb your tower to reach sky worlds where cash is worth more. A richer player has a taller, harder climb.",
-      "core_loop": [
-        "Earn cash at ground-level jobs and machines",
-        "Each bundle stacks onto your personal tower",
-        "Climb your tower obby to reach sky islands with better income",
-        "Upgrade bundle size so your tower grows faster"
-      ],
-      "twist": "Other players can climb your tower too. If they reach the top first, they take a slice of the cash at the summit.",
-      "monetization": [
-        "2x Cash pass (~120 R$)",
-        "Auto-stack pass",
-        "Double jump pass",
-        "Gold-brick tower skin (VIP)"
-      ],
-      "retention": [
-        "Sky worlds unlock with height",
-        "Tallest-tower leaderboard",
-        "Codes for cash",
-        "Weekly tower climb race"
-      ],
-      "why_now": "Money / rich is at 1.92 momentum with 53 new games (high; [🎃] Steal A Pet And Ride It! 32,816 CCU). Tycoon is up 0.34 to 1.50, and obby × tycoon has 5 new games together ([🎃]Climb For Animals Eggs🥚 24,304). Linear course maps are at 1.83.",
-      "inspired_by": [
-        "[🎃]Climb For Animals Eggs🥚",
-        "[🎃] Steal A Pet And Ride It!",
-        "[UPD] Durian Garden 🍈"
-      ],
-      "differentiator": "Money tycoons show a cash number. Here your wealth is a tower you have to climb yourself, so being rich is also a challenge.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Suit Up for Space 👩‍🚀",
-      "scope": "medium",
-      "genre": "Party · Dress Up",
-      "mechanics": [
-        "Paint / create",
-        "Escape / run"
-      ],
-      "theme": "Space",
-      "hook": "Design a spacesuit in 90 seconds, then everyone gets pushed out of the airlock. Suits are judged on style, and on whether they survive the meteor shower.",
-      "core_loop": [
-        "Pick a helmet, suit, boots and jetpack and paint them",
-        "Step into the airlock with everyone else",
-        "Float through a meteor field; weak parts crack off",
-        "Players vote on the best-looking suit still in one piece"
-      ],
-      "twist": "Style and strength fight each other: the coolest parts are the flimsiest, so you decide how much to risk for votes.",
-      "monetization": [
-        "2x Stars pass (~200 R$)",
-        "Extra suit slots (storage)",
-        "Premium paint pack (VIP)",
-        "Rare helmet bundle"
-      ],
-      "retention": [
-        "New suit parts each update",
-        "Monthly planet themes",
-        "Best-suit leaderboard",
-        "Limited-time event suits"
-      ],
-      "why_now": "Dress Up is up 0.15 this week to 1.20 with 17 new games ([🎃] Facecard: Makeup Showdown 5,113 CCU, Evermore High 🦢 9,696). Paint / create is at 1.88 (high). Space is up 0.22 to 1.64 ([🎃] Clean the Moon! 6,067).",
-      "inspired_by": [
-        "[🎃] Facecard: Makeup Showdown",
-        "Evermore High 🦢",
-        "[🎃] Clean the Moon!"
-      ],
-      "differentiator": "Dress-up games stop at the runway. Here the outfit is tested by physics before anyone votes.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Run From the Spellbooks 📚",
-      "scope": "medium",
-      "genre": "Obby · Escape",
-      "mechanics": [
-        "Escape / run",
-        "Collect / index"
-      ],
-      "theme": "Fantasy / medieval",
-      "hook": "A wizard's library has come alive. Flying spellbooks chase you down corridors while you grab loose pages. Every full spell you collect gives you a power to escape further.",
-      "core_loop": [
-        "Run through library halls while books chase you",
-        "Grab loose pages to complete spells",
-        "Use spells (blink, shield, slow time) to get past books",
-        "Reach the exit door of each wing to unlock the next"
-      ],
-      "twist": "Each spell you finish goes into your spell index. Some spells only appear on one floor at night.",
-      "monetization": [
-        "2x Pages pass (~370 R$)",
-        "Speed boost pass",
-        "Revive pass",
-        "Wizard robes (VIP)"
-      ],
-      "retention": [
-        "New library wings each update",
-        "Spell index completion rewards",
-        "Fastest-escape leaderboard",
-        "Halloween-style limited floors"
-      ],
-      "why_now": "Escape / run jumped 0.90 this week to 1.49 (high; [🎃] Steal A Pet And Ride It! 32,816 CCU). Interior maps are at 1.97 with 40 new games (DONT SPLASH 59,626, The Hollow 44,272). Fantasy is at 1.38 with 13 new games (🍀 Tower Of Luck [1.8] 4,608).",
-      "inspired_by": [
-        "DONT SPLASH",
-        "The Hollow",
         "🍀 Tower Of Luck [1.8]"
       ],
-      "differentiator": "Escape games give you nothing but legs. Here what you collect while running becomes the tools you escape with.",
+      "differentiator": "Fantasy games make you the adventurer. Here you serve them, and the dungeon is your supplier.",
       "art_style": "stylized",
       "map_style": "interior"
-    },
-    {
-      "title": "Storm Supply Shop ⛈️",
-      "scope": "medium",
-      "genre": "Simulation · Tycoon",
-      "mechanics": [
-        "Sell / run a shop",
-        "Tycoon / base building"
-      ],
-      "theme": "Disaster / weather",
-      "hook": "You run the only shop in a town hit by a new storm every few minutes. Sell the right gear before each storm lands: umbrellas before rain, sandbags before floods, helmets before hail.",
-      "core_loop": [
-        "Check the forecast board for the next storm",
-        "Stock the right goods and sell to panicking townsfolk",
-        "Close the shutters when the storm hits",
-        "Spend profits on more shelves, a bigger warehouse and delivery vans"
-      ],
-      "twist": "The forecast is sometimes wrong. Stock for the wrong storm and you are stuck with gear nobody wants.",
-      "monetization": [
-        "2x Cash pass (~170 R$)",
-        "Auto-restock pass",
-        "Bigger warehouse (storage) pass",
-        "Shop skins (VIP)"
-      ],
-      "retention": [
-        "New storm types each update",
-        "Mega-storm weekend events",
-        "Best-shop leaderboard",
-        "Codes for cash"
-      ],
-      "why_now": "Sell / run a shop is at 1.64 momentum with 27 new games (high; Sell a Million Sushi 8,371 CCU). Disaster / weather jumped 1.02 this week to 1.86 ([🚗] Create A Disaster💥 4,945), though one game holds most of its players, so it is only the backdrop here. Shop × disaster is an open gap.",
-      "inspired_by": [
-        "Sell a Million Sushi",
-        "[🚗] Create A Disaster💥",
-        "🧸 My Small Business"
-      ],
-      "differentiator": "Disaster games make you survive the storm. Here you profit from it, and the weather is your sales forecast.",
-      "art_style": "simulator_bright",
-      "map_style": "town_roleplay"
-    },
-    {
-      "title": "Last Bus Out 🚌",
-      "scope": "large",
-      "genre": "Vehicle Sim · Survival",
-      "mechanics": [
-        "Escape / run",
-        "Tycoon / base building"
-      ],
-      "theme": "Zombies",
-      "hook": "Drive a beat-up bus through a zombie town picking up survivors before the bridge closes. Each survivor you save pays you to upgrade the bus: armour, plows, a roof turret.",
-      "core_loop": [
-        "Drive through town and stop to pick up survivors",
-        "Keep zombies off the bus while it is stopped",
-        "Reach the bridge before the timer runs out",
-        "Spend fares on armour, speed and seats"
-      ],
-      "twist": "Survivors have jobs: a mechanic fixes the bus on the move, a cook adds health. Who you pick up changes your run.",
-      "monetization": [
-        "2x Fares pass (~300 R$)",
-        "Speed boost pass",
-        "Extra seats pass",
-        "Bus paint jobs (VIP)"
-      ],
-      "retention": [
-        "New towns and routes",
-        "Weekly horde-night event",
-        "Most-survivors leaderboard",
-        "Squad mode with friends"
-      ],
-      "why_now": "Escape / run gained 0.90 this week to 1.49 (high). Vehicle Sim is at 1.34 with 25 new games (🛡️[S1] Bike Universe 19,131 CCU, Night Rider 🏍️ [TESTING] 7,131). Zombies is up 0.18 to 1.54 with 11 new games (Steal and Cure a Zombie).",
-      "inspired_by": [
-        "🛡️[S1] Bike Universe",
-        "Night Rider 🏍️ [TESTING]",
-        "Steal and Cure a Zombie"
-      ],
-      "differentiator": "Zombie escapes are on foot and solo. Here you drive, carry other people, and they change how your run goes.",
-      "art_style": "realistic",
-      "map_style": "open_world"
     }
   ]
 }

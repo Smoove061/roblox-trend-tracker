@@ -67,18 +67,20 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Realistic | 1.34x | high (30 new games, spread out) | 30 | 138,886 | 88 | Bug Evolution [🕷️] (18,678) |
-| Voxel / blocky | 1.34x | medium (9 new games, top one 22% of their CCU) | 9 | 26,748 | 30 | [🎃] +1 Upgrade Per Kill (5,823) |
-| Bright simulator | 1.47x | high (65 new games, spread out) | 65 | 552,047 | 138 | Break and Steal an Egg (126,085) |
+| Realistic | 1.39x | high (32 new games, spread out) | 32 | 152,005 | 91 | Bug Evolution [🕷️] (18,678) |
+| Voxel / blocky | 1.38x | medium (9 new games, top one 22% of their CCU) | 9 | 26,748 | 29 | [🎃] +1 Upgrade Per Kill (5,823) |
+| Bright simulator | 1.46x | high (67 new games, spread out) | 67 | 564,829 | 140 | Break and Steal an Egg (126,085) |
+| Meme / chaotic | 1.33x | low (only 3 new games; one game holds 76% of new-game CCU) | 3 | 10,400 | 6 | 📸 Say Cheese! [STORY] (7,862) |
 | Low poly | 1.55x | medium (6 new games, top one 43% of their CCU) | 6 | 13,968 | 8 | Cook the Chicken (by slapping it) (5,944) |
 
 ## Rising map styles
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Linear course / stages | 1.82x | high (68 new games, spread out) | 68 | 269,069 | 904 | [🎃] Throw Food For Animals (100,567) |
-| Interiors / corridors | 1.85x | high (41 new games, spread out) | 41 | 232,722 | 143 | DONT SPLASH (47,393) |
-| Personal plots / bases | 1.13x | high (153 new games, spread out) | 153 | 374,321 | 1040 | Break and Steal an Egg (126,085) |
+| Linear course / stages | 1.89x | high (68 new games, spread out) | 68 | 289,456 | 904 | [🎃] Throw Food For Animals (100,567) |
+| Interiors / corridors | 1.93x | high (43 new games, spread out) | 43 | 246,093 | 144 | DONT SPLASH (47,393) |
+| Hub + zones / worlds | 1.1x | high (105 new games, spread out) | 105 | 175,275 | 913 | [🌍UPD] +1 Anime Eyes (21,245) |
+| Personal plots / bases | 1.06x | high (151 new games, spread out) | 151 | 340,564 | 1037 | Break and Steal an Egg (126,085) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
