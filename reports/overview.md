@@ -1,94 +1,94 @@
-# Market overview — through 2026-11-02
+# Market overview — through 2026-11-03
 
 ## Last 7 days
 
-7 days of data · whole market (same games) -11% · 8,102,504,821 visits · 6 new games launched, holding 0.2% of CCU
+7 days of data · whole market (same games) -10% · 7,955,904,985 visits · 5 new games launched, holding 0.2% of CCU
 
 ### Genres (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Entertainment | +20% | | Survival | -27% |
-| RPG | +16% | | Simulation | -13% |
-| Obby & Platformer | +14% | |  |  |
-| Strategy | +4% | |  |  |
+| RPG | +19% | | Survival | -29% |
+| Obby & Platformer | +11% | |  |  |
+| Entertainment | +8% | |  |  |
+| Strategy | +5% | |  |  |
 | Social | +3% | |  |  |
-| Shopping | +1% | |  |  |
+| Shooter | -1% | |  |  |
 
 ### Mechanics (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Party / minigames | +11% | | Shooter | -33% |
-| Raise / pet care | +8% | | Survive | -30% |
-| Quiz / guess | +1% | | +1 stat per action | -19% |
-| Trading | -0% | | RNG roll | -19% |
-| Roleplay / life sim | -4% | | Sell / run a shop | -19% |
-| Race / drive | -4% | | Escape / run | -14% |
+| Party / minigames | +9% | | Shooter | -33% |
+| Hit / swing / launch | +8% | | Survive | -30% |
+| Trading | +6% | | +1 stat per action | -21% |
+| Raise / pet care | +5% | | Sell / run a shop | -20% |
+| Quiz / guess | -1% | | RNG roll | -18% |
+| Race / drive | -4% | | Escape / run | -16% |
 
 ### Themes (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Superheroes / powers | +25% | | Ancient / pyramids | -44% |
-| Food / candy | +8% | | Dinosaurs | -29% |
-| Seasonal / holiday | +5% | | Toys / plush | -28% |
-| Horror | +2% | | Space | -27% |
-| Memes / noob | +1% | | Robots / mechs | -19% |
-| School | +1% | | Stones / rocks / ores | -17% |
+| Food / candy | +32% | | Ancient / pyramids | -47% |
+| Superheroes / powers | +24% | | Dinosaurs | -34% |
+| Seasonal / holiday | +2% | | Robots / mechs | -28% |
+| Giant / huge | +2% | | Toys / plush | -25% |
+| Horror | +1% | | Space | -25% |
+| Memes / noob | +1% | | Money / rich | -19% |
 
 ### New games gaining the most (30 days old or less)
 
-- DONT SPLASH: 44,226 → 98,509 CCU
-- Realistic Ragdoll Engine 🩸: 0 → 28,178 CCU
-- [🎃] Steal A Pet And Ride It!: 0 → 27,855 CCU
-- 🧸 My Small Business: 0 → 24,939 CCU
-- [🌍UPD] +1 Anime Eyes: 0 → 24,631 CCU
-- +1 Spider Arm🕷️: 0 → 20,532 CCU
+- DONT SPLASH: 54,697 → 97,608 CCU
+- [🎃] Steal A Pet And Ride It!: 0 → 29,601 CCU
+- [🌍UPD] +1 Anime Eyes: 0 → 26,187 CCU
+- 🧸 My Small Business: 0 → 24,814 CCU
+- +1 Spider Arm🕷️: 0 → 24,110 CCU
+- Bug Evolution [🕷️]: 0 → 21,960 CCU
 
 ## Last 30 days
 
-28 days of data · whole market (same games) -11% · 30,970,647,288 visits · 34 new games launched, holding 2.7% of CCU
+29 days of data · whole market (same games) -13% · 31,814,410,403 visits · 37 new games launched, holding 2.9% of CCU
 
 ### Genres (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| RPG | +3% | | Simulation | -21% |
-| Strategy | +0% | | Puzzle | -17% |
-| Social | +0% | | Entertainment | -15% |
-| Shopping | -1% | | Party & Casual | -14% |
-| Survival | -1% | |  |  |
-| Obby & Platformer | -3% | |  |  |
+| RPG | +6% | | Simulation | -22% |
+| Strategy | +3% | | Puzzle | -19% |
+| Social | +1% | | Entertainment | -16% |
+| Shopping | -2% | | Party & Casual | -15% |
+| Obby & Platformer | -4% | |  |  |
+| Adventure | -4% | |  |  |
 
 ### Mechanics (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Shooter | +10% | | +1 stat per action | -49% |
-| Party / minigames | +7% | | RNG roll | -28% |
-| Dice / cards | +5% | | Break / mine / dig | -26% |
-| Survive | +2% | | Hatch / gacha | -26% |
-| Job / shift | -2% | | Tycoon / base building | -22% |
-| Roleplay / life sim | -4% | | Grow / farm | -22% |
+| Shooter | +7% | | +1 stat per action | -51% |
+| Party / minigames | +6% | | RNG roll | -30% |
+| Dice / cards | +1% | | Hatch / gacha | -26% |
+| Survive | -1% | | Break / mine / dig | -26% |
+| Job / shift | -5% | | Grow / farm | -24% |
+| Roleplay / life sim | -5% | | Tycoon / base building | -24% |
 
 ### Themes (ranked against the market)
 
 | Beating the market | Change | | Lagging | Change |
 |---|---|---|---|---|
-| Superheroes / powers | +57% | | Ancient / pyramids | -61% |
-| Brainrot | +30% | | Toys / plush | -42% |
-| Anime | +4% | | Stones / rocks / ores | -35% |
-| School | +3% | | Space | -33% |
-| Giant / huge | +1% | | Money / rich | -27% |
-| Dinosaurs | +0% | | Eggs | -27% |
+| Superheroes / powers | +64% | | Ancient / pyramids | -65% |
+| Brainrot | +21% | | Toys / plush | -43% |
+| Giant / huge | +3% | | Stones / rocks / ores | -37% |
+| School | +3% | | Space | -35% |
+| Anime | +2% | | Money / rich | -29% |
+| Food / candy | -2% | | Eggs | -27% |
 
 ### New games gaining the most (30 days old or less)
 
-- DONT SPLASH: 0 → 98,509 CCU
-- The Hollow: 0 → 69,554 CCU
-- Ragdoll Reality 🩸: 0 → 30,864 CCU
-- [UPD🎃] +1 Venom Evolution: 0 → 29,073 CCU
-- Realistic Ragdoll Engine 🩸: 0 → 28,178 CCU
-- [🎃] Steal A Pet And Ride It!: 0 → 27,855 CCU
+- DONT SPLASH: 0 → 97,608 CCU
+- The Hollow: 0 → 65,536 CCU
+- [🎃] +1 Venom Evolution: 0 → 30,202 CCU
+- [🎃] Steal A Pet And Ride It!: 0 → 29,601 CCU
+- Ragdoll Reality 🩸: 0 → 29,339 CCU
+- [UPD] Realistic Ragdoll Engine 🩸: 0 → 26,906 CCU
 
