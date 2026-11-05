@@ -1,405 +1,398 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "ideas": [
     {
-      "title": "Farm for Bail 🌾",
-      "scope": "medium",
-      "genre": "Tycoon · Farming",
-      "mechanics": [
-        "Grow / farm",
-        "Tycoon / base building"
-      ],
-      "theme": "Prison / police",
-      "hook": "You're locked up, but the prison yard has dirt. Grow veggies in your cell-block plot, sell them to the guards' canteen and save up enough to pay your own bail.",
-      "core_loop": [
-        "Plant seeds in your yard plot",
-        "Water and guard crops between roll calls",
-        "Sell the harvest to the canteen for cash",
-        "Pay down your bail meter and unlock better plots",
-        "Post bail to rebirth into a tougher prison with rarer seeds"
-      ],
-      "twist": "Random cell inspections: guards confiscate anything growing outside your plot, so players hide rare crops in laundry carts and under bunks.",
-      "monetization": [
-        "Auto-water sprinkler pass (~100 R$)",
-        "2x Harvest pass",
-        "Extra plot (storage) pass",
-        "VIP yard with a golden greenhouse"
-      ],
-      "retention": [
-        "Crops keep growing offline",
-        "Daily seed drop at the commissary",
-        "Codes for rare seeds",
-        "Leaderboard for fastest bail"
-      ],
-      "why_now": "Prison / police jumped 0.54 this week to 1.46 momentum (Tesla Roadster Chase 9,746 CCU at 14 days, Punch Out Of Prison 5,811). Grow / farm is up 0.29 to 1.39 with 35 new games (high confidence; Durian Garden 7,231 at 14 days, Farm Evolution 6,974).",
-      "inspired_by": [
-        "[UPD] Durian Garden 🍈",
-        "[2x WEEKEND] Farm Evolution",
-        "Punch Out Of Prison"
-      ],
-      "differentiator": "Farming games are cosy. Here the farm is a jailbreak by paperwork, and inspections add a hide-and-seek layer.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Sketch the Crook ✏️",
+      "title": "+1 Spoon Dig 🥄",
       "scope": "small",
-      "genre": "Party · Drawing",
-      "mechanics": [
-        "Paint / create",
-        "Party / minigames"
-      ],
-      "theme": "Prison / police",
-      "hook": "A robber flashes past for five seconds. The witness picks clues, the artists draw the face, and the detectives have to pick the right crook out of a police lineup using only those drawings.",
-      "core_loop": [
-        "One player is the witness and sees the crook",
-        "Witness taps clue cards (hat, scar, hair colour)",
-        "Artists draw the suspect in 45 seconds",
-        "Detectives pick from a 10-NPC lineup",
-        "Points for correct picks; best sketch wins a badge"
-      ],
-      "twist": "The crook is a real player hiding in the lineup who can swap one accessory before the vote.",
-      "monetization": [
-        "VIP brush and colour pack (~99 R$)",
-        "2x Points pass",
-        "Custom lineup backdrop",
-        "Sketchbook gallery slots"
-      ],
-      "retention": [
-        "Gallery of your best sketches",
-        "Daily most-wanted poster",
-        "Weekly sketch contest",
-        "Codes for brushes"
-      ],
-      "why_now": "Paint / create is at 2.06 momentum with 19 new games, spread out (high confidence; Paint and Hide! 12,050 CCU, Make a Cartoon! 8,751). Prison / police rose 0.54 this week to 1.46. Interiors are the hottest map style at 1.93.",
-      "inspired_by": [
-        "Paint and Hide! 🎨",
-        "🎬 Make a Cartoon!",
-        "Tesla Roadster Chase"
-      ],
-      "differentiator": "Drawing party games ask you to copy a prompt. Here the drawing is evidence, and a live player is trying to fool it.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Ice Cube Escape 🧊",
-      "scope": "small",
-      "genre": "Obby · Escape",
-      "mechanics": [
-        "Escape / run",
-        "+1 stat per action"
-      ],
-      "theme": "Ice / fire / elements",
-      "hook": "You're an ice cube that fell out of the freezer into a blazing hot kitchen. You melt every second, so slide past stoves and toasters to reach the freezer at the far end.",
-      "core_loop": [
-        "Spawn as a full-size ice cube",
-        "Slide through kitchen stages while you shrink",
-        "Touch frost pads for +1 size",
-        "Reach checkpoints before you melt to nothing",
-        "Spend frost on bigger starting size and faster slides"
-      ],
-      "twist": "Being small is also useful: tiny cubes fit through vents and cracks that big cubes can't, so you sometimes want to melt on purpose.",
-      "monetization": [
-        "+1 Size per frost multiplier pass (~199 R$)",
-        "Skip stage products",
-        "Speed slide pass",
-        "Cube skins (flavoured ice)"
-      ],
-      "retention": [
-        "New kitchen world each update",
-        "Codes for frost",
-        "Leaderboard for biggest finish size",
-        "Rebirth for permanent frost bonus"
-      ],
-      "why_now": "Escape / run is up 0.52 this week to 1.60 with 34 new games (high; +1 Spider Arm 16,358 CCU, 30 Floors Up 5,971). Ice / fire rose 0.29 to 1.48 (Ice Cream Shop [Anomaly] 6,977). Interiors (1.93) and linear courses (1.80) are the top map styles.",
-      "inspired_by": [
-        "+1 Spider Arm🕷️",
-        "[UPDATE 1.0] 30 Floors Up",
-        "[🎃] Ice Cream Shop [Anomaly] 🍦"
-      ],
-      "differentiator": "Most +1 escapes only grow you. Here size is a timer and a key at once, so shrinking is part of the route.",
-      "art_style": "stylized",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Plant a Robot 🤖",
-      "scope": "medium",
-      "genre": "Farming · Collect",
-      "mechanics": [
-        "Grow / farm",
-        "Collect / index"
-      ],
-      "theme": "Robots / mechs",
-      "hook": "Bury a bolt, water it with oil and a little robot sprouts out of the ground. Grow a whole field of bots that harvest, sort and guard your farm for you.",
-      "core_loop": [
-        "Plant bolt seeds in your plot",
-        "Oil them until robots pop out",
-        "Robots auto-harvest more bolts",
-        "Fill the 40-robot index",
-        "Fuse rare bots into a giant farm mech"
-      ],
-      "twist": "Lightning storms mutate whatever is growing, so players rush to plant their best seeds right before a storm hits.",
-      "monetization": [
-        "Auto-oil pass (~100 R$)",
-        "2x Growth pass",
-        "Storm luck boost",
-        "Extra plot rows"
-      ],
-      "retention": [
-        "Robots keep working offline",
-        "Daily storm schedule",
-        "Index rewards per row completed",
-        "Codes for seeds"
-      ],
-      "why_now": "Robots / mechs is at 2.01 momentum with 11 new games (high; Steel Fighters 10,407 CCU, Clean the Moon! 7,265). Grow / farm is up 0.29 this week to 1.39 with 35 new games (Durian Garden 7,231).",
-      "inspired_by": [
-        "[🔰] Steel Fighters",
-        "[UPD] Durian Garden 🍈",
-        "[🎃] Clean the Moon!"
-      ],
-      "differentiator": "Robot games are about building or fighting. Here you grow them like crops and they become your farm hands.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Don't Get Boxed 📦",
-      "scope": "medium",
-      "genre": "Obby · Escape",
-      "mechanics": [
-        "Escape / run",
-        "+1 stat per action"
-      ],
-      "theme": "Robots / mechs",
-      "hook": "You're a toy robot on a factory conveyor heading straight for the packing machine. Run back up the line, grab spare parts and bolt them on before the box closes.",
-      "core_loop": [
-        "Start at the end of the conveyor",
-        "Run against the belt past stamps and claws",
-        "Grab parts for +1 speed, jump or grip",
-        "Reach a stage door before the belt drags you back",
-        "Keep parts and push further next run"
-      ],
-      "twist": "Parts change your shape: wheels are fast but can't jump, springs jump high but slip, so your build decides your route.",
-      "monetization": [
-        "Speed parts pass (~199 R$)",
-        "2x Parts pass",
-        "Golden robot skin",
-        "Skip stage products"
-      ],
-      "retention": [
-        "New factory floors each update",
-        "Daily part of the day",
-        "Rebirth for permanent parts",
-        "Leaderboard for furthest run"
-      ],
-      "why_now": "Escape / run is up 0.52 this week to 1.60 (high; Steal A Pet And Ride It! 27,655 CCU, +1 Spider Arm 16,358). Robots / mechs sits at 2.01 with 11 new games. +1 stat per action is at 1.99 with 37 new games (+1 Venom Evolution 22,996).",
-      "inspired_by": [
-        "+1 Spider Arm🕷️",
-        "[🎃] +1 Venom Evolution",
-        "[🔰] Steel Fighters"
-      ],
-      "differentiator": "Escape games give you a speed stat. Here every upgrade is a visible body part that changes how you move.",
-      "art_style": "simulator_bright",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Hire a Zombie Crew 🧟",
-      "scope": "large",
-      "genre": "Tycoon · Management",
-      "mechanics": [
-        "Tycoon / base building",
-        "Collect / index"
-      ],
-      "theme": "Zombies",
-      "hook": "Zombies work for free, but they are terrible at it. Hire them from the graveyard to run your candy factory and keep them on task before they shuffle off.",
-      "core_loop": [
-        "Hire zombies at the graveyard",
-        "Assign them to machines in your factory",
-        "Keep them focused with music and snacks",
-        "Sell candy for cash and expand the factory",
-        "Collect rare zombie workers with special skills"
-      ],
-      "twist": "Zombies follow the nearest player, so friends can lure your crew away to their own factory unless you guard the doors.",
-      "monetization": [
-        "Auto-manager pass (~114 R$)",
-        "2x Cash pass",
-        "VIP rare-zombie hire",
-        "Extra factory floor"
-      ],
-      "retention": [
-        "Factory earns offline",
-        "Daily rare hire at the graveyard",
-        "Index of 30 zombie workers",
-        "Codes for snacks"
-      ],
-      "why_now": "Zombies are at 1.49 momentum with 10 new games, spread out (high; Ragdoll Reality 14,936 CCU, 30 Floors Up 5,971). Tycoon / base building has 78 new games (high; My Small Business 10,723, Sell a Million Sushi 9,587), though it eased 0.23 this week.",
-      "inspired_by": [
-        "🧸 My Small Business",
-        "Sell a Million Sushi",
-        "[UPDATE 1.0] 30 Floors Up"
-      ],
-      "differentiator": "Zombie games make you fight or flee. Here they are your clumsy staff, and other players can poach them.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Paint a Decoy 🎨",
-      "scope": "medium",
-      "genre": "Survival · Party",
-      "mechanics": [
-        "Paint / create",
-        "Escape / run"
-      ],
-      "theme": "Zombies",
-      "hook": "The horde is coming. Paint life-size cardboard people as fast as you can and set them out as decoys while your team sneaks to the rescue van.",
-      "core_loop": [
-        "Grab a blank cardboard cut-out",
-        "Paint a person on it in 30 seconds",
-        "Place it to pull the horde away",
-        "Sprint to the van while zombies chase decoys",
-        "Earn paint and better boards for the next round"
-      ],
-      "twist": "Zombies judge your art: more detail means they stay on a decoy longer, so a rushed stick figure buys you two seconds.",
-      "monetization": [
-        "VIP spray can pack (~99 R$)",
-        "2x Paint pass",
-        "Instant-dry pass",
-        "Glow paint for night rounds"
-      ],
-      "retention": [
-        "Gallery of your decoys",
-        "Daily map rotation",
-        "Best-decoy vote each round",
-        "Codes for colours"
-      ],
-      "why_now": "Paint / create is at 2.06 momentum with 19 new games, spread out (high; Paint and Hide! 12,050 CCU). Zombies hold 1.49 with 10 new games (Ragdoll Sandbox 12,494). Escape / run is up 0.52 this week to 1.60.",
-      "inspired_by": [
-        "Paint and Hide! 🎨",
-        "Ragdoll Sandbox",
-        "[UPDATE 1.0] 30 Floors Up"
-      ],
-      "differentiator": "Paint and Hide paints you. Here you paint fake people, and the quality of your art is your survival time.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "+1 Thruster Power 🚀",
-      "scope": "small",
-      "genre": "Incremental · Space",
+      "genre": "Incremental · Prison escape",
       "mechanics": [
         "+1 stat per action",
-        "Escape / run"
+        "Escape / run",
+        "Break / mine / dig"
       ],
-      "theme": "Space",
-      "hook": "You're stuck orbiting a tiny planet. Every lap gives +1 thruster power, and once you're strong enough you blast out of its gravity to the next, bigger planet.",
+      "theme": "Prison / police",
+      "hook": "All you have is a spoon. Every scoop gives +1 dig power, and your tunnel goes from cell floor through dirt, rock and sewer pipes until you pop up outside the fence.",
       "core_loop": [
-        "Fly laps around the planet",
-        "Gain +1 thrust per lap",
-        "Try to break orbit",
-        "Land on the next planet with stronger gravity",
-        "Rebirth for a permanent thrust multiplier"
+        "Scoop under your bunk with the spoon (+1 dig power per scoop)",
+        "Break through tougher layers: dirt, clay, rock, old pipes",
+        "Spend dig power on better tools (fork, trowel, drill)",
+        "Surface outside the fence to finish a prison",
+        "Rebirth into a higher-security prison with deeper layers"
       ],
-      "twist": "Asteroids cross your orbit and knock you back down a ring, so you dodge while you grind.",
+      "twist": "Guard sweeps every 60 seconds: hop back into your bed and cover the hole with a poster, or lose the last layer you dug.",
       "monetization": [
-        "2x Thrust pass (~199 R$)",
-        "Auto-lap pass",
-        "Speed trail pack",
-        "Skip planet products"
+        "2x dig power pass",
+        "Auto-scoop pass",
+        "Golden spoon (VIP) with faster sweeps warning",
+        "Skip-a-layer developer product"
       ],
       "retention": [
-        "New solar system each update",
-        "Daily comet bonus",
-        "Leaderboard for planets reached",
-        "Codes for boosts"
+        "Rebirth into new prisons",
+        "Leaderboard for deepest tunnel",
+        "Daily contraband crate",
+        "Codes for tool skins"
       ],
-      "why_now": "+1 stat per action is at 1.99 momentum with 37 new games (high; +1 Venom Evolution 22,996 CCU, +1 Anime Eyes 17,773). Space sits at 1.51 with 13 new games (medium; Clean the Moon! 7,265, +1 Slinky Escape 801).",
+      "why_now": "Prison / police jumped 0.55 this week to 1.53 momentum (high confidence; Tesla Roadster Chase 9,437 CCU at 15 days, Punch Out Of Prison 4,017 at 20 days). +1 stat per action is at 2.04 with 36 new games (+1 Venom Evolution 23,034, +1 Spider Arm 14,811), and +1 paired with Escape / run already has 10 young games. +1 slipped 0.29 week on week, so the prison angle is what makes it fresh.",
       "inspired_by": [
-        "[🎃] +1 Venom Evolution",
-        "[🎃] Clean the Moon!",
-        "+1 Slinky Escape"
+        "Punch Out Of Prison",
+        "+1 Spider Arm🕷️",
+        "[🎃] +1 Venom Evolution"
       ],
-      "differentiator": "Most +1 games are a straight track. Here the track is an orbit, and escaping gravity is the level-up.",
+      "differentiator": "Punch-out escapes are about smashing walls; this is a slow, sneaky tunnel with a guard-sweep timer and layer-by-layer progression.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "Jar a Fairy 🧚",
-      "scope": "large",
-      "genre": "Collect · Adventure",
+      "title": "Draw Paths for Robots 🤖",
+      "scope": "small",
+      "genre": "Puzzle · Drawing",
       "mechanics": [
-        "Collect / index",
-        "Tycoon / base building"
+        "Paint / create",
+        "Escape / run"
       ],
-      "theme": "Fantasy / medieval",
-      "hook": "When night falls on the forest, tiny glowing fairies come out. Catch them in jars, line your cottage shelves and light up your home with the rarest ones.",
+      "theme": "Robots / mechs",
+      "hook": "Little delivery robots only follow lines. Draw their path across a busy factory floor so they dodge crushers and lasers and reach the exit door.",
       "core_loop": [
-        "Explore the forest at night",
-        "Sneak up and jar fairies",
-        "Bring them home to light your cottage",
-        "Fill the fairy index",
-        "Trade rare fairies with friends"
+        "Look at the level: robots, hazards, exit",
+        "Draw one path per robot with your finger or mouse",
+        "Press go and watch them roll",
+        "Earn bolts for robots saved and ink left over",
+        "Unlock new robot types (jumpers, magnets, splitters)"
       ],
-      "twist": "Each fairy only appears in certain weather (rain, fog, full moon), so the server's weather decides who goes hunting.",
+      "twist": "Co-op mode: each player draws for a different robot, and paths that cross cause pile-ups.",
       "monetization": [
-        "Luck jar pass (~231 R$)",
-        "2x Catch pass",
-        "Bigger cottage shelves",
-        "Weather forecast pass"
+        "Rainbow ink trail (~99 R$)",
+        "Extra ink pass",
+        "VIP robot skins",
+        "Hint developer product"
       ],
       "retention": [
-        "Weather schedule each day",
-        "Index rewards",
-        "Trading board",
-        "Seasonal fairy events"
+        "Daily puzzle with a leaderboard for least ink used",
+        "Weekly new factory pack",
+        "Badges per world"
       ],
-      "why_now": "Collect / index is steady at 1.64 with 46 new games (medium; Break and Steal an Egg 126,851 CCU, Bike For Egg! 24,176). Fantasy / medieval is at 1.29 with 14 new games (medium; Tower Of Luck 3,842).",
+      "why_now": "Paint / create is the strongest climbing mechanic: 2.18 momentum, up 0.31 this week with 18 new games (Ragdoll Sandbox 12,539 at 20 days, 🎬 Make a Cartoon! 8,099). Robots / mechs sits at 2.08 (high confidence; [🔰] Steel Fighters 8,747, [🎃] Clean the Moon! 6,052), and Paint + Robots is the top gap in the data. Linear-course maps are rising too (2.01).",
       "inspired_by": [
-        "Break and Steal an Egg",
-        "[🏰] Bike For Egg!",
-        "🍀 Tower Of Luck [1.8]"
+        "Ragdoll Sandbox",
+        "🎬 Make a Cartoon!",
+        "[🔰] Steel Fighters"
       ],
-      "differentiator": "Collect games hatch eggs. Here you hunt in a living night forest, and weather sets what can be found.",
-      "art_style": "stylized",
-      "map_style": "open_world"
+      "differentiator": "Drawing here is the controls, not decoration: your line is the robot's route, so every level is a quick physics-light puzzle.",
+      "art_style": "low_poly",
+      "map_style": "linear_course"
     },
     {
-      "title": "Run a Quarry ⛏️",
+      "title": "Rent a Robot 🔧",
       "scope": "medium",
-      "genre": "Tycoon · Mining",
+      "genre": "Tycoon · Shop",
+      "mechanics": [
+        "Sell / run a shop",
+        "Tycoon / base building"
+      ],
+      "theme": "Robots / mechs",
+      "hook": "Run a robot rental lot. Customers rent your bots for jobs like lawn mowing or moving houses, and bring them back dented, muddy or with a new personality.",
+      "core_loop": [
+        "Build robots on your lot from parts",
+        "Match each customer to the right robot",
+        "Collect rent when the robot comes back",
+        "Repair and wash returns before the next rental",
+        "Expand the lot with bigger and rarer robots"
+      ],
+      "twist": "Some robots come back 'learned' a habit (dancing, stealing socks). Weird habits make them worth more to certain customers, so players hunt for them.",
+      "monetization": [
+        "2x rent pass",
+        "Auto-wash station",
+        "Extra garage slots (storage)",
+        "VIP rare-part crate"
+      ],
+      "retention": [
+        "Rental income keeps coming offline",
+        "Index of robot habits to collect",
+        "Daily VIP customer with a big order"
+      ],
+      "why_now": "Sell / run a shop holds 1.71 momentum with 28 new games spread out (Sell Fries! [Anomaly] 🍟 21,967, 🧸 My Small Business 9,980, Sell a Million Sushi 9,694). Robots / mechs is at 2.08 (high confidence) and Tycoon / base building at 1.36 with 78 new games.",
+      "inspired_by": [
+        "🧸 My Small Business",
+        "Sell a Million Sushi",
+        "[🔰] Steel Fighters"
+      ],
+      "differentiator": "Shop games sell goods once; here you lend the same robots again and again, and they come back changed.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Bank After Hours 💰",
+      "scope": "medium",
+      "genre": "Escape · Heist",
+      "mechanics": [
+        "Escape / run",
+        "Collect / index"
+      ],
+      "theme": "Money / rich",
+      "hook": "You fell asleep in the bank and the doors locked. Get out through the vault floors before morning, grabbing as much cash as you dare. The bag gets heavier and you get slower.",
+      "core_loop": [
+        "Wake up in a locked bank floor",
+        "Crack simple locks to move down a level",
+        "Stuff cash into your bag (heavier = slower)",
+        "Dodge night guards and laser grids",
+        "Reach the exit and bank your haul for upgrades"
+      ],
+      "twist": "Greed meter: the more you carry, the louder you walk. Drop stacks to sneak past guards, and other players can pick up what you dropped.",
+      "monetization": [
+        "Bigger bag pass",
+        "Silent shoes (speed) pass",
+        "VIP gold vault floor",
+        "Revive developer product"
+      ],
+      "retention": [
+        "New bank buildings each update",
+        "Daily vault with a rare bill to collect",
+        "Leaderboard for biggest single haul"
+      ],
+      "why_now": "Escape / run is up 0.47 this week to 1.62 (high confidence; [🎃] Steal A Pet And Ride It! 27,743, +1 Spider Arm🕷️ 14,811). Money / rich is at 2.0 with 52 new games (Steal A Balut 13,452 at 18 days). Interior maps are the fastest rising map style at 2.09 (DONT SPLASH 50,746). Realistic art is also climbing (1.63, high).",
+      "inspired_by": [
+        "[🎃] Steal A Pet And Ride It!",
+        "Steal A Balut",
+        "DONT SPLASH"
+      ],
+      "differentiator": "Not a steal-from-players base game: it is a short stealth escape where your loot slows you down.",
+      "art_style": "realistic",
+      "map_style": "interior"
+    },
+    {
+      "title": "Restore Old Coins 🪙",
+      "scope": "small",
+      "genre": "Simulator · Restoring",
+      "mechanics": [
+        "Paint / create",
+        "Sell / run a shop",
+        "Collect / index"
+      ],
+      "theme": "Money / rich",
+      "hook": "Scrub, polish and buff crusty old coins in first person until the design shows through. Some turn out to be rare and sell for a fortune.",
+      "core_loop": [
+        "Pick a dirty coin from the bucket",
+        "Scrub off grime with brushes and polish",
+        "Reveal the coin's design and rarity",
+        "Sell it at your counter or keep it for the album",
+        "Buy better tools and bigger buckets"
+      ],
+      "twist": "Over-polishing wipes off detail and halves the value, so players learn when to stop.",
+      "monetization": [
+        "Auto-polish wheel",
+        "2x rare chance pass",
+        "VIP display case",
+        "Mystery bucket developer product"
+      ],
+      "retention": [
+        "Coin album with sets to complete",
+        "Daily mystery bucket",
+        "Trading with other players"
+      ],
+      "why_now": "Paint / create is up 0.31 this week to 2.18 (high confidence), and the newest paint games are first-person cleaning and restoring (Clean a Painting 2,246 CCU, [🥞] Paint a Pancake). Money / rich sits at 2.0 with 52 new games, and Sell / run a shop at 1.71 (Sell Fries! [Anomaly] 🍟 21,967).",
+      "inspired_by": [
+        "Clean a Painting",
+        "[🥞] Paint a Pancake",
+        "Sell Fries! [Anomaly] 🍟"
+      ],
+      "differentiator": "The satisfying scrub-and-reveal of cleaning games, but every reveal is a lottery ticket with a real collection behind it.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Run an Ice Hotel 🏨",
+      "scope": "large",
+      "genre": "Tycoon · Hotel",
       "mechanics": [
         "Tycoon / base building",
+        "Sell / run a shop"
+      ],
+      "theme": "Ice / fire / elements",
+      "hook": "Build a hotel out of ice blocks and check in guests. Fire-type guests pay the most, but they melt the walls if you don't cool their rooms fast enough.",
+      "core_loop": [
+        "Carve ice blocks and build rooms",
+        "Check in guests (snow, wind and fire types)",
+        "Keep each room's temperature in the safe zone",
+        "Collect payment and tips at checkout",
+        "Unlock new floors, a lobby and an ice slide"
+      ],
+      "twist": "Fire guests pay triple but heat up neighbours' rooms, so room layout becomes a puzzle.",
+      "monetization": [
+        "Auto-freezer pass",
+        "2x tips pass",
+        "VIP penthouse suite",
+        "Instant refreeze developer product"
+      ],
+      "retention": [
+        "Hotel earns offline",
+        "Weekly guest events (dragon, yeti)",
+        "Star rating leaderboard"
+      ],
+      "why_now": "Ice / fire / elements is up 0.20 to 1.53 momentum (high confidence; [🎃] Ice Cream Shop [Anomaly] 🍦 6,264, Firefighting Sim 🚒 4,901). Tycoon / base building has 78 new games at 1.36, and Sell / run a shop holds 1.71 (🧸 My Small Business 9,980).",
+      "inspired_by": [
+        "[🎃] Ice Cream Shop [Anomaly] 🍦",
+        "🧸 My Small Business",
+        "Firefighting Sim 🚒"
+      ],
+      "differentiator": "A hotel tycoon where the building itself is at risk from your best customers, so layout and cooling matter as much as income.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Grow a Geode 💎",
+      "scope": "medium",
+      "genre": "Farming · Mining",
+      "mechanics": [
+        "Grow / farm",
         "Break / mine / dig"
       ],
       "theme": "Stones / rocks / ores",
-      "hook": "Blast your own quarry and sell stone to the town next door. The town actually builds itself from your stone, so the more you mine, the bigger it gets.",
+      "hook": "Plant geode seeds in your cave plot, water them with mineral water, and crack them open when they're ripe. Bigger and older geodes hide rarer crystals.",
       "core_loop": [
-        "Drill and blast rock walls",
-        "Haul stone blocks by cart",
-        "Sell to builders for cash",
-        "Buy bigger drills and trucks",
-        "Watch the town grow from your stone"
+        "Plant geode seeds in your cave plot",
+        "Feed them mineral water while they grow",
+        "Crack ripe geodes with a hammer",
+        "Sell or display the crystals inside",
+        "Buy rarer seeds and expand the cave"
       ],
-      "twist": "Players who sell the most stone get a statue of themselves carved in the town square for the week.",
+      "twist": "Leave a geode growing longer for a chance at a huge crystal, but it can crack on its own and spill to neighbours.",
       "monetization": [
-        "Auto-haul pass (~114 R$)",
-        "2x Cash pass",
-        "Mega drill",
-        "VIP marble quarry"
+        "Auto-water pump",
+        "2x growth speed",
+        "Extra plot rows (storage)",
+        "Golden hammer (luck) pass"
       ],
       "retention": [
-        "Quarry earns offline",
-        "Weekly statue leaderboard",
-        "Rare ore veins each day",
-        "Codes for dynamite"
+        "Geodes keep growing offline",
+        "Crystal index",
+        "Daily rare seed in the shop"
       ],
-      "why_now": "Stones / rocks / ores rose 0.25 this week to 1.74 with 14 new games (high; Cut a Rock 15,253 CCU, Punch Out Of Prison 5,811). Tycoon / base building has 78 new games, spread out (high), though it eased 0.23.",
+      "why_now": "Grow / farm is up 0.49 this week to 1.62 (high confidence; [2x WEEKEND] Farm Evolution 8,841, [UPD] Durian Garden 🍈 8,084 at 15 days). Stones / rocks / ores is up 0.30 to 1.70 (medium confidence; Cut a Rock 16,988).",
       "inspired_by": [
-        "Cut a Rock",
-        "Punch Out Of Prison",
-        "🧸 My Small Business"
+        "[UPD] Durian Garden 🍈",
+        "[2x WEEKEND] Farm Evolution",
+        "Cut a Rock"
       ],
-      "differentiator": "Mining games end at a sell button. Here your stone shows up in a shared town and a statue of the top miner.",
+      "differentiator": "A farm where the harvest is a surprise: you never know what is inside until you crack it.",
       "art_style": "simulator_bright",
       "map_style": "plot_base"
+    },
+    {
+      "title": "Cook for the Horde 🧟",
+      "scope": "medium",
+      "genre": "Cooking · Survival",
+      "mechanics": [
+        "Cook / serve",
+        "Sell / run a shop"
+      ],
+      "theme": "Zombies",
+      "hook": "Your diner is the last one in town, and the zombies are hungry. Keep them fed and happy at the counter, or they stop ordering and start breaking in.",
+      "core_loop": [
+        "Take orders from zombies at the window",
+        "Cook their weird dishes (brain burgers, toe fries)",
+        "Serve before the hunger meter fills",
+        "Earn coins and spend them on faster stoves and stronger shutters",
+        "Survive longer nights with bigger hordes"
+      ],
+      "twist": "Each zombie wants a dish matching what it was before it turned: the chef zombie is picky, the kid zombie wants dessert.",
+      "monetization": [
+        "Extra stove pass",
+        "2x tips pass",
+        "VIP grill skin",
+        "Emergency barricade developer product"
+      ],
+      "retention": [
+        "Nightly survival record",
+        "Recipe book to complete",
+        "Codes for rare ingredients"
+      ],
+      "why_now": "Zombies is up 0.18 to 1.63 momentum (high confidence; Ragdoll Reality 🩸 16,987, [UPDATE 1.0] 30 Floors Up 5,320 at 11 days). Cook / serve is up 0.17 to 1.20 (medium confidence; Cook the Chicken (by slapping it) 8,360, Save the Krusty Krab 🍔 5,168). Sell / run a shop holds 1.71.",
+      "inspired_by": [
+        "Cook the Chicken (by slapping it)",
+        "Save the Krusty Krab 🍔",
+        "[UPDATE 1.0] 30 Floors Up"
+      ],
+      "differentiator": "Cooking is the defence: there are no guns, only food, and a slow kitchen turns into a siege.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Raid the Giant's Fridge 🧀",
+      "scope": "large",
+      "genre": "Survival · Base building",
+      "mechanics": [
+        "Escape / run",
+        "Tycoon / base building"
+      ],
+      "theme": "Giant / huge",
+      "hook": "You're tiny and live inside the walls of a giant's house. Sneak into the kitchen at night, haul crumbs and cheese back home, and run when the giant wakes.",
+      "core_loop": [
+        "Leave your wall base through a mouse hole",
+        "Climb counters and shelves to reach food",
+        "Carry it back before the giant or the cat spots you",
+        "Use food to build and upgrade your wall base",
+        "Unlock new rooms: pantry, bathroom, garden"
+      ],
+      "twist": "The giant's routine changes each night, and loud players wake him up for everyone on the server.",
+      "monetization": [
+        "Bigger backpack",
+        "Speed pass",
+        "VIP base rooms",
+        "Revive developer product"
+      ],
+      "retention": [
+        "Base keeps producing while you're away",
+        "New house rooms each update",
+        "Daily rare snack hunt"
+      ],
+      "why_now": "Giant / huge is at 1.66, up 0.12 (high confidence; Bug Evolution [🦟] 18,403, Raise The Biggest Family 9,351). Escape / run is up 0.47 to 1.62 (high confidence), and interior maps lead map styles at 2.09. Realistic art is rising at 1.63.",
+      "inspired_by": [
+        "Bug Evolution [🦟]",
+        "Raise The Biggest Family",
+        "[🎃] Steal A Pet And Ride It!"
+      ],
+      "differentiator": "The whole map is one giant house seen from the size of a mouse, with a real home base to grow between raids.",
+      "art_style": "realistic",
+      "map_style": "interior"
+    },
+    {
+      "title": "Spacewalk Home 🧑‍🚀",
+      "scope": "medium",
+      "genre": "Obby · Space",
+      "mechanics": [
+        "Escape / run",
+        "Obby / climb / jump"
+      ],
+      "theme": "Space",
+      "hook": "Your tether snapped. Push off floating station wreckage to drift back to the airlock before your oxygen runs out.",
+      "core_loop": [
+        "Aim and push off debris to drift",
+        "Grab oxygen canisters along the route",
+        "Avoid spinning panels and sparks",
+        "Reach the airlock checkpoint",
+        "Spend stars on better suits and thrusters"
+      ],
+      "twist": "No gravity: every push keeps you moving until you grab something, so overshooting a checkpoint is the main danger.",
+      "monetization": [
+        "Mini thruster pass",
+        "Extra oxygen pass",
+        "VIP suit colours",
+        "Skip stage developer product"
+      ],
+      "retention": [
+        "Weekly new station section",
+        "Speedrun leaderboard",
+        "Daily space junk collectible"
+      ],
+      "why_now": "Space is up 0.13 to 1.61 momentum (medium confidence; [🎃] Clean the Moon! 6,052, Sweep The Moon 🌕 1,478 at 13 days). Escape / run is up 0.47 to 1.62 (high confidence), and linear-course maps are rising at 2.01. Escape + Obby already has 8 young games.",
+      "inspired_by": [
+        "[🎃] Clean the Moon!",
+        "Sweep The Moon 🌕",
+        "+1 Spider Arm🕷️"
+      ],
+      "differentiator": "An obby with no ground: movement is push-and-drift, so it plays unlike any jump obby.",
+      "art_style": "realistic",
+      "map_style": "linear_course"
     }
   ]
 }
