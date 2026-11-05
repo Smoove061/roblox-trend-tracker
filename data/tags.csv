@@ -59,6 +59,10 @@ universe_id,tag,tag_type,source,confidence
 2471084,tycoon,niche,keyword:name,0.9
 2471084,Tycoon,subgenre,roblox,1.0
 5215344,daily_rewards,feature,keyword:description,0.6
+5215344,pass_cosmetic,feature,keyword:passes,0.7
+5215344,pass_multiplier,feature,keyword:passes,0.7
+5215344,pass_speed,feature,keyword:passes,0.7
+5215344,pass_vip,feature,keyword:passes,0.7
 5215344,Adventure,genre,roblox,1.0
 5215344,Obby & Platformer,genre,roblox,1.0
 5215344,clicker,mechanic,keyword:description,0.4
@@ -306,10 +310,13 @@ universe_id,tag,tag_type,source,confidence
 31874888,break_mine,mechanic,keyword:description,0.6
 31874888,collect_index,mechanic,keyword:description,0.4
 31874888,escape_run,mechanic,keyword:description,0.4
+31874888,hatch_gacha,mechanic,keyword:description,0.4
 31874888,race_drive,mechanic,keyword:description,0.4
 31874888,sell_shop,mechanic,keyword:description,0.4
+31874888,pet_collecting,niche,keyword:description,0.4
 31874888,Vehicle Sim,subgenre,roblox,1.0
-31874888,dinosaurs,theme,keyword:description,0.4
+31874888,dinosaurs,theme,keyword:description,0.6
+31874888,eggs,theme,keyword:description,0.4
 31874888,giant,theme,keyword:name,0.9
 31874888,ice_fire,theme,keyword:description,0.4
 31874888,stone_rocks,theme,keyword:description,0.6
@@ -728,9 +735,7 @@ universe_id,tag,tag_type,source,confidence
 93740418,survive_nights,mechanic,keyword:name,0.9
 93740418,Childhood Game,subgenre,roblox,1.0
 97314177,pass_vip,feature,keyword:passes,0.7
-97314177,emoji,formula,regex:name,1.0
 97314177,tycoon,formula,regex:name,1.0
-97314177,update_tag,formula,regex:name,1.0
 97314177,Simulation,genre,roblox,1.0
 97314177,clicker,mechanic,keyword:description,0.4
 97314177,fight_battle,mechanic,keyword:description,0.6
@@ -873,7 +878,6 @@ universe_id,tag,tag_type,source,confidence
 106086152,sports,niche,keyword:name,0.9
 106086152,Sports,subgenre,roblox,1.0
 106086152,sports,theme,keyword:name,0.9
-106510584,emoji,formula,regex:name,1.0
 106510584,Simulation,genre,roblox,1.0
 106510584,Town and City,genre,roblox,1.0
 106510584,collect_index,mechanic,keyword:description,0.4
@@ -2043,7 +2047,6 @@ universe_id,tag,tag_type,source,confidence
 498490399,superheroes,theme,keyword:description,0.4
 498792494,pass_multiplier,feature,keyword:passes,0.7
 498792494,pass_vip,feature,keyword:passes,0.7
-498792494,update_tag,formula,regex:name,1.0
 498792494,Party & Casual,genre,roblox,1.0
 498792494,job_shift,mechanic,keyword:description,0.4
 498792494,party_minigames,mechanic,keyword:description,0.4
@@ -2183,8 +2186,7 @@ universe_id,tag,tag_type,source,confidence
 552855493,roleplay_life,mechanic,keyword:passes_badges,0.7
 552855493,Action RPG,subgenre,roblox,1.0
 552855493,seasonal,theme,keyword:name,0.9
-564406126,daily_rewards,feature,keyword:description,0.6
-564406126,leaderboards,feature,keyword:description,0.6
+564406126,limited_events,feature,keyword:description,0.6
 564406126,pass_auto,feature,keyword:passes,0.7
 564406126,pass_luck,feature,keyword:passes,0.7
 564406126,pass_multiplier,feature,keyword:passes,0.7
@@ -2197,14 +2199,13 @@ universe_id,tag,tag_type,source,confidence
 564406126,Simulation,genre,roblox,1.0
 564406126,break_mine,mechanic,keyword:name,0.9
 564406126,collect_index,mechanic,keyword:description,0.4
-564406126,forge_craft,mechanic,keyword:description,0.4
 564406126,hatch_gacha,mechanic,keyword:passes_badges,0.7
-564406126,job_shift,mechanic,keyword:description,0.4
 564406126,pet_collecting,niche,keyword:description,0.4
 564406126,simulator,niche,keyword:name,0.9
 564406126,Incremental Simulator,subgenre,roblox,1.0
 564406126,animals,theme,keyword:description,0.4
 564406126,money,theme,keyword:description,0.6
+564406126,seasonal,theme,keyword:description,0.6
 564406126,stone_rocks,theme,keyword:description,0.4
 568307879,pass_speed,feature,keyword:passes,0.7
 568307879,escape_x,formula,regex:name,1.0
@@ -3271,17 +3272,14 @@ universe_id,tag,tag_type,source,confidence
 1049011994,escape,niche,keyword:description,0.4
 1049011994,survival,niche,keyword:description,0.4
 1049011994,vehicles,theme,keyword:description,0.4
-1049111999,limited_events,feature,keyword:description,0.6
 1049111999,pass_multiplier,feature,keyword:passes,0.7
 1049111999,stealing,feature,keyword:description,0.6
-1049111999,emoji,formula,regex:name,1.0
 1049111999,Survival,genre,roblox,1.0
 1049111999,job_shift,mechanic,keyword:description,0.4
 1049111999,paint_create,mechanic,keyword:description,0.4
 1049111999,steal_raid,mechanic,keyword:description,0.6
 1049111999,Escape,subgenre,roblox,1.0
 1049111999,money,theme,keyword:description,0.4
-1049111999,seasonal,theme,keyword:description,0.4
 1050830474,pass_multiplier,feature,keyword:passes,0.7
 1050830474,Simulation,genre,roblox,1.0
 1050830474,hit_swing,mechanic,keyword:description,0.4
@@ -3875,7 +3873,7 @@ universe_id,tag,tag_type,source,confidence
 1230230722,limited_events,feature,keyword:description,0.6
 1230230722,pass_multiplier,feature,keyword:passes,0.7
 1230230722,pass_vip,feature,keyword:passes,0.7
-1230230722,pets,feature,keyword:name,0.9
+1230230722,pets,feature,keyword:description,0.6
 1230230722,emoji,formula,regex:name,1.0
 1230230722,RPG,genre,roblox,1.0
 1230230722,Roleplay & Avatar Sim,genre,roblox,1.0
@@ -3883,13 +3881,12 @@ universe_id,tag,tag_type,source,confidence
 1230230722,party_minigames,mechanic,keyword:passes_badges,0.7
 1230230722,pet_care,mechanic,keyword:description,0.4
 1230230722,roleplay_life,mechanic,keyword:name,0.9
-1230230722,sell_shop,mechanic,keyword:name,0.9
 1230230722,tycoon_build,mechanic,keyword:passes_badges,0.7
-1230230722,pet_collecting,niche,keyword:name,0.9
+1230230722,pet_collecting,niche,keyword:description,0.6
 1230230722,roleplay_city,niche,keyword:name,0.9
 1230230722,story,niche,keyword:description,0.4
 1230230722,Life,subgenre,roblox,1.0
-1230230722,animals,theme,keyword:name,0.9
+1230230722,animals,theme,keyword:description,0.6
 1230230722,seasonal,theme,keyword:description,0.6
 1235188606,limited_events,feature,keyword:description,0.6
 1235188606,pass_luck,feature,keyword:passes,0.7
@@ -4684,6 +4681,7 @@ universe_id,tag,tag_type,source,confidence
 1496311766,giant,theme,keyword:description,0.4
 1499870257,limited_events,feature,keyword:description,0.6
 1499870257,pass_vip,feature,keyword:passes,0.7
+1499870257,emoji,formula,regex:name,1.0
 1499870257,Roleplay & Avatar Sim,genre,roblox,1.0
 1499870257,fight_battle,mechanic,keyword:description,0.4
 1499870257,fishing,mechanic,keyword:description,0.4
@@ -5970,6 +5968,7 @@ universe_id,tag,tag_type,source,confidence
 1871172282,limited_events,feature,keyword:description,0.6
 1871172282,pass_storage,feature,keyword:passes,0.7
 1871172282,pvp,feature,keyword:description,0.6
+1871172282,emoji,formula,regex:name,1.0
 1871172282,Sports,genre,roblox,1.0
 1871172282,Sports & Racing,genre,roblox,1.0
 1871172282,fight_battle,mechanic,keyword:name,0.9
@@ -7651,11 +7650,11 @@ universe_id,tag,tag_type,source,confidence
 2361855211,military,theme,keyword:description,0.4
 2361855211,sports,theme,keyword:description,0.4
 2361855211,stone_rocks,theme,keyword:description,0.4
-2366560560,limited_events,feature,keyword:name,0.9
 2366560560,pvp,feature,keyword:description,0.6
 2366560560,Roleplay & Avatar Sim,genre,roblox,1.0
 2366560560,Town and City,genre,roblox,1.0
 2366560560,break_mine,mechanic,keyword:description,0.4
+2366560560,collect_index,mechanic,keyword:description,0.4
 2366560560,dress_style,mechanic,keyword:passes_badges,0.7
 2366560560,fight_battle,mechanic,keyword:description,0.6
 2366560560,fishing,mechanic,keyword:passes_badges,0.7
@@ -7664,7 +7663,6 @@ universe_id,tag,tag_type,source,confidence
 2366560560,roleplay_city,niche,keyword:name,0.9
 2366560560,Morph Roleplay,subgenre,roblox,1.0
 2366560560,animals,theme,keyword:name,0.9
-2366560560,seasonal,theme,keyword:name,0.9
 2366560560,superheroes,theme,keyword:description,0.6
 2369077151,base_building,feature,keyword:name,0.9
 2369077151,pass_multiplier,feature,keyword:passes,0.7
@@ -7722,9 +7720,7 @@ universe_id,tag,tag_type,source,confidence
 2387000728,Roleplay & Avatar Sim,genre,roblox,1.0
 2387000728,break_mine,mechanic,keyword:description,0.4
 2387000728,fight_battle,mechanic,keyword:description,0.4
-2387000728,roleplay_life,mechanic,keyword:name,0.9
 2387000728,steal_raid,mechanic,keyword:description,0.4
-2387000728,roleplay_city,niche,keyword:name,0.9
 2387000728,steal_a,niche,keyword:description,0.4
 2387000728,Morph Roleplay,subgenre,roblox,1.0
 2387000728,money,theme,keyword:description,0.4
@@ -7789,9 +7785,8 @@ universe_id,tag,tag_type,source,confidence
 2402904937,ice_fire,theme,keyword:name,0.9
 2404080894,pass_multiplier,feature,keyword:passes,0.7
 2404080894,pvp,feature,keyword:description,0.6
-2404080894,update_tag,formula,regex:name,1.0
 2404080894,Action,genre,roblox,1.0
-2404080894,fight_battle,mechanic,keyword:name,0.9
+2404080894,fight_battle,mechanic,keyword:description,0.4
 2404080894,Music & Rhythm,subgenre,roblox,1.0
 2406191199,pass_vip,feature,keyword:passes,0.7
 2406191199,Sports,genre,roblox,1.0
@@ -8314,7 +8309,6 @@ universe_id,tag,tag_type,source,confidence
 2549475383,seasonal,theme,keyword:description,0.6
 2559182639,limited_events,feature,keyword:description,0.6
 2559182639,pass_vip,feature,keyword:passes,0.7
-2559182639,emoji,formula,regex:name,1.0
 2559182639,tycoon,formula,regex:name,1.0
 2559182639,Building,genre,roblox,1.0
 2559182639,Simulation,genre,roblox,1.0
@@ -8705,7 +8699,6 @@ universe_id,tag,tag_type,source,confidence
 2655311011,pass_vip,feature,keyword:passes,0.7
 2655311011,pets,feature,keyword:description,0.6
 2655311011,emoji,formula,regex:name,1.0
-2655311011,simulator,formula,regex:name,1.0
 2655311011,Fighting,genre,roblox,1.0
 2655311011,RPG,genre,roblox,1.0
 2655311011,dice_cards,mechanic,keyword:description,0.6
@@ -8715,7 +8708,6 @@ universe_id,tag,tag_type,source,confidence
 2655311011,steal_raid,mechanic,keyword:description,0.4
 2655311011,anime_fighting,niche,keyword:name,0.9
 2655311011,pet_collecting,niche,keyword:description,0.4
-2655311011,simulator,niche,keyword:name,0.9
 2655311011,Action RPG,subgenre,roblox,1.0
 2655311011,animals,theme,keyword:description,0.4
 2655311011,anime,theme,keyword:name,0.9
@@ -8747,11 +8739,9 @@ universe_id,tag,tag_type,source,confidence
 2655895471,tycoon,niche,keyword:name,0.9
 2655895471,Tycoon,subgenre,roblox,1.0
 2655895471,ancient,theme,keyword:description,0.6
-2655895471,food,theme,keyword:description,0.4
-2655895471,ice_fire,theme,keyword:description,0.4
+2655895471,ice_fire,theme,keyword:description,0.6
 2655895471,money,theme,keyword:description,0.6
 2655895471,space,theme,keyword:description,0.4
-2655895471,stone_rocks,theme,keyword:description,0.4
 2656602014,pass_storage,feature,keyword:passes,0.7
 2656602014,Roleplay & Avatar Sim,genre,roblox,1.0
 2656602014,escape_run,mechanic,keyword:description,0.4
@@ -8786,7 +8776,6 @@ universe_id,tag,tag_type,source,confidence
 2682938349,pass_storage,feature,keyword:passes,0.7
 2682938349,pass_vip,feature,keyword:passes,0.7
 2682938349,trading,feature,keyword:description,0.6
-2682938349,emoji,formula,regex:name,1.0
 2682938349,Adventure,genre,roblox,1.0
 2682938349,Roleplay & Avatar Sim,genre,roblox,1.0
 2682938349,collect_index,mechanic,keyword:description,0.6
@@ -9405,7 +9394,6 @@ universe_id,tag,tag_type,source,confidence
 2875388700,fantasy,theme,keyword:name,0.9
 2875388700,ocean,theme,keyword:description,0.4
 2875801095,pass_vip,feature,keyword:passes,0.7
-2875801095,emoji,formula,regex:name,1.0
 2875801095,Comedy,genre,roblox,1.0
 2875801095,Simulation,genre,roblox,1.0
 2875801095,Physics Sim,subgenre,roblox,1.0
@@ -10582,11 +10570,10 @@ universe_id,tag,tag_type,source,confidence
 3219620210,simulator,niche,keyword:description,0.4
 3219620210,Physics Sim,subgenre,roblox,1.0
 3222531984,codes,feature,keyword:description,0.6
-3222531984,limited_events,feature,keyword:name,0.9
+3222531984,limited_events,feature,keyword:description,0.6
 3222531984,pass_multiplier,feature,keyword:passes,0.7
 3222531984,pass_vip,feature,keyword:passes,0.7
 3222531984,emoji,formula,regex:name,1.0
-3222531984,update_tag,formula,regex:name,1.0
 3222531984,Simulation,genre,roblox,1.0
 3222531984,clicker,mechanic,keyword:description,0.4
 3222531984,race_drive,mechanic,keyword:name,0.9
@@ -11104,7 +11091,6 @@ universe_id,tag,tag_type,source,confidence
 3346892457,survival,niche,keyword:description,0.4
 3346892457,horror,theme,keyword:name,0.9
 3347455347,pvp,feature,keyword:description,0.6
-3347455347,emoji,formula,regex:name,1.0
 3347455347,Action,genre,roblox,1.0
 3347455347,FPS,genre,roblox,1.0
 3347455347,fight_battle,mechanic,keyword:description,0.6
@@ -15229,7 +15215,6 @@ universe_id,tag,tag_type,source,confidence
 4495908296,space,theme,keyword:description,0.4
 4497460596,limited_events,feature,keyword:description,0.6
 4497460596,pvp,feature,keyword:description,0.6
-4497460596,emoji,formula,regex:name,1.0
 4497460596,Adventure,genre,roblox,1.0
 4497460596,fight_battle,mechanic,keyword:description,0.6
 4497460596,forge_craft,mechanic,keyword:description,0.4
@@ -15655,6 +15640,7 @@ universe_id,tag,tag_type,source,confidence
 4571439504,Open World Action,subgenre,roblox,1.0
 4571439504,prison,theme,keyword:description,0.6
 4573906792,pvp,feature,keyword:description,0.6
+4573906792,one_word,formula,regex:name,1.0
 4573906792,Medieval,genre,roblox,1.0
 4573906792,RPG,genre,roblox,1.0
 4573906792,collect_index,mechanic,keyword:description,0.4
@@ -15755,15 +15741,12 @@ universe_id,tag,tag_type,source,confidence
 4587522298,Escape,subgenre,roblox,1.0
 4587522298,horror,theme,keyword:name,0.9
 4587522298,military,theme,keyword:description,0.4
-4590309504,limited_events,feature,keyword:name,0.9
 4590309504,pass_speed,feature,keyword:passes,0.7
-4590309504,update_tag,formula,regex:name,1.0
 4590309504,Action,genre,roblox,1.0
 4590309504,Fighting,genre,roblox,1.0
 4590309504,fight_battle,mechanic,keyword:name,0.9
 4590309504,anime_fighting,niche,keyword:description,0.4
 4590309504,Battlegrounds & Fighting,subgenre,roblox,1.0
-4590309504,seasonal,theme,keyword:name,0.9
 4592143244,pass_multiplier,feature,keyword:passes,0.7
 4592143244,pass_vip,feature,keyword:passes,0.7
 4592143244,Adventure,genre,roblox,1.0
@@ -16005,7 +15988,6 @@ universe_id,tag,tag_type,source,confidence
 4664728623,1 vs All,subgenre,roblox,1.0
 4664728623,superheroes,theme,keyword:description,0.6
 4666164093,simulator,formula,regex:name,1.0
-4666164093,update_tag,formula,regex:name,1.0
 4666164093,Simulation,genre,roblox,1.0
 4666164093,Town and City,genre,roblox,1.0
 4666164093,simulator,niche,keyword:name,0.9
@@ -16040,6 +16022,10 @@ universe_id,tag,tag_type,source,confidence
 4668461757,trade,mechanic,keyword:description,0.4
 4668461757,Incremental Simulator,subgenre,roblox,1.0
 4668818868,base_building,feature,keyword:description,0.6
+4668818868,pass_auto,feature,keyword:passes,0.7
+4668818868,pass_multiplier,feature,keyword:passes,0.7
+4668818868,pass_speed,feature,keyword:passes,0.7
+4668818868,pass_vip,feature,keyword:passes,0.7
 4668818868,private_servers,feature,keyword:description,0.6
 4668818868,tycoon,formula,regex:name,1.0
 4668818868,Adventure,genre,roblox,1.0
@@ -16372,7 +16358,6 @@ universe_id,tag,tag_type,source,confidence
 4733698178,Escape,subgenre,roblox,1.0
 4733698178,horror,theme,keyword:description,0.6
 4733698178,toys,theme,keyword:description,0.4
-4734880740,limited_events,feature,keyword:name,0.9
 4734880740,pass_vip,feature,keyword:passes,0.7
 4734880740,emoji,formula,regex:name,1.0
 4734880740,Roleplay & Avatar Sim,genre,roblox,1.0
@@ -16382,7 +16367,6 @@ universe_id,tag,tag_type,source,confidence
 4734880740,roleplay_city,niche,keyword:name,0.9
 4734880740,Life,subgenre,roblox,1.0
 4734880740,memes,theme,keyword:description,0.4
-4734880740,seasonal,theme,keyword:name,0.9
 4734880740,vehicles,theme,keyword:description,0.6
 4736666911,base_building,feature,keyword:description,0.6
 4736666911,pass_luck,feature,keyword:passes,0.7
@@ -16436,7 +16420,6 @@ universe_id,tag,tag_type,source,confidence
 4745526903,Obby & Platformer,genre,roblox,1.0
 4745526903,obby_climb,mechanic,keyword:name,0.9
 4745526903,Tower Obby,subgenre,roblox,1.0
-4750561026,emoji,formula,regex:name,1.0
 4750561026,Military,genre,roblox,1.0
 4750561026,Shooter,genre,roblox,1.0
 4750561026,fight_battle,mechanic,keyword:description,0.6
@@ -17307,7 +17290,6 @@ universe_id,tag,tag_type,source,confidence
 4956911744,pass_multiplier,feature,keyword:passes,0.7
 4956911744,pass_speed,feature,keyword:passes,0.7
 4956911744,pass_vip,feature,keyword:passes,0.7
-4956911744,emoji,formula,regex:name,1.0
 4956911744,Obby & Platformer,genre,roblox,1.0
 4956911744,obby_climb,mechanic,keyword:name,0.9
 4956911744,shooter,mechanic,keyword:passes_badges,0.7
@@ -17471,7 +17453,6 @@ universe_id,tag,tag_type,source,confidence
 4990777543,pass_vip,feature,keyword:passes,0.7
 4990777543,pets,feature,keyword:description,0.6
 4990777543,rebirth,feature,keyword:description,0.6
-4990777543,emoji,formula,regex:name,1.0
 4990777543,tycoon,formula,regex:name,1.0
 4990777543,Simulation,genre,roblox,1.0
 4990777543,break_mine,mechanic,keyword:passes_badges,0.7
@@ -17862,6 +17843,7 @@ universe_id,tag,tag_type,source,confidence
 5076133046,Battlegrounds & Fighting,subgenre,roblox,1.0
 5076133046,fantasy,theme,keyword:description,0.6
 5080118977,pvp,feature,keyword:name,0.9
+5080118977,verb_for_noun,formula,regex:name,1.0
 5080118977,Party & Casual,genre,roblox,1.0
 5080118977,fight_battle,mechanic,keyword:name,0.9
 5080118977,paint_create,mechanic,keyword:description,0.4
@@ -18148,17 +18130,14 @@ universe_id,tag,tag_type,source,confidence
 5120885191,seasonal,theme,keyword:name,0.9
 5120885191,sports,theme,keyword:name,0.9
 5124469429,codes,feature,keyword:description,0.6
-5124469429,limited_events,feature,keyword:name,0.9
 5124469429,pass_multiplier,feature,keyword:passes,0.7
 5124469429,pass_speed,feature,keyword:passes,0.7
-5124469429,update_tag,formula,regex:name,1.0
 5124469429,Action,genre,roblox,1.0
 5124469429,race_drive,mechanic,keyword:passes_badges,0.7
 5124469429,roleplay_life,mechanic,keyword:name,0.9
 5124469429,roleplay_city,niche,keyword:name,0.9
 5124469429,Open World Action,subgenre,roblox,1.0
-5124469429,prison,theme,keyword:description,0.6
-5124469429,seasonal,theme,keyword:name,0.9
+5124469429,prison,theme,keyword:name,0.9
 5124469429,vehicles,theme,keyword:description,0.4
 5125369493,simulator,formula,regex:name,1.0
 5125369493,Simulation,genre,roblox,1.0
@@ -18369,7 +18348,6 @@ universe_id,tag,tag_type,source,confidence
 5166944221,pass_speed,feature,keyword:passes,0.7
 5166944221,pass_vip,feature,keyword:passes,0.7
 5166944221,pvp,feature,keyword:description,0.6
-5166944221,emoji,formula,regex:name,1.0
 5166944221,Action,genre,roblox,1.0
 5166944221,fight_battle,mechanic,keyword:description,0.6
 5166944221,grow_farm,mechanic,keyword:description,0.4
@@ -18742,6 +18720,7 @@ universe_id,tag,tag_type,source,confidence
 5245051450,seasonal,theme,keyword:description,0.4
 5245051450,vehicles,theme,keyword:description,0.6
 5245853977,limited_events,feature,keyword:description,0.6
+5245853977,update_tag,formula,regex:name,1.0
 5245853977,Simulation,genre,roblox,1.0
 5245853977,race_drive,mechanic,keyword:description,0.4
 5245853977,roleplay_life,mechanic,keyword:description,0.6
@@ -19440,8 +19419,8 @@ universe_id,tag,tag_type,source,confidence
 5385674359,incremental,niche,keyword:description,0.4
 5385674359,Runner,subgenre,roblox,1.0
 5385674359,music,theme,keyword:description,0.6
+5386253062,emoji,formula,regex:name,1.0
 5386253062,Entertainment,genre,roblox,1.0
-5386253062,hangout,niche,keyword:description,0.4
 5386253062,Music & Audio,subgenre,roblox,1.0
 5386937677,base_building,feature,keyword:description,0.6
 5386937677,emoji,formula,regex:name,1.0
@@ -19562,7 +19541,6 @@ universe_id,tag,tag_type,source,confidence
 5421899973,pass_skip,feature,keyword:passes,0.7
 5421899973,pass_vip,feature,keyword:passes,0.7
 5421899973,trading,feature,keyword:description,0.6
-5421899973,emoji,formula,regex:name,1.0
 5421899973,FPS,genre,roblox,1.0
 5421899973,Shooter,genre,roblox,1.0
 5421899973,collect_index,mechanic,keyword:description,0.4
@@ -20120,7 +20098,6 @@ universe_id,tag,tag_type,source,confidence
 5581650842,Classic Obby,subgenre,roblox,1.0
 5581650842,toys,theme,keyword:description,0.4
 5584394571,pass_speed,feature,keyword:passes,0.7
-5584394571,emoji,formula,regex:name,1.0
 5584394571,Obby & Platformer,genre,roblox,1.0
 5584394571,obby_climb,mechanic,keyword:name,0.9
 5584394571,roleplay_life,mechanic,keyword:description,0.4
@@ -20707,7 +20684,6 @@ universe_id,tag,tag_type,source,confidence
 5713659018,limited_events,feature,keyword:description,0.6
 5713659018,pass_multiplier,feature,keyword:passes,0.7
 5713659018,pvp,feature,keyword:description,0.6
-5713659018,emoji,formula,regex:name,1.0
 5713659018,update_tag,formula,regex:name,1.0
 5713659018,Shooter,genre,roblox,1.0
 5713659018,clicker,mechanic,keyword:description,0.4
@@ -21817,7 +21793,7 @@ universe_id,tag,tag_type,source,confidence
 5970598956,vehicles,theme,keyword:description,0.6
 5971717168,pass_multiplier,feature,keyword:passes,0.7
 5971717168,pass_vip,feature,keyword:passes,0.7
-5971717168,emoji,formula,regex:name,1.0
+5971717168,update_tag,formula,regex:name,1.0
 5971717168,Action,genre,roblox,1.0
 5971717168,Fighting,genre,roblox,1.0
 5971717168,fight_battle,mechanic,keyword:description,0.4
@@ -22398,7 +22374,7 @@ universe_id,tag,tag_type,source,confidence
 6091304472,tycoon,niche,keyword:name,0.9
 6091304472,Tycoon,subgenre,roblox,1.0
 6091304472,money,theme,keyword:description,0.4
-6091537736,limited_events,feature,keyword:name,0.9
+6091537736,limited_events,feature,keyword:description,0.6
 6091537736,emoji,formula,regex:name,1.0
 6091537736,Shopping,genre,roblox,1.0
 6091537736,dress_style,mechanic,keyword:name,0.9
@@ -22631,18 +22607,16 @@ universe_id,tag,tag_type,source,confidence
 6139943824,roleplay_city,niche,keyword:description,0.4
 6139943824,shooter,niche,keyword:description,0.4
 6139943824,money,theme,keyword:description,0.4
-6143428420,emoji,formula,regex:name,1.0
+6143428420,one_word,formula,regex:name,1.0
 6143428420,Strategy,genre,roblox,1.0
 6143428420,fight_battle,mechanic,keyword:description,0.4
 6143428420,obby_climb,mechanic,keyword:description,0.6
-6143428420,party_minigames,mechanic,keyword:name,0.9
-6143428420,sell_shop,mechanic,keyword:description,0.4
+6143428420,roleplay_life,mechanic,keyword:description,0.4
 6143428420,survive_nights,mechanic,keyword:description,0.4
 6143428420,tower_defense,mechanic,keyword:description,0.6
 6143428420,survival,niche,keyword:description,0.4
 6143428420,tower_defense,niche,keyword:description,0.6
 6143428420,Tower Defense,subgenre,roblox,1.0
-6143428420,food,theme,keyword:name,0.9
 6143428420,giant,theme,keyword:description,0.4
 6143428420,money,theme,keyword:description,0.4
 6143428420,zombies,theme,keyword:description,0.4
@@ -22725,7 +22699,6 @@ universe_id,tag,tag_type,source,confidence
 6155282395,seasonal,theme,keyword:description,0.4
 6156474026,pass_multiplier,feature,keyword:passes,0.7
 6156474026,pets,feature,keyword:description,0.6
-6156474026,emoji,formula,regex:name,1.0
 6156474026,Action,genre,roblox,1.0
 6156474026,Fighting,genre,roblox,1.0
 6156474026,fight_battle,mechanic,keyword:name,0.9
@@ -22737,7 +22710,6 @@ universe_id,tag,tag_type,source,confidence
 6156474026,fantasy,theme,keyword:description,0.4
 6156474026,giant,theme,keyword:name,0.9
 6156474026,robots,theme,keyword:description,0.4
-6156474026,seasonal,theme,keyword:name,0.9
 6159717337,pass_multiplier,feature,keyword:passes,0.7
 6159717337,emoji,formula,regex:name,1.0
 6159717337,Roleplay & Avatar Sim,genre,roblox,1.0
@@ -22812,6 +22784,7 @@ universe_id,tag,tag_type,source,confidence
 6164853651,roleplay_life,mechanic,keyword:description,0.6
 6164853651,food,theme,keyword:description,0.4
 6165840924,emoji,formula,regex:name,1.0
+6165840924,one_word,formula,regex:name,1.0
 6165840924,Survival,genre,roblox,1.0
 6165840924,break_mine,mechanic,keyword:description,0.4
 6165840924,horror,niche,keyword:description,0.4
@@ -23212,12 +23185,15 @@ universe_id,tag,tag_type,source,confidence
 6239989165,military,theme,keyword:description,0.4
 6239989165,money,theme,keyword:name,0.9
 6242418850,base_building,feature,keyword:description,0.6
+6242418850,pass_skip,feature,keyword:passes,0.7
+6242418850,pass_storage,feature,keyword:passes,0.7
+6242418850,pass_vip,feature,keyword:passes,0.7
 6242418850,Sci-Fi,genre,roblox,1.0
 6242418850,Strategy,genre,roblox,1.0
 6242418850,grow_farm,mechanic,keyword:description,0.4
 6242418850,paint_create,mechanic,keyword:description,0.4
 6242418850,roleplay_life,mechanic,keyword:description,0.4
-6242418850,tycoon_build,mechanic,keyword:description,0.4
+6242418850,tycoon_build,mechanic,keyword:passes_badges,0.7
 6242418850,roleplay_city,niche,keyword:description,0.4
 6242418850,simulator,niche,keyword:description,0.4
 6242418850,food,theme,keyword:description,0.4
@@ -23692,7 +23668,6 @@ universe_id,tag,tag_type,source,confidence
 6361652767,obby,niche,keyword:description,0.6
 6361652767,racing_driving,niche,keyword:description,0.4
 6361652767,shooter,niche,keyword:description,0.4
-6362207891,codes,feature,keyword:description,0.6
 6362207891,pass_auto,feature,keyword:passes,0.7
 6362207891,pass_luck,feature,keyword:passes,0.7
 6362207891,pass_multiplier,feature,keyword:passes,0.7
@@ -23704,14 +23679,11 @@ universe_id,tag,tag_type,source,confidence
 6362207891,clicker,mechanic,keyword:description,0.6
 6362207891,hatch_gacha,mechanic,keyword:passes_badges,0.7
 6362207891,race_drive,mechanic,keyword:name,0.9
-6362207891,brainrot,niche,keyword:description,0.4
-6362207891,incremental,niche,keyword:description,0.6
+6362207891,incremental,niche,keyword:description,0.4
 6362207891,pet_collecting,niche,keyword:description,0.4
 6362207891,racing_driving,niche,keyword:name,0.9
-6362207891,simulator,niche,keyword:description,0.4
 6362207891,Incremental Simulator,subgenre,roblox,1.0
 6362207891,animals,theme,keyword:description,0.4
-6362207891,brainrot,theme,keyword:description,0.4
 6362207891,memes,theme,keyword:name,0.9
 6362756076,pass_speed,feature,keyword:passes,0.7
 6362756076,escape_x,formula,regex:name,1.0
@@ -24183,7 +24155,7 @@ universe_id,tag,tag_type,source,confidence
 6451948378,emoji,formula,regex:name,1.0
 6451948378,Simulation,genre,roblox,1.0
 6451948378,collect_index,mechanic,keyword:description,0.4
-6451948378,roleplay_life,mechanic,keyword:description,0.4
+6451948378,roleplay_life,mechanic,keyword:description,0.6
 6452903718,pass_multiplier,feature,keyword:passes,0.7
 6452903718,emoji,formula,regex:name,1.0
 6452903718,Simulation,genre,roblox,1.0
@@ -24342,6 +24314,8 @@ universe_id,tag,tag_type,source,confidence
 6483696355,military,theme,keyword:description,0.4
 6483696355,money,theme,keyword:description,0.4
 6483696355,toys,theme,keyword:name,0.9
+6485267926,pass_speed,feature,keyword:passes,0.7
+6485267926,pass_vip,feature,keyword:passes,0.7
 6485267926,Simulation,genre,roblox,1.0
 6485267926,dress_style,mechanic,keyword:description,0.4
 6487579144,Action,genre,roblox,1.0
@@ -25083,8 +25057,7 @@ universe_id,tag,tag_type,source,confidence
 6628327758,Strategy,genre,roblox,1.0
 6628327758,fight_battle,mechanic,keyword:description,0.4
 6628327758,job_shift,mechanic,keyword:description,0.4
-6628327758,obby_climb,mechanic,keyword:description,0.6
-6628327758,sell_shop,mechanic,keyword:description,0.4
+6628327758,obby_climb,mechanic,keyword:description,0.4
 6628327758,survive_nights,mechanic,keyword:description,0.4
 6628327758,tower_defense,mechanic,keyword:description,0.4
 6628327758,tycoon_build,mechanic,keyword:description,0.4
@@ -25463,7 +25436,6 @@ universe_id,tag,tag_type,source,confidence
 6701277882,animals,theme,keyword:description,0.4
 6701277882,seasonal,theme,keyword:description,0.6
 6702065946,base_building,feature,keyword:description,0.6
-6702065946,limited_events,feature,keyword:name,0.9
 6702065946,pass_multiplier,feature,keyword:passes,0.7
 6702065946,pass_speed,feature,keyword:passes,0.7
 6702065946,pass_vip,feature,keyword:passes,0.7
@@ -25471,16 +25443,14 @@ universe_id,tag,tag_type,source,confidence
 6702065946,tycoon,formula,regex:name,1.0
 6702065946,Simulation,genre,roblox,1.0
 6702065946,collect_index,mechanic,keyword:description,0.4
-6702065946,dress_style,mechanic,keyword:description,0.4
-6702065946,hit_swing,mechanic,keyword:description,0.4
+6702065946,grow_farm,mechanic,keyword:description,0.4
+6702065946,rng_roll,mechanic,keyword:description,0.4
 6702065946,tycoon_build,mechanic,keyword:name,0.9
-6702065946,racing_driving,niche,keyword:description,0.4
+6702065946,rng,niche,keyword:description,0.4
 6702065946,tycoon,niche,keyword:name,0.9
 6702065946,Tycoon,subgenre,roblox,1.0
-6702065946,giant,theme,keyword:description,0.4
+6702065946,anime,theme,keyword:description,0.4
 6702065946,money,theme,keyword:description,0.6
-6702065946,music,theme,keyword:description,0.6
-6702065946,seasonal,theme,keyword:name,0.9
 6707924214,base_building,feature,keyword:description,0.6
 6707924214,codes,feature,keyword:description,0.6
 6707924214,offline_earnings,feature,keyword:description,0.6
@@ -25816,7 +25786,6 @@ universe_id,tag,tag_type,source,confidence
 6756445340,codes,feature,keyword:description,0.6
 6756445340,limited_events,feature,keyword:description,0.6
 6756445340,pass_storage,feature,keyword:passes,0.7
-6756445340,emoji,formula,regex:name,1.0
 6756445340,Shooter,genre,roblox,1.0
 6756445340,dress_style,mechanic,keyword:passes_badges,0.7
 6756445340,fight_battle,mechanic,keyword:passes_badges,0.7
@@ -25830,7 +25799,7 @@ universe_id,tag,tag_type,source,confidence
 6756445340,fashion,theme,keyword:description,0.4
 6756445340,school,theme,keyword:description,0.6
 6756445340,seasonal,theme,keyword:description,0.4
-6756445340,space,theme,keyword:name,0.9
+6756445340,space,theme,keyword:description,0.4
 6756445340,zombies,theme,keyword:name,0.9
 6756738846,daily_rewards,feature,keyword:description,0.6
 6756738846,offline_earnings,feature,keyword:description,0.6
@@ -25909,8 +25878,8 @@ universe_id,tag,tag_type,source,confidence
 6764180126,seasonal,theme,keyword:description,0.4
 6765805766,codes,feature,keyword:description,0.6
 6765805766,daily_rewards,feature,keyword:description,0.6
-6765805766,limited_events,feature,keyword:name,0.9
 6765805766,emoji,formula,regex:name,1.0
+6765805766,one_word,formula,regex:name,1.0
 6765805766,Action,genre,roblox,1.0
 6765805766,fight_battle,mechanic,keyword:description,0.4
 6765805766,hatch_gacha,mechanic,keyword:description,0.4
@@ -25919,7 +25888,6 @@ universe_id,tag,tag_type,source,confidence
 6765805766,Open World Action,subgenre,roblox,1.0
 6765805766,animals,theme,keyword:description,0.4
 6765805766,money,theme,keyword:description,0.4
-6765805766,seasonal,theme,keyword:name,0.9
 6766404767,Obby & Platformer,genre,roblox,1.0
 6766404767,job_shift,mechanic,keyword:description,0.4
 6766404767,race_drive,mechanic,keyword:name,0.9
@@ -26120,8 +26088,6 @@ universe_id,tag,tag_type,source,confidence
 6805295218,survival,niche,keyword:description,0.4
 6807582030,pass_storage,feature,keyword:passes,0.7
 6807582030,pass_vip,feature,keyword:passes,0.7
-6807582030,emoji,formula,regex:name,1.0
-6807582030,update_tag,formula,regex:name,1.0
 6807582030,Action,genre,roblox,1.0
 6807582030,clicker,mechanic,keyword:description,0.4
 6807582030,fight_battle,mechanic,keyword:name,0.9
@@ -27027,7 +26993,6 @@ universe_id,tag,tag_type,source,confidence
 7030416430,Obby & Platformer,genre,roblox,1.0
 7030416430,obby_climb,mechanic,keyword:description,0.4
 7030416430,obby,niche,keyword:description,0.4
-7037673488,limited_events,feature,keyword:name,0.9
 7037673488,luck_boost,feature,keyword:description,0.6
 7037673488,pass_speed,feature,keyword:passes,0.7
 7037673488,Simulation,genre,roblox,1.0
@@ -27037,7 +27002,6 @@ universe_id,tag,tag_type,source,confidence
 7037673488,rng_roll,mechanic,keyword:name,0.9
 7037673488,rng,niche,keyword:name,0.9
 7037673488,Incremental Simulator,subgenre,roblox,1.0
-7037673488,seasonal,theme,keyword:name,0.9
 7037902226,auto_farm,feature,keyword:description,0.6
 7037902226,pass_speed,feature,keyword:passes,0.7
 7037902226,pass_vip,feature,keyword:passes,0.7
@@ -27709,7 +27673,6 @@ universe_id,tag,tag_type,source,confidence
 7169345881,simulator,niche,keyword:description,0.4
 7169345881,Vehicle Sim,subgenre,roblox,1.0
 7169345881,vehicles,theme,keyword:description,0.4
-7173965273,limited_events,feature,keyword:name,0.9
 7173965273,pass_multiplier,feature,keyword:passes,0.7
 7173965273,pass_vip,feature,keyword:passes,0.7
 7173965273,emoji,formula,regex:name,1.0
@@ -27718,7 +27681,6 @@ universe_id,tag,tag_type,source,confidence
 7173965273,hit_swing,mechanic,keyword:description,0.4
 7173965273,anime_fighting,niche,keyword:description,0.4
 7173965273,Battlegrounds & Fighting,subgenre,roblox,1.0
-7173965273,seasonal,theme,keyword:name,0.9
 7175500329,leaderboards,feature,keyword:description,0.6
 7175500329,Entertainment,genre,roblox,1.0
 7175500329,clicker,mechanic,keyword:description,0.4
@@ -27859,6 +27821,7 @@ universe_id,tag,tag_type,source,confidence
 7199608878,codes,feature,keyword:description,0.6
 7199608878,pass_multiplier,feature,keyword:passes,0.7
 7199608878,pass_vip,feature,keyword:passes,0.7
+7199608878,emoji,formula,regex:name,1.0
 7199608878,Simulation,genre,roblox,1.0
 7199608878,fight_battle,mechanic,keyword:passes_badges,0.7
 7199608878,hit_swing,mechanic,keyword:description,0.6
@@ -27905,7 +27868,6 @@ universe_id,tag,tag_type,source,confidence
 7207532353,trade,mechanic,keyword:description,0.4
 7207532353,Action RPG,subgenre,roblox,1.0
 7208219743,base_building,feature,keyword:description,0.6
-7208219743,update_tag,formula,regex:name,1.0
 7208219743,Action,genre,roblox,1.0
 7208219743,collect_index,mechanic,keyword:description,0.4
 7208219743,fight_battle,mechanic,keyword:description,0.4
@@ -28226,6 +28188,7 @@ universe_id,tag,tag_type,source,confidence
 7267853694,emoji,formula,regex:name,1.0
 7267853694,Simulation,genre,roblox,1.0
 7267853694,break_mine,mechanic,keyword:passes_badges,0.7
+7267853694,escape_run,mechanic,keyword:description,0.4
 7267853694,fight_battle,mechanic,keyword:description,0.6
 7267853694,tycoon_build,mechanic,keyword:name,0.9
 7267853694,Sandbox,subgenre,roblox,1.0
@@ -28418,7 +28381,7 @@ universe_id,tag,tag_type,source,confidence
 7317454210,Classic Obby,subgenre,roblox,1.0
 7320026403,pass_storage,feature,keyword:passes,0.7
 7320026403,pvp,feature,keyword:description,0.6
-7320026403,emoji,formula,regex:name,1.0
+7320026403,update_tag,formula,regex:name,1.0
 7320026403,Survival,genre,roblox,1.0
 7320026403,break_mine,mechanic,keyword:description,0.4
 7320026403,collect_index,mechanic,keyword:passes_badges,0.7
@@ -28748,6 +28711,7 @@ universe_id,tag,tag_type,source,confidence
 7373459570,break_mine,mechanic,keyword:description,0.4
 7373459570,fight_battle,mechanic,keyword:name,0.9
 7373459570,shooter,niche,keyword:description,0.4
+7373459570,fantasy,theme,keyword:description,0.4
 7373989866,pass_storage,feature,keyword:passes,0.7
 7373989866,emoji,formula,regex:name,1.0
 7373989866,Survival,genre,roblox,1.0
@@ -28765,11 +28729,11 @@ universe_id,tag,tag_type,source,confidence
 7374930268,pass_vip,feature,keyword:passes,0.7
 7374930268,emoji,formula,regex:name,1.0
 7374930268,Roleplay & Avatar Sim,genre,roblox,1.0
-7374930268,break_mine,mechanic,keyword:description,0.4
-7374930268,dress_style,mechanic,keyword:description,0.6
-7374930268,obby_climb,mechanic,keyword:description,0.4
+7374930268,clicker,mechanic,keyword:description,0.4
+7374930268,dress_style,mechanic,keyword:description,0.4
 7374930268,paint_create,mechanic,keyword:description,0.4
-7374930268,dress_up,niche,keyword:description,0.6
+7374930268,dress_up,niche,keyword:description,0.4
+7374930268,incremental,niche,keyword:description,0.4
 7374930268,Dress Up,subgenre,roblox,1.0
 7374930268,music,theme,keyword:description,0.4
 7378605382,pvp,feature,keyword:description,0.6
@@ -30570,7 +30534,6 @@ universe_id,tag,tag_type,source,confidence
 7671049560,pass_multiplier,feature,keyword:passes,0.7
 7671049560,pass_speed,feature,keyword:passes,0.7
 7671049560,pass_storage,feature,keyword:passes,0.7
-7671049560,emoji,formula,regex:name,1.0
 7671049560,RPG,genre,roblox,1.0
 7671049560,break_mine,mechanic,keyword:description,0.6
 7671049560,clicker,mechanic,keyword:description,0.4
@@ -30908,6 +30871,7 @@ universe_id,tag,tag_type,source,confidence
 7729029844,racing_driving,niche,keyword:description,0.4
 7729029844,music,theme,keyword:description,0.6
 7729422550,auto_farm,feature,keyword:description,0.6
+7729422550,pass_cosmetic,feature,keyword:passes,0.7
 7729422550,Obby & Platformer,genre,roblox,1.0
 7729422550,obby_climb,mechanic,keyword:name,0.9
 7729422550,survive_nights,mechanic,keyword:description,0.4
@@ -31452,7 +31416,6 @@ universe_id,tag,tag_type,source,confidence
 7822444776,money,theme,keyword:description,0.4
 7822444776,vehicles,theme,keyword:name,0.9
 7823137182,pass_multiplier,feature,keyword:passes,0.7
-7823137182,emoji,formula,regex:name,1.0
 7823137182,Strategy,genre,roblox,1.0
 7823137182,survive_nights,mechanic,keyword:name,0.9
 7823137182,simulator,niche,keyword:description,0.4
@@ -31564,7 +31527,7 @@ universe_id,tag,tag_type,source,confidence
 7843731295,Showcase & Hub,subgenre,roblox,1.0
 7843731295,fantasy,theme,keyword:description,0.4
 7843731295,music,theme,keyword:description,0.4
-7848204961,emoji,formula,regex:name,1.0
+7848204961,update_tag,formula,regex:name,1.0
 7848204961,Roleplay & Avatar Sim,genre,roblox,1.0
 7848204961,roleplay_life,mechanic,keyword:name,0.9
 7848204961,roleplay_city,niche,keyword:name,0.9
@@ -31751,9 +31714,6 @@ universe_id,tag,tag_type,source,confidence
 7882829745,incremental,niche,keyword:description,0.4
 7882829745,Incremental Simulator,subgenre,roblox,1.0
 7882829745,anime,theme,keyword:name,0.9
-7883776681,limited_events,feature,keyword:name,0.9
-7883776681,emoji,formula,regex:name,1.0
-7883776681,update_tag,formula,regex:name,1.0
 7883776681,Sports & Racing,genre,roblox,1.0
 7883776681,clicker,mechanic,keyword:description,0.6
 7883776681,hatch_gacha,mechanic,keyword:description,0.4
@@ -32170,12 +32130,9 @@ universe_id,tag,tag_type,source,confidence
 7959906233,codes,feature,keyword:description,0.6
 7959906233,pass_auto,feature,keyword:passes,0.7
 7959906233,pass_vip,feature,keyword:passes,0.7
-7959906233,emoji,formula,regex:name,1.0
-7959906233,tycoon,formula,regex:name,1.0
+7959906233,one_word,formula,regex:name,1.0
 7959906233,Simulation,genre,roblox,1.0
-7959906233,paint_create,mechanic,keyword:name,0.9
-7959906233,tycoon_build,mechanic,keyword:name,0.9
-7959906233,tycoon,niche,keyword:name,0.9
+7959906233,tycoon_build,mechanic,keyword:description,0.6
 7959906233,Tycoon,subgenre,roblox,1.0
 7959906233,stone_rocks,theme,keyword:description,0.6
 7960300951,base_building,feature,keyword:description,0.6
@@ -32445,6 +32402,7 @@ universe_id,tag,tag_type,source,confidence
 8014990599,codes,feature,keyword:description,0.6
 8014990599,pass_speed,feature,keyword:passes,0.7
 8014990599,emoji,formula,regex:name,1.0
+8014990599,one_word,formula,regex:name,1.0
 8014990599,RPG,genre,roblox,1.0
 8014990599,Action RPG,subgenre,roblox,1.0
 8015734617,mutations,feature,keyword:description,0.6
@@ -33350,6 +33308,7 @@ universe_id,tag,tag_type,source,confidence
 8220767002,eggs,theme,keyword:description,0.4
 8220767002,fashion,theme,keyword:description,0.4
 8220767002,horror,theme,keyword:description,0.4
+8223345519,emoji,formula,regex:name,1.0
 8223345519,Social,genre,roblox,1.0
 8223345519,collect_index,mechanic,keyword:description,0.4
 8223345519,fight_battle,mechanic,keyword:description,0.4
@@ -33432,18 +33391,15 @@ universe_id,tag,tag_type,source,confidence
 8238748429,obby_climb,mechanic,keyword:name,0.9
 8238748429,brainrot,niche,keyword:name,0.9
 8238748429,brainrot,theme,keyword:name,0.9
-8238863102,limited_events,feature,keyword:description,0.6
 8238863102,pass_multiplier,feature,keyword:passes,0.7
 8238863102,pass_speed,feature,keyword:passes,0.7
 8238863102,pvp,feature,keyword:description,0.6
 8238863102,emoji,formula,regex:name,1.0
 8238863102,Obby & Platformer,genre,roblox,1.0
-8238863102,collect_index,mechanic,keyword:description,0.4
 8238863102,fight_battle,mechanic,keyword:description,0.6
 8238863102,obby_climb,mechanic,keyword:name,0.9
 8238863102,tower_defense,mechanic,keyword:description,0.4
 8238863102,Tower Obby,subgenre,roblox,1.0
-8238863102,seasonal,theme,keyword:description,0.6
 8238863102,zombies,theme,keyword:name,0.9
 8239435378,base_building,feature,keyword:description,0.6
 8239435378,Simulation,genre,roblox,1.0
@@ -34874,6 +34830,8 @@ universe_id,tag,tag_type,source,confidence
 8552462433,food,theme,keyword:name,0.9
 8554070482,base_building,feature,keyword:name,0.9
 8554070482,offline_earnings,feature,keyword:description,0.6
+8554070482,pass_luck,feature,keyword:passes,0.7
+8554070482,pass_vip,feature,keyword:passes,0.7
 8554070482,build_a,formula,regex:name,1.0
 8554070482,emoji,formula,regex:name,1.0
 8554070482,Simulation,genre,roblox,1.0
@@ -36309,10 +36267,16 @@ universe_id,tag,tag_type,source,confidence
 8916375040,brainrot,theme,keyword:name,0.9
 8916375040,eggs,theme,keyword:description,0.4
 8916375040,money,theme,keyword:description,0.6
+8916386442,pass_auto,feature,keyword:passes,0.7
+8916386442,pass_luck,feature,keyword:passes,0.7
+8916386442,pass_multiplier,feature,keyword:passes,0.7
+8916386442,pass_speed,feature,keyword:passes,0.7
+8916386442,pass_vip,feature,keyword:passes,0.7
 8916386442,stealing,feature,keyword:name,0.9
 8916386442,emoji,formula,regex:name,1.0
 8916386442,Simulation,genre,roblox,1.0
 8916386442,break_mine,mechanic,keyword:description,0.4
+8916386442,hatch_gacha,mechanic,keyword:passes_badges,0.7
 8916386442,hit_swing,mechanic,keyword:name,0.9
 8916386442,steal_raid,mechanic,keyword:name,0.9
 8916386442,brainrot,niche,keyword:name,0.9
@@ -37032,12 +36996,11 @@ universe_id,tag,tag_type,source,confidence
 9050667716,survive_nights,mechanic,keyword:description,0.4
 9050667716,Battlegrounds & Fighting,subgenre,roblox,1.0
 9050667716,horror,theme,keyword:description,0.4
-9051406594,limited_events,feature,keyword:name,0.9
 9051406594,pvp,feature,keyword:description,0.6
 9051406594,emoji,formula,regex:name,1.0
 9051406594,update_tag,formula,regex:name,1.0
 9051406594,Action,genre,roblox,1.0
-9051406594,fight_battle,mechanic,keyword:description,0.6
+9051406594,fight_battle,mechanic,keyword:name,0.9
 9051406594,job_shift,mechanic,keyword:description,0.4
 9051406594,obby_climb,mechanic,keyword:description,0.4
 9051406594,anime_fighting,niche,keyword:description,0.4
@@ -37065,13 +37028,10 @@ universe_id,tag,tag_type,source,confidence
 9058303084,survival,niche,keyword:description,0.6
 9058303084,horror,theme,keyword:description,0.4
 9058303084,memes,theme,keyword:description,0.4
-9060222574,limited_events,feature,keyword:description,0.6
 9060222574,Shooter,genre,roblox,1.0
-9060222574,shooter,mechanic,keyword:description,0.4
-9060222574,shooter,niche,keyword:description,0.4
 9060222574,Deathmatch Shooter,subgenre,roblox,1.0
-9060222574,giant,theme,keyword:description,0.4
 9060222574,ice_fire,theme,keyword:name,0.9
+9060222574,money,theme,keyword:description,0.4
 9060752643,pass_speed,feature,keyword:passes,0.7
 9060752643,Adventure,genre,roblox,1.0
 9060752643,escape_run,mechanic,keyword:passes_badges,0.7
@@ -37728,7 +37688,6 @@ universe_id,tag,tag_type,source,confidence
 9161811618,survival,niche,keyword:name,0.9
 9161811618,anime,theme,keyword:description,0.4
 9162763535,pvp,feature,keyword:description,0.6
-9162763535,emoji,formula,regex:name,1.0
 9162763535,Action,genre,roblox,1.0
 9162763535,break_mine,mechanic,keyword:name,0.9
 9162763535,fight_battle,mechanic,keyword:name,0.9
@@ -37743,6 +37702,20 @@ universe_id,tag,tag_type,source,confidence
 9162997365,Party & Casual,genre,roblox,1.0
 9162997365,break_mine,mechanic,keyword:name,0.9
 9162997365,survive_nights,mechanic,keyword:description,0.4
+9164570436,base_building,feature,keyword:description,0.6
+9164570436,daily_rewards,feature,keyword:description,0.6
+9164570436,limited_events,feature,keyword:name,0.9
+9164570436,luck_boost,feature,keyword:description,0.6
+9164570436,emoji,formula,regex:name,1.0
+9164570436,Adventure,genre,roblox,1.0
+9164570436,collect_index,mechanic,keyword:description,0.6
+9164570436,job_shift,mechanic,keyword:description,0.4
+9164570436,survive_nights,mechanic,keyword:description,0.4
+9164570436,tycoon_build,mechanic,keyword:description,0.4
+9164570436,anime_fighting,niche,keyword:name,0.9
+9164570436,Exploration,subgenre,roblox,1.0
+9164570436,anime,theme,keyword:name,0.9
+9164570436,horror,theme,keyword:description,0.4
 9167377564,base_building,feature,keyword:description,0.6
 9167377564,Survival,genre,roblox,1.0
 9167377564,cook_serve,mechanic,keyword:passes_badges,0.7
@@ -38863,6 +38836,7 @@ universe_id,tag,tag_type,source,confidence
 9329568736,pass_multiplier,feature,keyword:passes,0.7
 9329568736,pass_storage,feature,keyword:passes,0.7
 9329568736,emoji,formula,regex:name,1.0
+9329568736,update_tag,formula,regex:name,1.0
 9329568736,Action,genre,roblox,1.0
 9329568736,clicker,mechanic,keyword:description,0.4
 9329568736,dress_style,mechanic,keyword:description,0.4
@@ -39181,16 +39155,16 @@ universe_id,tag,tag_type,source,confidence
 9376499890,fight_battle,mechanic,keyword:description,0.4
 9376499890,fishing,mechanic,keyword:description,0.6
 9376499890,forge_craft,mechanic,keyword:description,0.4
-9376499890,grow_farm,mechanic,keyword:passes_badges,0.7
+9376499890,grow_farm,mechanic,keyword:name,0.9
 9376499890,pet_care,mechanic,keyword:description,0.6
 9376499890,rng_roll,mechanic,keyword:description,0.4
 9376499890,survive_nights,mechanic,keyword:description,0.4
 9376499890,tycoon_build,mechanic,keyword:description,0.4
-9376499890,gardening_farming,niche,keyword:description,0.6
+9376499890,gardening_farming,niche,keyword:name,0.9
 9376499890,pet_collecting,niche,keyword:description,0.4
 9376499890,rng,niche,keyword:description,0.4
 9376499890,simulator,niche,keyword:description,0.4
-9376499890,Sandbox,subgenre,roblox,1.0
+9376499890,Tycoon,subgenre,roblox,1.0
 9376499890,animals,theme,keyword:description,0.6
 9376499890,horror,theme,keyword:description,0.4
 9376499890,ocean,theme,keyword:description,0.4
@@ -39480,7 +39454,6 @@ universe_id,tag,tag_type,source,confidence
 9456449045,pass_vip,feature,keyword:passes,0.7
 9456449045,pvp,feature,keyword:description,0.6
 9456449045,emoji,formula,regex:name,1.0
-9456449045,update_tag,formula,regex:name,1.0
 9456449045,Action,genre,roblox,1.0
 9456449045,break_mine,mechanic,keyword:description,0.4
 9456449045,fight_battle,mechanic,keyword:description,0.6
@@ -39951,9 +39924,9 @@ universe_id,tag,tag_type,source,confidence
 9511365396,rng,niche,keyword:name,0.9
 9511365396,Battlegrounds & Fighting,subgenre,roblox,1.0
 9511454418,codes,feature,keyword:description,0.6
+9511454418,luck_boost,feature,keyword:description,0.6
 9511454418,pass_speed,feature,keyword:passes,0.7
 9511454418,pvp,feature,keyword:description,0.6
-9511454418,emoji,formula,regex:name,1.0
 9511454418,Shooter,genre,roblox,1.0
 9511454418,fight_battle,mechanic,keyword:description,0.6
 9511454418,shooter,mechanic,keyword:description,0.4
@@ -39961,6 +39934,7 @@ universe_id,tag,tag_type,source,confidence
 9511454418,shooter,niche,keyword:description,0.4
 9511454418,Deathmatch Shooter,subgenre,roblox,1.0
 9511454418,anime,theme,keyword:name,0.9
+9511454418,stone_rocks,theme,keyword:description,0.6
 9511524806,offline_earnings,feature,keyword:description,0.6
 9511524806,pass_multiplier,feature,keyword:passes,0.7
 9511524806,pass_storage,feature,keyword:passes,0.7
@@ -40127,7 +40101,6 @@ universe_id,tag,tag_type,source,confidence
 9529425601,leaderboards,feature,keyword:description,0.6
 9529425601,pass_multiplier,feature,keyword:passes,0.7
 9529425601,pvp,feature,keyword:name,0.9
-9529425601,emoji,formula,regex:name,1.0
 9529425601,Entertainment,genre,roblox,1.0
 9529425601,fight_battle,mechanic,keyword:name,0.9
 9529425601,obby_climb,mechanic,keyword:description,0.4
@@ -40260,16 +40233,11 @@ universe_id,tag,tag_type,source,confidence
 9544531673,Simulation,genre,roblox,1.0
 9544531673,Physics Sim,subgenre,roblox,1.0
 9544531673,money,theme,keyword:description,0.6
-9546331833,daily_rewards,feature,keyword:description,0.6
-9546331833,limited_events,feature,keyword:name,0.9
 9546331833,pass_multiplier,feature,keyword:passes,0.7
 9546331833,pass_vip,feature,keyword:passes,0.7
-9546331833,emoji,formula,regex:name,1.0
-9546331833,update_tag,formula,regex:name,1.0
 9546331833,Puzzle,genre,roblox,1.0
 9546331833,collect_index,mechanic,keyword:description,0.4
 9546331833,Word,subgenre,roblox,1.0
-9546331833,stone_rocks,theme,keyword:description,0.4
 9549133757,base_building,feature,keyword:description,0.6
 9549133757,pass_cosmetic,feature,keyword:passes,0.7
 9549133757,pass_luck,feature,keyword:passes,0.7
@@ -40405,7 +40373,7 @@ universe_id,tag,tag_type,source,confidence
 9553855481,fantasy,theme,keyword:description,0.4
 9553855481,money,theme,keyword:description,0.6
 9553887523,pets,feature,keyword:description,0.6
-9553887523,trading,feature,keyword:name,0.9
+9553887523,trading,feature,keyword:description,0.6
 9553887523,emoji,formula,regex:name,1.0
 9553887523,RPG,genre,roblox,1.0
 9553887523,Simulation,genre,roblox,1.0
@@ -40417,7 +40385,7 @@ universe_id,tag,tag_type,source,confidence
 9553887523,paint_create,mechanic,keyword:description,0.4
 9553887523,roleplay_life,mechanic,keyword:description,0.6
 9553887523,survive_nights,mechanic,keyword:description,0.4
-9553887523,trade,mechanic,keyword:name,0.9
+9553887523,trade,mechanic,keyword:description,0.4
 9553887523,fishing,niche,keyword:description,0.4
 9553887523,gardening_farming,niche,keyword:name,0.9
 9553887523,pet_collecting,niche,keyword:description,0.6
@@ -41557,7 +41525,6 @@ universe_id,tag,tag_type,source,confidence
 9663844224,pass_multiplier,feature,keyword:passes,0.7
 9663844224,pass_speed,feature,keyword:passes,0.7
 9663844224,pass_vip,feature,keyword:passes,0.7
-9663844224,emoji,formula,regex:name,1.0
 9663844224,Strategy,genre,roblox,1.0
 9663844224,fight_battle,mechanic,keyword:passes_badges,0.7
 9663844224,hatch_gacha,mechanic,keyword:description,0.4
@@ -41862,6 +41829,7 @@ universe_id,tag,tag_type,source,confidence
 9693515126,pets,feature,keyword:name,0.9
 9693515126,pvp,feature,keyword:description,0.6
 9693515126,trading,feature,keyword:description,0.6
+9693515126,emoji,formula,regex:name,1.0
 9693515126,Adventure,genre,roblox,1.0
 9693515126,collect_index,mechanic,keyword:description,0.6
 9693515126,fight_battle,mechanic,keyword:description,0.6
@@ -42794,6 +42762,7 @@ universe_id,tag,tag_type,source,confidence
 9781580133,pass_vip,feature,keyword:passes,0.7
 9781580133,emoji,formula,regex:name,1.0
 9781580133,Simulation,genre,roblox,1.0
+9781580133,sell_shop,mechanic,keyword:description,0.4
 9781580133,nature,theme,keyword:name,0.9
 9784624626,base_building,feature,keyword:description,0.6
 9784624626,offline_earnings,feature,keyword:description,0.6
@@ -42908,7 +42877,6 @@ universe_id,tag,tag_type,source,confidence
 9792273312,space,theme,keyword:description,0.4
 9792551117,pass_multiplier,feature,keyword:passes,0.7
 9792551117,pass_speed,feature,keyword:passes,0.7
-9792551117,emoji,formula,regex:name,1.0
 9792551117,Survival,genre,roblox,1.0
 9792551117,job_shift,mechanic,keyword:name,0.9
 9792551117,survive_nights,mechanic,keyword:description,0.6
@@ -43834,11 +43802,14 @@ universe_id,tag,tag_type,source,confidence
 9867225552,grow_farm,mechanic,keyword:description,0.4
 9867225552,job_shift,mechanic,keyword:description,0.4
 9867225552,obby_climb,mechanic,keyword:description,0.4
+9867225552,race_drive,mechanic,keyword:description,0.6
 9867225552,rng_roll,mechanic,keyword:description,0.4
 9867225552,gardening_farming,niche,keyword:description,0.4
+9867225552,racing_driving,niche,keyword:description,0.6
 9867225552,rng,niche,keyword:description,0.4
-9867225552,animals,theme,keyword:description,0.4
+9867225552,animals,theme,keyword:description,0.6
 9867225552,space,theme,keyword:description,0.4
+9867225552,sports,theme,keyword:description,0.4
 9867760183,base_building,feature,keyword:description,0.6
 9867760183,pass_multiplier,feature,keyword:passes,0.7
 9867760183,rebirth,feature,keyword:description,0.6
@@ -44672,6 +44643,7 @@ universe_id,tag,tag_type,source,confidence
 9918678725,money,theme,keyword:description,0.4
 9919434679,base_building,feature,keyword:description,0.6
 9919434679,pvp,feature,keyword:description,0.6
+9919434679,emoji,formula,regex:name,1.0
 9919434679,Simulation,genre,roblox,1.0
 9919434679,fight_battle,mechanic,keyword:description,0.6
 9919434679,grow_farm,mechanic,keyword:description,0.4
@@ -44681,7 +44653,7 @@ universe_id,tag,tag_type,source,confidence
 9919434679,giant,theme,keyword:description,0.4
 9919434679,military,theme,keyword:description,0.6
 9919434679,money,theme,keyword:description,0.6
-9919434679,robots,theme,keyword:description,0.4
+9919434679,robots,theme,keyword:name,0.9
 9919434679,vehicles,theme,keyword:description,0.4
 9925257612,leaderboards,feature,keyword:description,0.6
 9925257612,escape_x,formula,regex:name,1.0
@@ -46870,16 +46842,14 @@ universe_id,tag,tag_type,source,confidence
 10079271418,pass_storage,feature,keyword:passes,0.7
 10079271418,pass_vip,feature,keyword:passes,0.7
 10079271418,emoji,formula,regex:name,1.0
-10079271418,plus_one,formula,regex:name,1.0
 10079271418,Simulation,genre,roblox,1.0
 10079271418,obby_climb,mechanic,keyword:description,0.4
-10079271418,plus_one_stat,mechanic,keyword:name,0.9
 10079271418,anime_fighting,niche,keyword:name,0.9
 10079271418,Incremental Simulator,subgenre,roblox,1.0
 10079271418,anime,theme,keyword:name,0.9
 10080411105,codes,feature,keyword:name,0.9
 10080411105,limited_events,feature,keyword:name,0.9
-10080411105,pass_multiplier,feature,keyword:passes,0.7
+10080411105,pass_vip,feature,keyword:passes,0.7
 10080411105,Action,genre,roblox,1.0
 10080411105,Open World Action,subgenre,roblox,1.0
 10080411105,seasonal,theme,keyword:name,0.9
@@ -47454,17 +47424,13 @@ universe_id,tag,tag_type,source,confidence
 10108900736,fantasy,theme,keyword:description,0.4
 10108900736,memes,theme,keyword:description,0.6
 10108900736,money,theme,keyword:description,0.4
-10109877123,codes,feature,keyword:description,0.6
-10109877123,limited_events,feature,keyword:description,0.6
 10109877123,pass_luck,feature,keyword:passes,0.7
 10109877123,pass_multiplier,feature,keyword:passes,0.7
 10109877123,pass_vip,feature,keyword:passes,0.7
-10109877123,emoji,formula,regex:name,1.0
 10109877123,Simulation,genre,roblox,1.0
 10109877123,grow_farm,mechanic,keyword:description,0.4
 10109877123,Incremental Simulator,subgenre,roblox,1.0
 10109877123,food,theme,keyword:name,0.9
-10109877123,seasonal,theme,keyword:description,0.4
 10110316965,luck_boost,feature,keyword:description,0.6
 10110316965,pass_speed,feature,keyword:passes,0.7
 10110316965,pass_vip,feature,keyword:passes,0.7
@@ -47874,6 +47840,8 @@ universe_id,tag,tag_type,source,confidence
 10130967442,survival,niche,keyword:description,0.4
 10130967442,Tower Obby,subgenre,roblox,1.0
 10130967442,food,theme,keyword:description,0.4
+10131026507,pass_auto,feature,keyword:passes,0.7
+10131026507,pass_multiplier,feature,keyword:passes,0.7
 10131026507,emoji,formula,regex:name,1.0
 10131026507,Sports & Racing,genre,roblox,1.0
 10131026507,Sports,subgenre,roblox,1.0
@@ -47953,18 +47921,15 @@ universe_id,tag,tag_type,source,confidence
 10136067263,food,theme,keyword:description,0.6
 10136067263,money,theme,keyword:description,0.4
 10138624079,base_building,feature,keyword:description,0.6
-10138624079,limited_events,feature,keyword:description,0.6
 10138624079,pass_multiplier,feature,keyword:passes,0.7
 10138624079,pass_speed,feature,keyword:passes,0.7
 10138624079,emoji,formula,regex:name,1.0
 10138624079,Survival,genre,roblox,1.0
-10138624079,collect_index,mechanic,keyword:description,0.4
 10138624079,fight_battle,mechanic,keyword:description,0.6
 10138624079,survive_nights,mechanic,keyword:name,0.9
 10138624079,tower_defense,mechanic,keyword:description,0.6
 10138624079,tycoon_build,mechanic,keyword:description,0.4
 10138624079,survival,niche,keyword:name,0.9
-10138624079,seasonal,theme,keyword:description,0.4
 10138624079,zombies,theme,keyword:name,0.9
 10138661961,base_building,feature,keyword:description,0.6
 10138661961,pass_cosmetic,feature,keyword:passes,0.7
@@ -48322,7 +48287,6 @@ universe_id,tag,tag_type,source,confidence
 10155360168,pass_vip,feature,keyword:passes,0.7
 10155360168,Sports & Racing,genre,roblox,1.0
 10155360168,hit_swing,mechanic,keyword:passes_badges,0.7
-10155360168,race_drive,mechanic,keyword:name,0.9
 10155360168,shooter,mechanic,keyword:description,0.6
 10155360168,shooter,niche,keyword:description,0.6
 10155360168,sports,niche,keyword:name,0.9
@@ -48405,14 +48369,14 @@ universe_id,tag,tag_type,source,confidence
 10162859180,emoji,formula,regex:name,1.0
 10162859180,tycoon,formula,regex:name,1.0
 10162859180,Simulation,genre,roblox,1.0
-10162859180,dress_style,mechanic,keyword:description,0.4
-10162859180,grow_farm,mechanic,keyword:description,0.6
-10162859180,survive_nights,mechanic,keyword:description,0.4
+10162859180,collect_index,mechanic,keyword:description,0.4
+10162859180,hit_swing,mechanic,keyword:description,0.4
+10162859180,roleplay_life,mechanic,keyword:description,0.4
 10162859180,tycoon_build,mechanic,keyword:name,0.9
 10162859180,tycoon,niche,keyword:name,0.9
 10162859180,Tycoon,subgenre,roblox,1.0
 10162859180,fantasy,theme,keyword:name,0.9
-10162859180,money,theme,keyword:description,0.6
+10162859180,money,theme,keyword:description,0.4
 10162859180,nature,theme,keyword:description,0.4
 10163137378,pass_multiplier,feature,keyword:passes,0.7
 10163137378,emoji,formula,regex:name,1.0
@@ -48544,7 +48508,6 @@ universe_id,tag,tag_type,source,confidence
 10171732905,lucky_block,niche,keyword:name,0.9
 10171732905,Tycoon,subgenre,roblox,1.0
 10171732905,brainrot,theme,keyword:description,0.6
-10171732905,disaster,theme,keyword:name,0.9
 10171732905,ice_fire,theme,keyword:description,0.4
 10171732905,money,theme,keyword:description,0.4
 10171732905,space,theme,keyword:description,0.4
@@ -48915,7 +48878,6 @@ universe_id,tag,tag_type,source,confidence
 10195997258,pass_multiplier,feature,keyword:passes,0.7
 10195997258,pass_speed,feature,keyword:passes,0.7
 10195997258,stealing,feature,keyword:description,0.6
-10195997258,emoji,formula,regex:name,1.0
 10195997258,Simulation,genre,roblox,1.0
 10195997258,escape_run,mechanic,keyword:description,0.4
 10195997258,fishing,mechanic,keyword:name,0.9
@@ -48958,7 +48920,6 @@ universe_id,tag,tag_type,source,confidence
 10198825880,pass_auto,feature,keyword:passes,0.7
 10198825880,pass_luck,feature,keyword:passes,0.7
 10198825880,pass_multiplier,feature,keyword:passes,0.7
-10198825880,emoji,formula,regex:name,1.0
 10198825880,Simulation,genre,roblox,1.0
 10198825880,collect_index,mechanic,keyword:name,0.9
 10198825880,dice_cards,mechanic,keyword:name,0.9
@@ -50012,7 +49973,6 @@ universe_id,tag,tag_type,source,confidence
 10261267004,mutations,feature,keyword:description,0.6
 10261267004,pass_luck,feature,keyword:passes,0.7
 10261267004,pass_storage,feature,keyword:passes,0.7
-10261267004,emoji,formula,regex:name,1.0
 10261267004,Simulation,genre,roblox,1.0
 10261267004,collect_index,mechanic,keyword:passes_badges,0.7
 10261267004,forge_craft,mechanic,keyword:description,0.4
@@ -50245,6 +50205,7 @@ universe_id,tag,tag_type,source,confidence
 10278774552,leaderboards,feature,keyword:description,0.6
 10278774552,pass_speed,feature,keyword:passes,0.7
 10278774552,pass_vip,feature,keyword:passes,0.7
+10278774552,emoji,formula,regex:name,1.0
 10278774552,Party & Casual,genre,roblox,1.0
 10278774552,fight_battle,mechanic,keyword:passes_badges,0.7
 10278774552,obby_climb,mechanic,keyword:description,0.4
@@ -50678,6 +50639,7 @@ universe_id,tag,tag_type,source,confidence
 10306366253,Tycoon,subgenre,roblox,1.0
 10306366253,money,theme,keyword:description,0.4
 10308099158,base_building,feature,keyword:description,0.6
+10308099158,pass_vip,feature,keyword:passes,0.7
 10308099158,stealing,feature,keyword:description,0.6
 10308099158,Action,genre,roblox,1.0
 10308099158,break_mine,mechanic,keyword:description,0.6
@@ -52206,11 +52168,13 @@ universe_id,tag,tag_type,source,confidence
 10409732219,food,theme,keyword:description,0.6
 10409732219,vehicles,theme,keyword:description,0.4
 10410039420,pets,feature,keyword:name,0.9
+10410039420,pvp,feature,keyword:name,0.9
+10410039420,grow_a,formula,regex:name,1.0
 10410039420,Simulation,genre,roblox,1.0
 10410039420,dress_style,mechanic,keyword:description,0.4
-10410039420,fight_battle,mechanic,keyword:description,0.4
+10410039420,fight_battle,mechanic,keyword:name,0.9
 10410039420,forge_craft,mechanic,keyword:description,0.4
-10410039420,grow_farm,mechanic,keyword:description,0.6
+10410039420,grow_farm,mechanic,keyword:name,0.9
 10410039420,hit_swing,mechanic,keyword:description,0.4
 10410039420,party_minigames,mechanic,keyword:description,0.4
 10410039420,steal_raid,mechanic,keyword:description,0.4
@@ -52478,13 +52442,12 @@ universe_id,tag,tag_type,source,confidence
 10420582875,money,theme,keyword:description,0.4
 10420832668,pass_storage,feature,keyword:passes,0.7
 10420832668,pvp,feature,keyword:description,0.6
-10420832668,emoji,formula,regex:name,1.0
-10420832668,update_tag,formula,regex:name,1.0
 10420832668,Action,genre,roblox,1.0
 10420832668,dress_style,mechanic,keyword:description,0.6
+10420832668,escape_run,mechanic,keyword:description,0.4
 10420832668,fight_battle,mechanic,keyword:description,0.6
 10420832668,job_shift,mechanic,keyword:description,0.6
-10420832668,obby_climb,mechanic,keyword:description,0.4
+10420832668,roleplay_life,mechanic,keyword:description,0.4
 10420832668,anime_fighting,niche,keyword:description,0.4
 10420832668,sports,niche,keyword:description,0.4
 10420832668,Battlegrounds & Fighting,subgenre,roblox,1.0
@@ -53800,13 +53763,15 @@ universe_id,tag,tag_type,source,confidence
 10503838245,eggs,theme,keyword:description,0.4
 10503838245,giant,theme,keyword:description,0.4
 10503838245,money,theme,keyword:description,0.4
+10504739696,base_building,feature,keyword:description,0.6
 10504739696,pass_vip,feature,keyword:passes,0.7
 10504739696,emoji,formula,regex:name,1.0
 10504739696,Entertainment,genre,roblox,1.0
-10504739696,party_minigames,mechanic,keyword:description,0.4
-10504739696,roleplay_life,mechanic,keyword:description,0.6
+10504739696,roleplay_life,mechanic,keyword:description,0.4
+10504739696,tycoon_build,mechanic,keyword:description,0.4
 10504739696,Music & Audio,subgenre,roblox,1.0
 10504739696,music,theme,keyword:name,0.9
+10504739696,sports,theme,keyword:description,0.6
 10504837200,base_building,feature,keyword:description,0.6
 10504837200,offline_earnings,feature,keyword:description,0.6
 10504837200,pass_auto,feature,keyword:passes,0.7
@@ -54527,10 +54492,8 @@ universe_id,tag,tag_type,source,confidence
 10537300863,anime,theme,keyword:name,0.9
 10537346933,base_building,feature,keyword:description,0.6
 10537346933,codes,feature,keyword:description,0.6
-10537346933,limited_events,feature,keyword:description,0.6
 10537346933,offline_earnings,feature,keyword:description,0.6
 10537346933,pass_multiplier,feature,keyword:passes,0.7
-10537346933,emoji,formula,regex:name,1.0
 10537346933,Simulation,genre,roblox,1.0
 10537346933,cook_serve,mechanic,keyword:description,0.4
 10537346933,dice_cards,mechanic,keyword:description,0.4
@@ -54542,7 +54505,6 @@ universe_id,tag,tag_type,source,confidence
 10537346933,food,theme,keyword:description,0.6
 10537346933,giant,theme,keyword:name,0.9
 10537346933,money,theme,keyword:description,0.6
-10537346933,seasonal,theme,keyword:description,0.6
 10539411000,pass_multiplier,feature,keyword:passes,0.7
 10539411000,pass_vip,feature,keyword:passes,0.7
 10539411000,emoji,formula,regex:name,1.0
@@ -55025,7 +54987,6 @@ universe_id,tag,tag_type,source,confidence
 10573227723,food,theme,keyword:description,0.4
 10575295323,Action,genre,roblox,1.0
 10575295323,Open World Action,subgenre,roblox,1.0
-10575295323,animals,theme,keyword:name,0.9
 10575295323,prison,theme,keyword:description,0.4
 10575619152,emoji,formula,regex:name,1.0
 10575619152,Simulation,genre,roblox,1.0
@@ -55575,6 +55536,8 @@ universe_id,tag,tag_type,source,confidence
 10599927450,stone_rocks,theme,keyword:description,0.4
 10600432468,pass_cosmetic,feature,keyword:passes,0.7
 10600432468,pass_vip,feature,keyword:passes,0.7
+10600432468,emoji,formula,regex:name,1.0
+10600432468,update_tag,formula,regex:name,1.0
 10600432468,Sports & Racing,genre,roblox,1.0
 10600432468,job_shift,mechanic,keyword:description,0.4
 10600432468,rng_roll,mechanic,keyword:passes_badges,0.7
@@ -56821,6 +56784,7 @@ universe_id,tag,tag_type,source,confidence
 10680167094,pass_multiplier,feature,keyword:passes,0.7
 10680167094,emoji,formula,regex:name,1.0
 10680167094,Shooter,genre,roblox,1.0
+10680167094,fight_battle,mechanic,keyword:passes_badges,0.7
 10680167094,obby_climb,mechanic,keyword:description,0.4
 10680167094,shooter,mechanic,keyword:name,0.9
 10680167094,tycoon_build,mechanic,keyword:description,0.4
@@ -57048,7 +57012,6 @@ universe_id,tag,tag_type,source,confidence
 10696604596,Incremental Simulator,subgenre,roblox,1.0
 10696894951,base_building,feature,keyword:description,0.6
 10696894951,pass_vip,feature,keyword:passes,0.7
-10696894951,emoji,formula,regex:name,1.0
 10696894951,survive_x,formula,regex:name,1.0
 10696894951,Survival,genre,roblox,1.0
 10696894951,collect_index,mechanic,keyword:description,0.4
@@ -57321,7 +57284,6 @@ universe_id,tag,tag_type,source,confidence
 10722358525,pass_speed,feature,keyword:passes,0.7
 10722358525,pets,feature,keyword:description,0.6
 10722358525,stealing,feature,keyword:name,0.9
-10722358525,emoji,formula,regex:name,1.0
 10722358525,Simulation,genre,roblox,1.0
 10722358525,collect_index,mechanic,keyword:description,0.6
 10722358525,hatch_gacha,mechanic,keyword:description,0.4
@@ -57778,7 +57740,6 @@ universe_id,tag,tag_type,source,confidence
 10742937135,1 vs All,subgenre,roblox,1.0
 10742937135,horror,theme,keyword:description,0.6
 10743048214,base_building,feature,keyword:description,0.6
-10743048214,update_tag,formula,regex:name,1.0
 10743048214,RPG,genre,roblox,1.0
 10743048214,fight_battle,mechanic,keyword:description,0.6
 10743048214,party_minigames,mechanic,keyword:description,0.4
@@ -57907,6 +57868,7 @@ universe_id,tag,tag_type,source,confidence
 10748586525,giant,theme,keyword:description,0.4
 10748586525,military,theme,keyword:description,0.4
 10749440441,base_building,feature,keyword:description,0.6
+10749440441,pass_multiplier,feature,keyword:passes,0.7
 10749440441,rebirth,feature,keyword:description,0.6
 10749440441,stealing,feature,keyword:name,0.9
 10749440441,plus_one,formula,regex:name,1.0
@@ -58078,6 +58040,7 @@ universe_id,tag,tag_type,source,confidence
 10753751277,animals,theme,keyword:description,0.4
 10753751277,money,theme,keyword:name,0.9
 10753751277,vehicles,theme,keyword:description,0.4
+10753847141,pass_speed,feature,keyword:passes,0.7
 10753847141,Obby & Platformer,genre,roblox,1.0
 10753847141,obby_climb,mechanic,keyword:description,0.6
 10753847141,race_drive,mechanic,keyword:description,0.4
@@ -58272,13 +58235,14 @@ universe_id,tag,tag_type,source,confidence
 10757480072,collect_index,mechanic,keyword:description,0.4
 10757480072,hatch_gacha,mechanic,keyword:name,0.9
 10757480072,plus_one_stat,mechanic,keyword:description,0.4
+10757480072,rng_roll,mechanic,keyword:passes_badges,0.7
 10757480072,steal_raid,mechanic,keyword:name,0.9
-10757480072,brainrot,niche,keyword:name,0.9
+10757480072,brainrot,niche,keyword:description,0.4
 10757480072,pet_collecting,niche,keyword:description,0.6
 10757480072,simulator,niche,keyword:description,0.4
 10757480072,Tycoon,subgenre,roblox,1.0
 10757480072,animals,theme,keyword:description,0.6
-10757480072,brainrot,theme,keyword:name,0.9
+10757480072,brainrot,theme,keyword:description,0.4
 10757480072,eggs,theme,keyword:name,0.9
 10757480072,money,theme,keyword:description,0.4
 10757498504,base_building,feature,keyword:description,0.6
@@ -58354,7 +58318,6 @@ universe_id,tag,tag_type,source,confidence
 10757704931,pass_vip,feature,keyword:passes,0.7
 10757704931,pets,feature,keyword:description,0.6
 10757704931,rebirth,feature,keyword:description,0.6
-10757704931,emoji,formula,regex:name,1.0
 10757704931,plus_one,formula,regex:name,1.0
 10757704931,Simulation,genre,roblox,1.0
 10757704931,clicker,mechanic,keyword:description,0.4
@@ -58512,6 +58475,7 @@ universe_id,tag,tag_type,source,confidence
 10759337137,tycoon_build,mechanic,keyword:description,0.6
 10759337137,shooter,niche,keyword:description,0.4
 10759337137,zombies,theme,keyword:description,0.4
+10759401628,pass_multiplier,feature,keyword:passes,0.7
 10759401628,emoji,formula,regex:name,1.0
 10759401628,Action,genre,roblox,1.0
 10759401628,break_mine,mechanic,keyword:name,0.9
@@ -58534,6 +58498,7 @@ universe_id,tag,tag_type,source,confidence
 10759415852,Tycoon,subgenre,roblox,1.0
 10759415852,money,theme,keyword:description,0.4
 10759415852,seasonal,theme,keyword:name,0.9
+10759430423,luck_boost,feature,keyword:description,0.6
 10759430423,offline_earnings,feature,keyword:description,0.6
 10759430423,pass_auto,feature,keyword:passes,0.7
 10759430423,pass_cosmetic,feature,keyword:passes,0.7
@@ -58543,9 +58508,9 @@ universe_id,tag,tag_type,source,confidence
 10759430423,pass_storage,feature,keyword:passes,0.7
 10759430423,pets,feature,keyword:description,0.6
 10759430423,rebirth,feature,keyword:description,0.6
+10759430423,emoji,formula,regex:name,1.0
 10759430423,plus_one,formula,regex:name,1.0
 10759430423,Simulation,genre,roblox,1.0
-10759430423,fight_battle,mechanic,keyword:description,0.4
 10759430423,forge_craft,mechanic,keyword:description,0.4
 10759430423,plus_one_stat,mechanic,keyword:name,0.9
 10759430423,rng_roll,mechanic,keyword:passes_badges,0.7
@@ -58588,6 +58553,7 @@ universe_id,tag,tag_type,source,confidence
 10759518799,survive_nights,mechanic,keyword:passes_badges,0.7
 10759518799,horror,niche,keyword:description,0.4
 10759518799,survival,niche,keyword:description,0.6
+10759518799,school,theme,keyword:name,0.9
 10759566653,leaderboards,feature,keyword:description,0.6
 10759566653,pets,feature,keyword:description,0.6
 10759566653,Survival,genre,roblox,1.0
@@ -58602,7 +58568,6 @@ universe_id,tag,tag_type,source,confidence
 10759594563,base_building,feature,keyword:description,0.6
 10759594563,pass_multiplier,feature,keyword:passes,0.7
 10759594563,pass_vip,feature,keyword:passes,0.7
-10759594563,emoji,formula,regex:name,1.0
 10759594563,Party & Casual,genre,roblox,1.0
 10759594563,tycoon_build,mechanic,keyword:description,0.6
 10759594563,anime_fighting,niche,keyword:name,0.9
@@ -58648,8 +58613,7 @@ universe_id,tag,tag_type,source,confidence
 10759860151,rng_roll,mechanic,keyword:description,0.4
 10759860151,rng,niche,keyword:description,0.4
 10759860151,Incremental Simulator,subgenre,roblox,1.0
-10759977189,emoji,formula,regex:name,1.0
-10759977189,one_word,formula,regex:name,1.0
+10759977189,update_tag,formula,regex:name,1.0
 10759977189,Simulation,genre,roblox,1.0
 10759977189,clicker,mechanic,keyword:description,0.4
 10759977189,fight_battle,mechanic,keyword:description,0.4
@@ -59450,6 +59414,11 @@ universe_id,tag,tag_type,source,confidence
 10764794065,obby,niche,keyword:description,0.4
 10764794065,survival,niche,keyword:description,0.6
 10764794065,money,theme,keyword:description,0.6
+10764813522,emoji,formula,regex:name,1.0
+10764813522,Entertainment,genre,roblox,1.0
+10764813522,roleplay_life,mechanic,keyword:description,0.6
+10764813522,roleplay_city,niche,keyword:description,0.6
+10764813522,Music & Audio,subgenre,roblox,1.0
 10764839604,base_building,feature,keyword:description,0.6
 10764839604,pass_multiplier,feature,keyword:passes,0.7
 10764839604,pass_speed,feature,keyword:passes,0.7
@@ -59683,18 +59652,24 @@ universe_id,tag,tag_type,source,confidence
 10765032875,money,theme,keyword:description,0.4
 10765032875,vehicles,theme,keyword:description,0.4
 10765035506,base_building,feature,keyword:description,0.6
-10765035506,limited_events,feature,keyword:name,0.9
 10765035506,emoji,formula,regex:name,1.0
 10765035506,Obby & Platformer,genre,roblox,1.0
 10765035506,dress_style,mechanic,keyword:description,0.6
 10765035506,obby_climb,mechanic,keyword:name,0.9
 10765035506,tycoon_build,mechanic,keyword:description,0.4
 10765035506,dress_up,niche,keyword:description,0.6
-10765035506,horror,niche,keyword:description,0.4
 10765035506,Tower Obby,subgenre,roblox,1.0
 10765035506,anime,theme,keyword:description,0.4
-10765035506,horror,theme,keyword:description,0.4
 10765035506,seasonal,theme,keyword:name,0.9
+10765051383,emoji,formula,regex:name,1.0
+10765051383,Adventure,genre,roblox,1.0
+10765051383,fight_battle,mechanic,keyword:description,0.4
+10765051383,hit_swing,mechanic,keyword:description,0.4
+10765051383,job_shift,mechanic,keyword:description,0.4
+10765051383,simulator,niche,keyword:description,0.4
+10765051383,story,niche,keyword:description,0.4
+10765051383,Story,subgenre,roblox,1.0
+10765051383,anime,theme,keyword:description,0.4
 10765061113,base_building,feature,keyword:description,0.6
 10765061113,offline_earnings,feature,keyword:description,0.6
 10765061113,pass_multiplier,feature,keyword:passes,0.7
@@ -59753,6 +59728,7 @@ universe_id,tag,tag_type,source,confidence
 10765132338,pass_storage,feature,keyword:passes,0.7
 10765132338,pass_vip,feature,keyword:passes,0.7
 10765132338,Simulation,genre,roblox,1.0
+10765132338,paint_create,mechanic,keyword:description,0.4
 10765132338,race_drive,mechanic,keyword:description,0.4
 10765132338,rng_roll,mechanic,keyword:description,0.4
 10765132338,tycoon_build,mechanic,keyword:description,0.6
@@ -59852,11 +59828,16 @@ universe_id,tag,tag_type,source,confidence
 10765203500,pass_multiplier,feature,keyword:passes,0.7
 10765203500,pass_speed,feature,keyword:passes,0.7
 10765203500,pass_storage,feature,keyword:passes,0.7
+10765203500,pets,feature,keyword:description,0.6
 10765203500,emoji,formula,regex:name,1.0
-10765203500,update_tag,formula,regex:name,1.0
 10765203500,Simulation,genre,roblox,1.0
-10765203500,fight_battle,mechanic,keyword:name,0.9
+10765203500,fight_battle,mechanic,keyword:description,0.4
+10765203500,hatch_gacha,mechanic,keyword:description,0.4
+10765203500,pet_collecting,niche,keyword:description,0.6
 10765203500,Incremental Simulator,subgenre,roblox,1.0
+10765203500,animals,theme,keyword:description,0.4
+10765203500,stone_rocks,theme,keyword:description,0.6
+10765203500,vehicles,theme,keyword:description,0.4
 10765279487,offline_earnings,feature,keyword:description,0.6
 10765279487,pass_multiplier,feature,keyword:passes,0.7
 10765279487,pass_storage,feature,keyword:passes,0.7
@@ -59975,9 +59956,13 @@ universe_id,tag,tag_type,source,confidence
 10765356488,shooter,niche,keyword:description,0.4
 10765356488,Incremental Simulator,subgenre,roblox,1.0
 10765361336,Action,genre,roblox,1.0
+10765361336,clicker,mechanic,keyword:description,0.6
 10765361336,fight_battle,mechanic,keyword:description,0.4
-10765361336,anime_fighting,niche,keyword:description,0.4
+10765361336,job_shift,mechanic,keyword:description,0.6
+10765361336,anime_fighting,niche,keyword:description,0.6
+10765361336,incremental,niche,keyword:description,0.4
 10765361336,Battlegrounds & Fighting,subgenre,roblox,1.0
+10765361336,space,theme,keyword:description,0.6
 10765361336,zombies,theme,keyword:name,0.9
 10765381188,base_building,feature,keyword:description,0.6
 10765381188,daily_rewards,feature,keyword:description,0.6
@@ -60287,6 +60272,9 @@ universe_id,tag,tag_type,source,confidence
 10765618402,military,theme,keyword:description,0.4
 10765618402,money,theme,keyword:description,0.4
 10765618402,robots,theme,keyword:description,0.6
+10765618442,pass_multiplier,feature,keyword:passes,0.7
+10765618442,pass_skip,feature,keyword:passes,0.7
+10765618442,pass_vip,feature,keyword:passes,0.7
 10765618442,update_tag,formula,regex:name,1.0
 10765618442,Sports & Racing,genre,roblox,1.0
 10765618442,obby_climb,mechanic,keyword:description,0.4
@@ -60426,6 +60414,7 @@ universe_id,tag,tag_type,source,confidence
 10765663381,pass_multiplier,feature,keyword:passes,0.7
 10765663381,pass_speed,feature,keyword:passes,0.7
 10765663381,stealing,feature,keyword:name,0.9
+10765663381,emoji,formula,regex:name,1.0
 10765663381,Simulation,genre,roblox,1.0
 10765663381,hatch_gacha,mechanic,keyword:description,0.4
 10765663381,steal_raid,mechanic,keyword:name,0.9
@@ -60562,7 +60551,6 @@ universe_id,tag,tag_type,source,confidence
 10765751583,food,theme,keyword:description,0.4
 10765751583,money,theme,keyword:description,0.4
 10765760839,pass_luck,feature,keyword:passes,0.7
-10765760839,emoji,formula,regex:name,1.0
 10765760839,plus_one,formula,regex:name,1.0
 10765760839,Simulation,genre,roblox,1.0
 10765760839,clicker,mechanic,keyword:description,0.4
@@ -60688,7 +60676,6 @@ universe_id,tag,tag_type,source,confidence
 10765834825,military,theme,keyword:description,0.4
 10765834825,money,theme,keyword:description,0.4
 10765841403,base_building,feature,keyword:description,0.6
-10765841403,limited_events,feature,keyword:description,0.6
 10765841403,pass_multiplier,feature,keyword:passes,0.7
 10765841403,pass_skip,feature,keyword:passes,0.7
 10765841403,pass_vip,feature,keyword:passes,0.7
@@ -60705,8 +60692,8 @@ universe_id,tag,tag_type,source,confidence
 10765841403,Escape,subgenre,roblox,1.0
 10765841403,horror,theme,keyword:description,0.6
 10765841403,money,theme,keyword:description,0.4
-10765841403,seasonal,theme,keyword:description,0.4
 10765849561,daily_rewards,feature,keyword:description,0.6
+10765849561,pass_cosmetic,feature,keyword:passes,0.7
 10765849561,pass_multiplier,feature,keyword:passes,0.7
 10765849561,pass_speed,feature,keyword:passes,0.7
 10765849561,pass_vip,feature,keyword:passes,0.7
@@ -60717,10 +60704,10 @@ universe_id,tag,tag_type,source,confidence
 10765849561,Minigame,subgenre,roblox,1.0
 10765855425,Roleplay & Avatar Sim,genre,roblox,1.0
 10765855425,roleplay_life,mechanic,keyword:name,0.9
+10765855425,hangout,niche,keyword:description,0.4
 10765855425,roleplay_city,niche,keyword:name,0.9
 10765855425,Morph Roleplay,subgenre,roblox,1.0
 10765855425,animals,theme,keyword:name,0.9
-10765855425,school,theme,keyword:description,0.4
 10765874738,base_building,feature,keyword:description,0.6
 10765874738,codes,feature,keyword:description,0.6
 10765874738,pass_auto,feature,keyword:passes,0.7
@@ -60957,8 +60944,11 @@ universe_id,tag,tag_type,source,confidence
 10765972921,vehicles,theme,keyword:description,0.4
 10765972921,zombies,theme,keyword:description,0.4
 10765978308,base_building,feature,keyword:description,0.6
+10765978308,pass_luck,feature,keyword:passes,0.7
 10765978308,pass_multiplier,feature,keyword:passes,0.7
 10765978308,pass_speed,feature,keyword:passes,0.7
+10765978308,pass_storage,feature,keyword:passes,0.7
+10765978308,pass_vip,feature,keyword:passes,0.7
 10765978308,stealing,feature,keyword:name,0.9
 10765978308,steal_a,formula,regex:name,1.0
 10765978308,Simulation,genre,roblox,1.0
@@ -61261,12 +61251,9 @@ universe_id,tag,tag_type,source,confidence
 10766167375,sports,theme,keyword:name,0.9
 10766167375,vehicles,theme,keyword:description,0.4
 10766181632,codes,feature,keyword:description,0.6
-10766181632,leaderboards,feature,keyword:description,0.6
-10766181632,limited_events,feature,keyword:description,0.6
 10766181632,pass_luck,feature,keyword:passes,0.7
 10766181632,pass_speed,feature,keyword:passes,0.7
 10766181632,pass_vip,feature,keyword:passes,0.7
-10766181632,trading,feature,keyword:description,0.6
 10766181632,emoji,formula,regex:name,1.0
 10766181632,RPG,genre,roblox,1.0
 10766181632,break_mine,mechanic,keyword:description,0.6
@@ -61274,14 +61261,11 @@ universe_id,tag,tag_type,source,confidence
 10766181632,forge_craft,mechanic,keyword:description,0.4
 10766181632,sell_shop,mechanic,keyword:description,0.4
 10766181632,survive_nights,mechanic,keyword:description,0.6
-10766181632,tower_defense,mechanic,keyword:description,0.4
-10766181632,trade,mechanic,keyword:description,0.4
 10766181632,anime_fighting,niche,keyword:description,0.4
 10766181632,Action RPG,subgenre,roblox,1.0
 10766181632,horror,theme,keyword:description,0.4
-10766181632,seasonal,theme,keyword:description,0.4
 10766181632,space,theme,keyword:description,0.4
-10766181632,stone_rocks,theme,keyword:description,0.4
+10766181632,stone_rocks,theme,keyword:description,0.6
 10766209118,codes,feature,keyword:name,0.9
 10766209118,pass_multiplier,feature,keyword:passes,0.7
 10766209118,emoji,formula,regex:name,1.0
@@ -61479,6 +61463,7 @@ universe_id,tag,tag_type,source,confidence
 10766364164,tycoon_build,mechanic,keyword:description,0.4
 10766364164,racing_driving,niche,keyword:description,0.4
 10766373552,base_building,feature,keyword:description,0.6
+10766373552,pass_auto,feature,keyword:passes,0.7
 10766373552,emoji,formula,regex:name,1.0
 10766373552,Sports & Racing,genre,roblox,1.0
 10766373552,job_shift,mechanic,keyword:description,0.4
@@ -61711,6 +61696,7 @@ universe_id,tag,tag_type,source,confidence
 10766506199,animals,theme,keyword:name,0.9
 10766515145,base_building,feature,keyword:description,0.6
 10766515145,offline_earnings,feature,keyword:description,0.6
+10766515145,pass_auto,feature,keyword:passes,0.7
 10766515145,pass_cosmetic,feature,keyword:passes,0.7
 10766515145,pass_luck,feature,keyword:passes,0.7
 10766515145,pass_multiplier,feature,keyword:passes,0.7
@@ -61801,7 +61787,6 @@ universe_id,tag,tag_type,source,confidence
 10766620257,pass_multiplier,feature,keyword:passes,0.7
 10766620257,pets,feature,keyword:description,0.6
 10766620257,stealing,feature,keyword:description,0.6
-10766620257,emoji,formula,regex:name,1.0
 10766620257,verb_for_noun,formula,regex:name,1.0
 10766620257,Simulation,genre,roblox,1.0
 10766620257,collect_index,mechanic,keyword:description,0.6
@@ -61830,7 +61815,7 @@ universe_id,tag,tag_type,source,confidence
 10766654298,stone_rocks,theme,keyword:description,0.4
 10766662827,emoji,formula,regex:name,1.0
 10766662827,Roleplay & Avatar Sim,genre,roblox,1.0
-10766662827,roleplay_life,mechanic,keyword:description,0.6
+10766662827,roleplay_life,mechanic,keyword:passes_badges,0.7
 10766662827,simulator,niche,keyword:description,0.4
 10766662827,story,niche,keyword:name,0.9
 10766662827,Life,subgenre,roblox,1.0
@@ -61955,6 +61940,7 @@ universe_id,tag,tag_type,source,confidence
 10766754055,mutations,feature,keyword:description,0.6
 10766754055,pass_multiplier,feature,keyword:passes,0.7
 10766754055,pass_speed,feature,keyword:passes,0.7
+10766754055,pass_vip,feature,keyword:passes,0.7
 10766754055,stealing,feature,keyword:name,0.9
 10766754055,update_tag,formula,regex:name,1.0
 10766754055,Simulation,genre,roblox,1.0
@@ -61972,6 +61958,14 @@ universe_id,tag,tag_type,source,confidence
 10766754055,money,theme,keyword:description,0.4
 10766754055,superheroes,theme,keyword:name,0.9
 10766754055,vehicles,theme,keyword:description,0.4
+10766764802,luck_boost,feature,keyword:description,0.6
+10766764802,update_tag,formula,regex:name,1.0
+10766764802,Adventure,genre,roblox,1.0
+10766764802,race_drive,mechanic,keyword:description,0.4
+10766764802,survive_nights,mechanic,keyword:description,0.4
+10766764802,survival,niche,keyword:description,0.4
+10766764802,Story,subgenre,roblox,1.0
+10766764802,prison,theme,keyword:name,0.9
 10766773917,base_building,feature,keyword:description,0.6
 10766773917,pass_vip,feature,keyword:passes,0.7
 10766773917,emoji,formula,regex:name,1.0
@@ -62379,15 +62373,14 @@ universe_id,tag,tag_type,source,confidence
 10767330648,pass_storage,feature,keyword:passes,0.7
 10767330648,pass_vip,feature,keyword:passes,0.7
 10767330648,pvp,feature,keyword:description,0.6
+10767330648,emoji,formula,regex:name,1.0
 10767330648,Sports & Racing,genre,roblox,1.0
 10767330648,collect_index,mechanic,keyword:description,0.4
 10767330648,obby_climb,mechanic,keyword:description,0.6
 10767330648,rng_roll,mechanic,keyword:description,0.4
-10767330648,lucky_block,niche,keyword:description,0.4
+10767330648,lucky_block,niche,keyword:description,0.6
 10767330648,rng,niche,keyword:description,0.4
 10767330648,Sports,subgenre,roblox,1.0
-10767330648,food,theme,keyword:description,0.4
-10767330648,seasonal,theme,keyword:description,0.6
 10767330648,sports,theme,keyword:name,0.9
 10767334138,base_building,feature,keyword:description,0.6
 10767334138,luck_boost,feature,keyword:description,0.6
@@ -62415,7 +62408,6 @@ universe_id,tag,tag_type,source,confidence
 10767337363,pass_speed,feature,keyword:passes,0.7
 10767337363,pass_vip,feature,keyword:passes,0.7
 10767337363,pvp,feature,keyword:description,0.6
-10767337363,emoji,formula,regex:name,1.0
 10767337363,Simulation,genre,roblox,1.0
 10767337363,fight_battle,mechanic,keyword:description,0.6
 10767337363,hatch_gacha,mechanic,keyword:description,0.6
@@ -62487,6 +62479,8 @@ universe_id,tag,tag_type,source,confidence
 10767360124,base_building,feature,keyword:description,0.6
 10767360124,pass_multiplier,feature,keyword:passes,0.7
 10767360124,pvp,feature,keyword:description,0.6
+10767360124,emoji,formula,regex:name,1.0
+10767360124,update_tag,formula,regex:name,1.0
 10767360124,Party & Casual,genre,roblox,1.0
 10767360124,fight_battle,mechanic,keyword:description,0.6
 10767360124,tycoon_build,mechanic,keyword:description,0.6
@@ -62559,7 +62553,6 @@ universe_id,tag,tag_type,source,confidence
 10767408330,pass_multiplier,feature,keyword:passes,0.7
 10767408330,pass_speed,feature,keyword:passes,0.7
 10767408330,pass_storage,feature,keyword:passes,0.7
-10767408330,emoji,formula,regex:name,1.0
 10767408330,Simulation,genre,roblox,1.0
 10767408330,break_mine,mechanic,keyword:description,0.4
 10767408330,collect_index,mechanic,keyword:passes_badges,0.7
@@ -62902,15 +62895,14 @@ universe_id,tag,tag_type,source,confidence
 10767733633,pass_vip,feature,keyword:passes,0.7
 10767733633,emoji,formula,regex:name,1.0
 10767733633,Simulation,genre,roblox,1.0
-10767733633,clicker,mechanic,keyword:description,0.4
-10767733633,collect_index,mechanic,keyword:description,0.6
+10767733633,collect_index,mechanic,keyword:name,0.9
 10767733633,grow_farm,mechanic,keyword:description,0.6
-10767733633,pet_care,mechanic,keyword:name,0.9
+10767733633,obby_climb,mechanic,keyword:description,0.4
+10767733633,pet_care,mechanic,keyword:description,0.6
 10767733633,tycoon_build,mechanic,keyword:description,0.4
 10767733633,gardening_farming,niche,keyword:description,0.6
 10767733633,Tycoon,subgenre,roblox,1.0
-10767733633,animals,theme,keyword:name,0.9
-10767733633,money,theme,keyword:description,0.4
+10767733633,animals,theme,keyword:description,0.6
 10767735339,base_building,feature,keyword:description,0.6
 10767735339,pass_multiplier,feature,keyword:passes,0.7
 10767735339,pass_speed,feature,keyword:passes,0.7
@@ -63006,17 +62998,30 @@ universe_id,tag,tag_type,source,confidence
 10767784294,eggs,theme,keyword:name,0.9
 10767784294,money,theme,keyword:description,0.4
 10767784294,space,theme,keyword:description,0.4
-10767814136,limited_events,feature,keyword:name,0.9
+10767808614,codes,feature,keyword:description,0.6
+10767808614,limited_events,feature,keyword:description,0.6
+10767808614,luck_boost,feature,keyword:description,0.6
+10767808614,offline_earnings,feature,keyword:description,0.6
+10767808614,Simulation,genre,roblox,1.0
+10767808614,collect_index,mechanic,keyword:description,0.4
+10767808614,escape_run,mechanic,keyword:description,0.4
+10767808614,hatch_gacha,mechanic,keyword:name,0.9
+10767808614,rng_roll,mechanic,keyword:description,0.4
+10767808614,escape,niche,keyword:description,0.4
+10767808614,rng,niche,keyword:description,0.4
+10767808614,Incremental Simulator,subgenre,roblox,1.0
+10767808614,animals,theme,keyword:description,0.6
+10767808614,eggs,theme,keyword:name,0.9
+10767808614,money,theme,keyword:description,0.6
+10767808614,vehicles,theme,keyword:description,0.4
 10767814136,pass_auto,feature,keyword:passes,0.7
 10767814136,pass_multiplier,feature,keyword:passes,0.7
-10767814136,emoji,formula,regex:name,1.0
 10767814136,Simulation,genre,roblox,1.0
 10767814136,hatch_gacha,mechanic,keyword:description,0.6
 10767814136,pet_collecting,niche,keyword:description,0.6
 10767814136,Tycoon,subgenre,roblox,1.0
 10767814136,eggs,theme,keyword:description,0.6
 10767814136,fantasy,theme,keyword:name,0.9
-10767814136,seasonal,theme,keyword:name,0.9
 10767814721,pass_auto,feature,keyword:passes,0.7
 10767814721,pass_cosmetic,feature,keyword:passes,0.7
 10767814721,pass_storage,feature,keyword:passes,0.7
@@ -63327,21 +63332,16 @@ universe_id,tag,tag_type,source,confidence
 10767913520,giant,theme,keyword:description,0.4
 10767913520,robots,theme,keyword:description,0.4
 10767922762,base_building,feature,keyword:description,0.6
-10767922762,limited_events,feature,keyword:description,0.6
 10767922762,pass_multiplier,feature,keyword:passes,0.7
 10767922762,pass_speed,feature,keyword:passes,0.7
 10767922762,pass_storage,feature,keyword:passes,0.7
 10767922762,pass_vip,feature,keyword:passes,0.7
-10767922762,pets,feature,keyword:description,0.6
 10767922762,Roleplay & Avatar Sim,genre,roblox,1.0
 10767922762,dress_style,mechanic,keyword:name,0.9
 10767922762,grow_farm,mechanic,keyword:description,0.4
 10767922762,tycoon_build,mechanic,keyword:description,0.4
 10767922762,gardening_farming,niche,keyword:description,0.4
-10767922762,pet_collecting,niche,keyword:description,0.4
 10767922762,Dress Up,subgenre,roblox,1.0
-10767922762,animals,theme,keyword:description,0.4
-10767922762,seasonal,theme,keyword:description,0.4
 10767928510,codes,feature,keyword:description,0.6
 10767928510,RPG,genre,roblox,1.0
 10767928510,break_mine,mechanic,keyword:description,0.4
@@ -63466,23 +63466,18 @@ universe_id,tag,tag_type,source,confidence
 10768004577,pass_auto,feature,keyword:passes,0.7
 10768004577,pass_multiplier,feature,keyword:passes,0.7
 10768004577,pets,feature,keyword:description,0.6
-10768004577,stealing,feature,keyword:name,0.9
-10768004577,emoji,formula,regex:name,1.0
-10768004577,steal_a,formula,regex:name,1.0
 10768004577,Simulation,genre,roblox,1.0
 10768004577,collect_index,mechanic,keyword:description,0.6
 10768004577,escape_run,mechanic,keyword:description,0.4
 10768004577,hatch_gacha,mechanic,keyword:name,0.9
-10768004577,steal_raid,mechanic,keyword:name,0.9
 10768004577,tycoon_build,mechanic,keyword:description,0.6
 10768004577,escape,niche,keyword:description,0.4
-10768004577,pet_collecting,niche,keyword:description,0.6
-10768004577,steal_a,niche,keyword:name,0.9
+10768004577,pet_collecting,niche,keyword:name,0.9
 10768004577,Tycoon,subgenre,roblox,1.0
 10768004577,animals,theme,keyword:description,0.6
 10768004577,eggs,theme,keyword:name,0.9
+10768004577,food,theme,keyword:description,0.6
 10768004577,money,theme,keyword:description,0.4
-10768004577,vehicles,theme,keyword:description,0.6
 10768012048,pass_vip,feature,keyword:passes,0.7
 10768012048,emoji,formula,regex:name,1.0
 10768012048,Simulation,genre,roblox,1.0
@@ -63914,6 +63909,8 @@ universe_id,tag,tag_type,source,confidence
 10768349140,base_building,feature,keyword:description,0.6
 10768349140,offline_earnings,feature,keyword:description,0.6
 10768349140,pass_auto,feature,keyword:passes,0.7
+10768349140,pass_cosmetic,feature,keyword:passes,0.7
+10768349140,pass_luck,feature,keyword:passes,0.7
 10768349140,pass_multiplier,feature,keyword:passes,0.7
 10768349140,pass_vip,feature,keyword:passes,0.7
 10768349140,rebirth,feature,keyword:description,0.6
@@ -63925,6 +63922,7 @@ universe_id,tag,tag_type,source,confidence
 10768349140,hatch_gacha,mechanic,keyword:name,0.9
 10768349140,hit_swing,mechanic,keyword:name,0.9
 10768349140,plus_one_stat,mechanic,keyword:name,0.9
+10768349140,rng_roll,mechanic,keyword:passes_badges,0.7
 10768349140,tycoon_build,mechanic,keyword:description,0.4
 10768349140,pet_collecting,niche,keyword:name,0.9
 10768349140,Tycoon,subgenre,roblox,1.0
@@ -64135,8 +64133,8 @@ universe_id,tag,tag_type,source,confidence
 10768447121,pass_cosmetic,feature,keyword:passes,0.7
 10768447121,pass_multiplier,feature,keyword:passes,0.7
 10768447121,pass_speed,feature,keyword:passes,0.7
-10768447121,emoji,formula,regex:name,1.0
 10768447121,plus_one,formula,regex:name,1.0
+10768447121,update_tag,formula,regex:name,1.0
 10768447121,Simulation,genre,roblox,1.0
 10768447121,escape_run,mechanic,keyword:name,0.9
 10768447121,obby_climb,mechanic,keyword:description,0.6
@@ -64400,6 +64398,28 @@ universe_id,tag,tag_type,source,confidence
 10768556372,nature,theme,keyword:description,0.4
 10768556372,superheroes,theme,keyword:description,0.6
 10768556372,zombies,theme,keyword:description,0.4
+10768558548,base_building,feature,keyword:description,0.6
+10768558548,codes,feature,keyword:description,0.6
+10768558548,leaderboards,feature,keyword:description,0.6
+10768558548,emoji,formula,regex:name,1.0
+10768558548,update_tag,formula,regex:name,1.0
+10768558548,Simulation,genre,roblox,1.0
+10768558548,break_mine,mechanic,keyword:description,0.6
+10768558548,collect_index,mechanic,keyword:description,0.4
+10768558548,grow_farm,mechanic,keyword:name,0.9
+10768558548,hatch_gacha,mechanic,keyword:description,0.4
+10768558548,obby_climb,mechanic,keyword:description,0.4
+10768558548,race_drive,mechanic,keyword:description,0.4
+10768558548,roleplay_life,mechanic,keyword:description,0.6
+10768558548,sell_shop,mechanic,keyword:description,0.6
+10768558548,tycoon_build,mechanic,keyword:description,0.4
+10768558548,gardening_farming,niche,keyword:name,0.9
+10768558548,pet_collecting,niche,keyword:description,0.4
+10768558548,Tycoon,subgenre,roblox,1.0
+10768558548,eggs,theme,keyword:description,0.4
+10768558548,giant,theme,keyword:description,0.4
+10768558548,money,theme,keyword:description,0.4
+10768558548,stone_rocks,theme,keyword:description,0.4
 10768561721,offline_earnings,feature,keyword:description,0.6
 10768561721,pass_auto,feature,keyword:passes,0.7
 10768561721,pass_cosmetic,feature,keyword:passes,0.7
@@ -64471,7 +64491,6 @@ universe_id,tag,tag_type,source,confidence
 10768625919,pass_vip,feature,keyword:passes,0.7
 10768625919,pvp,feature,keyword:description,0.6
 10768625919,emoji,formula,regex:name,1.0
-10768625919,one_word,formula,regex:name,1.0
 10768625919,RPG,genre,roblox,1.0
 10768625919,fight_battle,mechanic,keyword:description,0.6
 10768625919,forge_craft,mechanic,keyword:description,0.6
@@ -64936,6 +64955,8 @@ universe_id,tag,tag_type,source,confidence
 10768960729,pvp,feature,keyword:description,0.6
 10768960729,Party & Casual,genre,roblox,1.0
 10768960729,fight_battle,mechanic,keyword:description,0.6
+10768960729,anime_fighting,niche,keyword:name,0.9
+10768960729,anime,theme,keyword:name,0.9
 10768960729,sports,theme,keyword:description,0.6
 10768961084,pass_auto,feature,keyword:passes,0.7
 10768961084,pass_multiplier,feature,keyword:passes,0.7
@@ -65367,7 +65388,7 @@ universe_id,tag,tag_type,source,confidence
 10769249409,survival,niche,keyword:description,0.4
 10769249409,space,theme,keyword:description,0.4
 10769259605,pass_multiplier,feature,keyword:passes,0.7
-10769259605,emoji,formula,regex:name,1.0
+10769259605,update_tag,formula,regex:name,1.0
 10769259605,Puzzle,genre,roblox,1.0
 10769259605,roleplay_life,mechanic,keyword:description,0.4
 10769266554,base_building,feature,keyword:description,0.6
@@ -65511,6 +65532,7 @@ universe_id,tag,tag_type,source,confidence
 10769374148,fashion,theme,keyword:name,0.9
 10769384180,pets,feature,keyword:description,0.6
 10769384180,stealing,feature,keyword:description,0.6
+10769384180,emoji,formula,regex:name,1.0
 10769384180,Simulation,genre,roblox,1.0
 10769384180,hatch_gacha,mechanic,keyword:name,0.9
 10769384180,steal_raid,mechanic,keyword:description,0.4
@@ -65795,6 +65817,7 @@ universe_id,tag,tag_type,source,confidence
 10769541433,vehicles,theme,keyword:description,0.4
 10769542070,base_building,feature,keyword:name,0.9
 10769542070,daily_rewards,feature,keyword:description,0.6
+10769542070,update_tag,formula,regex:name,1.0
 10769542070,Sports & Racing,genre,roblox,1.0
 10769542070,fight_battle,mechanic,keyword:description,0.4
 10769542070,paint_create,mechanic,keyword:description,0.4
@@ -65803,7 +65826,7 @@ universe_id,tag,tag_type,source,confidence
 10769542070,tycoon_build,mechanic,keyword:name,0.9
 10769542070,racing_driving,niche,keyword:description,0.6
 10769542070,shooter,niche,keyword:description,0.4
-10769542070,story,niche,keyword:name,0.9
+10769542070,story,niche,keyword:description,0.6
 10769542070,Racing,subgenre,roblox,1.0
 10769542070,vehicles,theme,keyword:description,0.4
 10769543567,codes,feature,keyword:description,0.6
@@ -65941,12 +65964,12 @@ universe_id,tag,tag_type,source,confidence
 10769574323,Deathmatch Shooter,subgenre,roblox,1.0
 10769578217,limited_events,feature,keyword:description,0.6
 10769578217,pvp,feature,keyword:name,0.9
+10769578217,emoji,formula,regex:name,1.0
 10769578217,Shooter,genre,roblox,1.0
 10769578217,clicker,mechanic,keyword:description,0.4
 10769578217,dress_style,mechanic,keyword:description,0.4
 10769578217,fight_battle,mechanic,keyword:name,0.9
 10769578217,forge_craft,mechanic,keyword:description,0.4
-10769578217,hatch_gacha,mechanic,keyword:name,0.9
 10769578217,incremental,niche,keyword:description,0.4
 10769578217,Deathmatch Shooter,subgenre,roblox,1.0
 10769578217,robots,theme,keyword:description,0.6
@@ -66021,6 +66044,15 @@ universe_id,tag,tag_type,source,confidence
 10769634720,story,niche,keyword:description,0.6
 10769634720,Story,subgenre,roblox,1.0
 10769634720,horror,theme,keyword:name,0.9
+10769637698,emoji,formula,regex:name,1.0
+10769637698,Adventure,genre,roblox,1.0
+10769637698,collect_index,mechanic,keyword:description,0.4
+10769637698,grow_farm,mechanic,keyword:description,0.4
+10769637698,survive_nights,mechanic,keyword:description,0.4
+10769637698,Exploration,subgenre,roblox,1.0
+10769637698,horror,theme,keyword:description,0.4
+10769637698,ice_fire,theme,keyword:description,0.4
+10769637698,ocean,theme,keyword:description,0.4
 10769660375,base_building,feature,keyword:description,0.6
 10769660375,offline_earnings,feature,keyword:description,0.6
 10769660375,stealing,feature,keyword:name,0.9
@@ -66074,6 +66106,7 @@ universe_id,tag,tag_type,source,confidence
 10769707527,disaster,theme,keyword:name,0.9
 10769707527,seasonal,theme,keyword:name,0.9
 10769709426,pass_auto,feature,keyword:passes,0.7
+10769709426,pass_cosmetic,feature,keyword:passes,0.7
 10769709426,pass_luck,feature,keyword:passes,0.7
 10769709426,pass_multiplier,feature,keyword:passes,0.7
 10769709426,pass_speed,feature,keyword:passes,0.7
@@ -66119,6 +66152,13 @@ universe_id,tag,tag_type,source,confidence
 10769753268,story,niche,keyword:description,0.6
 10769753268,Escape,subgenre,roblox,1.0
 10769753268,horror,theme,keyword:description,0.4
+10769756492,leaderboards,feature,keyword:description,0.6
+10769756492,emoji,formula,regex:name,1.0
+10769756492,Adventure,genre,roblox,1.0
+10769756492,survive_nights,mechanic,keyword:description,0.4
+10769756492,Exploration,subgenre,roblox,1.0
+10769756492,animals,theme,keyword:description,0.6
+10769756492,dinosaurs,theme,keyword:name,0.9
 10769764340,codes,feature,keyword:description,0.6
 10769764340,daily_rewards,feature,keyword:name,0.9
 10769764340,luck_boost,feature,keyword:description,0.6
@@ -66311,20 +66351,20 @@ universe_id,tag,tag_type,source,confidence
 10769879410,codes,feature,keyword:description,0.6
 10769879410,pass_multiplier,feature,keyword:passes,0.7
 10769879410,pass_vip,feature,keyword:passes,0.7
-10769879410,emoji,formula,regex:name,1.0
 10769879410,simulator,formula,regex:name,1.0
 10769879410,Simulation,genre,roblox,1.0
 10769879410,escape_run,mechanic,keyword:description,0.4
 10769879410,job_shift,mechanic,keyword:description,0.6
 10769879410,plus_one_stat,mechanic,keyword:description,0.4
 10769879410,roleplay_life,mechanic,keyword:description,0.6
+10769879410,survive_nights,mechanic,keyword:description,0.4
 10769879410,escape,niche,keyword:description,0.4
 10769879410,simulator,niche,keyword:name,0.9
 10769879410,Vehicle Sim,subgenre,roblox,1.0
 10769879410,giant,theme,keyword:description,0.4
 10769879410,money,theme,keyword:description,0.6
 10769879410,prison,theme,keyword:description,0.6
-10769879410,vehicles,theme,keyword:description,0.6
+10769879410,vehicles,theme,keyword:description,0.4
 10769886096,base_building,feature,keyword:description,0.6
 10769886096,limited_events,feature,keyword:description,0.6
 10769886096,pass_multiplier,feature,keyword:passes,0.7
@@ -66441,11 +66481,12 @@ universe_id,tag,tag_type,source,confidence
 10769955995,animals,theme,keyword:description,0.6
 10769957062,emoji,formula,regex:name,1.0
 10769957062,Survival,genre,roblox,1.0
+10769957062,fight_battle,mechanic,keyword:description,0.4
 10769957062,grow_farm,mechanic,keyword:description,0.4
 10769957062,hatch_gacha,mechanic,keyword:description,0.4
 10769957062,pet_collecting,niche,keyword:description,0.4
 10769957062,food,theme,keyword:description,0.4
-10769957062,giant,theme,keyword:description,0.4
+10769957062,giant,theme,keyword:description,0.6
 10769957062,nature,theme,keyword:description,0.4
 10769965862,pets,feature,keyword:description,0.6
 10769965862,emoji,formula,regex:name,1.0
@@ -66598,6 +66639,28 @@ universe_id,tag,tag_type,source,confidence
 10770228084,obby,niche,keyword:description,0.4
 10770228084,tycoon,niche,keyword:description,0.4
 10770228084,Sandbox,subgenre,roblox,1.0
+10770228857,base_building,feature,keyword:description,0.6
+10770228857,leaderboards,feature,keyword:description,0.6
+10770228857,stealing,feature,keyword:name,0.9
+10770228857,emoji,formula,regex:name,1.0
+10770228857,steal_a,formula,regex:name,1.0
+10770228857,Simulation,genre,roblox,1.0
+10770228857,break_mine,mechanic,keyword:description,0.4
+10770228857,collect_index,mechanic,keyword:description,0.6
+10770228857,dice_cards,mechanic,keyword:description,0.6
+10770228857,fight_battle,mechanic,keyword:description,0.6
+10770228857,forge_craft,mechanic,keyword:description,0.4
+10770228857,obby_climb,mechanic,keyword:description,0.4
+10770228857,rng_roll,mechanic,keyword:description,0.4
+10770228857,steal_raid,mechanic,keyword:name,0.9
+10770228857,tycoon_build,mechanic,keyword:description,0.6
+10770228857,anime_fighting,niche,keyword:description,0.4
+10770228857,steal_a,niche,keyword:name,0.9
+10770228857,Incremental Simulator,subgenre,roblox,1.0
+10770228857,ancient,theme,keyword:description,0.4
+10770228857,ice_fire,theme,keyword:description,0.4
+10770228857,money,theme,keyword:description,0.6
+10770228857,superheroes,theme,keyword:description,0.6
 10770235379,daily_rewards,feature,keyword:description,0.6
 10770235379,leaderboards,feature,keyword:description,0.6
 10770235379,pass_multiplier,feature,keyword:passes,0.7
@@ -66674,6 +66737,20 @@ universe_id,tag,tag_type,source,confidence
 10770284142,survive_nights,mechanic,keyword:name,0.9
 10770284142,gardening_farming,niche,keyword:description,0.4
 10770284142,Vehicle Sim,subgenre,roblox,1.0
+10770297329,codes,feature,keyword:description,0.6
+10770297329,rebirth,feature,keyword:description,0.6
+10770297329,trading,feature,keyword:description,0.6
+10770297329,emoji,formula,regex:name,1.0
+10770297329,update_tag,formula,regex:name,1.0
+10770297329,Simulation,genre,roblox,1.0
+10770297329,grow_farm,mechanic,keyword:description,0.6
+10770297329,trade,mechanic,keyword:description,0.4
+10770297329,ice_fire,theme,keyword:description,0.4
+10770297329,military,theme,keyword:description,0.4
+10770297329,nature,theme,keyword:description,0.4
+10770297329,robots,theme,keyword:description,0.4
+10770297329,space,theme,keyword:description,0.4
+10770297329,stone_rocks,theme,keyword:description,0.4
 10770306793,auto_farm,feature,keyword:description,0.6
 10770306793,codes,feature,keyword:description,0.6
 10770306793,pass_luck,feature,keyword:passes,0.7
@@ -66773,6 +66850,8 @@ universe_id,tag,tag_type,source,confidence
 10770417318,Story,subgenre,roblox,1.0
 10770417318,prison,theme,keyword:description,0.4
 10770418999,base_building,feature,keyword:name,0.9
+10770418999,pass_multiplier,feature,keyword:passes,0.7
+10770418999,pass_skip,feature,keyword:passes,0.7
 10770418999,build_a,formula,regex:name,1.0
 10770418999,emoji,formula,regex:name,1.0
 10770418999,Simulation,genre,roblox,1.0
@@ -66851,6 +66930,7 @@ universe_id,tag,tag_type,source,confidence
 10770483057,ice_fire,theme,keyword:description,0.4
 10770483057,stone_rocks,theme,keyword:description,0.4
 10770490054,base_building,feature,keyword:name,0.9
+10770490054,pass_multiplier,feature,keyword:passes,0.7
 10770490054,Simulation,genre,roblox,1.0
 10770490054,hit_swing,mechanic,keyword:description,0.4
 10770490054,job_shift,mechanic,keyword:description,0.6
@@ -66934,6 +67014,9 @@ universe_id,tag,tag_type,source,confidence
 10770593871,zombies,theme,keyword:description,0.4
 10770599659,base_building,feature,keyword:name,0.9
 10770599659,offline_earnings,feature,keyword:description,0.6
+10770599659,pass_luck,feature,keyword:passes,0.7
+10770599659,pass_multiplier,feature,keyword:passes,0.7
+10770599659,pass_speed,feature,keyword:passes,0.7
 10770599659,build_a,formula,regex:name,1.0
 10770599659,Simulation,genre,roblox,1.0
 10770599659,collect_index,mechanic,keyword:description,0.4
@@ -67097,6 +67180,9 @@ universe_id,tag,tag_type,source,confidence
 10770779724,ocean,theme,keyword:description,0.4
 10770784203,daily_rewards,feature,keyword:description,0.6
 10770784203,luck_boost,feature,keyword:description,0.6
+10770784203,pass_luck,feature,keyword:passes,0.7
+10770784203,pass_multiplier,feature,keyword:passes,0.7
+10770784203,pass_storage,feature,keyword:passes,0.7
 10770784203,emoji,formula,regex:name,1.0
 10770784203,Simulation,genre,roblox,1.0
 10770784203,grow_farm,mechanic,keyword:description,0.6
@@ -67274,12 +67360,15 @@ universe_id,tag,tag_type,source,confidence
 10771107088,fight_battle,mechanic,keyword:description,0.4
 10771107088,grow_farm,mechanic,keyword:description,0.6
 10771107088,hatch_gacha,mechanic,keyword:name,0.9
+10771107088,hit_swing,mechanic,keyword:description,0.4
 10771107088,gardening_farming,niche,keyword:description,0.6
 10771107088,pet_collecting,niche,keyword:name,0.9
 10771107088,animals,theme,keyword:name,0.9
 10771107088,eggs,theme,keyword:name,0.9
 10771107088,money,theme,keyword:description,0.4
 10771107088,vehicles,theme,keyword:description,0.4
+10771111717,pass_multiplier,feature,keyword:passes,0.7
+10771111717,pass_vip,feature,keyword:passes,0.7
 10771111717,Party & Casual,genre,roblox,1.0
 10771111717,fight_battle,mechanic,keyword:name,0.9
 10771124452,pass_multiplier,feature,keyword:passes,0.7
@@ -67456,11 +67545,13 @@ universe_id,tag,tag_type,source,confidence
 10771517863,pass_skip,feature,keyword:passes,0.7
 10771517863,pass_vip,feature,keyword:passes,0.7
 10771517863,pvp,feature,keyword:description,0.6
+10771517863,update_tag,formula,regex:name,1.0
 10771517863,Action,genre,roblox,1.0
 10771517863,fight_battle,mechanic,keyword:name,0.9
 10771517863,hatch_gacha,mechanic,keyword:description,0.4
 10771517863,hit_swing,mechanic,keyword:description,0.6
 10771517863,party_minigames,mechanic,keyword:description,0.4
+10771517863,steal_raid,mechanic,keyword:name,0.9
 10771517863,Battlegrounds & Fighting,subgenre,roblox,1.0
 10771517863,fantasy,theme,keyword:name,0.9
 10771517863,military,theme,keyword:description,0.4
@@ -67483,12 +67574,17 @@ universe_id,tag,tag_type,source,confidence
 10771584764,vehicles,theme,keyword:description,0.4
 10771643321,base_building,feature,keyword:description,0.6
 10771643321,codes,feature,keyword:description,0.6
+10771643321,pass_luck,feature,keyword:passes,0.7
+10771643321,pass_multiplier,feature,keyword:passes,0.7
+10771643321,pass_storage,feature,keyword:passes,0.7
+10771643321,pass_vip,feature,keyword:passes,0.7
 10771643321,stealing,feature,keyword:name,0.9
 10771643321,steal_a,formula,regex:name,1.0
 10771643321,Simulation,genre,roblox,1.0
 10771643321,collect_index,mechanic,keyword:description,0.6
 10771643321,escape_run,mechanic,keyword:description,0.4
 10771643321,hatch_gacha,mechanic,keyword:description,0.6
+10771643321,hit_swing,mechanic,keyword:passes_badges,0.7
 10771643321,steal_raid,mechanic,keyword:name,0.9
 10771643321,tycoon_build,mechanic,keyword:description,0.4
 10771643321,escape,niche,keyword:description,0.4
@@ -67515,7 +67611,9 @@ universe_id,tag,tag_type,source,confidence
 10771729010,pet_collecting,niche,keyword:name,0.9
 10771729010,Incremental Simulator,subgenre,roblox,1.0
 10771729010,animals,theme,keyword:name,0.9
-10771766545,emoji,formula,regex:name,1.0
+10771743491,Survival,genre,roblox,1.0
+10771743491,Escape,subgenre,roblox,1.0
+10771743491,school,theme,keyword:description,0.4
 10771766545,Simulation,genre,roblox,1.0
 10771766545,job_shift,mechanic,keyword:description,0.4
 10771800287,base_building,feature,keyword:description,0.6
@@ -67554,7 +67652,7 @@ universe_id,tag,tag_type,source,confidence
 10771874494,pass_vip,feature,keyword:passes,0.7
 10771874494,rebirth,feature,keyword:description,0.6
 10771874494,emoji,formula,regex:name,1.0
-10771874494,update_tag,formula,regex:name,1.0
+10771874494,grow_a,formula,regex:name,1.0
 10771874494,Simulation,genre,roblox,1.0
 10771874494,collect_index,mechanic,keyword:description,0.6
 10771874494,grow_farm,mechanic,keyword:name,0.9
@@ -67567,17 +67665,42 @@ universe_id,tag,tag_type,source,confidence
 10771874494,eggs,theme,keyword:description,0.4
 10771874494,giant,theme,keyword:description,0.4
 10771874494,money,theme,keyword:description,0.4
+10771928551,daily_rewards,feature,keyword:description,0.6
+10771928551,luck_boost,feature,keyword:name,0.9
+10771928551,emoji,formula,regex:name,1.0
+10771928551,Simulation,genre,roblox,1.0
+10771928551,collect_index,mechanic,keyword:description,0.4
+10771928551,grow_farm,mechanic,keyword:description,0.4
+10771928551,sell_shop,mechanic,keyword:description,0.4
+10771928551,gardening_farming,niche,keyword:description,0.4
+10771928551,Incremental Simulator,subgenre,roblox,1.0
+10771966586,base_building,feature,keyword:description,0.6
+10771966586,stealing,feature,keyword:name,0.9
+10771966586,emoji,formula,regex:name,1.0
+10771966586,steal_a,formula,regex:name,1.0
+10771966586,Simulation,genre,roblox,1.0
+10771966586,collect_index,mechanic,keyword:description,0.4
+10771966586,escape_run,mechanic,keyword:description,0.4
+10771966586,race_drive,mechanic,keyword:description,0.4
+10771966586,steal_raid,mechanic,keyword:name,0.9
+10771966586,tycoon_build,mechanic,keyword:description,0.6
+10771966586,escape,niche,keyword:description,0.4
+10771966586,steal_a,niche,keyword:name,0.9
+10771966586,Tycoon,subgenre,roblox,1.0
+10771966586,money,theme,keyword:description,0.4
+10771966586,vehicles,theme,keyword:description,0.6
 10771991516,codes,feature,keyword:description,0.6
 10771991516,limited_events,feature,keyword:description,0.6
+10771991516,emoji,formula,regex:name,1.0
 10771991516,update_tag,formula,regex:name,1.0
-10771991516,Party & Casual,genre,roblox,1.0
+10771991516,Survival,genre,roblox,1.0
 10771991516,survive_nights,mechanic,keyword:description,0.4
-10771991516,Minigame,subgenre,roblox,1.0
+10771991516,1 vs All,subgenre,roblox,1.0
 10771991516,seasonal,theme,keyword:description,0.4
 10771996952,luck_boost,feature,keyword:name,0.9
 10771996952,pass_multiplier,feature,keyword:passes,0.7
 10771996952,emoji,formula,regex:name,1.0
-10771996952,Entertainment,genre,roblox,1.0
+10771996952,Simulation,genre,roblox,1.0
 10771996952,collect_index,mechanic,keyword:description,0.4
 10771996952,grow_farm,mechanic,keyword:description,0.4
 10771996952,sell_shop,mechanic,keyword:description,0.6
@@ -67607,6 +67730,7 @@ universe_id,tag,tag_type,source,confidence
 10772027067,pass_multiplier,feature,keyword:passes,0.7
 10772027067,pass_speed,feature,keyword:passes,0.7
 10772027067,pass_vip,feature,keyword:passes,0.7
+10772027067,update_tag,formula,regex:name,1.0
 10772027067,Action,genre,roblox,1.0
 10772027067,collect_index,mechanic,keyword:description,0.4
 10772027067,fight_battle,mechanic,keyword:description,0.4
@@ -67633,6 +67757,7 @@ universe_id,tag,tag_type,source,confidence
 10772041805,party_minigames,mechanic,keyword:description,0.4
 10772041805,anime_fighting,niche,keyword:description,0.4
 10772041805,Battlegrounds & Fighting,subgenre,roblox,1.0
+10772041805,giant,theme,keyword:name,0.9
 10772041805,robots,theme,keyword:description,0.4
 10772066587,codes,feature,keyword:description,0.6
 10772066587,pass_multiplier,feature,keyword:passes,0.7
@@ -67707,6 +67832,21 @@ universe_id,tag,tag_type,source,confidence
 10772287037,Roleplay & Avatar Sim,genre,roblox,1.0
 10772287037,Dress Up,subgenre,roblox,1.0
 10772287037,fashion,theme,keyword:name,0.9
+10772543706,base_building,feature,keyword:description,0.6
+10772543706,emoji,formula,regex:name,1.0
+10772543706,Simulation,genre,roblox,1.0
+10772543706,escape_run,mechanic,keyword:description,0.4
+10772543706,hit_swing,mechanic,keyword:description,0.4
+10772543706,race_drive,mechanic,keyword:description,0.4
+10772543706,tycoon_build,mechanic,keyword:description,0.6
+10772543706,escape,niche,keyword:description,0.4
+10772543706,incremental,niche,keyword:description,0.4
+10772543706,simulator,niche,keyword:description,0.4
+10772543706,Incremental Simulator,subgenre,roblox,1.0
+10772543706,giant,theme,keyword:description,0.4
+10772543706,money,theme,keyword:description,0.4
+10772543706,robots,theme,keyword:description,0.6
+10772543706,space,theme,keyword:name,0.9
 10772611738,pass_cosmetic,feature,keyword:passes,0.7
 10772611738,Simulation,genre,roblox,1.0
 10772611738,rng_roll,mechanic,keyword:name,0.9
@@ -67728,6 +67868,7 @@ universe_id,tag,tag_type,source,confidence
 10772879271,zombies,theme,keyword:description,0.6
 10773251883,shooter,niche,keyword:name,0.9
 10773907070,leaderboards,feature,keyword:description,0.6
+10773907070,pass_vip,feature,keyword:passes,0.7
 10773907070,one_word,formula,regex:name,1.0
 10773907070,Strategy,genre,roblox,1.0
 10773907070,job_shift,mechanic,keyword:description,0.4
