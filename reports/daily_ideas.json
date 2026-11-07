@@ -1,405 +1,407 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "ideas": [
     {
-      "title": "+1 Wind Grip 🌪️",
+      "title": "Smack Bugs for Bucks 🪰",
       "scope": "small",
-      "genre": "Incremental · Storm walk",
+      "genre": "Simulation · Launch for distance",
       "mechanics": [
-        "+1 stat per action",
-        "Escape / run"
+        "Hit / swing / launch",
+        "Collect / index"
       ],
-      "theme": "Disaster / weather",
-      "hook": "A tornado sits at the end of a long road and the wind pushes you back. Every step forward gives +1 grip, until you can walk straight into the eye of the storm.",
+      "theme": "Giant / huge",
+      "hook": "Giant bugs crawl into your backyard. Swing a fly swatter, launch them as far as you can, and get paid by distance and how rare the bug is.",
       "core_loop": [
-        "Walk into the wind (+1 grip per step)",
-        "Grab flying debris for bonus grip",
-        "Reach the next weather zone (rain, hail, tornado, hurricane)",
-        "Spend grip on boots and anchors that cut the push-back",
-        "Rebirth to face a bigger storm"
+        "Wait for a bug to land on your launch pad",
+        "Time your swing on the power bar",
+        "Earn cash by distance x bug rarity",
+        "Log new bugs in your bug book",
+        "Buy bigger swatters and unlock the next yard"
       ],
-      "twist": "Gusts come in waves. Crouch at the right moment or get blown back past your last checkpoint, so timing matters as much as stats.",
+      "twist": "Rare bugs fight back: a giant beetle can flip the swing and launch you instead, so you have to dodge before you swing.",
       "monetization": [
-        "2x grip pass",
-        "Auto-walk pass",
-        "Heavy boots (storage-style cap raise)",
-        "VIP gold anchor cosmetic"
+        "2x cash multiplier pass",
+        "VIP golden swatter",
+        "Luck pass for rare bug spawns",
+        "Extra launch pad pass"
       ],
       "retention": [
-        "Rebirth into bigger storms",
-        "Leaderboard for farthest into the eye",
-        "Limited weekend storms",
-        "Codes for boot skins"
+        "Bug book with mythic bugs to complete",
+        "New yards with bigger bugs",
+        "Daily bug of the day",
+        "Leaderboard for longest launch"
       ],
-      "why_now": "Disaster / weather sits at 1.74 momentum with 10 new games ([🎃] Steal A Pet And Ride It! 31,304 CCU, [🌊] Steal Eggs From Tsunami! 11,832), and no tracked +1 game uses weather yet. +1 stat per action is still at 2.01 with 38 new games (+1 Spider Arm🕷️ 30,244 at 18 days) even after slipping 0.25 this week, and the +1 + Escape pair already has 10 young games.",
+      "why_now": "Hit / swing / launch is the top rising mechanic at 2.69 (up 0.27 this week) with 32 new games, led by Throw Food For Animals at 316,388 CCU at 50 days. Giant / huge is at 1.73 with 14 new games, and Bug Evolution [🦟] already pulls 30,263 CCU at 29 days. The \"___ for ___\" formula is still at 1.63.",
+      "inspired_by": [
+        "Throw Food For Animals",
+        "Bug Evolution [🦟]",
+        "[X4] Kick a Lucky Block"
+      ],
+      "differentiator": "Throw Food launches an item at animals; here the creature is the projectile and can turn the tables on you.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
+    },
+    {
+      "title": "+1 Ladder Rung 🪜",
+      "scope": "small",
+      "genre": "Incremental · Climb",
+      "mechanics": [
+        "+1 stat per action",
+        "Obby / climb / jump"
+      ],
+      "theme": "Giant / huge",
+      "hook": "Every step you take adds +1 rung to your ladder. Grow it tall enough to reach a giant's castle in the clouds.",
+      "core_loop": [
+        "Walk to add +1 rung",
+        "Plant the ladder and climb",
+        "Grab sky coins on the way up",
+        "Spend coins on lighter, stronger ladders",
+        "Rebirth to reach the next giant's floor"
+      ],
+      "twist": "Tall ladders sway. Other players can shake the base of yours, so you have to balance on the way up or fall back to the ground.",
+      "monetization": [
+        "2x rungs pass",
+        "Auto-walk pass",
+        "Speed boots pass",
+        "Storage pass for more rungs",
+        "VIP gold ladder"
+      ],
+      "retention": [
+        "Rebirths unlock taller giants",
+        "Pets that add rungs",
+        "Daily rewards",
+        "Leaderboard for tallest ladder",
+        "Codes"
+      ],
+      "why_now": "+1 stat per action is at 2.04 with 38 new games even after slipping 0.35 this week, and the \"+1 ___\" title formula sits at 2.14. +1 Spider Arm🕷️ (29,709 CCU at 19 days) and Climb For Animals Eggs🥚 (26,385) show climbing works, and the +1 x Obby pair already has 4 new games with 33,215 CCU. Giant / huge is at 1.73.",
       "inspired_by": [
         "+1 Spider Arm🕷️",
-        "[🌊] Steal Eggs From Tsunami!",
+        "Climb For Animals Eggs🥚",
         "[🎃] +1 Venom Evolution"
       ],
-      "differentiator": "Other +1 runners grow a body part on a flat track; here the stat fights a visible force pushing back, with timed gusts as a skill check.",
+      "differentiator": "Most +1 games grow your body; this grows a physical ladder other players can see and shake.",
       "art_style": "simulator_bright",
       "map_style": "linear_course"
     },
     {
-      "title": "Repaint the Town 🎨",
+      "title": "Escape the Giant Chef 🍳",
       "scope": "medium",
-      "genre": "Simulation · Disaster cleanup",
+      "genre": "Survival · Round escape",
       "mechanics": [
-        "Paint / create",
-        "Tycoon / base building"
+        "Escape / run",
+        "Obby / climb / jump"
       ],
-      "theme": "Disaster / weather",
-      "hook": "Every few minutes a storm wrecks the town. You and your crew repaint and patch the houses, and owners pay by how close you get to the original look.",
+      "theme": "Food / candy",
+      "hook": "You are bite-sized and stuck in a giant's kitchen. Run across counters, hide in cups and reach the mouse hole before the chef cooks you.",
       "core_loop": [
-        "Wait out the disaster (flood, hail, tornado) in your van",
-        "Pick a damaged house and see its 'before' photo",
-        "Paint, patch and replace parts to match it",
-        "Get paid by match score",
-        "Upgrade brushes, sprayers and your crew yard"
+        "Spawn on the counter as a tiny snack",
+        "Run, jump and hide from the chef's hands",
+        "Grab crumbs for coins on the way",
+        "Reach the exit before the timer ends",
+        "Spend coins on snack skins and speed perks"
       ],
-      "twist": "Some owners hate the old look: match their 'wish' sketch instead for double pay, but miss and they pay nothing.",
+      "twist": "One player each round can become the chef, seeing the kitchen from above and grabbing runners with giant hands.",
       "monetization": [
-        "2x cash pass",
-        "Auto-sprayer pass",
-        "VIP crew van",
-        "Rainbow paint cosmetic pack"
-      ],
-      "retention": [
-        "Bigger towns unlock with crew level",
-        "Daily 'storm of the day'",
-        "Leaderboard for perfect matches",
-        "Codes for paint colours"
-      ],
-      "why_now": "Paint / create x Disaster / weather is one of the top gaps in the data (score 4.79). Paint / create is at 1.95 momentum with 18 new games ([🎃] Ragdoll Sandbox 20,794, Backseat Rally 15,044), and cleanup sims like [🎃] Clean the Moon! (9,663 CCU at 25 days) show players like fixing a mess.",
-      "inspired_by": [
-        "[🎃] Clean the Moon!",
-        "Paint and Hide! 🎨",
-        "[🚗] Create A Disaster💥"
-      ],
-      "differentiator": "Disaster games are about surviving the storm; this one starts after it, scoring how well you restore what it broke.",
-      "art_style": "stylized",
-      "map_style": "town_roleplay"
-    },
-    {
-      "title": "Storm Chaser Farm 🚜",
-      "scope": "large",
-      "genre": "Farming · Vehicle sim",
-      "mechanics": [
-        "Grow / farm",
-        "Race / drive"
-      ],
-      "theme": "Disaster / weather",
-      "hook": "Your farm is on the back of a truck. Drive it into storms on purpose: lightning, hail and twisters mutate your crops into rare, high-value harvests.",
-      "core_loop": [
-        "Plant seeds in your truck-bed plots",
-        "Check the radar and drive toward a storm",
-        "Hold position in the storm to mutate crops",
-        "Escape before the truck takes too much damage",
-        "Sell at the market and upgrade truck, plots and armour"
-      ],
-      "twist": "The closer to the storm's core, the rarer the mutation, but your truck can flip and spill half the harvest.",
-      "monetization": [
-        "2x crop value pass",
-        "Storm radar pass (shows rare storms)",
-        "Armoured truck",
-        "Extra plot rows"
-      ],
-      "retention": [
-        "Collect every mutation in an index",
-        "Rare weekly super-storms",
-        "Offline growing while parked",
-        "Codes for seeds"
-      ],
-      "why_now": "Grow / farm jumped 0.52 this week to 1.53 with 37 new games ([UPD] Durian Garden 🍈 14,339 at 16 days, [2x WEEKEND] Farm Evolution 10,249). Vehicle Sim is at 1.67 with 29 new games ([NEW LIMITED & UPDATE] Onthel Purwodadi 21,920), and Disaster / weather holds 1.74.",
-      "inspired_by": [
-        "[UPD] Durian Garden 🍈",
-        "[NEW LIMITED & UPDATE] Onthel Purwodadi",
-        "[🎃] Steal A Pet And Ride It!"
-      ],
-      "differentiator": "Weather in farm games just happens to you; here you drive the farm into it and risk the crop for the mutation.",
-      "art_style": "stylized",
-      "map_style": "open_world"
-    },
-    {
-      "title": "Guess the Vault 🏦",
-      "scope": "small",
-      "genre": "Party · Quiz duels",
-      "mechanics": [
-        "Quiz / guess",
-        "Party / minigames"
-      ],
-      "theme": "Money / rich",
-      "hook": "A vault door opens for three seconds. Everyone guesses how much cash is inside, and the closest guess without going over takes the pot.",
-      "core_loop": [
-        "Peek into the vault for 3 seconds",
-        "Type your guess",
-        "Reveal: closest without going over wins",
-        "Spend winnings on bigger vault tables",
-        "Climb from piggy banks to a billionaire's vault"
-      ],
-      "twist": "One vault per round is a trap filled with fake bills: call 'fake' instead of guessing to steal the pot.",
-      "monetization": [
-        "2x winnings pass",
-        "VIP table access",
-        "Extra peek second (developer product)",
-        "Gold suit cosmetic"
-      ],
-      "retention": [
-        "Ranked tables",
-        "Daily vault streak",
-        "Collect rare bills",
-        "Codes for cash"
-      ],
-      "why_now": "Quiz / guess x Money / rich is the top quiz gap (score 4.65). Quiz / guess is steady at 1.32 with 9 new games (Thai Quiz Duels [UPDATES] 8,288 at 20 days, [🎃] Don't Say The Obvious! 2,294). Money / rich is still 1.64 but cooled 0.40 this week, so this keeps the build small.",
-      "inspired_by": [
-        "Thai Quiz Duels [UPDATES]",
-        "[🎃] Don't Say The Obvious!",
-        "Scare Your Neighbor"
-      ],
-      "differentiator": "Quiz duels ask trivia; this is a pure eyeball-estimate game with a bluff round, so anyone can win.",
-      "art_style": "simulator_bright",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Giant's Game Night 🎲",
-      "scope": "medium",
-      "genre": "Party · Board game",
-      "mechanics": [
-        "Dice / cards",
-        "Party / minigames"
-      ],
-      "theme": "Giant / huge",
-      "hook": "You are a tiny game piece on a giant's table. Roll the dice to race across the board while the giant's hands, snacks and spilled drinks wreck the spaces.",
-      "core_loop": [
-        "Roll the dice to move",
-        "Land on spaces that trigger minigames or traps",
-        "Dodge the giant's hand and falling cards",
-        "Reach the finish first to win coins",
-        "Unlock new boards (kitchen table, kid's bedroom, casino)"
-      ],
-      "twist": "Last place gets to control the giant's hand for one turn and flick a leader off the board.",
-      "monetization": [
-        "Lucky dice pass",
-        "VIP piece skins",
+        "Speed pass",
         "2x coins pass",
-        "Extra roll (developer product)"
+        "VIP chef hat",
+        "Snack skin bundles"
       ],
       "retention": [
-        "New boards each update",
-        "Collect game-piece skins",
-        "Weekly tournament",
-        "Codes"
+        "New kitchens (bakery, sushi bar, candy factory)",
+        "Play as the chef unlock",
+        "Daily challenges",
+        "Streak rewards for escapes"
       ],
-      "why_now": "Dice / cards x Giant / huge is a gap in the data (score 3.14). Dice / cards rose 0.21 this week to 1.09 with 11 new games ([⚡] Steal a Superpower! 8,148, [🎉UPD 2] Roll A Stickman! 6,571), and Giant / huge holds 1.63 with 14 new games (Bug Evolution [🦟] 27,572 at 28 days).",
+      "why_now": "Interiors are the top rising map style at 2.08 with 56 new games, led by DONT SPLASH (82,358 CCU at 21 days). Escape / run is at 1.66 (up 0.24) with 36 new games, Food / candy is at 1.50 ([🍨CH2] Eat THE Ice Cream 10,442 CCU) and Giant / huge at 1.73.",
       "inspired_by": [
-        "[🎉UPD 2] Roll A Stickman!",
-        "Bug Evolution [🦟]",
-        "Raise The Biggest Family"
+        "DONT SPLASH",
+        "[🍨CH2] Eat THE Ice Cream",
+        "Sell Fries! [Anomaly] 🍟"
       ],
-      "differentiator": "Dice games on Roblox are roll-for-rarity; this is a real board race with a giant-sized physical world as the hazard.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Build a Prison 🔒",
-      "scope": "large",
-      "genre": "Tycoon · Asymmetric",
-      "mechanics": [
-        "Tycoon / base building",
-        "Escape / run"
-      ],
-      "theme": "Prison / police",
-      "hook": "Wardens build and run a prison for cash. Other players spawn as inmates and try to break out of it. Each escape costs the warden money.",
-      "core_loop": [
-        "Warden: place cells, walls, cameras and guards",
-        "Earn cash per inmate held per minute",
-        "Inmate: find weak spots, dig, sneak and run",
-        "Escaped inmates earn rewards and fame",
-        "Both sides upgrade between rounds"
-      ],
-      "twist": "Inmates can rate a prison after escaping. Low-rated prisons get flagged on the map and attract more inmates.",
-      "monetization": [
-        "Warden VIP (extra build budget)",
-        "Inmate tool packs",
-        "2x cash pass",
-        "Guard dog pass"
-      ],
-      "retention": [
-        "Prison ratings leaderboard",
-        "Visit and raid friends' prisons",
-        "Weekly security tech unlocks",
-        "Codes"
-      ],
-      "why_now": "Prison / police jumped 0.47 this week to 1.46 with 15 new games (Tesla Roadster Chase 13,247 at 16 days, Punch Out Of Prison 9,695). Escape / run rose 0.36 to 1.61 with 35 new games, and Tycoon / base building has 81 new games (🧸 My Small Business 15,468).",
-      "inspired_by": [
-        "Punch Out Of Prison",
-        "TROLL Jail Hug Tower",
-        "🧸 My Small Business"
-      ],
-      "differentiator": "Prison games give you a fixed map to escape; here players build the prison, so every escape route is different and someone's money rides on it.",
-      "art_style": "stylized",
-      "map_style": "plot_base"
-    },
-    {
-      "title": "Guilty or Not? ⚖️",
-      "scope": "small",
-      "genre": "Party · Courtroom quiz",
-      "mechanics": [
-        "Quiz / guess",
-        "Party / minigames"
-      ],
-      "theme": "Prison / police",
-      "hook": "Each round a suspect stands in court with three clues. Vote guilty or not guilty before the timer ends, then watch the reveal and the verdict.",
-      "core_loop": [
-        "Read the case and inspect the clues",
-        "Vote guilty or not guilty",
-        "See the reveal and earn coins for correct calls",
-        "Unlock harder cases and bigger courtrooms",
-        "Spend coins on judge and lawyer outfits"
-      ],
-      "twist": "One player each round is the secret culprit and can plant a fake clue; catch them for a bonus.",
-      "monetization": [
-        "Extra clue pass",
-        "VIP judge's bench",
-        "2x coins pass",
-        "Outfit packs"
-      ],
-      "retention": [
-        "Case of the day",
-        "Streak rewards",
-        "Leaderboard for correct verdicts",
-        "Codes"
-      ],
-      "why_now": "Quiz / guess x Prison / police is a gap in the data (score 3.0). Prison / police is up 0.47 week on week to 1.46, and quiz games like Thai Quiz Duels [UPDATES] (8,288 CCU at 20 days) and Find The Country 🌍 show the face-off format still pulls players.",
-      "inspired_by": [
-        "Thai Quiz Duels [UPDATES]",
-        "Find The Country 🌍",
-        "Tesla Roadster Chase"
-      ],
-      "differentiator": "Not a trivia quiz: each round is a short mystery, with a player-culprit that adds a social deduction layer.",
-      "art_style": "stylized",
-      "map_style": "lobby_rounds"
-    },
-    {
-      "title": "Human or Robot? 🤖",
-      "scope": "small",
-      "genre": "Party · Social deduction",
-      "mechanics": [
-        "Quiz / guess",
-        "Party / minigames"
-      ],
-      "theme": "Robots / mechs",
-      "hook": "A room full of identical robot workers. Some are players pretending to be robots. Watch how they move and guess who is human.",
-      "core_loop": [
-        "Join as a hidden human or as a detective",
-        "Humans copy the robot routines to blend in",
-        "Detectives scan and guess",
-        "Correct guesses earn coins, wrong ones cost them",
-        "Unlock new factories and robot skins"
-      ],
-      "twist": "Robots get a random 'glitch' every round, so even real robots sometimes act human.",
-      "monetization": [
-        "Extra scan pass",
-        "VIP factory",
-        "Robot skin packs",
-        "2x coins pass"
-      ],
-      "retention": [
-        "Ranked mode",
-        "Daily factory",
-        "Collect robot skins",
-        "Codes"
-      ],
-      "why_now": "Quiz / guess x Robots / mechs is a gap (score 3.0). Robots / mechs holds 1.78 momentum with 12 new games ([🎃] Clean the Moon! 9,663, [🔰] Steel Fighters 9,017) though it dipped 0.24 this week, so a small build fits.",
-      "inspired_by": [
-        "[🔰] Steel Fighters",
-        "[🎃] Clean the Moon!",
-        "[🎃] Don't Say The Obvious!"
-      ],
-      "differentiator": "Robot games are about fighting or cleaning; this one is about acting like a robot and spotting who isn't.",
+      "differentiator": "DONT SPLASH has a monster in a pool; here the threat is a giant you can see from a tiny point of view, and a player can control it.",
       "art_style": "stylized",
       "map_style": "interior"
     },
     {
-      "title": "Harvest Before Dark 🧟",
+      "title": "Sell Old Fits 🧥",
       "scope": "medium",
-      "genre": "Farming · Survival",
+      "genre": "Shopping · Shop sim",
       "mechanics": [
-        "Grow / farm",
-        "Survive"
+        "Sell / run a shop",
+        "Dress / style"
       ],
-      "theme": "Zombies",
-      "hook": "By day you farm. At night zombies come for your crops, and some crops fight back: pumpkin bombs, pea walls, garlic fog.",
+      "theme": "Money / rich",
+      "hook": "Buy bags of old clothes for cheap, restyle them into outfits and sell them in your secondhand shop. Picky customers pay more for the right look.",
       "core_loop": [
-        "Plant and water crops by day",
-        "Harvest some to sell, leave some planted to defend",
-        "Survive the night wave",
-        "Sell harvest and zombie drops",
-        "Expand the farm and unlock stronger crops"
+        "Buy mystery clothing bags",
+        "Wash, cut and restyle pieces",
+        "Dress mannequins in your window",
+        "Customers rate and buy outfits",
+        "Upgrade racks, mirrors and the shop floor"
       ],
-      "twist": "Crops that survive a night grow into a rare 'night' version worth five times more, so you have to risk your best plants.",
+      "twist": "Players can shop at each other's stores, and a top-rated outfit becomes the server's trend, raising prices for everyone selling that style.",
       "monetization": [
-        "2x harvest pass",
-        "Auto-water pass",
-        "Night-light VIP",
-        "Rare seed packs"
+        "2x cash pass",
+        "VIP shop decor",
+        "Speed restyle pass",
+        "Bigger storeroom pass"
       ],
       "retention": [
-        "Offline growing",
-        "Seed index",
-        "Blood-moon weekend events",
-        "Codes"
+        "Weekly trend themes",
+        "Rare designer pieces in bags",
+        "Shop rating leaderboard",
+        "Codes for decor"
       ],
-      "why_now": "Grow / farm is up 0.52 this week to 1.53 with 37 new games ([UPD] Durian Garden 🍈 14,339). Zombies rose 0.2 to 1.52 with 9 new games (Ragdoll Reality 🩸 24,415, [UPDATE 1.0] 30 Floors Up 6,366 at 12 days).",
+      "why_now": "Sell / run a shop is at 1.62 with 32 new games (🧸 My Small Business 19,093 CCU at 21 days, Sell a Million Sushi 12,753). Dress Up is up 0.28 to 1.27 (Evermore High 🦢 24,548, [🎃] Facecard: Makeup Showdown (Junior) 10,046 at 17 days), and the Sell x Tycoon pair has 7 new games with 37,072 CCU.",
       "inspired_by": [
-        "[UPD] Durian Garden 🍈",
-        "[2x WEEKEND] Farm Evolution",
-        "[UPDATE 1.0] 30 Floors Up"
+        "🧸 My Small Business",
+        "Evermore High 🦢",
+        "Sell a Million Sushi"
       ],
-      "differentiator": "Farm games are peaceful; this adds a nightly threat where your crops are both income and defence.",
+      "differentiator": "Shop games sell fixed goods; here you make each product by styling it, and other players set the trend.",
       "art_style": "stylized",
       "map_style": "plot_base"
     },
     {
-      "title": "Gravity Cards 🪐",
-      "scope": "medium",
-      "genre": "Card battler · Collection",
+      "title": "Guess the Engine 🏁",
+      "scope": "small",
+      "genre": "Party · Quiz",
       "mechanics": [
-        "Dice / cards",
-        "Collect / index"
+        "Quiz / guess",
+        "Race / drive"
       ],
-      "theme": "Space",
-      "hook": "Every card is a planet, moon or star with a gravity number. Play cards to pull your opponent's moons into your orbit and steal them.",
+      "theme": "Vehicles",
+      "hook": "Hear an engine, see a blurry outline and guess the car. Every right answer puts that car in your garage for the drag race at the end of the round.",
       "core_loop": [
-        "Open card packs",
-        "Build a 10-card deck",
-        "Duel: play planets to pull enemy moons",
-        "Win packs and moons",
-        "Fill your galaxy index"
+        "Listen to an engine and see a silhouette",
+        "Pick the car faster than others",
+        "Win the car into your round garage",
+        "Drag race your best car at round end",
+        "Earn coins for skins and hint tokens"
       ],
-      "twist": "Black hole cards are rare and pull everything, but you lose them after one use.",
+      "twist": "Wrong guesses give your rivals' cars a nitro boost, so guessing fast but wrong can cost you the race.",
       "monetization": [
-        "Pack bundles",
-        "2x pack luck pass",
-        "VIP galaxy room",
-        "Animated card skins"
+        "2x coins pass",
+        "VIP garage",
+        "Hint token packs"
       ],
       "retention": [
-        "Galaxy index",
-        "Ranked seasons",
-        "Daily free pack",
-        "Codes"
+        "Car collection book",
+        "Daily mystery car",
+        "Ranked guess duels",
+        "New car packs each update"
       ],
-      "why_now": "Dice / cards rose 0.21 this week to 1.09 with 11 new games ([⚡] Steal a Superpower! 8,148 at 27 days). Space holds 1.59 with 14 new games ([💉INJECTIONS] Ragdoll Playground 15,183, Sweep The Moon 🌕 3,816 at 14 days).",
+      "why_now": "Quiz / guess x Vehicles is a top gap (score 3.16). Vehicle Sim is up 0.35 to 1.68 with 29 new games, and Can You Pass A Driving Test? reached 19,023 CCU at 20 days with a test format. Quiz / guess is at 1.20 and realistic art is rising at 1.78.",
+      "inspired_by": [
+        "Can You Pass A Driving Test?",
+        "Kukirin Life [Testing]",
+        "Driving Empire [🏁NASCAR Championship Weekend🏁]"
+      ],
+      "differentiator": "Car quizzes stop at the answer; here answers become cars you race the same round.",
+      "art_style": "realistic",
+      "map_style": "lobby_rounds"
+    },
+    {
+      "title": "Roll Rooms for Loot 🎲",
+      "scope": "medium",
+      "genre": "RPG · Dice dungeon",
+      "mechanics": [
+        "Dice / cards",
+        "Fight / battle"
+      ],
+      "theme": "Fantasy / medieval",
+      "hook": "Your party rolls a giant die to build the dungeon one room at a time: treasure, trap, shop or boss. Push your luck or cash out.",
+      "core_loop": [
+        "Roll the giant die to make the next room",
+        "Clear it together (fight, dodge or loot)",
+        "Choose: keep going or cash out",
+        "Spend loot on heroes and luckier dice",
+        "Unlock deeper dungeons"
+      ],
+      "twist": "Each player can secretly swap one face of the die before a roll, so a teammate might be loading the dice for loot or for a boss.",
+      "monetization": [
+        "Luck pass",
+        "2x loot pass",
+        "Auto-roll pass",
+        "VIP hero",
+        "Bigger backpack (storage) pass"
+      ],
+      "retention": [
+        "Luck boosts and offline earnings from your guild hall",
+        "Leaderboard for deepest run",
+        "Codes",
+        "Weekly dice skins"
+      ],
+      "why_now": "Dice / cards is up 0.36 to 1.20 with 11 new games ([⚡] Steal a Superpower! 15,987 CCU at 28 days, [🎉UPD 2] Roll A Stickman! 6,631). Fantasy / medieval is at 1.39, and Dice x Fantasy is still an open gap (2.43).",
       "inspired_by": [
         "[⚡] Steal a Superpower!",
-        "Sweep The Moon 🌕",
-        "[🎉UPD 2] Roll A Stickman!"
+        "[🎉UPD 2] Roll A Stickman!",
+        "⚔️ [DUNGEON] Hunting Together RPG"
       ],
-      "differentiator": "Planet games are collect-and-steal sims; this is a simple head-to-head card duel built on one easy stat.",
+      "differentiator": "Dice games roll for units; here the roll builds the level your team plays.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Grow a Burger Tree 🍔",
+      "scope": "small",
+      "genre": "Simulation · Garden",
+      "mechanics": [
+        "Grow / farm",
+        "Cook / serve"
+      ],
+      "theme": "Food / candy",
+      "hook": "Plant a tree that grows buns, patties and lettuce. Stack the tallest burger you can and feed it to a hungry giant for cash.",
+      "core_loop": [
+        "Plant and water burger trees",
+        "Harvest buns, patties and toppings",
+        "Stack a burger on the counter",
+        "Feed it to the giant for cash by height",
+        "Buy rarer seeds (golden patty, rainbow cheese)"
+      ],
+      "twist": "Taller burgers pay more but wobble. Add one layer too many and it falls, so you choose when to stop.",
+      "monetization": [
+        "2x growth multiplier pass",
+        "VIP golden tree",
+        "Seed packs"
+      ],
+      "retention": [
+        "Rare seed drops",
+        "Giant's daily order",
+        "Grows offline",
+        "Codes"
+      ],
+      "why_now": "Grow / farm is up 0.30 to 1.46 with 39 new games, and giant crops are working: [UPD] Durian Garden 🍈 hit 14,229 CCU at 17 days. Giant / huge is at 1.73 and Food / candy at 1.50, with Throw Food For Animals at 316,388 CCU.",
+      "inspired_by": [
+        "[UPD] Durian Garden 🍈",
+        "[🐪] Grow a Garden 🌶️",
+        "Throw Food For Animals"
+      ],
+      "differentiator": "Garden games sell crops; here crops become a stacking skill check with a giant customer.",
       "art_style": "simulator_bright",
-      "map_style": "lobby_rounds"
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Doodle Ink in the Yard 🖋️",
+      "scope": "medium",
+      "genre": "Simulation · Prison art shop",
+      "mechanics": [
+        "Paint / create",
+        "Sell / run a shop"
+      ],
+      "theme": "Prison / police",
+      "hook": "You are the yard artist in a cartoon prison. Inmates ask for doodles on their jumpsuits and walls; draw them well and get paid in snacks and favors.",
+      "core_loop": [
+        "Take an order (a dragon, a flag, a name)",
+        "Draw it on the jumpsuit or wall",
+        "Get rated on how close it is",
+        "Earn snacks to trade for better pens and paint",
+        "Unlock new cell blocks with bigger jobs"
+      ],
+      "twist": "Guards patrol the yard. If they spot you drawing, hide the pen and act normal, or lose your art supplies.",
+      "monetization": [
+        "2x snacks pass",
+        "VIP pen set",
+        "Ink colour packs",
+        "Speed draw pass"
+      ],
+      "retention": [
+        "Wall of fame for top-rated art",
+        "New cell blocks",
+        "Daily request board",
+        "Codes for ink colours"
+      ],
+      "why_now": "Paint / create x Prison / police is the top gap in the data (score 5.22). Paint / create is at 2.11 (up 0.21, high confidence) with 19 new games (🎬 Make a Cartoon! 18,629 CCU at 28 days), and Prison / police is up 0.32 to 1.44 with 15 new games (13 Days to Escape [ALPHA] 13,243).",
+      "inspired_by": [
+        "🎬 Make a Cartoon!",
+        "13 Days to Escape [ALPHA]",
+        "Paint and Hide! 🎨"
+      ],
+      "differentiator": "Prison games are about escaping; this one is about making art inside, with a stealth layer from the guards.",
+      "art_style": "stylized",
+      "map_style": "interior"
+    },
+    {
+      "title": "Stunt Double Studio 🎬",
+      "scope": "large",
+      "genre": "Simulation · Physics stunts",
+      "mechanics": [
+        "Paint / create",
+        "Hit / swing / launch"
+      ],
+      "theme": "Vehicles",
+      "hook": "Build a movie stunt on your film lot with ramps, cars and explosions. Your ragdoll stunt double does it on camera, and the crowd pays for the best crash.",
+      "core_loop": [
+        "Pick a scene script (car jump, fall, explosion)",
+        "Place ramps, props and cameras on your lot",
+        "Yell action and watch the ragdoll stunt",
+        "Release the film and earn cash by crowd score",
+        "Unlock bigger sets and props"
+      ],
+      "twist": "Players can volunteer as each other's stunt doubles, so a friend's ragdoll can wreck your shot or win it.",
+      "monetization": [
+        "2x film cash pass",
+        "VIP director chair",
+        "Prop packs",
+        "Slow-motion camera pass"
+      ],
+      "retention": [
+        "Weekly film festival leaderboard",
+        "New genres (western, space, monster)",
+        "Replay sharing",
+        "Codes for props"
+      ],
+      "why_now": "Physics Sim is at 2.10 with 17 new games (Ragdoll Physics 🩸 28,760 CCU, [🧪] Ragdoll Research 24,664 at 10 days). Paint / create is at 2.11 (🎬 Make a Cartoon! 18,629), Hit / swing / launch is at 2.69, and the Hit x Race / drive pair has 4 new games with 40,468 CCU. Realistic art is rising at 1.78.",
+      "inspired_by": [
+        "Ragdoll Physics 🩸",
+        "[🧪] Ragdoll Research",
+        "🎬 Make a Cartoon!",
+        "Backseat Rally"
+      ],
+      "differentiator": "Ragdoll sandboxes have no goal; here every crash is a scene you design and get scored on.",
+      "art_style": "realistic",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Shelter the Town 🌪️",
+      "scope": "large",
+      "genre": "Tycoon · Disaster survival",
+      "mechanics": [
+        "Tycoon / base building",
+        "Survive"
+      ],
+      "theme": "Disaster / weather",
+      "hook": "Dig a storm shelter under your plot. When a disaster hits, townsfolk and other players pay to get in, and better rooms mean bigger fees.",
+      "core_loop": [
+        "Dig and build shelter rooms",
+        "Stock food, beds and lights",
+        "Disaster warning: open the doors and take fees",
+        "Repair damage after the storm",
+        "Expand deeper for bigger disasters"
+      ],
+      "twist": "If your walls fail, water or lava floods in mid-storm and your guests run to a rival's shelter, taking their fees with them.",
+      "monetization": [
+        "2x fees multiplier",
+        "VIP bunker suite",
+        "Auto-repair pass",
+        "Offline earnings boost"
+      ],
+      "retention": [
+        "Disaster schedule with rare events (meteor, volcano)",
+        "Deeper floors to unlock",
+        "Shelter rating leaderboard",
+        "Codes"
+      ],
+      "why_now": "Disaster / weather is at 1.76 with 10 new games ([🌊] Steal Eggs From Tsunami! 20,997 CCU, [⏳] Create A Disaster💥 7,188 at 21 days). Interiors are the top rising map style at 2.08, and Tycoon / base building is at 1.09 with 82 new games (🧸 My Small Business 19,093).",
+      "inspired_by": [
+        "[🌊] Steal Eggs From Tsunami!",
+        "[⏳] Create A Disaster💥",
+        "🧸 My Small Business"
+      ],
+      "differentiator": "Disaster games have you survive the event; here you profit from it by running the safe place.",
+      "art_style": "stylized",
+      "map_style": "plot_base"
     }
   ]
 }
