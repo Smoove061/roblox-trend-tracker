@@ -66,10 +66,9 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Realistic | 1.8x | high (41 new games, spread out) | 41 | 393,878 | 103 | Ragdoll Physics 🩸 (44,757) |
-| Voxel / blocky | 1.44x | high (10 new games, spread out) | 10 | 53,104 | 32 | Unstable SMP FFA [MINECRAFT PVP!] (13,764) |
-| Meme / chaotic | 1.24x | low (only 2 new games; one game holds 77% of new-game CCU) | 2 | 14,775 | 6 | 📸 Say Cheese! [STORY] (11,435) |
-| Bright simulator | 1.3x | high (68 new games, spread out) | 68 | 864,128 | 154 | Throw Food For Animals (314,117) |
+| Realistic | 2.03x | high (43 new games, spread out) | 43 | 502,880 | 106 | DONT SPLASH (87,736) |
+| Voxel / blocky | 1.78x | high (11 new games, spread out) | 11 | 84,126 | 33 | [🎃] Steal A Pet And Ride It! (31,022) |
+| Bright simulator | 1.25x | high (66 new games, spread out) | 66 | 812,699 | 152 | Throw Food For Animals (314,117) |
 | Low poly | 1.55x | medium (7 new games, top one 33% of their CCU) | 7 | 24,391 | 8 | Cook the Chicken (by slapping it) (8,109) |
 
 ## Rising map styles
@@ -77,7 +76,8 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
 | Interiors / corridors | 2.09x | high (56 new games, spread out) | 56 | 515,299 | 156 | DONT SPLASH (87,736) |
-| Hub + zones / worlds | 1.89x | medium (98 new games, top one 54% of their CCU) | 98 | 582,029 | 907 | Throw Food For Animals (314,117) |
+| Linear course / stages | 1.9x | medium (68 new games, top one 58% of their CCU) | 68 | 542,679 | 893 | Throw Food For Animals (314,117) |
+| Hub + zones / worlds | 1.08x | high (96 new games, spread out) | 96 | 234,018 | 904 | [🎃] +1 Venom Evolution (35,108) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
