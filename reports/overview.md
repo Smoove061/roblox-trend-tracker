@@ -13,7 +13,7 @@
 | Social | -1% | |  |  |
 | Shopping | -4% | |  |  |
 | Sports & Racing | -7% | |  |  |
-| Adventure | -7% | |  |  |
+| Roleplay & Avatar Sim | -7% | |  |  |
 
 ### Mechanics (ranked against the market)
 
