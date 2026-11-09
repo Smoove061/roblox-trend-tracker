@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-09T09:56:34Z",
+  "as_of": "2026-11-09T13:00:22Z",
   "baseline": {
     "icon": {
       "hues": [
@@ -99,9 +99,9 @@
       "art_styles": {
         "anime": 1,
         "classic_studs": 1,
-        "realistic": 3,
+        "realistic": 4,
         "simulator_bright": 1,
-        "stylized": 3,
+        "stylized": 2,
         "voxel_blocky": 2
       },
       "games": [
@@ -234,11 +234,11 @@
         },
         {
           "age": 23,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7690,
           "icon": "10771544071_i.jpg",
           "id": "10771544071",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771544071_m0.jpg",
             "10771544071_m1.jpg",
@@ -394,9 +394,9 @@
       "key": "Action",
       "label": "Action",
       "map_styles": {
-        "arena": 7,
+        "arena": 6,
         "lobby_rounds": 1,
-        "open_world": 2,
+        "open_world": 3,
         "town_roleplay": 1,
         "zone_progression": 1
       },
@@ -2700,9 +2700,9 @@
     },
     "genre:RPG": {
       "art_styles": {
-        "anime": 5,
+        "anime": 6,
         "simulator_bright": 1,
-        "stylized": 3
+        "stylized": 2
       },
       "games": [
         {
@@ -2755,7 +2755,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -3101,8 +3101,8 @@
     },
     "genre:Roleplay & Avatar Sim": {
       "art_styles": {
-        "realistic": 2,
-        "stylized": 9
+        "realistic": 3,
+        "stylized": 8
       },
       "games": [
         {
@@ -3171,7 +3171,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -3510,8 +3510,8 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 3,
-        "simulator_bright": 2,
-        "stylized": 2,
+        "simulator_bright": 3,
+        "stylized": 1,
         "voxel_blocky": 2
       },
       "games": [
@@ -3549,7 +3549,7 @@
         },
         {
           "age": 204,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 14936,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -5717,9 +5717,9 @@
       "art_styles": {
         "classic_studs": 1,
         "dark_gritty": 4,
-        "realistic": 1,
+        "realistic": 2,
         "simulator_bright": 1,
-        "stylized": 5
+        "stylized": 4
       },
       "games": [
         {
@@ -5898,7 +5898,7 @@
         },
         {
           "age": 15,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7459,
           "icon": "10772879271_i.jpg",
           "id": "10772879271",
@@ -6119,11 +6119,11 @@
     },
     "mechanic:break_mine": {
       "art_styles": {
-        "anime": 1,
+        "anime": 2,
         "dark_gritty": 1,
         "realistic": 1,
         "simulator_bright": 3,
-        "stylized": 5
+        "stylized": 4
       },
       "games": [
         {
@@ -6192,7 +6192,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -6578,7 +6578,7 @@
     "mechanic:clicker": {
       "art_styles": {
         "anime": 1,
-        "classic_studs": 1,
+        "meme_chaotic": 1,
         "realistic": 2,
         "simulator_bright": 3,
         "stylized": 4,
@@ -6683,7 +6683,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -7029,8 +7029,8 @@
     },
     "mechanic:collect_index": {
       "art_styles": {
-        "simulator_bright": 6,
-        "stylized": 6
+        "simulator_bright": 5,
+        "stylized": 7
       },
       "games": [
         {
@@ -7163,7 +7163,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -7896,7 +7896,7 @@
           "ccu": 33347,
           "icon": "10708913337_i.jpg",
           "id": "10708913337",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10708913337_m0.jpg",
             "10708913337_m1.jpg"
@@ -8182,9 +8182,9 @@
       "label": "Dice / cards",
       "map_styles": {
         "lobby_rounds": 1,
-        "open_world": 1,
+        "open_world": 2,
         "plot_base": 5,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -8283,60 +8283,68 @@
       "members_hash": "ecbfabcc0a",
       "type": "mechanic",
       "vision": {
-        "art_style": "Anime/stylized glow in about 6/12; bright simulator in 4/12.",
+        "art_style": "Anime-heavy (about 6/12) mixed with bright simulator renders; strong glow and VFX throughout.",
         "avoid": [
-          "Grids of many small cards",
-          "Dim lighting"
+          "Static card grids without a focal pull",
+          "Muted colours"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: a hand ripping open a pack with a glowing legendary card bursting out. Thumbnail: the card held up with '1 in 10,000,000' in rainbow text and the player's shocked face.",
+        "date": "2026-11-09",
+        "direction": "Icon: a hand holding a glowing legendary card toward the camera with a lightning burst behind. Thumbnail: avatar grinning beside a mystery ? card, a red arrow to a revealed rare card and 0.01% odds in rainbow text.",
         "do": [
-          "Hold up one glowing card with a rarity tag",
-          "Show the odds number in rainbow text",
-          "Use a pack-opening hand shot",
-          "Add golden or purple aura"
+          "Hold a glowing card or pack right at the camera with a ? or legendary art",
+          "Add a tiny odds number in rainbow text",
+          "Use radial lightning/sparkle bursts behind the card",
+          "Use a grinning avatar reacting to the pull"
         ],
         "icon_patterns": [
           {
+            "count": "6/12",
+            "pattern": "Anime-style character or hero as the subject"
+          },
+          {
             "count": "5/12",
-            "pattern": "anime character art"
+            "pattern": "Card, pack or dice held up or shown prominently"
           },
           {
-            "count": "4/12",
-            "pattern": "glowing card or pack as hero"
-          },
-          {
-            "count": "2/12",
-            "pattern": "hourglass countdown overlay"
-          }
-        ],
-        "members_hash": "626c7a789d",
-        "newcomer_shift": "NEW games apply card collecting to cozy themes (cats, hockey card shop, makeup) instead of anime.",
-        "source": "vision",
-        "summary": "Card/dice games lead with a glowing rare card or an anime character and huge odds or value numbers.",
-        "text_usage": "Odds and income numbers; game logos.",
-        "thumbnail_patterns": [
-          {
-            "count": "4/12",
-            "pattern": "rare card or ? card held up glowing"
-          },
-          {
-            "count": "3/12",
-            "pattern": "odds or value number (1 in 9,342,584, $/s)"
+            "count": "7/12",
+            "pattern": "Fiery gold/red or electric blue glow effects"
           },
           {
             "count": "6/12",
-            "pattern": "dramatic lighting / aura effects"
+            "pattern": "Logo or number text on the icon"
+          }
+        ],
+        "members_hash": "ecbfabcc0a",
+        "newcomer_shift": "NEW games show first-person hands holding cards or packs (Wave Cat legendary, mystery card with 0.013%), cosy collectible themes (cats) and a card-shop angle.",
+        "source": "vision",
+        "summary": "Dice/card games sell the rare pull: a glowing card, mystery ? card or dice roll held toward camera with tiny odds text (1 in 9,342,584, 0.013%) and anime-style heroes.",
+        "text_usage": "Rarity odds and income numbers in rainbow or gold text; logos (Anime Card Clash, Anime Duels, My Trading Card Shop).",
+        "thumbnail_patterns": [
+          {
+            "count": "5/12",
+            "pattern": "Card or pack held toward the camera, often with a ? mystery face"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Tiny odds or huge rarity number (1 in 9,342,584, 0.013%)"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Anime character panels side by side"
+          },
+          {
+            "count": "6/12",
+            "pattern": "Lightning, sparkle or radial burst background"
           }
         ]
       }
     },
     "mechanic:dress_style": {
       "art_styles": {
-        "anime": 3,
+        "anime": 2,
         "realistic": 1,
         "simulator_bright": 1,
-        "stylized": 4
+        "stylized": 5
       },
       "games": [
         {
@@ -8453,7 +8461,7 @@
         },
         {
           "age": 3500,
-          "art_style": "anime",
+          "art_style": "stylized",
           "ccu": 6750,
           "icon": "321778215_i.jpg",
           "id": "321778215",
@@ -8736,11 +8744,11 @@
     },
     "mechanic:escape_run": {
       "art_styles": {
-        "classic_studs": 1,
         "dark_gritty": 2,
-        "realistic": 1,
+        "meme_chaotic": 1,
+        "realistic": 2,
         "simulator_bright": 4,
-        "stylized": 3,
+        "stylized": 2,
         "voxel_blocky": 1
       },
       "games": [
@@ -8826,7 +8834,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -8842,7 +8850,7 @@
         },
         {
           "age": 15,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7459,
           "icon": "10772879271_i.jpg",
           "id": "10772879271",
@@ -9138,50 +9146,58 @@
       "members_hash": "20a6646262",
       "type": "mechanic",
       "vision": {
-        "art_style": "Split between bright simulator (6/12) and dark horror/realistic (5/12).",
+        "art_style": "Mostly bright stylized/simulator renders (8/12); a few dark horror-style scenes for survival escapes.",
         "avoid": [
-          "Static scenes with no threat",
-          "Small unreadable text"
+          "Empty corridors with no visible threat",
+          "Long sentences of text"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: panicked avatar sprinting with the threat close behind. Thumbnail: first-person hands reaching for the exit while the threat looms, bright warning red accents.",
+        "date": "2026-11-09",
+        "direction": "Icon: first-person fists or a panicked avatar breaking through a wall toward daylight, bold comic title. Thumbnail: a giant hazard behind the player, red arrows and a tiny % rare reward glowing in the corner.",
         "do": [
-          "Put the threat and the player in one frame",
-          "Use a first-person view toward the exit",
-          "Add a panicked face",
-          "Use the hourglass overlay only around update drops"
+          "Show the escape obstacle huge and the avatar small and panicking",
+          "Use a first-person hands-in-frame view of the escape action",
+          "Add red arrows, !! marks and short labels like YOU",
+          "Add a rare glowing prize or tiny % to hint at luck"
         ],
         "icon_patterns": [
           {
-            "count": "4/12",
-            "pattern": "white hourglass countdown overlay with time text (12 HOURS / NOW / NEW UPDATE)"
-          },
-          {
-            "count": "5/12",
-            "pattern": "bacon-hair avatar with panicked face"
-          },
-          {
-            "count": "4/12",
-            "pattern": "dark horror palette"
-          }
-        ],
-        "members_hash": "661f641524",
-        "newcomer_shift": "NEW games use first-person views (punch walls, big red button, buckets of water) and click-count hooks.",
-        "source": "vision",
-        "summary": "Escape games mix hourglass countdown icons with bacon-hair panic shots and first-person 'break out' views.",
-        "text_usage": "Countdown icons carry big white time text; thumbnails mostly use short callouts.",
-        "thumbnail_patterns": [
-          {
-            "count": "4/12",
-            "pattern": "first-person hands (punching, holding hammer, approaching)"
-          },
-          {
-            "count": "5/12",
-            "pattern": "threat chasing the player in frame"
+            "count": "7/12",
+            "pattern": "Avatar with an exaggerated face (panic or smug grin) facing a hazard"
           },
           {
             "count": "3/12",
-            "pattern": "red/arrow callouts (YOU!, !!)"
+            "pattern": "Hourglass / timer or NOW!! / NEW UPDATE text banner"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Floating +1 counters"
+          },
+          {
+            "count": "3/12",
+            "pattern": "First-person hands in view (punching, pressing button, holding item)"
+          }
+        ],
+        "members_hash": "20a6646262",
+        "newcomer_shift": "NEW games favour first-person hand shots (punching through a wall, pressing a red button, a guard ahead) and big comic-style title text.",
+        "source": "vision",
+        "summary": "Escape games sell the threat or the trick: a big hazard (wave, wall, guard, timer) next to a panicked or smug avatar, with +1 counters and arrows on the simulator-style ones.",
+        "text_usage": "Short punchy words: NOW!!, NEW UPDATE!, PUNCH OUT OF PRISON, +1, E CLICK, 0.001%; often big outlined comic text.",
+        "thumbnail_patterns": [
+          {
+            "count": "6/12",
+            "pattern": "Huge hazard or obstacle dominating the frame (tsunami, wall, guard, UFO)"
+          },
+          {
+            "count": "5/12",
+            "pattern": "Red arrows / YOU labels / exclamation marks pointing at the player"
+          },
+          {
+            "count": "3/12",
+            "pattern": "First-person POV with hands in the foreground"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Rainbow or glowing rare item as the prize"
           }
         ]
       }
@@ -9599,8 +9615,8 @@
     "mechanic:fishing": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 5,
-        "stylized": 2
+        "simulator_bright": 2,
+        "stylized": 5
       },
       "games": [
         {
@@ -9637,7 +9653,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -9667,7 +9683,7 @@
         },
         {
           "age": 798,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 8717,
           "icon": "6504986360_i.jpg",
           "id": "6504986360",
@@ -9699,11 +9715,11 @@
         },
         {
           "age": 73,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 6878,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -9893,9 +9909,9 @@
       "map_styles": {
         "arena": 1,
         "interior": 1,
-        "open_world": 5,
+        "open_world": 6,
         "plot_base": 1,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -9998,9 +10014,10 @@
     },
     "mechanic:forge_craft": {
       "art_styles": {
+        "anime": 1,
         "dark_gritty": 4,
         "simulator_bright": 2,
-        "stylized": 2
+        "stylized": 1
       },
       "games": [
         {
@@ -10021,7 +10038,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -10445,8 +10462,8 @@
     "mechanic:grow_farm": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 4,
-        "stylized": 5
+        "simulator_bright": 3,
+        "stylized": 6
       },
       "games": [
         {
@@ -10558,11 +10575,11 @@
         },
         {
           "age": 73,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 6878,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -10737,9 +10754,9 @@
       "label": "Grow / farm",
       "map_styles": {
         "interior": 1,
-        "open_world": 1,
+        "open_world": 2,
         "plot_base": 7,
-        "zone_progression": 3
+        "zone_progression": 2
       },
       "media": {
         "hues": [
@@ -10841,50 +10858,58 @@
       "members_hash": "d98b651cad",
       "type": "mechanic",
       "vision": {
-        "art_style": "Bright stylized/simulator in about 7/12; realistic animals in 3/12.",
+        "art_style": "Mostly bright stylized renders (8/12) with a few realistic animal-survival shots (tiger, crocodile) and one low-poly.",
         "avoid": [
-          "Dark night scenes",
-          "Many small crops with no focus"
+          "Wide shots of empty fields",
+          "Dark palettes unless it is a survival game"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: a giant glowing crop with a tiny farmer looking up. Thumbnail: left side small plot $0, right side overgrown farm $1,000,000, coins flying.",
+        "date": "2026-11-09",
+        "direction": "Icon: a giant shiny crop or creature filling the frame with a tiny excited avatar beside it, bright green farm behind. Thumbnail: first-person tool hitting the crop with an E-key prompt, coins bursting and a $0 to $1,000,000 contrast.",
         "do": [
-          "Make the crop absurdly big next to the player",
-          "Show a $0 vs $1M split if money is the hook",
-          "Use an 'E' interaction prompt to show the verb",
-          "Use green and yellow dominant palette"
+          "Make one crop or creature huge and glossy in the centre",
+          "Put a small shocked avatar beside it for scale",
+          "Use lush saturated greens and a sunny sky",
+          "Add an E-key action badge showing the core verb"
         ],
         "icon_patterns": [
           {
+            "count": "8/12",
+            "pattern": "One oversized crop, creature or animal as the hero subject"
+          },
+          {
             "count": "6/12",
-            "pattern": "one giant crop/creature dwarfing the player"
+            "pattern": "Small avatar reacting next to the big subject"
+          },
+          {
+            "count": "7/12",
+            "pattern": "Lush green/jungle or bright farm backgrounds"
           },
           {
             "count": "4/12",
-            "pattern": "big title text (GROW OFFLINE, RUN A FARM, ABOVE)"
-          },
-          {
-            "count": "4/12",
-            "pattern": "wild animal or predator close-up"
+            "pattern": "Title or UPDATE banner text"
           }
         ],
-        "members_hash": "80669d4890",
-        "newcomer_shift": "NEW games show realistic animals or a bright 'E CHOP' interaction prompt over a fantasy tree.",
+        "members_hash": "d98b651cad",
+        "newcomer_shift": "NEW games add first-person tool views with E-key prompts (chop, capture) and realistic animal close-ups; one uses a giant hand reaching for avatar-faced potatoes.",
         "source": "vision",
-        "summary": "Grow games show one oversized crop or creature next to a small player, often with a money jump.",
-        "text_usage": "Short headline words on 4 icons; money values on progression shots.",
+        "summary": "Grow/farm icons centre one oversized crop, creature or animal close to camera with a small avatar beside it, in lush greens; creature-collection entries use dramatic close-up beasts.",
+        "text_usage": "Short titles (GROW OFFLINE, RUN A FARM, ABOVE), money numbers and E-key action prompts; icons often text-free.",
         "thumbnail_patterns": [
           {
-            "count": "5/12",
-            "pattern": "huge item vs tiny player scale contrast"
+            "count": "6/12",
+            "pattern": "Giant crop or creature filling most of the frame"
           },
           {
             "count": "2/12",
-            "pattern": "money or $0 to $1,000,000 progression"
+            "pattern": "Money/progression contrast ($0 vs $1,000,000) or coin bursts"
           },
           {
-            "count": "6/12",
-            "pattern": "lush green / jungle background"
+            "count": "2/12",
+            "pattern": "Action prompt badge (E CAPTURE, E CHOP)"
+          },
+          {
+            "count": "5/12",
+            "pattern": "Shocked or excited avatar faces"
           }
         ]
       }
@@ -10893,8 +10918,9 @@
       "art_styles": {
         "anime": 1,
         "dark_gritty": 1,
-        "simulator_bright": 9,
-        "stylized": 1
+        "meme_chaotic": 1,
+        "simulator_bright": 7,
+        "stylized": 2
       },
       "games": [
         {
@@ -11043,7 +11069,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -11059,7 +11085,7 @@
         },
         {
           "age": 36,
-          "art_style": "simulator_bright",
+          "art_style": "meme_chaotic",
           "ccu": 13738,
           "icon": "10769384180_i.jpg",
           "id": "10769384180",
@@ -11703,67 +11729,73 @@
       "members_hash": "68aa54d428",
       "type": "mechanic",
       "vision": {
-        "art_style": "Bright stylized/simulator look in about 8/12; grey-white realistic-lit ragdoll labs in 4/12.",
+        "art_style": "Mostly stylized/bright Roblox renders with classic blocky avatars (about 9/12); a few darker anime-style fighter shots.",
         "avoid": [
-          "Dark busy backgrounds",
-          "Long titles on the icon"
+          "Dark, static portraits with nothing being hit",
+          "Busy text blocks on the icon"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: one character launched diagonally across a blue sky with a yellow arc trail and a shocked face. Thumbnail: first-person fist or tool connecting, debris flying, a 2-word feature label in white block text.",
+        "date": "2026-11-09",
+        "direction": "Icon: one blocky character or white ragdoll dummy caught mid-launch with a shocked face against bright sky, debris flying. Thumbnail: a wide daylight scene with a curved yellow trajectory line ending in the target, a big reward number or % label, and bodies or objects scattered mid-air.",
         "do": [
-          "Freeze the exact moment of impact with a visible arc or speed lines",
-          "Give the hit character a panicked face",
-          "Use a clean bright sky background so the subject pops",
-          "Add debris or a small explosion at the contact point"
+          "Freeze the moment of impact: show the object or body mid-flight with a bright motion arc",
+          "Use a blocky avatar with an exaggerated shocked face, close and large in frame",
+          "Keep a bright blue-sky, green-ground daylight palette",
+          "Put debris, projectiles or limbs scattered in the air for chaos",
+          "Keep the icon text-free; save any number or title for the thumbnail"
         ],
         "icon_patterns": [
           {
-            "count": "9/12",
-            "pattern": "character or ragdoll caught mid-impact or mid-flight"
+            "count": "10/12",
+            "pattern": "Single character or creature in a dynamic action pose (swinging, punching, flying)"
           },
           {
             "count": "7/12",
-            "pattern": "bright blue sky / green grass background"
+            "pattern": "Bright blue-sky / green-grass daylight background"
           },
           {
             "count": "4/12",
-            "pattern": "white featureless ragdoll dummy as subject"
+            "pattern": "White blank ragdoll dummy figure as the subject"
           },
           {
-            "count": "3/12",
-            "pattern": "bold title text on icon"
+            "count": "5/12",
+            "pattern": "Shocked or panicked face on the character"
+          },
+          {
+            "count": "10/12",
+            "pattern": "Little or no text on the icon"
           }
         ],
-        "members_hash": "21a7c61e02",
-        "newcomer_shift": "NEW games lean on first-person fists breaking walls or 'E HIT' prompts and realistic ragdoll sandboxes rather than character mascots.",
+        "members_hash": "68aa54d428",
+        "newcomer_shift": "NEW games (9-12) use white faceless ragdoll dummies and physics chaos (bodies flying, collapsing bridges) rather than a hero avatar; one uses a dark Venom-style character with bold title text.",
         "source": "vision",
-        "summary": "Physics hit games sell the impact moment: a character mid-launch, ragdolled or punching, on bright sky-blue or grass backgrounds.",
-        "text_usage": "Mostly no text or a 2-3 word label; money/odds numbers ($999B, 1%, PHOENIX $/s) on 3 steal/throw hybrids.",
+        "summary": "Bright daylight scenes of a blocky Roblox character mid-hit or mid-launch, with a visible motion arc, flying objects or ragdoll bodies; newcomers lean on white ragdoll dummies.",
+        "text_usage": "Icons are mostly text-free; thumbnails use occasional big outlined title text or huge money numbers ($999,999,999B) and small % chance labels.",
         "thumbnail_patterns": [
           {
+            "count": "4/12",
+            "pattern": "Yellow or coloured motion arc / trail showing the throw or launch path"
+          },
+          {
             "count": "6/12",
-            "pattern": "motion trail, arc or speed lines showing the launch path"
-          },
-          {
-            "count": "5/12",
-            "pattern": "shocked/scared face on the hit character"
-          },
-          {
-            "count": "5/12",
-            "pattern": "debris, explosions or arrows stuck in a ragdoll"
+            "pattern": "Projectiles or debris frozen mid-air (arrows, weapons, rubble)"
           },
           {
             "count": "3/12",
-            "pattern": "short feature label text (SUPERPOWER PHYSICS, MULTIPLAYER)"
+            "pattern": "Large bold white title text with dark outline"
+          },
+          {
+            "count": "8/12",
+            "pattern": "Daylight outdoor scene with saturated colours"
           }
         ]
       }
     },
     "mechanic:job_shift": {
       "art_styles": {
+        "anime": 1,
         "dark_gritty": 3,
         "realistic": 5,
-        "stylized": 3
+        "stylized": 2
       },
       "games": [
         {
@@ -11832,7 +11864,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -12164,44 +12196,58 @@
       "members_hash": "4cc0136f95",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mixed: realistic/stylized vehicles, dark_gritty horror jobs, simulator_bright newcomers.",
+        "art_style": "Split between dark/gritty horror (about 5/12) and realistic/stylized vehicle renders (about 5/12), plus anime.",
         "avoid": [
-          "Generic logo-only icons"
+          "Flat daylight scenes with nothing going wrong",
+          "Long instructional text"
         ],
-        "date": "2026-11-05",
-        "direction": "Icon: first-person hands using the job tool with a dramatic effect. Thumbnail: the job scene at its most intense moment.",
+        "date": "2026-11-09",
+        "direction": "Icon: first-person hands gripping the job tool with the hazard lit up ahead (fire, monster, angry customer). Thumbnail: a dim workplace interior with one bright danger source and a lurking figure at the doorway.",
         "do": [
-          "Show the job's tool in first person",
-          "Use dramatic VFX (fire, sparks, sizzle)",
-          "Keep a clear job uniform or vehicle"
+          "Use a first-person view holding the job tool aimed at the job",
+          "Show the danger of the shift: fire, a lurking figure, a ticking clock",
+          "Use strong contrast lighting (dark scene, bright hazard)",
+          "Keep text to a short logo"
         ],
         "icon_patterns": [
           {
             "count": "5/12",
-            "pattern": "vehicle hero shot"
+            "pattern": "Dark, red or green low-key horror lighting"
           },
           {
             "count": "4/12",
-            "pattern": "dark horror palette"
+            "pattern": "Vehicle as the hero subject"
+          },
+          {
+            "count": "5/12",
+            "pattern": "Logo title on the icon"
           },
           {
             "count": "2/12",
-            "pattern": "first-person tool in hand"
+            "pattern": "First-person hands holding a job tool (hose, knife)"
           }
         ],
-        "members_hash": "1e24c7f9f6",
-        "newcomer_shift": "NEW games use first-person tool shots (fire hose, spatula) and dramatic fire/food VFX.",
+        "members_hash": "4cc0136f95",
+        "newcomer_shift": "NEW games use first-person POV holding the job tool (fire hose at a burning house, knife facing a guard) and dark anomaly workplaces.",
         "source": "vision",
-        "summary": "Job/shift games mix vehicle hero shots with first-person work views; newcomers show the job's action (hose, spatula) mid-task.",
-        "text_usage": "Logos and codes; little else.",
+        "summary": "Job/shift games split between moody horror workplaces (dark rooms, monsters at doors) and bright vehicle/job action shots; newcomers favour first-person shots holding the job tool.",
+        "text_usage": "Logos (Driving Empire, DOORS, Drag & Drive) on icons and thumbnails; otherwise minimal text.",
         "thumbnail_patterns": [
           {
-            "count": "6/12",
-            "pattern": "job action mid-task (driving, firefighting, flipping burgers)"
+            "count": "4/12",
+            "pattern": "Dark interior corridor/room with a lurking figure"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Vehicle action shot in daylight"
           },
           {
             "count": "3/12",
-            "pattern": "dark interior with a monster"
+            "pattern": "Fire, smoke or glowing danger effects"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Panicked character faces"
           }
         ]
       }
@@ -12615,8 +12661,7 @@
       "art_styles": {
         "classic_studs": 1,
         "realistic": 1,
-        "simulator_bright": 8,
-        "stylized": 1,
+        "simulator_bright": 9,
         "voxel_blocky": 1
       },
       "games": [
@@ -12718,7 +12763,7 @@
         },
         {
           "age": 204,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 14936,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -13063,10 +13108,9 @@
     },
     "mechanic:paint_create": {
       "art_styles": {
-        "anime": 1,
         "realistic": 4,
         "simulator_bright": 1,
-        "stylized": 3,
+        "stylized": 4,
         "voxel_blocky": 1
       },
       "games": [
@@ -13152,7 +13196,7 @@
         },
         {
           "age": 3500,
-          "art_style": "anime",
+          "art_style": "stylized",
           "ccu": 6750,
           "icon": "321778215_i.jpg",
           "id": "321778215",
@@ -13469,50 +13513,58 @@
       "members_hash": "2b7230098b",
       "type": "mechanic",
       "vision": {
-        "art_style": "Split: realistic/semi-realistic (vehicles, desert) in about 5/12, stylized cartoon in 5/12.",
+        "art_style": "Split: about half bright stylized Roblox renders, about a third realistic vehicle/sandbox shots, plus one anime and one voxel build.",
         "avoid": [
-          "Cluttered UI screenshots",
-          "Small characters with no focal object"
+          "Generic sandbox landscapes with no clear action",
+          "Dim, muddy realistic scenes for a creation game"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: tight close-up of the creation mid-process with a hand and tool. Thumbnail: half-before/half-after split of the same object, bright and clean, no text.",
+        "date": "2026-11-09",
+        "direction": "Icon: a hand or avatar holding a pencil/brush over a bright, half-finished creation that fills the frame. Thumbnail: split-screen of two players' creations with big green and red score percentages above each.",
         "do": [
-          "Show the object half-transformed (before/after on one canvas)",
-          "Use a first-person hand holding the tool",
-          "Pick a satisfying texture close-up",
-          "Keep text off the thumbnail"
+          "Show the thing being created large in frame, mid-creation",
+          "Put a tool in a hand (pencil, brush, spray gun) pointing at it",
+          "Use a comparison layout with score % to show judging",
+          "Keep colours candy-bright and backgrounds simple"
         ],
         "icon_patterns": [
           {
-            "count": "6/12",
-            "pattern": "the created object or vehicle as the hero, not a character"
+            "count": "4/12",
+            "pattern": "Character holding a creation tool (pencil, paint gun, hammer, brush) toward the object"
           },
           {
-            "count": "7/12",
-            "pattern": "bright daylight outdoor scene"
+            "count": "6/12",
+            "pattern": "Bright saturated blue-sky backgrounds"
           },
           {
             "count": "3/12",
-            "pattern": "game logo text on icon"
+            "pattern": "Game logo / title text on the icon"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Vehicle as the main subject"
           }
         ],
-        "members_hash": "0a2e6de002",
-        "newcomer_shift": "NEW games use satisfying close-ups (cotton candy, cleaning a famous painting with a sponge, half-done reveal) rather than wide scenes.",
+        "members_hash": "2b7230098b",
+        "newcomer_shift": "NEW games show the creation itself in extreme close-up (a hand drawing a flag, cotton candy spinning) or a simple first-person tool view, with satisfying bright colours.",
         "source": "vision",
-        "summary": "Create/sandbox games show the finished creation or vehicle in a clean scene, with a mix of cartoon and realistic looks.",
-        "text_usage": "Light; most thumbnails have no text, a few use logos.",
+        "summary": "A mixed niche where winners show a clear creation or sandbox action in a bright scene, often with a character holding a tool (pencil, paint gun, hammer) near the thing being made.",
+        "text_usage": "Light: a few logo titles on icons; thumbnails mostly text-free except score percentages (12.4% vs 99.9%) and short labels.",
         "thumbnail_patterns": [
           {
-            "count": "4/12",
-            "pattern": "first-person hands or tool interacting with the object"
-          },
-          {
-            "count": "8/12",
-            "pattern": "no text at all"
-          },
-          {
             "count": "5/12",
-            "pattern": "realistic lit vehicle or environment"
+            "pattern": "Close-up of the object being made or customized (shirt, flag, candy, dummy)"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Smiling or determined avatar faces close to camera"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Side-by-side comparison or split layout (before/after, two players, percentages)"
+          },
+          {
+            "count": "4/12",
+            "pattern": "Realistic driving or physics scene without text"
           }
         ]
       }
@@ -14261,7 +14313,8 @@
     "mechanic:plus_one_stat": {
       "art_styles": {
         "anime": 2,
-        "simulator_bright": 8,
+        "meme_chaotic": 1,
+        "simulator_bright": 7,
         "stylized": 1,
         "voxel_blocky": 1
       },
@@ -14315,7 +14368,7 @@
         },
         {
           "age": 36,
-          "art_style": "simulator_bright",
+          "art_style": "meme_chaotic",
           "ccu": 13738,
           "icon": "10769384180_i.jpg",
           "id": "10769384180",
@@ -15106,58 +15159,66 @@
       "members_hash": "acd454ca8c",
       "type": "mechanic",
       "vision": {
-        "art_style": "simulator_bright cartoon in about 11/12.",
+        "art_style": "Bright stylized/simulator Roblox renders dominate (11/12), clean and saturated.",
         "avoid": [
-          "Text paragraphs",
-          "Dark palettes"
+          "Text-heavy question screens",
+          "Dark backgrounds"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: two avatars across a table, giant ? card between them. Thumbnail: the object to guess centre-frame with a price/size tag, one shocked and one smug player either side.",
+        "date": "2026-11-09",
+        "direction": "Icon: two avatars facing each other over the quiz object with ? marks floating, one grinning and one sweating. Thumbnail: the same table scene with a big short question at the top and the two answers in green and red.",
         "do": [
-          "Two avatars, one smug and one confused",
-          "Put the question object dead centre",
-          "Use 1-3 word shouted headline",
-          "Add question marks around the confused player"
+          "Put two avatars across a table, one smug and one confused",
+          "Place the quiz object big in the middle",
+          "Add ? marks and one short shouty question",
+          "Show answer contrast in green vs red"
         ],
         "icon_patterns": [
           {
-            "count": "8/12",
-            "pattern": "two avatars facing off with ? or ??? marks"
+            "count": "7/12",
+            "pattern": "Two avatars facing off, one smug one confused/crying"
           },
           {
             "count": "7/12",
-            "pattern": "question mark symbols"
+            "pattern": "Floating question marks"
           },
-          {
-            "count": "6/12",
-            "pattern": "table or board between players"
-          }
-        ],
-        "members_hash": "9c4b79cbce",
-        "newcomer_shift": "NEW games show a single object being judged (size, price, colour order) with a red arrow and a pointing hand.",
-        "source": "vision",
-        "summary": "Quiz games are two-player face-offs: two bacon/default avatars at a table with the prompt between them.",
-        "text_usage": "Short shouted headline plus prices or answer words on cards.",
-        "thumbnail_patterns": [
           {
             "count": "8/12",
-            "pattern": "confused/shocked faces with question marks"
+            "pattern": "Bright blue sky / grass background"
           },
           {
-            "count": "9/12",
-            "pattern": "the prompt object in the middle (flag, card, map, price tag)"
+            "count": "8/12",
+            "pattern": "The quiz object in the middle (flag, map, card, price, colour)"
+          }
+        ],
+        "members_hash": "acd454ca8c",
+        "newcomer_shift": "NEW games use a single big prompt object (a giant spider shrinking, a VR headset with two prices, anime cards) with a cursor or arrow, and lean on pop-culture or real-product guesses.",
+        "source": "vision",
+        "summary": "Quiz games show two players across a table reacting to the question (one confident, one confused), with ? marks, the prompt object in the middle and short question text.",
+        "text_usage": "Short shouty question text, answer cards, and green/red prices; often foreign-language for local quizzes.",
+        "thumbnail_patterns": [
+          {
+            "count": "6/12",
+            "pattern": "Players seated at a table across from each other"
           },
           {
             "count": "4/12",
-            "pattern": "big headline text (TOO OBVIOUS!, SHRINK IT!, WHAT COLOR?!)"
+            "pattern": "Big bold question or answer text (TOO OBVIOUS!, WHAT COLOR?!, SHRINK IT!)"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Price or answer labels in green vs red"
+          },
+          {
+            "count": "2/12",
+            "pattern": "Red arrow pointing to the answer slot"
           }
         ]
       }
     },
     "mechanic:race_drive": {
       "art_styles": {
-        "realistic": 8,
-        "stylized": 4
+        "realistic": 9,
+        "stylized": 3
       },
       "games": [
         {
@@ -15210,7 +15271,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -15653,7 +15714,7 @@
           "ccu": 33347,
           "icon": "10708913337_i.jpg",
           "id": "10708913337",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10708913337_m0.jpg",
             "10708913337_m1.jpg"
@@ -15910,8 +15971,8 @@
         "interior": 2,
         "linear_course": 2,
         "lobby_rounds": 1,
-        "open_world": 1,
-        "zone_progression": 5
+        "open_world": 2,
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -16065,8 +16126,8 @@
     "mechanic:roleplay_life": {
       "art_styles": {
         "classic_studs": 1,
-        "realistic": 5,
-        "stylized": 6
+        "realistic": 6,
+        "stylized": 5
       },
       "games": [
         {
@@ -16151,7 +16212,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -16469,10 +16530,11 @@
     },
     "mechanic:sell_shop": {
       "art_styles": {
+        "anime": 1,
         "dark_gritty": 1,
-        "realistic": 1,
+        "realistic": 2,
         "simulator_bright": 1,
-        "stylized": 8
+        "stylized": 6
       },
       "games": [
         {
@@ -16507,7 +16569,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -16553,7 +16615,7 @@
         },
         {
           "age": 160,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 8682,
           "icon": "10261267004_i.jpg",
           "id": "10261267004",
@@ -16916,10 +16978,11 @@
     },
     "mechanic:shooter": {
       "art_styles": {
-        "classic_studs": 2,
+        "classic_studs": 1,
+        "meme_chaotic": 1,
         "realistic": 2,
-        "simulator_bright": 1,
-        "stylized": 6,
+        "simulator_bright": 2,
+        "stylized": 5,
         "voxel_blocky": 1
       },
       "games": [
@@ -17004,7 +17067,7 @@
         },
         {
           "age": 204,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 14936,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -17066,7 +17129,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -18189,6 +18252,7 @@
     },
     "mechanic:tower_defense": {
       "art_styles": {
+        "dark_gritty": 1,
         "realistic": 1,
         "simulator_bright": 3,
         "stylized": 3,
@@ -18245,18 +18309,18 @@
         },
         {
           "age": 826,
-          "art_style": "",
+          "art_style": "dark_gritty",
           "ccu": 6798,
           "icon": "6375110339_i.jpg",
           "id": "6375110339",
-          "map_style": "tower_defense_lanes",
+          "map_style": "arena",
           "media": [
             "6375110339_m0.jpg",
             "6375110339_m1.jpg",
             "6375110339_m2.jpg"
           ],
           "name": "ST : Blockade Battlefront",
-          "style_source": "inferred",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -18488,9 +18552,9 @@
       "key": "tower_defense",
       "label": "Tower defense",
       "map_styles": {
-        "arena": 1,
+        "arena": 2,
         "plot_base": 4,
-        "tower_defense_lanes": 7
+        "tower_defense_lanes": 6
       },
       "media": {
         "hues": [
@@ -19485,50 +19549,58 @@
       "members_hash": "508b742321",
       "type": "mechanic",
       "vision": {
-        "art_style": "Mostly bright stylized; a few realistic (cars, Bloxburg house, 3008).",
+        "art_style": "Mostly bright stylized/simulator renders (9/12), with a couple of realistic car shots and one soft pastel cozy look.",
         "avoid": [
-          "Wide empty base shots",
-          "Text-heavy thumbnails"
+          "Wide empty tycoon plots",
+          "Cluttered UI screenshots"
         ],
-        "date": "2026-11-08",
-        "direction": "Icon: tidy top-down rows of the shop product on a warm background. Thumbnail: first-person hands making one item with an 'E PACK' style prompt and the shop busy behind.",
+        "date": "2026-11-09",
+        "direction": "Icon: first-person hands or a delighted avatar holding the signature product, glowing, on a bright warm background. Thumbnail: rows of the product filling the frame with a big green $/s number and a red arrow to the rarest item.",
         "do": [
-          "Show the product itself in a neat satisfying grid",
-          "Use a first-person hand doing the core verb",
-          "Add a tiny 'E' prompt with the verb",
-          "Use warm cozy colours for shop sims"
+          "Show the product you build or sell large and appetising in the centre",
+          "Add a big income-per-second number in green or rainbow text",
+          "Use a reacting avatar or first-person hands working on the product",
+          "Keep warm, bright, clean lighting"
         ],
         "icon_patterns": [
           {
-            "count": "3/12",
-            "pattern": "white hourglass countdown overlay (24 HOURS, 19 HOURS, NOW)"
+            "count": "7/12",
+            "pattern": "Avatar with an exaggerated reaction (angry, excited, shocked) next to the product"
+          },
+          {
+            "count": "8/12",
+            "pattern": "Bright saturated sky or gradient background"
           },
           {
             "count": "5/12",
-            "pattern": "product or vehicle as hero (sushi, car, box)"
+            "pattern": "The product/asset itself is the hero (car, sushi, box, platform)"
           },
           {
-            "count": "7/12",
-            "pattern": "bright saturated background"
+            "count": "4/12",
+            "pattern": "Logo or New! badge text"
           }
         ],
-        "members_hash": "6d910b9c68",
-        "newcomer_shift": "NEW tycoons show a top-down satisfying grid of the product (sushi rows, metro map) or a single chore on a huge surface (moon cleaning).",
+        "members_hash": "508b742321",
+        "newcomer_shift": "NEW games (9-12) use cozy close-up product shots (packing pink gift boxes, rows of sushi) with soft warm lighting and almost no text, plus one Halloween army scene.",
         "source": "vision",
-        "summary": "Tycoon icons are split between hourglass update teasers and cozy close-ups of the product being made.",
-        "text_usage": "Light; countdowns and short NEW/SWEEP tags.",
+        "summary": "Tycoon winners show the thing you build or sell big and glossy (cars, sushi, gift boxes, platforms) with a reacting avatar, often with huge income numbers; newcomers go cozy close-up product shots.",
+        "text_usage": "Logos on the leaders; big rainbow or green income/rarity numbers on thumbnails; tiny action badges (SWEEP, PLAY).",
         "thumbnail_patterns": [
           {
             "count": "3/12",
-            "pattern": "first-person hands doing the job (packing, mopping, cleaning)"
+            "pattern": "Huge income or rarity numbers ($89.86No/s, 1 in 857,747,777)"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Glowing gold/rare item with lightning or sparkle effects"
+          },
+          {
+            "count": "3/12",
+            "pattern": "Top-down or close-up product grid (sushi rows, gift box contents)"
           },
           {
             "count": "2/12",
-            "pattern": "'E'/mouse interaction prompt showing the verb"
-          },
-          {
-            "count": "7/12",
-            "pattern": "no text"
+            "pattern": "Cursor hand or click icon showing the build action"
           }
         ]
       }
@@ -19577,7 +19649,7 @@
           "ccu": 33347,
           "icon": "10708913337_i.jpg",
           "id": "10708913337",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10708913337_m0.jpg",
             "10708913337_m1.jpg"
@@ -19834,9 +19906,10 @@
         "arena": 4,
         "interior": 1,
         "lobby_rounds": 1,
+        "open_world": 1,
         "plot_base": 1,
         "tower_defense_lanes": 1,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -21097,9 +21170,9 @@
       "art_styles": {
         "classic_studs": 1,
         "dark_gritty": 2,
-        "realistic": 2,
+        "realistic": 3,
         "simulator_bright": 3,
-        "stylized": 4
+        "stylized": 3
       },
       "games": [
         {
@@ -21136,7 +21209,7 @@
         },
         {
           "age": 15,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7459,
           "icon": "10772879271_i.jpg",
           "id": "10772879271",
@@ -22978,7 +23051,7 @@
           "ccu": 14613,
           "icon": "10769835283_i.jpg",
           "id": "10769835283",
-          "map_style": "zone_progression",
+          "map_style": "linear_course",
           "media": [
             "10769835283_m0.jpg"
           ],
@@ -23249,9 +23322,10 @@
       "map_styles": {
         "arena": 2,
         "interior": 2,
+        "linear_course": 1,
         "lobby_rounds": 1,
         "plot_base": 2,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -24159,8 +24233,9 @@
     "niche:pet_collecting": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 9,
-        "stylized": 1,
+        "meme_chaotic": 1,
+        "simulator_bright": 7,
+        "stylized": 2,
         "voxel_blocky": 1
       },
       "games": [
@@ -24294,7 +24369,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -24310,7 +24385,7 @@
         },
         {
           "age": 36,
-          "art_style": "simulator_bright",
+          "art_style": "meme_chaotic",
           "ccu": 13738,
           "icon": "10769384180_i.jpg",
           "id": "10769384180",
@@ -25377,8 +25452,8 @@
     "niche:roleplay_city": {
       "art_styles": {
         "anime": 1,
-        "realistic": 4,
-        "stylized": 3
+        "realistic": 5,
+        "stylized": 2
       },
       "games": [
         {
@@ -25431,7 +25506,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -26184,8 +26259,8 @@
       "art_styles": {
         "anime": 1,
         "realistic": 2,
-        "simulator_bright": 4,
-        "stylized": 1,
+        "simulator_bright": 3,
+        "stylized": 2,
         "voxel_blocky": 1
       },
       "games": [
@@ -26303,7 +26378,7 @@
         },
         {
           "age": 798,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 8717,
           "icon": "6504986360_i.jpg",
           "id": "6504986360",
@@ -29012,7 +29087,7 @@
       "art_styles": {
         "classic_studs": 1,
         "dark_gritty": 5,
-        "stylized": 1
+        "stylized": 2
       },
       "games": [
         {
@@ -29081,16 +29156,16 @@
         },
         {
           "age": 27,
-          "art_style": "",
+          "art_style": "stylized",
           "ccu": 6751,
           "icon": "10770703729_i.jpg",
           "id": "10770703729",
-          "map_style": "",
+          "map_style": "lobby_rounds",
           "media": [
             "10770703729_m0.jpg"
           ],
           "name": "\ud83c\udf83 KRN: Crosshair",
-          "style_source": "",
+          "style_source": "vision",
           "young": false
         },
         {
@@ -29303,7 +29378,7 @@
       "label": "1 vs All",
       "map_styles": {
         "interior": 2,
-        "lobby_rounds": 8
+        "lobby_rounds": 9
       },
       "media": {
         "hues": [
@@ -29409,9 +29484,8 @@
     },
     "subgenre:Action RPG": {
       "art_styles": {
-        "anime": 6,
-        "simulator_bright": 1,
-        "stylized": 1
+        "anime": 7,
+        "simulator_bright": 1
       },
       "games": [
         {
@@ -29464,7 +29538,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -30746,9 +30820,9 @@
       "art_styles": {
         "anime": 1,
         "classic_studs": 1,
-        "realistic": 1,
+        "realistic": 2,
         "simulator_bright": 1,
-        "stylized": 4,
+        "stylized": 3,
         "voxel_blocky": 2
       },
       "games": [
@@ -30865,11 +30939,11 @@
         },
         {
           "age": 23,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7690,
           "icon": "10771544071_i.jpg",
           "id": "10771544071",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771544071_m0.jpg",
             "10771544071_m1.jpg",
@@ -31043,9 +31117,9 @@
       "key": "Battlegrounds & Fighting",
       "label": "Battlegrounds & Fighting",
       "map_styles": {
-        "arena": 9,
+        "arena": 8,
         "lobby_rounds": 1,
-        "open_world": 1,
+        "open_world": 2,
         "zone_progression": 1
       },
       "media": {
@@ -32389,8 +32463,8 @@
       "art_styles": {
         "low_poly": 1,
         "realistic": 3,
-        "simulator_bright": 2,
-        "stylized": 2,
+        "simulator_bright": 3,
+        "stylized": 1,
         "voxel_blocky": 2
       },
       "games": [
@@ -32428,7 +32502,7 @@
         },
         {
           "age": 204,
-          "art_style": "stylized",
+          "art_style": "simulator_bright",
           "ccu": 14936,
           "icon": "10057403337_i.jpg",
           "id": "10057403337",
@@ -32792,9 +32866,8 @@
     },
     "subgenre:Dress Up": {
       "art_styles": {
-        "anime": 1,
         "realistic": 5,
-        "stylized": 4
+        "stylized": 5
       },
       "games": [
         {
@@ -32847,7 +32920,7 @@
         },
         {
           "age": 3500,
-          "art_style": "anime",
+          "art_style": "stylized",
           "ccu": 6750,
           "icon": "321778215_i.jpg",
           "id": "321778215",
@@ -34654,7 +34727,8 @@
         "anime": 1,
         "dark_gritty": 1,
         "realistic": 1,
-        "simulator_bright": 9
+        "simulator_bright": 8,
+        "stylized": 1
       },
       "games": [
         {
@@ -34727,7 +34801,7 @@
           "ccu": 33347,
           "icon": "10708913337_i.jpg",
           "id": "10708913337",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10708913337_m0.jpg",
             "10708913337_m1.jpg"
@@ -34832,7 +34906,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -34949,9 +35023,9 @@
       "label": "Incremental Simulator",
       "map_styles": {
         "linear_course": 2,
-        "open_world": 4,
+        "open_world": 5,
         "plot_base": 1,
-        "zone_progression": 5
+        "zone_progression": 4
       },
       "media": {
         "hues": [
@@ -35058,8 +35132,8 @@
     },
     "subgenre:Life": {
       "art_styles": {
-        "realistic": 4,
-        "stylized": 5
+        "realistic": 5,
+        "stylized": 4
       },
       "games": [
         {
@@ -35080,7 +35154,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -38010,7 +38084,8 @@
     },
     "subgenre:Physics Sim": {
       "art_styles": {
-        "classic_studs": 3,
+        "classic_studs": 2,
+        "meme_chaotic": 1,
         "realistic": 8,
         "stylized": 1
       },
@@ -38078,7 +38153,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -42795,8 +42870,8 @@
     "subgenre:Tycoon": {
       "art_styles": {
         "anime": 1,
-        "meme_chaotic": 1,
-        "simulator_bright": 6,
+        "meme_chaotic": 2,
+        "simulator_bright": 5,
         "stylized": 3,
         "voxel_blocky": 1
       },
@@ -42931,7 +43006,7 @@
         },
         {
           "age": 36,
-          "art_style": "simulator_bright",
+          "art_style": "meme_chaotic",
           "ccu": 13738,
           "icon": "10769384180_i.jpg",
           "id": "10769384180",
@@ -44853,7 +44928,7 @@
           "ccu": 33347,
           "icon": "10708913337_i.jpg",
           "id": "10708913337",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10708913337_m0.jpg",
             "10708913337_m1.jpg"
@@ -45108,10 +45183,10 @@
       "map_styles": {
         "arena": 4,
         "lobby_rounds": 1,
-        "open_world": 1,
+        "open_world": 2,
         "plot_base": 1,
         "tower_defense_lanes": 1,
-        "zone_progression": 4
+        "zone_progression": 3
       },
       "media": {
         "hues": [
@@ -46378,7 +46453,8 @@
     "theme:eggs": {
       "art_styles": {
         "anime": 1,
-        "simulator_bright": 11
+        "meme_chaotic": 1,
+        "simulator_bright": 10
       },
       "games": [
         {
@@ -46447,7 +46523,7 @@
         },
         {
           "age": 36,
-          "art_style": "simulator_bright",
+          "art_style": "meme_chaotic",
           "ccu": 13738,
           "icon": "10769384180_i.jpg",
           "id": "10769384180",
@@ -46785,14 +46861,14 @@
     "theme:fantasy": {
       "art_styles": {
         "anime": 1,
-        "classic_studs": 1,
+        "meme_chaotic": 1,
         "stylized": 4,
         "voxel_blocky": 1
       },
       "games": [
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -47193,10 +47269,9 @@
     },
     "theme:fashion": {
       "art_styles": {
-        "anime": 1,
         "realistic": 5,
         "simulator_bright": 1,
-        "stylized": 1
+        "stylized": 2
       },
       "games": [
         {
@@ -47233,7 +47308,7 @@
         },
         {
           "age": 3500,
-          "art_style": "anime",
+          "art_style": "stylized",
           "ccu": 6750,
           "icon": "321778215_i.jpg",
           "id": "321778215",
@@ -48398,8 +48473,8 @@
     "theme:horror": {
       "art_styles": {
         "dark_gritty": 5,
-        "simulator_bright": 2,
-        "stylized": 4
+        "simulator_bright": 1,
+        "stylized": 5
       },
       "games": [
         {
@@ -48484,11 +48559,11 @@
         },
         {
           "age": 73,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 6878,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -48694,8 +48769,8 @@
         "interior": 4,
         "linear_course": 1,
         "lobby_rounds": 1,
-        "open_world": 4,
-        "zone_progression": 2
+        "open_world": 5,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -48801,7 +48876,7 @@
     "theme:ice_fire": {
       "art_styles": {
         "anime": 1,
-        "classic_studs": 1,
+        "meme_chaotic": 1,
         "realistic": 4,
         "stylized": 2
       },
@@ -48824,7 +48899,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -49579,18 +49654,18 @@
     "theme:military": {
       "art_styles": {
         "classic_studs": 1,
-        "realistic": 2,
+        "realistic": 3,
         "simulator_bright": 1,
-        "stylized": 4
+        "stylized": 3
       },
       "games": [
         {
           "age": 23,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7690,
           "icon": "10771544071_i.jpg",
           "id": "10771544071",
-          "map_style": "arena",
+          "map_style": "open_world",
           "media": [
             "10771544071_m0.jpg",
             "10771544071_m1.jpg",
@@ -49606,7 +49681,7 @@
           "ccu": 7532,
           "icon": "10258991999_i.jpg",
           "id": "10258991999",
-          "map_style": "open_world",
+          "map_style": "arena",
           "media": [
             "10258991999_m0.jpg",
             "10258991999_m1.jpg",
@@ -49978,9 +50053,8 @@
     },
     "theme:money": {
       "art_styles": {
-        "classic_studs": 1,
-        "simulator_bright": 7,
-        "stylized": 2,
+        "simulator_bright": 6,
+        "stylized": 4,
         "voxel_blocky": 2
       },
       "games": [
@@ -50034,7 +50108,7 @@
         },
         {
           "age": 25,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 16263,
           "icon": "10771053183_i.jpg",
           "id": "10771053183",
@@ -50128,7 +50202,7 @@
         },
         {
           "age": 38,
-          "art_style": "classic_studs",
+          "art_style": "stylized",
           "ccu": 7942,
           "icon": "10769020444_i.jpg",
           "id": "10769020444",
@@ -51178,8 +51252,8 @@
         "classic_studs": 1,
         "dark_gritty": 1,
         "realistic": 1,
-        "simulator_bright": 2,
-        "stylized": 4
+        "simulator_bright": 1,
+        "stylized": 5
       },
       "games": [
         {
@@ -51216,11 +51290,11 @@
         },
         {
           "age": 73,
-          "art_style": "simulator_bright",
+          "art_style": "stylized",
           "ccu": 6878,
           "icon": "10764240948_i.jpg",
           "id": "10764240948",
-          "map_style": "zone_progression",
+          "map_style": "open_world",
           "media": [
             "10764240948_m0.jpg",
             "10764240948_m1.jpg",
@@ -51472,8 +51546,8 @@
       "map_styles": {
         "interior": 2,
         "linear_course": 2,
-        "open_world": 5,
-        "zone_progression": 2
+        "open_world": 6,
+        "zone_progression": 1
       },
       "media": {
         "hues": [
@@ -52379,7 +52453,8 @@
     "theme:school": {
       "art_styles": {
         "anime": 1,
-        "stylized": 3
+        "realistic": 1,
+        "stylized": 2
       },
       "games": [
         {
@@ -52400,7 +52475,7 @@
         },
         {
           "age": 1767,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 13598,
           "icon": "3240075297_i.jpg",
           "id": "3240075297",
@@ -52783,12 +52858,12 @@
     },
     "theme:seasonal": {
       "art_styles": {
-        "anime": 3,
+        "anime": 2,
         "classic_studs": 1,
         "dark_gritty": 1,
         "realistic": 1,
         "simulator_bright": 2,
-        "stylized": 2
+        "stylized": 3
       },
       "games": [
         {
@@ -52857,7 +52932,7 @@
         },
         {
           "age": 3500,
-          "art_style": "anime",
+          "art_style": "stylized",
           "ccu": 6750,
           "icon": "321778215_i.jpg",
           "id": "321778215",
@@ -53188,7 +53263,7 @@
     },
     "theme:space": {
       "art_styles": {
-        "classic_studs": 1,
+        "meme_chaotic": 1,
         "realistic": 2,
         "simulator_bright": 2,
         "stylized": 1
@@ -53211,7 +53286,7 @@
         },
         {
           "age": 43,
-          "art_style": "classic_studs",
+          "art_style": "meme_chaotic",
           "ccu": 8911,
           "icon": "10768383600_i.jpg",
           "id": "10768383600",
@@ -53993,9 +54068,8 @@
     },
     "theme:stone_rocks": {
       "art_styles": {
-        "anime": 1,
-        "simulator_bright": 6,
-        "stylized": 1
+        "anime": 2,
+        "simulator_bright": 6
       },
       "games": [
         {
@@ -54032,7 +54106,7 @@
         },
         {
           "age": 548,
-          "art_style": "stylized",
+          "art_style": "anime",
           "ccu": 12186,
           "icon": "7671049560_i.jpg",
           "id": "7671049560",
@@ -55549,9 +55623,9 @@
     "theme:zombies": {
       "art_styles": {
         "dark_gritty": 2,
-        "realistic": 5,
+        "realistic": 6,
         "simulator_bright": 2,
-        "stylized": 2
+        "stylized": 1
       },
       "games": [
         {
@@ -55617,7 +55691,7 @@
         },
         {
           "age": 15,
-          "art_style": "stylized",
+          "art_style": "realistic",
           "ccu": 7459,
           "icon": "10772879271_i.jpg",
           "id": "10772879271",
