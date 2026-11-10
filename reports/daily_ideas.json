@@ -1,383 +1,390 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "ideas": [
   {
-   "title": "+1 Umbrella Size ☂️",
+   "title": "+1 Hose Pressure 🚒",
    "scope": "medium",
-   "genre": "Simulation · Storm survival climb",
+   "genre": "Simulation · Wildfire escape climb",
    "mechanics": [
     "+1 stat per action",
     "Escape / run"
    ],
    "theme": "Disaster / weather",
-   "hook": "Every step you take in the storm grows your umbrella by +1. A bigger umbrella blocks bigger hail, so you can push further up the storm path.",
+   "hook": "A wildfire is spreading down the mountain. Every second you spray, your hose gains +1 pressure, so you can push the flames back further and reach the next ranger station.",
    "core_loop": [
-    "Walk up a storm path while hail and lightning fall",
-    "Gain +1 umbrella size per step under the rain",
-    "Hide others under your umbrella for bonus coins",
-    "Reach the next shelter to unlock a harsher storm zone",
-    "Rebirth for a permanent size multiplier"
+    "Spray the fire wall in front of you",
+    "Gain +1 hose pressure per second of spraying",
+    "Push forward to the next ranger station before the flames close in",
+    "Unlock a bigger fire zone (forest, town, volcano)",
+    "Rebirth for a permanent pressure multiplier"
    ],
-   "twist": "Players can share shelter: standing under someone else's giant umbrella gives both of you +1 per step, so big players become moving safe zones.",
+   "twist": "Fires spread from behind too, so a squad that splits up (one sprays forward, one guards the rear) climbs much faster than a solo player.",
    "monetization": [
-    "2x size multiplier pass",
-    "Speed pass for faster walking",
-    "Auto-walk pass",
-    "VIP golden umbrella skin"
+    "2x pressure multiplier pass",
+    "Speed pass for running between stations",
+    "Auto-spray pass",
+    "VIP golden fire truck"
    ],
    "retention": [
-    "Rebirth tiers with new storm types (hail, meteor shower, acid rain)",
-    "Daily reward umbrella skins",
-    "Biggest-umbrella leaderboard",
-    "Codes for size boosts"
+    "Rebirth tiers with harsher fires",
+    "Daily reward hose nozzles",
+    "Highest-pressure leaderboard",
+    "Codes for pressure boosts"
    ],
-   "why_now": "+1 stat per action sits at 2.20 across 37 new games, led by [⚔️UPD] +1 Venom Evolution (24,239 CCU) and +1 Spider Arm🕷️ (16,289 CCU). Disaster / weather is at 1.73, carried by [🌊] Steal Eggs From Tsunami! (10,398 CCU), and the \"+1 ___\" title formula holds at 2.20.",
+   "why_now": "+1 stat per action is at 2.15 momentum across 40 new games, led by [⚔️UPD] +1 Venom Evolution (24,529 CCU) and +1 Spider Arm🕷️ (13,765 CCU). Disaster / weather is at 1.75, carried by [🌊] Steal Eggs From Tsunami! (10,383 CCU), and the \"+1 ___\" title formula sits at 2.16.",
    "inspired_by": [
-    "+1 Spider Arm🕷️",
     "[⚔️UPD] +1 Venom Evolution",
+    "+1 Spider Arm🕷️",
     "[🌊] Steal Eggs From Tsunami!"
    ],
-   "differentiator": "+1 games grow a body part for no reason; here the stat is a shield against a visible hazard, and big players protect small ones.",
+   "differentiator": "Most +1 games grow a stat with nothing to push against; here the stat fights a hazard you can see moving toward you.",
    "art_style": "simulator_bright",
    "map_style": "linear_course"
   },
   {
-   "title": "Paint Lava for Loot 🌋",
+   "title": "Golf Zombies for Cash ⛳",
+   "scope": "small",
+   "genre": "Physics Sim · Zombie launch",
+   "mechanics": [
+    "Hit / swing / launch"
+   ],
+   "theme": "Zombies",
+   "hook": "Zombies are shambling across a golf course. Tee them up and whack them as far as you can. Every meter they fly pays out.",
+   "core_loop": [
+    "Line up a zombie on the tee",
+    "Time your swing for power and angle",
+    "Watch the ragdoll zombie fly and bounce for distance cash",
+    "Buy better clubs and longer fairways",
+    "Unlock bigger, tougher zombies that pay more per meter"
+   ],
+   "twist": "Some zombies get back up where they land and walk toward your clubhouse, so long shots that land in the lake or a bunker are worth a bonus.",
+   "monetization": [
+    "2x distance cash pass",
+    "VIP club with a fire trail",
+    "Extra caddy storage for zombie types"
+   ],
+   "retention": [
+    "Longest-drive leaderboard",
+    "New course every zone (graveyard, mall, moon)",
+    "Daily zombie boss tee-off"
+   ],
+   "why_now": "Hit / swing / launch is the fastest-rising mechanic at 2.88 across 36 new games, led by Throw Food For Animals (238,858 CCU) and Bloody Ragdoll Physics 🩸 (15,630 CCU). Zombies is at 1.38, with Ragdoll Reality 🩸 (10,244 CCU) and [🎃] Ragdoll Sandbox (8,394 CCU) proving ragdoll zombies sell. The \"___ for ___\" formula is at 1.64.",
+   "inspired_by": [
+    "Throw Food For Animals",
+    "Bloody Ragdoll Physics 🩸",
+    "Ragdoll Reality 🩸"
+   ],
+   "differentiator": "Ragdoll games let you hurt dummies with no goal; this turns every hit into a distance score and a cash payout.",
+   "art_style": "stylized",
+   "map_style": "linear_course"
+  },
+  {
+   "title": "Draw Lightning for Cash ⚡",
    "scope": "medium",
-   "genre": "Tycoon · Lava casting",
+   "genre": "Tycoon · Storm power plant",
    "mechanics": [
     "Paint / create",
     "Tycoon / base building"
    ],
-   "theme": "Ice / fire / elements",
-   "hook": "A volcano erupts over your plot every few minutes. Draw channels on the slope so the lava fills your casting molds, not your house.",
-   "core_loop": [
-    "Draw lava channels on your slope before the eruption",
-    "Watch the lava flow and fill molds into ingots and statues",
-    "Sell the castings for cash",
-    "Buy rarer molds and stronger channel paint",
-    "Survive bigger eruptions for rarer metals"
-   ],
-   "twist": "Lava ignores plot lines: a badly drawn channel can spill into your neighbour's molds and hand them your loot.",
-   "monetization": [
-    "2x casting value multiplier pass",
-    "VIP mold set",
-    "Extra paint length pass"
-   ],
-   "retention": [
-    "Daily eruption with a rare metal",
-    "Codes for free mold unlocks",
-    "Plot upgrades that reveal a bigger slope"
-   ],
-   "why_now": "Paint / create is at 1.98 across 22 new games with no single leader ([UPD1]⚽ Be a Soccer Legend 10,078 CCU, [🎃] Ragdoll Sandbox 8,862 CCU). Paint / create x Ice / fire is a top-4 gap (score 4.14), and Disaster / weather is rising at 1.73 with [UPD 3] Create A Disaster💥 at 4,018 CCU.",
-   "inspired_by": [
-    "[🎃] Ragdoll Sandbox",
-    "[UPD 3] Create A Disaster💥"
-   ],
-   "differentiator": "Disaster games make you hide from lava; here you steer it, and how well you draw decides how much you earn.",
-   "art_style": "stylized",
-   "map_style": "plot_base"
-  },
-  {
-   "title": "Guess Storms for Cover 🌪️",
-   "scope": "small",
-   "genre": "Party · Disaster quiz rounds",
-   "mechanics": [
-    "Quiz / guess",
-    "Escape / run"
-   ],
    "theme": "Disaster / weather",
-   "hook": "Clues appear: birds flee, the sky turns green, the ground hums. You have 10 seconds to guess the disaster and run to the right shelter.",
+   "hook": "A thunderstorm hangs over your rooftop plot. Draw copper wire paths from the sky to your batteries. Every strike your wires catch becomes cash.",
    "core_loop": [
-    "Read three clues about the coming disaster",
-    "Guess which disaster it is",
-    "Sprint to the matching shelter (basement, rooftop, hill, boat)",
-    "Survive and earn coins, or get ragdolled",
-    "Spend coins on clue hints and shelter skins"
+    "Draw wire paths across your roof before the storm",
+    "Lightning strikes follow your wires into batteries",
+    "Sell stored power for cash",
+    "Buy more batteries, better wire and taller rods",
+    "Unlock bigger storms with rarer purple and gold bolts"
    ],
-   "twist": "One shelter is always fake. Players who guess right can lock its door, so the round gets tense near the timer.",
+   "twist": "Badly drawn wires let the bolt jump to your neighbour's roof and fill their batteries instead, so clean drawing matters.",
    "monetization": [
-    "VIP pass with an extra clue each round",
-    "2x coin multiplier pass"
+    "2x power multiplier",
+    "VIP gold wire",
+    "Extra battery storage"
    ],
    "retention": [
-    "Win streak counter",
-    "Weekly new disaster added to the pool",
-    "Codes for hint tokens"
+    "Storm events every 10 minutes",
+    "Daily rare-bolt forecast",
+    "Most-power leaderboard",
+    "Offline earnings from stored batteries"
    ],
-   "why_now": "Quiz / guess is at 1.18 (Thai Quiz Duels [UPDATES] 3,272 CCU, [🎃] Don't Say The Obvious! 925 CCU), and Quiz / guess x Disaster / weather is an open gap (2.63). Disaster / weather is at 1.73 and the Escape subgenre is up 0.71 this week to 1.79.",
+   "why_now": "Paint / create is at 1.94 across 22 new games ([UPD1]⚽ Be a Soccer Legend at 10,767 CCU, [🎃] Ragdoll Sandbox at 8,394 CCU), and Paint / create + Disaster / weather is the top gap at 5.19. Disaster / weather is at 1.75 and Tycoon / base building at 1.27 with [⚡] Steal a Superpower! at 15,209 CCU.",
    "inspired_by": [
-    "Thai Quiz Duels [UPDATES]",
+    "[UPD1]⚽ Be a Soccer Legend",
+    "[⚡] Steal a Superpower!",
     "[🌊] Steal Eggs From Tsunami!"
    ],
-   "differentiator": "Quiz games are seated; here a right answer only counts if you run to the shelter in time.",
+   "differentiator": "Storm games make you hide from weather; here you draw the path the weather takes and get paid for it.",
    "art_style": "simulator_bright",
-   "map_style": "lobby_rounds"
-  },
-  {
-   "title": "Pump Air for Astronauts 🚀",
-   "scope": "medium",
-   "genre": "Tycoon · Mars shop",
-   "mechanics": [
-    "Sell / run a shop",
-    "Tycoon / base building"
-   ],
-   "theme": "Space",
-   "hook": "Run the only oxygen station on Mars. Astronauts and robot couriers line up for air tanks, and a dust storm doubles demand.",
-   "core_loop": [
-    "Pump and fill air tanks",
-    "Serve the astronaut and robot queue",
-    "Earn cash and buy bigger pumps and tank racks",
-    "Hire robot helpers to refill shelves",
-    "Expand the dome before the next dust storm"
-   ],
-   "twist": "During dust storms, prices spike but your pumps clog. Players who clean filters in the storm earn triple.",
-   "monetization": [
-    "2x sales multiplier pass",
-    "VIP gold pump",
-    "Speed pass for faster pumping",
-    "Bigger tank storage pass"
-   ],
-   "retention": [
-    "Dust storm events every hour",
-    "Codes for free tanks",
-    "Dome expansions that unlock new customers"
-   ],
-   "why_now": "Space is at 1.66 with Sweep The Moon 🌕 (12,103 CCU at 17 days) and [MARS] Clean the Moon! (3,987 CCU). Robots / mechs is at 1.68 and Sell / run a shop at 1.35 across 31 new games, led by Sell Fries! [Anomaly] 🍟 (16,551 CCU).",
-   "inspired_by": [
-    "Sweep The Moon 🌕",
-    "[MARS] Clean the Moon!",
-    "Sell Fries! [Anomaly] 🍟"
-   ],
-   "differentiator": "Space games are about cleaning; this is a shop where the product (air) is the thing everyone on Mars needs.",
-   "art_style": "stylized",
    "map_style": "plot_base"
   },
   {
-   "title": "Roll for Parole 🎲",
-   "scope": "medium",
-   "genre": "Party · Prison board game",
-   "mechanics": [
-    "Dice / cards",
-    "Escape / run"
-   ],
-   "theme": "Prison / police",
-   "hook": "Four inmates, one giant board laid over the prison yard. Roll dice, play item cards and be first through the gate.",
-   "core_loop": [
-    "Roll dice to move across the yard board",
-    "Land on tunnels, laundry carts or guard checks",
-    "Play item cards (spoon, map, bribe) to skip or block",
-    "Reach the gate first to win cash",
-    "Buy card packs with rarer items"
-   ],
-   "twist": "Guard spaces send you back to your cell, but you can play a card to send the guard after the leader instead.",
-   "monetization": [
-    "Luck pass (reroll once per game)",
-    "2x cash multiplier pass",
-    "VIP card back",
-    "Auto-roll speed pass"
-   ],
-   "retention": [
-    "Card collection index",
-    "Daily free card pack",
-    "Win leaderboards",
-    "Codes for luck boosts"
-   ],
-   "why_now": "Dice / cards is up 0.46 this week to 1.23, with [🎉UPD 3] Roll A Stickman! at 5,992 CCU. Prison / police is up 0.18 to 1.44 (13 Days to Escape [ALPHA] 6,142 CCU, Punch Out Of Prison 3,478 CCU), and Dice / cards x Prison / police is an open gap (2.65).",
-   "inspired_by": [
-    "[🎉UPD 3] Roll A Stickman!",
-    "13 Days to Escape [ALPHA]",
-    "Punch Out Of Prison"
-   ],
-   "differentiator": "Prison escapes are solo grinds; this turns the escape into a short board game you play against friends.",
-   "art_style": "stylized",
-   "map_style": "lobby_rounds"
-  },
-  {
-   "title": "Be a Quiz Millionaire 💰",
+   "title": "Spot the Zombie 🧟",
    "scope": "small",
-   "genre": "Party · Wager quiz show",
+   "genre": "Party · Zombie deduction",
    "mechanics": [
     "Quiz / guess"
    ],
-   "theme": "Money / rich",
-   "hook": "Answer quick trivia, but first bet your cash on how sure you are. Bet big and be right to become a millionaire in one round.",
+   "theme": "Zombies",
+   "hook": "Five survivors knock on your bunker door, but one is a zombie in disguise. Ask questions, check details, and only let the humans in.",
    "core_loop": [
-    "See the category, then place a bet",
-    "Answer the question in 8 seconds",
-    "Win or lose your bet",
-    "Climb the cash leaderboard each round",
-    "Spend cash on a mansion lobby and outfits"
+    "A group of visitors lines up at the bunker window",
+    "Ask each one a question and check their answers and looks",
+    "Open the door for humans, lock out the zombie",
+    "Get it right for points; get it wrong and the zombie gets in",
+    "Survive more nights with trickier disguises"
    ],
-   "twist": "The poorest player each round gets a free 'lifeline' that shows how the richest player answered.",
+   "twist": "In multiplayer, one player secretly plays the zombie and answers the questions live, so it becomes a bluffing game.",
    "monetization": [
-    "VIP pass with a bigger starting bankroll",
-    "2x cash multiplier pass"
+    "VIP bunker skins",
+    "2x points pass",
+    "Extra hint (flashlight scan) pass"
    ],
    "retention": [
-    "Richest player leaderboard",
-    "Daily category with a bonus pot",
-    "New question packs weekly"
+    "Night streak leaderboard",
+    "New disguise packs weekly",
+    "Daily hard-mode night"
    ],
-   "why_now": "Quiz / guess x Money / rich is the second-biggest gap in the data (4.63). Money / rich is at 1.71 across 54 new games with no single leader, Quiz / guess is at 1.18, and the \"Be a ___\" formula is at 1.11.",
+   "why_now": "Quiz / guess is at 1.15 (Thai Quiz Duels [UPDATES] at 3,070 CCU, [🎃] Don't Say The Obvious! at 803 CCU) and Quiz + Zombies is an open gap at 2.46. Zombies is at 1.38, and interior maps are rising at 2.04 with Sell Fries! [Anomaly] 🍟 at 15,648 CCU.",
    "inspired_by": [
     "Thai Quiz Duels [UPDATES]",
-    "[🎃] Don't Say The Obvious!"
+    "[🎃] Don't Say The Obvious!",
+    "Sell Fries! [Anomaly] 🍟"
    ],
-   "differentiator": "Quiz games reward the right answer; here the bet matters as much, so a confident wrong answer can wipe you out.",
-   "art_style": "simulator_bright",
-   "map_style": "lobby_rounds"
-  },
-  {
-   "title": "Be a Factory Bot 🏭",
-   "scope": "medium",
-   "genre": "Obby · Physics escape",
-   "mechanics": [
-    "Escape / run",
-    "Hit / swing / launch"
-   ],
-   "theme": "Robots / mechs",
-   "hook": "You are a half-built robot on a conveyor belt. Dodge presses, welders and paint sprayers and escape the factory before you get boxed.",
-   "core_loop": [
-    "Ride the conveyor and dodge machines",
-    "Get hit and lose parts (ragdoll physics)",
-    "Collect spare parts to repair and upgrade",
-    "Reach a new floor of the factory each run",
-    "Unlock new robot bodies"
-   ],
-   "twist": "Parts you lose stay on the belt; other players can grab them and bolt them on.",
-   "monetization": [
-    "Speed pass for faster movement",
-    "2x parts multiplier pass",
-    "VIP chrome body"
-   ],
-   "retention": [
-    "Weekly limited event floor",
-    "Robot body collection",
-    "Fastest-escape leaderboard"
-   ],
-   "why_now": "Physics Sim is at 2.24 (up 0.40 this week) with [🎩] Ragdoll Research at 10,882 CCU at 12 days. Interiors are the top map style at 2.14 and realistic art is at 2.02. Escape / run is at 1.57 and Robots / mechs at 1.68.",
-   "inspired_by": [
-    "[🎩] Ragdoll Research",
-    "[UPDATE 2.0] 30 Floors Up",
-    "Ragdoll Physics 🩸"
-   ],
-   "differentiator": "Ragdoll games have no goal; here every hit costs you a part and the factory is a run you try to finish.",
-   "art_style": "realistic",
+   "differentiator": "Anomaly games make you spot one wrong thing alone; here players can be the zombie and lie to each other.",
+   "art_style": "dark_gritty",
    "map_style": "interior"
   },
   {
-   "title": "Build a Coral Reef 🪸",
+   "title": "Sell Bait to Pirates 🏴‍☠️",
    "scope": "medium",
-   "genre": "Simulation · Ocean garden",
+   "genre": "Tycoon · Dockside bait shop",
+   "mechanics": [
+    "Sell / run a shop",
+    "Grow / farm"
+   ],
+   "theme": "Ocean / pirates",
+   "hook": "Pirate ships dock at your pier every few minutes. Farm worms, shrimp and glowing squid, then sell the right bait before the captain loses patience.",
+   "core_loop": [
+    "Farm bait in tanks and dirt beds behind your shop",
+    "Read each pirate's order at the counter",
+    "Serve the right bait fast for gold",
+    "Upgrade tanks to grow rarer bait",
+    "Unlock bigger ships with richer captains"
+   ],
+   "twist": "Pirates go fishing with your bait and come back with what they caught; good bait means they share sea creatures you can display or resell.",
+   "monetization": [
+    "2x gold multiplier",
+    "Speed pass for serving",
+    "VIP golden pier",
+    "Extra tank storage"
+   ],
+   "retention": [
+    "Daily ghost-ship visit",
+    "Rare bait collection index",
+    "Biggest-catch board for your pier"
+   ],
+   "why_now": "Sell / run a shop is at 1.34 across 33 new games (Sell Fries! [Anomaly] 🍟 at 15,648 CCU, Sell a Million Sushi at 7,842 CCU) and Grow / farm is at 1.49 ([2x WEEKEND] Farm Evolution at 10,789 CCU). Ocean / pirates is at 1.13.",
+   "inspired_by": [
+    "Sell Fries! [Anomaly] 🍟",
+    "Sell a Million Sushi",
+    "[2x WEEKEND] Farm Evolution"
+   ],
+   "differentiator": "Shop games sell food to faceless NPCs; here you grow the stock yourself and each customer brings back a catch you can use.",
+   "art_style": "stylized",
+   "map_style": "plot_base"
+  },
+  {
+   "title": "Build a Mars Farm 🔴",
+   "scope": "large",
+   "genre": "Tycoon · Space colony farming",
    "mechanics": [
     "Grow / farm",
     "Tycoon / base building"
    ],
-   "theme": "Ocean / pirates",
-   "hook": "Grow coral on your patch of seafloor. Bigger, brighter reefs attract rarer fish, and rare fish pay you to live there.",
+   "theme": "Space",
+   "hook": "You land on Mars with one dome and a bag of seeds. Grow crops that make air and water, expand your domes, and turn the red planet green.",
    "core_loop": [
-    "Plant coral seeds on your seafloor plot",
-    "Water-feed them as they grow",
-    "Rare fish arrive and pay rent",
-    "Sell coral cuttings to buy rarer seeds",
-    "Expand your plot deeper"
+    "Plant crops inside your dome",
+    "Harvest for food, oxygen and cash",
+    "Build new domes and rovers with the cash",
+    "Terraform the land around your base so crops grow outside",
+    "Unlock moons with alien crops"
    ],
-   "twist": "Storm surges break off coral; it drifts to other plots, so you can find rare coral washed up from a neighbour.",
+   "twist": "Dust storms roll across Mars; crops outside the domes earn more but get wiped if you do not pull a storm shield in time.",
    "monetization": [
-    "2x growth multiplier pass",
-    "VIP glowing coral set"
+    "2x harvest pass",
+    "VIP rover",
+    "Auto-harvest drones",
+    "Extra dome slots"
    ],
    "retention": [
-    "Fish index to complete",
-    "Codes for rare seeds",
-    "Storm surge events"
+    "Offline growth while away",
+    "Weekly dust-storm event",
+    "Greenest-base leaderboard",
+    "Codes for seed packs"
    ],
-   "why_now": "Grow / farm is up 0.47 this week to 1.53 across 41 new games ([2x WEEKEND] Farm Evolution 8,683 CCU, [UPD] Durian Garden 🍈 8,152 CCU). Ocean / pirates is up 0.30 to 1.19, and [🐟] Net a Fish! is at 16,263 CCU. The \"Build a ___\" formula is up 0.23 to 1.15.",
+   "why_now": "Grow / farm is at 1.49 across 42 new games ([2x WEEKEND] Farm Evolution 10,789 CCU, LINE UP! Metro Tycoon 9,698 CCU). Space is at 1.74 led by Sweep The Moon 🌕 (11,694 CCU), and the \"Build a ___\" formula is at 1.24 with Build a Bridge at 9,759 CCU.",
    "inspired_by": [
-    "[UPD] Durian Garden 🍈",
-    "[🐟] Net a Fish!",
-    "[2x WEEKEND] Farm Evolution"
+    "[2x WEEKEND] Farm Evolution",
+    "Sweep The Moon 🌕",
+    "Build a Bridge"
    ],
-   "differentiator": "Grow games are on land; here the crop is a habitat and the reward is the creatures it pulls in.",
-   "art_style": "stylized",
+   "differentiator": "Farm games stay on a grassy plot; here farming changes the map itself as the planet turns green around you.",
+   "art_style": "simulator_bright",
    "map_style": "plot_base"
   },
   {
-   "title": "Draw Legs for Races 🦿",
-   "scope": "large",
-   "genre": "Sandbox · Physics racing",
+   "title": "+1 Swim Speed 🦈",
+   "scope": "small",
+   "genre": "Obby · Shark escape swim",
    "mechanics": [
-    "Paint / create",
+    "+1 stat per action",
     "Escape / run"
    ],
-   "theme": "Robots / mechs",
-   "hook": "Draw your robot's legs with your finger. Physics makes them walk, wobble or fall, then you race them over hills and gaps.",
+   "theme": "Ocean / pirates",
+   "hook": "A shark is chasing you through a sunken shipwreck. Every stroke adds +1 swim speed. Get fast enough to reach the next air pocket.",
    "core_loop": [
-    "Draw a leg shape for your robot",
-    "Watch it walk with real physics",
-    "Race other players over a course",
-    "Earn bolts for finishing",
-    "Unlock new body parts and ink types"
+    "Swim through wreck corridors with a shark behind you",
+    "Gain +1 speed per stroke",
+    "Reach the next air pocket checkpoint",
+    "Unlock deeper wrecks with bigger sharks",
+    "Rebirth for a speed multiplier"
    ],
-   "twist": "You can redraw your legs mid-race, but every redraw costs a second, so you have to plan for the terrain.",
+   "twist": "Bleeding fish bait you pick up can be dropped to slow the shark, but it also attracts sharks to other players.",
    "monetization": [
-    "2x bolts multiplier pass",
-    "VIP ink colours",
-    "Extra ink length pass"
+    "2x speed pass",
+    "Auto-swim pass",
+    "VIP mermaid tail trail"
    ],
    "retention": [
-    "New course each week",
-    "Bolts leaderboard",
-    "Body part collection"
+    "Deepest-wreck leaderboard",
+    "Daily shark boss",
+    "Rebirth tiers"
    ],
-   "why_now": "Paint / create x Robots / mechs is the third-biggest gap (4.26). Paint / create is at 1.98 with Draw a Flag! showing drawing in new games, Physics Sim is at 2.24 and Robots / mechs at 1.68.",
+   "why_now": "+1 stat per action is at 2.15 across 40 new games (+1 Spider Arm🕷️ 13,765 CCU), Escape / run is at 1.47 with [🏁] Steal A Pet And Ride It! at 18,716 CCU, and interior corridor maps are up at 2.04. The \"+1 ___\" formula is at 2.16.",
    "inspired_by": [
-    "Draw a Flag!",
-    "Ragdoll Physics 🩸",
-    "Build A Mech!"
+    "+1 Spider Arm🕷️",
+    "[🏁] Steal A Pet And Ride It!",
+    "[⚔️UPD] +1 Venom Evolution"
    ],
-   "differentiator": "Drawing games are judged on looks; here your drawing is the machine, and it either walks or falls.",
-   "art_style": "stylized",
+   "differentiator": "+1 escape games run on dry tracks; this chase happens underwater in tight wreck corridors with a real predator.",
+   "art_style": "simulator_bright",
    "map_style": "linear_course"
   },
   {
-   "title": "Haul Supplies for Survivors 🚚",
-   "scope": "large",
-   "genre": "Vehicle sim · Storm delivery",
+   "title": "Frost Cakes for Giants 🎂",
+   "scope": "medium",
+   "genre": "Tycoon · Giant bakery",
    "mechanics": [
-    "Escape / run",
+    "Paint / create",
     "Sell / run a shop"
    ],
-   "theme": "Disaster / weather",
-   "hook": "A hurricane is coming. Load your truck with water and food, then drive through flooded roads to towns before the storm hits.",
+   "theme": "Giant / huge",
+   "hook": "Giants line up at your bakery with photos of the cake they want. Pipe frosting on a house-sized cake to match, and get paid for how close you get.",
    "core_loop": [
-    "Load supplies at the depot",
-    "Drive through flooding roads and falling trees",
-    "Deliver to towns before the storm arrives",
-    "Get paid more the closer you cut it",
-    "Buy bigger trucks and storm upgrades"
+    "Take a giant's order photo",
+    "Climb the cake and pipe frosting to match it",
+    "Get scored by percentage match and paid in gold",
+    "Buy bigger cakes and new frosting colours",
+    "Unlock royal giants with harder orders"
    ],
-   "twist": "Each run the storm path changes, and roads you used last time may be gone.",
+   "twist": "You walk on the cake while you decorate, so footprints and slips ruin the design; jump pads and ladders become tools.",
    "monetization": [
-    "2x pay multiplier pass",
-    "VIP truck skin",
-    "Speed pass for faster loading"
+    "Frosting colour packs",
+    "2x gold pass",
+    "VIP sprinkle cannon"
    ],
    "retention": [
-    "Weekly storm event",
-    "Trucks to collect",
-    "Fastest-delivery leaderboard"
+    "Daily giant birthday order",
+    "Best-match leaderboard",
+    "Cake photo gallery"
    ],
-   "why_now": "Vehicle Sim is at 1.60 (up 0.26) with Low Range: Offroad 4x4 [EARLY ACCESS] at 12,626 CCU. Disaster / weather is at 1.73, realistic art at 2.02 and linear courses at 2.10 (DONT SPLASH at 45,709 CCU).",
+   "why_now": "Paint / create is at 1.94 across 22 new games and Sell / run a shop is at 1.34 (Sell Fries! [Anomaly] 🍟 15,648 CCU). Giant / huge is at 1.72 led by Raise The Biggest Family (11,390 CCU) and Bug Evolution [🦟] (10,479 CCU), and Food / candy is at 1.82.",
    "inspired_by": [
-    "Low Range: Offroad 4x4 [EARLY ACCESS]",
-    "DONT SPLASH",
-    "[🌊] Steal Eggs From Tsunami!"
+    "[UPD1]⚽ Be a Soccer Legend",
+    "Sell Fries! [Anomaly] 🍟",
+    "Raise The Biggest Family"
    ],
-   "differentiator": "Disaster games make you hide; here you race the storm and the risk is what pays.",
-   "art_style": "realistic",
-   "map_style": "linear_course"
+   "differentiator": "Drawing games score a flat picture; here you decorate a giant 3D cake while standing on it.",
+   "art_style": "simulator_bright",
+   "map_style": "plot_base"
+  },
+  {
+   "title": "Bat Moons into Orbit 🌙",
+   "scope": "large",
+   "genre": "Tycoon · Space launch",
+   "mechanics": [
+    "Hit / swing / launch",
+    "Tycoon / base building"
+   ],
+   "theme": "Space",
+   "hook": "Your planet is bare. Swing a giant bat at passing rocks and knock them into orbit. Every moon that sticks earns cash every second.",
+   "core_loop": [
+    "Wait for an asteroid to drift past",
+    "Time your swing to knock it into a stable orbit",
+    "Each moon in orbit pays passive cash",
+    "Buy bigger bats and tractor beams",
+    "Unlock rare ice and gold moons"
+   ],
+   "twist": "Moons can collide; a bad swing can knock another player's moon out of their orbit and into yours.",
+   "monetization": [
+    "2x orbit income",
+    "VIP laser bat",
+    "Auto-swing pass",
+    "Extra orbit slots"
+   ],
+   "retention": [
+    "Offline earnings from orbit",
+    "Meteor shower events",
+    "Most-moons leaderboard",
+    "Rebirth to a bigger planet"
+   ],
+   "why_now": "Hit / swing / launch is the top mechanic at 2.88 (Throw Food For Animals at 238,858 CCU) and Space is at 1.74 led by Sweep The Moon 🌕 (11,694 CCU). Tycoon / base building sits at 1.27 across 81 new games with [⚡] Steal a Superpower! at 15,209 CCU.",
+   "inspired_by": [
+    "Throw Food For Animals",
+    "Sweep The Moon 🌕",
+    "[⚡] Steal a Superpower!"
+   ],
+   "differentiator": "Launch games score one throw and reset; here every good hit stays in orbit and keeps paying.",
+   "art_style": "simulator_bright",
+   "map_style": "plot_base"
+  },
+  {
+   "title": "Riddle the Dragon 🐉",
+   "scope": "small",
+   "genre": "Party · Riddle heist",
+   "mechanics": [
+    "Quiz / guess"
+   ],
+   "theme": "Fantasy / medieval",
+   "hook": "A dragon sleeps on a pile of gold. Answer its riddles to grab a handful of coins. Answer wrong and it wakes up.",
+   "core_loop": [
+    "Sneak up to the dragon's hoard",
+    "Answer a riddle or guess question",
+    "Right answers let you grab gold, wrong ones wake the dragon",
+    "Run before you get burned",
+    "Spend gold on armor that buys extra wrong answers"
+   ],
+   "twist": "Players can whisper fake answers to rivals in proximity chat, so trust becomes part of the quiz.",
+   "monetization": [
+    "VIP knight armor",
+    "2x gold pass",
+    "Skip-riddle tokens"
+   ],
+   "retention": [
+    "Daily new riddle pack",
+    "Richest-knight leaderboard",
+    "Harder dragons each week"
+   ],
+   "why_now": "Quiz / guess is at 1.15 across 9 new games (Thai Quiz Duels [UPDATES] 3,070 CCU, [UPD] Find The Country 🌍 1,026 CCU) and Quiz + Fantasy / medieval is an open gap at 2.11. Fantasy / medieval is at 1.23 with Ride a Dragon at 2,145 CCU.",
+   "inspired_by": [
+    "Thai Quiz Duels [UPDATES]",
+    "[UPD] Find The Country 🌍",
+    "Ride a Dragon"
+   ],
+   "differentiator": "Quiz games are two players at a desk; here every answer is a risky step toward a sleeping dragon.",
+   "art_style": "stylized",
+   "map_style": "lobby_rounds"
   }
  ]
 }

@@ -1,53 +1,54 @@
 {
   "niches": {
     "mechanic:break_mine": {
-      "art_style": "Stylized bright cartoon (~8/12) with a few dark anime/RNG fantasy leaders.",
+      "art_style": "simulator_bright (~6/12) with growing realistic destruction",
       "avoid": [
-        "Dark low-contrast scenes for casual games"
+        "Static targets with no impact",
+        "Muddy colours"
       ],
-      "date": "2026-11-04",
-      "direction": "Icon: first-person fist or pickaxe smashing a cracked block with a glowing prize behind. Thumbnail: hole in the wall revealing a bright reward.",
+      "date": "2026-11-10",
+      "direction": "Icon: hammer or pickaxe smashing a glowing target with shards flying. Thumbnail: avatar swinging at a huge target, damage numbers popping.",
       "do": [
-        "Show the strike moment with debris",
-        "Make the prize glow",
-        "Try first-person hands breaking through",
-        "Add a value tag on the prize"
+        "Freeze the tool at the moment of impact",
+        "Make the target glow and shatter",
+        "Throw chunks toward the camera",
+        "Add one short title or number"
       ],
       "icon_patterns": [
         {
-          "count": "9/12",
-          "pattern": "tool or fist striking an object"
+          "count": "7/12",
+          "pattern": "Tool mid-strike (pickaxe, saw, hammer, bat)"
         },
         {
           "count": "5/12",
-          "pattern": "glowing gem/egg/ore as the prize"
+          "pattern": "Glowing gem/egg/target being broken"
         },
         {
-          "count": "5/12",
-          "pattern": "flying debris or cracked wall"
+          "count": "6/12",
+          "pattern": "Debris or shards flying"
         },
         {
-          "count": "3/12",
-          "pattern": "first-person orange-sleeve fists"
+          "count": "6/12",
+          "pattern": "Bright blue sky background"
         }
       ],
-      "members_hash": "b04d95d603",
-      "newcomer_shift": "NEW games go first-person: orange prison sleeves punching through stone walls into a sunny outside.",
+      "members_hash": "ad4cab91bd",
+      "newcomer_shift": "NEW games show realistic destruction close-ups (car crushed by hammer, ice cream mountain) with less avatar.",
       "source": "vision",
-      "summary": "Break/mine games show the tool hitting a glowing ore, egg or wall, with first-person fists and smashing debris rising among newcomers.",
-      "text_usage": "Big chunky titles on a few, value tags like $999M+ on prize eggs.",
+      "summary": "Break/mine leaders show the tool striking a glowing target, with chunks flying.",
+      "text_usage": "Title words (CUT A ROCK!, REAL CRASH PHYSICS) and power numbers",
       "thumbnail_patterns": [
         {
-          "count": "3/12",
-          "pattern": "breaking-through-wall view with outside scenery"
+          "count": "6/12",
+          "pattern": "Avatar swinging tool at oversized target"
         },
         {
           "count": "3/12",
-          "pattern": "red arrow pointing at the prize"
+          "pattern": "Power or money stat overlay"
         },
         {
           "count": "3/12",
-          "pattern": "big title text"
+          "pattern": "Realistic destruction renders (cars, houses)"
         }
       ]
     },
@@ -304,119 +305,114 @@
       ]
     },
     "mechanic:grow_farm": {
-      "art_style": "Mostly bright stylized renders (8/12) with a few realistic animal-survival shots (tiger, crocodile) and one low-poly.",
+      "art_style": "stylized bright with some realistic animal survival renders",
       "avoid": [
-        "Wide shots of empty fields",
-        "Dark palettes unless it is a survival game"
+        "Wordmark-only icons with no subject",
+        "Cluttered fields with many small crops"
       ],
-      "date": "2026-11-09",
-      "direction": "Icon: a giant shiny crop or creature filling the frame with a tiny excited avatar beside it, bright green farm behind. Thumbnail: first-person tool hitting the crop with an E-key prompt, coins bursting and a $0 to $1,000,000 contrast.",
+      "date": "2026-11-10",
+      "direction": "Icon: a huge glowing crop with a tiny avatar holding a tool. Thumbnail: the crop or creature towering over a garden plot with one short bold word.",
       "do": [
-        "Make one crop or creature huge and glossy in the centre",
-        "Put a small shocked avatar beside it for scale",
-        "Use lush saturated greens and a sunny sky",
-        "Add an E-key action badge showing the core verb"
+        "Make one crop or creature giant and centred",
+        "Put a small surprised avatar next to it for scale",
+        "Use lush saturated greens",
+        "Add an 'E' interaction prompt to hint the action"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "One oversized crop, creature or animal as the hero subject"
-        },
-        {
-          "count": "6/12",
-          "pattern": "Small avatar reacting next to the big subject"
-        },
-        {
           "count": "7/12",
-          "pattern": "Lush green/jungle or bright farm backgrounds"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Title or UPDATE banner text"
-        }
-      ],
-      "members_hash": "d98b651cad",
-      "newcomer_shift": "NEW games add first-person tool views with E-key prompts (chop, capture) and realistic animal close-ups; one uses a giant hand reaching for avatar-faced potatoes.",
-      "source": "vision",
-      "summary": "Grow/farm icons centre one oversized crop, creature or animal close to camera with a small avatar beside it, in lush greens; creature-collection entries use dramatic close-up beasts.",
-      "text_usage": "Short titles (GROW OFFLINE, RUN A FARM, ABOVE), money numbers and E-key action prompts; icons often text-free.",
-      "thumbnail_patterns": [
-        {
-          "count": "6/12",
-          "pattern": "Giant crop or creature filling most of the frame"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Money/progression contrast ($0 vs $1,000,000) or coin bursts"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Action prompt badge (E CAPTURE, E CHOP)"
+          "pattern": "One giant crop, plant or creature filling the frame"
         },
         {
           "count": "5/12",
-          "pattern": "Shocked or excited avatar faces"
+          "pattern": "Small avatar reacting next to it for scale"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Lush green jungle/field background"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Title text logo on icon"
+        }
+      ],
+      "members_hash": "6391559b0f",
+      "newcomer_shift": "NEW entries mix realistic animal survival and wordmark-only icons (Tavern Town) instead of the giant-crop formula.",
+      "source": "vision",
+      "summary": "Grow/farm leaders show one oversized crop or creature dominating the frame, often with a small avatar for scale.",
+      "text_usage": "Short title words (GROW OFFLINE, RUN A FARM, ABOVE); money split once",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Oversized crop or animal as focal point"
+        },
+        {
+          "count": "1/12",
+          "pattern": "$0 \u2192 $1,000,000 split"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Realistic animal renders in nature"
         }
       ]
     },
     "mechanic:hit_swing": {
-      "art_style": "Mostly stylized/bright Roblox renders with classic blocky avatars (about 9/12); a few darker anime-style fighter shots.",
+      "art_style": "stylized clean renders of white ragdolls on bright baseplates dominate (~7/12); a few simulator_bright Steal-style",
       "avoid": [
-        "Dark, static portraits with nothing being hit",
-        "Busy text blocks on the icon"
+        "Busy UI or long text on the icon",
+        "Dark backgrounds that hide the motion"
       ],
-      "date": "2026-11-09",
-      "direction": "Icon: one blocky character or white ragdoll dummy caught mid-launch with a shocked face against bright sky, debris flying. Thumbnail: a wide daylight scene with a curved yellow trajectory line ending in the target, a big reward number or % label, and bodies or objects scattered mid-air.",
+      "date": "2026-11-10",
+      "direction": "Icon: one white ragdoll mid-flight with a bat or object slamming into it, debris flying, bright sky. Thumbnail: wide shot of the launch arc ending in an impact burst, one short bold stat if any.",
       "do": [
-        "Freeze the moment of impact: show the object or body mid-flight with a bright motion arc",
-        "Use a blocky avatar with an exaggerated shocked face, close and large in frame",
-        "Keep a bright blue-sky, green-ground daylight palette",
-        "Put debris, projectiles or limbs scattered in the air for chaos",
-        "Keep the icon text-free; save any number or title for the thumbnail"
+        "Freeze the exact moment of impact with a visible swing or launch arc",
+        "Use a plain white ragdoll or shocked avatar as the hero",
+        "Bright blue sky + green baseplate, high contrast",
+        "Add dust, debris or an explosion burst at the hit point"
       ],
       "icon_patterns": [
         {
-          "count": "10/12",
-          "pattern": "Single character or creature in a dynamic action pose (swinging, punching, flying)"
-        },
-        {
-          "count": "7/12",
-          "pattern": "Bright blue-sky / green-grass daylight background"
-        },
-        {
-          "count": "4/12",
-          "pattern": "White blank ragdoll dummy figure as the subject"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Shocked or panicked face on the character"
-        },
-        {
-          "count": "10/12",
-          "pattern": "Little or no text on the icon"
-        }
-      ],
-      "members_hash": "68aa54d428",
-      "newcomer_shift": "NEW games (9-12) use white faceless ragdoll dummies and physics chaos (bodies flying, collapsing bridges) rather than a hero avatar; one uses a dark Venom-style character with bold title text.",
-      "source": "vision",
-      "summary": "Bright daylight scenes of a blocky Roblox character mid-hit or mid-launch, with a visible motion arc, flying objects or ragdoll bodies; newcomers lean on white ragdoll dummies.",
-      "text_usage": "Icons are mostly text-free; thumbnails use occasional big outlined title text or huge money numbers ($999,999,999B) and small % chance labels.",
-      "thumbnail_patterns": [
-        {
-          "count": "4/12",
-          "pattern": "Yellow or coloured motion arc / trail showing the throw or launch path"
-        },
-        {
           "count": "6/12",
-          "pattern": "Projectiles or debris frozen mid-air (arrows, weapons, rubble)"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Large bold white title text with dark outline"
+          "pattern": "Blank white/grey ragdoll mannequin as the subject"
         },
         {
           "count": "8/12",
-          "pattern": "Daylight outdoor scene with saturated colours"
+          "pattern": "Bright blue sky and green grass baseplate background"
+        },
+        {
+          "count": "7/12",
+          "pattern": "Character caught mid-hit or mid-flight with debris or impact burst"
+        },
+        {
+          "count": "11/12",
+          "pattern": "No text on icon"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Classic bacon-hair avatar with shocked face"
+        }
+      ],
+      "members_hash": "699183824d",
+      "newcomer_shift": "NEW games lean harder into plain white 'realistic ragdoll' mannequins with frozen/impact effects and almost no text.",
+      "source": "vision",
+      "summary": "Hit/launch leaders show a white or classic Roblox character mid-impact on a bright blue-sky, green-grass baseplate with motion arcs and debris.",
+      "text_usage": "Mostly no text; when present it is a big money number or a short bold title",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "Motion arc, projectile or swing trail showing the launch"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Explosion, dust or block debris at impact"
+        },
+        {
+          "count": "6/12",
+          "pattern": "Semi-realistic lighting on a simple grey/white ragdoll"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Big text only for a price/stat or title"
         }
       ]
     },
@@ -524,166 +520,158 @@
       ]
     },
     "mechanic:paint_create": {
-      "art_style": "Split: about half bright stylized Roblox renders, about a third realistic vehicle/sandbox shots, plus one anime and one voxel build.",
+      "art_style": "mixed: realistic vehicle/sandbox renders (~5/12) and stylized creation scenes (~5/12)",
       "avoid": [
-        "Generic sandbox landscapes with no clear action",
-        "Dim, muddy realistic scenes for a creation game"
+        "Wide sandbox shots that hide what you make",
+        "Dark realistic scenes for a creation game"
       ],
-      "date": "2026-11-09",
-      "direction": "Icon: a hand or avatar holding a pencil/brush over a bright, half-finished creation that fills the frame. Thumbnail: split-screen of two players' creations with big green and red score percentages above each.",
+      "date": "2026-11-10",
+      "direction": "Icon: close-up of a half-finished piece with a tool in hand and sparkles. Thumbnail: two avatars at desks, one bad attempt at 12% and one near-perfect at 99%.",
       "do": [
-        "Show the thing being created large in frame, mid-creation",
-        "Put a tool in a hand (pencil, brush, spray gun) pointing at it",
-        "Use a comparison layout with score % to show judging",
-        "Keep colours candy-bright and backgrounds simple"
+        "Show the artwork half-done with the tool mid-stroke",
+        "Add a % score badge comparing two attempts",
+        "Use one famous recognisable subject (flag, painting) as the canvas",
+        "Bright, clean background"
       ],
       "icon_patterns": [
         {
+          "count": "5/12",
+          "pattern": "The finished artwork or object as the hero"
+        },
+        {
           "count": "4/12",
-          "pattern": "Character holding a creation tool (pencil, paint gun, hammer, brush) toward the object"
+          "pattern": "Tool in hand (pencil, sponge, paint gun)"
+        },
+        {
+          "count": "5/12",
+          "pattern": "Vehicle or sandbox scene rather than creation"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Title text on icon"
+        }
+      ],
+      "members_hash": "dbd47d9f83",
+      "newcomer_shift": "NEW creation games (Draw a Flag, Clean a Painting, Make Viral Candy) use bright close-ups of the artwork with a tool and a before/after split.",
+      "source": "vision",
+      "summary": "Create games show the creation in progress, usually a hand or avatar with a tool next to a near-finished result and a percentage score.",
+      "text_usage": "Little text; percentages are the main overlay in creation games",
+      "thumbnail_patterns": [
+        {
+          "count": "2/12",
+          "pattern": "Side-by-side compare with % accuracy (12.4% vs 99.9%)"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Half-cleaned / half-finished split of the artwork"
         },
         {
           "count": "6/12",
-          "pattern": "Bright saturated blue-sky backgrounds"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Game logo / title text on the icon"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Vehicle as the main subject"
-        }
-      ],
-      "members_hash": "2b7230098b",
-      "newcomer_shift": "NEW games show the creation itself in extreme close-up (a hand drawing a flag, cotton candy spinning) or a simple first-person tool view, with satisfying bright colours.",
-      "source": "vision",
-      "summary": "A mixed niche where winners show a clear creation or sandbox action in a bright scene, often with a character holding a tool (pencil, paint gun, hammer) near the thing being made.",
-      "text_usage": "Light: a few logo titles on icons; thumbnails mostly text-free except score percentages (12.4% vs 99.9%) and short labels.",
-      "thumbnail_patterns": [
-        {
-          "count": "5/12",
-          "pattern": "Close-up of the object being made or customized (shirt, flag, candy, dummy)"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Smiling or determined avatar faces close to camera"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Side-by-side comparison or split layout (before/after, two players, percentages)"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Realistic driving or physics scene without text"
+          "pattern": "Realistic or semi-realistic render"
         }
       ]
     },
     "mechanic:plus_one_stat": {
-      "art_style": "simulator_bright in about 9/12; a few anime-glow panels.",
+      "art_style": "simulator_bright dominates (~9/12) with anime-glow accents",
       "avoid": [
-        "Words instead of numbers",
-        "Muted colours"
+        "Plain scenes with no numbers",
+        "Dark muted colours"
       ],
-      "date": "2026-11-08",
-      "direction": "Icon: bacon-hair avatar holding the evolving item, ringed by '+1' badges on cyan. Thumbnail: left half weak version with +1, right half huge glowing version with +999M, red arrow between.",
+      "date": "2026-11-10",
+      "direction": "Icon: avatar centred with a glowing evolved item and 4-5 floating '+1' numbers. Thumbnail: left-to-right strip from weak to maxed, numbers climbing in each panel.",
       "do": [
-        "Ring the avatar with 5-8 bold '+1' badges",
-        "Show a split before/after with a much bigger number on the right",
-        "Use one glowing power object as the focal point",
-        "Keep the background a flat bright colour"
+        "Scatter big white '+1' numbers with dark outline around the hero",
+        "Show the evolved end state glowing next to the start",
+        "Use a 2-3 panel progression split",
+        "Keep the bacon-hair avatar centred and reacting"
       ],
       "icon_patterns": [
         {
-          "count": "8/12",
-          "pattern": "floating white '+1' numbers around the character"
+          "count": "6/12",
+          "pattern": "Floating white '+1' / '+999' numbers around the avatar"
         },
         {
-          "count": "7/12",
-          "pattern": "bacon-hair default avatar as hero"
+          "count": "8/12",
+          "pattern": "Classic bacon-hair avatar as hero"
         },
         {
           "count": "2/12",
-          "pattern": "hourglass countdown icon (9 HOURS / NOW)"
+          "pattern": "Hourglass 'NOW!!!' countdown teaser icon"
         },
         {
-          "count": "6/12",
-          "pattern": "saturated cyan or green background"
+          "count": "4/12",
+          "pattern": "Glowing evolved weapon/power next to the avatar"
         }
       ],
-      "members_hash": "3acd2222ee",
-      "newcomer_shift": "NEW entries try anime clash art and novelty objects (license plate, rock + planet) but keep the +1 badges.",
+      "members_hash": "99e42b743b",
+      "newcomer_shift": "NEW games use 3-panel progression strips ($1 \u2192 $92.5M \u2192 INF) and transformation splits (normal vs evolved face).",
       "source": "vision",
-      "summary": "+1 games plaster floating '+1' badges around a bacon-hair avatar and show a before/after power jump.",
-      "text_usage": "Numbers are the text: +1, +999, +7M, $/s rates; almost no words.",
+      "summary": "+1 games sell growth: a bacon-hair avatar surrounded by floating '+1' or '+999' numbers, often a before/after split.",
+      "text_usage": "Text is almost entirely stat numbers (+1, +999, $92.5M); few words",
       "thumbnail_patterns": [
         {
-          "count": "4/12",
-          "pattern": "split before/after panel with small vs huge numbers (+1 vs +7M/+999)"
+          "count": "5/12",
+          "pattern": "Before/after or split panels showing weak vs evolved"
+        },
+        {
+          "count": "7/12",
+          "pattern": "+1/+7M/+999 numbers scattered across the frame"
         },
         {
           "count": "8/12",
-          "pattern": "'+1' badges scattered around the subject"
-        },
-        {
-          "count": "6/12",
-          "pattern": "glowing power effect (fruit, eyes, weapon, aura)"
+          "pattern": "Saturated simulator colours with neon power glow"
         }
       ]
     },
     "mechanic:quiz_guess": {
-      "art_style": "Bright stylized/simulator Roblox renders dominate (11/12), clean and saturated.",
+      "art_style": "simulator_bright stylized (~10/12)",
       "avoid": [
-        "Text-heavy question screens",
-        "Dark backgrounds"
+        "Single-avatar shots with no rival",
+        "Dark palettes"
       ],
-      "date": "2026-11-09",
-      "direction": "Icon: two avatars facing each other over the quiz object with ? marks floating, one grinning and one sweating. Thumbnail: the same table scene with a big short question at the top and the two answers in green and red.",
+      "date": "2026-11-10",
+      "direction": "Icon: two avatars at a table, one confused with ??? and one smug. Thumbnail: same duel with the answer card centred and a short bold question.",
       "do": [
-        "Put two avatars across a table, one smug and one confused",
-        "Place the quiz object big in the middle",
-        "Add ? marks and one short shouty question",
-        "Show answer contrast in green vs red"
+        "Put two avatars face to face with the answer card between them",
+        "Add red question marks over the confused player",
+        "Use one bold question in caps",
+        "Bright blue backdrop"
       ],
       "icon_patterns": [
         {
           "count": "7/12",
-          "pattern": "Two avatars facing off, one smug one confused/crying"
+          "pattern": "Two avatars facing each other at a table"
         },
         {
           "count": "7/12",
-          "pattern": "Floating question marks"
+          "pattern": "Red/yellow question marks"
         },
-        {
-          "count": "8/12",
-          "pattern": "Bright blue sky / grass background"
-        },
-        {
-          "count": "8/12",
-          "pattern": "The quiz object in the middle (flag, map, card, price, colour)"
-        }
-      ],
-      "members_hash": "acd454ca8c",
-      "newcomer_shift": "NEW games use a single big prompt object (a giant spider shrinking, a VR headset with two prices, anime cards) with a cursor or arrow, and lean on pop-culture or real-product guesses.",
-      "source": "vision",
-      "summary": "Quiz games show two players across a table reacting to the question (one confident, one confused), with ? marks, the prompt object in the middle and short question text.",
-      "text_usage": "Short shouty question text, answer cards, and green/red prices; often foreign-language for local quizzes.",
-      "thumbnail_patterns": [
         {
           "count": "6/12",
-          "pattern": "Players seated at a table across from each other"
+          "pattern": "Answer card, flag or map between them"
+        },
+        {
+          "count": "8/12",
+          "pattern": "Bright blue background"
+        }
+      ],
+      "members_hash": "5563921273",
+      "newcomer_shift": "NEW quiz games use phone screens and real-object size comparisons rather than flags.",
+      "source": "vision",
+      "summary": "Quiz games show two avatars facing off at a table with question marks and the answer card between them.",
+      "text_usage": "Big bold question words and answer cards; local-language text in the top game",
+      "thumbnail_patterns": [
+        {
+          "count": "7/12",
+          "pattern": "Duel layout: thinking face vs smug face"
         },
         {
           "count": "4/12",
-          "pattern": "Big bold question or answer text (TOO OBVIOUS!, WHAT COLOR?!, SHRINK IT!)"
+          "pattern": "Big bold question word (WHAT COLOR?!, TOO OBVIOUS!)"
         },
         {
-          "count": "2/12",
-          "pattern": "Price or answer labels in green vs red"
-        },
-        {
-          "count": "2/12",
-          "pattern": "Red arrow pointing to the answer slot"
+          "count": "5/12",
+          "pattern": "Recognisable subject card (flag, player, anime)"
         }
       ]
     },
@@ -788,48 +776,54 @@
       ]
     },
     "mechanic:sell_shop": {
-      "art_style": "Stylized cartoon with warm lighting (8/12).",
+      "art_style": "stylized bright for shops, dark_gritty for anomaly variants",
       "avoid": [
-        "Empty store shots with no product"
+        "Exterior shots with no product",
+        "Long text"
       ],
-      "date": "2026-11-07",
-      "direction": "Icon: a giant appetizing product with our character serving it. Thumbnail: first-person hands at the counter with the product, and a hint of a twist in the background.",
+      "date": "2026-11-10",
+      "direction": "Icon: avatar serving the product with something creepy behind. Thumbnail: first-person view at the serving window, product in hand, shadowy customer outside.",
       "do": [
-        "Make the product huge and appetizing",
-        "Show hands serving or packing",
-        "Use warm, cozy lighting"
+        "Show the product in the player's hand at the counter",
+        "Add a dark figure at the window for anomaly themes",
+        "Use warm interior lighting",
+        "One short action word"
       ],
       "icon_patterns": [
         {
           "count": "6/12",
-          "pattern": "Food or product as the main subject"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Roblox character holding/serving the product"
-        },
-        {
-          "count": "5/12",
-          "pattern": "Warm orange/wood tones"
-        }
-      ],
-      "members_hash": "9fa5f7a9fd",
-      "newcomer_shift": "NEW games add anomaly horror twists to shop work and first-person serving.",
-      "source": "vision",
-      "summary": "Shop games show the product close up (fries, sushi, ice cream) with cozy, warm interiors.",
-      "text_usage": "Light: short logos or $0 vs $1,000,000 progress.",
-      "thumbnail_patterns": [
-        {
-          "count": "5/12",
-          "pattern": "Product close-up arranged on counter or tray"
+          "pattern": "The food/product being sold as hero"
         },
         {
           "count": "3/12",
-          "pattern": "Creepy anomaly figure lurking in a shop scene"
+          "pattern": "Avatar behind a counter serving"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Dark creature lurking in the background"
         },
         {
           "count": "4/12",
-          "pattern": "First-person hands handling items"
+          "pattern": "Bold title word on icon"
+        }
+      ],
+      "members_hash": "8381d42046",
+      "newcomer_shift": "NEW shop games pair a normal counter with a creepy customer at the window (Ice Cream Shop [Anomaly]) or use cosy first-person close-ups.",
+      "source": "vision",
+      "summary": "Shop games put the product and the counter front and centre; new ones add an 'anomaly' horror twist or cosy close-ups.",
+      "text_usage": "Short labels (EQUIP, CUT HAIR, BEARD SEASON!)",
+      "thumbnail_patterns": [
+        {
+          "count": "4/12",
+          "pattern": "Shop interior with counter/window"
+        },
+        {
+          "count": "4/12",
+          "pattern": "Product close-up filling frame"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Dark monster at the window (anomaly)"
         }
       ]
     },
@@ -970,58 +964,54 @@
       ]
     },
     "mechanic:tycoon_build": {
-      "art_style": "Mostly bright stylized/simulator renders (9/12), with a couple of realistic car shots and one soft pastel cozy look.",
+      "art_style": "simulator_bright stylized (~9/12)",
       "avoid": [
-        "Wide empty tycoon plots",
-        "Cluttered UI screenshots"
+        "Wide empty maps",
+        "Too many small items"
       ],
-      "date": "2026-11-09",
-      "direction": "Icon: first-person hands or a delighted avatar holding the signature product, glowing, on a bright warm background. Thumbnail: rows of the product filling the frame with a big green $/s number and a red arrow to the rarest item.",
+      "date": "2026-11-10",
+      "direction": "Icon: one appealing product close-up with a click cursor. Thumbnail: avatar and product in a bright scene with a money-per-second number.",
       "do": [
-        "Show the product you build or sell large and appetising in the centre",
-        "Add a big income-per-second number in green or rainbow text",
-        "Use a reacting avatar or first-person hands working on the product",
-        "Keep warm, bright, clean lighting"
+        "Fill the frame with the product you build or sell",
+        "Add one big money number",
+        "Use a red arrow to the player or item",
+        "Keep the sky bright and clean"
       ],
       "icon_patterns": [
         {
+          "count": "6/12",
+          "pattern": "Bacon-hair avatar reacting to the build/collectible"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Big money number or countdown on icon"
+        },
+        {
           "count": "7/12",
-          "pattern": "Avatar with an exaggerated reaction (angry, excited, shocked) next to the product"
-        },
-        {
-          "count": "8/12",
-          "pattern": "Bright saturated sky or gradient background"
-        },
-        {
-          "count": "5/12",
-          "pattern": "The product/asset itself is the hero (car, sushi, box, platform)"
-        },
-        {
-          "count": "4/12",
-          "pattern": "Logo or New! badge text"
-        }
-      ],
-      "members_hash": "508b742321",
-      "newcomer_shift": "NEW games (9-12) use cozy close-up product shots (packing pink gift boxes, rows of sushi) with soft warm lighting and almost no text, plus one Halloween army scene.",
-      "source": "vision",
-      "summary": "Tycoon winners show the thing you build or sell big and glossy (cars, sushi, gift boxes, platforms) with a reacting avatar, often with huge income numbers; newcomers go cozy close-up product shots.",
-      "text_usage": "Logos on the leaders; big rainbow or green income/rarity numbers on thumbnails; tiny action badges (SWEEP, PLAY).",
-      "thumbnail_patterns": [
-        {
-          "count": "3/12",
-          "pattern": "Huge income or rarity numbers ($89.86No/s, 1 in 857,747,777)"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Glowing gold/rare item with lightning or sparkle effects"
-        },
-        {
-          "count": "3/12",
-          "pattern": "Top-down or close-up product grid (sushi rows, gift box contents)"
+          "pattern": "Bright blue sky backgrounds"
         },
         {
           "count": "2/12",
-          "pattern": "Cursor hand or click icon showing the build action"
+          "pattern": "Pointing hand/click cursor"
+        }
+      ],
+      "members_hash": "df46cc475f",
+      "newcomer_shift": "NEW games show cosy close-ups of the product itself (rows of sushi, a pink packing box) with no avatar.",
+      "source": "vision",
+      "summary": "Tycoon/build games show the single thing you build or collect, bright and close, often with a big money number or progress cue.",
+      "text_usage": "Money numbers and short labels (YOU!, ASTRAL, NEW!)",
+      "thumbnail_patterns": [
+        {
+          "count": "6/12",
+          "pattern": "The product filling the frame (sushi, bridge, scooter, box)"
+        },
+        {
+          "count": "3/12",
+          "pattern": "Red 'YOU!' arrow or circle pointing at the player"
+        },
+        {
+          "count": "2/12",
+          "pattern": "Money per second label"
         }
       ]
     }
