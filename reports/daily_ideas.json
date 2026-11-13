@@ -1,384 +1,393 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "ideas": [
     {
-      "title": "Crash Dummies for Cash 🚗",
-      "scope": "medium",
-      "genre": "Physics sim · Drive-and-launch",
+      "title": "Launch Hats for Fame 🎩",
+      "scope": "small",
+      "genre": "Party · Launch-and-style",
       "mechanics": [
         "Hit / swing / launch",
-        "Race / drive"
+        "Dress / style"
       ],
-      "theme": "Vehicles",
-      "hook": "Strap a crash-test dummy to the hood, floor it down a test track and slam into the wall. The further the dummy flies, the more the lab pays.",
+      "theme": "Fashion / beauty",
+      "hook": "A model struts down the runway and you fire hats, wigs and shoes at her from a cannon. Whatever lands stays on, and the judges score the outfit.",
       "core_loop": [
-        "Pick a car and a dummy",
-        "Speed down the test track and hit the barrier",
-        "Earn cash for distance, flips and broken parts",
-        "Buy faster cars, launch ramps and tougher dummies",
-        "Unlock new tracks (cliff, ice lake, moon base)"
+        "Load your cannon with random clothing pieces",
+        "Aim and launch as the model walks past",
+        "Pieces that land build her outfit live",
+        "Judges score style and a crowd votes",
+        "Earn fame to unlock rarer pieces and better cannons"
       ],
-      "twist": "Bones and bolts on the dummy break one by one, and each broken part is a bonus payout, so players aim crashes instead of just going fast.",
+      "twist": "The round theme (beach, gala, spooky) changes what scores, so a perfect shot with the wrong hat still loses points.",
       "monetization": [
-        "VIP test driver pass",
-        "2x crash cash multiplier",
-        "Extra garage storage for cars"
+        "VIP gold cannon pass",
+        "2x fame multiplier",
+        "Extra wardrobe storage for rare pieces"
       ],
       "retention": [
-        "Daily crash challenge (hit a target zone)",
-        "Furthest-fling leaderboard",
-        "Collect every car in the garage"
+        "Daily runway theme",
+        "Best-dressed leaderboard",
+        "Collect every hat in the catalog"
       ],
-      "why_now": "Hit / swing / launch is the top rising mechanic at 2.79 momentum (36 new games), and Physics Sim is the fastest subgenre at 2.16 with Hyper Realistic Ragdoll (17,562 CCU) and Bloody Ragdoll Physics 🩸 (18,959 CCU). Hit + Race / drive is a live pair (6 new games, 50,635 CCU), and realistic art is rising at 1.88.",
+      "why_now": "Hit / swing / launch is the top rising mechanic at 2.61 momentum (35 new games, up 0.15 this week), and Hit × Fashion / beauty is the biggest gap in the data (score 4.55). Fashion / beauty is rising at 1.23 with [UPDATE] Barber Simulator (9,482 CCU) and +1 Glow Up Evolution (8,741 CCU).",
       "inspired_by": [
-        "Hyper Realistic Ragdoll",
-        "Bloody Ragdoll Physics 🩸",
-        "Low Range: Offroad 4x4 [EARLY ACCESS]"
+        "Throw Food For Animals",
+        "[UPDATE] Barber Simulator",
+        "+1 Glow Up Evolution"
       ],
-      "differentiator": "Ragdoll games launch the player by hand; here the car is the launcher, so vehicle upgrades and ragdoll physics feed one loop.",
-      "art_style": "realistic",
-      "map_style": "linear_course"
-    },
-    {
-      "title": "Draw Arks for the Flood 🌊",
-      "scope": "small",
-      "genre": "Party · Draw-to-survive",
-      "mechanics": [
-        "Paint / create",
-        "Survive"
-      ],
-      "theme": "Disaster / weather",
-      "hook": "A flood wave is coming in 60 seconds. Draw your boat with your finger, it turns into a real floating ship, and the wave decides if your design was any good.",
-      "core_loop": [
-        "Get a round prompt (carry 3 animals, hold 4 players)",
-        "Draw a hull, sails and walls in 60 seconds",
-        "Watch your drawing turn into a physics boat",
-        "Ride out the flood wave and storms",
-        "Earn ink and colours for surviving longer"
-      ],
-      "twist": "Each round adds one twist to the flood (whirlpool, lightning, giant shark), so a design that won last round can sink this one.",
-      "monetization": [
-        "Rainbow ink multiplier pass",
-        "VIP pens and stickers",
-        "2x survival coins"
-      ],
-      "retention": [
-        "Gallery of best boats voted by players",
-        "Daily flood type",
-        "Win streak badge"
-      ],
-      "why_now": "Paint / create × Disaster / weather is the biggest gap in the data (score 4.3). Paint / create sits at 1.70 momentum (27 new games) and Disaster / weather at 1.93 with [🌊] Steal Eggs From Tsunami! (7,724 CCU) and [🏁] Steal A Pet And Ride It! (13,894 CCU). New draw games in the vision pass score drawings with a % on the thumbnail.",
-      "inspired_by": [
-        "[🌊] Steal Eggs From Tsunami!",
-        "Kukirin Life [Testing]",
-        "⚽ Be a Soccer Legend"
-      ],
-      "differentiator": "Draw games today judge pictures; here the drawing has to physically float, so the score comes from the flood, not a vote.",
+      "differentiator": "Fashion games style by menu clicks; here you style by aiming a cannon, so skill shots decide the look.",
       "art_style": "simulator_bright",
       "map_style": "lobby_rounds"
     },
     {
-      "title": "Stamp Bills for Cash 💵",
-      "scope": "small",
-      "genre": "Quiz · Bank teller",
+      "title": "Tornado Yard Sale 🌪️",
+      "scope": "medium",
+      "genre": "Shop sim · Disaster loot",
       "mechanics": [
-        "Quiz / guess",
-        "Job / shift"
+        "Sell / run a shop",
+        "Survive"
       ],
-      "theme": "Money / rich",
-      "hook": "You're the bank teller. Customers slide cash across the counter and you have seconds to stamp REAL or FAKE. Get it right and your vault grows.",
+      "theme": "Disaster / weather",
+      "hook": "Every few minutes a tornado rips through town and dumps random junk in your yard. Grab the good stuff, price it, and sell it to neighbours before the next storm hits.",
       "core_loop": [
-        "A customer hands over bills",
-        "Check the watermark, serial and colour",
-        "Stamp REAL or FAKE before the timer runs out",
-        "Earn a cut of every correct deposit",
-        "Upgrade tools (UV lamp, magnifier) and move to bigger banks"
+        "Tornado drops random items on your lot",
+        "Sort junk from rare finds",
+        "Set prices on your yard sale tables",
+        "Customers haggle and buy",
+        "Upgrade tables, storm cellar and magnet to pull in better loot"
       ],
-      "twist": "Some customers are other players running a counterfeiter shift, designing fakes to trick the teller for bonus cash.",
+      "twist": "The tornado can also suck items off your tables, so players tie down valuables or hide them in the cellar before each storm.",
       "monetization": [
-        "VIP gold stamp",
-        "2x vault multiplier"
+        "2x sale price multiplier",
+        "Bigger storm cellar storage",
+        "Faster customer speed pass",
+        "VIP yard decorations"
       ],
       "retention": [
-        "Daily rare bill to find",
-        "Teller accuracy leaderboard",
-        "Counterfeiter vs teller PvP rounds"
+        "Rare storm events (fire tornado, cash tornado)",
+        "Collection book of every item",
+        "Offline sales while away"
       ],
-      "why_now": "Quiz / guess × Money / rich is the second-biggest gap (score 4.04). Money / rich is at 1.62 momentum (56 new games) with [🐟] Net a Fish! (20,842 CCU) and [⚡] Steal a Superpower! (12,432 CCU); Quiz / guess is rising at 1.14 with Thai Quiz Duels [UPDATES] (3,122 CCU), and interior maps are at 1.83.",
+      "why_now": "Sell / run a shop × Disaster / weather is a top gap (score 4.31). Disaster / weather is the fastest rising theme at 2.06 (up 0.32 this week) with [🏁] Steal A Pet And Ride It! (16,580 CCU), and Sell / run a shop sits at 1.31 with Sell Fries! [Anomaly] 🍟 (18,014 CCU) and Sell a Million Sushi (8,234 CCU).",
       "inspired_by": [
-        "[🐟] Net a Fish!",
-        "Thai Quiz Duels [UPDATES]",
-        "[⚡] Steal a Superpower!"
+        "Sell Fries! [Anomaly] 🍟",
+        "Sell a Million Sushi",
+        "[🏁] Steal A Pet And Ride It!"
       ],
-      "differentiator": "Quiz games ask trivia; here every question is a bill in your hand, and players can be the ones making the fakes.",
+      "differentiator": "Shop games restock from a menu; here stock arrives by disaster, so every storm is a loot drop and a threat.",
       "art_style": "stylized",
-      "map_style": "interior"
+      "map_style": "plot_base"
     },
     {
-      "title": "+1 Robot Per Zap 🤖",
-      "scope": "medium",
-      "genre": "Incremental · Robot army",
+      "title": "Guess the Receipt 🧾",
+      "scope": "small",
+      "genre": "Party · Price quiz",
       "mechanics": [
-        "+1 stat per action",
-        "Fight / battle"
+        "Quiz / guess",
+        "Party / minigames"
       ],
-      "theme": "Robots / mechs",
-      "hook": "Every scrap bot you zap joins your side. One zap, one more robot following you. Grow from a lone zapper into a marching metal army.",
+      "theme": "Money / rich",
+      "hook": "A shopping cart rolls past packed with random stuff. Everyone guesses the total. Closest guess takes home the cart.",
       "core_loop": [
-        "Zap wild scrap bots",
-        "Each zap adds +1 robot to your army",
-        "March your army into bigger zones with tougher bots",
-        "Spend bolts on zap range and army speed",
-        "Rebirth to keep a robot multiplier"
+        "A loaded cart rolls into the lobby",
+        "Players type their guess for the total",
+        "Receipt prints out live, line by line",
+        "Closest guess wins the items as cash",
+        "Spend cash on carts, emotes and a mansion trophy room"
       ],
-      "twist": "Your army is the health bar: in boss fights robots fall off one by one, so a bigger army means you last longer.",
+      "twist": "One player each round is the shopper and secretly fills the cart to fool everyone, scoring if guesses are way off.",
       "monetization": [
-        "2x robots per zap pass",
-        "Bigger army storage",
-        "Speed boots",
-        "VIP chrome skin"
+        "VIP gold cart",
+        "2x winnings multiplier",
+        "Extra hint pass (one item price revealed)"
       ],
       "retention": [
-        "Daily rewards",
-        "Codes after updates",
-        "Biggest-army leaderboard",
-        "Rebirth tiers"
+        "Daily mystery store",
+        "Win streak leaderboard",
+        "Trophy room of best wins"
       ],
-      "why_now": "+1 stat per action × Robots / mechs is a top gap (score 3.46, thin). The +1 title formula is at 1.95 momentum (32 new games) with [⚔️UPD] +1 Venom Evolution (16,934 CCU) and +1 Spider Arm🕷️ (7,930 CCU). Robots / mechs is rising at 1.60 with Sweep The Moon 🌕 (11,626 CCU), and Fight + +1 is a live pair (8 new games, 27,434 CCU).",
+      "why_now": "Quiz / guess × Money / rich is a top gap (score 4.09). Money / rich is rising at 1.56 (54 new games) with [🐟] Net a Fish! (30,409 CCU) and [⚡] Steal a Superpower! (16,843 CCU), and quiz games like Thai Quiz Duels [UPDATES] (2,901 CCU) keep momentum above 1.0 (1.08).",
+      "inspired_by": [
+        "Thai Quiz Duels [UPDATES]",
+        "Krillion [Official] - Guess the Rarest Answer 🦐",
+        "[🐟] Net a Fish!"
+      ],
+      "differentiator": "Quiz games ask trivia; this asks a gut-feel price guess, so anyone can win and the shopper role adds bluffing.",
+      "art_style": "simulator_bright",
+      "map_style": "lobby_rounds"
+    },
+    {
+      "title": "+1 Battery Per Jump 🔋",
+      "scope": "small",
+      "genre": "Incremental · Robot charge",
+      "mechanics": [
+        "+1 stat per action",
+        "Escape / run"
+      ],
+      "theme": "Robots / mechs",
+      "hook": "You are a tiny robot. Every jump adds +1 to your battery, and a bigger battery lets you roll further into the scrapyard where better parts wait.",
+      "core_loop": [
+        "Jump to charge +1 battery each time",
+        "Roll out into the scrapyard until power runs out",
+        "Grab parts and bolts on the way",
+        "Upgrade into bigger robot bodies",
+        "Rebirth to unlock new scrapyards (city, volcano, moon)"
+      ],
+      "twist": "Running out of battery leaves you stranded where magnets can drag you back, so players race the drain with risky shortcuts.",
+      "monetization": [
+        "2x battery per jump",
+        "Auto-jump pass",
+        "Extra parts storage",
+        "VIP chrome body"
+      ],
+      "retention": [
+        "Daily rebirth bonus",
+        "Furthest-roll leaderboard",
+        "Robot body collection"
+      ],
+      "why_now": "+1 stat per action is rising at 1.87 (36 new games, spread out) with [⚔️UPD] +1 Venom Evolution (23,507 CCU) and +1 Spider Arm🕷️ (13,685 CCU), and the \"+1 ___\" title formula is the top formula at 1.89. +1 × Robots / mechs is an open gap (score 3.34), with robots at 1.58 led by Sweep The Moon 🌕 (16,266 CCU).",
       "inspired_by": [
         "[⚔️UPD] +1 Venom Evolution",
         "+1 Spider Arm🕷️",
         "Sweep The Moon 🌕"
       ],
-      "differentiator": "+1 games grow one stat on one avatar; here the stat is a visible crowd of robots you can see growing behind you.",
+      "differentiator": "+1 games grow a body part; here the stat is fuel, so each run is a push-your-luck trip out and back.",
       "art_style": "simulator_bright",
       "map_style": "zone_progression"
     },
     {
-      "title": "Bag Sand for Cash 🌊",
+      "title": "Build a Robot Buddy 🤖",
       "scope": "medium",
-      "genre": "Tycoon · Disaster shop",
+      "genre": "Creative · Draw-to-life helper",
       "mechanics": [
-        "Sell / run a shop",
-        "Tycoon / base building"
+        "Paint / create",
+        "Grow / farm"
       ],
-      "theme": "Disaster / weather",
-      "hook": "A flood alert hits town. Shovel sand, fill bags and sell them to panicking neighbours before the water arrives. When it's gone, prices crash and you prep for the next storm.",
+      "theme": "Robots / mechs",
+      "hook": "Draw a robot on a blueprint and it comes to life as your helper. Good drawings make good workers that farm, carry and clean your plot for you.",
       "core_loop": [
-        "Shovel sand and fill bags at your yard",
-        "Sell stacks to houses on your street",
-        "Watch prices spike as the storm siren gets closer",
-        "Upgrade shovels, trucks and bag fillers",
-        "Expand to new disaster towns (tornado, volcano, snowstorm)"
+        "Draw a robot body, arms and wheels on the blueprint",
+        "It spawns and starts working your plot",
+        "Robots farm crops and haul them to sell",
+        "Earn bolts to unlock new parts and colours",
+        "Build a crew of robots with different jobs"
       ],
-      "twist": "Houses you supplied survive the flood and pay you a thank-you bonus; houses you skipped wash away, so you choose who to save.",
+      "twist": "The robot copies your drawing for real: long arms reach further, big wheels go faster, so players redesign to fix jobs.",
       "monetization": [
-        "2x sale price pass",
-        "Bigger truck storage",
-        "VIP gold shovel",
-        "Speed boots"
+        "Neon paint pack",
+        "2x robot speed",
+        "Extra robot slots",
+        "VIP blueprint stickers"
       ],
       "retention": [
-        "Storm countdown every 10 minutes",
-        "Unlock new disaster towns",
-        "Hero of the Town leaderboard"
+        "Daily blueprint challenge",
+        "Gallery of top-voted robots",
+        "Offline robot work"
       ],
-      "why_now": "Sell / run a shop × Disaster / weather is a top gap (score 3.24). Disaster / weather is at 1.93 momentum with [🌊] Steal Eggs From Tsunami! (7,724 CCU), and Sell / run a shop is at 1.28 (36 new games) with Sell Fries! [Anomaly] 🍟 (12,365 CCU) and Sell a Million Sushi (6,408 CCU).",
+      "why_now": "Paint / create is rising at 1.70 (29 new games, spread out) with ⚽ Be a Soccer Legend (11,027 CCU) and Draw a Flag! in the vision pass, and Paint × Robots / mechs is an open gap (score 3.03). The \"Build a ___\" formula is up 0.19 this week to 1.14 with Build a Bridge (8,511 CCU).",
       "inspired_by": [
-        "Sell Fries! [Anomaly] 🍟",
-        "[🌊] Steal Eggs From Tsunami!",
-        "Sell a Million Sushi"
+        "Draw a Flag!",
+        "Build a Bridge",
+        "[2x WEEKEND] Farm Evolution"
       ],
-      "differentiator": "Shop games sell food at steady prices; here demand rises with a storm timer, so timing your sales is the skill.",
+      "differentiator": "Robot games give you a fixed bot to train; here the robot is your drawing, so every player's crew looks and works differently.",
       "art_style": "simulator_bright",
       "map_style": "plot_base"
     },
     {
-      "title": "Sprint for Moon Rocks 🌕",
+      "title": "Chisel a Statue 🗿",
       "scope": "medium",
-      "genre": "Escape · Steal and run",
+      "genre": "Creative · Sculpt-and-score",
       "mechanics": [
-        "Escape / run",
-        "Steal / raid"
+        "Break / mine / dig",
+        "Paint / create"
       ],
-      "theme": "Space",
-      "hook": "Sneak into the moon base, grab a glowing moon rock and run it back to your rocket in low gravity while guard robots chase you down.",
+      "theme": "Stones / rocks / ores",
+      "hook": "A giant rock and a target picture. Chip away with a hammer and chisel to match it, then the judge reveals your % match.",
       "core_loop": [
-        "Land next to a moon base",
-        "Grab a moon rock (bigger rocks slow you down)",
-        "Bounce across craters back to your rocket",
-        "Sell rocks to unlock faster suits and jetpacks",
-        "Raid harder bases on Mars and beyond"
+        "Get a target shape (cat, car, famous pose)",
+        "Chisel the rock block by block",
+        "Reveal your % match score",
+        "Sell statues to the museum for cash",
+        "Buy better tools, bigger rocks and rare stones"
       ],
-      "twist": "Low gravity means every jump is a long float; guard robots can't jump, so good players bounce over them instead of running around.",
+      "twist": "Hidden gems sit inside some rocks. Carving near them pays big, but one bad hit shatters the gem and the statue.",
       "monetization": [
-        "2x rock value multiplier",
-        "VIP rocket skin",
-        "Speed suit pass"
+        "Diamond chisel speed pass",
+        "2x museum payout",
+        "Rare stone luck pass",
+        "VIP gallery spot"
       ],
       "retention": [
-        "Limited meteor shower events with rare rocks",
-        "Rebirth to new planets",
-        "Rock collection index"
+        "Daily target shape",
+        "Statue garden on your plot",
+        "Accuracy leaderboard"
       ],
-      "why_now": "Space is the second-fastest theme at 1.85 with Sweep The Moon 🌕 (11,626 CCU), and Escape + Steal / raid is a live pair (6 new games, 24,639 CCU) led by [🏁] Steal A Pet And Ride It! (13,894 CCU). Escape / run is at 1.46 (40 new games) and linear course maps lead map styles at 2.07.",
+      "why_now": "Break / mine / dig is up 0.26 this week to 1.15 with Cut a Rock (16,113 CCU), and Paint / create is rising at 1.70. Paint × Stones / rocks / ores is an open gap (score 2.58). The vision pass shows new draw games scoring results with a big % on the thumbnail (Draw a Flag!).",
       "inspired_by": [
-        "Sweep The Moon 🌕",
-        "[🏁] Steal A Pet And Ride It!",
-        "[🌊] Steal Eggs From Tsunami!"
+        "Cut a Rock",
+        "Draw a Flag!",
+        "Draw an aquarium"
       ],
-      "differentiator": "Steal-and-run games happen on flat ground; low gravity turns every escape into a jump puzzle.",
+      "differentiator": "Rock games smash for loot; here breaking is precise, and the result is a statue scored against a target.",
       "art_style": "stylized",
+      "map_style": "plot_base"
+    },
+    {
+      "title": "Don't Step on the Mine 💣",
+      "scope": "small",
+      "genre": "Obby · Ragdoll hazard run",
+      "mechanics": [
+        "Escape / run",
+        "Hit / swing / launch"
+      ],
+      "theme": "Military / war",
+      "hook": "Cross a war zone field where some tiles hide mines. Step wrong and you ragdoll sky-high back to the start, while everyone watches you fly.",
+      "core_loop": [
+        "Pick a path across the hidden-mine field",
+        "Read clues (cracks, flags, sounds) to stay safe",
+        "Get launched as a ragdoll if you guess wrong",
+        "Reach the far bunker for cash and medals",
+        "Unlock new fields with more mines and tricks"
+      ],
+      "twist": "Every mine you trigger stays marked for other players, so early runners clear the way and later ones race through.",
+      "monetization": [
+        "Mine detector pass (shows one mine per stage)",
+        "2x medals",
+        "Ragdoll trail effects",
+        "Skip-a-stage product"
+      ],
+      "retention": [
+        "Daily field layout",
+        "Fastest-cross leaderboard",
+        "Funniest launch replays"
+      ],
+      "why_now": "Military / war is up 0.37 this week to 1.27 with Voxel Wars (16,878 CCU) and Ragdoll Wars! (7,339 CCU). Escape / run sits at 1.40 (39 new games) and Hit / swing / launch leads at 2.61, with Hyper Realistic Ragdoll (36,700 CCU) showing ragdoll launches pull players. Linear course maps are rising at 1.88.",
+      "inspired_by": [
+        "Voxel Wars",
+        "Ragdoll Wars!",
+        "Hyper Realistic Ragdoll"
+      ],
+      "differentiator": "Ragdoll games are open sandboxes; this gives the ragdoll a goal, a field to cross and a shared map other players clear.",
+      "art_style": "realistic",
       "map_style": "linear_course"
     },
     {
-      "title": "Be a Giant Farmer 🌾",
-      "scope": "large",
-      "genre": "Roleplay · Asymmetric farm",
+      "title": "Grow Your Own Outfit 🌸",
+      "scope": "medium",
+      "genre": "Farming · Dress-up",
       "mechanics": [
         "Grow / farm",
-        "Roleplay / life sim"
+        "Dress / style"
       ],
-      "theme": "Giant / huge",
-      "hook": "One player is a giant farmer whose crops tower over a tiny village. Everyone else is a tiny villager living between the stalks, helping or sneaking off with the harvest.",
+      "theme": "Fashion / beauty",
+      "hook": "Plant cotton, silk and glowing flowers, then turn your harvest into dresses, jackets and crowns. What you grow is what you wear.",
       "core_loop": [
-        "Giant plants and waters huge crops",
-        "Tiny villagers harvest pieces and carry them to the barn",
-        "Villagers trade crops in the tiny town for houses and upgrades",
-        "Giant earns from the full harvest and expands the farm",
-        "Switch roles each round"
+        "Plant and water fabric crops",
+        "Harvest cotton, silk and dye flowers",
+        "Weave them into clothing pieces",
+        "Wear outfits in the weekly runway show",
+        "Sell spare clothes to unlock rare seeds"
       ],
-      "twist": "Villagers can keep a share of what they carry, but if the giant catches them stealing they get dropped in the pond, so every round is part farm, part heist.",
+      "twist": "Crops mutate with the weather, so a storm can turn plain cotton into a rare glitter fabric that only exists that week.",
       "monetization": [
-        "VIP giant skins",
-        "2x harvest multiplier",
-        "Speed pass for villagers"
+        "Rare seed luck pass",
+        "2x harvest speed",
+        "Bigger wardrobe storage",
+        "VIP sewing machine"
       ],
       "retention": [
-        "Seasonal crops",
-        "Villager house to decorate",
-        "Biggest-harvest leaderboard"
+        "Weekly runway theme",
+        "Seasonal limited fabrics",
+        "Wardrobe collection book"
       ],
-      "why_now": "Grow / farm + Roleplay / life sim is a live pair (5 new games, 24,207 CCU), with Grow / farm at 1.43 (44 new games, [2x WEEKEND] Farm Evolution at 11,391 CCU). Giant / huge is rising at 1.59 with Raise The Biggest Family (9,011 CCU), and the \"Be a ___\" formula is at 1.38 with ⚽ Be a Soccer Legend (8,049 CCU).",
+      "why_now": "Grow / farm is rising at 1.36 (44 new games, spread out) with [2x WEEKEND] Farm Evolution (15,873 CCU) and [FOREST] Durian Garden 🍈 (9,817 CCU), and Fashion / beauty is up 0.11 to 1.23 with Makeup Salon💄 (7,149 CCU) and +1 Glow Up Evolution (8,741 CCU).",
       "inspired_by": [
         "[2x WEEKEND] Farm Evolution",
-        "Raise The Biggest Family",
-        "⚽ Be a Soccer Legend"
+        "[FOREST] Durian Garden 🍈",
+        "Makeup Salon💄"
       ],
-      "differentiator": "Farm games are solo plots; here one giant and a crowd of tiny players share a single farm with clashing goals.",
+      "differentiator": "Farm games sell crops for cash; here crops become your look, so farming feeds the fashion show players actually care about.",
       "art_style": "stylized",
-      "map_style": "town_roleplay"
+      "map_style": "plot_base"
     },
     {
-      "title": "Fire Friends for Medals 🪖",
+      "title": "Mine Gems for Rings 💍",
       "scope": "small",
-      "genre": "Physics sim · Cannon party",
+      "genre": "Mining · Jewelry shop",
       "mechanics": [
-        "Hit / swing / launch",
-        "Shooter"
+        "Break / mine / dig",
+        "Sell / run a shop"
       ],
-      "theme": "Military / war",
-      "hook": "Load your friend into a mortar, aim and fire them across a war-zone range to land on target flags. Bullseyes earn medals.",
+      "theme": "Fashion / beauty",
+      "hook": "Dig down for raw gems, cut them at your bench, set them into rings and sell them in your jewelry shop. Rarer gems make rings worth millions.",
       "core_loop": [
-        "Climb into the mortar or aim it",
-        "Fire across the range at target flags",
-        "Score medals for distance and accuracy",
-        "Unlock bigger cannons and ragdoll gear",
-        "Swap roles and fire back"
+        "Mine deeper layers for rough gems",
+        "Cut gems on the polishing wheel",
+        "Set them into rings, crowns and necklaces",
+        "Sell in your shop to picky customers",
+        "Upgrade pickaxe, bench and shop windows"
       ],
-      "twist": "Players in mid-air can steer a little with a parachute, so the shooter aims and the flyer corrects together.",
+      "twist": "A bad cut cracks the gem, so rare stones turn into a tense mini-game where steady hands earn the big payout.",
       "monetization": [
-        "VIP gold mortar",
-        "2x medal multiplier",
-        "Extra outfit storage"
+        "2x gem luck",
+        "Auto-mine pass",
+        "Extra vault storage",
+        "VIP diamond shop sign"
       ],
       "retention": [
-        "Daily target layouts",
-        "Best duo leaderboard",
-        "Medal collection"
+        "Daily rare gem layer",
+        "Collection book of every gem",
+        "Richest shop leaderboard"
       ],
-      "why_now": "Hit + Shooter is a live pair (4 new games, 43,274 CCU) and Hit / swing / launch leads mechanics at 2.79. Physics Sim is at 2.16 with Ragdoll Physics 🩸 (17,278 CCU), and Military / war is up 0.48 this week to 1.23 with Voxel Wars (8,100 CCU) and Ragdoll Wars! (5,409 CCU).",
+      "why_now": "Break / mine / dig is up 0.26 this week to 1.15 with Cut a Rock (16,113 CCU) and [UPD] Build a REAL House (16,680 CCU). Sell / run a shop sits at 1.31 with [UPDATE] Barber Simulator (9,482 CCU), and Fashion / beauty is rising at 1.23. The \"___ for ___\" formula is at 1.49 with Bike For Egg! (19,801 CCU).",
       "inspired_by": [
-        "Ragdoll Physics 🩸",
-        "Voxel Wars",
-        "Ragdoll Wars!"
+        "Cut a Rock",
+        "Bike For Egg!",
+        "[UPDATE] Barber Simulator"
       ],
-      "differentiator": "Ragdoll war games are free-for-all chaos; this is a two-player aim-and-steer game built for friends.",
-      "art_style": "realistic",
-      "map_style": "arena"
+      "differentiator": "Mining games end at selling ore; here the ore becomes jewelry you craft and price yourself.",
+      "art_style": "simulator_bright",
+      "map_style": "zone_progression"
     },
     {
-      "title": "Guess the Giant Thing 🔍",
-      "scope": "small",
-      "genre": "Quiz · Shrink-cam guessing",
+      "title": "Live on the Moon 🌕",
+      "scope": "large",
+      "genre": "Roleplay · Space colony tycoon",
       "mechanics": [
-        "Quiz / guess"
-      ],
-      "theme": "Giant / huge",
-      "hook": "You're shrunk to ant size standing on something huge. Look around and guess what it is before the camera zooms out and shows everyone.",
-      "core_loop": [
-        "Spawn tiny on a giant everyday object",
-        "Walk around and look for clues",
-        "Type your guess before the zoom-out",
-        "Fast right answers score the most",
-        "Unlock new rooms of giant objects"
-      ],
-      "twist": "Players can climb and explore during the round, so the first to find a clue (a giant label, a button) can race to answer.",
-      "monetization": [
-        "VIP hint pass",
-        "2x points multiplier"
-      ],
-      "retention": [
-        "Daily new object pack",
-        "Round-win streaks",
-        "Weekly top guesser board"
-      ],
-      "why_now": "Quiz / guess × Giant / huge is an open gap (score 3.0). Giant / huge is at 1.59 momentum (20 new games) with Bug Evolution [☀️] (7,322 CCU), Quiz is at 1.36 as a subgenre with Thai Quiz Duels [UPDATES] (3,122 CCU) and [UPD] Find The Country 🌍 (1,122 CCU), and interior maps are rising at 1.83.",
-      "inspired_by": [
-        "Bug Evolution [☀️]",
-        "Thai Quiz Duels [UPDATES]",
-        "[UPD] Find The Country 🌍"
-      ],
-      "differentiator": "Quiz games show a picture; here you stand on the answer and explore it, so it plays like a mini obby.",
-      "art_style": "realistic",
-      "map_style": "interior"
-    },
-    {
-      "title": "Build a Meteor Shield ☄️",
-      "scope": "medium",
-      "genre": "Tycoon · Disaster defense",
-      "mechanics": [
-        "Tycoon / base building",
-        "Survive"
+        "Roleplay / life sim",
+        "Tycoon / base building"
       ],
       "theme": "Space",
-      "hook": "Meteors rain down every few minutes. Build a dome shield over your base, power it with generators, and whatever survives the shower keeps paying you.",
+      "hook": "A whole town on the moon. Build your dome house, take a job (miner, rover driver, greenhouse farmer) and keep the colony alive together.",
       "core_loop": [
-        "Build generators and money machines on your plot",
-        "Power a shield dome over them",
-        "Survive the meteor shower",
-        "Collect space rocks that land outside the shield",
-        "Upgrade the shield and expand the base"
+        "Pick a moon job and earn credits",
+        "Build and decorate your dome home",
+        "Ride rovers between colony zones",
+        "Fix air leaks and meteor damage as a team",
+        "Unlock new domes, pets and Mars trips"
       ],
-      "twist": "Shield power is shared with your income, so a stronger shield means slower earnings; players choose when to drop it to grab falling space rocks.",
+      "twist": "Oxygen is shared: if the town ignores repairs, the whole server's air drops, so roleplay comes with real teamwork.",
       "monetization": [
-        "2x cash multiplier",
-        "VIP shield skin"
+        "VIP moon rover",
+        "Bigger dome plot",
+        "Job pay multiplier",
+        "Premium furniture packs"
       ],
       "retention": [
-        "Meteor shower every few minutes",
-        "Rare comet events",
-        "Base size leaderboard"
+        "Weekly meteor shower events",
+        "Home decorating contests",
+        "Job rank ladder"
       ],
-      "why_now": "The \"Build a ___\" formula is up 0.16 this week to 1.19 with Build a Bridge (5,956 CCU). Space is at 1.85 with Sweep The Moon 🌕 (11,626 CCU), Disaster / weather is at 1.93, and Tycoon / base building has the most new games of any rising mechanic (93, 1.28 momentum).",
+      "why_now": "Space is rising at 1.93 (up 0.34 this week) with Sweep The Moon 🌕 (16,266 CCU) and [MARS] Clean the Moon! (3,329 CCU). Roleplay / life sim × Tycoon / base building is a live pair (11 new games, 48,090 CCU), and Tycoon / base building is up 0.14 to 1.23 with [UPD] Build a REAL House (16,680 CCU).",
       "inspired_by": [
-        "Build a Bridge",
         "Sweep The Moon 🌕",
-        "[UPD] Build a REAL House"
+        "[UPD] Build a REAL House",
+        "Brookhaven 🏡RP"
       ],
-      "differentiator": "Tycoons just grow; here every meteor shower can wreck what you built, so defense and income fight for the same power.",
-      "art_style": "simulator_bright",
-      "map_style": "plot_base"
+      "differentiator": "Town roleplays have no stakes; a shared oxygen meter gives the whole server a reason to work together.",
+      "art_style": "stylized",
+      "map_style": "town_roleplay"
     }
   ]
 }
