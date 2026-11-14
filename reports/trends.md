@@ -67,18 +67,20 @@ Momentum = a category's share of young-game CCU divided by its share of all CCU.
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Realistic | 1.63x | high (50 new games, spread out) | 50 | 419,620 | 119 | DONT SPLASH (48,005) |
-| Voxel / blocky | 1.66x | high (14 new games, spread out) | 14 | 77,675 | 36 | Unstable SMP FFA [JAVA PVP!] (34,002) |
+| Voxel / blocky | 1.65x | high (15 new games, spread out) | 15 | 96,189 | 38 | Unstable SMP FFA [JAVA PVP!] (34,002) |
 | Meme / chaotic | 1.38x | medium (5 new games, top one 49% of their CCU) | 5 | 23,832 | 9 | [🧪] Fake an Egg (11,697) |
-| Bright simulator | 1.37x | high (76 new games, spread out) | 76 | 950,805 | 175 | Throw Food For Animals (397,607) |
-| Low poly | 1.27x | high (10 new games, spread out) | 10 | 28,402 | 13 | [Update] Tiny Skies ✈️ Fighter Jet & Helicopters (6,815) |
+| Bright simulator | 1.36x | high (75 new games, spread out) | 75 | 932,291 | 173 | Throw Food For Animals (397,607) |
+| Realistic | 1.13x | high (50 new games, spread out) | 50 | 387,733 | 121 | [🏝️ISLAND] Criminal Simulator 💰 (24,230) |
+| Stylized / cartoon | 1.15x | high (76 new games, spread out) | 76 | 603,995 | 176 | Hyper Realistic Ragdoll (116,533) |
+| Dark / gritty | 1.08x | high (16 new games, spread out) | 16 | 194,370 | 57 | MALAM SAMA OPAH (61,377) |
 
 ## Rising map styles
 
 | | Momentum | Confidence | Young games | Young CCU | All games | Biggest young game |
 |---|---|---|---|---|---|---|
-| Interiors / corridors | 1.68x | high (58 new games, spread out) | 58 | 401,654 | 156 | MALAM SAMA OPAH (61,377) |
-| Linear course / stages | 1.92x | low (one game holds 61% of new-game CCU) | 80 | 652,505 | 872 | Throw Food For Animals (397,607) |
+| Interiors / corridors | 1.65x | high (57 new games, spread out) | 57 | 385,536 | 155 | MALAM SAMA OPAH (61,377) |
+| Linear course / stages | 1.82x | low (one game holds 66% of new-game CCU) | 77 | 606,899 | 870 | Throw Food For Animals (397,607) |
+| Arena / battleground | 1.09x | high (84 new games, spread out) | 84 | 450,538 | 571 | Hyper Realistic Ragdoll (116,533) |
 
 ## Untapped combinations (rising mechanic x strong theme, no tracked game)
 
